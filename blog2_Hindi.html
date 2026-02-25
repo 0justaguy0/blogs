@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>भारतीय काल गणना: एक आम आदमी के लिए सरल मार्गदर्शिका</title>
+    <style>
+        :root {
+            --bg-color: #FDF9F1; /* Warm Ivory */
+            --text-color: #3E2723; /* Deep Brown */
+            --indian-yellow: #E4A025; 
+            --indian-orange: #E65100; /* Saffron/Deep Orange */
+            --accent-light: #FFECB3;
+            --ref-bg: #FFF3E0;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(var(--bg-color) 80%, var(--accent-light) 100%);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #FFFFFF;
+            padding: 50px 60px;
+            box-shadow: 0 10px 30px rgba(62, 39, 35, 0.1);
+            border-top: 8px solid var(--indian-orange);
+            border-bottom: 8px solid var(--indian-yellow);
+            border-radius: 4px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed var(--indian-yellow);
+        }
+
+        h1 {
+            color: var(--indian-orange);
+            font-size: 2.5em;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+        }
+
+        h2 {
+            color: var(--indian-yellow);
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--indian-orange);
+            padding-left: 15px;
+        }
+
+        /* Drop cap for the first paragraph */
+        .intro-text::first-letter {
+            float: left;
+            font-size: 3.5em;
+            line-height: 0.8;
+            padding-right: 8px;
+            padding-top: 4px;
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        ul li::before {
+            content: '❖'; /* Heritage-style bullet */
+            position: absolute;
+            left: 0;
+            color: var(--indian-orange);
+            font-size: 1.2em;
+        }
+
+        strong {
+            color: var(--indian-orange);
+        }
+
+        .image-placeholder-container {
+            margin: 30px 0;
+            text-align: center;
+            font-style: italic;
+            color: #795548;
+            background-color: var(--accent-light);
+            padding: 20px;
+            border-radius: 4px;
+            border: 1px solid var(--indian-yellow);
+        }
+
+        .conclusion {
+            font-size: 1.2em;
+            text-align: center;
+            font-style: italic;
+            color: var(--indian-orange);
+            margin: 40px 0;
+            padding: 20px;
+            background-color: var(--accent-light);
+            border-radius: 8px;
+        }
+
+        .references {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: var(--ref-bg);
+            border-radius: 8px;
+            font-size: 0.9em;
+        }
+
+        .references h3 {
+            color: var(--text-color);
+            margin-top: 0;
+            border-bottom: 1px solid var(--indian-yellow);
+            padding-bottom: 10px;
+        }
+
+        .references p {
+            margin-bottom: 12px;
+            text-indent: -20px;
+            padding-left: 20px;
+            word-wrap: break-word;
+        }
+
+        .references a {
+            color: var(--indian-orange);
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>भारतीय काल गणना: एक आम आदमी के लिए सरल मार्गदर्शिका</h1>
+        </header>
+
+        <article>
+            <p class="intro-text">क्या आपने कभी गौर किया है कि जब हम घड़ी की ओर देखते हैं, तो समय कितना यांत्रिक (mechanical) महसूस होता है? जैसे यह एक कठोर लूप हो जिसने आपकी गहरी नींद के दौरान, आधी रात को खुद को शुरू करने का फैसला कर लिया हो। लेकिन हमारी विरासत, यानी 30-मुहूर्त प्रणाली, बिल्कुल अलग है। यहाँ समय सिर्फ टिक-टिक करती संख्याएँ नहीं है—यह जीवंत है, जो पृथ्वी की प्राकृतिक लय के साथ सांस लेता है।</p>
+
+            <p>आइए समझते हैं कि यह अद्भुत प्राचीन प्रणाली वास्तव में कैसे काम करती है:</p>
+
+            <h2>1. इसकी शुरुआत सूर्य से होती है</h2>
+            
+            <p>सबसे बड़ा अंतर यही है: आधी रात के किसी रैंडम बिंदु पर रीसेट होने के बजाय, मुहूर्त प्रणाली उस क्षण शुरू होती है जब सूरज क्षितिज (horizon) से ऊपर आता है। आपका दिन सचमुच तब शुरू होता है जब प्रकृति जागती है। और चूँकि हर दिन सूर्योदय का समय थोड़ा बदलता है, इसलिए यह पूरी प्रणाली ऋतुओं के साथ तालमेल बिठाकर चलती है। यह प्रकृति से लड़ती नहीं, बल्कि उसके साथ कदम से कदम मिलाकर चलती है।</p>
+
+            <h2>2. सरल गणित: 30 इकाइयाँ</h2>
+            
+            <p>एक पूरे दिन को—एक सूर्योदय से अगले सूर्योदय तक—30 बराबर हिस्सों में बाँट लें। इन हिस्सों को 'मुहूर्त' कहा जाता है।</p>
+
+            <p><strong>1 दिन = 30 मुहूर्त</strong><br>
+            <strong>1 मुहूर्त = लगभग 48 मिनट</strong></p>
+
+            <p>कल्पना कीजिए कि आपका दिन 30 स्लाइस (हिस्सों) वाला एक पिज्जा है। हर स्लाइस लगभग 48 मिनट का है। सामान्यतः, दिन के लिए 15 और रात के लिए 15 स्लाइस होते हैं, लेकिन गर्मी और सर्दी के अनुसार इनकी लंबाई में थोड़ा लचीलापन होता है।</p>
+
+            <h2>3. हर 'स्लाइस' का अपना व्यक्तित्व है</h2>
+
+            <p>यहाँ बात और भी दिलचस्प हो जाती है—हर मुहूर्त सिर्फ एक टाइम स्लॉट नहीं है। इसका अपना नाम और अपनी एक विशेष ऊर्जा है। उदाहरण के लिए:</p>
+
+            <p><strong>ब्रह्म मुहूर्त:</strong> यह 29वाँ मुहूर्त है (सूर्योदय से लगभग डेढ़ घंटा पहले)। इसे ध्यान और सीखने के लिए 'स्वर्ण काल' कहा जाता है। क्यों? क्योंकि इस समय हवा सबसे शुद्ध होती है और आपका मस्तिष्क प्राकृतिक रूप से सबसे अधिक स्पष्ट और शांत होता है।</p>
+
+            <p><strong>अभिजित मुहूर्त:</strong> यह दोपहर के समय होता है जब सूर्य अपने उच्चतम बिंदु पर होता है। पारंपरिक रूप से इसे किसी भी नए काम की शुरुआत के लिए सबसे शुभ माना जाता है—जैसे ब्रह्मांड खुद आपको हरी झंडी दिखा रहा हो।</p>
+
+            <h2>4. लेकिन 48 मिनट ही क्यों?</h2>
+
+            <p>हमारी 60 मिनट की 'घंटा' प्रणाली महज़ एक गणितीय निर्णय है, लेकिन 48 मिनट का मुहूर्त 'नाड़ी प्रणाली' से उपजा है।</p>
+
+            <p><strong>2 घड़ी (प्रत्येक 24 मिनट) = 1 मुहूर्त (48 मिनट)</strong></p>
+
+            <p>प्राचीन भारतीय वैज्ञानिकों ने गौर किया कि हमारे सांस लेने के पैटर्न और हृदय की गति भी इन्हीं चक्रों में चलती है:</p>
+
+            <p><strong>सांसों का गणित:</strong> एक स्वस्थ मनुष्य दिन भर में लगभग 21,600 बार सांस लेता है। जब आप इसे दिन की 60 घड़ियों (24 मिनट की इकाई) से विभाजित करते हैं, तो यह ठीक 360 सांस प्रति घड़ी आता है—यानी हर 4 सेकंड में एक सांस का सटीक अनुपात।</p>
+
+            <p><strong>आधुनिक विज्ञान का समर्थन:</strong> आज का विज्ञान भी मानता है कि हमारे मस्तिष्क की एकाग्रता और ऊर्जा का स्तर लगभग 90 मिनट की तरंगों (waves) में चलता है। दो मुहूर्त (96 मिनट) इन प्राकृतिक 'फोकस विंडो' के साथ लगभग सटीक रूप से मेल खाते हैं, जो इस प्रणाली को मानवीय कार्यक्षमता (human performance) के लिए एक ब्लूप्रिंट बनाते हैं।</p>
+
+            <p class="conclusion">जहाँ 24-घंटे वाली घड़ी में हम लगातार समय का पीछा करते हैं और सुइयों के गुलाम बने रहते हैं, वहीं 30-मुहूर्त प्रणाली में समय एक दर्पण बन जाता है—जो सूर्य की यात्रा, आपकी अपनी सांस और आपके चारों ओर की जीवंत दुनिया को प्रतिबिंबित करता है।</p>
+
+        </article>
+
+        <section class="references">
+            <h3>संदर्भ (References)</h3>
+            <p>Bohara, B. B., G.C., L., Maharjan, M., & Pahari, S. D. P. (2022). Nature as the time teller: Indigenous mathematics of time calculation in Nepal. <em>KMC Journal, 4</em>(2), 254–268. <a href="https://doi.org/10.3126/kmcj.v4i2.47782" target="_blank">https://doi.org/10.3126/kmcj.v4i2.47782</a></p>
+            
+            <p>Bokde, N. D., Patil, P. K., Sengupta, S., Sawant, M., & Feijóo-Lorenzo, A. E. (2023). VedicDateTime: An R package to implement Vedic calendar system. <em>Multimedia Tools and Applications, 83</em>, 32141–32157. <a href="https://doi.org/10.1007/s11042-023-16553-w" target="_blank">https://doi.org/10.1007/s11042-023-16553-w</a></p>
+            
+            <p>Dasgupta, J. (2024). Emergence of mathematics in ancient India: A reassessment. <em>arXiv</em>. <a href="https://doi.org/10.48550/arxiv.2403.04823" target="_blank">https://doi.org/10.48550/arxiv.2403.04823</a></p>
+            
+            <p>Dershowitz, N., & Reingold, E. M. (2009). Indian calendrical calculations. <em>Ancient Indian Leaps into Mathematics</em>, 1–31. <a href="https://doi.org/10.1007/978-0-8176-4695-0_1" target="_blank">https://doi.org/10.1007/978-0-8176-4695-0_1</a></p>
+            
+            <p>Deshmane, S. (2025). A critical analysis of Dinacharya and its scientific validation. <em>World Journal of Pharmaceutical Research, 14</em>(11), 363–370.</p>
+            
+            <p>Indian Academy of Sciences. (2006). Aryabhata and axial rotation of Earth. <em>Resonance, 11</em>(5), 58–72. <a href="https://doi.org/10.1007/BF02834402" target="_blank">https://doi.org/10.1007/BF02834402</a></p>
+            
+            <p>Ovid. (2025). Exploring the role of Dinacharya and Ritucharya in quaternary prevention of obesity. <em>Journal of Dietary Research and Supplements</em>. <a href="https://doi.org/10.4103/jdras.jdras_253_25" target="_blank">https://doi.org/10.4103/jdras.jdras_253_25</a></p>
+        </section>
+    </div>
+
+</body>
+</html>
