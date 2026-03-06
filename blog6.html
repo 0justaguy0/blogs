@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Happens When You Feed 2,000-Year-Old Math into a Machine Learning Pipeline?</title>
+    <style>
+        :root {
+            --bg-color: #FDF9F1; /* Warm Ivory */
+            --text-color: #3E2723; /* Deep Brown */
+            --indian-yellow: #E4A025; 
+            --indian-orange: #E65100; /* Saffron/Deep Orange */
+            --accent-light: #FFECB3;
+            --ref-bg: #FFF3E0;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(var(--bg-color) 80%, var(--accent-light) 100%);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #FFFFFF;
+            padding: 50px 60px;
+            box-shadow: 0 10px 30px rgba(62, 39, 35, 0.1);
+            border-top: 8px solid var(--indian-orange);
+            border-bottom: 8px solid var(--indian-yellow);
+            border-radius: 4px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed var(--indian-yellow);
+        }
+
+        h1 {
+            color: var(--indian-orange);
+            font-size: 2.5em;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+        }
+
+        h2 {
+            color: var(--indian-yellow);
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--indian-orange);
+            padding-left: 15px;
+        }
+
+        /* Drop cap for the first paragraph */
+        .intro-text::first-letter {
+            float: left;
+            font-size: 3.5em;
+            line-height: 0.8;
+            padding-right: 8px;
+            padding-top: 4px;
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        ul li::before {
+            content: '❖'; /* Heritage-style bullet */
+            position: absolute;
+            left: 0;
+            color: var(--indian-orange);
+            font-size: 1.2em;
+        }
+
+        strong {
+            color: var(--indian-orange);
+        }
+
+        .image-placeholder-container {
+            margin: 30px 0;
+            text-align: center;
+            font-style: italic;
+            color: #795548;
+            background-color: var(--accent-light);
+            padding: 20px;
+            border-radius: 4px;
+            border: 1px solid var(--indian-yellow);
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .conclusion {
+            font-size: 1.2em;
+            text-align: center;
+            font-style: italic;
+            color: var(--indian-orange);
+            margin: 40px 0;
+            padding: 20px;
+            background-color: var(--accent-light);
+            border-radius: 8px;
+        }
+
+        .references {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: var(--ref-bg);
+            border-radius: 8px;
+            font-size: 0.9em;
+        }
+
+        .references h3 {
+            color: var(--text-color);
+            margin-top: 0;
+            border-bottom: 1px solid var(--indian-yellow);
+            padding-bottom: 10px;
+        }
+
+        .references p {
+            margin-bottom: 12px;
+            text-indent: -20px;
+            padding-left: 20px;
+            word-wrap: break-word;
+        }
+
+        .references a {
+            color: var(--indian-orange);
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>What Happens When You Feed 2,000-Year-Old Math into a Machine Learning Pipeline?</h1>
+        </header>
+
+        <article>
+            <p class="intro-text">When we look at ancient texts, we usually read them as philosophy or mythology. But what if we are looking at them entirely the wrong way?</p>
+
+            <p>Texts like the Surya Siddhanta aren't just poetry; they are the ultimate legacy code. They are packed with complex astronomical algorithms, planetary coordinate systems, and highly specific timekeeping variables. So, what happens when we stop treating ancient Indian mathematics as history and start treating it as a raw dataset?</p>
+
+            <p>Let's look at how modern AI pipelines can decode the math that powered the ancient world.</p>
+
+            <div class="image-placeholder-container">
+                <img src = "blog6_Image.png" alt = "Image Unavailable">
+            </div>
+
+            <h2>Treating Ancient Sanskrit as Legacy Code</h2>
+            
+            <p>For thousands of years, Ujjain (known in ancient times as Avanti) was considered the world's zero-longitude—the original Prime Meridian. Ancient texts like the Surya Siddhanta called this the Madhya Rekha—the Middle Line.</p>
+
+            <p>From this highly specific geographic reference point, scholars calculated planetary positions and time cycles with incredible precision. They didn't have computers, but they had robust, standardized algorithms. The challenge today isn't that their math is wrong; the challenge is that their "syntax" (ancient Sanskrit and historical metrics) isn't instantly readable by modern systems.</p>
+
+            <h2>Architecting the AI Pipeline</h2>
+
+            <p>To bridge this gap, you can't just drop a PDF of the Surya Siddhanta into a standard prompt and expect a functional API. You have to build a dedicated ingestion pipeline.</p>
+
+            <ul>
+                <li><strong>Orchestration:</strong> Using frameworks like LangChain, you can structure a workflow that programmatically parses translated verses and astronomical tables.</li>
+                <li><strong>Vectorizing the Cosmos:</strong> Natural language is messy, especially translated historical texts. By pulling open-source models from Hugging Face, you can pass these ancient verses through deep embedding layers. This process translates natural language descriptions of planetary movements into dense mathematical vectors.</li>
+                <li><strong>Pattern Recognition:</strong> Once the ancient rules are embedded in a vector database, machine learning models can find the hidden mathematical correlations that a human reader would completely miss.</li>
+            </ul>
+
+            <h2>Aligning the Data</h2>
+
+            <p>Once the ancient mathematical formulas are extracted, the real fun begins: testing them against modern datasets.</p>
+
+            <p>By feeding both the ancient Ujjain timekeeping algorithms (like the 30-Muhurta system) and modern NASA planetary data into the same Python environment, we can measure the exact delta. We can see exactly how the calculations made by scholars at the historic Vedh Shala observatory stack up against modern astrophysics.</p>
+
+            <p class="conclusion">By applying modern machine learning to these ancient texts, we aren't just reading history—we are compiling it, executing it, and proving that the algorithms of the past are still profoundly relevant today.</p>
+
+        </article>
+
+        <section class="references">
+            <h3>References</h3>
+            <p>Burgess, E. (1860). Translation of the Surya-Siddhanta: A Text-book of Hindu Astronomy. American Oriental Society. (Reprinted 2024).</p>
+            
+            <p>Dasgupta, J. (2024). Emergence of mathematics in ancient India: A reassessment. <em>arXiv</em>. <a href="https://doi.org/10.48550/arxiv.2403.04823" target="_blank">https://doi.org/10.48550/arxiv.2403.04823</a></p>
+        </section>
+    </div>
+
+</body>
+</html>
