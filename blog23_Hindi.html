@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कर्क में गुरु, पारिवारिक कर्म और गृह-चिकित्सा</title>
+    <style>
+        :root {
+            --bg-color: #FDF9F1;
+            --text-color: #3E2723;
+            --indian-yellow: #E4A025;
+            --indian-orange: #E65100;
+            --accent-light: #FFECB3;
+            --ref-bg: #FFF3E0;
+        }
+
+        body {
+            font-family: 'Georgia', 'Nirmala UI', 'Mangal', serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(var(--bg-color) 80%, var(--accent-light) 100%);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #FFFFFF;
+            padding: 50px 60px;
+            box-shadow: 0 10px 30px rgba(62, 39, 35, 0.1);
+            border-top: 8px solid var(--indian-orange);
+            border-bottom: 8px solid var(--indian-yellow);
+            border-radius: 4px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed var(--indian-yellow);
+        }
+
+        h1 {
+            color: var(--indian-orange);
+            font-size: 2.5em;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        h2 {
+            color: var(--indian-yellow);
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--indian-orange);
+            padding-left: 15px;
+        }
+
+        h3, h4 {
+            color: var(--indian-orange);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        .intro-text::first-letter {
+            float: left;
+            font-size: 3.5em;
+            line-height: 0.8;
+            padding-right: 8px;
+            padding-top: 4px;
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        ul, ol {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li, ol li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        ul li::before, ol li::before {
+            content: '2';
+            position: absolute;
+            left: 0;
+            color: var(--indian-orange);
+            font-size: 1.2em;
+        }
+
+        strong {
+            color: var(--indian-orange);
+        }
+
+        .image-placeholder-container {
+            margin: 30px 0;
+            text-align: center;
+            font-style: italic;
+            color: #795548;
+            background-color: var(--accent-light);
+            padding: 20px;
+            border-radius: 4px;
+            border: 1px solid var(--indian-yellow);
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.98em;
+            background-color: #FFFDF8;
+        }
+
+        th, td {
+            border: 1px solid #F0D49B;
+            padding: 10px 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--ref-bg);
+            color: var(--indian-orange);
+        }
+
+        blockquote {
+            margin: 30px 0;
+            padding: 20px 25px;
+            background-color: var(--accent-light);
+            border-left: 5px solid var(--indian-orange);
+            font-style: italic;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px dashed var(--indian-yellow);
+            margin: 32px 0;
+        }
+
+        .references {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: var(--ref-bg);
+            border-radius: 8px;
+            font-size: 0.9em;
+        }
+
+        .references h2, .references h3 {
+            color: var(--text-color);
+            margin-top: 0;
+            border-bottom: 1px solid var(--indian-yellow);
+            padding-bottom: 10px;
+            border-left: 0;
+            padding-left: 0;
+        }
+
+        .references p, .references li {
+            margin-bottom: 12px;
+            word-wrap: break-word;
+        }
+
+        .references a {
+            color: var(--indian-orange);
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>कर्क में गुरु, पारिवारिक कर्म और गृह-चिकित्सा</h1>
+        </header>
+
+        <article>
+<p class="intro-text">वैदिक ज्योतिष में बृहस्पति (गुरु) को 'परम शुभ ग्रह' (Greater Benefic) माना गया है। यह विस्तार, ज्ञान, प्रचुरता और नैतिकता का प्रतीक है। जब बृहस्पति अपनी उच्च राशि, कर्क (Cancer) में प्रवेश करता है, तो यह अपनी दिव्य ऊर्जा को पूर्ण सामर्थ्य के साथ प्रकट करता है। पिछले एक वर्ष से गुरु मिथुन राशि में थे, जो उनके लिए 'शत्रु राशि' या 'हानि का स्थान' (Detriment) था। मिथुन की तर्क-वितर्क और अत्यधिक सूचनाओं (Information Overload) वाली ऊर्जा से निकलकर कर्क की भावनात्मक गहराई में प्रवेश करना, पाठकों के लिए "ताजी हवा के एक झोंके" के समान है।</p>
+<div class="image-placeholder-container">
+    <img src="blog23_Image.png" alt="कर्क में गुरु की ऊर्जा और शांत वैदिक गृह वेदी">
+</div>
+<h2>बृहस्पति और कर्क राशि: एक दिव्य मिलन</h2>
+<p>बृहस्पति और कर्क राशि का मिलन ज्योतिषीय दृष्टिकोण से अत्यंत शुभ माना जाता है। जहाँ बृहस्पति उदारता और विस्तार के कारक हैं, वहीं कर्क राशि पोषण और सुरक्षा की प्रतीक है। इस गोचर में निम्नलिखित गुण मुख्य रहेंगे:</p>
+<ul>
+<li><strong>जल तत्व और अंतर्ज्ञान:</strong> कर्क एक जल तत्व की राशि है, जो हमारी संवेदनशीलता और अंतर्ज्ञान (Intuition) को जागृत करती है।</li>
+<li><strong>मातृत्व और पोषण (Mama Bear Energy):</strong> यह गोचर 'मामा बियर' ऊर्जा को सक्रिय करता है—जो अपने प्रियजनों के प्रति अत्यंत सुरक्षात्मक, दयालु और पोषण देने वाली होती है।</li>
+<li><strong>चर राशि (Cardinal Sign):</strong> कर्क एक चर राशि है, जो सकारात्मक बदलावों की शुरुआत करती है। यह हमारे भावनात्मक आधार और सुरक्षा प्रणालियों को मजबूत करने का समय है।</li>
+<li><strong>असीमित उदारता:</strong> इस दौरान 'बड़ा दिल' रखने और निस्वार्थ सेवा करने की प्रवृत्ति बढ़ेगी। यह समय दूसरों के लिए 'सूप किचन' चलाने जैसी उदारता दिखाने का है।</li>
+</ul>
+<h2>गोचर की महत्वपूर्ण तिथियां और नक्षत्र विश्लेषण</h2>
+<p>बृहस्पति का यह गोचर मुख्य रूप से 9 जून, 2025 से 29 जून, 2026 तक रहेगा। हालांकि, इसका आरंभ शनि के साथ 'केंद्र योग' (Square) के कारण थोड़ा चुनौतीपूर्ण हो सकता है, जो जून 2025 की शुरुआत में गुरु की शुभता को कुछ समय के लिए कम कर सकता है।</p>
+<p><strong>महत्वपूर्ण चरण:</strong></p>
+<ul>
+<li><strong>प्रारंभिक प्रवेश (Short Stay):</strong> 18 अक्टूबर, 2025 से 5 दिसंबर, 2025 तक बृहस्पति कर्क राशि में अल्प प्रवास करेंगे। यह समय 'बीज बोने' (Seeding) और भविष्य की बड़ी योजनाओं की 'प्रारंभिक स्वीकृति' का है।</li>
+<li><strong>नक्षत्रों का प्रभाव:</strong> गुरु पुनर्वसु, पुष्य और अश्लेषा नक्षत्रों से गुजरेंगे। विशेष रूप से, पुनर्वसु के चौथे पद में गुरु <strong>'वर्गोत्तम' (Vargottama)</strong> होने के साथ-साथ <strong>'पुष्कर नवांश' (Pushkara Navamsa)</strong> में भी होंगे। इस स्थिति में बृहस्पति "फुसफुसाते नहीं, बल्कि घोषणा करते हैं।" उनके फल अत्यंत स्पष्ट और शक्तिशाली होंगे।</li>
+</ul>
+<p>ध्यान रहे कि 3 अक्टूबर, 2025 से शनि गुरु के नक्षत्र (पूर्वाभाद्रपद) में होंगे, जिससे गुरु 'निर्देशक' की भूमिका में होंगे और शनि उनके कार्यों को मूर्त रूप देंगे।</p>
+<h2>सामाजिक और वैश्विक प्रभाव</h2>
+<p>बृहस्पति का कर्क राशि में गोचर समाज की प्राथमिकताओं को 'सूचना के जाल' (Podcaster's world) से हटाकर 'जमीनी हकीकत' की ओर ले जाएगा। अब दुनिया को आडंबरपूर्ण नेताओं की नहीं, बल्कि <strong>'विनम्र रक्षकों' (Humble Protectors)</strong> की आवश्यकता होगी।</p>
+<ol>
+<li><strong>खाद्य और जल सुरक्षा:</strong> वैश्विक स्तर पर स्वच्छ जल और भोजन की उपलब्धता के लिए नीतियां और एमओयू (MOUs) साइन होंगे।</li>
+<li><strong>आवास और रियल एस्टेट:</strong> घर और भूमि से जुड़े मामलों में तेजी आएगी। यह अपनी जड़ें मजबूत करने और स्थायी निर्माण का समय है।</li>
+<li><strong>नेतृत्व का नया स्वरूप:</strong> नेल्सन मंडेला और जो बाइडन जैसे नेताओं के उदाहरणों से स्पष्ट है कि कर्क के गुरु वाले नेतृत्व में एक व्यापक और समावेशी विजन होता है।</li>
+<li><strong>सुरक्षा तंत्र:</strong> महिलाओं और बच्चों के लिए सामाजिक सुरक्षा जाल (Social Safety Nets) को मजबूत करने पर ध्यान दिया जाएगा।</li>
+</ol>
+<h2>सभी 12 लग्नों पर प्रभाव (Impact on all 12 Rising Signs)</h2>
+<p>यह गोचर आपके 'लग्न' (Rising Sign) के अनुसार निम्नलिखित फल देगा:</p>
+<ul>
+<li><strong>मेष लग्न (Aries Rising): 4वां भाव -</strong> परिवार में खुशहाली आएगी। यह अपने 'सपनों के घर' (Dream Home) में बसने का सबसे सही समय है।</li>
+<li><strong>वृषभ लग्न (Taurus Rising): 3रा भाव -</strong> संचार कौशल में निखार आएगा। कोई महत्वपूर्ण लेखन परियोजना या संवाद की पहल सफलता दिलाएगी।</li>
+<li><strong>मिथुन लग्न (Gemini Rising): 2रा भाव -</strong> आर्थिक स्थिति में जबरदस्त वृद्धि होगी। आपकी कमाई की क्षमता (Earning Power) कई गुना बढ़ सकती है।</li>
+<li><strong>कर्क लग्न (Cancer Rising): 1ला भाव -</strong> व्यक्तित्व में निखार, आत्मविश्वास और आकर्षण बढ़ेगा। पुरानी रुकी हुई योजनाएं अब फल देंगी।</li>
+<li><strong>सिंह लग्न (Leo Rising): 12वां भाव -</strong> गहरी आध्यात्मिक अंतर्दृष्टि और शांति का समय है। सपनों के माध्यम से आपको महत्वपूर्ण मार्गदर्शन मिलेगा।</li>
+<li><strong>कन्या लग्न (Virgo Rising): 11वां भाव -</strong> प्रभावशाली मित्रों और नेटवर्क का सहयोग मिलेगा। आपकी बड़ी आकांक्षाएं पूरी होने की राह आसान होगी।</li>
+<li><strong>तुला लग्न (Libra Rising): 10वां भाव -</strong> करियर में जबरदस्त उछाल! आपको 'सार्वजनिक प्रशंसा' (Public Acclaim) और नया पदभार मिल सकता है।</li>
+<li><strong>वृश्चिक लग्न (Scorpio Rising): 9वां भाव -</strong> उच्च शिक्षा, प्रकाशन (Publishing) या अंतर्राष्ट्रीय अनुभवों के लिए यह एक 'लीप ऑफ फेथ' (Leap of Faith) का वर्ष है।</li>
+<li><strong>धनु लग्न (Sagittarius Rising): 8वां भाव -</strong> रणनीतिक निवेश और साझा संपत्तियों से लाभ होगा। पैतृक घावों को भरने और धन वृद्धि का समय है।</li>
+<li><strong>मकर लग्न (Capricorn Rising): 7वां भाव -</strong> विवाह और साझेदारी के सपने सच होंगे। आपके संबंधों में गहरा भावनात्मक पोषण और वृद्धि होगी।</li>
+<li><strong>कुंभ लग्न (Aquarius Rising): 6ठा भाव -</strong> स्वास्थ्य में सुधार और कार्यक्षमता (Efficiency) में बढ़ोत्तरी होगी। कार्यस्थल पर आपके कौशल की सराहना होगी।</li>
+<li><strong>मीन लग्न (Pisces Rising): 5वां भाव -</strong> कलात्मक पहचान, रोमांस और संतान सुख के लिए स्वर्ण काल है। आपकी रचनात्मकता को दुनिया पहचानेगी।</li>
+</ul>
+<h2>प्राचीन ग्रंथों का मार्गदर्शन: सारावली और गरुड़ पुराण</h2>
+<p>'सारावली' के रचयिता कल्याण वर्मा के अनुसार, कर्क राशि का बृहस्पति व्यक्ति को <strong>विद्वान, सुंदर, दानी और प्रसिद्ध</strong> बनाता है। ऐसा व्यक्ति अपने मित्रों के प्रति गहरा अनुराग रखता है और उसमें नेतृत्व के स्वाभाविक गुण होते हैं।</p>
+<p>'गरुड़ पुराण' इस गोचर के दौरान <strong>'सत्कर्म' और 'धर्म'</strong> की महत्ता पर प्रकाश डालता है। ग्रंथ के अनुसार: <strong>"सत्कर्म मनुष्य को बंधन में नहीं डालता"</strong> (Right action does not put one into bondage)। यह सिखाता है कि शरीर और धन अस्थायी हैं, अतः केवल पुण्य का संचय ही साथ जाता है।</p>
+<p>यदि आपकी कुंडली के 9वें भाव में सूर्य के साथ राहु या शनि है, तो यह 'पितृ दोष' की स्थिति हो सकती है। इस गोचर के दौरान बुजुर्गों की सेवा और धर्म का पालन इस ऋण को कम करने में सहायक होता है।</p>
+<h2>शुभ फल प्राप्ति के लिए उपाय और सुझाव</h2>
+<p>बृहस्पति की दिव्य कृपा प्राप्त करने के लिए निम्नलिखित सात्विक उपायों को अपनाएं:</p>
+<ul>
+<li><strong>आहार और दान:</strong> खजूर (Dates), बेरीज, कद्दू (Pumpkin/Squash), क्रीम, गन्ना, घी, शहद और <strong>चिकपीस (काबुली चना)</strong> का सेवन या दान करें।</li>
+<li><strong>रंग और वस्त्र:</strong> गुरुवार को पीले रंग के वस्त्र धारण करें और केसर या हल्दी का तिलक लगाएं।</li>
+<li><strong>गुरु और बुजुर्गों का सम्मान:</strong> अपने शिक्षकों और बुजुर्गों का आशीर्वाद लें। यह सूर्य और गुरु दोनों को बल देता है।</li>
+<li><strong>मंत्र और उपासना:</strong> नियमित रूप से <strong>गायत्री मंत्र</strong> का जाप करें। घर के उत्तर-पूर्व कोने (ईशान कोण) में अपनी पूजा का स्थान बनाएं और पीपल के वृक्ष को जल अर्पित करें।</li>
+</ul>
+<h2>निष्कर्ष और मुख्य सीख</h2>
+<p>कर्क राशि में बृहस्पति का यह गोचर एक "स्थायी आशीर्वाद" (Lasting Blessing) है। यह हमें याद दिलाता है कि बहुतायत अर्जित नहीं की जाती, बल्कि इसे स्वीकार किया जाता है।</p>
+<p><strong>इस ऊर्जा का सर्वोत्तम उपयोग करने के 3 तरीके:</strong></p>
+<ol>
+<li><strong>अपना शरणस्थल (Sanctuary) बनाएं:</strong> अपने घर को शांति और सुरक्षा का केंद्र बनाएं।</li>
+<li><strong>भावनात्मक उदारता:</strong> दूसरों के लिए अपना हृदय खोलें, दयालुता आपकी सबसे बड़ी शक्ति है।</li>
+<li><strong>अंतर्ज्ञान पर विश्वास:</strong> तर्क के स्थान पर अपनी अंतरात्मा की आवाज सुनें।</li>
+</ol>
+<p>भरोसा रखें, यह अवधि आपके सपनों को फलने-फूलने के लिए सबसे उपजाऊ जमीन प्रदान कर रही है।</p>
+<p><strong>शुभम भवतु!</strong></p>
+
+<div class="references">
+<h2>Sources</h2>
+<ol>
+<li><a href="https://timesofindia.indiatimes.com/astrology/planets-transits/3-auspicious-astrological-rituals-to-welcome-jupiters-transit-into-cancer-sign-on-2nd-june-2026/articleshow/131262437.cms">3 Auspicious astrological rituals to welcome Jupiter&#x27;s Transit into Cancer Sign on 2nd June, 2026 - The Times of India</a></li>
+<li><a href="https://astrologicalmusings.com/pitru-dosha-or-purva-janma-shrapa-as-per-brihat-parashara-hora-shastra/">Astrological Yoga&#x27;s for curses of past life&#x27;s - Astrological Musings</a></li>
+<li><a href="https://www.omspiritualshop.com/blogs/news/guru-peyarchi-2026-jupiter-transit-cancer">Guru Peyarchi 2026 Date, Time &amp; Palangal | Jupiter Transit in ...</a></li>
+<li><a href="https://consultlunarastro.com/2026/01/31/jupiter-in-all-12-houses/">Jupiter in all 12 houses - Consult Lunar Astro</a></li>
+<li><a href="https://astrosutras.in/index.php/2025/03/29/fact-sheets-cancer-karka-rashi-in-vedic-astrology/">Fact Sheets-Cancer (Karka Rashi) in Vedic Astrology - astrosutras.in</a></li>
+<li><a href="https://timesofindia.indiatimes.com/astrology/horoscope/jupiter-transit-in-cancer-2026-for-sagittariusdhanu-ascendant-health-property-transformation-and-hidden-gains/articleshow/131263797.cms">Jupiter Transit in Cancer 2026 for Sagittarius(Dhanu) Ascendant: Health, property, transformation and hidden gains - The Times of India</a></li>
+<li><a href="https://medium.com/thoughts-on-jyotish/bhava-phala-praveshika-6-sukha-bhava-4th-house-7ed762afae8e">Bhava Phala Praveshika — 6: Sukha Bhava (4th House) | by Varaha ...</a></li>
+<li><a href="https://astrosutras.in/index.php/2025/03/29/fact-sheets-fourth-house-sukha-bhava-in-vedic-astrology/">Fact Sheets-Fourth House (Sukha Bhava) in Vedic Astrology - astrosutras.in</a></li>
+<li><a href="https://pujayagna.com/blogs/pooja-havan-yagya/pitra-dosha">Types, Effects, Remedies of Pitra Dosha or Pitru Dosh - Eshwar Bhakti</a></li>
+<li><a href="https://utsavapp.in/ml/gyan/astrology/jupiter-transit-in-cancer-2026-effects-on-all-12-zodiac-signs-proven-remedies">Jupiter Transit in Cancer (2026): Effects on All 12 Zodiac Signs &amp; Proven Remedies</a></li>
+<li><a href="https://www.astroshastra.com/lalkitab/jupiterandtwelvehouse.php">Jupiter and Its Effects in 12 Houses of Horoscope in Lal Kitab - Astroshastra</a></li>
+<li><a href="https://astrosight.ai/predictions/fourth-house-mother-home-vedic-astrology">Fourth House in Vedic Astrology: Mother, Home, Property - AstroSight</a></li>
+<li><a href="https://aanchaltarot.com/pitra-paksha-healing-pitra-dosh-ancestral-karma-for-a-harmonious-life/">Pitra Paksha: Healing Pitra Dosh &amp; Ancestral Karma for a Harmonious Life - Aanchal Tarot</a></li>
+<li><a href="https://rashiratanbhagya.com/blogs/post/lal-kitab-astrology-remedies-for-jupiter">Lal Kitab Remedies for Jupiter in Vedic Astrology - RashiRatanBhagya</a></li>
+<li><a href="https://www.scribd.com/doc/19764310/Pitru-Dosh">Understanding Pitru Dosha in Astrology | PDF - Scribd</a></li>
+<li><a href="https://www.scribd.com/document/844301971/K-N-Rao-Your-Children-and-Your-Karma">Your Children and Their Karmas | PDF | Planets In Astrology - Scribd</a></li>
+<li><a href="https://www.twowander.com/blog/jupiter-in-cancer">How To Make The Most Of Jupiter In Cancer! - Two Wander</a></li>
+<li><a href="https://vedichealing.com/jupiter-cancer/">Jupiter in Cancer | Vedic Healing</a></li>
+<li><a href="https://www.chani.com/blogs/your-guide-to-jupiter-in-cancer">Your guide to Jupiter in Cancer - CHANI</a></li>
+<li><a href="https://pujayagna.com/blogs/hindu-fasting-days/guruvar-vrat-thursday-fast">Guruvar Vrat - Procedure, Mantra and Significance of Thursday Fast - Eshwar Bhakti</a></li>
+<li><a href="https://timesofindia.indiatimes.com/religion/rituals-puja/thursday-ritual-guru-remedies-to-gain-wealth-money-and-success/articleshow/131061807.cms">Thursday Ritual: Guru Remedies to gain wealth, money and success - The Times of India</a></li>
+<li><a href="https://www.neelastro.in/resource/fourth-house-and-its-implications.aspx">Fourth House and its Implications - neelastro.in</a></li>
+<li><a href="https://www.astrosage.com/planet/jupiter/jupiter-in-cancer.asp">Jupiter in Cancer - AstroSage</a></li>
+<li><a href="https://www.heloastro.com/blog/jupiter-in-cancer">Jupiter in Cancer: The Art of World-Building - HéloAstro</a></li>
+<li><a href="https://astrozindagi.in/transit/jupiter-transit/jupiter-transit-cancer-2026/">Jupiter Transit in Cancer 2026: 4 Signs Facing Major Fortune - Astro Zindagi</a></li>
+<li><a href="https://vydic.com/chandala-dosha-shanti-yagya/">Chandala Dosha Shanti Yagya - Vydic Yanya Centre</a></li>
+<li><a href="https://www.astrologerskabid.com/blog-details/guru-chandal-dosha-explained-with-effects-and-remedies">Guru Chandal Dosha Explained With Effects and Remedies - Astrologer SK Abid</a></li>
+<li><a href="https://www.scribd.com/document/304643797/Guru-Chandala-Yoga">Understanding Guru Chandal Yoga Effects | PDF | Technical Factors Of Astrology - Scribd</a></li>
+<li><a href="https://www.reddit.com/r/Nakshatras/comments/1qmfmq6/guru_chandal_yog_tool_or_toxin/">Guru Chandal Yog! Tool or Toxin ☠️ : r/Nakshatras - Reddit</a></li>
+<li><a href="https://www.reddit.com/r/Nakshatras/comments/1lk4d15/why_jupiter_is_considered_exalted_in_aquarius/">why Jupiter is considered exalted in aquarius? : r/Nakshatras - Reddit</a></li>
+<li><a href="https://www.reddit.com/r/Nakshatras/comments/1t9s9mo/why_do_some_say_that_jupiter_gets_exalted_in_leo/">Why do some say that Jupiter gets exalted in Leo? : r/Nakshatras - Reddit</a></li>
+<li><a href="https://www.youtube.com/watch?v=RMkVlJS_8es">Cancer Jupiter in Vedic Astrology - YouTube</a></li>
+<li><a href="https://www.youtube.com/watch?v=D-7l_BPlrJQ">Guru in Cancer: A Short Stay, A Lasting Blessing Oct-Dec 2025 12 Signs Readings by VL #jupiter - YouTube</a></li>
+<li><a href="https://www.scribd.com/document/808012668/6-1-10-966">Jupiter&#x27;s Influence on 12 Houses in Astrology | PDF - Scribd</a></li>
+<li><a href="https://timesofindia.indiatimes.com/astrology/horoscope/jupiter-transit-in-cancer-2026-for-piscesmeena-ascendant-career-fortune-and-growth/articleshow/131272957.cms">Jupiter Transit in Cancer 2026 for Pisces(Meena) Ascendant: Career, fortune and growth</a></li>
+<li><a href="https://vijayalur.com/2014/06/18/jupiters-transit-into-cancer/">Jupiter&#x27;s Transit into Cancer | JYOTHISHI</a></li>
+<li><a href="https://www.reddit.com/r/Advancedastrology/comments/1ookxbq/were_about_to_take_a_very_dark_turn_jupites_is/">We&#x27;re About to Take a Very Dark Turn: Jupites is Turning Retrograde - Reddit</a></li>
+<li><a href="https://astro-fusion.com/tools/celebrity/Pradeep_Khadka">Pradeep Khadka - AstroFusion</a></li>
+<li><a href="https://maabaglamukhi.guru/MangalDoshaDetail/">Mangal Dosha | Maa Baglamukhi Guru Nalkheda</a></li>
+<li><a href="https://www.reddit.com/r/Nakshatras/comments/1oiylbj/jupiter_in_capricorn_a_way_to_analyse/">Jupiter in Capricorn, a way to analyse. : r/Nakshatras - Reddit</a></li>
+<li><a href="https://www.reddit.com/r/vedicastrology/comments/1idhrdp/debilitated_jupiter_for_libra_ascendants_27m/">Debilitated Jupiter for Libra Ascendants 27M : r/vedicastrology - Reddit</a></li>
+<li><a href="http://jyotishvidya.com/part2_5.htm">Effects of Jupiter - Jyotish Vidya</a></li>
+<li><a href="https://www.astroved.com/blogs/thursday-remedies-for-special-blessings-from-sri-vishnu">Thursday Remedies 2024 for Special Blessings From Sri Vishnu - AstroVed</a></li>
+<li><a href="https://zodii.in/knowledge/what-is-kundli">What Is Kundli (Janam Kundali)? Complete Guide to Your Vedic Birth Chart | Zodii</a></li>
+<li><a href="http://www.reliableastrology.com/saravali.htm">Saravali by King Kalyana Varma - WORLD PANCHANG</a></li>
+<li><a href="https://static1.squarespace.com/static/5e5b12e392faf542399f9528/t/6444ef629f4e0f16c88ff327/1682239414314/Saravali+-+R+Santhanam+-+Vol-2.pdf">SARAVALI - Squarespace</a></li>
+<li><a href="https://www.scribd.com/document/324246625/55-TheExaltedJupitersPunchBW">Understanding Exalted Jupiter&#x27;s Impact | PDF | Astrology | Science - Scribd</a></li>
+<li><a href="https://music.youtube.com/search?q=%23jupiterinhouses">YouTube Music</a></li>
+<li><a href="https://lakshminarayanlenasia.com/downloads/GarudaPurana.pdf">The Garuda Purana</a></li>
+<li><a href="https://thevaisnava.com/garuda-purana-karma-kanda-concise-excerpts/9/">Garuda Purana – Karma Kanda (Concise Excerpts) – Page 9 - TheVaisnava Online Magazine</a></li>
+<li><a href="https://hinduonline.co/Scriptures/Puranas/GarudaPurana.html">Garuda Purana - Hindu Online</a></li>
+<li><a href="http://oaks.nvg.org/garuda.html">Garuda Purana Teachings - The Gold Scales</a></li>
+<li><a href="https://veda.krishna.com/encyclopedia/garuda-purana.htm">Garuda Purana</a></li>
+</ol>
+</div>
+        </article>
+    </div>
+
+</body>
+</html>
