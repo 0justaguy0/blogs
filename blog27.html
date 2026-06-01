@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mithuna Sankranti and Mars Remedies</title>
+    <style>
+        :root {
+            --bg-color: #FDF9F1;
+            --text-color: #3E2723;
+            --indian-yellow: #E4A025;
+            --indian-orange: #E65100;
+            --accent-light: #FFECB3;
+            --ref-bg: #FFF3E0;
+        }
+
+        body {
+            font-family: 'Georgia', 'Nirmala UI', 'Mangal', serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(var(--bg-color) 80%, var(--accent-light) 100%);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #FFFFFF;
+            padding: 50px 60px;
+            box-shadow: 0 10px 30px rgba(62, 39, 35, 0.1);
+            border-top: 8px solid var(--indian-orange);
+            border-bottom: 8px solid var(--indian-yellow);
+            border-radius: 4px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed var(--indian-yellow);
+        }
+
+        h1 {
+            color: var(--indian-orange);
+            font-size: 2.5em;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        h2 {
+            color: var(--indian-yellow);
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--indian-orange);
+            padding-left: 15px;
+        }
+
+        h3, h4 {
+            color: var(--indian-orange);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        .intro-text::first-letter {
+            float: left;
+            font-size: 3.5em;
+            line-height: 0.8;
+            padding-right: 8px;
+            padding-top: 4px;
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        ul, ol {
+            margin: 0 0 24px 0;
+            padding-left: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ol {
+            list-style-position: outside;
+            padding-left: 2.2em;
+        }
+
+        ul li, ol li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        ol li {
+            padding-left: 0.35em;
+        }
+
+        ul li::before {
+            content: '\2022';
+            position: absolute;
+            left: 0;
+            top: 0.05em;
+            color: var(--indian-orange);
+            font-size: 1.2em;
+            line-height: 1;
+        }
+
+        ol li::marker {
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        strong {
+            color: var(--indian-orange);
+        }
+
+        .image-placeholder-container {
+            margin: 30px 0;
+            text-align: center;
+            font-style: italic;
+            color: #795548;
+            background-color: var(--accent-light);
+            padding: 20px;
+            border-radius: 4px;
+            border: 1px solid var(--indian-yellow);
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.98em;
+            background-color: #FFFDF8;
+        }
+
+        th, td {
+            border: 1px solid #F0D49B;
+            padding: 10px 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--ref-bg);
+            color: var(--indian-orange);
+        }
+
+        blockquote {
+            margin: 30px 0;
+            padding: 20px 25px;
+            background-color: var(--accent-light);
+            border-left: 5px solid var(--indian-orange);
+            font-style: italic;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px dashed var(--indian-yellow);
+            margin: 32px 0;
+        }
+
+        .references {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: var(--ref-bg);
+            border-radius: 8px;
+            font-size: 0.9em;
+        }
+
+        .references h2, .references h3 {
+            color: var(--text-color);
+            margin-top: 0;
+            border-bottom: 1px solid var(--indian-yellow);
+            padding-bottom: 10px;
+            border-left: 0;
+            padding-left: 0;
+        }
+
+        .references p, .references li {
+            margin-bottom: 12px;
+            word-wrap: break-word;
+        }
+
+        .references a {
+            color: var(--indian-orange);
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Mithuna Sankranti and Mars Remedies</h1>
+        </header>
+
+        <article>
+<p class="intro-text">The month of June 2026 presents one of the most energetically dense and structurally complex astrological windows of the decade. We are approaching a "temporal corridor" between June 15 and June 20—a high-velocity transition zone defined by the rare conclusion of Jyeshtha Adhik Maas, the solar ingress of Mithuna Sankranti, and the volatile terminal <em>Rashi Sandhi</em> (cuspal boundary) of Mars.</p>
+<div class="image-placeholder-container">
+    <img src="blog27_Image.png" alt="Mithuna Sankranti, Somvati Amavasya, Surya Vishnu worship, and Mars entering Taurus remedies for June 15 to June 20 2026">
+</div>
+<p>For the spiritual practitioner, this period represents a profound shift from the "Stealth Mode" of internal audits to a "Power Cycle" of practical execution. Navigating these alignments requires a blend of traditional ritual, ancestral honor, and strategic planetary remediation.</p>
+<p>&#8212;</p>
+<h2>The Great Convergence: Somvati Amavasya and the Adhik Maas Finale</h2>
+<p>The threshold of this corridor begins on June 15, 2026, with the rare occurrence of <strong>Somvati Amavasya</strong>. This exceptionally powerful day occurs when the New Moon (Amavasya) falls on a Monday (Somvar), a day dedicated to Lord Shiva and the stabilization of the lunar current.</p>
+<p>This date is doubly significant as it marks the definitive conclusion of <strong>Jyeshtha Adhik Maas</strong> (Purushottam Maas). Ancient scriptures tell us that when this intercalary month was first created to align the solar and lunar calendars, it felt unwanted and "shunned" because it lacked major festivals. Moved by its devotion, Lord Vishnu granted the month his own name, <em>Purushottam</em>, making it the most spiritually meritorious month for internal alchemy. During this finale, the focus remains strictly on devotion and charity; we must avoid starting <em>Shubh</em> (auspicious) activities like marriage or housewarming until the cycle clears.</p>
+<h3>The Udayatithi Principle and Morning Rituals</h3>
+<p>While the Amavasya Tithi officially ends at 08:23 AM IST on June 15, the <strong>Udayatithi</strong> principle dictates that since the Tithi prevails at sunrise, its spiritual protocols govern the entire solar day.</p>
+<p><strong>Essential Rituals for June 15:</strong></p>
+<ul>
+<li><strong>Sacred Bath (Snan):</strong> Bathe during the Brahma Muhurat (04:02 AM to 04:43 AM). Purify the subtle body by adding <em>Gangajal</em> to your bathwater.</li>
+<li><strong>Alchemical Dissolution of Debt (Rin Mukti):</strong> This is the premier window to resolve financial and karmic burdens. Perform a <em>Shiv Rudrabhishek</em> or visit a temple dedicated to <em>Rin Mukteshwar</em> to dissolve the energetic blocks preventing wealth accumulation.</li>
+<li><strong>Ancestral Rites (Pitru Tarpan):</strong> Face South—the domain of the ancestors—and offer clean water mixed with black sesame seeds. This satisfies the departed souls and neutralizes <em>Pitru Dosha</em>, which often manifests as chronic financial stagnation.</li>
+<li><strong>Peepal Tree Worship:</strong> Light a mustard oil lamp under a Peepal tree and perform circumambulation (<em>parikrama</em>) to pacify Saturnian delays.</li>
+</ul>
+<p>&#8212;</p>
+<h2>Mithuna Sankranti: The Sun’s Intellectual Ingress</h2>
+<p>On June 15, 2026, at precisely <strong>12:59 PM IST</strong>, the Sun exits the material, fixed earth of Taurus and enters the intellectual, mutable air of Gemini (<em>Mithuna Rashi</em>). This transition marks a collective shift from "subconscious stillness" to a phase of networking and the diversification of ideas.</p>
+<p>The moment of transition is a "Sankranti"—a volatile period where energy is in flux. While unsuitable for material signatures, it is a high-frequency portal for <em>Daan</em> (charity).</p>
+<h3>Punya Kala Windows (June 15, 2026)</h3>
+<p>The total Punya Kala duration for this transition is <strong>6 hours and 21 minutes</strong>.</p>
+<table>
+<thead><tr><th>Portal Name</th><th>Timing (IST)</th><th>Recommended Activities</th></tr></thead>
+<tbody>
+<tr><td><strong>Maha Punya Kala</strong></td><td>12:59 PM – 03:19 PM</td><td>Peak alignment for concentrated mantra recitation and alchemical charity.</td></tr>
+<tr><td><strong>Punya Kala</strong></td><td>12:59 PM – 07:20 PM</td><td>Window for purification baths, Surya Arghya (water offerings), and temple donations.</td></tr>
+</tbody>
+</table>
+<p>&#8212;</p>
+<h2>Raja Parba: Celebrating the Fertility of Mother Earth</h2>
+<p>In Odisha and Eastern India, Mithuna Sankranti initiates the <strong>Raja Parba</strong> festival. This tradition is rooted in the eco-philosophy that Mother Earth undergoes her menstrual cycle during this seasonal shift. To honor her rejuvenation, all agricultural activities—plowing, digging, or pruning—are strictly suspended.</p>
+<h3>Raja Parba 2026 Schedule</h3>
+<ol>
+<li><strong>Pahili Raja (June 14):</strong> The joyful beginning; the air is filled with the aroma of <strong>Poda Pitha</strong>, a slow-cooked rice cake prepared with jaggery, coconut, and ghee.</li>
+<li><strong>Mithuna Sankranti (June 15):</strong> The main day of solar transition; girls enjoy traditional swings (<em>Doli</em>).</li>
+<li><strong>Basi Raja / Bhu Daah (June 16):</strong> A continuation of rest for the Earth.</li>
+<li><strong>Basumati Snana (June 17):</strong> The final ritual where Mother Earth is symbolically bathed with Panchamrita and turmeric before farming resumes.</li>
+</ol>
+<p>&#8212;</p>
+<h2>From Warrior to Builder: The Mars Aries-Taurus Transition</h2>
+<p>Throughout the June 15–20 corridor, Sidereal Mars moves through the final degrees (<strong>Aries 28° to 29°59'</strong>). This is the <strong>Rashi Sandhi</strong> or "cusp" phase—the friction of raw energy preparing to assume a structured form.</p>
+<p>This period represents the climax of the "Stealth Mode" we have inhabited since May. As Mars culminates in Aries, the pressure to force outcomes can lead to a "short fuse" or acute physical tension. As a Senior Astrologer, I advise "Mars containment": ground this heat through cooling olfactory therapy—diffusing <strong>lavender or sandalwood</strong>—to prevent the martial fire from manifesting as outbursts.</p>
+<h3>Zodiac Impact Summary (Mithuna Sankranti &amp; Mars Shift)</h3>
+<table>
+<thead><tr><th>Sign (Moon/Ascendant)</th><th>Primary Areas of Adjustment</th><th>Core Predictive Implications</th></tr></thead>
+<tbody>
+<tr><td><strong>Aries</strong></td><td>Impulsive debates</td><td>Culmination of personal projects; requires extreme patience in speech.</td></tr>
+<tr><td><strong>Taurus</strong></td><td>Financial planning</td><td>Shift to intense self-discipline; avoid emotional spending.</td></tr>
+<tr><td><strong>Gemini</strong></td><td>Power cycle</td><td>High mental power; use this "incubation" to refine grand strategies.</td></tr>
+<tr><td><strong>Cancer</strong></td><td>Spiritual progress</td><td>Prioritize spiritual meditation over material worries; guard your heart health.</td></tr>
+<tr><td><strong>Leo</strong></td><td>Logical endings</td><td>Fame and financial gains; legal matters reach a favorable conclusion.</td></tr>
+<tr><td><strong>Virgo</strong></td><td>Career prestige</td><td>Recognition and prestige; maintain excellent equations with seniors.</td></tr>
+<tr><td><strong>Libra</strong></td><td>Pilgrimage</td><td>Auspicious domestic events; success in higher education abroad.</td></tr>
+<tr><td><strong>Scorpio</strong></td><td>High-alert phase</td><td>Practice absolute silence; guard against abnormal blood pressure.</td></tr>
+<tr><td><strong>Sagittarius</strong></td><td>Business expansion</td><td>Strong partner support; expansion yields benefits exceeding effort.</td></tr>
+<tr><td><strong>Capricorn</strong></td><td>Work pressure</td><td>Career advancement, but take care of physical health under stress.</td></tr>
+<tr><td><strong>Aquarius</strong></td><td>Relationship growth</td><td>Positive time for love; potential for gains in the stock market.</td></tr>
+<tr><td><strong>Pisces</strong></td><td>Domestic peace</td><td>Focus shifts to property and land; heal past emotional patterns.</td></tr>
+</tbody>
+</table>
+<p>&#8212;</p>
+<h2>Spiritual Milestones: Rare Ekadashis and Jyeshtha Purnima</h2>
+<ul>
+<li><strong>Parama Ekadashi (June 11):</strong> A rare window during the Adhika Maas finale. It is believed to dissolve deeply accumulated sins and improve spiritual progress.</li>
+<li><strong>Nirjala Ekadashi (June 25):</strong> The "waterless" fast. Legend tells that Bhima observed this single fast to gain the benefits of all 24 annual Ekadashis. It is the most powerful purification day of the year.</li>
+<li><strong>Vat Purnima Vrat &amp; Jyeshtha Purnima (June 29):</strong> Married women worship the Banyan tree for family longevity. Jyeshtha Purnima is critical for <em>Tarpan</em> and worshipping Goddess Lakshmi for prosperity.</li>
+</ul>
+<p>&#8212;</p>
+<h2>Practical Remediation and the Power of Daan (Charity)</h2>
+<h3>Categorized Remedies</h3>
+<ul>
+<li><strong>Vedic Mantra Mastery:</strong> Recite the Bhauma (Mars) Beej Mantra (<em>Om Kraam Kreem Kraum Sah Bhaumaya Namah</em>). For the Kaliyuga era, the required count is <strong>40,000</strong> ($10,000 \times 4$). To complete the ritual, perform a <strong>Homa (Fire Ritual)</strong> for 1/10th of the count (<strong>4,000 recitations</strong>).</li>
+<li><strong>Lal Kitab Warnings:</strong></li>
+<li>Ensure boiling milk does not spill; in Lal Kitab, this symbolizes a volatile loss of control over one's anger.</li>
+<li>Carry a red handkerchief or consume honey daily to anchor the Mars energy.</li>
+<li><strong>Daan (Charity):</strong></li>
+<li><strong>Anna Daan:</strong> Feeding sadhus satisfies ancestors and clears generational debt.</li>
+<li><strong>Gau Seva:</strong> Offering green grass to cows pleases Lord Shiva.</li>
+<li><strong>Mandir Nirman:</strong> Sponsoring construction materials—specifically <strong>pink stone, TMT steel bars, or tiles</strong>—for the Shri Ram Temple Kamarpal generates merit that protects your family for generations.</li>
+</ul>
+<p>&#8212;</p>
+<h2>Conclusion: Mastering the Transition</h2>
+<p>June 2026 is a journey of internal alchemy. We begin in the "Stealth Mode" of the Purushottam Maas finale, move through the intellectual awakening of Mithuna Sankranti, and culminate as Mars enters Taurus on <strong>June 21, 12:07 AM IST</strong>.</p>
+<p>Because Mars remains in direct motion throughout 2026, this transition opens a linear, uninterrupted window for financial and personal growth. By honoring the "friction" of the Sandhi phase now, you set a stable foundation for the prosperous months ahead.</p>
+<h3>At-a-Glance Takeaways (June 15–20 Window)</h3>
+<ul>
+<li>[ ] <strong>June 15 (Morning):</strong> Perform holy bath and <em>Rin Mukti</em> prayers to dissolve debt.</li>
+<li>[ ] <strong>June 15 (Afternoon):</strong> Observe Maha Punya Kala (<strong>12:59–3:19 PM</strong>) with charity or mantra.</li>
+<li>[ ] <strong>June 15–17:</strong> Observe Raja Parba; honor the Earth by suspending all digging or plowing.</li>
+<li>[ ] <strong>Daily:</strong> Use lavender or sandalwood olfactory therapy to ground the Mars-Aries tension.</li>
+<li>[ ] <strong>Remedy:</strong> Ensure milk does not spill while boiling to maintain emotional control.</li>
+<li>[ ] <strong>Mantra:</strong> Begin the 40,000-count Mars Beej Mantra to prepare for the June 21 ingress.</li>
+</ul>
+
+<div class="references">
+<h2>Sources</h2>
+<ol>
+<li><a href="https://www.astroyogi.com/panchang/tithi/amavasya-in-june">Amavasya in June 2026: Date, Time, Rituals And Significance May ...</a></li>
+<li><a href="https://www.shriramtemple.org.in/news/details/somvati-amavasya-2026">Somvati Amavasya 2026 – Donate for Daan, Seva &amp; Blessings</a></li>
+<li><a href="https://m.economictimes.com/astrology/others/june-2026-hindu-festivals-parama-ekadashi-mithuna-sankranti-nirjala-ekadashi-jyeshtha-purnima-dates-timings-and-significance/articleshow/131408269.cms">June 2026 Hindu Festivals: Parama Ekadashi, Mithuna Sankranti, Nirjala Ekadashi &amp; Jyeshtha Purnima Dates, Timings and Significance - The Economic Times</a></li>
+<li><a href="https://www.starstell.com/blog/jyeshtha-adhika-amavasya-june-2026-significance-and-remedies/">Jyeshtha Adhika Amavasya June 2026 Significance and remedies - StarsTell</a></li>
+<li><a href="https://www.myzodiaq.in/en/online-library/yog-and-dasha/mars-transit-2026/mars-transit-taurus">Mars Transit in Taurus: Entry on June 21, 2026 - ZODIAQ</a></li>
+<li><a href="https://bhaktimay.in/pujas/rin-mukti-puja-and-shiv-rudrabhishek">Rin Mukti Puja and Shiv Rudrabhishek - Bhaktimay</a></li>
+<li><a href="https://www.omspiritualshop.com/blogs/news/mithuna-sankranti-2026-date-rituals-significance">Mithuna Sankranti 2026: Date, Rituals &amp; Significance - Om Spiritual Shop</a></li>
+<li><a href="https://www.moonomens.com/mars-in-taurus-2026/">Mars in Taurus 2026: Building with Intention - Moon Omens</a></li>
+<li><a href="https://www.shriramtemple.org.in/news/details/2026-sankranti-calendar">2026 Sankranti Calendar | Auspicious Dates, Muhurat &amp; Donation Guide</a></li>
+<li><a href="https://astrozindagi.in/horoscope/monthly/taurus/">Taurus June 2026 Horoscope: Financial &amp; Personal Breakthroughs Ahead - Astro Zindagi</a></li>
+<li><a href="https://m.economictimes.com/astrology/horoscope/taurus-june-2026-horoscope-monthly-predictions-what-every-taurus-needs-to-know-before-mid-year-changes-begin/articleshow/131307174.cms">Taurus June 2026 Horoscope, Monthly Predictions: What Every Taurus Needs to Know Before Mid-Year Changes Begin - The Economic Times</a></li>
+<li><a href="https://astrozindagi.in/horoscope/monthly/gemini/">Gemini June 2026 Horoscope: Cosmic Audits &amp; Stealth Success - Astro Zindagi</a></li>
+<li><a href="https://m.economictimes.com/astrology/others/june-2026-planetary-transits-jupiter-venus-mars-mercury/articleshow/131322654.cms">June 2026 Planetary Transits Guide: Dates, Meanings and Zodiac Effects</a></li>
+<li><a href="https://www.astroyogi.com/panchang/tithi/amavasya-dates">Amavasya Dates List in 2026: New Moon Tithis And Timings May 30, 2026, Saturday</a></li>
+<li><a href="https://panchangbodh.com/amavasya-2026">Amavasya Dates and Timings 2026 - PanchangBodh</a></li>
+<li><a href="https://www.ganeshaspeaks.com/festival-calendars/information/mithuna-sankranti-festival/">Mithuna Sankranti 2026: Date, Time &amp; Significance - GaneshaSpeaks</a></li>
+<li><a href="https://www.poojakaro.app/blog/amavasya-kab-hai-2026-mein">Amavasya Kab Hai? 2026 Mein Amavasya Ki Tithi, Mahatva aur Puja Vidhi - PoojaKaro</a></li>
+<li><a href="https://lastridefuneral.in/blog/amavasya-2026/">Amavasya 2026 Calendar: Tithi, Dates, Puja Vidhi &amp; Mahatva - Last Ride Funeral</a></li>
+<li><a href="https://giri.in/blogs/blog/the-dark-moon-amavasya-2026">The Dark Moon: Amavasya 2026 - GIRI</a></li>
+<li><a href="https://timesofindia.indiatimes.com/religion/rituals-puja/amavasya-2026-date-timings-rituals-and-significance/articleshow/126557686.cms">Amavasya 2026: Date, Timings, Rituals and Significance | - The Times of India</a></li>
+<li><a href="https://myratna.com/blog/mangal-mars-transit-2026-date-time/">Mars Transit 2026 | Mangal Gochar Date, Time, Effects and Remedies - MyRatna</a></li>
+<li><a href="https://astrostyle.com/mars-in-taurus-transit-horoscopes/">Mars in Taurus 2026: Be Productive, But Make It Pleasurable | The AstroTwins</a></li>
+<li><a href="https://www.youtube.com/watch?v=E0bKkfUuf1I">Mars in Taurus 2026: Deliberate Action Over Impulsive Instinct + Horoscopes for All 12 Rising Signs - YouTube</a></li>
+<li><a href="https://www.anytimeastro.com/vrats/sankranti/">Sankranti Dates 2026 | Sankranti Vrat puja vidhi and benefits - Anytime Astro</a></li>
+<li><a href="https://testbook.com/news/bank-holidays-in-june-2026/">Bank Holidays in June 2026, Complete List, Schedule and Services - Testbook</a></li>
+<li><a href="https://astropatri.com/video/mars-in-aries-2026-these-zodiac-signs-will-benefit-the-most">Mars in Aries 2026: These Zodiac Signs Will Benefit the Most! | Astropatri.com</a></li>
+<li><a href="https://astrozindagi.in/transit/mars-transit/mars-transit-in-aries-2026-career-boom/">Mars Transit in Aries 2026: These 3 Zodiac Signs Are Set for a Career Explosion</a></li>
+<li><a href="https://www.jessicaadams.com/2026/03/01/blog/mars-and-chiron-in-aries/">Mars and Chiron in Aries 2026 • Jessica Adams: Psychic Astrologer</a></li>
+<li><a href="https://www.astronupur.com/simple-remedies-to-please-all-planets-the-right-way/">Simple Remedies To Please All Planets The Right Way - Astro Nupur</a></li>
+<li><a href="https://www.divine-rudraksha.com/pages/remedies-of-planet-mars-as-per-vedic-astrology">Remedies of planet Mars as per Vedic Astrology - Divine Rudraksha</a></li>
+<li><a href="https://www.rudraksha-center.com/pages/remedial-measures-for-planet-mars-as-per-lal-kitab">Remedial Measures for planet Mars as per Lal Kitab - Rudraksha Center</a></li>
+<li><a href="https://www.scribd.com/document/136870364/Mantras-and-Remedies-for-the-Nine-Planets">Mantras for Planetary Remedies | PDF - Scribd</a></li>
+<li><a href="https://www.nssgclub.com/en/astro/45599/june-2026-horoscope-transits-predictions">June 2026 Horoscope: planetary transits and zodiac sign predictions - nss G-Club</a></li>
+<li><a href="https://www.udayfoundation.org/amavasya/">2026 Amavasya Dates | Donate Food to the Needy - Uday Foundation</a></li>
+<li><a href="https://marathicalendar.com/">Kalnirnay 2026 Marathi Calendar Free - मराठी कालनिर्णय 2026 PDF Download - Marathi Calendar</a></li>
+<li><a href="https://www.sannyasapeeth.net/sankranti.php">Welcome to Sannyasa Peeth - Monthly Programs - Sankranti</a></li>
+<li><a href="https://www.yourtango.com/zodiac/life-better-zodiac-signs-mars-taurus-may-18-june-28-2026">Mars In Taurus Makes Life Better For 6 Zodiac Signs From Now Until June 28 - YourTango</a></li>
+<li><a href="https://www.udayfoundation.org/2026-hindu-festivals-calendar/">2026 Hindu Festivals Calendar: Significance, Charity and Anna Daan - Uday Foundation</a></li>
+<li><a href="https://astropatri.com/festivals">Hindu Festivals: Dates, Significance &amp; Festival Calendar | Astropatri.com</a></li>
+<li><a href="https://legiscan.com/MA/bill/H1334/2025">MA H1334 | 2025-2026 | 194th General Court - LegiScan</a></li>
+<li><a href="https://www.fortworth.com/event/billy-ray-cyrus/40952/">Billy Ray Cyrus - Fort Worth</a></li>
+<li><a href="https://web.cvent.com/event/55571eec-1ee1-4484-97e4-ba97eb08591c/summary">Connect Barbados 2026. Online registration by Cvent</a></li>
+<li><a href="https://www.bankbazaar.com/indian-holiday/makar-sankranti-holiday.html">Makar Sankranti 2026 - Know the Date, Significance &amp; Traditions - BankBazaar</a></li>
+<li><a href="https://www.scribd.com/document/340069035/Mantra-Remedies-for-the-Nine-Planets-Sun-Moon-Mars-Mercury-Jupiter-Venus-Saturn-Rahu-and-Ke">Mantra Remedies For The Nine Planets - Sun - Moon - Mars - Mercury - Jupiter - Venus - Saturn - Rahu and Ke | PDF | Mantra | Tantra - Scribd</a></li>
+<li><a href="https://www.astrologerumesh.com/aries-zodiac-sign/aries-remedies-and-useful-tips/">Know Aries Remedies And Useful Tips - Astrologer Umesh</a></li>
+</ol>
+</div>
+        </article>
+    </div>
+
+</body>
+</html>

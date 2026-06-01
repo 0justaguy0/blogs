@@ -82,23 +82,46 @@
         }
 
         ul, ol {
-            list-style: none;
+            margin: 0 0 24px 0;
             padding-left: 0;
         }
 
+        ul {
+            list-style: none;
+        }
+
+        ol {
+            list-style-position: outside;
+            padding-left: 2.2em;
+        }
+
         ul li, ol li {
-            position: relative;
-            padding-left: 30px;
             margin-bottom: 15px;
             font-size: 1.1em;
         }
 
-        ul li::before, ol li::before {
+        ul li {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        ol li {
+            padding-left: 0.35em;
+        }
+
+        ul li::before {
             content: '\2022';
             position: absolute;
             left: 0;
+            top: 0.05em;
             color: var(--indian-orange);
             font-size: 1.2em;
+            line-height: 1;
+        }
+
+        ol li::marker {
+            color: var(--indian-orange);
+            font-weight: bold;
         }
 
         strong {
