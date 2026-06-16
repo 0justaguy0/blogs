@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>जगन्नाथ रथ यात्रा उपाय</title>
+    <style>
+        :root {
+            --bg-color: #FDF9F1;
+            --text-color: #3E2723;
+            --indian-yellow: #E4A025;
+            --indian-orange: #E65100;
+            --accent-light: #FFECB3;
+            --ref-bg: #FFF3E0;
+        }
+
+        body {
+            font-family: 'Georgia', 'Nirmala UI', 'Mangal', serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(var(--bg-color) 80%, var(--accent-light) 100%);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #FFFFFF;
+            padding: 50px 60px;
+            box-shadow: 0 10px 30px rgba(62, 39, 35, 0.1);
+            border-top: 8px solid var(--indian-orange);
+            border-bottom: 8px solid var(--indian-yellow);
+            border-radius: 4px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed var(--indian-yellow);
+        }
+
+        h1 {
+            color: var(--indian-orange);
+            font-size: 2.5em;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        h2 {
+            color: var(--indian-yellow);
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--indian-orange);
+            padding-left: 15px;
+        }
+
+        h3, h4 {
+            color: var(--indian-orange);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        .intro-text::first-letter {
+            float: left;
+            font-size: 3.5em;
+            line-height: 0.8;
+            padding-right: 8px;
+            padding-top: 4px;
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        ul, ol {
+            margin: 0 0 24px 0;
+            padding-left: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ol {
+            list-style-position: outside;
+            padding-left: 2.2em;
+        }
+
+        ul li, ol li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        ol li {
+            padding-left: 0.35em;
+        }
+
+        ul li::before {
+            content: '\2022';
+            position: absolute;
+            left: 0;
+            top: 0.05em;
+            color: var(--indian-orange);
+            font-size: 1.2em;
+            line-height: 1;
+        }
+
+        ol li::marker {
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        strong {
+            color: var(--indian-orange);
+        }
+
+        .image-placeholder-container {
+            margin: 30px 0;
+            text-align: center;
+            font-style: italic;
+            color: #795548;
+            background-color: var(--accent-light);
+            padding: 20px;
+            border-radius: 4px;
+            border: 1px solid var(--indian-yellow);
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.98em;
+            background-color: #FFFDF8;
+        }
+
+        th, td {
+            border: 1px solid #F0D49B;
+            padding: 10px 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--ref-bg);
+            color: var(--indian-orange);
+        }
+
+        blockquote {
+            margin: 30px 0;
+            padding: 20px 25px;
+            background-color: var(--accent-light);
+            border-left: 5px solid var(--indian-orange);
+            font-style: italic;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px dashed var(--indian-yellow);
+            margin: 32px 0;
+        }
+
+        .references {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: var(--ref-bg);
+            border-radius: 8px;
+            font-size: 0.9em;
+        }
+
+        .references h2, .references h3 {
+            color: var(--text-color);
+            margin-top: 0;
+            border-bottom: 1px solid var(--indian-yellow);
+            padding-bottom: 10px;
+            border-left: 0;
+            padding-left: 0;
+        }
+
+        .references p, .references li {
+            margin-bottom: 12px;
+            word-wrap: break-word;
+        }
+
+        .references a {
+            color: var(--indian-orange);
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>जगन्नाथ रथ यात्रा उपाय</h1>
+        </header>
+
+        <article>
+<p class="intro-text">जगन्नाथ रथ यात्रा केवल एक धार्मिक उत्सव नहीं, बल्कि मानवीय संवेदनाओं, भक्ति की पराकाष्ठा और आत्मा के परमात्मा से मिलन का एक जीवंत महापर्व है। साल 2026 की रथ यात्रा हमें एक बार फिर उस दिव्य क्षण का साक्षी बनने के लिए आमंत्रित कर रही है, जब ब्रह्मांड के स्वामी, महाप्रभु जगन्नाथ, अपने मंदिर के गर्भगृह की सीमाओं को तोड़कर स्वयं अपने भक्तों से मिलने सड़कों पर आते हैं। यह महापर्व इस सत्य को उद्घाटित करता है कि भगवान केवल मंदिर की मूर्तियों में नहीं, बल्कि अपने भक्तों के अटूट प्रेम और विश्वास में वास करते हैं। यह यात्रा विरह के आंसुओं से शुरू होकर पुनर्मिलन के परमानंद तक का एक ऐसा सफर है, जो जाति, धर्म और वर्ण की सीमाओं को मिटाकर मानवता को एकता के सूत्र में पिरोता है।</p>
+<div class="image-placeholder-container">
+    <img src="blog34_Image.png" alt="जगन्नाथ रथ यात्रा उपाय, तीन रथ, स्नान यात्रा, गुण्डिचा मंदिर, भक्त, समर्पण, पारिवारिक उपचार और पुरी बड़ा दांडा">
+</div>
+<h3>महत्वपूर्ण तिथियां और कैलेंडर: 2026-2027</h3>
+<p>आगामी महोत्सवों की योजना बनाने हेतु वर्ष 2026 और 2027 के मुख्य कार्यक्रमों की तालिका नीचे दी गई है। श्रद्धालु इन पवित्र तिथियों के अनुसार अपनी आध्यात्मिक उपस्थिति सुनिश्चित कर सकते हैं:</p>
+<table>
+<thead><tr><th>मुख्य कार्यक्रम</th><th>तिथि</th><th>दिन</th></tr></thead>
+<tbody>
+<tr><td><strong>स्नान यात्रा (Snana Yatra/Gajanana Besha)</strong></td><td>29 जून 2026</td><td>सोमवार</td></tr>
+<tr><td><strong>नेत्रोत्सव एवं नवयौवन दर्शन (Netrotsab/Nabajaubana)</strong></td><td>14 जुलाई 2026</td><td>मंगलवार</td></tr>
+<tr><td><strong>श्री जगन्नाथ रथ यात्रा (Rath Yatra)</strong></td><td>16 जुलाई 2026</td><td>गुरुवार</td></tr>
+<tr><td><strong>हेरा पंचमी (Hera Panchami)</strong></td><td>20 जुलाई 2026</td><td>सोमवार</td></tr>
+<tr><td><strong>बहुड़ा यात्रा (Bahuda Yatra)</strong></td><td>24 जुलाई 2026</td><td>शुक्रवार</td></tr>
+<tr><td><strong>सुना बेश (Suna Besha)</strong></td><td>25 जुलाई 2026</td><td>शनिवार</td></tr>
+<tr><td><strong>अधर पाना (Adhara Pana)</strong></td><td>26 जुलाई 2026</td><td>रविवार</td></tr>
+<tr><td><strong>नीलाद्रि बिजे (Niladri Bije)</strong></td><td>27 जुलाई 2026</td><td>सोमवार</td></tr>
+<tr><td><strong>मकर बेढ़ा (Makar Bedha - 2027)</strong></td><td>14 जनवरी 2027</td><td>गुरुवार</td></tr>
+<tr><td><strong>पद्म मुख वेश (Padma Mukha Besha - 2027)</strong></td><td>10 फरवरी 2027</td><td>बुधवार</td></tr>
+<tr><td><strong>डोल यात्रा (Dola Yatra - 2027)</strong></td><td>22 मार्च 2027</td><td>सोमवार</td></tr>
+</tbody>
+</table>
+<p>&#8212;</p>
+<h3>तीन भव्य रथ: आस्था के वाहन</h3>
+<p>पुरी की सड़कों पर जब तीन विशाल रथ चलते हैं, तो वह दृश्य अद्भुत होता है। ये रथ केवल काष्ठ के ढांचे नहीं, बल्कि दिव्य ऊर्जा के केंद्र हैं, जिनका निर्माण प्रतिवर्ष अक्षय तृतीया से शुरू होता है। इन रथों का तकनीकी और आध्यात्मिक विवरण इस प्रकार है:</p>
+<ol>
+<li><strong>नंदीघोष (भगवान जगन्नाथ का रथ):</strong></li>
+</ol>
+<ul>
+<li><strong>ऊंचाई:</strong> 45 फीट</li>
+<li><strong>पहियों की संख्या:</strong> 16</li>
+<li><strong>काष्ठ खंड (Wood Pieces):</strong> 763 टुकड़े</li>
+<li><strong>रंग और ध्वज:</strong> लाल और पीला कपड़ा; ध्वज का नाम 'गरुड़' (कपिलध्वज) है।</li>
+<li><strong>सारथी और अश्व:</strong> इसके सारथी 'दारुक' हैं और चार सफेद घोड़े (शंख, बलाहक, श्वेता और हरिदश्व) इसे खींचते हैं।</li>
+</ul>
+<ol>
+<li><strong>तालध्वज (भगवान बलभद्र का रथ):</strong></li>
+</ol>
+<ul>
+<li><strong>ऊंचाई:</strong> 43 फीट</li>
+<li><strong>पहियों की संख्या:</strong> 14</li>
+<li><strong>काष्ठ खंड (Wood Pieces):</strong> 763 टुकड़े</li>
+<li><strong>रंग और ध्वज:</strong> लाल और नीला/हरा कपड़ा; ध्वज का नाम 'उनानी' (ताला) है।</li>
+<li><strong>सारथी और अश्व:</strong> इसके सारथी 'मातलि' हैं और चार काले घोड़े (तीब्रा, घोरा, दीर्घशर्मा और स्वर्णनवा) इसमें जुते होते हैं।</li>
+</ul>
+<ol>
+<li><strong>दर्पदलन (देवी सुभद्रा का रथ):</strong></li>
+</ol>
+<ul>
+<li><strong>ऊंचाई:</strong> 42 फीट 3 इंच</li>
+<li><strong>पहियों की संख्या:</strong> 12</li>
+<li><strong>काष्ठ खंड (Wood Pieces):</strong> 593 टुकड़े</li>
+<li><strong>रंग और ध्वज:</strong> लाल और काला कपड़ा; ध्वज का नाम 'नदम्बिका' (पद्म ध्वज) है।</li>
+<li><strong>सारथी और अश्व:</strong> इसके सारथी 'अर्जुन' हैं और चार लाल घोड़े (रोचिका, मोचिका, जिता और अपराजिता) रथ का वहन करते हैं।</li>
+</ul>
+<p>&#8212;</p>
+<h3>स्नान पूर्णिमा से अणासर तक: विरह का मनोविज्ञान</h3>
+<p>29 जून 2026 को होने वाली <strong>स्नान पूर्णिमा</strong> रथ यात्रा की आध्यात्मिक प्रस्तावना है। इस दिन 'सूना कुआ' (सुनहरे कुएं) से लाए गए पवित्र जल के 108 कलशों से भगवान का अभिषेक किया जाता है। शास्त्रों के अनुसार, भगवान जगन्नाथ के लिए 35, बलभद्र के लिए 33, सुभद्रा के लिए 22 और सुदर्शन चक्र के लिए 18 कलशों का उपयोग होता है। स्नान के पश्चात भगवान 'हाथी वेश' (Gajanana Besha) धारण करते हैं।</p>
+<p><strong>अणासर (Anavasara) और विप्रलंभ भाव:</strong> अत्यधिक स्नान के कारण मान्यता है कि भगवान को 'ज्वर' (बुखार) आ जाता है, जिसके कारण वे 15 दिनों के लिए एकांतवास में चले जाते हैं। वैदिक मनोविज्ञान के अनुसार, यह काल 'सत्त्व' गुणों के संवर्धन का समय है। जब भगवान अणासर के कक्ष में होते हैं, तब भक्तों के हृदय में जो व्याकुलता उत्पन्न होती है, उसे <strong>'विप्रलंभ-भाव'</strong> (Vipralambha-bhava) या विरह की भक्ति कहा जाता है। यह समय हमें सिखाता है कि कभी-कभी परमात्मा से भौतिक दूरी, हमारे आंतरिक प्रेम को और अधिक प्रगाढ़ कर देती है। 14 जुलाई 2026 को <strong>'नेत्रोत्सव'</strong> और <strong>'नवयौवन दर्शन'</strong> के साथ भगवान पुनः स्वस्थ होकर भक्तों को दर्शन देते हैं, जो आत्मा के पुनरुद्धार का प्रतीक है।</p>
+<p>&#8212;</p>
+<h3>शोक से शांति: भगवद गीता का मार्गदर्शन</h3>
+<p>जीवन में अपनों को खोने का दुख अक्सर भक्तों को विचलित कर देता है। रथ यात्रा का यह 'विरह काल' और गीता का ज्ञान हमें शोक से शांति की ओर ले जाता है। स्वामी मुकुंदानंद जी के मार्गदर्शन में हम समझते हैं कि दुख परमात्मा से जुड़ने का एक माध्यम है।</p>
+<ul>
+<li><strong>अस्त होते सूर्य की उपमा:</strong> जिस प्रकार हम सूर्य के अस्त होने पर शोक नहीं मनाते क्योंकि हमें विश्वास है कि वह पुनः उदय होगा, वैसे ही मृत्यु केवल एक परिवर्तन है। गीता (2.13/2.20) के अनुसार, आत्मा न कभी जन्म लेती है और न कभी मरती है; वह केवल पुराने वस्त्र (शरीर) त्याग कर नए धारण करती है।</li>
+<li><strong>दुख का रूपांतरण:</strong> रथ यात्रा हमें बोध कराती है कि अलगाव केवल अस्थायी है। जब हम यह स्वीकार कर लेते हैं कि हमारे प्रियजन की आत्मा अमर है, तो हमारा शोक 'शांति' और 'स्वीकार्यता' में बदल जाता है। यह उत्सव हमें अपने दुखों को भगवान के चरणों में समर्पित (Surrender) करने की शक्ति देता है।</li>
+</ul>
+<p>&#8212;</p>
+<h3>मुख्य अनुष्ठान और परंपराएं</h3>
+<p>रथ यात्रा की प्रत्येक परंपरा समानता और निस्वार्थ प्रेम का संदेश देती है:</p>
+<ul>
+<li><strong>छेरा पहरा:</strong> पुरी के गजपति राजा स्वयं एक साधारण सेवक की तरह सोने की झाड़ू से रथों के मंडप को साफ करते हैं। यह अनुष्ठान इस सत्य को प्रतिपादित करता है कि ईश्वर की दृष्टि में पद और प्रतिष्ठा का कोई मूल्य नहीं है; केवल सेवा भाव ही श्रेष्ठ है।</li>
+<li><strong>हेरा पंचमी:</strong> यात्रा के पांचवें दिन (20 जुलाई 2026), माता लक्ष्मी विरह और क्रोध के वशीभूत होकर गुंडिचा मंदिर पहुंचती हैं और प्रतीकात्मक रूप से नंदीघोष रथ का एक हिस्सा तोड़ देती हैं। यह मानवीय संबंधों की मधुर नोक-झोंक और प्रेम के अधिकार को दर्शाता है।</li>
+<li><strong>पोड़ा पीठा:</strong> 24 जुलाई 2026 को <strong>बहुड़ा यात्रा</strong> (वापसी यात्रा) के दौरान, भगवान का रथ अपनी 'मौसी मां' के मंदिर पर रुकता है। यहाँ उन्हें चावल और गुड़ से बना विशेष 'पोड़ा पीठा' भोग लगाया जाता है, जो पारिवारिक संबंधों की प्रगाढ़ता का प्रतीक है।</li>
+</ul>
+<p>&#8212;</p>
+<h3>नीलाद्रि बिजे: विरह का मधुर अंत</h3>
+<p>27 जुलाई 2026 को <strong>नीलाद्रि बिजे</strong> के दिन भगवान जगन्नाथ अंततः अपने मुख्य मंदिर में लौटते हैं। लेकिन यहाँ माता लक्ष्मी, जो विरह में क्रोधित थीं, मंदिर के द्वार बंद कर देती हैं। इस क्षण <strong>'भेंट मंडप'</strong> पर एक अत्यंत सुंदर संवाद होता है।</p>
+<p>भगवान जगन्नाथ अपनी अर्धांगिनी का क्रोध शांत करने के लिए उन्हें <strong>'रसगुल्ला'</strong> और <strong>'पट्टा साड़ी'</strong> भेंट करते हैं। यह संपूर्ण विश्व में एकमात्र दिन है जब मंदिर में रसगुल्ले का भोग लगाया जाता है। जैसे ही माता लक्ष्मी रसगुल्ले की मिठास और भगवान के समर्पण से पिघलती हैं, मंदिर के द्वार खुल जाते हैं और भगवान पुनः <strong>'रत्न सिंहासन'</strong> (Ratna Singhasana) पर विराजमान होते हैं। यह परंपरा हमें सिखाती है कि अहंकार का त्याग और मधुर व्यवहार कठिन से कठिन अवरोधों को भी दूर कर सकता है।</p>
+<p>&#8212;</p>
+<h3>यात्रियों के लिए सुझाव और निष्कर्ष</h3>
+<p>यदि आप 2026 की इस पावन यात्रा में शामिल होने पुरी आ रहे हैं, तो इन सुझावों को अपनी चेकलिस्ट में शामिल करें:</p>
+<ul>
+<li><strong>परिवहन और आवास:</strong> पुरी, भुवनेश्वर हवाई अड्डे (BBI) से लगभग 60 किलोमीटर दूर है। यदि आप समूह में यात्रा कर रहे हैं, तो 'टेंपो ट्रैवलर' (Tempo Traveller) बुक करना आरामदायक विकल्प है। भारी भीड़ के कारण रहने की व्यवस्था कम से कम 3-4 महीने पहले कर लें।</li>
+<li><strong>स्वास्थ्य सावधानी:</strong> जुलाई में ओडिशा में मानसून सक्रिय रहता है। अपने साथ छाता, रेनकोट और आवश्यक दवाइयां अवश्य रखें। निर्जलीकरण (Dehydration) से बचने के लिए स्वच्छ जल पीते रहें।</li>
+<li><strong>सुरक्षा:</strong> भीड़भाड़ वाले क्षेत्रों में कीमती सामान लाने से बचें और स्थानीय प्रशासन के निर्देशों का पालन करें।</li>
+</ul>
+<p><strong>निष्कर्ष:</strong> जगन्नाथ रथ यात्रा केवल काष्ठ के रथों का संचलन नहीं है, बल्कि अपने हृदय के रथ को भक्ति के मार्ग पर ले जाने का प्रयास है। यह महापर्व हमें सिखाता है कि जीवन में दुख और विरह केवल 'अणासर' की भांति अस्थायी हैं, और पूर्ण समर्पण ही शाश्वत आनंद का मार्ग है। आइए, 2026 की इस पावन बेला में हम भी अपनी आत्मा को जगन्नाथ की भक्ति में विलीन करें और उस सार्वभौमिक प्रेम का अनुभव करें जो विरह से शुरू होकर परम आनंद पर समाप्त होता है।</p>
+<p><strong>जय जगन्नाथ!</strong></p>
+
+<div class="references">
+<h2>Sources</h2>
+<ol>
+<li><a href="https://www.jagannathtemplekolkata.org/festivalcalendar.html">Festival Calendar for 2026-2027 Sri Jagannath Seva Samiti, Kidderpore, Kolkata-700023, Phone: (033)24591500</a></li>
+<li><a href="https://iskconvrindavan.com/blog/snana-yatra">Snana Yatra 2026: The Sacred Bathing Festival of Lord Jagannath - ISKCON Vrindavan</a></li>
+<li><a href="https://www.etvbharat.com/en/!offbeat/niladri-bije-when-lord-jagannath-pacifies-goddess-lakshmi-with-rasagola-to-get-entry-inside-puri-srimandir-enn25070803397">Niladri Bije: When Lord Jagannath Pacifies Goddess Lakshmi With Rasagola To Get Entry Inside Puri Srimandir - ETV Bharat</a></li>
+<li><a href="https://jkyog.in/en/wisdom/blog/grief-to-grace-vedic-wisdom-helps-heal">Wisdom - From Grief to Grace: How Vedic Wisdom ... - JKYog India</a></li>
+<li><a href="https://ayusha.com.au/vedic-counselling">Vedic Counselling – Emotional Healing &amp; Life Guidance — Ayusha Ayurveda and Lymphatic Massage Therapies Newcastle &amp; Bondi</a></li>
+<li><a href="https://www.odishanewstimes.com/2023/07/01/niladri-bije-the-story-behind-rasagola-and-how-maa-lakshmi-is-pacified/">Niladri Bije :The story behind Rasagola and how Maa Lakshmi is pacified</a></li>
+<li><a href="https://www.radhakrishnatemple.net/blog/how-to-deal-with-loss-of-a-loved-one-wisdom-from-the-bhagavad-gita/">Grief and Healing Through the Bhagavad Gita&#x27;s Wisdom - Radha Krishna Temple of Dallas</a></li>
+<li><a href="https://trimbakeshwartemplepujari.com/jagannath-puri-rath-yatra/">Jagannath Puri Rath Yatra 2026: A Spiritual Journey Of Devotion - Pandit Milind Guruji</a></li>
+<li><a href="https://www.exoticindiaart.com/article/lord-jagannath-puri-yatra/">Jagannath Puri Rath Yatra 2026: Dates, Rituals and Spiritual Meaning</a></li>
+<li><a href="https://www.indianeagle.com/traveldiary/jagannath-rath-yatra-2026-puri-travel-guide/">Jagannath Rath Yatra 2026 Date, Schedule, and Travel Guide - Indian Eagle</a></li>
+<li><a href="https://shrijagannathmandirdelhi.in/snana-purnima-the-grand-bathing-festival/">Snana Purnima: The Grand Bathing Festival - 56 Bhog Celebration at Shri Jagannath Mandir Thyagraj Nagar, Delhi</a></li>
+<li><a href="https://www.iskconbangalore.org/snana-yatra/">Snana Yatra of Sri Jagannatha, Baladeva and Subhadra - 29 Jun 2026 - ISKCON Bangalore</a></li>
+<li><a href="https://bhaktibharat.org/panchangam/english/6-july-2026-panchang-english-Konark">July 6 2026 Panchangam English Konark | BhaktiBharat tithi nakshatra good time bad time</a></li>
+<li><a href="https://shubhpanchang.in/panchang/porbandar/2026-07-06?lang=en">Porbandar Devshayani Ekadashi 6 July 2026 Panchang - ShubhPanchang</a></li>
+<li><a href="https://egyankosh.ac.in/bitstream/123456789/77480/1/Unit-15.pdf">UNIT 15 INDIAN APPROACHES TO COUNSELLING* 15.1 LEARNING OBJECTIVES 15.2 INTRODUCTION - eGyanKosh</a></li>
+<li><a href="https://www.scribd.com/document/978954274/Application-of-Vedic-Counselling-Techniques-for-Mental-Health-pptx-PDF-Compressed">Vedic Counselling for Mental Health | PDF | Meditation | Mindfulness - Scribd</a></li>
+<li><a href="https://mindspiritcenter.org/how-surrender-can-help-you-heal/">How Surrender Can Help You Heal - Mind &amp; Spirit Counseling Center</a></li>
+<li><a href="https://www.trulytribal.in/post/a-divine-sibling-bond-celebrating-rakhi-with-puri-jagannath-balbhadra-and-subhadra">A Divine Sibling Bond: Celebrating Rakhi with Puri Jagannath, Balbhadra and Subhadra</a></li>
+<li><a href="https://shriprasadam.in/blogs/news/jagannath-balabhadra-subhadra-the-complete-story-of-divine-siblings">Jagannath, Balabhadra &amp; Subhadra The Complete Story of Divine Siblings - Shri Prasadam</a></li>
+<li><a href="https://www.isnapurjagannath.in/deities/maa-subhadra">Maa Subhadra | Sri Jagannath Temple</a></li>
+<li><a href="https://wemy.in/blogs/news/lord-jagannath-balabhadra-subhadra-mythology-legends">The Story of Lord Jagannath, Balabhadra, and Subhadra Mythology and Legends Explained</a></li>
+<li><a href="https://www.youtube.com/watch?v=vthnW_VWf-g">Niladri Bije, A Ritual Of Heavenly Love And Affection Between Lord Jagannath And Goddess Laxmi - YouTube</a></li>
+<li><a href="https://odisha.plus/2019/07/rasagola-the-ritual-offering-at-jagannath-temple/">Rasagola: The Ritual Offering at Jagannath Temple - OdishaPlus</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Jagannath">Jagannath - Wikipedia</a></li>
+<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10357898/">Exploring the Therapeutic Potential of Yoga Philosophy: A Perspective on the Need for Yoga-Based Counselling Program (YBCP) in Common Mental Disorders - PMC</a></li>
+<li><a href="https://www.opentohope.com/surrender-is-first-step-in-spiritual-healing-from-grief/">Surrender is First Step in Spiritual Healing from Grief - Open to Hope</a></li>
+<li><a href="https://iskcondesiretree.com/profiles/blogs/i-thought-vipralambha-seva-is-the-highest-thing-by-kesava-krsna-d">“I Thought Vipralambha-Seva Is The Highest Thing” By Kesava Krsna Dasa - Blog</a></li>
+<li><a href="https://issuu.com/tvpbooks/docs/vipralambha-bava-web">Vipralambha-bhava - The feeling of separation from Krishna - Issuu</a></li>
+<li><a href="https://bhaktivinodainstitute.org/jaiva-dharma-chapter-thirty-seven/">Jaiva Dharma - Chapter Thirty Seven - Bhaktivinoda Institute</a></li>
+<li><a href="https://gaudiyadiscussions.gaudiya.com/topic_3158.html">On separation and union - Sambhoga and vipralambha - gaudiya discussions</a></li>
+<li><a href="https://www.astroyogi.com/festival/hindu-calendar/june">June Festivals 2026: Celebrations, Dates &amp; Significance - Astroyogi</a></li>
+<li><a href="https://www.talkndheal.com/blog-details/vivah-panchang-2026-shubh-vivah-muhrat-aur-tithiyan">विवाह पंचांग 2026: शुभ विवाह मुहूर्त और तिथियाँ | TALKNDHEAL</a></li>
+<li><a href="https://www.drikpanchang.com/">Drik Panchang - online Hindu Almanac and Calendar with Planetary Ephemeris based on Vedic Astrology.</a></li>
+<li><a href="https://www.srimandir.com/panchang/city/agra">Today&#x27;s Panchang agra | Hindu Calendar, Pradosh Kaal Time - Sri Mandir</a></li>
+<li><a href="https://www.selph.com.au/kahuna-lomi-release-and-renewal-massage/">Kahuna Lomi Release and Renewal Massage - Selph Health Studios</a></li>
+<li><a href="https://wyldemoon.co.uk/notes-from-the-universe/2026-retrograde-planetary-forecast/">The 2026 Retrograde and Planetary Forecast to Help You Flow with Cosmic Energy</a></li>
+<li><a href="https://www.almanac.com/content/mercury-retrograde-dates">Mercury Retrograde 2026: Dates, Meaning, and What to Do | The Old Farmer&#x27;s Almanac</a></li>
+<li><a href="https://www.britannica.com/question/When-is-Mercury-in-retrograde-in-2026">When is Mercury in retrograde in 2026? - Britannica</a></li>
+<li><a href="https://www.thegoodtrade.com/features/what-is-mercury-retrograde/">What Is Mercury Retrograde? (Plus 2026 Dates) - The Good Trade</a></li>
+<li><a href="https://consciouscalendars.com/mercury-retrogrades-2026/">The Three Mercury Retrogrades of 2026 - Conscious Calendars</a></li>
+<li><a href="https://www.almanac.com/saturn-retrograde">Saturn Retrograde 2026: Dates, Meaning &amp; Zodiac Sign Guide | Almanac.com</a></li>
+<li><a href="https://www.ijisrt.com/assets/upload/files/IJISRT25NOV043.pdf">Indian Practices for Culturally Relevant E-Mental Health Care for Adolescents - Ijisrt.Com</a></li>
+<li><a href="https://www.soulsensei.in/leader/divya-shakti">Devi Divya Shakti - SoulSensei</a></li>
+<li><a href="https://www.iskconbangalore.org/">Official Website of ISKCON Temple</a></li>
+<li><a href="https://www.bhaktibharat.org/panchangam/english/6-july-2026-panchang-english-Pittsburgh">July 6 2026 Panchangam English Pittsburgh | BhaktiBharat tithi nakshatra good time bad time</a></li>
+<li><a href="https://www.indica.today/quick-reads/jagannaths-niladri-bije-rasagolla-dibasa/">Jagannath&#x27;s Niladri Bije and Rasagolla Dibasa - Indica Today</a></li>
+<li><a href="https://www.mypuritour.com/blog/rath-yatra/">Rath Yatra 2026 - Dates, Timings, Rituals &amp; History - Mypuritour Holidays</a></li>
+<li><a href="https://www.rudraksha-ratna.com/articles/jagannatha-puri-rath-yatra">Jagannath Rath Yatra 2026: Date, Meaning, Story &amp; Significance - Rudraksha Ratna</a></li>
+<li><a href="https://www.ganeshaspeaks.com/festival-calendars/information/jagannath-rath-yatra/">Jagannath Rath Yatra 2026: Date, Time, Rituals &amp; Significance</a></li>
+<li><a href="https://www.youtube.com/watch?v=E-S5Ba51iOk">Guided Meditation: Connect with SPIRIT GUIDES &amp; PAST LOVED ONES for GRIEF. Emotional Release Healing - YouTube</a></li>
+<li><a href="https://ca.finance.yahoo.com/news/heartland-express-inc-declares-regular-213000461.html">Heartland Express, Inc. Declares Regular Quarterly Dividend - Yahoo! Finance Canada</a></li>
+<li><a href="https://www.trumba.com/events-calendar/ne/omaha/omahahappenings">Temple Puja Calendar - Trumba</a></li>
+<li><a href="https://sivanandabahamas.org/program-calendar-2/">Program Calendar &amp; Course Schedule - Sivananda Ashram Yoga Retreat</a></li>
+<li><a href="https://www.indianeagle.com/traveldiary/category/travel/page/153/">Page 153 of 158 - Travel Blog | Travel Inspiration, Tips and News | Travel Diary - Indian Eagle</a></li>
+<li><a href="https://biyome.com.au/course-pages/500bpytt/">500BPYTT Advanced Breathwork, Pranayama, Meditation &amp; Yoga Teacher Training</a></li>
+<li><a href="https://www.ganeshaspeaks.com/choghadiya/?geoid=4531405&amp;city=brokenarrow&amp;date=23-06-2026">Today&#x27;s Choghadiya in Brokenarrow Tuesday, 23 June 2026 - GaneshaSpeaks</a></li>
+<li><a href="https://bhaktibharat.org/panchangam/english/6-july-2026-panchang-english-Birgunj">July 6 2026 Panchangam English Birgunj | BhaktiBharat tithi nakshatra good time bad time</a></li>
+<li><a href="https://www.bhaktibharat.org/panchangam/english/6-7-2026-panchang-english-Sunnyvale.html">July 6 2026 Panchangam English Sunnyvale | BhaktiBharat tithi nakshatra good time bad time</a></li>
+<li><a href="https://krishnasmercy.com/2019/05/27/three-ways-to-understand-vipralambha-seva/">Three Ways To Understand Vipralambha-Seva - Krishna&#x27;s Mercy</a></li>
+<li><a href="https://www.namastayz.com.au/about">About - Namastayz Retreats</a></li>
+<li><a href="https://divinesansar.com/blogs/guide/mangal-shani-kaal-sarp-dosh-remedies">Mangal Shani Kaal Sarp Dosh Remedies - Vedic Solutions - Divine Sansar UAE</a></li>
+<li><a href="https://www.britannica.com/question/When-is-Mercury-in-retrograde-in-2026#:~:text=Mercury%20will%20be%20in%20retrograde,October%2024%20to%20November%2013.">Source 63</a></li>
+<li><a href="https://www.almanac.com/venus-retrograde">Venus Retrograde 2026: Dates, Meaning &amp; How It Affects Love, Money, and Relationships</a></li>
+<li><a href="https://www.lifestyleasia.com/hk/astrology/upcoming-retrogrades-of-2026-dates-and-significance/">Upcoming planetary retrogrades of 2026: Key dates and astrological implications - Lifestyle Asia Hong Kong</a></li>
+<li><a href="https://www.bark.com/en/au/b/wild-rhythm-coaching--confidence-mindset-lifestyle-amp-clarity-and-nri-experts--book-your-first-call/ZaGqP/">Wild Rhythm Coaching – Confidence, Mindset, Lifestyle &amp; Clarity and NRI Experts | Book Your Free Initial Call - Bark.com</a></li>
+<li><a href="https://www.zensoul.academy/teacher-training-1-1">Zen Soul Academy - Yog &amp; Meditation Paradise Point, Queensland, Australia</a></li>
+</ol>
+</div>
+        </article>
+    </div>
+
+</body>
+</html>
