@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaturmas Remedies</title>
+    <style>
+        :root {
+            --bg-color: #FDF9F1;
+            --text-color: #3E2723;
+            --indian-yellow: #E4A025;
+            --indian-orange: #E65100;
+            --accent-light: #FFECB3;
+            --ref-bg: #FFF3E0;
+        }
+
+        body {
+            font-family: 'Georgia', 'Nirmala UI', 'Mangal', serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(var(--bg-color) 80%, var(--accent-light) 100%);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #FFFFFF;
+            padding: 50px 60px;
+            box-shadow: 0 10px 30px rgba(62, 39, 35, 0.1);
+            border-top: 8px solid var(--indian-orange);
+            border-bottom: 8px solid var(--indian-yellow);
+            border-radius: 4px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed var(--indian-yellow);
+        }
+
+        h1 {
+            color: var(--indian-orange);
+            font-size: 2.5em;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        h2 {
+            color: var(--indian-yellow);
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--indian-orange);
+            padding-left: 15px;
+        }
+
+        h3, h4 {
+            color: var(--indian-orange);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        .intro-text::first-letter {
+            float: left;
+            font-size: 3.5em;
+            line-height: 0.8;
+            padding-right: 8px;
+            padding-top: 4px;
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        ul, ol {
+            margin: 0 0 24px 0;
+            padding-left: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ol {
+            list-style-position: outside;
+            padding-left: 2.2em;
+        }
+
+        ul li, ol li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        ol li {
+            padding-left: 0.35em;
+        }
+
+        ul li::before {
+            content: '\2022';
+            position: absolute;
+            left: 0;
+            top: 0.05em;
+            color: var(--indian-orange);
+            font-size: 1.2em;
+            line-height: 1;
+        }
+
+        ol li::marker {
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        strong {
+            color: var(--indian-orange);
+        }
+
+        .image-placeholder-container {
+            margin: 30px 0;
+            text-align: center;
+            font-style: italic;
+            color: #795548;
+            background-color: var(--accent-light);
+            padding: 20px;
+            border-radius: 4px;
+            border: 1px solid var(--indian-yellow);
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.98em;
+            background-color: #FFFDF8;
+        }
+
+        th, td {
+            border: 1px solid #F0D49B;
+            padding: 10px 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--ref-bg);
+            color: var(--indian-orange);
+        }
+
+        blockquote {
+            margin: 30px 0;
+            padding: 20px 25px;
+            background-color: var(--accent-light);
+            border-left: 5px solid var(--indian-orange);
+            font-style: italic;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px dashed var(--indian-yellow);
+            margin: 32px 0;
+        }
+
+        .references {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: var(--ref-bg);
+            border-radius: 8px;
+            font-size: 0.9em;
+        }
+
+        .references h2, .references h3 {
+            color: var(--text-color);
+            margin-top: 0;
+            border-bottom: 1px solid var(--indian-yellow);
+            padding-bottom: 10px;
+            border-left: 0;
+            padding-left: 0;
+        }
+
+        .references p, .references li {
+            margin-bottom: 12px;
+            word-wrap: break-word;
+        }
+
+        .references a {
+            color: var(--indian-orange);
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Chaturmas Remedies</h1>
+        </header>
+
+        <article>
+<h2>1. Introduction: The Monsoon Shift</h2>
+<p class="intro-text">As the heat of summer yields to the Indian monsoon, the Vedic calendar undergoes a profound shift toward internal retreat and spiritual fortification. This is <strong>Chaturmas</strong>, the "four months" of the rainy season and early autumn, dedicated to penance (<em>tapasya</em>), heightened devotion, and the cultivation of <em>Sattva</em> (purity). Traditionally, as the external world becomes drenched in rain, the seeker turns inward to build a "spiritual shield."</p>
+<div class="image-placeholder-container">
+    <img src="blog41_Image.png" alt="Chaturmas 2026 remedies and timings: Devshayani Ekadashi start Saturday 25 July 2026 to Devutthana Ekadashi end Friday 20 November 2026, Parana break fast 26 July 05:30 AM to 08:20 AM and 21 November 06:49 AM to 10:21 AM, Tulsi Vivah 21 November 2026, Lord Vishnu Yoga Nidra on Shesha in Ksheer Sagar, Jupiter Guru upayas, Chaturmas vows and tapasya, Ayurveda Varsha Ritucharya, holistic wellbeing">
+</div>
+<p>This transition is governed by <strong>Ritu Sandhi</strong>, the 14-day sensitive window between seasons where the body is most vulnerable. By following Chaturmasic disciplines, we detoxify the body of <em>Ama</em> (metabolic toxins), protect our <em>Agni</em> (digestive fire), and preserve our <em>Ojas</em> (vital energy). It is a time for personal discipline—minimizing sense gratification to maximize our spiritual connection to the Divine.</p>
+<h2>2. Key Dates and the Astronomical Calendar</h2>
+<p>Chaturmas is governed by the lunar cycle, traditionally spanning from the bright eleventh tithi of Ashadha (<strong>Devshayani Ekadashi</strong>) to the bright eleventh tithi of Kartika (<strong>Devutthana Ekadashi</strong>).</p>
+<p><strong>Note for 2026:</strong> This year is unique due to the presence of an <strong>Adhik Maas</strong> (an intercalary or "leap" month) in the Hindu calendar. This extra month shifts the standard calculations and condenses the available windows for material ceremonies. Furthermore, dates may vary based on <strong>Udaya Tithi</strong> (the tithi prevailing at local sunrise) and sectarian differences between Smarta (householder) and Vaishnava (monastic) traditions.</p>
+<table>
+<thead><tr><th>Event</th><th>Tithi Name</th><th>India (IST)</th><th>North America (EST/CST)</th></tr></thead>
+<tbody>
+<tr><td><strong>Chaturmas Start</strong></td><td>Ashadha Shukla Ekadashi</td><td>Saturday, July 25, 2026</td><td>Friday, July 24, 2026</td></tr>
+<tr><td><strong>Parana (Break Fast)</strong></td><td>Dwadashi</td><td>July 26, 2026: 05:30 AM – 08:20 AM</td><td>July 25, 2026: 08:40 AM – 09:10 AM</td></tr>
+<tr><td><strong>Chaturmas End</strong></td><td>Kartika Shukla Ekadashi</td><td>Friday, November 20, 2026</td><td>Friday, November 20, 2026</td></tr>
+<tr><td><strong>Parana (Break Fast)</strong></td><td>Dwadashi</td><td>Nov 21, 2026: 06:49 AM – 10:21 AM</td><td>Nov 21, 2026: Local Sunrise – Mid-morning</td></tr>
+</tbody>
+</table>
+<p><strong>The Sacred Months of Chaturmas 2026:</strong></p>
+<ol>
+<li><strong>Shravana:</strong> (Beginning July 2026)</li>
+<li><strong>Bhadrapada:</strong> (Beginning August 2026)</li>
+<li><strong>Ashvina:</strong> (Beginning September 2026)</li>
+<li><strong>Kartika:</strong> (Beginning October 2026)</li>
+</ol>
+<h2>3. The Divine Slumber: Why Lord Vishnu Rests</h2>
+<p>The metaphysical core of Chaturmas is <strong>Yoga Nidra</strong> (yogic sleep). On Devshayani Ekadashi, Lord Vishnu, the sustainer of the cosmos, withdraws his active, outward energies and enters a deep meditative slumber upon the serpent Shesha in the <em>Ksheer Sagar</em> (Ocean of Milk).</p>
+<p>This tradition is rooted in the legend of <strong>King Bali and Vamana</strong>. After the dwarf-incarnation Vamana reclaimed the universe, the Lord promised to stay at the gate of Bali's kingdom for four months. During this deific repose, the responsibility for cosmic purification shifts to <strong>Lord Shiva</strong>.</p>
+<p><strong>The Mars Connection:</strong> Because Vishnu's active solar force is in rest, auspicious material events like weddings and housewarmings are suspended. Astrologically, this coincides with the sun's southern journey (<em>Dakshinayana</em>), where the "carrier of Mars" (<em>Mangal</em>) lacks full vitality. It is only when Lord Vishnu awakens on Devutthana Ekadashi that <em>Mangal</em>—the planet of drive and constructive action—recovers its full strength, officially reopening the season for marriages and new ventures.</p>
+<h2>4. The Chaturmas Diet: Month-by-Month Restrictions</h2>
+<p>To align the physiology with the inward-drawing cosmic energy, specific food categories are avoided to protect the digestive system.</p>
+<ol>
+<li><strong>Month 1 (Shravana): Shaka Vrata (Leafy Vegetables)</strong></li>
+</ol>
+<ul>
+<li><strong>Forbidden:</strong> Spinach, amaranth, and all other green leafy vegetables (vulnerable to parasites in rains).</li>
+<li><strong>Permitted:</strong> Cabbage, coriander, curry leaves, methi (fenugreek), and mint.</li>
+</ul>
+<ol>
+<li><strong>Month 2 (Bhadrapada): Dadhi Vrata (Yogurt/Curd)</strong></li>
+</ol>
+<ul>
+<li><strong>Forbidden:</strong> Yogurt, buttermilk, lassi, kadi, and pachadi (heavy to digest in high humidity).</li>
+<li><strong>Permitted:</strong> Small quantities (1–2 spoons) for flavoring; <em>Charanamrita</em> containing curd.</li>
+</ul>
+<ol>
+<li><strong>Month 3 (Ashvina): Ksheera Vrata (Milk)</strong></li>
+</ol>
+<ul>
+<li><strong>Forbidden:</strong> Liquid milk, milkshakes, and condensed milk.</li>
+<li><strong>Permitted:</strong> Transformed products like paneer, cheese, and sweets (Peda, Rasagulla) where the milk structure is altered.</li>
+</ul>
+<ol>
+<li><strong>Month 4 (Kartika): Dwidala Vrata (Pulses/Urad Dal)</strong></li>
+</ol>
+<ul>
+<li><strong>Forbidden:</strong> Urad dal (black gram), masur dal (red lentil), and dicotyledonous grains (which are inflammatory/tamasic in this season).</li>
+<li><strong>Permitted:</strong> Simple sattvic grains and non-leguminous preparations.</li>
+</ul>
+<p><em>Note: During major festivals like Krishna Janmashtami, these restrictions are traditionally waived as all food is offered as Prasadam.</em></p>
+<h2>5. The Science of the Soul: Ayurvedic and Physiological Reasoning</h2>
+<p>Vedic wisdom aligns perfectly with Ayurvedic seasonal regimens (<em>Ritucharya</em>). The monsoon (<strong>Varsha Ritu</strong>) and autumn (<strong>Sharad Ritu</strong>) present significant metabolic challenges:</p>
+<ul>
+<li><strong>Weakened Agni:</strong> High humidity and damp winds during the monsoon naturally weaken the digestive fire. Heavy meals during this time create <em>Ama</em> (toxins).</li>
+<li><strong>Dosha Imbalance:</strong> The monsoon aggravates <em>Vata</em>, while the sudden heat of autumn (the "Pitta rebound") causes the inflammatory <em>Pitta dosha</em> to accumulate.</li>
+<li><strong>Pathogen Protection:</strong> Leafy greens are avoided in Shravana because fungus and parasites proliferate on leaves during heavy rains without sufficient sunlight to kill germs.</li>
+<li><strong>Seasonal Transition:</strong> The <em>Ritu Sandhi</em> makes the body prone to infection. Avoiding heavy dairy and fermented foods protects the gut during these humid shifts.</li>
+</ul>
+<h2>6. Spiritual Practices and Daily Sadhana</h2>
+<p>Observing Chaturmas at home involves daily disciplines to refine the mind and strengthen the planet Jupiter (<em>Guru</em>), which governs wisdom.</p>
+<p><strong>Daily Disciplines:</strong></p>
+<ul>
+<li><strong>Early Anchoring:</strong> Wake during <em>Brahma Muhurta</em> (before sunrise) to pray and offer a ghee lamp.</li>
+<li><strong>Mindful Speech:</strong> Avoid <strong>Grama Katha</strong> (frivolous gossip or worldly talk), which dissipates spiritual energy.</li>
+<li><strong>Mantras:</strong> Chant 108 times daily to focus the mind.</li>
+<li><strong>Guru Seed Mantra:</strong> <em>Om Gram Greem Groum Sah Gurave Namah</em> (Phonetic: Om Graam Greem Groum Saha Gur-ah-vay Na-ma-ha)</li>
+<li><strong>Devotional Jupiter Mantra:</strong> <em>Om Brim Brihaspataye Namah</em> (Phonetic: Om Brim Bri-has-pa-ta-ye Na-ma-ha)</li>
+</ul>
+<p><strong>Advanced Vows and Metaphysical Fruits:</strong> For those seeking deeper transformation, the <em>Padma Purana</em> suggests these specific austerities:</p>
+<table>
+<thead><tr><th>The Vow</th><th>Action</th><th>Metaphysical Fruit</th></tr></thead>
+<tbody>
+<tr><td><strong>Abstain from Salt</strong></td><td>No dietary sodium</td><td>Cultivates a sweet, persuasive voice.</td></tr>
+<tr><td><strong>Abstain from Oils</strong></td><td>No cooking oils</td><td>Promotes longevity and vital offspring.</td></tr>
+<tr><td><strong>Abstain from Honey</strong></td><td>No honey</td><td>Increases <em>Ojas</em> and bodily radiance.</td></tr>
+<tr><td><strong>Sleeping on Ground</strong></td><td>Avoid raised beds</td><td>Elevates one to a companion of Vishnu.</td></tr>
+</tbody>
+</table>
+<p><strong>Jupiter (Guru) Upayas:</strong> Wear yellow on Thursdays, perform <em>Guru Seva</em> (serving teachers), and donate yellow items like chana dal, turmeric, and bananas.</p>
+<h2>7. The Grand Awakening: Tulsi Vivah and Devutthana Ekadashi</h2>
+<p>Chaturmas concludes on <strong>November 20-21, 2026</strong>, as Lord Vishnu awakens. This is celebrated through <strong>Tulsi Vivah</strong>, the marriage of the Tulsi plant (Lakshmi) to the Shaligram stone (Vishnu).</p>
+<p><strong>Ritual Guide for the Home:</strong></p>
+<ol>
+<li><strong>The Mandap:</strong> Build a square canopy around a potted Tulsi plant using four sugarcane stalks.</li>
+<li><strong>The Chowkis:</strong> Place Tulsi on a red-clothed platform (bride) and the Shaligram on a yellow-clothed platform (groom).</li>
+<li><strong>Adornment:</strong> Dress Tulsi in a red veil (<em>Chunri</em>). A critical expert detail: Prepare a <strong>Mangalsutra made of turmeric nodes</strong> tied with thread and place it on the Tulsi plant.</li>
+<li><strong>Gathbandhan:</strong> Tie the edge of Tulsi’s veil to the Lord’s yellow cloth with a sacred thread and a handful of rice.</li>
+<li><strong>Kanyadaan:</strong> Perform the symbolic "giving away" by offering sacred rice (<em>Akshat</em>) and <em>Dakshina</em> to the Lord.</li>
+<li><strong>Celebration:</strong> Offer a sattvic feast of sweet roti or kheer as <em>Bhog</em>.</li>
+</ol>
+<h2>8. Conclusion: Takeaways for a Harmonious Year</h2>
+<p>Following the rhythm of Chaturmas offers a holistic path to health and spiritual clarity. By synchronizing your biology with the cosmos, you prepare the soul for the active months ahead.</p>
+<p><strong>Quick-Reference Checklist:</strong></p>
+<ul>
+<li><strong>Select a Vow:</strong> Commit to one dietary restriction or an advanced vow (like avoiding honey or salt) for the full four months.</li>
+<li><strong>Acknowledge the Adhik Maas:</strong> Be aware that 2026 has an intercalary month; ensure your spiritual practices remain consistent through this "extra" sacred time.</li>
+<li><strong>Practice Seva:</strong> Strengthen your <em>Guru</em> energy by supporting a teacher or donating yellow staples every Thursday.</li>
+<li><strong>Respect the Slumber:</strong> Postpone material celebrations until the "Mars Awakening" on November 20, 2026, ensuring your ventures begin with divine and planetary support.</li>
+</ul>
+
+<div class="references">
+<h2>Sources</h2>
+<ol>
+<li><a href="https://www.shriramtemple.org.in/news/details/chaturmas-2026">Chaturmas 2026 Date, Calendar, Tithi &amp; Muhurat | Ekadashi List &amp; Start-End Time</a></li>
+<li><a href="https://bookmypoojaonline.com/blogs/chaturmas-2026-dates-significance-rules-what-to-eat">Chaturmas 2026: Dates, Significance, Rules &amp; Everything You Need to Know</a></li>
+<li><a href="https://vcm.org.in/blog/chaturmasya-tradition-and-rituals">Chaturmasya Tradition and Rituals - Vrindavan Chandrodaya Mandir</a></li>
+<li><a href="https://harekrishnamandir.org/blog/post/chaturmas">Chaturmasa Vrata: Purpose, Fasting Rules, and Significance</a></li>
+<li><a href="https://www.vinaybajrangi.com/festivals/tulsi-vivah.php">Tulsi Vivah 2026: Date, Puja Muhurat, Rituals and Astrology - Dr. Vinay Bajrangi</a></li>
+<li><a href="https://www.astroyogi.com/festival/tulsi-vivah">Tulsi Vivah 2026 Date and Muhurat</a></li>
+<li><a href="https://www.astroyogi.com/panchang/tithi/ekadashi-dates">Ekadashi Tithi 2026 Dates List: Fasting Calendar and Timings June 20, 2026, Saturday</a></li>
+<li><a href="https://timesofindia.indiatimes.com/astrology/planets-transits/how-to-strengthen-jupiter-guru-without-fear-based-remedies/articleshow/131108607.cms">How to strengthen Jupiter (Guru) without fear-based remedies</a></li>
+<li><a href="https://www.ganeshaspeaks.com/festival-calendars/information/devutthana-ekadashi/">Devutthana Ekadashi: The Auspicious Day of Spiritual Devotion</a></li>
+<li><a href="https://ayurvaid.com/ayurveda-concepts/lifestyle-prevention/ritucharya/">Ritucharya in Ayurveda: Seasonal Diet &amp; Lifestyle Guide</a></li>
+<li><a href="https://thenattikabeach.com/blogs/varsha-ritucharya">Varsha Ritucharya | Ayurvedic Rainy Season Guide - The Nattika Beach Resort</a></li>
+<li><a href="https://thakurprasadcalendar.in/">Thakur Prasad Calendar 2026: Hindu Panchang, Festivals &amp; Muhurat - Thakur Prasad Calendar</a></li>
+<li><a href="https://music.youtube.com/podcast/afj2KeIljdw">Brihaspati Beej Mantra: Jupiter Mantra for Wealth &amp; Education - YouTube Music</a></li>
+<li><a href="https://iskcondwarka.org/blogs/first-month-of-caturmasya-begins/">Start of a Sacred Season: First Month of Caturmasya Begins - ISKCON Dwarka</a></li>
+<li><a href="https://prinjal.com/blogs/rudraksha-jewelry/devshayani-ekadashi-meaning-date-time-rituals-puja-everything-you-need-to-know">Devshayani Ekadashi: Meaning, Date, Time, Rituals &amp; Puja - Prinjal Jewels</a></li>
+<li><a href="https://raymondrealty.in/blogs/griha-pravesh-muhurat-2026">Griha Pravesh Muhurat 2026: Month-Wise Dates &amp; Next Auspicious Timings</a></li>
+<li><a href="https://www.rudraksha-ratna.com/articles/devshayani-ekadashi">Devshayani Ekadashi 2026: Date, Vrat, and Ashadhi Ekadashi - Rudraksha Ratna</a></li>
+<li><a href="https://iskcondesiretree.com/page/caturmasya-1">Caturmasya - ISKCON Desire Tree | IDT</a></li>
+<li><a href="https://99pandit.com/blog/ekadashi-vrat-dates-rituals-rules-and-benefits/">Ekadashi Vrat 2026: Dates, Rituals, Rules &amp; Benefits - 99Pandit</a></li>
+<li><a href="https://www.indiatoday.in/information/story/ekadashi-2026-calendar-full-list-of-fasting-dates-2902349-2026-04-27">Ekadashi 2026 calendar: Full list of fasting dates and ritual guide - India Today</a></li>
+<li><a href="https://www.drikpanchang.com/ekadashis/devshayani/devshayani-ekadashi-date-time.html?geoname-id=5152599">2026 Devshayani Ekadashi fasting date for East Cleveland, Ohio, United States - Drik Panchang</a></li>
+<li><a href="https://www.ganeshaspeaks.com/festival-calendars/information/devshayani-ashadi-ekadashi/">Devshayani Ekadashi 2026: Date, Time, Parana &amp; Significance - GaneshaSpeaks</a></li>
+<li><a href="https://www.vinaybajrangi.com/vrat/ekadashi/dev-uthani-ekadashi.php">Dev Uthani Ekadashi 2026 – Date, Significance &amp; Rituals - Dr. Vinay Bajrangi</a></li>
+<li><a href="https://harekrishnamandir.org/ekadasi">ISKCON Ekadashi Calendar, Ekadashi Calendar 2026-2027 - Hare Krishna Mandir</a></li>
+<li><a href="https://www.iskconbangalore.org/blog/chaturmasya/">Chaturmasya 2025 - Official Blog of ISKCON Bangalore</a></li>
+<li><a href="https://www.drikpanchang.com/vrats/ekadashidates.html?geoname-id=5015688">2026 Ekadashi Fasting days for Ypsilanti, Michigan, United States - Drik Panchang</a></li>
+<li><a href="https://panditsnearme.com/blog/ekadashi-dates-2026">Ekadashi 2026: Complete Calendar of All Ekadashi Dates - Pandits Near Me</a></li>
+<li><a href="https://www.rudraksha-ratna.com/articles/tulsi-vivah">Tulsi Vivah 2026: Date, Vidhi, Muhurat, Story, Significance - Rudraksha Ratna</a></li>
+<li><a href="https://www.ganeshaspeaks.com/festival-calendars/information/tulsi-vivah/">Tulsi Vivah 2026: Date, Time, Pooja Vidhi &amp; Vrinda-Vishnu Significance</a></li>
+<li><a href="https://samvat.in/festivals/tulsi-vivah/">Tulsi Vivah 2026: Date, Tithi, Meaning &amp; Calculation</a></li>
+<li><a href="http://aiirjournal.com/uploads/Articles/2025/09/6673_12.Dr.Riddhi%20Sunil%20Kulkarni.pdf">Chaturmas and Ayurvedic Seasonal Regimen - aayushi international interdisciplinary research journal</a></li>
+<li><a href="https://www.dabur.com/blog/ayurvedic-daily-routine/ritucharya">Ritucharya in Ayurveda | Ayurvedic Seasonal Regimen by Dabur</a></li>
+<li><a href="https://sdlindia.com/seasonal-diet-conduct-rutucharya-in-varsha-rutu-monsoon/">Seasonal Diet &amp; Conduct (Rutucharya) in Varsha (वर्षा) Rutu / Monsoon - SDL INDIA</a></li>
+<li><a href="https://jamesbraha.com/planetary-mantras/jupiter-mantra/">Jupiter Mantra - James Braha</a></li>
+<li><a href="https://www.scribd.com/doc/214704715/Jupiter-Mantras">Jupiter Mantras and Brihaspati Stotra | PDF - Scribd</a></li>
+<li><a href="https://rudhvi.in/blogs/news/2026-hindu-fasting-dates-amavasya-purnima-ekadashi-kalashtami">2026 Hindu Fasting Dates: Amavasya, Purnima &amp; Ekadashi Calendar - Rudhvi</a></li>
+<li><a href="https://www.hindustantimes.com/lifestyle/festivals/devshayani-ekadashi-2025-ekadashi-vrat-today-know-the-auspicious-parana-time-shubh-muhurat-puja-rituals-and-more-101751767908371.html">Devshayani Ekadashi 2025: Ekadashi vrat today; know the auspicious parana time, shubh muhurat, puja rituals and more | Hindustan Times</a></li>
+<li><a href="https://www.hindustantimes.com/lifestyle/art-culture/dev-uthani-ekadashi-katha-2024-why-is-it-celebrated-november-shubh-muhurat-puja-vidhi-significance-101731377646328.html">Dev Uthani Ekadashi 2024: Why is it celebrated? - Hindustan Times</a></li>
+<li><a href="https://www.hindustantimes.com/lifestyle/festivals/tulsi-vivah-2024-date-shubh-muhurat-history-significance-rituals-and-all-you-need-to-know-101731391526178.html">Tulsi Vivah 2024: Date, shubh muhurat, history, significance, rituals and all you need to know | Hindustan Times</a></li>
+<li><a href="https://www.radhakrishnatemple.net/blog/tulsi-vivah-2025-story-rituals-significance-mantra">Tulsi Vivah 2025 – Story, Significance, Rituals &amp; How to Celebrate - Radha Krishna Temple of Dallas</a></li>
+<li><a href="https://www.hindustantimes.com/lifestyle/festivals/devshayani-ekadashi-2024-ashadi-ekadashi-today-know-significance-shubh-muhurat-rituals-vrat-timings-parana-time-101721192172759.html">Devshayani Ekadashi 2024: Ashadi Ekadashi today; know significance, shubh muhurat, rituals, vrat timings, parana time | Hindustan Times</a></li>
+<li><a href="https://www.hindustantimes.com/lifestyle/festivals/when-is-tulsi-vivah-2023-date-shubh-muhurat-rituals-significance-and-more-101700633734404.html">When is Tulsi Vivah 2023? Date, shubh muhurat, rituals, significance and more</a></li>
+<li><a href="https://www.drikpanchang.com/">Drik Panchang - online Hindu Almanac and Calendar with Planetary Ephemeris based on Vedic Astrology.</a></li>
+<li><a href="https://www.scribd.com/document/989269917/2026-Drik-Panchang-Hindu-Calendar-v1-0-3">2026 Drik Panchang Hindu Calendar v1.0.3 | PDF - Scribd</a></li>
+<li><a href="https://nityapanchangam.com/festivals/diwali/">Diwali 2026 - Festival of Lights Complete Guide - Nitya Panchangam</a></li>
+<li><a href="https://www.scribd.com/document/359620142/Panchang-Panchangam-for-Minneapolis-Minnesota-United-States">Panchang, Panchangam For Minneapolis, Minnesota, United States | PDF | Lunisolar Calendars | Technical Factors Of Astrology - Scribd</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Ekadashi">Ekadashi - Wikipedia</a></li>
+<li><a href="https://api.substack.com/feed/podcast/3176039/s/171731.rss">Sacred Rituals &amp; Devotion of India by Dharmikvibes - Substack</a></li>
+<li><a href="https://www.shubhpuja.com/festivals/dhantrayodashi">Dhantrayodashi - Online Puja, Havana, Astrology Consultation in Delhi - ShubhPuja</a></li>
+<li><a href="https://99pandit.com/blog/phulera-dooj-date-puja-muhurat-and-significance/">Phulera Dooj 2026: Date, Puja Muhurat &amp; Significance - 99Pandit</a></li>
+<li><a href="https://www.quora.com/What-are-some-powerful-mantras-for-Jupiter">What are some powerful mantras for Jupiter? - Quora</a></li>
+<li><a href="https://mahalaxmicalendar.com.in/july/">महालक्ष्मी जुलै २०२६ कॅलेंडर - Mahalaxmi Calendar July 2026</a></li>
+<li><a href="https://calendarodia.co.in/">Odia Calendar 2026: Kohinoor Calendar PDF Free Download 2026 - Calendar Odia</a></li>
+<li><a href="https://calendarmarathi.co.in/">Marathi Calendar 2026 Free - मराठी कॅलेंडर २०२६ PDF डाउनलोड - Calendar Marathi</a></li>
+<li><a href="https://mahalaxmicalendar.com.in/">Mahalaxmi Calendar 2026 - महालक्ष्मी कैलेंडर २०२६ - Mahalaxmi Calendar 2026</a></li>
+<li><a href="https://calendartamil.co.in/">Tamil Calendar 2026 - தமிழ் நாட்காட்டி 2026 PDF Free Download - Calendar Tamil</a></li>
+</ol>
+</div>
+        </article>
+    </div>
+
+</body>
+</html>
