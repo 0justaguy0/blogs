@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>राहु केतु गोचर उपाय</title>
+    <style>
+        :root {
+            --bg-color: #FDF9F1;
+            --text-color: #3E2723;
+            --indian-yellow: #E4A025;
+            --indian-orange: #E65100;
+            --accent-light: #FFECB3;
+            --ref-bg: #FFF3E0;
+        }
+
+        body {
+            font-family: 'Georgia', 'Nirmala UI', 'Mangal', serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(var(--bg-color) 80%, var(--accent-light) 100%);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #FFFFFF;
+            padding: 50px 60px;
+            box-shadow: 0 10px 30px rgba(62, 39, 35, 0.1);
+            border-top: 8px solid var(--indian-orange);
+            border-bottom: 8px solid var(--indian-yellow);
+            border-radius: 4px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed var(--indian-yellow);
+        }
+
+        h1 {
+            color: var(--indian-orange);
+            font-size: 2.5em;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        h2 {
+            color: var(--indian-yellow);
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--indian-orange);
+            padding-left: 15px;
+        }
+
+        h3, h4 {
+            color: var(--indian-orange);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        .intro-text::first-letter {
+            float: left;
+            font-size: 3.5em;
+            line-height: 0.8;
+            padding-right: 8px;
+            padding-top: 4px;
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        ul, ol {
+            margin: 0 0 24px 0;
+            padding-left: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ol {
+            list-style-position: outside;
+            padding-left: 2.2em;
+        }
+
+        ul li, ol li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        ol li {
+            padding-left: 0.35em;
+        }
+
+        ul li::before {
+            content: '\2022';
+            position: absolute;
+            left: 0;
+            top: 0.05em;
+            color: var(--indian-orange);
+            font-size: 1.2em;
+            line-height: 1;
+        }
+
+        ol li::marker {
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        strong {
+            color: var(--indian-orange);
+        }
+
+        .image-placeholder-container {
+            margin: 30px 0;
+            text-align: center;
+            font-style: italic;
+            color: #795548;
+            background-color: var(--accent-light);
+            padding: 20px;
+            border-radius: 4px;
+            border: 1px solid var(--indian-yellow);
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.98em;
+            background-color: #FFFDF8;
+        }
+
+        th, td {
+            border: 1px solid #F0D49B;
+            padding: 10px 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--ref-bg);
+            color: var(--indian-orange);
+        }
+
+        blockquote {
+            margin: 30px 0;
+            padding: 20px 25px;
+            background-color: var(--accent-light);
+            border-left: 5px solid var(--indian-orange);
+            font-style: italic;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px dashed var(--indian-yellow);
+            margin: 32px 0;
+        }
+
+        .references {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: var(--ref-bg);
+            border-radius: 8px;
+            font-size: 0.9em;
+        }
+
+        .references h2, .references h3 {
+            color: var(--text-color);
+            margin-top: 0;
+            border-bottom: 1px solid var(--indian-yellow);
+            padding-bottom: 10px;
+            border-left: 0;
+            padding-left: 0;
+        }
+
+        .references p, .references li {
+            margin-bottom: 12px;
+            word-wrap: break-word;
+        }
+
+        .references a {
+            color: var(--indian-orange);
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>राहु केतु गोचर उपाय</h1>
+        </header>
+
+        <article>
+<p class="intro-text">वैदिक ज्योतिष के गूढ़ सिद्धांतों के अनुसार, राहु और केतु भौतिक अस्तित्व रहित 'छाया ग्रह' (Shadow Planets) हैं, जिनका प्रभाव पूर्णतः कार्मिक और मानसिक होता है। ये ग्रह सदैव वक्री गति से चलते हैं और जातक के 'कार्मिक रजिस्ट्री' (Karmic Registry) को सक्रिय करते हैं। वर्ष 2026 ज्योतिषीय दृष्टिकोण से एक युगांतरकारी वर्ष है, क्योंकि इस वर्ष के उत्तरार्ध में राहु और केतु अपना राशि परिवर्तन कर <strong>मकर-कर्क अक्ष (Capricorn-Cancer Axis)</strong> को सक्रिय करेंगे।</p>
+<div class="image-placeholder-container">
+    <img src="blog47_Image.png" alt="चेत व 2026 राहु केतु गोचर विवरण के उपाय और समय: राहु केतु वर्ष 2026 में पानी के बाद मकर कर्क अक्ष में संक्रमण परिवर्तन दिसंबर 5 2026 रात 7:28 बजे IST से दिसंबर 6 2026 से मई 2028 तक 18 मास का गोचर चक्र, सभी 12 राशियों पर प्रभाव, राहु बीज मंत्र ओम भ्राम भ्रीम भ्रौम सः राहवे नमः शनिवार, केतु बीज मंत्र ओम श्राम श्रीम श्रौम सः केतवे नमः मंगल, काले सर्प दोष निवारण, गणेश और दुर्गा अर्चना, काले सर्प मंदिर थिरुनागेश्वरम और कीझपेरुम्पल्लम, काला सर्प राशि अनुसार उपाय, वैदिक परामर्श ज्योतिष चिंता परामर्श ऊर्जा भक्ति आध्यात्मिक कल्याण">
+</div>
+<p>यह गोचर विशेष रूप से महत्वपूर्ण है क्योंकि राहु, शनि द्वारा शासित मकर राशि में प्रवेश करेंगे। ज्योतिषीय शास्त्र 'शनिवत राहु' (Shani-vat Rahu) के सिद्धांत को प्रतिपादित करता है, जिसका अर्थ है कि मकर में राहु शनि की भांति अनुशासित लेकिन अत्यंत महत्वाकांक्षी परिणाम देंगे। वहीं, केतु का कर्क राशि में संचरण भावनात्मक विरक्ति और आध्यात्मिक उत्थान का मार्ग प्रशस्त करेगा।</p>
+<h2>गोचर की सटीक तिथियाँ और काल-गणना</h2>
+<p>ज्योतिषीय गणनाओं में मतभेद का मुख्य कारण 'मीन नोड्स' (Mean Nodes) और 'ट्रू नोड्स' (True Nodes) के गणितीय मॉडल का अंतर है। वरिष्ठ ज्योतिषियों के अनुसार, दिसंबर 2026 का यह परिवर्तन वैश्विक और व्यक्तिगत स्तर पर दूरगामी परिवर्तन लाएगा।</p>
+<table>
+<thead><tr><th>घटना</th><th>तिथि</th><th>समय</th><th>ज्योतिषीय विवरण</th></tr></thead>
+<tbody>
+<tr><td><strong>राहु का मकर प्रवेश</strong></td><td>5 दिसंबर, 2026</td><td>सायं 6:02 बजे / 7:28 बजे</td><td>राहु कुंभ से मकर (10वीं राशि) में प्रवेश करेंगे।</td></tr>
+<tr><td><strong>केतु का कर्क प्रवेश</strong></td><td>5 दिसंबर, 2026</td><td>सायं 6:02 बजे / 7:28 बजे</td><td>केतु सिंह से कर्क (4थी राशि) में प्रवेश करेंगे।</td></tr>
+</tbody>
+</table>
+<p><strong>2026 के ग्रहण काल (Peak Energy Points):</strong> राहु-केतु के प्रभाव ग्रहण के समय अपने चरम पर होते हैं। 2026 में मुख्य ग्रहण जनवरी-फरवरी (कुंभ-सिंह अक्ष) और जुलाई-अगस्त (सिंह-कुंभ अक्ष) में घटित होंगे, जो इस गोचर के पूर्ण फल को सक्रिय करेंगे।</p>
+<h2>मकर-कर्क अक्ष: कर्म बनाम भावना (Karma vs. Emotion)</h2>
+<p>2026 का यह गोचर 'सार्वजनिक जीवन' और 'निजी शांति' के मध्य संतुलन की परीक्षा लेगा।</p>
+<ul>
+<li><strong>मकर में राहु (Professional Ambition):</strong> मकर एक पृथ्वी तत्व और चर राशि है। यहाँ राहु जातक में सत्ता की पिपासा, तकनीकी नवाचार और करियर के प्रति एक जुनूनी दृष्टिकोण विकसित करेंगे। यह 'शॉर्टकट' के प्रति आकर्षण बढ़ा सकता है, परंतु शनि की राशि होने के कारण केवल कठोर परिश्रम ही स्थायी सफलता देगा।</li>
+<li><strong>कर्क में केतु (Emotional Detachment):</strong> कर्क चंद्रमा की राशि है जो सुख और भावनाओं का प्रतिनिधित्व करती है। यहाँ केतु की उपस्थिति जातक को घरेलू सुखों से विरक्त कर आंतरिक शांति की ओर धकेलेगी। यह समय 'बाहरी आडंबर' को त्यागकर 'आंतरिक सत्य' को खोजने का है।</li>
+</ul>
+<h2>सभी 12 राशियों पर प्रभाव और विश्लेषण (Lagna/Moon Sign Based)</h2>
+<p><em>यह भविष्यवाणियाँ मुख्य रूप से आपके <strong>लग्न (Ascendant)</strong> पर आधारित हैं, परंतु चंद्र राशि से भी इनका अवलोकन किया जा सकता है।</em></p>
+<h3>मेष (Aries)</h3>
+<p>राहु आपके <strong>दशम भाव (Karma Bhava)</strong> में गोचर करेंगे, जो कि एक 'उपचय' स्थान है। यहाँ राहु करियर में अभूतपूर्व वृद्धि और पेशेवर प्रभुत्व प्रदान करेंगे। हालाँकि, केतु के <strong>चतुर्थ भाव</strong> में होने से पारिवारिक सुख में कमी और माता के स्वास्थ्य की चिंता हो सकती है। <strong>सावधानी:</strong> कार्यक्षेत्र की व्यस्तता के कारण निजी जीवन को अनदेखा न करें।</p>
+<h3>वृषभ (Taurus)</h3>
+<p>राहु आपके <strong>नवम भाव (Bhagya Bhava)</strong> में रहेंगे, जिससे भाग्य का साथ मिलेगा और विदेश यात्रा के योग बनेंगे। निर्णय लेने की क्षमता तीव्र होगी। केतु <strong>तृतीय भाव</strong> में होने से साहस में वृद्धि करेंगे, किंतु छोटे भाई-बहनों के साथ संबंधों में विरक्ति आ सकती है। <strong>सावधानी:</strong> उच्च शिक्षा और लंबी दूरी की यात्राओं के लिए यह समय श्रेष्ठ है।</p>
+<h3>मिथुन (Gemini)</h3>
+<p>राहु आपके <strong>अष्टम भाव</strong> में गोचर करेंगे, जो अचानक होने वाले परिवर्तनों का भाव है। यहाँ राहु आकस्मिक धन लाभ या शोध में सफलता दे सकते हैं, किंतु स्वास्थ्य के प्रति अत्यंत सतर्क रहना होगा। केतु <strong>द्वितीय भाव</strong> में वाणी में कठोरता और संचित धन में उतार-चढ़ाव ला सकते हैं। <strong>सावधानी:</strong> गुप्त शत्रुओं और वित्तीय जोखिमों से बचें।</p>
+<h3>कर्क (Cancer)</h3>
+<p>राहु आपके <strong>सप्तम भाव</strong> में होंगे, जिससे व्यापारिक साझेदारी और जनसंपर्क में विस्तार होगा। हालाँकि, केतु आपके <strong>प्रथम भाव (लग्न)</strong> में होने से आत्म-पहचान का संकट पैदा कर सकते हैं। रिश्तों में एक प्रकार की शून्यता महसूस हो सकती है। <strong>सावधानी:</strong> वैवाहिक जीवन में पारदर्शिता बनाए रखें और भ्रामक विचारों से बचें।</p>
+<h3>सिंह (Leo)</h3>
+<p>राहु आपके <strong>षष्ठ भाव</strong> में होंगे, जो शत्रुओं और रोगों पर विजय का स्थान है। कानूनी मामलों में सफलता निश्चित है। केतु <strong>द्वादश भाव</strong> में होने से मोक्ष और आध्यात्मिक विकास के द्वार खोलेंगे। <strong>सावधानी:</strong> यह समय प्रतिस्पर्धी परीक्षाओं के लिए सर्वोत्तम है, किंतु अनिद्रा की समस्या हो सकती है।</p>
+<h3>कन्या (Virgo)</h3>
+<p>राहु आपके <strong>पंचम भाव</strong> में गोचर करेंगे, जिससे बुद्धि प्रखर होगी परंतु सट्टेबाजी और शॉर्टकट की ओर रुझान बढ़ेगा। केतु <strong>एकादश भाव</strong> में होने से सामाजिक दायरे में बदलाव लाएंगे। पुराने मित्रों से दूरी बन सकती है। <strong>सावधानी:</strong> प्रेम संबंधों में भ्रम की स्थिति उत्पन्न हो सकती है; वास्तविकता को स्वीकार करें।</p>
+<h3>तुला (Libra)</h3>
+<p>राहु आपके <strong>चतुर्थ भाव</strong> में होंगे, जो संपत्ति और वाहन सुख में अचानक वृद्धि कर सकते हैं। करियर के <strong>दशम भाव</strong> में केतु की उपस्थिति पेशेवर जीवन से एक प्रकार की विरक्ति पैदा कर सकती है। <strong>सावधानी:</strong> घर में नवीनीकरण के योग हैं, किंतु कार्यस्थल पर अपनी एकाग्रता भंग न होने दें।</p>
+<h3>वृश्चिक (Scorpio)</h3>
+<p>राहु आपके <strong>तृतीय भाव</strong> में गोचर करेंगे, जो संचार कौशल और पराक्रम को बढ़ाएगा। नए कौशल सीखने के लिए यह कालखंड स्वर्णिम है। केतु <strong>नवम भाव</strong> में होने से पारंपरिक धार्मिक मान्यताओं पर प्रश्न उठा सकते हैं। <strong>सावधानी:</strong> छोटी यात्राएं लाभकारी रहेंगी, किंतु गुरुजनों से वैचारिक मतभेद संभव है।</p>
+<h3>धनु (Sagittarius)</h3>
+<p>राहु आपके <strong>द्वितीय भाव</strong> में होंगे, जिससे धन संचय की तीव्र इच्छा जागृत होगी। वाणी प्रभावशाली होगी, किंतु परिवार से दूरी बढ़ सकती है। केतु <strong>अष्टम भाव</strong> में होने से गुप्त विद्याओं और तंत्र-मंत्र में रुचि बढ़ाएंगे। <strong>सावधानी:</strong> खान-पान की अशुद्धि से बचें और ससुराल पक्ष से सौहार्द बनाए रखें।</p>
+<h3>मकर (Capricorn)</h3>
+<p>राहु आपके <strong>प्रथम भाव (लग्न)</strong> पर गोचर करेंगे। यह व्यक्तित्व के पुनर्जन्म का समय है। आप अत्यंत महत्वाकांक्षी होंगे, परंतु मानसिक तनाव और भ्रम भी बढ़ सकता है। केतु <strong>सप्तम भाव</strong> में वैवाहिक संबंधों में अलगाव की स्थिति बना सकते हैं। <strong>सावधानी:</strong> स्वयं के प्रति अत्यधिक केंद्रित होने से रिश्तों को हानि पहुँच सकती है।</p>
+<h3>कुंभ (Aquarius)</h3>
+<p>राहु आपके <strong>द्वादश भाव</strong> में होंगे, जिससे विदेश गमन और विदेशी स्रोतों से लाभ के प्रबल योग हैं। केतु <strong>षष्ठ भाव</strong> में शत्रुओं को स्वतः ही परास्त कर देंगे। <strong>सावधानी:</strong> अस्पताल के खर्चों और कानूनी उलझनों से बचने के लिए अनुशासित जीवनशैली अपनाएं।</p>
+<h3>मीन (Pisces)</h3>
+<p>राहु आपके <strong>एकादश भाव</strong> में गोचर करेंगे, जो कि लाभ का सर्वोच्च स्थान है। आपकी अधूरी इच्छाएं पूर्ण होंगी और आय के नए स्रोत खुलेंगे। केतु <strong>पंचम भाव</strong> में होने से संतान या प्रेम संबंधों में मानसिक चिंता दे सकते हैं। <strong>सावधानी:</strong> सामाजिक प्रतिष्ठा बढ़ेगी, किंतु रचनात्मक कार्यों में एकाग्रता की कमी महसूस होगी।</p>
+<h2>नकारात्मक प्रभावों के लिए शास्त्रीय उपाय (Effective Remedies)</h2>
+<p>राहु-केतु के अशुभ प्रभावों को शांत करने के लिए निम्नलिखित उपाय अत्यंत प्रभावी हैं:</p>
+<ul>
+<li><strong>मंत्र साधना:</strong> राहु बीज मंत्र (<em>ॐ भ्रां भ्रीं भ्रौं सः राहवे नमः</em>) और केतु बीज मंत्र (<em>ॐ स्रां स्रीं स्रौं सः केतवे नमः</em>) का नियमित 108 बार जाप करें।</li>
+<li><strong>पुष्प और दान:</strong> राहु की शांति के लिए <strong>नीले रंग के पुष्प</strong> और केतु के लिए <strong>लाल रंग के पुष्प</strong> देवी दुर्गा को अर्पित करें। शनिवार को काले तिल और कंबल का दान करें।</li>
+<li><strong>पशु सेवा:</strong> काले कुत्ते को रोटी खिलाना केतु के दोषों को शांत करने का अचूक उपाय है। मछलियों को दाना डालना भी शुभ है।</li>
+<li><strong>तीर्थाटन:</strong> तमिलनाडु के <strong>तिरुनागेश्वरम (राहु स्थल)</strong> में दुग्ध अभिषेक और <strong>कीझपेरुमपल्लम (केतु स्थल)</strong> में विशेष पूजा अर्चना कार्मिक बाधाओं को दूर करती है।</li>
+<li><strong>पाठ:</strong> नियमित रूप से 'श्री बजरंग बाण' और 'दुर्गा चालीसा' का पाठ करें।</li>
+</ul>
+<h2>निष्कर्ष और मुख्य सुझाव</h2>
+<p>2026 का राहु-केतु गोचर हमें यह सिखाने आ रहा है कि भौतिक महत्वाकांक्षाओं (मकर) और भावनात्मक सुरक्षा (कर्क) के बीच संतुलन ही जीवन की सार्थकता है। जहाँ राहु आपको करियर की ऊँचाइयों पर ले जाने का सामर्थ्य रखते हैं, वहीं केतु आपकी आत्मा को शुद्ध करने का कार्य करेंगे।</p>
+<p><strong>मुख्य टेकअवे (Key Takeaways):</strong></p>
+<ol>
+<li><strong>मकर राशि में राहु के गोचर के दौरान अनैतिक शॉर्टकट से बचें; केवल शनि की भाँति कठोर परिश्रम ही दीर्घकालिक और स्थायी सफलता सुनिश्चित करेगा।</strong></li>
+<li><strong>केतु का कर्क में प्रवेश जातक को भावनात्मक परिपक्वता प्रदान करेगा; इसे विरक्ति के बजाय आध्यात्मिक चेतना के उदय के रूप में स्वीकार करें।</strong></li>
+<li><strong>दिसंबर 2026 से पूर्व आने वाले ग्रहण काल (जुलाई-अगस्त) में कोई भी बड़ा निवेश या जीवन-परिवर्तनीय निर्णय लेने से बचें, क्योंकि यह संक्रांति काल होगा।</strong></li>
+</ol>
+
+<div class="references">
+<h2>Sources</h2>
+<ol>
+<li><a href="https://jagannathhora.com/rahu-ketu-transit-capricorn-cancer-2026-2028/">Rahu-Ketu Transit in Capricorn-Cancer 2026-2028: Exact Dates, Nakshatra Phases, Eclipse Connection &amp; Complete Analysis - Jagannath Hora</a></li>
+<li><a href="https://lifehoroscope.in/blog/rahu-ketu-peyarchi-2026-to-2028/">Rahu Ketu Peyarchi 2026 | ராகு கேது பெயர்ச்சி பலன்கள் 2026 to 2028</a></li>
+<li><a href="https://omai.app/blog/rahu-ketu-transit-2026.html">Rahu-Ketu Transit 2026: Capricorn &amp; Cancer Effects - Om.AI</a></li>
+<li><a href="https://explorekumbakonam.com/rahu-ketu-peyarchi-2026-effects-remedies-and-temples-to-visit-in-tamil-nadu/">Rahu-Ketu Peyarchi 2026: Effects, Remedies, and Temples to Visit in Tamil Nadu</a></li>
+<li><a href="https://www.anytimeastro.com/blog/astrology/rahu-transit/">Rahu Gochar Date and Time 2026 For All Zodiac Signs - Anytime Astro</a></li>
+<li><a href="https://jagannathhora.com/rahu-ketu-transit-2027-moon-sign-predictions/">Rahu-Ketu Transit 2026-2028 Predictions for All 12 Moon Signs (Rashi): Capricorn-Cancer Axis Effects - Jagannath Hora</a></li>
+<li><a href="https://astrosight.ai/transits/rahu-ketu-transit-2026-12-sign-predictions-dates">Rahu Ketu Transit 2026: 12-Sign Predictions &amp; Dates | AstroSight</a></li>
+<li><a href="https://jagannathhora.com/rahu-ketu-capricorn-cancer-2027-ascendant-predictions/">Rahu-Ketu Transit 2026-2028 Predictions for All 12 Ascendants: Capricorn-Cancer Axis Effects on Career, Marriage &amp; Health - Jagannath Hora</a></li>
+<li><a href="https://m.economictimes.com/astrology/others/rahuketu-transit-2026-4-zodiac-signs-experience-destiny-shifts/articleshow/129605814.cms">Rahu–Ketu Transit 2026: 4 Zodiac Signs Experience Destiny Shifts - The Economic Times</a></li>
+<li><a href="https://veadicastro.in/blog/rahu-ketu-transit-2026-predictions-for-all-12-rashis">Rahu-Ketu Transit 2026: Predictions, Effects &amp; Remedies for All 12 Rashis - Veadicastro</a></li>
+<li><a href="https://www.astroved.com/astropedia/en/transit/rahu-transit/capricorn">Rahu Transit in Capricorn 2026 Date, Timings, Prediction &amp; Effects - AstroVed</a></li>
+<li><a href="https://timesofindia.indiatimes.com/astrology/planets-transits/how-to-remove-the-negative-effects-of-rahu-and-ketu/articleshow/125251198.cms">How to remove the negative effects of Rahu and Ketu? | - The Times of India</a></li>
+<li><a href="https://trimbakeshwarvidhi.com/kaal-sarp-dosh-remedies/">Kaal Sarp Dosh Remedies And Upay | Trimbakeshwar Vidhi</a></li>
+<li><a href="https://www.astroved.com/dosha-pariharam/kala-sarpa-dosha-remedies/">Effects &amp; Remedies for Kala Sarpa Dosha | AstroVed.com</a></li>
+<li><a href="https://trimbakeshwarpoojapandit.com/kaal-sarp-dosh-remedies-and-upay/">Kaal Sarp Dosh Remedies And Upay At Trimbakeshwar Temple</a></li>
+<li><a href="https://www.reddit.com/r/vedicastrologyexperts/comments/1sj6k1o/rahuketu_transit_dec_2026/">Rahu–Ketu Transit Dec 2026... : r/vedicastrologyexperts - Reddit</a></li>
+<li><a href="https://trimbakeshwarkaalsarppooja.com/kaal-sarp-dosh-remedies/">Kaal Sarp Dosh Remedies - Pandit Rishikesh Guruji</a></li>
+<li><a href="https://www.scribd.com/document/338386807/KalasarpaDosha-Remedy">Remedies for Kaal Sarpa Dosha | PDF | Astrology | Esoteric Cosmology - Scribd</a></li>
+<li><a href="https://www.rudraksha-center.com/pages/remedial-measures-for-planet-ketu-as-per-lal-kitab">Remedial Measures for planet Ketu as per Lal Kitab - Rudraksha Center</a></li>
+<li><a href="https://www.astroyogi.com/planet/transit/ketu">Source 21</a></li>
+<li><a href="https://www.scribd.com/document/401555038/astrology-remedyyy-txt">Remedies for Rahu and Ketu Issues | PDF | Mantra | Hindu Literature - Scribd</a></li>
+<li><a href="https://myratna.com/blog/rahu-ketu-transit-2025/">Rahu Ketu Transit 2025 For All Zodiac Signs Effects &amp;amp; Remedies - MyRatna</a></li>
+<li><a href="https://www.dharmikmind.com/rahu-stotra.html">Rahu Stotra - Lyrics, पूजा विधि, लाभ, मंत्र, शुभ अवसर और अर्थ - श्री राहु स्तोत्र</a></li>
+<li><a href="https://jamesbraha.com/planetary-mantras/ketu-mantra/">Ketu Mantra - James Braha</a></li>
+<li><a href="https://www.youtube.com/shorts/8if5A-3141c">केतु मंत्र |Ketu Mantra With Lyrics | Om Palash Pushpa Sankasham - YouTube</a></li>
+<li><a href="https://www.youtube.com/watch?v=Onpxibt1Xzs">Rahu Mantra Jaap | Ardha Kaayam Mahaa Veeryam | 108 Times - YouTube</a></li>
+<li><a href="https://www.youtube.com/watch?v=v4axWzfGVMY">Rahu Mantra | Navagraha Stotram | Ardhakayam mahaveeryam - YouTube</a></li>
+<li><a href="https://www.youtube.com/watch?v=FNz7nlrAAA8">Powerful Ketu Mantra with Kannada Lyrics | Palasha Pushpa Sankasham (ಕೇತು ಮಂತ್ರ)</a></li>
+<li><a href="https://www.reddit.com/r/Nakshatras/comments/1uaxmqz/rahu_in_aquarius_20252026_house_effects_for_all/">Rahu in Aquarius 2025–2026 — House effects for all 12 ascendants | Analytical breakdown</a></li>
+<li><a href="https://astrologyfacts.quora.com/https-accurateastrologyreading-quora-com-Rahu-Ketu-Transit-2025-2026-Aquarius-Ascendant-Forecast">Rahu–Ketu Transit 2025–2026: Aquarius Ascendant Forecast - Astrology Facts - Quora</a></li>
+<li><a href="https://www.youtube.com/watch?v=H_VWsOUrWzI">Rahu Mantra Jaap | Ardha Kaayam Mahaa Veeryam | 108 Times - YouTube</a></li>
+<li><a href="https://www.youtube.com/watch?v=JmIXQw624pY">Shree Rahu Stotram | Vedic Planetary Mantra With LYRICS | Powerful Mantra - YouTube</a></li>
+<li><a href="https://www.youtube.com/watch?v=RUfxvOdKZ-E">Ketu Mantra | Navagraha Stotram | Palasha pushpa samkasham | Ketu Graha | Ketu Shloka Chanting - YouTube</a></li>
+<li><a href="https://www.youtube.com/watch?v=iAzGiknkxGw">Palasha Pushpa Sankasham: Ketu Navgraha Shanti Mantra (Fast) - YouTube</a></li>
+</ol>
+</div>
+        </article>
+    </div>
+
+</body>
+</html>

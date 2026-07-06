@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>पितृ पक्ष उपाय</title>
+    <style>
+        :root {
+            --bg-color: #FDF9F1;
+            --text-color: #3E2723;
+            --indian-yellow: #E4A025;
+            --indian-orange: #E65100;
+            --accent-light: #FFECB3;
+            --ref-bg: #FFF3E0;
+        }
+
+        body {
+            font-family: 'Georgia', 'Nirmala UI', 'Mangal', serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(var(--bg-color) 80%, var(--accent-light) 100%);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #FFFFFF;
+            padding: 50px 60px;
+            box-shadow: 0 10px 30px rgba(62, 39, 35, 0.1);
+            border-top: 8px solid var(--indian-orange);
+            border-bottom: 8px solid var(--indian-yellow);
+            border-radius: 4px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed var(--indian-yellow);
+        }
+
+        h1 {
+            color: var(--indian-orange);
+            font-size: 2.5em;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        h2 {
+            color: var(--indian-yellow);
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--indian-orange);
+            padding-left: 15px;
+        }
+
+        h3, h4 {
+            color: var(--indian-orange);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        .intro-text::first-letter {
+            float: left;
+            font-size: 3.5em;
+            line-height: 0.8;
+            padding-right: 8px;
+            padding-top: 4px;
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        ul, ol {
+            margin: 0 0 24px 0;
+            padding-left: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ol {
+            list-style-position: outside;
+            padding-left: 2.2em;
+        }
+
+        ul li, ol li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        ol li {
+            padding-left: 0.35em;
+        }
+
+        ul li::before {
+            content: '\2022';
+            position: absolute;
+            left: 0;
+            top: 0.05em;
+            color: var(--indian-orange);
+            font-size: 1.2em;
+            line-height: 1;
+        }
+
+        ol li::marker {
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        strong {
+            color: var(--indian-orange);
+        }
+
+        .image-placeholder-container {
+            margin: 30px 0;
+            text-align: center;
+            font-style: italic;
+            color: #795548;
+            background-color: var(--accent-light);
+            padding: 20px;
+            border-radius: 4px;
+            border: 1px solid var(--indian-yellow);
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.98em;
+            background-color: #FFFDF8;
+        }
+
+        th, td {
+            border: 1px solid #F0D49B;
+            padding: 10px 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--ref-bg);
+            color: var(--indian-orange);
+        }
+
+        blockquote {
+            margin: 30px 0;
+            padding: 20px 25px;
+            background-color: var(--accent-light);
+            border-left: 5px solid var(--indian-orange);
+            font-style: italic;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px dashed var(--indian-yellow);
+            margin: 32px 0;
+        }
+
+        .references {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: var(--ref-bg);
+            border-radius: 8px;
+            font-size: 0.9em;
+        }
+
+        .references h2, .references h3 {
+            color: var(--text-color);
+            margin-top: 0;
+            border-bottom: 1px solid var(--indian-yellow);
+            padding-bottom: 10px;
+            border-left: 0;
+            padding-left: 0;
+        }
+
+        .references p, .references li {
+            margin-bottom: 12px;
+            word-wrap: break-word;
+        }
+
+        .references a {
+            color: var(--indian-orange);
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>पितृ पक्ष उपाय</h1>
+        </header>
+
+        <article>
+<p class="intro-text">भारतीय सनातन संस्कृति में <strong>पितृ पक्ष</strong> केवल एक धार्मिक कर्मकांड नहीं, बल्कि उन "अस्तित्व के शिल्पकारों" के प्रति कृतज्ञता ज्ञापित करने का पावन अवसर है, जिनकी ऊर्जा और संस्कारों से हमारा जीवन निर्मित हुआ है। गरुड़ पुराण और वायु पुराण जैसे शास्त्रों के अनुसार, यह 16 दिवसीय अवधि भूलोक और पितृलोक के बीच एक सूक्ष्म आध्यात्मिक सेतु का निर्माण करती है। इस समय सूर्य 'कन्या' राशि में प्रवेश करता है, जिससे दक्षिण दिशा (यम की दिशा) के द्वार खुलते हैं और हमारे पूर्वज सूक्ष्म रूप में अपने वंशजों से अर्पण स्वीकार करने धरती पर आते हैं।</p>
+<div class="image-placeholder-container">
+    <img src="blog42_Image.png" alt="पितृ पक्ष 2026 उपाय और समय: 16 दिवसीय महालय पितृ अवधि प्रारंभ शनिवार 26 सितंबर 2026 (पूर्णिमा श्राद्ध, दुर्लभ ब्लड मून चंद्र ग्रहण) से समाप्त शनिवार 10 अक्टूबर 2026 सर्व पितृ अमावस्या महालय, अंतिम दिन मुहूर्त कूटुप सुबह 11:47 से 12:50, रोहिण 12:50 से 1:39, अपराह्न काल 1:39 से शाम 4:09, तर्पण और पिंड दान, पितृ दोष उपाय, सात्विक आहार नियम, वैदिक मंत्र पितृ सूक्तम् महामृत्युंजय गायत्री, समग्र कल्याण">
+</div>
+<h3>पितृ पक्ष 2026: महत्वपूर्ण तिथियां और खगोलीय घटनाएँ</h3>
+<p>वर्ष 2026 का पितृ पक्ष खगोलीय और आध्यात्मिक दृष्टि से अत्यंत विशिष्ट है। इस वर्ष का प्रारंभ एक दुर्लभ <strong>चंद्र ग्रहण (Blood Moon)</strong> के साथ हो रहा है, जो आध्यात्मिक ऊर्जा के शोधन के लिए एक महत्वपूर्ण संकेत है।</p>
+<table>
+<thead><tr><th>तिथि (Gregorian)</th><th>चंद्र तिथि (Tithi)</th><th>विशिष्ट महत्व एवं अनुष्ठान</th></tr></thead>
+<tbody>
+<tr><td><strong>26 सितंबर 2026</strong></td><td><strong>पूर्णिमा श्राद्ध</strong></td><td><strong>प्रारंभ: दुर्लभ चंद्र ग्रहण (ब्लड मून)</strong></td></tr>
+<tr><td>27 सितंबर 2026</td><td>प्रतिपदा</td><td>प्रतिपदा श्राद्ध (मातृमह श्राद्ध हेतु उपयुक्त)</td></tr>
+<tr><td>29 सितंबर 2026</td><td>तृतीया</td><td><strong>महा भरणी श्राद्ध</strong> (अत्यंत फलदायी)</td></tr>
+<tr><td>05 अक्टूबर 2026</td><td>नवमी</td><td><strong>मातृ नवमी</strong> (दिवंगत महिलाओं हेतु समर्पित)</td></tr>
+<tr><td>08 अक्टूबर 2026</td><td>द्वादशी</td><td>संन्यासियों और मघा नक्षत्र का श्राद्ध</td></tr>
+<tr><td><strong>10 अक्टूबर 2026</strong></td><td><strong>चतुर्दशी/अमावस्या</strong></td><td><strong>तिथि ओवरलैप:</strong> अकाल मृत्यु हेतु 'घात चतुर्दशी' एवं समापन पर <strong>महालया अमावस्या</strong></td></tr>
+</tbody>
+</table>
+<p><strong>श्राद्ध और तर्पण के लिए शास्त्र-सम्मत मुहूर्त:</strong> ऋषियों ने श्राद्ध कर्म के लिए 'कुतप' और 'अपराह्न काल' को सर्वश्रेष्ठ माना है। 2026 के लिए मुख्य समय:</p>
+<ul>
+<li><strong>कुतप मुहूर्त:</strong> दोपहर 11:54 AM से 12:42 PM तक (आवाहन हेतु)।</li>
+<li><strong>रोहिण मुहूर्त:</strong> दोपहर 12:42 PM से 01:30 PM तक।</li>
+<li><strong>अपराह्न काल:</strong> दोपहर 01:30 PM से 03:55 PM तक (तर्पण और पिंड दान हेतु श्रेष्ठ)।</li>
+</ul>
+<p>&#8212;</p>
+<h3>दार्शनिक महत्व: 'महालय' और पितृ ऋण की अवधारणा</h3>
+<p>'पितृ पक्ष' को <strong>महालया</strong> भी कहा जाता है। 'महा' अर्थात महान और 'लय' अर्थात विलयन। यह वह समय है जब हम भौतिक जगत से ध्यान हटाकर सूक्ष्म जगत में अपने पूर्वजों के साथ एकाकार होते हैं। शास्त्रों के अनुसार, प्रत्येक मनुष्य पर तीन ऋण होते हैं: देव ऋण, ऋषि ऋण और <strong>पितृ ऋण</strong>। पितृ पक्ष में श्राद्ध के माध्यम से हम अपने पूर्वजों को वह 'ऊर्जा' प्रदान करते हैं जो उनके परलोक की यात्रा को सुगम बनाती है।</p>
+<p><strong>महाभारत का शास्त्रीय संदर्भ:</strong> दानवीर कर्ण जब मृत्यु के पश्चात स्वर्ग पहुंचे, तो उन्हें भोजन के स्थान पर स्वर्ण और रत्न दिए गए। यमराज ने स्पष्ट किया कि कर्ण ने जीवन भर केवल भौतिक वस्तुओं का दान किया, लेकिन अपने पूर्वजों के निमित्त कभी 'अन्न और जल' (पितृ कार्य) अर्पित नहीं किया। यमराज की अनुमति से कर्ण 15 दिनों के लिए पुनः पृथ्वी पर आए और उन्होंने अन्न-जल का दान कर अपना ऋण चुकाया। यही कथा अन्न दान और तर्पण की अनिवार्यता को सिद्ध करती है।</p>
+<p>&#8212;</p>
+<h3>घर पर श्राद्ध अनुष्ठान: विधि और सूक्ष्म नियम</h3>
+<p>पितृ कार्य करते समय साधक को <strong>अपासव्य</strong> स्थिति (जनेऊ या दुपट्टे को दाएं कंधे पर रखना) में होना चाहिए और मुख सदैव <strong>दक्षिण दिशा</strong> की ओर होना चाहिए।</p>
+<ol>
+<li><strong>तर्पण (Tarpan):</strong> तांबे के पात्र में जल, काले तिल, जौ और कुशा घास लें। जल को अंजलि में भरकर अंगूठे और तर्जनी के बीच से (पितृ तीर्थ के माध्यम से) दक्षिण दिशा में अर्पित करें।</li>
+<li><strong>पिंड दान (Pinda Daan):</strong> पके हुए चावल, काले तिल, घी और शहद के मेल से बने पिंड पूर्वजों के सूक्ष्म शरीर को तृप्ति प्रदान करते हैं।</li>
+<li><strong>पंच बलि (Pancha Bali):</strong> यह ब्रह्मांडीय कृतज्ञता का प्रतीक है। भोजन के पांच अंश निकालें:</li>
+</ol>
+<ul>
+<li><strong>गो बलि (गाय):</strong> सात्विकता और मोक्ष का प्रतीक।</li>
+<li><strong>शवान बलि (कुत्ता):</strong> सुरक्षा और यम का मार्ग।</li>
+<li><strong>काक बलि (कौआ):</strong> यम का दूत और पूर्वजों का प्रतिनिधि।</li>
+<li><strong>देवादि बलि (चींटियाँ/कीट):</strong> सूक्ष्म जीवों के प्रति दया।</li>
+<li><strong>ब्राह्मण भोजन:</strong> वेद मंत्रों के माध्यम से पूर्वजों तक ऊर्जा पहुँचाने वाले माध्यम।</li>
+</ul>
+<ol>
+<li><strong>दक्षिणा:</strong> दान केवल सामाजिक कल्याण नहीं, बल्कि पूर्वजों के नाम पर किया गया त्याग है जो उन तक प्रत्यक्ष पहुँचता है।</li>
+</ol>
+<p>&#8212;</p>
+<h3>आहार संहिता: सात्विकता और निषेध</h3>
+<p>श्राद्ध भोजन की शुद्धता पर ही अनुष्ठान की सफलता निर्भर करती है। <strong>लोहे के बर्तनों (शनि/राहू ऊर्जा) का उपयोग पूर्णतः वर्जित है;</strong> केवल चांदी, तांबा या कांसे के पात्र और केले के पत्तों का प्रयोग करें।</p>
+<table>
+<thead><tr><th>अनुमत सात्विक आहार (Sattvic)</th><th>वर्जित तामसिक आहार (Tamasic)</th></tr></thead>
+<tbody>
+<tr><td><strong>सेंधा नमक (Rock Salt)</strong>, काली मिर्च</td><td>साधारण समुद्री नमक, राई, तीखे मसाले</td></tr>
+<tr><td>गंगाजल, गाय का दूध, घी, शहद</td><td><strong>प्याज, लहसुन, मांस, अंडा, मदिरा</strong></td></tr>
+<tr><td>मूंग दाल, कुम्हड़ा (पीला कद्दू), लौकी</td><td><strong>मसूर दाल, राजमा, चना, काला उड़द</strong></td></tr>
+<tr><td>जौ, चावल, गेहूं, कच्चा केला</td><td><strong>बैंगन</strong>, मूली, बासी भोजन, मशरूम</td></tr>
+</tbody>
+</table>
+<p>&#8212;</p>
+<h3>पितृ दोष: ज्योतिषीय लक्षण और निवारण</h3>
+<p>यदि परिवार में निरंतर बीमारियां, संतान प्राप्ति में बाधा, विवाह में विलंब या गृह-क्लेश रहता है, तो यह 'पितृ दोष' का संकेत है। सूर्य, जो कि पिता और वंश का कारक है, यदि राहू-केतु से पीड़ित हो, तो दोष प्रबल होता है।</p>
+<p><strong>अचूक शास्त्रीय उपाय:</strong></p>
+<ul>
+<li><strong>नारायण बलि पूजा:</strong> अकाल या अप्राकृतिक मृत्यु (दुर्घटना/आत्महत्या) के मामले में सामान्य श्राद्ध पर्याप्त नहीं होता। इसके लिए <strong>त्र्यंबकेश्वर</strong> या <strong>गया</strong> में 'नारायण बलि' अनुष्ठान अनिवार्य है।</li>
+<li><strong>पीपल वृक्ष सेवा:</strong> पीपल को 'विष्णु स्वरूप' माना गया है। अमावस्या पर पीपल के नीचे घी का दीपक जलाएं और <strong>'ॐ नमो भगवते वासुदेवाय'</strong> का जप करते हुए 108 बार परिक्रमा करें।</li>
+<li><strong>पितृ गायत्री मंत्र:</strong> प्रतिदिन इस मंत्र का 108 बार जाप करें:</li>
+</ul>
+<p><em>"ॐ पितृगणाय विद्महे जगद्धारिण्यै धीमहि तन्नो पितृः प्रचोदयात्"</em> <em>(अर्थ: हम उन पितरों का ध्यान करते हैं जो जगत को धारण करते हैं, वे हमारी बुद्धि को प्रेरित करें।)</em></p>
+<p>&#8212;</p>
+<h3>निष्कर्ष और मुख्य सीख</h3>
+<p>पितृ पक्ष कोई "अशुभ" काल नहीं है, बल्कि यह आत्म-संयम और पितृ-स्मरण की वह पावन वेला है जब हम अपनी जड़ों को सींचते हैं। जब पूर्वज तृप्त होते हैं, तो वे वंशजों को आयु, विद्या, धन और मोक्ष का वरदान देते हैं।</p>
+<p><strong>सार्थक पितृ पक्ष के लिए 5 विद्वत परामर्श:</strong></p>
+<ul>
+<li><strong>शुद्धि:</strong> इन 16 दिनों में मन, वचन और कर्म से पूर्ण ब्रह्मचर्य (मानसिक और शारीरिक शुद्धि) का पालन करें।</li>
+<li><strong>अस्तेय:</strong> भौतिक सुखों की नई वस्तुओं (वाहन, वस्त्र) की खरीद से बचकर ध्यान आध्यात्मिक स्मृति पर लगाएं।</li>
+<li><strong>अन्न दान:</strong> भूखे जीव को द्वार से रिक्त न जाने दें, क्योंकि पूर्वज किसी भी रूप में आ सकते हैं।</li>
+<li><strong>मंत्र साधना:</strong> गरुड़ पुराण के पाठ या पितृ शांति मंत्रों का नियमित उच्चारण करें।</li>
+<li><strong>सौहार्द:</strong> घर में कलह न करें; शांतिपूर्ण वातावरण ही पितरों को आकर्षित और प्रसन्न करता है।</li>
+</ul>
+
+<div class="references">
+<h2>Sources</h2>
+<p>38. [Rig Veda 10.15.1 \[English translation\]](https://www.wisdomlib.org/hinduism/book/rig-veda-english-translation/d/doc838644.html)</p>
+<p>42. [Rig Veda 10.15.13 \[English translation\]](https://www.wisdomlib.org/hinduism/book/rig-veda-english-translation/d/doc838656.html)</p>
+<ol>
+<li><a href="https://www.rudraksha-ratna.com/articles/pitru-paksha">Pitru Paksha (Shradh) 2026: Dates, Meaning &amp; How to Do Puja at Home?</a></li>
+<li><a href="https://trimbakeshwartemplepujari.com/pitru-paksha-dates/">Pitru Paksha Dates 2026 – Best Muhurat &amp; Timings</a></li>
+<li><a href="https://astrosight.ai/spirituality/pitru-paksha-2026-15-day-ancestor-period-date-shraddha-rules">Pitru Paksha 2026: Ancestor Period &amp; Shraddha Rules | AstroSight</a></li>
+<li><a href="https://trimbakeshwartemplepujari.com/pitru-paksha-mantra/">Pitru Paksha Mantra – Powerful Chants For Ancestral Blessings - Pandit Milind Guruji</a></li>
+<li><a href="https://www.udayfoundation.org/shradh-pitru-paksha/">Shradh 2026 dates - Pitru Paksha Shraddha - Uday Foundation</a></li>
+<li><a href="https://99pandit.com/blog/sarva-pitru-amavasya-date-and-muhurat/">Sarva Pitru Amavasya 2026: Date, Muhurat, Rituals &amp; Significance - 99 Pandit</a></li>
+<li><a href="https://ishvaram.com/pitra-dosha/upay/">Pitra Dosha Upay — Ancestral Remedies From Classical Jyotish ...</a></li>
+<li><a href="https://www.astroyogi.com/festival/pitru-paksha">Pitru Paksha 2026: Dates, Shradh Rituals, and Tarpan Puja Muhurat - Astroyogi.com</a></li>
+<li><a href="https://trimbakeshwartemplepujari.com/pitru-paksha-puja-at-home/">Pitru Paksha Puja At Home – Complete Shradh Ritual Guide - Pandit Milind Guruji</a></li>
+<li><a href="https://foodiesonly.in/blogs/foods-you-should-avoid-during-shradh">Foods You Should Avoid During Shradh - FoodiesOnly</a></li>
+<li><a href="https://theverandahclub.com/article/pitru-paksha-unveiling-the-significance-of-shradh-navaratri-793">Pitru Paksha: Unveiling the Significance of Shradh Navaratri - The Verandah Club</a></li>
+<li><a href="https://www.artofliving.org/in-en/culture/festival/pitru-paksha-significance">Do you honor the architects of your existence? | The Art of Living India</a></li>
+<li><a href="https://www.astrojyotihealing.com/pitrupaksha-rituals/">Complete Pitru Paksha Tarpan &amp; Ritual Guide - Astrojyoti Healing and Branding Services</a></li>
+<li><a href="https://pitradoshpujatrimbakeshwar.com/pitra-dosh-remedies-and-upay/">Pitra Dosh Remedies And Upay At Trimbakeshwar Temple, Nashik</a></li>
+<li><a href="https://www.agnitrafoundation.org/powerful-tantric-remedies-during-pitru-paksha-to-bring-peace-to-your-ancestors/">Powerful Tantric Remedies During Pitru Paksha to Bring Peace to Your Ancestors</a></li>
+<li><a href="https://bharateeyavahini.medium.com/pitru-karya-the-living-bridge-of-dharma-cd054caeb371">Pitru-Karya: The Living Bridge of Dharma | by BharateeyaVahini - Medium</a></li>
+<li><a href="https://www.drikpanchang.com/navratri/ashwin-shardiya-navratri-dates.html?geoname-id=5133271">2026 Shardiya Navratri Calendar for Queens Village, New York, United States - Drik Panchang</a></li>
+<li><a href="https://pujayagna.com/blogs/pooja-havan-yagya/pitra-dosha">Types, Effects, Remedies of Pitra Dosha or Pitru Dosh - Eshwar Bhakti</a></li>
+<li><a href="https://www.astroved.com/blogs/pitru-paksha-rules">Pitru Paksha Dos And Don Ts Of Shraddha Ceremony — Guide | AstroVed.com</a></li>
+<li><a href="https://onlinepindaanasthi.asthivisarajankashi.in/pitru-paksha-2026-dates-tithi-calendar-rituals/">Pitrupaksha 2026 Tithi, Calendar Ritual Shraadh - Asthi Visarjan</a></li>
+<li><a href="https://www.siddhayoga.org/pitru-paksha/about/">Pitru Paksha: The Fortnight Dedicated to the Ancestors - Siddha Yoga</a></li>
+<li><a href="https://www.scribd.com/document/923448923/Pitru-Paksha-FAQs-Dos-Don-ts">Pitru Paksha: Do&#x27;s and Don&#x27;ts Guide | PDF | Hindu Worship - Scribd</a></li>
+<li><a href="https://www.astrodevam.com/blog/post/what-not-to-do-in-pitru-paksha.html">10 Things to Avoid During Pitru Paksha - AstroDevam.com</a></li>
+<li><a href="https://timesofindia.indiatimes.com/astrology/others/dos-and-donts-in-pitru-paksh-2025-as-per-vedic-astrology/articleshow/123626619.cms">Dos and don&#x27;ts in Pitru Paksh 2025 as per vedic astrology - The Times of India</a></li>
+<li><a href="https://www.radhakrishnatemple.net/blog/how-to-perform-shraddha-pitru-paksha/">Shraddha Rituals in Pitru Paksha | Honor Your Ancestors with Devotion - Radha Krishna Temple of Dallas</a></li>
+<li><a href="https://vedicrishi.in/blog/10-ways-to-honour-your-ancestors-this-pitru-paksha">10 Ways to Honour Your Ancestors this Pitru Paksha - Vedic Rishi</a></li>
+<li><a href="https://timesofindia.indiatimes.com/religion/rituals-puja/pitru-paksha-puja-vidhi/articleshow/68206091.cms">Importance of following Pitru Paksha Puja Vidhi - The Times of India</a></li>
+<li><a href="https://www.slurrp.com/article/top-foods-to-avoid-during-pitru-paksha-period-during-september-october-1726563333016">Top Foods To Avoid During Pitru Paksha Period During September-October - Slurrp</a></li>
+<li><a href="https://pitrupaksha.org/forbidden-foods-for-pitrupaksha/">Forbidden Foods for Pitrupaksha: A Puranic Guide to What You Must Avoid</a></li>
+<li><a href="https://aanchaltarot.com/pitra-paksha-healing-pitra-dosh-ancestral-karma-for-a-harmonious-life/">Pitra Paksha: Healing Pitra Dosh &amp; Ancestral Karma for a Harmonious Life - Aanchal Tarot</a></li>
+<li><a href="https://vedapathshala.com/2023/10/02/pitru-mantra-mantras-dedicated-to-ancestors/">Pitru Mantra -Mantras dedicated to ancestors - School of wisdom and knowledge</a></li>
+<li><a href="https://www.sanatangyan.com/post/tarpana-in-pitru-paksha-why-offerings-of-water-and-til-hold-deep-spiritual-power">Tarpana in Pitru Paksha: Why Offerings of Water and Til Hold Deep Spiritual Power</a></li>
+<li><a href="https://gurukripa.org.in/blog/sarv-devta/pitra-sukta-pitra-mantras-from-rigveda">Pitru Suktam Pitra Mantras From Rigveda | Meaning - GuruKripa</a></li>
+<li><a href="https://vignanam.org/english/pitru-suktam.html">Pitru Suktam - English - Vaidika Vignanam</a></li>
+<li><a href="https://www.shubhpuja.com/blogs/pitru-paksha-period-the-dos-and-don%E2%80%99ts/232">Pitru Paksha Period- The dos and don&#x27;ts - Shubhpuja.com</a></li>
+<li><a href="https://timesofindia.indiatimes.com/astrology/others/ten-things-to-do-during-pitru-paksha/articleshow/113386454.cms">Ten things to do during Pitru Paksha - The Times of India</a></li>
+<li><a href="https://www.pillaicenter.com/teachings/tarpanam">How To Perform Home Tharpanam | Tarpanam Ritual | Pillaicenter</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Pitru_Paksha">Pitru Paksha - Wikipedia</a></li>
+<li><a href="https://www.scribd.com/document/260681762/Ancient-Vedas">Rig Veda Chapter 10 Hymn 15 Analysis | PDF | Sacrifice | Religious Belief And Doctrine</a></li>
+<li><a href="https://www.astroved.com/astrology-podcast/pitru-suktam-mp3">Powerful Pitru Suktam Chant for Download - AstroVed</a></li>
+<li><a href="https://www.yogsadhna.com/blog/how_to_do_a_vedic_prayer_to_ancestors/">How to do a Vedic prayer to Ancestors - Indu Arora</a></li>
+<li><a href="https://pitrupaksha.org/pitrupaksha-food-rules/">Pitrupaksha food rules: What to Eat and Strictly Avoid During Shradh Days</a></li>
+<li><a href="https://panditjmahakalpuja.in/how-to-perform-shradh-puja-at-home/">How to Perform Shradh Puja at Home - Best Pandit in Ujjain</a></li>
+<li><a href="https://timesofindia.indiatimes.com/astrology/others/pitru-paksha-2025-how-to-perform-shradh-if-you-live-abroad/articleshow/123737268.cms">Pitru Paksha 2025: How to Perform Shradh If You Live Abroad - The Times of India</a></li>
+<li><a href="https://vedicrishi.in/blog/pitru-paksha-2023-date-rituals-significance">Pitru Paksha 2023: Date, Rituals, and Significance</a></li>
+<li><a href="https://www.drikpanchang.com/vrats/purnimasidates.html?geoname-id=1258386">2026 Purnima Days | Pournami Days for Rasipuram, Tamil Nadu, India - Drik Panchang</a></li>
+<li><a href="https://www.drikpanchang.com/vrats/amavasyadates.html?geoname-id=1253468">2026 Amavasya | New Moon Dates for Valsad, Gujarat, India - Drik Panchang</a></li>
+<li><a href="https://www.drikpanchang.com/vrats/purnimasidates.html?geoname-id=3667478">2026 Purnima Days | Pournami Days | Full Moon Days for Tame, Arauca, Colombia - Drik Panchang</a></li>
+<li><a href="https://www.drikpanchang.com/vrats/purnimasidates.html?geoname-id=2463447">2026 Purnima Days | Pournami Days | Full Moon Days for Dakhla, , Western Sahara - Drik Panchang</a></li>
+<li><a href="https://www.drikpanchang.com/vrats/purnimasidates.html?geoname-id=2413827">2026 Purnima Days | Pournami Days for Barra, North Bank, Gambia - Drik Panchang</a></li>
+<li><a href="https://www.drikpanchang.com/vrats/purnimasidates.html?geoname-id=3567597">2026 Purnima Days | Pournami Days | Full Moon Days for Bayamo, Granma, Cuba - Drik Panchang</a></li>
+<li><a href="https://www.drikpanchang.com/vrats/amavasyadates.html?geoname-id=3575602">2026 Amavasya | New Moon Dates for Soufriere, Saint Mark, Dominica - Drik Panchang</a></li>
+<li><a href="https://www.drikpanchang.com/vrats/amavasyadates.html?geoname-id=7627586">2026 Amavasya | New Moon Dates for Namoluk, Chuuk, Micronesia - Drik Panchang</a></li>
+<li><a href="https://www.drikpanchang.com/vrats/amavasyadates.html?geoname-id=4034438">2026 Amavasya | New Moon Dates for Haapiti, Iles du Vent, French Polynesia</a></li>
+<li><a href="https://www.reddit.com/r/hinduism/comments/1fr6vnq/performed_pitru_sukta_homa_today/">Performed Pitru Sukta Homa Today : r/hinduism - Reddit</a></li>
+<li><a href="https://www.drikpanchang.com/">Drik Panchang - online Hindu Almanac and Calendar with Planetary Ephemeris based on Vedic Astrology.</a></li>
+<li><a href="https://www.rudraksha-ratna.com/articles/pitru-paksha#:~:text=By%20strictly%20avoiding%20tamasic%20foods,and%20blessings%20to%20the%20family.">Source 60</a></li>
+<li><a href="https://www.drikpanchang.com/vrats/amavasyadates.html?geoname-id=2964661">2026 Amavasya | New Moon Dates for Drogheda, Leinster, Ireland - Drik Panchang</a></li>
+<li><a href="https://www.drikpanchang.com/vrats/amavasyadates.html?geoname-id=222596">2026 Amavasya | New Moon Dates for Holhol, Ali Sabieh, Djibouti - Drik Panchang</a></li>
+<li><a href="https://www.drikpanchang.com/vrats/amavasyadates.html?geoname-id=3701917">2026 Amavasya | New Moon Dates for Rio Abajo, Panama - Drik Panchang</a></li>
+</ol>
+</div>
+        </article>
+    </div>
+
+</body>
+</html>

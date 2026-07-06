@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makar Sankranti Remedies</title>
+    <style>
+        :root {
+            --bg-color: #FDF9F1;
+            --text-color: #3E2723;
+            --indian-yellow: #E4A025;
+            --indian-orange: #E65100;
+            --accent-light: #FFECB3;
+            --ref-bg: #FFF3E0;
+        }
+
+        body {
+            font-family: 'Georgia', 'Nirmala UI', 'Mangal', serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(var(--bg-color) 80%, var(--accent-light) 100%);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #FFFFFF;
+            padding: 50px 60px;
+            box-shadow: 0 10px 30px rgba(62, 39, 35, 0.1);
+            border-top: 8px solid var(--indian-orange);
+            border-bottom: 8px solid var(--indian-yellow);
+            border-radius: 4px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed var(--indian-yellow);
+        }
+
+        h1 {
+            color: var(--indian-orange);
+            font-size: 2.5em;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        h2 {
+            color: var(--indian-yellow);
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--indian-orange);
+            padding-left: 15px;
+        }
+
+        h3, h4 {
+            color: var(--indian-orange);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        .intro-text::first-letter {
+            float: left;
+            font-size: 3.5em;
+            line-height: 0.8;
+            padding-right: 8px;
+            padding-top: 4px;
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        ul, ol {
+            margin: 0 0 24px 0;
+            padding-left: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ol {
+            list-style-position: outside;
+            padding-left: 2.2em;
+        }
+
+        ul li, ol li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        ol li {
+            padding-left: 0.35em;
+        }
+
+        ul li::before {
+            content: '\2022';
+            position: absolute;
+            left: 0;
+            top: 0.05em;
+            color: var(--indian-orange);
+            font-size: 1.2em;
+            line-height: 1;
+        }
+
+        ol li::marker {
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        strong {
+            color: var(--indian-orange);
+        }
+
+        .image-placeholder-container {
+            margin: 30px 0;
+            text-align: center;
+            font-style: italic;
+            color: #795548;
+            background-color: var(--accent-light);
+            padding: 20px;
+            border-radius: 4px;
+            border: 1px solid var(--indian-yellow);
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.98em;
+            background-color: #FFFDF8;
+        }
+
+        th, td {
+            border: 1px solid #F0D49B;
+            padding: 10px 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--ref-bg);
+            color: var(--indian-orange);
+        }
+
+        blockquote {
+            margin: 30px 0;
+            padding: 20px 25px;
+            background-color: var(--accent-light);
+            border-left: 5px solid var(--indian-orange);
+            font-style: italic;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px dashed var(--indian-yellow);
+            margin: 32px 0;
+        }
+
+        .references {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: var(--ref-bg);
+            border-radius: 8px;
+            font-size: 0.9em;
+        }
+
+        .references h2, .references h3 {
+            color: var(--text-color);
+            margin-top: 0;
+            border-bottom: 1px solid var(--indian-yellow);
+            padding-bottom: 10px;
+            border-left: 0;
+            padding-left: 0;
+        }
+
+        .references p, .references li {
+            margin-bottom: 12px;
+            word-wrap: break-word;
+        }
+
+        .references a {
+            color: var(--indian-orange);
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Makar Sankranti Remedies</h1>
+        </header>
+
+        <article>
+<h2>Introduction: The Return of the Light</h2>
+<p class="intro-text">Makar Sankranti is the preeminent solar gateway of the Vedic calendar, marking the <strong>Nirayana</strong> transit of the Sun into the zodiac sign of Capricorn (<em>Makar Rashi</em>). This celestial shift signals the conclusion of <strong>Khar Maas</strong>—a period that began when the Sun entered Sagittarius (<em>Dhanu Rashi</em>) and was traditionally reserved for internal reflection rather than outward celebration. With the Sun’s entry into Capricorn, we witness the birth of <strong>Uttarayan</strong>, the six-month northward journey of the Sun.</p>
+<div class="image-placeholder-container">
+    <img src="blog48_Image.png" alt="Makar Sankranti 2027 Uttarayana remedies and exact timing window: January 14 2027 Thursday, Surya Sankranti moment 09:44 AM, Punya Kaal from 09:44 AM to 05:55 PM, Maha Punya Kaal from 09:44 AM to 11:37 AM, Sun enters Capricorn Makara ruled by Shani, Surya Arghya with copper kalash water red flowers roli and sesame seeds, black sesame til and jaggery gud remedies, khichdi daan warm blanket donation sesame oil lamp, Aditya Hridayam and Om Adityaya Namah, Uttarayan light, winter Ritucharya Ayurveda, devotion spirituality remedial astrology holistic wellbeing">
+</div>
+<p>Spiritually, this is the "Day of the Devas." The importance of this transition is perhaps best illustrated by the legend of <strong>Bhishma Pitamah</strong> from the <em>Mahabharata</em>. Blessed with <em>Ichchha Mrityu</em> (death at will), the great patriarch lay on a bed of arrows for weeks, choosing to endure physical agony so he could wait for the Sun to enter Uttarayan before leaving his mortal coil, ensuring his soul’s path to salvation (<em>Moksha</em>).</p>
+<p>As we align with this "Return of the Light," we tap into a window where the cosmic flow is uniquely receptive to our intentions.</p>
+<blockquote><p>"Makar Sankranti is <em>Atyanta Punyavardhak</em>—a day that greatly multiplies spiritual merit." — <strong>The Vishnu Puran</strong></p></blockquote>
+<blockquote><p>"In the path of light, during the six months of the Sun’s northern course, the seekers of Brahman go to Brahman." — <strong>The Bhagavad Gita (Chapter 8)</strong></p></blockquote>
+<p>&#8212;</p>
+<h2>The 2026 and 2027 Calendar: Key Dates and Auspicious Windows</h2>
+<p>While lunar festivals shift significantly, Makar Sankranti remains anchored to the solar cycle. To maximize the spiritual efficacy of your rituals, they should be performed during the <strong>Punya Kaal</strong> (Auspicious Window) or the even more potent <strong>Maha Punya Kaal</strong>. Traditionally calculated as a window of 40 <em>Ghatis</em> (roughly 16 hours) surrounding the transit, these windows are the peak moments for bathing and charity.</p>
+<table>
+<thead><tr><th>Year</th><th>Observation Date</th><th>Sankranti Moment</th><th>Punya Kaal Window</th><th>Maha Punya Kaal</th></tr></thead>
+<tbody>
+<tr><td><strong>2026</strong></td><td>January 14, Wednesday</td><td><em>Consult Local Panchang</em></td><td><em>Consult Local Panchang</em></td><td><em>Consult Local Panchang</em></td></tr>
+<tr><td><strong>2027</strong></td><td>January 14, Thursday</td><td><strong>09:44 AM</strong></td><td>09:44 AM to 05:55 PM</td><td>09:44 AM to 11:37 AM</td></tr>
+</tbody>
+</table>
+<p><em>Note: For 2027, the Punya Kaal duration is 08 hours and 11 minutes, while the high-intensity Maha Punya Kaal lasts 01 hour and 53 minutes.</em></p>
+<p>&#8212;</p>
+<h2>Astrological Alignment: The Sun in the House of Saturn</h2>
+<p>In the Vedic architecture of the heavens, Capricorn is ruled by <strong>Shani</strong> (Saturn). Because the Sun and Saturn share a relationship of paternal enmity, Capricorn is considered an "enemy sign" for the Sun. This placement creates a cosmic friction that demands discipline over ego and persistence over speed. It is a time for building authority through merit and structure.</p>
+<h3>2027 Sankranti Phalam (Predictions)</h3>
+<p>For the 2027 transition, the Sankranti is named <strong>Manda</strong>, and her <em>Vahana</em> (Vehicle) is the <strong>Elephant (Hathi)</strong>, with a secondary vehicle of a Donkey. The following scholarly predictions are indicated:</p>
+<ul>
+<li><strong>Intellectual Sphere:</strong> Highly favorable for scholars, researchers, and the educated elite.</li>
+<li><strong>Economic Outlook:</strong> Costs of essential commodities are expected to remain stable and normal.</li>
+<li><strong>National Prosperity:</strong> An increase in grain stocks and overall national wealth is predicted.</li>
+<li><strong>Public Health:</strong> A period of general well-being for the populace and improved affinity between nations.</li>
+</ul>
+<p>&#8212;</p>
+<h2>Regional Rhythms: How India Celebrates</h2>
+<p>Across the Indian subcontinent, the solar transition is greeted with localized devotion, yet the underlying theme of gratitude remains universal:</p>
+<ul>
+<li><strong>Tamil Nadu:</strong> <em>Pongal</em> (The boiling over of prosperity)</li>
+<li><strong>Gujarat &amp; Rajasthan:</strong> <em>Uttarayana</em> (The mass kite-flying spectacle)</li>
+<li><strong>Punjab &amp; Haryana:</strong> <em>Maghi / Lohri</em> (Bonfires and winter harvests)</li>
+<li><strong>Assam:</strong> <em>Magh Bihu</em> (Feasts and community huts)</li>
+<li><strong>Uttar Pradesh:</strong> <em>Khichdi Parv</em> (The sacred dip and grain offerings)</li>
+</ul>
+<p>In Gujarat, the sky becomes a canvas for the soul. The kites soaring toward the heavens represent the human spirit’s ascent toward freedom and the divine, shaking off the heaviness of winter.</p>
+<p>&#8212;</p>
+<h2>Step-by-Step Pooja Vidhi (Ritual Guide)</h2>
+<p>To synchronize your personal energy with the 2026–2027 transits, follow these ancient protocols:</p>
+<ol>
+<li><strong>Brahma Muhurat Awakening:</strong> Rise at least 90 minutes before sunrise. This hour is governed by <em>Satva</em> (purity), aligning with the discipline required by the Sun’s presence in Saturn’s sign.</li>
+<li><strong>The Sacred Purification:</strong> Perform a ritual bath. If you cannot reach a holy river, add <strong>Black Sesame seeds</strong> and a few drops of <strong>Gangajal</strong> to your bathing water to neutralize karmic weight.</li>
+<li><strong>Surya Arghya:</strong> Using a copper <em>Kalash</em>, offer water to the rising Sun. Add red flowers, <em>roli</em> (vermilion), and sesame seeds to the water.</li>
+</ol>
+<ul>
+<li><strong>The Scholarly Protocol:</strong> After pouring the water, perform <strong>Pradakshina</strong>—turning three times clockwise in your place—to symbolize your soul’s three revolutions around the solar center.</li>
+</ul>
+<ol>
+<li><strong>Mantras:</strong> Chant the <em>Surya Gayatri Mantra</em> or "Om Adityaya Namah." For those facing professional obstacles, the <em>Aditya Hridayam Stotra</em> is highly recommended.</li>
+<li><strong>Lighting the Lamp:</strong> Light a lamp using <strong>Sesame Oil</strong>. In this specific transit, sesame oil harmonizes the fire of the Sun with the earthy discipline of Saturn.</li>
+<li><strong>Naivedya:</strong> Offer simple, pure offerings such as rice, jaggery, and the traditional <em>Khichdi</em>.</li>
+</ol>
+<p>&#8212;</p>
+<h2>The Alchemy of Til (Sesame) and Jaggery (Gud)</h2>
+<p>The consumption of <em>Til-Gud</em> is a sophisticated astrological remedy. <strong>Til (Sesame)</strong> is the grain of Saturn, capable of absorbing negativity and ancestral burdens (<em>Pitru Dosha</em>). <strong>Gud (Jaggery)</strong> represents the warmth and sweetness of the Sun. Eating them together symbolizes the reconciliation between the Sun and his son, Saturn. It is a mandate to dissolve the ego and replace interpersonal bitterness with the sweetness of harmonious relationships.</p>
+<p>&#8212;</p>
+<h2>Daan: The Power of Targeted Charity</h2>
+<p>Charity on this day is considered a thousand times more meritorious, provided it is directed with intent.</p>
+<ul>
+<li><strong>Khichdi (The Great Offering):</strong> Represents <em>Anna Daan</em>, the highest form of charity, nourishing the divine within the receiver.</li>
+<li><strong>Black Sesame Seeds:</strong> Vital for Sun-Saturn balance. These seeds are <em>Paap-Nashak</em> (sin-destroying) and bring peace to ancestors.</li>
+<li><strong>Warm Clothes &amp; Black Blankets:</strong> A practical <em>Seva</em> (service). Donating black blankets specifically mitigates <em>Shani</em>-related obstacles in career and stability.</li>
+<li><strong>Ghee:</strong> An offering of Ghee enhances your own vitality, health, and physical "aura."</li>
+</ul>
+<p><strong>Scholarly Note on Dakshina:</strong> According to the Shastras, any <em>Daan</em> (charity) is considered incomplete without <strong>Dakshina</strong> (a monetary offering). It is believed that offerings made without Dakshina do not attain their full spiritual weight and may not reach the divine. Always include a small amount of money with your physical donations to seal the merit of the act.</p>
+<p>&#8212;</p>
+<h2>Conclusion: Your Karmic Reset</h2>
+<p>Makar Sankranti is more than a holiday; it is your annual opportunity for a karmic reset. By honoring the Sun’s northward journey, we shed the "Khar" (harsh/inauspicious) qualities of the past month and step into a period of growth.</p>
+<h3>The Practitioner’s Do’s and Don’ts</h3>
+<ul>
+<li><strong>DO</strong> rise early and bathe before consuming any food to maintain ritual purity.</li>
+<li><strong>DO</strong> speak with conscious sweetness (<em>Til-Gud Vani</em>), as speech on this day sets the tone for your year.</li>
+<li><strong>DON'T</strong> cut trees or harm nature, as you are celebrating the life-giving force of the Sun.</li>
+<li><strong>DON'T</strong> delay your acts of charity; the energy of the <em>Punya Kaal</em> is fleeting.</li>
+</ul>
+<p>By aligning with the <em>Satvik</em> energies of Uttarayan, you invite clarity, resilience, and success into your life, ensuring that your path forward is as bright as the returning Sun.</p>
+
+<div class="references">
+<h2>Sources</h2>
+<ol>
+<li><a href="https://yagyasdevam.com/makar-sankranti-significance/">Makar Sankranti 2027 – A Day of Karmic Reset &amp; Divine Alignment ...</a></li>
+<li><a href="https://www.anytimeastro.com/blog/trending/makar-sankranti/">Makar Sankranti 2027 Date, Time, and Importance - Anytime Astro</a></li>
+<li><a href="https://astrosight.ai/festivals/makar-sankranti/2027">Makar Sankranti 2027 — Date, Muhurat, Significance &amp; Rituals ...</a></li>
+<li><a href="https://divinesansar.com/blogs/guide/makar-sankranti">Makar Sankranti 2027 - Divine Sansar UAE</a></li>
+<li><a href="https://www.drikpanchang.com/sankranti/makar-sankranti-date-time.html?geoname-id=3590219">2027 Makar Sankranti, Pongal Date and Time for San Francisco El Alto, Totonicapan, Guatemala - Drik Panchang</a></li>
+<li><a href="https://timesofindia.indiatimes.com/religion/festivals/makar-sankranti-pooja-vidhi-step-by-step-rituals-aligned-with-2026-planetary-transits/articleshow/126448612.cms">Makar Sankranti Pooja Vidhi: Step-by-Step Rituals Aligned with 2026 Planetary Transits</a></li>
+<li><a href="https://consultlunarastro.com/2026/01/11/makar-sankranti-when-the-king-walks-among-common-people/">Makar Sankranti - When the King Walks Among Common People - Consult Lunar Astro</a></li>
+<li><a href="https://astrosight.ai/planets/sun-in-capricorn-complete-vedic-astrology-guide-to-effects-remedies">Sun in Capricorn: Vedic Astrology — Effects &amp; Remedies | AstroSight</a></li>
+<li><a href="https://jagannathhora.com/sun-in-capricorn/">Sun (Surya) in Capricorn: Discipline, Ambition, Career &amp; All 12 Ascendants (Vedic + KP)</a></li>
+<li><a href="https://www.narayanseva.org/makar-sankranti-when-and-why-celebrated/">Makar Sankranti 2026: When &amp; Why it is Celebrated</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Makar_Sankranti">Makar Sankranti - Wikipedia</a></li>
+<li><a href="https://kbirwellness.com/blogs/resources/winter-ritucharya-wellness-remedies">Winter Ritucharya Guide: Ayurvedic Routine with Kbir Wellness</a></li>
+<li><a href="https://blog.theayurvedaexperience.com/foods-recommended-by-ayurveda-for-winter-season/">Foods Recommended By Ayurveda For Winter Season</a></li>
+<li><a href="https://srisriayurvedahospital.org/ritucharya-in-winter-ayurvedic-guide/">Ritucharya in Winter- An Ayurvedic Seasonal Guidelines</a></li>
+<li><a href="https://www.arhantayoga.org/blog/ayurveda-winter-wellness-daily-rituals-recipes/">Ayurveda For Winter: Daily Rituals &amp; Recipes For Balance - Arhanta Yoga Ashrams</a></li>
+<li><a href="https://www.ayurvedanashik.com/post/shishir-ritucharya-diet-regimen-in-shishir-ritu-late-winter">Shishir Ritucharya (Diet &amp; Regimen in Shishir Ritu-Late winter)|Dr ...</a></li>
+<li><a href="https://apoorvastore.com/blogs/spiritual-blogs/aditya-hridayam-stotram-the-ancient-sun-prayer-that-can-transform-your-life-by-apoorva-sharma">Aditya Hridayam Stotram: The Ancient Sun Prayer That Can Transform You - Crystall and Herbs</a></li>
+<li><a href="https://timesofindia.indiatimes.com/astrology/others/did-you-know-chanting-aditya-hridaya-stotra-can-enhance-your-self-confidence/articleshow/126307837.cms">Did you know chanting Aditya Hridaya Stotra can enhance your self confidence?</a></li>
+<li><a href="https://www.shastrigal.net/aditya-hridaya-homam-for-makar-sankranti-special/">Aditya Hridaya Homam for Makar Sankranti Special - Shastrigal.net</a></li>
+<li><a href="https://www.artofliving.org/in-en/culture/how-saturn%E2%80%99s-transit-from-saggitarius-to-capricorn-and-how-you-can-make-the-best-use-of-this-time">Saturn&#x27;s transit to Capricorn: What does it mean for you? Find out! | The Art of Living India</a></li>
+<li><a href="https://www.bda.ai/festival/makar-sankranti/2027">Makar Sankranti (Pongal) 2027 Date - 14 Jan 2027 | BDA</a></li>
+<li><a href="https://calendartamil.co.in/tamil-calendar-2027/">Tamil Calendar 2027 - தமிழ் நாட்காட்டி 2027 PDF Free Download</a></li>
+<li><a href="https://www.youtube.com/shorts/b7GFJVA1tnI">Makar Sankranti 2027 Date 14 or 15 January? | Prabhava Nama Samvatsara - YouTube</a></li>
+<li><a href="https://m.economictimes.com/news/new-updates/makar-sankranti-2026-date-is-it-14-or-15-january-check-shubh-muhurat-punya-kaal-and-puja-timings/articleshow/126461260.cms">Makar Sankranti 2026 date: Is it 14 or 15 January? Check shubh muhurat, punya kaal and puja timings</a></li>
+<li><a href="https://astrosight.ai/festivals/makar-sankranti-2026">Makar Sankranti 2026 — Date, Punya Kaal &amp; Rituals | AstroSight</a></li>
+<li><a href="https://astropatri.com/blog/makar-sankranti-2026">Makar Sankranti 2026: Date, Punya Kaal, and Rituals | Astropatri.com</a></li>
+<li><a href="https://99pandit.com/blog/surya-shani-shapit-dosha-puja/">Pandit for Surya Shani Shapit Dosha Puja: Cost, Vidhi &amp; Benefits - 99Pandit</a></li>
+<li><a href="https://www.pavitrajyotish.com/surya-shani-shapit-dosh-puja/">Surya Shani Dosh Puja - PavitraJyotish</a></li>
+<li><a href="https://www.astrologerumesh.com/blog/makar-sankranti-festival/">Know Makar Sankranti, Its Importance, And Benefit - Astrologer Umesh</a></li>
+<li><a href="https://vedicrishi.in/blog/makar-sankranti-2024-sun-transit">Makar Sankranti 2024: Effect of Sun Transit in Capricorn On You - Vedic Rishi</a></li>
+<li><a href="https://timesofindia.indiatimes.com/astrology/kundali-dasha-remedies/shani-dosha-remedies-for-each-star-sign-finding-balance-in-astrology/articleshow/112765382.cms">Shani Dosha Remedies for Each Star Sign: Finding Balance in Astrology</a></li>
+<li><a href="http://simplifiedspirituality.blogspot.com/2014/03/benefits-of-aditya-hrudayam.html">Benefits of Aditya Hrudayam - Trivia on Spirituality</a></li>
+<li><a href="https://www.harekrsna.de/aditya-hridayam.htm">Aditya Hridayam - The Heart of Aditya, the Sun God</a></li>
+<li><a href="https://www.reddit.com/r/Tantra/comments/1qbmbg4/makar_sakranti_and_the_power_of_aditya_hridaya/">Makar Sakranti and The Power of Aditya Hridaya Stotra : r/Tantra - Reddit</a></li>
+<li><a href="https://www.dabur.com/blog/ayurvedic-daily-routine/ritucharya">Ritucharya in Ayurveda | Ayurvedic Seasonal Regimen by Dabur</a></li>
+<li><a href="https://www.ayurvedakendra.in/discover-ayurveda/the-theory-of-ayurveda/ritucharya/">Ritucharya: Seasonal Schedule - Ayurveda Kendra</a></li>
+<li><a href="https://courses.onlineyoga.school/pages/what-are-the-seasons-of-ayurveda-ritucharya-explained">What Are the Seasons of Ayurveda? Ritucharya Explained - Online Yoga School</a></li>
+<li><a href="https://kelkarayurcare.com/ritucharya/">Ritucharya - Dr. Kelkar Ayurvedic Clinic, Panchakarmas Center</a></li>
+<li><a href="https://mapi.com/blogs/articles/ritucharya-a-seasonal-routine-to-support-your-gut-microbiome">Ritucharya: A Seasonal Routine to Support Your Gut Microbiome - Maharishi Ayurveda</a></li>
+<li><a href="https://astropatri.com/blog/mithuna-sankranti-2026-date-punya-kaal-significance-donations-benefits">Mithuna Sankranti 2026: Date, Punya Kaal, Significance, Donations &amp; Spiritual Benefits</a></li>
+<li><a href="https://www.sanatanhindu.co.in/aditya-hridaya-stotra-meaning-and-benefits">Aditya Hridaya Stotra: Meaning, Benefits, and Chanting Guide | Sanatan Hindu</a></li>
+<li><a href="https://timesofindia.indiatimes.com/business/bank-holidays/january">Full List of Bank Holidays in January 2026 - The Times of India</a></li>
+<li><a href="https://www.calendarlabs.com/holidays/india/makara-sankranti.php">Makara Sankranti in 2027 - Calendar Labs</a></li>
+<li><a href="https://www.youtube.com/watch?v=I9ytzb0U4ns">Makar Sankranti 2026: Shubh Muhurat, Date, Time And Rituals - YouTube</a></li>
+<li><a href="https://samvat.in/festivals/makar-sankranti-2027/">Makar Sankranti 2027: Date, Tithi, Meaning &amp; Calculation</a></li>
+<li><a href="https://www.bda.ai/festival/vrishchika-sankranti/2027">Vrishchika Sankranti 2027 Date - 17 Nov 2027 | BDA - Bharat Dharma Academy Limited</a></li>
+<li><a href="https://www.youtube.com/hashtag/2027festivals">2027festivals - - YouTube</a></li>
+<li><a href="https://www.scribd.com/document/899984758/Kalash-With-Ganga-and-Kumbh">Significance of Purna-Kalasha in Rituals | PDF - Scribd</a></li>
+<li><a href="https://timesofindia.indiatimes.com/life-style/events/when-is-lohri-2025-date-history-significance-story-and-all-you-need-to-know/articleshow/117093093.cms">When is Lohri 2025? Date, History, Significance, Story and all you need to know</a></li>
+<li><a href="https://hinduhub.in/festival/makar-sankranti">Makar Sankranti 2027: Date, Rituals &amp; How to Celebrate | Hindu Hub</a></li>
+<li><a href="https://nationaltoday.com/makar-sankranti/">MAKAR SANKRANTI - January 15, 2027 - National Today</a></li>
+<li><a href="https://outside.so/months-until/how-many-months-until-makar-sankranti-2027">How Many Months Until Makar Sankranti 2027?</a></li>
+<li><a href="https://www.teachingpacks.co.uk/event/makar-sankranti/2027-01-14/">Makar Sankranti - Teaching Packs</a></li>
+<li><a href="https://umanitoba.ca/sites/default/files/2023-05/Multi%20Faith%20calendar.pdf">MULTI-FAITH CALENDAR (JULY 1 - JUNE 30) - University of Manitoba</a></li>
+</ol>
+</div>
+        </article>
+    </div>
+
+</body>
+</html>

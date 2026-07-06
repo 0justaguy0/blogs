@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ग्रहण उपाय</title>
+    <style>
+        :root {
+            --bg-color: #FDF9F1;
+            --text-color: #3E2723;
+            --indian-yellow: #E4A025;
+            --indian-orange: #E65100;
+            --accent-light: #FFECB3;
+            --ref-bg: #FFF3E0;
+        }
+
+        body {
+            font-family: 'Georgia', 'Nirmala UI', 'Mangal', serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(var(--bg-color) 80%, var(--accent-light) 100%);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #FFFFFF;
+            padding: 50px 60px;
+            box-shadow: 0 10px 30px rgba(62, 39, 35, 0.1);
+            border-top: 8px solid var(--indian-orange);
+            border-bottom: 8px solid var(--indian-yellow);
+            border-radius: 4px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed var(--indian-yellow);
+        }
+
+        h1 {
+            color: var(--indian-orange);
+            font-size: 2.5em;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        h2 {
+            color: var(--indian-yellow);
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--indian-orange);
+            padding-left: 15px;
+        }
+
+        h3, h4 {
+            color: var(--indian-orange);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        .intro-text::first-letter {
+            float: left;
+            font-size: 3.5em;
+            line-height: 0.8;
+            padding-right: 8px;
+            padding-top: 4px;
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        ul, ol {
+            margin: 0 0 24px 0;
+            padding-left: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ol {
+            list-style-position: outside;
+            padding-left: 2.2em;
+        }
+
+        ul li, ol li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        ol li {
+            padding-left: 0.35em;
+        }
+
+        ul li::before {
+            content: '\2022';
+            position: absolute;
+            left: 0;
+            top: 0.05em;
+            color: var(--indian-orange);
+            font-size: 1.2em;
+            line-height: 1;
+        }
+
+        ol li::marker {
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        strong {
+            color: var(--indian-orange);
+        }
+
+        .image-placeholder-container {
+            margin: 30px 0;
+            text-align: center;
+            font-style: italic;
+            color: #795548;
+            background-color: var(--accent-light);
+            padding: 20px;
+            border-radius: 4px;
+            border: 1px solid var(--indian-yellow);
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.98em;
+            background-color: #FFFDF8;
+        }
+
+        th, td {
+            border: 1px solid #F0D49B;
+            padding: 10px 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--ref-bg);
+            color: var(--indian-orange);
+        }
+
+        blockquote {
+            margin: 30px 0;
+            padding: 20px 25px;
+            background-color: var(--accent-light);
+            border-left: 5px solid var(--indian-orange);
+            font-style: italic;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px dashed var(--indian-yellow);
+            margin: 32px 0;
+        }
+
+        .references {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: var(--ref-bg);
+            border-radius: 8px;
+            font-size: 0.9em;
+        }
+
+        .references h2, .references h3 {
+            color: var(--text-color);
+            margin-top: 0;
+            border-bottom: 1px solid var(--indian-yellow);
+            padding-bottom: 10px;
+            border-left: 0;
+            padding-left: 0;
+        }
+
+        .references p, .references li {
+            margin-bottom: 12px;
+            word-wrap: break-word;
+        }
+
+        .references a {
+            color: var(--indian-orange);
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>ग्रहण उपाय</h1>
+        </header>
+
+        <article>
+<p class="intro-text">28 अगस्त 2026 को श्रावण पूर्णिमा के पावन अवसर पर एक अत्यंत महत्वपूर्ण खगोलीय और ज्योतिषीय घटना होने जा रही है—<strong>अंशिका चंद्र ग्रहण (Partial Lunar Eclipse)</strong>। यह दिन धार्मिक दृष्टि से विशेष है क्योंकि इसी दिन भाई-बहन के प्रेम का उत्सव 'रक्षाबंधन' भी मनाया जाएगा।</p>
+<div class="image-placeholder-container">
+    <img src="blog46_Image.png" alt="अगस्त 2026 ग्रहण उपाय और समय: पूर्ण सूर्य ग्रहण बुधवार 12 अगस्त 2026 अनुष्ठान आरंभ रात 9:04 बजे ग्रहण रात 9:45 से 2:15 बजे 13 अगस्त आश्लेषा नक्षत्र गंडांत क्षेत्र कर्क सिंह संधि, अंशिका चंद्र ग्रहण शुक्रवार 28 अगस्त 2026 सुबह 6:55 से दोपहर 12:30 बजे अधिकतम 9:43 बजे शतभिषा नक्षत्र श्रावण पूर्णिमा रक्षाबंधन, दोनों ग्रहण भारत में अदृश्य सूतक काल लागू नहीं, राहु केतु छाया ग्रह, मंत्र जाप गुणक प्रभाव 1 समान 100000, महामृत्युंजय और गायत्री मंत्र, तुलसी और कुशा घास, दान, स्नान, गर्भवती स्त्रीयों के सावधानियाँ, राशि अनुसार उपाय, कर्क में उच्च गुरु रक्षक">
+</div>
+<p>एक अनुभवी ज्योतिषी के रूप में, मैं जानता हूँ कि जब भी कोई ग्रहण किसी बड़े पर्व के साथ पड़ता है, तो जनमानस में भय और संशय की स्थिति उत्पन्न हो जाती है। यह ग्रहण अपनी गहराई (93% से 96.2%) के कारण वैश्विक स्तर पर चंद्रमा को एक <strong>ताम्र या जंग जैसी लालिमा (Coppery/Rust hue)</strong> प्रदान करेगा, लेकिन भारतवासियों के लिए यह संशय की नहीं, बल्कि आध्यात्मिक प्रगति और पर्व की प्रसन्नता का समय है।</p>
+<h2>चंद्र ग्रहण 2026: मुख्य विवरण (Quick Reference Table)</h2>
+<p>ग्रहण की सटीक गणना और समय नीचे दी गई तालिका में संक्षेपित है:</p>
+<table>
+<thead><tr><th>विवरण</th><th>जानकारी / समय (भारतीय समयानुसार - IST)</th></tr></thead>
+<tbody>
+<tr><td><strong>दिनांक</strong></td><td>28 अगस्त 2026 (गुरुवार)</td></tr>
+<tr><td><strong>ग्रहण का प्रकार</strong></td><td>अंशिका चंद्र ग्रहण (Partial Lunar Eclipse)</td></tr>
+<tr><td><strong>भारत में दृश्यता</strong></td><td><strong>नहीं</strong> (चंद्रमा क्षितिज के नीचे होने के कारण दृश्य नहीं)</td></tr>
+<tr><td><strong>सूतक काल (भारत)</strong></td><td><strong>लागू नहीं (N/A)</strong></td></tr>
+<tr><td><strong>उपच्छाया प्रारंभ (P1)</strong></td><td>सुबह 06:55 बजे</td></tr>
+<tr><td><strong>अंशिका छाया (Umbral Phase) प्रारंभ</strong></td><td>सुबह 08:04 बजे</td></tr>
+<tr><td><strong>अधिकतम ग्रहण (Maximum Peak)</strong></td><td>सुबह 09:43 बजे</td></tr>
+<tr><td><strong>अंशिका छाया (Umbral Phase) समाप्ति</strong></td><td>सुबह 11:21 बजे</td></tr>
+<tr><td><strong>उपच्छाया समाप्ति (P4)</strong></td><td>दोपहर 12:30 बजे</td></tr>
+</tbody>
+</table>
+<h2>क्या रक्षाबंधन पर लगेगा ग्रहण का साया? (महत्वपूर्ण स्पष्टीकरण)</h2>
+<p>ज्योतिष शास्त्र का अकाट्य नियम है—<strong>'यत्र दृश्यम्, तत्र फलम्'</strong>। इसका अर्थ है कि ग्रहण का धार्मिक प्रभाव, सूतक काल और निषेध केवल वहीं मान्य होते हैं जहाँ वह आँखों से दिखाई दे।</p>
+<p>28 अगस्त 2026 को ग्रहण का समय सुबह 06:55 से दोपहर 12:30 बजे तक है। खगोलीय विज्ञान के अनुसार, इस अवधि में भारत में सूर्योदय हो चुका होगा और चंद्रमा क्षितिज के नीचे (Below the Horizon) होगा। सरल शब्दों में, यह एक <strong>'दिन का चंद्र ग्रहण'</strong> है, जिसे भौतिक रूप से देखना असंभव है। जब चंद्रमा की छाया भारत की मिट्टी को छुएगी ही नहीं, तो सूतक का प्रश्न ही नहीं उठता।</p>
+<ul>
+<li><strong>रक्षाबंधन मुहूर्त:</strong> राखी बांधने का शुभ मुहूर्त <strong>सुबह 05:57 से सुबह 09:48</strong> तक है।</li>
+<li><strong>विशेष आश्वासन:</strong> हालांकि ग्रहण का उच्चतम बिंदु (Peak) सुबह 09:43 पर है, लेकिन भारत में दृश्यता न होने के कारण आपको रक्षाबंधन के अनुष्ठान रोकने की कोई आवश्यकता नहीं है। आप बिना किसी संशय के सुबह 09:48 तक राखी बांध सकते हैं। मंदिरों के कपाट खुले रहेंगे और भोजन संबंधी कोई प्रतिबंध नहीं होगा।</li>
+</ul>
+<h2>ज्योतिषीय विश्लेषण: कुंभ राशि और शतभिषा नक्षत्र का प्रभाव</h2>
+<p>यह ग्रहण <strong>कुंभ राशि</strong> और <strong>शतभिषा नक्षत्र</strong> (राहु द्वारा शासित) में लग रहा है, जबकि सूर्य इसके ठीक विपरीत <strong>मघा नक्षत्र</strong> (केतु द्वारा शासित) में होगा। चंद्रमा को ज्योतिष में 'मन' का कारक माना गया है (<em>चंद्रमा मनसो जातः</em>)। भले ही यह भारत में दृश्य न हो, लेकिन सूक्ष्म (Subtle) ऊर्जा स्तर पर यह मानसिक और भावनात्मक शुद्धि (Shuddhi) का एक 'सिद्ध समय' है।</p>
+<p>शतभिषा नक्षत्र 'सौ वैद्यों' का प्रतीक है, जो गहन उपचार (Healing) और अंतर्दृष्टि का प्रतिनिधित्व करता है। यह समय पुरानी आदतों, नकारात्मक विचारों और मानसिक बोझ को त्याग कर एक नई शुरुआत करने के लिए अत्यंत शक्तिशाली है।</p>
+<h2>सिद्ध काल में क्या करें? (आध्यात्मिक उपाय और दान)</h2>
+<p>ग्रहण की ऊर्जा को सकारात्मक रूप देने के लिए आप इन शास्त्रीय उपायों को अपना सकते हैं:</p>
+<ol>
+<li><strong>मंत्र जप:</strong> सुबह 06:55 से दोपहर 12:30 के बीच 'महामृत्युंजय मंत्र' या 'चंद्र बीज मंत्र' का जप करें। यह मंत्र शक्ति आपके 'आत्म-बल' को बढ़ाती है।</li>
+<li><strong>दान (Daan) का महत्व:</strong> ग्रहण काल में किए गए दान का फल अनंत गुना होता है। सफेद वस्तुओं जैसे—चावल, दूध, चीनी, चांदी या सफेद वस्त्रों का दान जरूरतमंदों को करें।</li>
+<li><strong>पुरानी आदतों का त्याग (Releasing the Old):</strong> अंशिका छाया चरण (<strong>Umbral Phase: 08:04 AM से 11:21 AM</strong>) के दौरान अपनी उन आदतों या सीमित विचारों को कागज पर लिखें जिन्हें आप छोड़ना चाहते हैं। दोपहर 12:30 बजे ग्रहण पूर्णतः समाप्त होने पर उस कागज को फाड़ दें या नष्ट कर दें।</li>
+<li><strong>विशेष एस्ट्रो-टिप (प्रतिबिंब विज्ञान):</strong> यदि आप मानसिक शांति चाहते हैं, तो एक कटोरे में दूध भरकर उसमें अपना प्रतिबिंब देखें (<strong>Pratibimb Vigyan</strong>) और फिर वह दूध किसी सफेद कुत्ते या गाय को दे दें। यह चंद्र दोष निवारण का अचूक उपाय है।</li>
+</ol>
+<h2>राशि अनुसार उपाय (Rashi Upay)</h2>
+<p>इस खगोलीय अवसर पर अपनी राशि के अनुसार ये विशेष उपाय करें:</p>
+<ul>
+<li><strong>मेष:</strong> सफेद फूल मंदिर में चढ़ाएं और प्राणायाम द्वारा अपने साहस को संतुलित करें।</li>
+<li><strong>वृषभ:</strong> दूध या दही का दान करें; यह आपकी वित्तीय स्थिरता के लिए शुभ है।</li>
+<li><strong>मिथुन:</strong> 'ॐ नमः शिवाय' का 108 बार जप करें ताकि निर्णय लेने की क्षमता प्रखर हो।</li>
+<li><strong>कर्क:</strong> चंद्रमा आपकी राशि का स्वामी है। ग्रहण के चरम (09:43 AM) पर मौन रहें और <strong>अपने चारों ओर एक 'सुरक्षात्मक सफेद प्रकाश' (Protective White Light) की कल्पना करते हुए ध्यान करें।</strong></li>
+<li><strong>सिंह:</strong> आत्म-बल के लिए सूर्य को जल दें और मघा नक्षत्र की ऊर्जा को संतुलित करने हेतु कंबल दान करें।</li>
+<li><strong>कन्या:</strong> सफेद चावल का दान करें; इससे बौद्धिक स्पष्टता प्राप्त होगी।</li>
+<li><strong>तुला:</strong> शाम को घी का दीपक जलाएं और संबंधों में मधुरता के लिए चंदन का तिलक लगाएं।</li>
+<li><strong>वृश्चिक:</strong> भगवान शिव को शहद मिश्रित जल चढ़ाएं; इससे आपकी अंतर्दृष्टि तीव्र होगी।</li>
+<li><strong>धनु:</strong> गुरुवार का दिन होने से पीले और सफेद वस्त्रों या मिठाइयों का दान करें।</li>
+<li><strong>मकर:</strong> काले तिल जल में प्रवाहित करें और धैर्य के लिए प्रार्थना करें।</li>
+<li><strong>कुंभ:</strong> आपकी राशि में ग्रहण होने से यह सृजनात्मक ऊर्जा का समय है। भारत में दृश्यता न होने के कारण, चंद्रमा उदय होने के बाद या वैश्विक स्तर पर चांदनी में ध्यान करें। सफेद छतरी का दान करें।</li>
+<li><strong>मीन:</strong> सोते समय सिरहाने पानी का गिलास रखें और अगली सुबह उसे किसी पौधे में डाल दें।</li>
+</ul>
+<h2>अक्सर पूछे जाने वाले प्रश्न (FAQs)</h2>
+<p><strong>1. क्या गर्भवती महिलाओं को भारत में सावधानी बरतने की ज़रूरत है?</strong> चूँकि ग्रहण भारत में अदृश्य है, इसलिए गर्भवती महिलाओं के लिए बाहर न निकलने या नुकीली वस्तुओं का उपयोग न करने जैसे नियम अनिवार्य नहीं हैं। आप सामान्य जीवन जी सकती हैं। केवल मन की शांति के लिए मंत्र जप करना श्रेयस्कर है।</p>
+<p><strong>2. क्या ग्रहण के दिन पितृ तर्पण किया जा सकता है?</strong> हाँ, पूर्णिमा और ग्रहण का संयोग पितृ तर्पण के लिए अत्यंत श्रेष्ठ है। अदृश्य ग्रहण में भी तर्पण करने से पूर्वजों का विशेष आशीर्वाद प्राप्त होता है।</p>
+<p><strong>3. 'अंशिका' (Partial) और 'उपच्छाया' (Penumbral) ग्रहण में क्या अंतर है?</strong> उपच्छाया में चंद्रमा केवल पृथ्वी की धुंधली बाहरी छाया से गुजरता है, लेकिन अंशिका (Partial) ग्रहण में चंद्रमा पृथ्वी की गहरी और काली छाया (Umbra) में प्रवेश करता है। 2026 का यह ग्रहण 96.2% परिमाण (Magnitude) का है, जो इसे अत्यंत गहरा और प्रभावी बनाता है।</p>
+<h2>निष्कर्ष और मुख्य सीख (Key Takeaways)</h2>
+<ul>
+<li><strong>भयमुक्त पर्व:</strong> भारत में दृश्यता न होने के कारण रक्षाबंधन पर इस ग्रहण का कोई दुष्प्रभाव नहीं है। राखी बिना किसी संशय के बांधी जा सकती है।</li>
+<li><strong>प्राकृतिक घटना:</strong> दिन में चंद्रमा के क्षितिज से नीचे होने के कारण भारत में इसका सूतक प्रभावी नहीं होगा।</li>
+<li><strong>आध्यात्मिक अवसर:</strong> इस ऊर्जा का उपयोग 'अंशिका छाया चरण' के दौरान आत्म-चिंतन और नकारात्मकता के विसर्जन के लिए करें।</li>
+</ul>
+<p>मेरा दर्शन सदैव यही रहा है कि ज्योतिष हमें डराने के लिए नहीं, बल्कि निडर होकर जीवन जीने का मार्ग दिखाने के लिए है। इस ग्रहण की ऊर्जा को अपनी आध्यात्मिक उन्नति का सोपान बनाएं। ईश्वर आपकी रक्षाबंधन और पूर्णिमा को मंगलमय करे।</p>
+
+<div class="references">
+<h2>Sources</h2>
+<ol>
+<li><a href="https://jagannathhora.com/eclipse-2026-complete-guide-vedic-astrology/">Eclipse 2026 Complete Guide: All Four Eclipses, Dates, Effects for ...</a></li>
+<li><a href="https://astrozindagi.in/festivals/2026/solar-eclipse-2026/">Solar Eclipse 2026 is on August 12, 2026: Date, Timing &amp; Purna ...</a></li>
+<li><a href="https://astrozindagi.in/festivals/2026/chandra-grahan-2026/">Chandra Grahan 2026: Date, Timing &amp; No Sutak in India Facts</a></li>
+<li><a href="https://timesofindia.indiatimes.com/astrology/planets-transits/chandra-grahan-2026-dos-and-donts-for-pregnant-women-during-lunar-eclipse/articleshow/128940116.cms">Chandra Grahan 2026: Do&#x27;s and don&#x27;ts for pregnant women during Lunar Eclipse</a></li>
+<li><a href="https://zendaruniverse.com/updates/surya-grahan-2026-aug-12-solar-eclipse-india-visibility-sutak/">Surya Grahan 2026: Aug 12 Solar Eclipse India Visibility &amp; Sutak ...</a></li>
+<li><a href="https://atozpandit.com/blog/sacred-traditions/grahan-eclipse-safety-food-pregnancy-rules">Grahan Safety Rules: Pregnancy, Food &amp; Sutak Guide - AtoZ Pandit</a></li>
+<li><a href="https://vedaghosham.com/grahana-vidhi/">GRAHANA VIDHI - vedaghosham</a></li>
+<li><a href="https://www.astroved.com/us/specials/solar-eclipse">Solar Eclipse 2026 Remedies &amp; Rituals - AstroVed</a></li>
+<li><a href="https://99pandit.com/blog/grahan-yog-shanti-puja/">Pandit for Grahan Yog Shanti Puja: Cost, Vidhi &amp; Benefits - 99Pandit</a></li>
+<li><a href="https://www.scribd.com/document/833155137/GRAHA-SHANTI-REMEDIES-Horoscope-Results-and-Free-Astrology-Remedies-for-All-Zodiac-Signs">Remedies for Graha Shanti in Astrology | PDF - Scribd</a></li>
+<li><a href="https://www.scribd.com/document/1006874653/Sutak-During-Grahan-or-Eclipse">Sutak During Grahan or Eclipse | PDF - Scribd</a></li>
+<li><a href="https://vama.app/en/puja/chandra-grahan-shanti-and-dosh-nivaran-puja">Chandra Grahan Shanti &amp; Dosh Nivaran Puja - VAMA</a></li>
+<li><a href="https://www.astroved.com/us/specials/lunar-eclipse">Lunar Eclipse 2026 (Chandra Grahan) | Effects &amp; Remedies - AstroVed</a></li>
+<li><a href="https://www.astromantra.com/products/books/puja-sadhana-books/shravani-upakarma-paddhati-book/">Shravani Upakarma Paddhati Book (श्रावणी उपाकर्म पद्धति पुस्तक) | - Astro Mantra</a></li>
+<li><a href="https://www.scribd.com/doc/51710064/Yajur-Veda-Avani-Avittam-or-Upakarma-and-Gayathri-Japam">Avani Avittam Ritual Guide | PDF | Indian Religions | Hindu Literature - Scribd</a></li>
+<li><a href="https://www.rudraksha-ratna.com/articles/shravan-month">Shravan Month 2026 (Sawan Maas): Date, Importance, Story, Fasting Rules - Rudraksha Ratna</a></li>
+<li><a href="https://www.artofliving.org/in-en/culture/reads/dos-and-donts-of-shravan-maas">Decoding the symbolism of rituals associated with month of Shravan - The Art of Living</a></li>
+<li><a href="https://www.hinduamerican.org/blog/on-the-significance-of-the-spiritual-month-of-shravan">On the Significance of the Spiritual Month of Shravan - Hindu American Foundation</a></li>
+<li><a href="https://jothishi.com/bhadra-month/">Bhadra - Meaning, Introduction, Significance and Festivals - Jothishi</a></li>
+<li><a href="https://vedicrishi.in/nakshatras/shravana_nakshatra">Shravan Nakshatra: Characteristics, Career, Compatibility, and More - Vedic Rishi</a></li>
+<li><a href="https://astrosight.ai/transits/eclipses-2026-solar-lunar-eclipse-dates-astrology">Eclipses 2026: Solar &amp; Lunar Eclipse Dates &amp; Astrology | AstroSight</a></li>
+<li><a href="https://www.magicandmastery.com/blog/august-2026-leo-solar-eclipse">What the August 2026 Leo Solar Eclipse Means - School of Magic &amp; Mastery</a></li>
+<li><a href="https://www.crystals.com/blogs/news/august-2026-lunar-guide-leo-solar-eclipse-pisces-sturgeon-moon-crystal-rituals">August 2026 Lunar Guide: Leo Solar Eclipse, Pisces Sturgeon Moon &amp; Crystal Rituals</a></li>
+<li><a href="https://www.chani.com/this-year/key-dates/2026-astrological-key-dates-eclipses">2026 astrological key dates: eclipses - CHANI</a></li>
+<li><a href="https://starwalk.space/en/news/partial-lunar-eclipse-august-28-2026">Deep Partial Lunar Eclipse on August 27–28, 2026: When &amp; Where to See - Star Walk</a></li>
+<li><a href="https://www.skyatnightmagazine.com/advice/12-august-2026-total-solar-eclipse-guide">Total solar eclipse August 2026 – Path map, key locations and timings</a></li>
+<li><a href="https://www.space.com/stargazing/lunar-eclipses/august-2026-lunar-eclipse-everything-you-need-to-know-about-the-96-percent-blood-moon">August 2026 lunar eclipse — Everything you need to know about the 96% &#x27;blood moon&#x27;</a></li>
+<li><a href="https://www.timeanddate.com/eclipse/lunar/2026-august-28">August 27–28, 2026 Partial Lunar Eclipse - Time and Date</a></li>
+<li><a href="https://www.ndtv.com/feature/all-about-the-total-solar-eclipse-in-august-2026-will-it-be-visible-from-india-11602891">All About The Total Solar Eclipse In August 2026. Will It Be Visible From India? - NDTV</a></li>
+<li><a href="https://www.dkscore.com/jyotishmedium/eclipse/solar-eclipse-total-2026-44">Solar Eclipse (Total) – August 12, 2026 | DKSCORE</a></li>
+<li><a href="https://en.wikipedia.org/wiki/August_2026_lunar_eclipse">August 2026 lunar eclipse - Wikipedia</a></li>
+<li><a href="https://www.quora.com/Why-is-it-forbidden-to-eat-during-an-eclipse-according-to-Indian-customs-Is-there-a-scientific-reason-such-as-eating-during-eclipse-is-harmful">Why is it forbidden to eat during an eclipse according to Indian customs? Is there a scientific ... - Quora</a></li>
+<li><a href="https://www.scribd.com/document/323339234/Is-an-Eclipse-Harmful-During-Pregnancy">Eclipse Precautions for Pregnant Women | PDF - Scribd</a></li>
+<li><a href="https://vydic.com/chandra-grahana-shanti-yagya-remedial-yagya-for-lunar-eclipse/">Chandra Grahana (Lunar Eclipse) Shanti Yagya - Vydic Yanya Centre</a></li>
+<li><a href="https://astropuja.com/blog/post/chandra-grahan">Chandra Grahana 2026| Date | Timings | Effects on Rashis, Nakshatras - Astropuja</a></li>
+<li><a href="https://www.dkscore.com/jyotishmedium/2026-lunar-eclipse-vedic-astrology-effects-complete-guide-to-impacts-and-remedies-2299">2026 Lunar Eclipse Vedic Astrology Effects: Comple… - dkscore</a></li>
+<li><a href="https://timesofindia.indiatimes.com/life-style/food-news/lunar-eclipse-2025-food-rules-to-follow-dos-and-donts-during-chandra-grahan/articleshow/123739651.cms">Lunar Eclipse 2025: Food rules to follow, dos and don&#x27;ts during Chandra Grahan</a></li>
+<li><a href="https://www.scribd.com/doc/100187223/Santana-Gopala-Stotram">Precautions for Pregnant Women During Eclipse | PDF - Scribd</a></li>
+<li><a href="https://www.rudraksha-ratna.com/articles/chandra-grahan">Chandra Grahan 2026: Do&#x27;s &amp; Don&#x27;ts During the Lunar Eclipse. - Rudraksha Ratna</a></li>
+<li><a href="https://srisomesvara.org/s/shravan-maas-shiva-month/">Shravan Maas (Shiva month) | Sri Somesvara Temple</a></li>
+<li><a href="https://www.shreeommandir.com/find/services/Shree%20OM%20Pooja/graha-shanti-puja">Graha Shanti Puja - Shree Om Mandir - Digital Temple</a></li>
+<li><a href="https://bhargavasarma.blogspot.com/2009/06/yagnopaveetham-paramam-pavithram.html?view=flipcard">Yagnopaveetham - Paramam Pavithram | bhargavasarma {nirikhi krishna bhagavan}</a></li>
+<li><a href="https://www.indiatoday.in/information/story/lunar-eclipse-on-september-7-know-why-hindus-add-tulsi-leaves-to-food-2783304-2025-09-07">Lunar Eclipse on September 7: Know why people add tulsi leaves to food - India Today</a></li>
+<li><a href="https://www.youtube.com/watch?v=QCRu_KQ6p14">Vedic Remedies For Lunar Eclipse 2018 - YouTube</a></li>
+<li><a href="https://grokipedia.com/page/Upakarma">Upakarma - Grokipedia</a></li>
+<li><a href="https://www.scribd.com/document/449746580/Meaning-and-Significance-of-Utsarjana-and-Upakarma">Utsarjana and Upakarma Explained | PDF | Self-Improvement | Science &amp; Mathematics</a></li>
+<li><a href="https://vedaghosham.com/utsavas/">UTSAVAS - vedaghosham</a></li>
+<li><a href="https://www.youtube.com/watch?v=ZryF97-oK-s">Simplest Possible Tarpana Ritual - YouTube</a></li>
+<li><a href="https://astrologykart.com/astrology-blog/hindu-festivals-in-august-2025-dates-rituals-significance">Hindu Festivals in August 2025: Dates, Rituals &amp; Significance - Astrologykart</a></li>
+<li><a href="https://www.indiafoodnetwork.in/top-news/all-about-shravan-meaning-history-fasting-rules-and-easy-satvik-recipes-962139">All About Shravan | Meaning, History, Fasting Rules, and Easy Satvik Recipes</a></li>
+<li><a href="https://www.timeanddate.com/eclipse/in/@5099465?iso=20260812">August 12, 2026 Partial Solar Eclipse in India Brook Park, New Jersey, USA</a></li>
+<li><a href="https://www.timeanddate.com/eclipse/solar/2026-august-12">Total Solar Eclipse on August 12, 2026</a></li>
+<li><a href="https://timesofindia.indiatimes.com/astrology/planets-transits/solar-and-lunar-eclipse-2026-dates-timings-visibility-in-india-and-check-complete-guide/articleshow/127601136.cms">Solar and Lunar Eclipse 2026: Dates, Timings, Visibility in India and Check Complete Guide</a></li>
+<li><a href="https://earthsky.org/astronomy-essentials/partial-lunar-eclipse-of-the-august-27-28-2026/">Partial lunar eclipse of the August 27-28 full Sturgeon Moon - EarthSky</a></li>
+<li><a href="https://www.timeanddate.com/eclipse/in/@8552494?iso=20260828">August 27, 2026 — Partial Lunar Eclipse — La India Bonita, Baja California, Mexico</a></li>
+<li><a href="https://sandesh.com/astrology/news/bhakti/solar-eclipse-2026-lunar-transit-will-occur-along-with-solar-eclipse-on-august-12-this-zodiac-sign-will-handle-it">Solar Eclipse 2026 Lunar transit will occur along with solar eclipse on August 12 this zodiac sign will handle it | Gujarat News | Sandesh</a></li>
+<li><a href="https://theskylive.com/lunar-eclipses/2026-08-28">Partial Lunar Eclipse of August 28, 2026 - TheSkyLive</a></li>
+<li><a href="https://www.youtube.com/shorts/euzDfMJ1Pic">Chandra Grahan Dosh Nivaran | Powerful &amp; Simple Remedies to Remove Lunar Eclipse Effects - YouTube</a></li>
+<li><a href="https://sanjay-koul.blogspot.com/2021/01/tarpana-for-devas-rishis-and-pitris.html">Tarpana for Devas, Rishis and Pitris - Sanatana Dharma</a></li>
+<li><a href="http://eclipsewise.com/lunar/LEprime/2001-2100/LE2026Aug28Pprime.html">Partial Lunar Eclipse of 2026 Aug 28 - EclipseWise</a></li>
+<li><a href="http://astrology.astrosage.com/search?updated-max=2014-08-16T19:30:00-07:00&amp;max-results=36&amp;reverse-paginate=true&amp;m=0">Saturday, August 2, 2014 - AstroSage Magazine</a></li>
+<li><a href="https://msrvvp.ac.in/model_paper_pdf_2023_2024/english/%E0%A4%B5%E0%A5%87%E0%A4%A6_%E0%A4%B5%E0%A4%BF%E0%A4%AD%E0%A5%82%E0%A4%B7%E0%A4%A3_%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%A5%E0%A4%AE_%E0%A4%B5%E0%A4%B0%E0%A5%8D%E0%A4%B7_%E0%A4%AB%E0%A4%BE%E0%A4%88%E0%A4%A8%E0%A4%B2.pdf">Note - msrvvp.ac.</a></li>
+<li><a href="https://davss.aryasamajhouston.org/curriculum/">Curriculum - D.A.V Sanskriti School</a></li>
+<li><a href="https://srs-foundation.org/photo/shravani-fair/">Shravani Fair - SHRINGI RISHI SEWA FOUNDATION</a></li>
+<li><a href="https://srs-foundation.org/our-work/">Our Work - SHRINGI RISHI SEWA FOUNDATION</a></li>
+<li><a href="https://aryasamajbangalore.in/satyarth-prakash/">Satyarth Prakash - Arya Samaj Indiranagar</a></li>
+</ol>
+</div>
+        </article>
+    </div>
+
+</body>
+</html>

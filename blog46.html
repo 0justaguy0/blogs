@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grahan Remedies</title>
+    <style>
+        :root {
+            --bg-color: #FDF9F1;
+            --text-color: #3E2723;
+            --indian-yellow: #E4A025;
+            --indian-orange: #E65100;
+            --accent-light: #FFECB3;
+            --ref-bg: #FFF3E0;
+        }
+
+        body {
+            font-family: 'Georgia', 'Nirmala UI', 'Mangal', serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(var(--bg-color) 80%, var(--accent-light) 100%);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #FFFFFF;
+            padding: 50px 60px;
+            box-shadow: 0 10px 30px rgba(62, 39, 35, 0.1);
+            border-top: 8px solid var(--indian-orange);
+            border-bottom: 8px solid var(--indian-yellow);
+            border-radius: 4px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed var(--indian-yellow);
+        }
+
+        h1 {
+            color: var(--indian-orange);
+            font-size: 2.5em;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        h2 {
+            color: var(--indian-yellow);
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--indian-orange);
+            padding-left: 15px;
+        }
+
+        h3, h4 {
+            color: var(--indian-orange);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        .intro-text::first-letter {
+            float: left;
+            font-size: 3.5em;
+            line-height: 0.8;
+            padding-right: 8px;
+            padding-top: 4px;
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        ul, ol {
+            margin: 0 0 24px 0;
+            padding-left: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ol {
+            list-style-position: outside;
+            padding-left: 2.2em;
+        }
+
+        ul li, ol li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        ol li {
+            padding-left: 0.35em;
+        }
+
+        ul li::before {
+            content: '\2022';
+            position: absolute;
+            left: 0;
+            top: 0.05em;
+            color: var(--indian-orange);
+            font-size: 1.2em;
+            line-height: 1;
+        }
+
+        ol li::marker {
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        strong {
+            color: var(--indian-orange);
+        }
+
+        .image-placeholder-container {
+            margin: 30px 0;
+            text-align: center;
+            font-style: italic;
+            color: #795548;
+            background-color: var(--accent-light);
+            padding: 20px;
+            border-radius: 4px;
+            border: 1px solid var(--indian-yellow);
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.98em;
+            background-color: #FFFDF8;
+        }
+
+        th, td {
+            border: 1px solid #F0D49B;
+            padding: 10px 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--ref-bg);
+            color: var(--indian-orange);
+        }
+
+        blockquote {
+            margin: 30px 0;
+            padding: 20px 25px;
+            background-color: var(--accent-light);
+            border-left: 5px solid var(--indian-orange);
+            font-style: italic;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px dashed var(--indian-yellow);
+            margin: 32px 0;
+        }
+
+        .references {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: var(--ref-bg);
+            border-radius: 8px;
+            font-size: 0.9em;
+        }
+
+        .references h2, .references h3 {
+            color: var(--text-color);
+            margin-top: 0;
+            border-bottom: 1px solid var(--indian-yellow);
+            padding-bottom: 10px;
+            border-left: 0;
+            padding-left: 0;
+        }
+
+        .references p, .references li {
+            margin-bottom: 12px;
+            word-wrap: break-word;
+        }
+
+        .references a {
+            color: var(--indian-orange);
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Grahan Remedies</h1>
+        </header>
+
+        <article>
+<p class="intro-text">The celestial landscape of August 2026 presents a rare and potent concentration of planetary alignments that beckon us toward a profound spiritual awakening. This month, the shadow planets Rahu and Ketu will dance across the luminaries twice, creating a "dual eclipse season" that features both a Purna Surya Grahan (Total Solar Eclipse) and a deep Anshika Chandra Grahan (Partial Lunar Eclipse).</p>
+<div class="image-placeholder-container">
+    <img src="blog46_Image.png" alt="August 2026 Eclipse Season Grahan remedies and timings, Total Solar Eclipse Wednesday 12 August 2026 ritual start 9:04 PM IST with eclipse from 9:45 PM to 2:15 AM August 13 in Ashlesha Nakshatra Gandanta zone Cancer Leo junction, Partial Lunar Eclipse Friday 28 August 2026 from 6:55 AM to 12:30 PM IST maximum 9:43 AM in Shatabhisha Nakshatra coinciding with Shravan Purnima Raksha Bandhan, both eclipses invisible in India so no Sutak Kaal, Rahu Ketu shadow planets, mantra japa multiplier effect 1 equals 100000, Mahamrityunjaya and Gayatri mantra, Tulsi and Kusha grass in food, donation daan, bathing after eclipse, pregnant women precautions, zodiac specific rashi upay, exalted Jupiter in Cancer as guardian, remedial astrology and holistic wellbeing">
+</div>
+<p>In the Vedic tradition, a "Grahan" is understood as a period of "seizure," where disrupted cosmic energy temporarily overpowers the light of the Sun and Moon. While these events can feel turbulent, they serve as an essential "karmic reset." This window is a primary catalyst for ancestral healing and emotional renewal, inviting us to sever old "spiritual knots" and emerge into a clearer state of being.</p>
+<h2>Mark Your Cosmic Calendars: The August Dual Grahan</h2>
+<p>The two eclipses of August 2026 represent opposite poles of the same lunar nodal axis. While these shadows sweep across the globe, their ritualistic impact depends on where they are physically seen.</p>
+<h3>August 2026 Eclipse Snapshot (Timings in IST)</h3>
+<table>
+<thead><tr><th>Date</th><th>Type</th><th>Vedic Timing (IST)</th><th>Path of Totality/Visibility</th></tr></thead>
+<tbody>
+<tr><td><strong>August 12, 2026</strong> (Wednesday)</td><td><strong>Total Solar Eclipse</strong></td><td><strong>9:04 PM (Ritual Start)</strong> 9:45 PM to 2:15 AM (Aug 13)</td><td>Greenland, Iceland, Spain, Portugal. (Invisible in India)</td></tr>
+<tr><td><strong>August 28, 2026</strong> (Friday)</td><td><strong>Partial Lunar Eclipse</strong></td><td><strong>6:55 AM to 12:30 PM</strong></td><td>Americas, Western Europe, Africa. (96% "Blood Moon" - Invisible in India)</td></tr>
+</tbody>
+</table>
+<p><em>Note: For the Lunar Eclipse on August 28, the Moon will take on a deep reddish, coppery hue as it passes 96% into the Earth's umbral shadow, creating a stunning visual for those in the visibility path.</em></p>
+<h2>The "Sutak" Verdict for India: Visibility vs. Energy</h2>
+<p>A fundamental principle in Vedic astrology is <em>“Yatra Drishyam, Tatra Phalam”</em>—the results and ritualistic prohibitions are felt where the eclipse is seen.</p>
+<p>Because both eclipses occur while the luminaries are below the horizon in the Indian subcontinent, the traditional <strong>Sutak Kaal (ritual impurity period) is NOT applicable in India.</strong></p>
+<h3>Practical Implications for Indian Households:</h3>
+<ul>
+<li><strong>The "Inner Temple" remains open:</strong> Unlike visible eclipses where temples close, Indian temples will follow normal schedules. Daily puja and lamp-lighting are allowed.</li>
+<li><strong>Raksha Bandhan Unaffected:</strong> Since the August 28 lunar event is invisible in India, the festival is free from "Grahan Dosha."</li>
+<li><strong>The "Sukshma" (Subtle) Nuance:</strong> While physical restrictions are void, do not mistake invisibility for inactivity. The subtle astrological impact still ripples through the collective consciousness. Use this time for internal spiritual work, as the "inner temple" of the soul is still undergoing a transition.</li>
+</ul>
+<h2>The Astrological Core: Rahu, Ketu, and the Serpent Star</h2>
+<p>The August 2026 season is defined by intense Nakshatra (lunar mansion) placements that target deep-seated psychological and ancestral patterns.</p>
+<h3>August 12: The Mercury-Wednesday Connection &amp; The Spiritual Knot</h3>
+<p>The Solar Eclipse occurs in <strong>Ashlesha Nakshatra</strong>, the "Serpent Star." Ruled by Mercury and presided over by the Nagas, Ashlesha deals with hidden agendas and binding karmic debts. Crucially, because this eclipse falls on a Wednesday (ruled by Mercury) and in a Mercury-ruled Nakshatra, the influence of communication and intellect is heightened and eclipsed simultaneously. <strong>Expert Tip:</strong> Exercise extreme caution with contracts, vital communications, and "mental noise" today.</p>
+<p>Furthermore, this event occurs in the <strong>Gandanta Zone</strong>, the volatile junction between <strong>Cancer (Water) and Leo (Fire)</strong>. This is a "spiritual knot" where material attachments are often forcibly severed. Fortunately, <strong>Exalted Jupiter in Cancer</strong> acts as a guardian, channeling this volatile energy toward wisdom rather than chaos.</p>
+<h3>August 28: Cosmic Healing and Emotional Resets</h3>
+<p>The Lunar Eclipse falls in <strong>Shatabhisha Nakshatra</strong>, associated with "a hundred physicians." This placement emphasizes cosmic healing. It is a period designed for an "emotional reset," urging us to release ego-driven pride and integrate with the collective.</p>
+<h2>Practical Rituals and Holistic Protection</h2>
+<p>Vedic wisdom teaches that spiritual practices during Grahan are exponentially more powerful. The "Multiplier Effect" claims that <strong>1 Japa (mantra repetition) during an eclipse equals 100,000 Japas</strong> performed at any other time.</p>
+<h3>Food and Water Safety</h3>
+<p>Ayurveda suggests that an eclipse suppresses the <em>“Jatharagni”</em> (digestive fire), making metabolism sluggish.</p>
+<ul>
+<li><strong>Tulsi and Kusha:</strong> Place Tulsi leaves or Kusha (Darbha) grass in food and water containers.</li>
+<li><strong>The Scientific Edge:</strong> Traditional texts and modern Vedic practitioners note that Kusha grass has a unique ability to <strong>block subtle radioactive X-rays</strong> and environmental disturbances that intensify during an eclipse.</li>
+</ul>
+<h3>Spiritual Practices and Ancestral Healing</h3>
+<p>Use these windows for "Mantra Siddhi." Recommended chants include the <strong>Gayatri Mantra</strong> for clarity, the <strong>Aditya Hrudaya Stotram</strong> for vitality, and the <strong>Mahamrityunjaya Mantra</strong> for protection.</p>
+<p>Additionally, as the Solar Eclipse falls on an Amavasya and the Lunar on a Purnima, it is an ideal time for <strong>Tarpanam</strong> (offerings to ancestors). Satisfying the souls of your predecessors during this "reset" energy can clear generational blocks.</p>
+<h2>Special Focus: Precautions for Expectant Mothers</h2>
+<p>The developing fetus is highly receptive to subtle energetic shifts. While the 2026 eclipses are invisible in India—making these measures purely optional—many follow these traditional "precautionary" guidelines:</p>
+<ul>
+<li><strong>Indoor Confinement:</strong> Remain indoors to avoid direct exposure to the shifted atmospheric pressure.</li>
+<li><strong>Avoid Sharp Objects:</strong> Refrain from using knives, needles, or scissors.</li>
+<li><strong>The Protective Shield:</strong> Sit comfortably with a <strong>water-filled coconut</strong> in your lap. The coconut acts as a natural insulator, absorbing negative subtle radiation.</li>
+</ul>
+<h2>Zodiac-Specific Remedies: "Rashi Upay" for August 2026</h2>
+<p>To stay balanced as the shadow planets dance, perform these actionable remedies based on your Moon sign (Chandra Rashi):</p>
+<table>
+<thead><tr><th>Moon Sign</th><th>Actionable Remedy</th></tr></thead>
+<tbody>
+<tr><td><strong>Aries</strong></td><td>Recite Hanuman Chalisa to manage impulsivity and anxiety.</td></tr>
+<tr><td><strong>Taurus</strong></td><td>Offer white flowers to a Shiva Lingam to stabilize financial growth.</td></tr>
+<tr><td><strong>Gemini</strong></td><td>Donate green vegetables to a shelter to improve analytical focus.</td></tr>
+<tr><td><strong>Cancer</strong></td><td>Offer <strong>Arghya (water offering) to the rising Sun</strong> on Aug 13 and meditate at the eclipse peak (9:43 AM IST on Aug 28).</td></tr>
+<tr><td><strong>Leo</strong></td><td>Chant the Surya Ashtakam to protect your reputation and career.</td></tr>
+<tr><td><strong>Virgo</strong></td><td>Donate notebooks or books to schoolchildren to enhance Mercury energy.</td></tr>
+<tr><td><strong>Libra</strong></td><td>Light a ghee lamp in the evening to maintain domestic harmony.</td></tr>
+<tr><td><strong>Scorpio</strong></td><td>Offer honey and water to Lord Shiva to protect against hidden fears.</td></tr>
+<tr><td><strong>Sagittarius</strong></td><td>Donate yellow sweets or turmeric to support spiritual expansion.</td></tr>
+<tr><td><strong>Capricorn</strong></td><td>Offer black sesame seeds in running water to clear pending karmic debt.</td></tr>
+<tr><td><strong>Aquarius</strong></td><td><strong>Donate white umbrellas or footwear</strong> to eliminate karmic obstacles and spend time in silent meditation at noon.</td></tr>
+<tr><td><strong>Pisces</strong></td><td>Donate saffron or a yellow silk thread to a temple for divine favor.</td></tr>
+</tbody>
+</table>
+<h2>Ritual Crossroads: Raksha Bandhan and Upakarma</h2>
+<p>The August 28 Lunar Eclipse coincides with <strong>Shravan Purnima</strong>, a day of immense ritual significance.</p>
+<ul>
+<li><strong>Raksha Bandhan:</strong> The <strong>Shubh Muhurat</strong> for tying Rakhi in India is <strong>05:57 AM to 09:48 AM IST</strong>. This allows you to celebrate before the global maximum of the eclipse shadow.</li>
+<li><strong>Upakarma:</strong> This day marks the renewal of the <em>Janeu</em> (sacred thread). This ritual signifies the clearing of three critical debts, or <strong>Rinas</strong>:</li>
+</ul>
+<ol>
+<li><strong>Deva Rina:</strong> Our debt to the Divine and the forces of Nature.</li>
+<li><strong>Rishi Rina:</strong> Our debt to the Sages and the preservation of Knowledge.</li>
+<li><strong>Pitri Rina:</strong> Our debt to our Ancestors and physical lineage.</li>
+</ol>
+<h2>Conclusion: Actionable Takeaways for Spiritual Growth</h2>
+<p>The August 2026 eclipse season is a celestial invitation to look inward. To master this "Reset" energy, focus on three pillars:</p>
+<ol>
+<li><strong>Prioritize "Daan" (Charity):</strong> Donating items like moong dal, white clothing, or umbrellas can multiply your spiritual merits.</li>
+<li><strong>Commit to Meditation:</strong> Use the eclipse windows to identify self-limiting habits you are ready to release.</li>
+<li><strong>Ancestral Honor:</strong> Perform <em>Tarpanam</em> to satisfy the souls of your predecessors during this high-potency window.</li>
+</ol>
+<p>By navigating these celestial shadows with intention and ritual, you can transform a period of cosmic disruption into a gateway for profound inner light.</p>
+
+<div class="references">
+<h2>Sources</h2>
+<ol>
+<li><a href="https://jagannathhora.com/eclipse-2026-complete-guide-vedic-astrology/">Eclipse 2026 Complete Guide: All Four Eclipses, Dates, Effects for ...</a></li>
+<li><a href="https://astrozindagi.in/festivals/2026/solar-eclipse-2026/">Solar Eclipse 2026 is on August 12, 2026: Date, Timing &amp; Purna ...</a></li>
+<li><a href="https://astrozindagi.in/festivals/2026/chandra-grahan-2026/">Chandra Grahan 2026: Date, Timing &amp; No Sutak in India Facts</a></li>
+<li><a href="https://timesofindia.indiatimes.com/astrology/planets-transits/chandra-grahan-2026-dos-and-donts-for-pregnant-women-during-lunar-eclipse/articleshow/128940116.cms">Chandra Grahan 2026: Do&#x27;s and don&#x27;ts for pregnant women during Lunar Eclipse</a></li>
+<li><a href="https://zendaruniverse.com/updates/surya-grahan-2026-aug-12-solar-eclipse-india-visibility-sutak/">Surya Grahan 2026: Aug 12 Solar Eclipse India Visibility &amp; Sutak ...</a></li>
+<li><a href="https://atozpandit.com/blog/sacred-traditions/grahan-eclipse-safety-food-pregnancy-rules">Grahan Safety Rules: Pregnancy, Food &amp; Sutak Guide - AtoZ Pandit</a></li>
+<li><a href="https://vedaghosham.com/grahana-vidhi/">GRAHANA VIDHI - vedaghosham</a></li>
+<li><a href="https://www.astroved.com/us/specials/solar-eclipse">Solar Eclipse 2026 Remedies &amp; Rituals - AstroVed</a></li>
+<li><a href="https://99pandit.com/blog/grahan-yog-shanti-puja/">Pandit for Grahan Yog Shanti Puja: Cost, Vidhi &amp; Benefits - 99Pandit</a></li>
+<li><a href="https://www.scribd.com/document/833155137/GRAHA-SHANTI-REMEDIES-Horoscope-Results-and-Free-Astrology-Remedies-for-All-Zodiac-Signs">Remedies for Graha Shanti in Astrology | PDF - Scribd</a></li>
+<li><a href="https://www.scribd.com/document/1006874653/Sutak-During-Grahan-or-Eclipse">Sutak During Grahan or Eclipse | PDF - Scribd</a></li>
+<li><a href="https://vama.app/en/puja/chandra-grahan-shanti-and-dosh-nivaran-puja">Chandra Grahan Shanti &amp; Dosh Nivaran Puja - VAMA</a></li>
+<li><a href="https://www.astroved.com/us/specials/lunar-eclipse">Lunar Eclipse 2026 (Chandra Grahan) | Effects &amp; Remedies - AstroVed</a></li>
+<li><a href="https://www.astromantra.com/products/books/puja-sadhana-books/shravani-upakarma-paddhati-book/">Shravani Upakarma Paddhati Book (श्रावणी उपाकर्म पद्धति पुस्तक) | - Astro Mantra</a></li>
+<li><a href="https://www.scribd.com/doc/51710064/Yajur-Veda-Avani-Avittam-or-Upakarma-and-Gayathri-Japam">Avani Avittam Ritual Guide | PDF | Indian Religions | Hindu Literature - Scribd</a></li>
+<li><a href="https://www.rudraksha-ratna.com/articles/shravan-month">Shravan Month 2026 (Sawan Maas): Date, Importance, Story, Fasting Rules - Rudraksha Ratna</a></li>
+<li><a href="https://www.artofliving.org/in-en/culture/reads/dos-and-donts-of-shravan-maas">Decoding the symbolism of rituals associated with month of Shravan - The Art of Living</a></li>
+<li><a href="https://www.hinduamerican.org/blog/on-the-significance-of-the-spiritual-month-of-shravan">On the Significance of the Spiritual Month of Shravan - Hindu American Foundation</a></li>
+<li><a href="https://jothishi.com/bhadra-month/">Bhadra - Meaning, Introduction, Significance and Festivals - Jothishi</a></li>
+<li><a href="https://vedicrishi.in/nakshatras/shravana_nakshatra">Shravan Nakshatra: Characteristics, Career, Compatibility, and More - Vedic Rishi</a></li>
+<li><a href="https://astrosight.ai/transits/eclipses-2026-solar-lunar-eclipse-dates-astrology">Eclipses 2026: Solar &amp; Lunar Eclipse Dates &amp; Astrology | AstroSight</a></li>
+<li><a href="https://www.magicandmastery.com/blog/august-2026-leo-solar-eclipse">What the August 2026 Leo Solar Eclipse Means - School of Magic &amp; Mastery</a></li>
+<li><a href="https://www.crystals.com/blogs/news/august-2026-lunar-guide-leo-solar-eclipse-pisces-sturgeon-moon-crystal-rituals">August 2026 Lunar Guide: Leo Solar Eclipse, Pisces Sturgeon Moon &amp; Crystal Rituals</a></li>
+<li><a href="https://www.chani.com/this-year/key-dates/2026-astrological-key-dates-eclipses">2026 astrological key dates: eclipses - CHANI</a></li>
+<li><a href="https://starwalk.space/en/news/partial-lunar-eclipse-august-28-2026">Deep Partial Lunar Eclipse on August 27–28, 2026: When &amp; Where to See - Star Walk</a></li>
+<li><a href="https://www.skyatnightmagazine.com/advice/12-august-2026-total-solar-eclipse-guide">Total solar eclipse August 2026 – Path map, key locations and timings</a></li>
+<li><a href="https://www.space.com/stargazing/lunar-eclipses/august-2026-lunar-eclipse-everything-you-need-to-know-about-the-96-percent-blood-moon">August 2026 lunar eclipse — Everything you need to know about the 96% &#x27;blood moon&#x27;</a></li>
+<li><a href="https://www.timeanddate.com/eclipse/lunar/2026-august-28">August 27–28, 2026 Partial Lunar Eclipse - Time and Date</a></li>
+<li><a href="https://www.ndtv.com/feature/all-about-the-total-solar-eclipse-in-august-2026-will-it-be-visible-from-india-11602891">All About The Total Solar Eclipse In August 2026. Will It Be Visible From India? - NDTV</a></li>
+<li><a href="https://www.dkscore.com/jyotishmedium/eclipse/solar-eclipse-total-2026-44">Solar Eclipse (Total) – August 12, 2026 | DKSCORE</a></li>
+<li><a href="https://en.wikipedia.org/wiki/August_2026_lunar_eclipse">August 2026 lunar eclipse - Wikipedia</a></li>
+<li><a href="https://www.quora.com/Why-is-it-forbidden-to-eat-during-an-eclipse-according-to-Indian-customs-Is-there-a-scientific-reason-such-as-eating-during-eclipse-is-harmful">Why is it forbidden to eat during an eclipse according to Indian customs? Is there a scientific ... - Quora</a></li>
+<li><a href="https://www.scribd.com/document/323339234/Is-an-Eclipse-Harmful-During-Pregnancy">Eclipse Precautions for Pregnant Women | PDF - Scribd</a></li>
+<li><a href="https://vydic.com/chandra-grahana-shanti-yagya-remedial-yagya-for-lunar-eclipse/">Chandra Grahana (Lunar Eclipse) Shanti Yagya - Vydic Yanya Centre</a></li>
+<li><a href="https://astropuja.com/blog/post/chandra-grahan">Chandra Grahana 2026| Date | Timings | Effects on Rashis, Nakshatras - Astropuja</a></li>
+<li><a href="https://www.dkscore.com/jyotishmedium/2026-lunar-eclipse-vedic-astrology-effects-complete-guide-to-impacts-and-remedies-2299">2026 Lunar Eclipse Vedic Astrology Effects: Comple… - dkscore</a></li>
+<li><a href="https://timesofindia.indiatimes.com/life-style/food-news/lunar-eclipse-2025-food-rules-to-follow-dos-and-donts-during-chandra-grahan/articleshow/123739651.cms">Lunar Eclipse 2025: Food rules to follow, dos and don&#x27;ts during Chandra Grahan</a></li>
+<li><a href="https://www.scribd.com/doc/100187223/Santana-Gopala-Stotram">Precautions for Pregnant Women During Eclipse | PDF - Scribd</a></li>
+<li><a href="https://www.rudraksha-ratna.com/articles/chandra-grahan">Chandra Grahan 2026: Do&#x27;s &amp; Don&#x27;ts During the Lunar Eclipse. - Rudraksha Ratna</a></li>
+<li><a href="https://srisomesvara.org/s/shravan-maas-shiva-month/">Shravan Maas (Shiva month) | Sri Somesvara Temple</a></li>
+<li><a href="https://www.shreeommandir.com/find/services/Shree%20OM%20Pooja/graha-shanti-puja">Graha Shanti Puja - Shree Om Mandir - Digital Temple</a></li>
+<li><a href="https://bhargavasarma.blogspot.com/2009/06/yagnopaveetham-paramam-pavithram.html?view=flipcard">Yagnopaveetham - Paramam Pavithram | bhargavasarma {nirikhi krishna bhagavan}</a></li>
+<li><a href="https://www.indiatoday.in/information/story/lunar-eclipse-on-september-7-know-why-hindus-add-tulsi-leaves-to-food-2783304-2025-09-07">Lunar Eclipse on September 7: Know why people add tulsi leaves to food - India Today</a></li>
+<li><a href="https://www.youtube.com/watch?v=QCRu_KQ6p14">Vedic Remedies For Lunar Eclipse 2018 - YouTube</a></li>
+<li><a href="https://grokipedia.com/page/Upakarma">Upakarma - Grokipedia</a></li>
+<li><a href="https://www.scribd.com/document/449746580/Meaning-and-Significance-of-Utsarjana-and-Upakarma">Utsarjana and Upakarma Explained | PDF | Self-Improvement | Science &amp; Mathematics</a></li>
+<li><a href="https://vedaghosham.com/utsavas/">UTSAVAS - vedaghosham</a></li>
+<li><a href="https://www.youtube.com/watch?v=ZryF97-oK-s">Simplest Possible Tarpana Ritual - YouTube</a></li>
+<li><a href="https://astrologykart.com/astrology-blog/hindu-festivals-in-august-2025-dates-rituals-significance">Hindu Festivals in August 2025: Dates, Rituals &amp; Significance - Astrologykart</a></li>
+<li><a href="https://www.indiafoodnetwork.in/top-news/all-about-shravan-meaning-history-fasting-rules-and-easy-satvik-recipes-962139">All About Shravan | Meaning, History, Fasting Rules, and Easy Satvik Recipes</a></li>
+<li><a href="https://www.timeanddate.com/eclipse/in/@5099465?iso=20260812">August 12, 2026 Partial Solar Eclipse in India Brook Park, New Jersey, USA</a></li>
+<li><a href="https://www.timeanddate.com/eclipse/solar/2026-august-12">Total Solar Eclipse on August 12, 2026</a></li>
+<li><a href="https://timesofindia.indiatimes.com/astrology/planets-transits/solar-and-lunar-eclipse-2026-dates-timings-visibility-in-india-and-check-complete-guide/articleshow/127601136.cms">Solar and Lunar Eclipse 2026: Dates, Timings, Visibility in India and Check Complete Guide</a></li>
+<li><a href="https://earthsky.org/astronomy-essentials/partial-lunar-eclipse-of-the-august-27-28-2026/">Partial lunar eclipse of the August 27-28 full Sturgeon Moon - EarthSky</a></li>
+<li><a href="https://www.timeanddate.com/eclipse/in/@8552494?iso=20260828">August 27, 2026 — Partial Lunar Eclipse — La India Bonita, Baja California, Mexico</a></li>
+<li><a href="https://sandesh.com/astrology/news/bhakti/solar-eclipse-2026-lunar-transit-will-occur-along-with-solar-eclipse-on-august-12-this-zodiac-sign-will-handle-it">Solar Eclipse 2026 Lunar transit will occur along with solar eclipse on August 12 this zodiac sign will handle it | Gujarat News | Sandesh</a></li>
+<li><a href="https://theskylive.com/lunar-eclipses/2026-08-28">Partial Lunar Eclipse of August 28, 2026 - TheSkyLive</a></li>
+<li><a href="https://www.youtube.com/shorts/euzDfMJ1Pic">Chandra Grahan Dosh Nivaran | Powerful &amp; Simple Remedies to Remove Lunar Eclipse Effects - YouTube</a></li>
+<li><a href="https://sanjay-koul.blogspot.com/2021/01/tarpana-for-devas-rishis-and-pitris.html">Tarpana for Devas, Rishis and Pitris - Sanatana Dharma</a></li>
+<li><a href="http://eclipsewise.com/lunar/LEprime/2001-2100/LE2026Aug28Pprime.html">Partial Lunar Eclipse of 2026 Aug 28 - EclipseWise</a></li>
+<li><a href="http://astrology.astrosage.com/search?updated-max=2014-08-16T19:30:00-07:00&amp;max-results=36&amp;reverse-paginate=true&amp;m=0">Saturday, August 2, 2014 - AstroSage Magazine</a></li>
+<li><a href="https://msrvvp.ac.in/model_paper_pdf_2023_2024/english/%E0%A4%B5%E0%A5%87%E0%A4%A6_%E0%A4%B5%E0%A4%BF%E0%A4%AD%E0%A5%82%E0%A4%B7%E0%A4%A3_%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%A5%E0%A4%AE_%E0%A4%B5%E0%A4%B0%E0%A5%8D%E0%A4%B7_%E0%A4%AB%E0%A4%BE%E0%A4%88%E0%A4%A8%E0%A4%B2.pdf">Note - msrvvp.ac.</a></li>
+<li><a href="https://davss.aryasamajhouston.org/curriculum/">Curriculum - D.A.V Sanskriti School</a></li>
+<li><a href="https://srs-foundation.org/photo/shravani-fair/">Shravani Fair - SHRINGI RISHI SEWA FOUNDATION</a></li>
+<li><a href="https://srs-foundation.org/our-work/">Our Work - SHRINGI RISHI SEWA FOUNDATION</a></li>
+<li><a href="https://aryasamajbangalore.in/satyarth-prakash/">Satyarth Prakash - Arya Samaj Indiranagar</a></li>
+</ol>
+</div>
+        </article>
+    </div>
+
+</body>
+</html>
