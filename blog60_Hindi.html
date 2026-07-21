@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>पितृ पक्ष उपाय</title>
+    <style>
+        :root {
+            --bg-color: #FDF9F1;
+            --text-color: #3E2723;
+            --indian-yellow: #E4A025;
+            --indian-orange: #E65100;
+            --accent-light: #FFECB3;
+            --ref-bg: #FFF3E0;
+        }
+
+        body {
+            font-family: 'Georgia', 'Nirmala UI', 'Mangal', serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(var(--bg-color) 80%, var(--accent-light) 100%);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #FFFFFF;
+            padding: 50px 60px;
+            box-shadow: 0 10px 30px rgba(62, 39, 35, 0.1);
+            border-top: 8px solid var(--indian-orange);
+            border-bottom: 8px solid var(--indian-yellow);
+            border-radius: 4px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed var(--indian-yellow);
+        }
+
+        h1 {
+            color: var(--indian-orange);
+            font-size: 2.5em;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        h2 {
+            color: var(--indian-yellow);
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--indian-orange);
+            padding-left: 15px;
+        }
+
+        h3, h4 {
+            color: var(--indian-orange);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        .intro-text::first-letter {
+            float: left;
+            font-size: 3.5em;
+            line-height: 0.8;
+            padding-right: 8px;
+            padding-top: 4px;
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        ul, ol {
+            margin: 0 0 24px 0;
+            padding-left: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ol {
+            list-style-position: outside;
+            padding-left: 2.2em;
+        }
+
+        ul li, ol li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        ol li {
+            padding-left: 0.35em;
+        }
+
+        ul li::before {
+            content: '\2022';
+            position: absolute;
+            left: 0;
+            top: 0.05em;
+            color: var(--indian-orange);
+            font-size: 1.2em;
+            line-height: 1;
+        }
+
+        ol li::marker {
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        strong {
+            color: var(--indian-orange);
+        }
+
+        .image-placeholder-container {
+            margin: 30px 0;
+            text-align: center;
+            font-style: italic;
+            color: #795548;
+            background-color: var(--accent-light);
+            padding: 20px;
+            border-radius: 4px;
+            border: 1px solid var(--indian-yellow);
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.98em;
+            background-color: #FFFDF8;
+        }
+
+        th, td {
+            border: 1px solid #F0D49B;
+            padding: 10px 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--ref-bg);
+            color: var(--indian-orange);
+        }
+
+        blockquote {
+            margin: 30px 0;
+            padding: 20px 25px;
+            background-color: var(--accent-light);
+            border-left: 5px solid var(--indian-orange);
+            font-style: italic;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px dashed var(--indian-yellow);
+            margin: 32px 0;
+        }
+
+        .references {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: var(--ref-bg);
+            border-radius: 8px;
+            font-size: 0.9em;
+        }
+
+        .references h2, .references h3 {
+            color: var(--text-color);
+            margin-top: 0;
+            border-bottom: 1px solid var(--indian-yellow);
+            padding-bottom: 10px;
+            border-left: 0;
+            padding-left: 0;
+        }
+
+        .references p, .references li {
+            margin-bottom: 12px;
+            word-wrap: break-word;
+        }
+
+        .references a {
+            color: var(--indian-orange);
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>पितृ पक्ष उपाय</h1>
+        </header>
+
+        <article>
+<h3>1. प्रस्तावना: पितृ पक्ष का आध्यात्मिक महत्व</h3>
+<p class="intro-text">हिंदू धर्म और वैदिक संस्कृति में पितृ पक्ष (Mahalaya Paksha) केवल मृत परिजनों का स्मरण मात्र नहीं है, बल्कि यह वर्तमान पीढ़ी और पूर्वजों के बीच एक अत्यंत पवित्र 'आध्यात्मिक सेतु' है। यह काल हमें अपनी जड़ों से जुड़ने और उस पितृ ऋण को चुकाने का अवसर देता है जिसे हम अपने जीवन, संस्कार और अस्तित्व के लिए वहन करते हैं। वर्ष 2026 में पितृ पक्ष की यह चैतन्यमयी अवधि <strong>26 सितंबर से 11 अक्टूबर</strong> तक रहेगी। शास्त्रों के अनुसार, इन 16 दिनों में पितृ लोक के द्वार खुलते हैं और पूर्वज अपने वंशजों द्वारा दिए गए अन्न-जल की अभिलाषा में पृथ्वी लोक पर सूक्ष्म रूप में विचरण करते हैं।</p>
+<div class="image-placeholder-container">
+    <img src="blog60_Image.png" alt="पितृ पक्ष 2026 का 16 लघु दिवसीय श्राद्ध पैतृक उपचार विंडो सटीक IST प्रारंभ और समाप्ति समय के साथ: पूर्णिमा श्राद्ध शनिवार 26 सितंबर 2026 को ब्लड मून चंद्र ग्रहण के साथ प्रारंभ, सर्व पितृ अमावस्या महालय रविवार 11 अक्तूबर 2026 को समापन, कन्या राशि में सूर्य गोचर यम और पितृ देवता ऊर्जाओं को जागृत करता है, दैनिक कुतूप मुहूर्त दोपहर 11:47 से 12:35 बजे IST, प्रतिपदा श्राद्ध 27 सितंबर, महा भरणी 29 सितंबर, भरणी पंचमी 1 अक्तूबर, मातृ नवमी 5 अक्तूबर, मघ श्राद्ध 7 से 8 अक्तूबर, संन्यासी श्राद्ध 8 अक्तूबर, चतुर्दशी श्राद्ध 10 अक्तूबर, दक्षिण दिशा की ओर मुख करके काले तिल जौ और कुशा घास के साथ तर्पण जल अर्पण, दूध शहद और तिल के पिंड दान, गाय कुत्ते कौवे देवता और चींटियों को पंच बलि, पितृ गायत्री मंत्र और आवाहनम् मंत्र, पितृ दोष पितृ ऋण वंशज कर्म चिकित्सा, उपचारात्मक ज्योतिष वैदिक परामर्श भक्ति अध्यात्म कल्याण">
+</div>
+<h3>2. पितृ पक्ष और पितृ दोष: अवधारणा और शास्त्र</h3>
+<p>वैदिक ज्ञान के अनुसार 'पितृ' का अर्थ है हमारे वे पूर्वज जो भौतिक शरीर त्याग चुके हैं, और 'पक्ष' का अर्थ है चंद्रमा का पखवाड़ा।</p>
+<ul>
+<li><strong>शास्त्रों का आधार:</strong> गरुड़ पुराण और महाभारत के अनुसार, मृत्यु के पश्चात आत्माएं पितृ लोक में निवास करती हैं। वहाँ वे भूख और प्यास (क्षुधा और तृषा) का अनुभव करती हैं, परंतु स्थूल शरीर के अभाव में स्वयं अपनी तृप्ति नहीं कर सकतीं। अतः वे अपने वंशजों द्वारा किए गए श्राद्ध और तर्पण पर निर्भर रहती हैं।</li>
+<li><strong>पौराणिक कथा:</strong> महादानी कर्ण की कथा इस संदर्भ में अत्यंत महत्वपूर्ण है। मृत्यु के उपरांत जब कर्ण को स्वर्ग में भोजन की जगह केवल स्वर्ण और रत्न दिए गए, तब यमराज ने उन्हें बताया कि उन्होंने जीवनभर केवल धन का दान किया, कभी अपने पितरों को अन्न-जल अर्पण नहीं किया। अतः पितृ पक्ष में उन्हें पुनः पृथ्वी पर आकर यह दोष दूर करने का अवसर दिया गया।</li>
+<li><strong>ज्योतिषीय दृष्टिकोण (पितृ दोष):</strong> जब किसी जातक की कुंडली के 9वें भाव (भाग्य और धर्म का भाव) में सूर्य, राहू या शनि से पीड़ित होता है, तो 'पितृ दोष' का निर्माण होता है। विशेष रूप से सूर्य-राहू की युति को <strong>'ग्रहण योग'</strong> कहा जाता है, जो इस बात का प्रबल संकेत है कि पूर्वजों की ऊर्जा अतृप्त है और वंशजों के माध्यम से मुक्ति का मार्ग खोज रही है।</li>
+</ul>
+<h3>3. पितृ पक्ष 2026: तिथियां और महत्वपूर्ण मुहूर्त</h3>
+<p>वर्ष 2026 में श्राद्ध कर्म के लिए तिथियों का विवरण निम्नलिखित है। साधक को अपने पूर्वजों की मृत्यु की तिथि (Tithi) के अनुसार ही श्राद्ध करना चाहिए।</p>
+<table>
+<thead><tr><th>तिथि (Tithi)</th><th>दिनांक (Date)</th><th>महत्व (Significance)</th></tr></thead>
+<tbody>
+<tr><td>पूर्णिमा श्राद्ध</td><td>26 सितंबर 2026</td><td>श्राद्ध पक्ष का आरंभ, पूर्णिमा पर दिवंगत हुए पूर्वजों हेतु।</td></tr>
+<tr><td>प्रतिपदा श्राद्ध</td><td>27 सितंबर 2026</td><td>प्रथम तिथि का श्राद्ध।</td></tr>
+<tr><td>द्वितीया श्राद्ध</td><td>28 सितंबर 2026</td><td>द्वितीय तिथि का श्राद्ध।</td></tr>
+<tr><td><strong>तृतीय/महा भरणी</strong></td><td><strong>29 सितंबर 2026</strong></td><td><strong>विशेष:</strong> महा भरणी नक्षत्र में श्राद्ध गया तीर्थ के समान फलदायी है।</td></tr>
+<tr><td>चतुर्थी/पंचमी</td><td>30 सितंबर 2026</td><td>चतुर्थ और पंचम तिथि का श्राद्ध (भरणी पंचमी)।</td></tr>
+<tr><td>षष्ठी श्राद्ध</td><td>1 अक्टूबर 2026</td><td>षष्ठी तिथि के लिए।</td></tr>
+<tr><td>सप्तमी श्राद्ध</td><td>2 अक्टूबर 2026</td><td>सप्तमी तिथि के लिए।</td></tr>
+<tr><td>अष्टमी श्राद्ध</td><td>3 अक्टूबर 2026</td><td>अष्टमी तिथि के लिए।</td></tr>
+<tr><td>नवमी श्राद्ध</td><td>4 अक्टूबर 2026</td><td>नवमी तिथि का श्राद्ध।</td></tr>
+<tr><td><strong>मातृ नवमी</strong></td><td><strong>5 अक्टूबर 2026</strong></td><td><strong>विशेष:</strong> माता, दादी और परिवार की सभी सुहागन/विवाहित महिलाओं हेतु।</td></tr>
+<tr><td>दशमी श्राद्ध</td><td>6 अक्टूबर 2026</td><td>दशमी तिथि के लिए।</td></tr>
+<tr><td>एकादशी श्राद्ध</td><td>7 अक्टूबर 2026</td><td>एकादशी तिथि के लिए।</td></tr>
+<tr><td>द्वादशी श्राद्ध</td><td>8 अक्टूबर 2026</td><td>मघा नक्षत्र और संन्यासी श्राद्ध हेतु।</td></tr>
+<tr><td>त्रयोदशी श्राद्ध</td><td>9 अक्टूबर 2026</td><td>त्रयोदशी तिथि के लिए।</td></tr>
+<tr><td>चतुर्दशी श्राद्ध</td><td>10 अक्टूबर 2026</td><td>अकाल, दुर्घटना या शस्त्र से मृत्यु प्राप्त पूर्वजों हेतु (घात चतुर्दशी)।</td></tr>
+<tr><td><strong>सर्व पितृ अमावस्या</strong></td><td><strong>10/11 अक्टूबर 2026</strong></td><td><strong>अत्यंत महत्वपूर्ण:</strong> सभी ज्ञात-अज्ञात पितरों की विदाई का मुख्य दिन।</td></tr>
+</tbody>
+</table>
+<p><em>नोट: यद्यपि सर्व पितृ अमावस्या 10 अक्टूबर को है, किंतु उदयातिथि के अनुसार अनुष्ठान 11 अक्टूबर की सुबह तक पूर्ण किए जा सकते हैं।</em></p>
+<p><strong>श्राद्ध के महत्वपूर्ण मुहूर्त:</strong></p>
+<ul>
+<li><strong>कुतुप मुहूर्त (11:30 AM - 12:30 PM):</strong> यह श्राद्ध कर्म प्रारंभ करने का सर्वोत्तम समय है।</li>
+<li><strong>रोहिण मुहूर्त:</strong> दोपहर 12:50 PM से 1:39 PM तक।</li>
+<li><strong>अपराह्न काल (1:39 PM - 4:09 PM):</strong> तर्पण और पिंडदान के लिए यह समय विशेष रूप से फलदायी है क्योंकि सूर्य की स्थिति पितृ लोक की ओर अनुकूल होती है।</li>
+</ul>
+<h3>4. पितृ दोष के लक्षण: आप इसे कैसे पहचानें?</h3>
+<p>पितृ दोष की उपस्थिति जीवन के विभिन्न आयामों में बाधा उत्पन्न करती है:</p>
+<ul>
+<li><strong>पारिवारिक:</strong> संतान प्राप्ति में अत्यधिक बाधा, बार-बार गर्भपात होना, या विवाह योग्य बच्चों के विवाह में अकारण देरी।</li>
+<li><strong>आर्थिक:</strong> कड़ी मेहनत के बाद भी व्यापार में लगातार हानि, ऋण का बोझ बढ़ना और घर में बरकत का अभाव।</li>
+<li><strong>स्वास्थ्य एवं मानसिक:</strong> अज्ञात रोग जिनका डॉक्टरी निदान न हो पाए, परिवार में क्लेश, अवसाद (Depression) और घर के भीतर नकारात्मक ऊर्जा का अनुभव होना।</li>
+</ul>
+<h3>5. प्रमुख अनुष्ठान और विधि: विशेषज्ञ मार्गदर्शन</h3>
+<p>श्राद्ध कर्म केवल क्रिया नहीं, बल्कि सूक्ष्म ऊर्जा का विज्ञान है।</p>
+<ol>
+<li><strong>तर्पण (जल अर्पण):</strong> तांबे के पात्र में जल, काले तिल, जौ और कुशा घास लेकर दक्षिण दिशा की ओर मुख करके अर्पण करें।</li>
+</ol>
+<ul>
+<li><strong>विशेषज्ञ तर्क:</strong> दक्षिण दिशा यमराज और पितरों की दिशा मानी गई है। तिल का उपयोग इसलिए किया जाता है क्योंकि यह सूक्ष्म ऊर्जा को लंबे समय तक धारण कर सकता है और अर्पण को पितृ लोक तक पहुँचाने में सहायक होता है। पितृ सूक्ष्म रूप में जल की भाप और सुगंध से तृप्त होते हैं।</li>
+</ul>
+<ol>
+<li><strong>पिंडदान:</strong> पके हुए चावल, काले तिल और शहद के पिंड बनाना। यह पितरों के सूक्ष्म शरीर को पोषण प्रदान करता है।</li>
+<li><strong>पंचबलि (Pancha Bali):</strong> भोजन ग्रहण करने से पूर्व पांच अंश निकाले जाते हैं:</li>
+</ol>
+<ul>
+<li><strong>गो बलि (गाय):</strong> पृथ्वी तत्व की तृप्ति।</li>
+<li><strong>कुकुर बलि (कुत्ता):</strong> यम के द्वारपालों की प्रसन्नता।</li>
+<li><strong>वायस बलि (कौवा):</strong> कौवे को पितरों का दूत माना गया है।</li>
+<li><strong>देव बलि (देवता):</strong> आध्यात्मिक संतुलन हेतु।</li>
+<li><strong>पिपलिका बलि (चींटी):</strong> सूक्ष्म जीवों के प्रति दया।</li>
+</ul>
+<p><strong>अनिवार्य मंत्र:</strong></p>
+<ul>
+<li><strong>आवाहन मंत्र:</strong> "ॐ आगच्छन्तु मे पितर एवं ग्रहन्तु जलान्जलिम।" (अपने पितरों को आमंत्रित करने हेतु)।</li>
+<li><strong>तर्पण मंत्र:</strong> "Aum Pitru Devobhava, Namah Pitrubhyah."</li>
+<li><strong>पितृ गायत्री मंत्र:</strong> <em>"ॐ पितृगणाय विद्महे जगत धारिणी धीमहि तन्नो पितृो प्रचोदयात्।"</em></li>
+</ul>
+<h3>6. पितृ पक्ष में क्या करें और क्या न करें (Dos &amp; Don'ts)</h3>
+<table>
+<thead><tr><th>क्या करें (Dos)</th><th>वर्जित (Don'ts)</th></tr></thead>
+<tbody>
+<tr><td>प्रतिदिन तर्पण करें और सात्विक जीवन जिएं।</td><td>नए वस्त्र, वाहन, भूमि या गहनों की खरीदारी न करें।</td></tr>
+<tr><td>दक्षिण दिशा की ओर मुख करके अर्घ्य दें।</td><td>लोहे के बर्तनों का प्रयोग वर्जित है (तांबा/चांदी श्रेष्ठ)।</td></tr>
+<tr><td>ब्राह्मणों और निर्धनों को भोजन व दान दें।</td><td>तामसिक भोजन (प्याज, लहसुन, मांस, मदिरा) न लें।</td></tr>
+<tr><td>श्रीमद्भागवत या पितृ सूक्त का पाठ करें।</td><td>मसूर की दाल, काला उड़द और बासी भोजन वर्जित है।</td></tr>
+<tr><td>ब्रह्मचर्य का पालन करें और वाणी में संयम रखें।</td><td>बाल, नाखून काटना या दाढ़ी बनाना (क्षौर कर्म) न करें।</td></tr>
+</tbody>
+</table>
+<h3>7. महातीर्थ: गया और त्रयंबकेश्वर का महत्व</h3>
+<p>गंभीर पितृ दोष निवारण के लिए इन दो स्थानों का महत्व शास्त्रों में 'अनिवार्य' बताया गया है:</p>
+<ul>
+<li><strong>गया (बिहार):</strong> फल्गु नदी के तट पर विष्णुपद मंदिर के सानिध्य में किया गया पिंडदान 21 पीढ़ियों को मोक्ष प्रदान करता है। वायु पुराण के अनुसार, यहाँ भगवान विष्णु स्वयं पितृ रूप में स्थित हैं।</li>
+<li><strong>त्रयंबकेश्वर (नासिक):</strong> यदि परिवार में किसी की अकाल मृत्यु (दुर्घटना या अल्पायु) हुई हो, तो यहाँ 'नारायण नागबली' और 'त्रिपिंडी श्राद्ध' किया जाता है। यह अनुष्ठान भटकती हुई आत्माओं को तृप्ति देकर उन्हें जन्म-मृत्यु के चक्र में आगे बढ़ने की शक्ति देता है।</li>
+</ul>
+<h3>8. निष्कर्ष और मुख्य निष्कर्ष (Takeaways)</h3>
+<p>पितृ पक्ष केवल भय या दोष निवारण का समय नहीं है, बल्कि यह अपने पूर्वजों के प्रति 'कृतज्ञता' (Gratitude) व्यक्त करने का उत्सव है।</p>
+<ul>
+<li><strong>श्रद्धा का महत्व:</strong> श्राद्ध शब्द की उत्पत्ति ही 'श्रद्धा' से हुई है। भावहीन अनुष्ठान से बेहतर है कि आप पूर्ण श्रद्धा के साथ केवल एक लोटा जल ही अर्पित करें।</li>
+<li><strong>2026 का अवसर:</strong> 26 सितंबर से 10 अक्टूबर की इस अवधि का लाभ उठाएं। यदि पूर्ण विधि संभव न हो, तो सर्व पितृ अमावस्या को दीप दान और दान-पुण्य अवश्य करें।</li>
+<li><strong>जड़ों का सम्मान:</strong> जब पूर्वज प्रसन्न होते हैं, तो वे आयु, प्रजा, धन, विद्या और स्वर्ग-मोक्ष का आशीर्वाद देते हैं। अपनी जड़ों को सींचें, तभी आपके जीवन का वृक्ष फलेगा-फूलेगा।</li>
+</ul>
+
+<div class="references">
+<h2>Sources</h2>
+<ol>
+<li><a href="https://astrosight.ai/doshas/pitru-dosha-symptoms-causes-tarpan-remedies">Pitru Dosha: Symptoms, Causes &amp; Tarpan Remedies - AstroSight - AI Vedic Astrology</a></li>
+<li><a href="https://trimbakeshwartemplepujari.com/pitru-paksha-dates/">Pitru Paksha Dates 2026 – Best Muhurat &amp; Timings - Pandit Milind Guruji</a></li>
+<li><a href="https://bhaktiparv.com/pitru-paksha-2026/?amp=1">Pitru Paksha 2026: Dates, Rituals, Significance, and Complete Spiritual Guide - Bhakti Parv</a></li>
+<li><a href="https://astrozindagi.in/festivals/2026/pitru-paksha-2026/">Pitru Paksha 2026: Date, Pratipada Shraddha Muhurat &amp; Remedies - Astro Zindagi</a></li>
+<li><a href="https://www.anytimeastro.com/blog/trending/pitru-paksha/">Shradh (Pitru Paksha) 2026: Date, Tithi and Significance - Anytime Astro</a></li>
+<li><a href="https://www.rudraksha-ratna.com/articles/pitru-paksha">Pitru Paksha (Shradh) 2026: Dates, Meaning &amp; How to Do Puja at Home?</a></li>
+<li><a href="https://astropuja.com/blog/post/mahalaya-pitru-paksha-what-when-how-and-whys">Mahalaya Pitru Paksha 2026 | What | When | How &amp; Why&#x27;s - Astropuja</a></li>
+<li><a href="https://www.divine-rudraksha.com/pages/pitra-paksh-a-fortnight-of-ancestors">Pitra Paksh - A fortnight of Ancestors</a></li>
+<li><a href="https://www.festivalsofindia.in/pitrpaksh">Pitru Paksha - Saturday, 26 September - Festivals Of India</a></li>
+<li><a href="https://panditsnearme.com/blog/pitru-paksha-2026-shradh-rituals-guide">Pitru Paksha 2026: Dates, Rituals, and Shradh Puja Guide - Pandits Near Me</a></li>
+<li><a href="https://www.poojalu.com/pitru-paksha/">Pitru Paksha 2026 | Mahalaya Shraddha Puja Services at Home or Online - Poojalu.com</a></li>
+<li><a href="https://ishvaram.com/pitra-dosha/upay/">Pitra Dosha Upay — Ancestral Remedies From Classical Jyotish - Ishvaram</a></li>
+<li><a href="https://trimbakeshwarmandir.org/pitra-dosh-nivaran-puja-in-trimbakeshwar-nashik/">Pitra Dosh Nivaran Puja in Trimbakeshwar, Nashik - Book Now</a></li>
+<li><a href="https://astrosight.ai/spirituality/pitru-paksha-2026-15-day-ancestor-period-date-shraddha-rules">Pitru Paksha 2026: Ancestor Period &amp; Shraddha Rules - AstroSight - AI Vedic Astrology</a></li>
+<li><a href="https://astromadhupriya.com/blog/understanding-pitra-dosha-your-2026-ultimate-guide-to-ancestral-karma-hints-and-powerful-remedies/">Pitra Dosha 2026: Ancestral Karma GuideAstromadhupriya - AstroMadhupriya - Best Astrologer</a></li>
+<li><a href="https://iiag.co.in/articles/remedies-by-mantra/pitra-dosh">Pitra Dosh Remedies, Pitru Dosha Nivarana &amp; Pooja Guide - IIAG Jyotish Sansthan</a></li>
+<li><a href="https://www.vedic-pooja.com/blog/pitru-paksha-shradh-complete-guide">Pitru Paksha Shradh Complete Guide in Pune: Dates, Vidhi &amp; Significance - Vedic Pooja</a></li>
+<li><a href="https://maabaglamukhi.guru/blog/pitra-dosh-pooja-complete-guide">Pitra Dosh Pooja – Complete Guide by Pandit Vishnu Sharma</a></li>
+<li><a href="https://www.mahatarpan.com/post/when-is-mahalaya-amavasya-in-2026-date-timings">Mahalaya Amavasya 2026 Date &amp; Timings: Complete Guide to Significance, Shraddh Rituals &amp; Pitru Paksha - Mahatarpan</a></li>
+<li><a href="https://trimbakeshwartemplepujari.com/sarvapitri-amavasya/">Sarvapitri Amavasya 2026: Significance, Rituals, Dates, And Complete Guide</a></li>
+<li><a href="https://nityapanchangam.com/amavasya/september-2026/">Amavasya September 2026 — Mahalaya (Sarva Pitru) Amavasya | Pitru Paksha End - Nitya Panchangam</a></li>
+<li><a href="https://www.anytimeastro.com/blog/trending/sarva-pitru-amavasya/">Sarva Pitru Amavasya 2026: Dates, Rituals and Significance - Anytime Astro</a></li>
+<li><a href="https://trimbakeshwartemplepujari.com/how-to-perform-pitru-paksha-tarpan/">How To Perform Pitru Paksha Tarpan Correctly - Pandit Milind Guruji</a></li>
+<li><a href="https://www.mahatarpan.com/post/what-are-the-rules-of-pind-daan">What are The Rules of Pind Daan? - Mahatarpan</a></li>
+<li><a href="https://astropuja.com/blog/post/what-is-the-importance-of-madhyashtami-paksha-shradh-ritual">What is the importance of Madhyashtami Paksha Shradh Ritual? - Astropuja</a></li>
+<li><a href="https://www.radhakrishnatemple.net/blog/how-to-perform-shraddha-pitru-paksha/">Shraddha Rituals in Pitru Paksha | Honor Your Ancestors with Devotion - Radha Krishna Temple of Dallas</a></li>
+<li><a href="https://www.sanatan.org/en/a/87.html">What is the method of performing Tarpan and Pitru tarpan ? - Sanatan Sanstha</a></li>
+<li><a href="https://fr.scribd.com/document/196943690/Shradh-Basic-Information-on-Shraddha-Rituals-and-Ceremony">Shradh - Basic Information On Shraddha Rituals and Ceremony | PDF - Scribd</a></li>
+<li><a href="https://www.scribd.com/doc/200850198/Pitru-Tharpanam-Procedure">Pitru Tarpanam Ritual Guide | PDF | Self-Improvement | Wellness - Scribd</a></li>
+<li><a href="https://www.navnidhi.org/causes-effect-of-pitru-dosha-solutions-in-pitru-paksha/">9 Effects of Pitru Dosha: Solutions in Pitru Paksha</a></li>
+<li><a href="https://buy.astrosage.com/service/pitra-dosha-puja?language=en">Pitra Dosha Nivaran Puja</a></li>
+<li><a href="https://omshivam.wordpress.com/category/hindu-tradition/page/10/">Hindu Tradition | Jai Guru Dev | Page 10</a></li>
+<li><a href="https://astrosight.ai/spirituality/ekadashi-2026-dates-complete-year-calendar-with-vrat-rules">Ekadashi 2026 Dates: Complete Year Calendar with Vrat Rules | AstroSight</a></li>
+<li><a href="https://sahms.org.za/south-african-hindu-calendar-2026-south-african-hindu-maha-sabha/">Hindu Calendar 2026 - SAHMS - South African Hindu Maha Sabha</a></li>
+<li><a href="https://nakshatrica.com/panchang/purnima">Purnima 2026 (पूर्णिमा) - Full Moon Dates &amp; Festivals - Nakshatrica</a></li>
+<li><a href="https://timesofindia.indiatimes.com/religion/rituals-puja/purnima-2026-date-timings-rituals-and-significance/articleshow/126369605.cms">Purnima 2026: Date, Timings, Rituals and Significance | - The Times of India</a></li>
+<li><a href="https://nkbmeditation.org/blog/amavasya-dates-meditation-mantras-fasting-guide">Amavasya Dates 2026, Meditation, Mantras &amp; Fasting Guide</a></li>
+<li><a href="https://www.shriramtemple.org.in/news/details/2026-sankranti-calendar">2026 Sankranti Calendar – Month-wise Dates, Exact Timings (IST), Muhurat &amp; Importance</a></li>
+<li><a href="https://www.bda.ai/festival/kanya-sankranti/2026">Kanya Sankranti (Vishwakarma Puja) 2026 Date - 17 Sept 2026 | BDA</a></li>
+<li><a href="https://www.myzodiaq.in/en/online-library/festivals-and-astrology/festival-muhurat-ritual-2026/kanya-sankranti-2026">Kanya Sankranti 2026: Auspicious Timings and Puja Guide - ZODIAQ</a></li>
+<li><a href="https://www.scribd.com/document/425751143/1-Muhurtha-Notes-for-Teaching-Purposes-1">Understanding Muhurta in Astrology | PDF - Scribd</a></li>
+<li><a href="https://www.scribd.com/document/993462043/Unified-Calendar-2026-FINAL">Unified Calendar 2026 FINAL | PDF | Hindu Astrology | Ancient Astronomy - Scribd</a></li>
+<li><a href="https://www.astroyogi.com/festival/pitru-paksha">Pitru Paksha 2026: Dates, Shradh Rituals, and Tarpan Puja Muhurat - Astroyogi</a></li>
+<li><a href="https://archyam.com/blogs/news/ganesh-chaturthi-2026-date-timings-rituals-celebrations-guide">Ganesh Chaturthi 2026: Date, Timings, Rituals &amp; Celebrations - Archyam</a></li>
+<li><a href="https://kundligpt.com/shubh-muhurat/2026/business-opening/">Business Opening Muhurat 2026 — Auspicious Dates | KundliGPT</a></li>
+<li><a href="https://monthnameshindi.com/kalnirnay-2026-holiday-list-dates/">Kalnirnay 2026: Complete Holiday List &amp; Dates - Hindi Month Name</a></li>
+<li><a href="https://www.magicbricks.com/blog/auspicious-dates-for-property-registration/132134.html">Auspicious Dates for Property Registration in 2026 - MagicBricks</a></li>
+<li><a href="https://www.nobroker.in/blog/auspicious-dates-for-property-registration/">Auspicious Dates for Property Registration in 2026 - NoBroker</a></li>
+<li><a href="https://aanchaltarot.com/pitra-paksha-healing-pitra-dosh-ancestral-karma-for-a-harmonious-life/">Pitra Paksha: Healing Pitra Dosh &amp; Ancestral Karma for a Harmonious Life - Aanchal Tarot</a></li>
+<li><a href="https://www.punpuntrails.com/event/gaya/pitru-paksha-mela-gaya/">Pitru Paksha Mela Gaya 30 September 2026 | Gaya Pind Daan - Punpun Trails</a></li>
+<li><a href="https://www.udayfoundation.org/shradh-pitru-paksha/">Shradh 2026 dates - Pitru Paksha Shraddha - Uday Foundation</a></li>
+<li><a href="https://www.anytimeastro.com/blog/trending/kanya-sanskriti/">Kanya Sanskriti 2026 Date, Time, and Importance - Anytime Astro</a></li>
+<li><a href="https://www.sannyasapeeth.net/sankranti.php">Welcome to Sannyasa Peeth - Monthly Programs - Sankranti</a></li>
+<li><a href="https://www.bankbazaar.com/indian-holiday/makar-sankranti-holiday.html">Makar Sankranti 2026 - Know the Date, Significance &amp; Traditions - BankBazaar</a></li>
+<li><a href="https://www.divinehindu.in/blogs/news/pitru-paksha-2026-shraddh-dates-tithi-vidhi">Pitru Paksha 2026: Shraddh Dates, Tithi &amp; Vidhi - Divine Hindu</a></li>
+<li><a href="https://www.rudraksha-ratna.com/articles/bhadrapada-purnima">Bhadrapada Purnima 2026: Bhado Month Date, Vrat Katha &amp; Puja Vidhi - Rudraksha Ratna</a></li>
+<li><a href="https://trimbakeshwartemplepujari.com/chaitra-purnima/">Chaitra Purnima 2026 - Pandit Milind Guruji</a></li>
+<li><a href="https://www.talkndheal.com/blog-details/hindu-vrat-calendar-2026-monthly-fasting-dates-and-significance">Hindu Vrat Calendar 2026: Monthly Fasting Dates &amp; Significance - Talkndheal</a></li>
+<li><a href="https://astroarunpandit.org/hindu-holidays/">Hindu Holiday Calendar 2026: Key Dates for Fasts and Festivals - Astro Arun Pandit</a></li>
+<li><a href="https://www.harivara.com/services/pitru-pujas-hindi/amavasya-tarpan/">Amavasya Tarpan - Harivara.com</a></li>
+<li><a href="https://timesofindia.indiatimes.com/religion/rituals-puja/amavasya-2026-date-timings-rituals-and-significance/articleshow/126557686.cms">Amavasya 2026: Date, Timings, Rituals and Significance | - The Times of India</a></li>
+<li><a href="https://astrovibes.indiatimes.com/trending/amavasya-2026-dates-and-timings-month-wise-amavasya-list/articleshow/129062650.html">Amavasya 2026 dates and timings: Month-wise Amavasya list - Astrovibes</a></li>
+<li><a href="https://www.rudraksha-ratna.com/articles/darsha-amavasya">Darsha Amavasya 2026: Date, Meaning, Significance, Pooja Vidhi</a></li>
+<li><a href="https://www.yogaindailylife.org/more/knowledge/indian-festivals">Indian Festivals 2026 - Yoga in Daily Life</a></li>
+<li><a href="https://www.scribd.com/document/989269917/2026-Drik-Panchang-Hindu-Calendar-v1-0-3">2026 Drik Panchang Hindu Calendar v1.0.3 | PDF - Scribd</a></li>
+<li><a href="https://astrosight.ai/festivals">Hindu Festivals 2025 2026 — Dates, Significance &amp; Rituals - AstroSight - AI Vedic Astrology</a></li>
+<li><a href="https://savitarrealty.com/blog/bhumi-puja-muhurat-dates">Bhumi Pujan Muhurat 2026-27: Best Dates &amp; Vastu Guide - Savitar Realty</a></li>
+<li><a href="https://panchangbodh.com/varalakshmi-vratam-2026">Varalakshmi Vratam 2026: Date &amp; Puja Vidhi (28 August) | PanchangBodh</a></li>
+<li><a href="https://www.wedplan.in/blog/wedding-dates-muhurat-2026">Best Wedding Dates &amp; Muhurat 2026 — Complete Shubh Vivah Calendar - WedPlan</a></li>
+<li><a href="https://api.substack.com/feed/podcast/3176039/s/171731.rss">Sacred Rituals &amp; Devotion of India by Dharmikvibes - Substack</a></li>
+<li><a href="https://www.scribd.com/document/947287146/Pitri-Paksha-Samskara">Tarpan Rituals and Mantras Guide | PDF | Hindu Mythology - Scribd</a></li>
+<li><a href="https://gopuja.com/shubh-muhurat-2026">2026 Shubh Muhurat Calendar · Auspicious Dates for Every Puja, Purchase &amp; Beginning | Gopuja</a></li>
+<li><a href="https://www.scribd.com/doc/231215933/Essentials-of-Horary-Astrology-or-Prasnapadavi-R-Bhat">Essentials of Horary Astrology or Prasnapadavi - R. Bhat | PDF - Scribd</a></li>
+<li><a href="https://www.scribd.com/document/977481852/2026-Drik-Panchang-Hindu-Calendar-v1-0-3">2026 Mumbai Hindu Calendar Guide | PDF - Scribd</a></li>
+<li><a href="https://www.scribd.com/document/563173701/Hindu-Calendar-2022">Today&#x27;s Pooja Timings in Bengaluru | PDF | Ancient Astronomy | Religious Festivals - Scribd</a></li>
+<li><a href="https://www.scribd.com/document/494772118/Hindu-Calendar-2021">2021 Drik Panchang Hindu Calendar | PDF | Ancient Astronomy - Scribd</a></li>
+<li><a href="https://www.scribd.com/document/617405690/2023-Drik-Panchang-Hindu-Calendar-v1-0-1">2023 Drik Panchang Hindu Calendar | PDF - Scribd</a></li>
+<li><a href="https://www.hindustantimes.com/lifestyle/festivals/hindu-calendar-october-2023-shardiya-navratri-solar-eclipse-dussehra-to-maha-navami-see-complete-list-of-festivals-101696382514886.html">Hindu Calendar October 2023: Shardiya Navratri, Solar Eclipse, Dussehra to Maha Navami; see complete list of festivals | Hindustan Times</a></li>
+<li><a href="https://swargayatraa.com/pitru-paksha-2025-dates-shraddha-rituals-guide/">Pitru Paksha 2025: Dates, Shraddha Rituals &amp; Guide - Swargayatraa™ Funeral &amp; Cremation Services</a></li>
+<li><a href="https://www.scribd.com/document/986175965/2026-Drik-Panchang-Hindu-Calendar-v1-0-3">2026 Hindu Calendar for Toronto | PDF - Scribd</a></li>
+<li><a href="https://www.scribd.com/document/816174377/2025-Drik-Panchang-Oriya-Calendar-v1-0-1">Odia Calendar October 2025 | PDF | Hindu Worship - Scribd</a></li>
+<li><a href="https://www.scribd.com/document/811950117/2025-Drik-Panchang-Hindu-Calendar-v1-0-1">Hindu Calendar 2025 Overview | PDF | Hindu Worship | Religious Holidays - Scribd</a></li>
+<li><a href="https://m.economictimes.com/news/new-updates/vishwakarma-puja-2025-date-rituals-history-significance-timings-all-you-need-to-know/articleshow/123921870.cms">Vishwakarma Puja 2025: Rituals, history, timings, significance and all you need to know</a></li>
+<li><a href="https://www.scribd.com/document/703629904/2024-Drik-Panchang-Hindu-Calendar-v1-0-1">2024 Drik Panchang Hindu Calendar | PDF | Ancient Astronomy - Scribd</a></li>
+<li><a href="https://www.rudraksha-center.com/pages/pitru-paksh">Pitru Paksh 2026,Shradh Karma - A fortnight of Ancestors,Shraadh Karma Dates in 2026,Book Shraadh Karma Puja Online - Rudraksha Center</a></li>
+<li><a href="https://www.harivara.com/services/temple-services/pitru-paksha-shradha-at-gokarna/">Pitru Paksha Shradha at Gokarna - Harivara.com</a></li>
+<li><a href="https://www.mahatarpan.com/post/pitru-paksha-2026-dates-rituals-pind-daan-muhurat-faqs">Pitru Paksha 2026: Dates, Rituals, Pind Daan, Muhurat &amp; FAQs - Mahatarpan</a></li>
+<li><a href="https://www.harivara.com/services/ancestor-rituals-kannada/pitru-paksha-shradha/">Pitru Paksha Shradha - Harivara.com</a></li>
+<li><a href="https://www.harivara.com/services/pitru-pujas-hindi/pitru-paksha-shradh-puja/">Pitru Paksha (Mahalaya) Shradh Puja - Harivara.com</a></li>
+<li><a href="https://astrosight.ai/spirituality/muhurta-griha-pravesh-guide">Muhurta for Griha Pravesh: A Complete Guide | AstroSight</a></li>
+<li><a href="https://kundligpt.com/shubh-muhurat/2026/gold-purchase/">Gold Buying Muhurat 2026 — Auspicious Dates | KundliGPT</a></li>
+<li><a href="https://www.tirumalahills.org/2021/07/auspicious-dates-for-property.html">Auspicious Dates for Property Registration - ॐ Welcome to TirumalaHills</a></li>
+<li><a href="https://www.tirumalahills.org/2021/07/vehicle-purchase-dates-with-auspicious.html">Vehicle Purchase dates with auspicious Muhurat timings - ॐ Welcome to TirumalaHills</a></li>
+</ol>
+</div>
+        </article>
+    </div>
+
+</body>
+</html>
