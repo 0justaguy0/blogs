@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>गुरु वक्री गोचर उपाय</title>
+    <style>
+        :root {
+            --bg-color: #FDF9F1;
+            --text-color: #3E2723;
+            --indian-yellow: #E4A025;
+            --indian-orange: #E65100;
+            --accent-light: #FFECB3;
+            --ref-bg: #FFF3E0;
+        }
+
+        body {
+            font-family: 'Georgia', 'Nirmala UI', 'Mangal', serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(var(--bg-color) 80%, var(--accent-light) 100%);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #FFFFFF;
+            padding: 50px 60px;
+            box-shadow: 0 10px 30px rgba(62, 39, 35, 0.1);
+            border-top: 8px solid var(--indian-orange);
+            border-bottom: 8px solid var(--indian-yellow);
+            border-radius: 4px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed var(--indian-yellow);
+        }
+
+        h1 {
+            color: var(--indian-orange);
+            font-size: 2.5em;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        h2 {
+            color: var(--indian-yellow);
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--indian-orange);
+            padding-left: 15px;
+        }
+
+        h3, h4 {
+            color: var(--indian-orange);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        .intro-text::first-letter {
+            float: left;
+            font-size: 3.5em;
+            line-height: 0.8;
+            padding-right: 8px;
+            padding-top: 4px;
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        ul, ol {
+            margin: 0 0 24px 0;
+            padding-left: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ol {
+            list-style-position: outside;
+            padding-left: 2.2em;
+        }
+
+        ul li, ol li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        ol li {
+            padding-left: 0.35em;
+        }
+
+        ul li::before {
+            content: '\2022';
+            position: absolute;
+            left: 0;
+            top: 0.05em;
+            color: var(--indian-orange);
+            font-size: 1.2em;
+            line-height: 1;
+        }
+
+        ol li::marker {
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        strong {
+            color: var(--indian-orange);
+        }
+
+        .image-placeholder-container {
+            margin: 30px 0;
+            text-align: center;
+            font-style: italic;
+            color: #795548;
+            background-color: var(--accent-light);
+            padding: 20px;
+            border-radius: 4px;
+            border: 1px solid var(--indian-yellow);
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.98em;
+            background-color: #FFFDF8;
+        }
+
+        th, td {
+            border: 1px solid #F0D49B;
+            padding: 10px 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--ref-bg);
+            color: var(--indian-orange);
+        }
+
+        blockquote {
+            margin: 30px 0;
+            padding: 20px 25px;
+            background-color: var(--accent-light);
+            border-left: 5px solid var(--indian-orange);
+            font-style: italic;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px dashed var(--indian-yellow);
+            margin: 32px 0;
+        }
+
+        .references {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: var(--ref-bg);
+            border-radius: 8px;
+            font-size: 0.9em;
+        }
+
+        .references h2, .references h3 {
+            color: var(--text-color);
+            margin-top: 0;
+            border-bottom: 1px solid var(--indian-yellow);
+            padding-bottom: 10px;
+            border-left: 0;
+            padding-left: 0;
+        }
+
+        .references p, .references li {
+            margin-bottom: 12px;
+            word-wrap: break-word;
+        }
+
+        .references a {
+            color: var(--indian-orange);
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>गुरु वक्री गोचर उपाय</h1>
+        </header>
+
+        <article>
+<p class="intro-text"><strong>1. प्रस्तावना: ब्रह्मांडीय राजा का गृह-प्रवेश</strong></p>
+<div class="image-placeholder-container">
+    <img src="blog65_Image.png" alt="आगामी गुरु (बृहस्पति) वक्री गोचर अवधि सटीक IST आरंभ और समाप्ति तिथियों के साथ: 121 दिवसीय ज्ञान खिड़की का आरंभ 13 दिसंबर 2026 को जब गुरु सिंह राशि के 5 अंश पर वक्री होता है और 12 अप्रैल 2027 रात 10:22 बजे IST पर कर्क राशि के लगभग 16 अंश 59 मिनट पर मार्गी होता है। गुरु 25 जनवरी 2027 रात 12:52 बजे IST पर वक्री अवस्था में उच्च कर्क राशि में पुनः प्रवेश करता है। व्यापक उच्च संदर्भ: गुरु 2 जून 2026 भोर 02:25 बजे IST पर उच्च कर्क राशि में प्रवेश करता है और 12 जून 2027 तक रहता है, 26 जून 2027 को अंतिम सिंह प्रवेश। गुरु आस्त 14 जुलाई से 12 अगस्त 2026, कार्यशील पुनर्स्थापना 13 अगस्त 2026। केतु के तीन कार्मिक संघर्ष 11 नवंबर 2026 सिंह 1 अंश, 22 फरवरी 2027 कर्क 26 अंश, 23 अप्रैल 2027 कर्क 22 अंश। नक्षत्र अध्याय: पुनर्वसु 2-18 जून 2026, पुष्य 18 जून-19 अगस्त 2026 (5 अंश कर्क पर गहनतम उच्च), आश्लेषा 18 अगस्त-31 अक्टूबर 2026 और 25 जनवरी-26 जून 2027। उपचारात्मक ज्योतिष: गुरु ग्रह शांति बीज मंत्र ॐ ग्रां ग्रीं ग्रौं सः गुरवे नमः गुरुवार भोर में 108 बार, विष्णु सहस्रनाम, गुरुवार बृहस्पतिवार व्रत पीले वस्त्र हल्दी चना दाल गुड और पीले फूलों के साथ (केला वर्जित), पुखराज पीला नीलम शरीर भार का 1/12 कैरेट तर्जनी उंगली में कच्चे दूध शहद और गंगाजल में प्राण प्रतिष्ठा के साथ, वृषभ मिथुन तुला मकर कुंभ हेतु वर्जित और कन्या हेतु सतर्कता, गुरु यंत्र। देव ऊर्जा: भगवान विष्णु, दत्तात्रेय, हयग्रीव और गुरु बृहस्पति। विवाह संतान उच्च शिक्षा वित्त ज्ञान हेतु 12 राशि भाव सक्रियता और अनुकूल प्रतिकूल राशियां। आयुर्वेद: कफ शांति और मेधा रसायन ब्राह्मी शंखपुष्पी और ब्राह्मी घृत स्मृति और अधिगम हेतु। धर्म संरेखण और गुरु अनुशासन हेतु वैदिक परामर्श, भक्ति अध्यात्म और समग्र कल्याण। वर्षांत 2026 वर्षारंभ 2027 ग्रह गोचर ऊर्जा और उपाय।">
+</div>
+<p>नमस्ते साधकों! ब्रह्मांडीय चेतना के आंगन में एक अत्यंत दुर्लभ और मांगलिक घटना घटित होने जा रही है। जून 2026 में, देवताओं के गुरु और ज्ञान, विस्तार तथा सौभाग्य के अधिपति—बृहस्पति (गुरु)—अपने सबसे प्रिय और शक्तिशाली स्थान, कर्क राशि में प्रवेश करेंगे। ज्योतिष शास्त्र में इसे गुरु का 'उच्च' (Exaltation) होना कहा जाता है, जो 12 वर्षों में केवल एक बार मिलने वाला ईश्वरीय उपहार है।</p>
+<p>इसे एक प्रतापी राजा के अपने 'हृदय के महल' (Palace of the Heart) में लौटने जैसा समझें। कर्क राशि जल तत्व और चंद्रमा (भावनाओं) की राशि है। जब विवेक के कारक गुरु यहाँ विराजते हैं, तो करुणा और बुद्धिमत्ता का संगम होता है। यह गोचर केवल भौतिक उन्नति का नहीं, बल्कि 'हृदय की शुद्धि', वंशानुगत घावों (Ancestral wounds) को भरने और अपने वास्तविक 'धर्म' से जुड़ने का समय है।</p>
+<p>&#8212;</p>
+<p><strong>2. मुख्य तिथियां और खगोलीय समयरेखा (2026-2027)</strong></p>
+<p>गुरु की यह यात्रा अत्यंत गतिशील है, जिसमें वक्री गति और राशि परिवर्तन के कई पड़ाव हैं। अपनी योजनाओं के लिए इस समयरेखा को ध्यान से देखें:</p>
+<table>
+<thead><tr><th>खगोलीय घटना</th><th>तिथि और समय (IST)</th><th>विशेष टिप्पणी</th></tr></thead>
+<tbody>
+<tr><td><strong>कर्क राशि में प्रवेश (उच्च प्रारंभ)</strong></td><td>2 जून 2026, 02:25 AM</td><td>स्वर्ण युग का उदय; पुनर्वसु नक्षत्र से यात्रा प्रारंभ।</td></tr>
+<tr><td><strong>गुरु अस्त (Combustion)</strong></td><td>14 जुलाई - 12 अगस्त 2026</td><td>सूर्य की निकटता के कारण गुरु की बाह्य शक्ति का क्षरण।</td></tr>
+<tr><td><strong>सिंह राशि में प्रथम प्रवेश</strong></td><td>31 अक्टूबर 2026, 12:50 PM</td><td>विवेक का बाह्य प्रदर्शन और नेतृत्व क्षमता का उदय।</td></tr>
+<tr><td><strong>वक्री गति का प्रारंभ (Retrograde)</strong></td><td>13 दिसंबर 2026</td><td>'आंतरिक ज्ञान' की खिड़की का खुलना और आत्म-निरीक्षण।</td></tr>
+<tr><td><strong>कर्क राशि में पुनः प्रवेश (वक्री)</strong></td><td>25 जनवरी 2027, 12:52 AM</td><td>जड़ों और पारिवारिक मूल्यों का पुनर्मूल्यांकन।</td></tr>
+<tr><td><strong>मार्गी होना (Direct)</strong></td><td>12-13 अप्रैल 2027</td><td>अंतिम स्पष्टता और रुके हुए कार्यों में तीव्र गति।</td></tr>
+<tr><td><strong>कर्क से अंतिम विदाई</strong></td><td>26 जून 2027</td><td>12-वर्षीय उच्च चक्र की पूर्णता और विदाई।</td></tr>
+</tbody>
+</table>
+<p>&#8212;</p>
+<p><strong>3. गोचर के तीन अध्याय: एक विस्तृत विश्लेषण</strong></p>
+<p>इस गोचर की ऊर्जा तीन प्रमुख चरणों में विभाजित है, जिन्हें समझना आपके भविष्य के लिए अनिवार्य है:</p>
+<ul>
+<li><strong>चरण 1 (जून - अक्टूबर 2026): विस्तार और विवेक</strong></li>
+</ul>
+<p>यह काल राहु के प्रभाव से मुक्त है। यहाँ प्रश्न 'मुझे क्या चाहिए?' से बदलकर 'मेरे लिए वास्तव में सही क्या है?' हो जाता है। यह रणनीतिक निवेश और बौद्धिक संवर्धन का समय है।</p>
+<ul>
+<li><strong>चरण 2 (अक्टूबर - दिसंबर 2026): आत्मविश्वास का उदय</strong></li>
+</ul>
+<p>जब गुरु सिंह राशि में होंगे, तो कर्क की आंतरिक बुद्धि बाह्य नेतृत्व में बदल जाएगी। यह अपनी योजनाओं को सार्वजनिक करने और 'Visibility' का समय है।</p>
+<ul>
+<li><strong>चरण 3 (जनवरी - जून 2027): केतु के साथ युति और आध्यात्मिक शुद्धि</strong></li>
+</ul>
+<p>यह इस गोचर का सबसे गहरा अध्याय है। यहाँ गुरु और केतु की युति होगी। ध्यान रहे, यह राहु वाली 'गुरु-चांडाल' युति नहीं है। केतु 'मोक्ष कारक' है, जो भौतिक विस्तार को धीमा कर उसे आध्यात्मिक शोधन में बदल देता है। इस चरण में <strong>तीन महत्वपूर्ण तिथियां (Power Dates)</strong> हैं:</p>
+<ol>
+<li><strong>11 नवंबर 2026:</strong> पहली युति (मघा नक्षत्र) - आध्यात्मिक जागृति का आह्वान।</li>
+<li><strong>22 फरवरी 2027:</strong> दूसरी युति (अश्लेषा नक्षत्र) - वंशानुगत कर्मों का गहरा शोधन।</li>
+<li><strong>23 अप्रैल 2027:</strong> तीसरी युति (अश्लेषा) - अंतर्दृष्टि का पूर्ण एकीकरण।</li>
+</ol>
+<p>&#8212;</p>
+<p><strong>4. नक्षत्रों की यात्रा: पुनर्वसु से अश्लेषा तक</strong></p>
+<p>गुरु कर्क राशि के तीन विशिष्ट नक्षत्रों से गुजरते हुए अपनी ऊर्जा का रंग बदलेंगे:</p>
+<ul>
+<li><strong>पुनर्वसु (पद 4):</strong> यह 'प्रकाश की वापसी' है। यहाँ गुरु <strong>'वर्गोत्तम'</strong> (D1 और D9 दोनों कुंडलियों में कर्क में) होते हैं, जिससे उनकी उपचारकारी शक्ति शुद्ध और अनंत हो जाती है।</li>
+<li><strong>पुष्य:</strong> गुरु का अपना प्रिय नक्षत्र। 5 डिग्री पर गुरु <strong>'परम उच्च'</strong> होते हैं। यहाँ विकास 'अचानक' नहीं बल्कि अनुशासित, टिकाऊ और पोषण देने वाला होता है।</li>
+<li><strong>अश्लेषा:</strong> यह मनोवैज्ञानिक गहराई का क्षेत्र है। यहाँ गुरु 'Lineage Auditing' करते हैं। यह 'वंशानुगत शोक' (Ancestral Grief) को 'वंशानुगत औषधि' (Ancestral Medicine) में बदलने का समय है।</li>
+</ul>
+<p>&#8212;</p>
+<p><strong>5. गुरु अस्त और अधिक मास: 'गोल्डिलॉक्स' एक्शन विंडो</strong></p>
+<p>इस गोचर के दौरान कुछ समय सावधान रहने के हैं और कुछ अत्यंत शुभ:</p>
+<ul>
+<li><strong>अधिक मास (17 मई - 15 जून 2026):</strong> यह समय भौतिक कार्यों के लिए नहीं, बल्कि आध्यात्मिक संरेखण (Dharma Alignment) के लिए है।</li>
+<li><strong>गुरु अस्त (14 जुलाई - 12 अगस्त 2026):</strong> इस दौरान विवाह, गृह प्रवेश और नए व्यवसाय जैसे मांगलिक कार्य वर्जित हैं क्योंकि 'ग्रहों के सलाहकार' सूर्य के तेज के पीछे ओझल होते हैं।</li>
+<li><strong>विशेष अवसर (Action Window):</strong> स्रोत के अनुसार, <strong>15 जून से 18 जून 2026</strong> के बीच एक अत्यंत संक्षिप्त और 'स्वच्छ' विंडो है। अधिक मास के समाप्त होने और गुरु के पुष्य नक्षत्र/अस्त होने से पहले का यह समय महत्वपूर्ण निर्णयों के लिए सर्वश्रेष्ठ है।</li>
+</ul>
+<p>&#8212;</p>
+<p><strong>6. 12 राशियों के लिए भविष्यवाणियाँ (Impact Matrix)</strong></p>
+<p>नीचे दी गई तालिका में गुरु के गोचर के साथ-साथ शनि की स्थिति (साढ़े साती/कंटक) का भी ध्यान रखा गया है:</p>
+<table>
+<thead><tr><th>राशि</th><th>अनुकूल क्षेत्र (Gains)</th><th>सावधानियां/चुनौतियां (Cautions)</th></tr></thead>
+<tbody>
+<tr><td><strong>मेष</strong></td><td>अचल संपत्ति, माता का आशीर्वाद, घरेलू सुख</td><td>अनिद्रा, पिता का स्वास्थ्य, भावनात्मक संवेदनशीलता</td></tr>
+<tr><td><strong>वृषभ</strong></td><td>संचार, छोटी यात्राएं, भाई-बहनों का सहयोग</td><td>आलस्य, जोड़ों की समस्या, करियर में अति-आत्मविश्वास</td></tr>
+<tr><td><strong>मिथुन</strong></td><td>धन लाभ, वाणी का प्रभाव, पारिवारिक बचत</td><td>कंटक शनि का प्रभाव: जोड़ों का दर्द, गले का संक्रमण</td></tr>
+<tr><td><strong>कर्क</strong></td><td>व्यक्तित्व विकास, आत्मविश्वास, आध्यात्मिक उदय</td><td>व्यापार में अति-संवेदनशीलता, जीवनसाथी से वैराग्य</td></tr>
+<tr><td><strong>सिंह</strong></td><td>विदेश यात्रा, ध्यान, मोक्ष की प्राप्ति</td><td>अष्टम शनि का प्रभाव: करियर में अस्थिरता, भारी खर्च</td></tr>
+<tr><td><strong>कन्या</strong></td><td>आय के नए स्रोत, सामाजिक नेटवर्क का विस्तार</td><td>पाचन तंत्र, रिश्तों में वैचारिक मतभेद</td></tr>
+<tr><td><strong>तुला</strong></td><td>पदोन्नति, मान-सम्मान, कानूनी विजय</td><td>रचनात्मक अवरोध, श्वसन संबंधी संवेदनशीलता</td></tr>
+<tr><td><strong>वृश्चिक</strong></td><td>भाग्य का उदय, उच्च शिक्षा, लंबी यात्राएं</td><td>सट्टा बाजार में जोखिम, रचनात्मक बाधाएं</td></tr>
+<tr><td><strong>धनु</strong></td><td>पैतृक संपत्ति, शोध, गुप्त ज्ञान</td><td>कंटक शनि: यात्रा की थकान, अनियोजित खर्च</td></tr>
+<tr><td><strong>मकर</strong></td><td>विवाह, साझेदारी में लाभ, सामाजिक पहचान</td><td>हड्डियों के स्वास्थ्य पर ध्यान दें, रिश्तों में दूरी</td></tr>
+<tr><td><strong>कुंभ</strong></td><td>शत्रुओं पर विजय, प्रतियोगी परीक्षा में सफलता</td><td>साढ़े साती का वित्तीय दबाव, आंखों में तनाव</td></tr>
+<tr><td><strong>मीन</strong></td><td>संतान सुख, रचनात्मक सफलता, स्पष्टता</td><td>जन्म शनि का दबाव: शारीरिक थकावट, मानसिक बोझ</td></tr>
+</tbody>
+</table>
+<p>&#8212;</p>
+<p><strong>7. अपना 'लकी स्कोर' कैसे जाँचें? (अष्टकवर्ग का रहस्य)</strong></p>
+<p>यह गोचर आपके लिए कितना फलदायी होगा, यह 'अष्टकवर्ग' (Ashtakavarga) अंक तय करेंगे।</p>
+<ul>
+<li><strong>5-8 अंक:</strong> 'जैकपॉट' स्थिति; न्यूनतम प्रयास में अधिकतम लाभ।</li>
+<li><strong>4 अंक:</strong> औसत परिणाम; कड़ी मेहनत से सफलता।</li>
+<li><strong>0-3 अंक:</strong> सावधानी और धैर्य की आवश्यकता।</li>
+</ul>
+<p><strong>Jagannatha Hora (JHora) गाइड:</strong></p>
+<ol>
+<li>सॉफ्टवेयर में अपनी जन्म कुंडली खोलें।</li>
+<li>नीचे 'Strengths' टैब पर क्लिक करें, फिर 'Ashtakavarga' सब-टैब चुनें।</li>
+<li>बृहस्पति (Jupiter) की पंक्ति और <strong>कर्क (Cn) का कॉलम</strong> देखें। जो अंक वहां है, वही आपकी सफलता का पैमाना है।</li>
+</ol>
+<p>&#8212;</p>
+<p><strong>8. वैदिक उपाय और आध्यात्मिक उपचार (Upay)</strong></p>
+<p>गुरु के आशीर्वाद को सक्रिय करने के लिए निम्नलिखित विधान अपनाएं:</p>
+<ul>
+<li><strong>मंत्र साधना:</strong> प्रत्येक गुरुवार सूर्योदय के समय 'ॐ ग्रां ग्रीं ग्रौं सः गुरवे नमः' का 108 बार जाप करें।</li>
+<li><strong>विष्णु सहस्रनाम:</strong> इसे प्रतिदिन सुनें। यह मानसिक भ्रम के विरुद्ध एक अभेद्य 'सुरक्षा कवच' है।</li>
+<li><strong>गुरुवार व्रत:</strong> पीले वस्त्र पहनें, चने की दाल और गुड़ का दान करें। इस दिन केला न खाएं।</li>
+<li><strong>रत्न चिकित्सा (पुखराज):</strong> एक प्राकृतिक <strong>पीला पुखराज (Yellow Sapphire)</strong> धारण करें।</li>
+<li><strong>नियम:</strong> इसका वजन आपके शरीर के वजन का कम से कम <strong>1/12वां हिस्सा</strong> (जैसे 60kg वजन पर 5 कैरेट) होना चाहिए।</li>
+<li><strong>विधि:</strong> इसे शुक्ल पक्ष के किसी गुरुवार को सूर्योदय के प्रथम एक घंटे के भीतर सोने या पंचधातु में पहनें।</li>
+<li><strong>सावधानी:</strong> वृषभ, मिथुन, कन्या, तुला, मकर और कुंभ लग्न वाले बिना परामर्श न पहनें।</li>
+</ul>
+<p>&#8212;</p>
+<p><strong>9. आयुर्वेद और स्वास्थ्य: कफ दोष का प्रबंधन</strong></p>
+<p>कर्क (जल) और गुरु (कफ) का योग शरीर में जकड़न और वजन बढ़ा सकता है। 'मेधा रसायनों' का उपयोग बुद्धिमत्ता और स्वास्थ्य के लिए करें:</p>
+<table>
+<thead><tr><th>जड़ी-बूटी</th><th>ऊर्जा (Virya) / विपाक (Vipaka)</th><th>दोष प्रभाव</th><th>लाभ और प्रयोग</th></tr></thead>
+<tbody>
+<tr><td><strong>शंखपुष्पी</strong></td><td>शीत वीर्य / मधुर विपाक</td><td>पित्त और कफ नाशक</td><td>स्मृति और तनाव मुक्ति; 1/4 चम्मच शहद के साथ।</td></tr>
+<tr><td><strong>ब्राह्मी</strong></td><td>शीत वीर्य / कड़वा स्वाद</td><td>वात और पित्त नाशक</td><td>तंत्रिका तंत्र का पोषण; 10-20 मिली ताजा रस।</td></tr>
+<tr><td><strong>ब्राह्मी घृत</strong></td><td>उष्ण वीर्य (lipophilic)</td><td>वात-पित्त संतुलन</td><td>मानसिक स्पष्टता; सुबह 5-10 मिली गुनगुने पानी से।</td></tr>
+</tbody>
+</table>
+<p><em>वैधानिक चेतावनी: यह जानकारी केवल शैक्षिक उद्देश्य के लिए है। स्वास्थ्य सलाह हेतु चिकित्सक से संपर्क करें।</em></p>
+<p>&#8212;</p>
+<p><strong>10. निष्कर्ष: विवेक बनाम आवेग</strong></p>
+<p>गुरु का यह उच्च गोचर केवल भौतिक प्रचुरता के बारे में नहीं है। यह आत्मा को उस सत्य से जोड़ने का समय है जो अक्सर अहंकार के शोर में खो जाता है। कर्क राशि में गुरु की उपस्थिति हमें सिखाती है कि वास्तविक शक्ति 'कठोरता' में नहीं, बल्कि 'करुणा' और 'विवेक' में है।</p>
+<p>अश्लेषा के सर्पिल बंधनों से मुक्त होकर, क्या आप अपने जीवन के <strong>'अगले सर्वश्रेष्ठ कदम' (Next Best Move)</strong> के लिए तैयार हैं? अपनी अंतरात्मा की आवाज सुनें, क्योंकि गुरु आपके हृदय के महल में प्रवेश कर चुके हैं।</p>
+
+<div class="references">
+<h2>Sources</h2>
+<ol>
+<li><a href="https://panchangbodh.com/planets/jupiter-retrograde">Jupiter Retrograde 2026 New Delhi - Dates &amp; Timings - PanchangBodh</a></li>
+<li><a href="https://www.starstell.com/blog/jupiter-transit-in-cancer-june-2026-effect-and-significance/">Jupiter Transit in Cancer June 2026: Effect and Significance - StarsTell</a></li>
+<li><a href="https://jagannathhora.com/jupiter-transit-2026-predictions-all-12-rashis/">Jupiter Transit 2026 – Effects &amp; Predictions for All 12 Rashis (Vedic Astrology)</a></li>
+<li><a href="https://jagannathhora.com/jupiter-transit-2026-exalted-luck-score-jhora/">Jupiter Transit 2026 into Cancer: Exact Dates &amp; Vedic Astrology - Jagannath Hora</a></li>
+<li><a href="https://moondanceastrology.substack.com/p/jupiter-in-cancer-2026-palace-of-the-heart">The Palace of the Heart: Jupiter in Cancer 2026–2027</a></li>
+<li><a href="https://astrozindagi.in/transit/jupiter-transit/jupiter-transit-cancer-2026/">Jupiter Transit in Cancer 2026: 4 Zodiac Signs Facing Major Fortune</a></li>
+<li><a href="https://astrologyayurveda.com/blog/jupiter-transit-in-cancer-june-2026/">Jupiter in Cancer 2026: Your Next Best Move | A&amp;A - Vedic Astrology and Ayurveda</a></li>
+<li><a href="https://timesofindia.indiatimes.com/astrology/planets-transits/jupiter-combust-2026-essential-dos-and-donts-to-protect-your-luck-and-wealth/articleshow/132309995.cms">Jupiter Combust 2026: Essential Dos and Don&#x27;ts to Protect Your Luck and Wealth</a></li>
+<li><a href="https://astropatri.com/transits/jupiter-transit-in-the-cancer-2nd-june-2026">Jupiter Transit in Cancer 2026: Effects on All Zodiac Signs, Benefits &amp; Remedies - Astropatri</a></li>
+<li><a href="https://www.astroved.com/astropedia/en/retrograde/jupiter-retrograde">Jupiter Turns Retrograde from July 13, 2026 to April 13, 2027 - AstroVed</a></li>
+<li><a href="https://www.pavitrajyotish.com/article/jupiter-transit-cancer-2-june-2026/">Jupiter Transit Cancer 2 June 2026 - PavitraJyotish</a></li>
+<li><a href="https://www.omspiritualshop.com/blogs/news/guru-peyarchi-2026-jupiter-transit-cancer">Guru Peyarchi 2026 Date, Time &amp; Palangal | Jupiter Transit in Cancer — Vakya &amp; Thirukanitha Panchangam - Om Spiritual Shop</a></li>
+<li><a href="https://lifehoroscopespiritual.com/blogs/news/jupiter-transit-2026-2027-predictions-for-all-zodiac-signs">Jupiter Transit 2026–2027 Predictions for All Zodiac Signs - Life Horoscope Spiritual</a></li>
+<li><a href="https://astrologicalmagazine.com/key-events/jupiter-transit-cancer-2026.html">Jupiter Transit in Cancer 2026: Moon Sign Guide | The Astrological eMagazine</a></li>
+<li><a href="https://myratna.com/blogs/content/guru-jupiter-transit-2026-date-time">Jupiter Transit 2026 | Guru Transit Date, Time, Effects and Remedies - MyRatna</a></li>
+<li><a href="https://www.indastro.com/astrology-articles/vedic-astrology/jupiter-in-cancer.html">Jupiter in Cancer (June 2, 2026 – October 31, 2026): When Grace Finds You Without Effort</a></li>
+<li><a href="https://pramogh.com/blogs/content/jupiter-transit-2026-effects-guru-gochar-remedies">Jupiter Transit 2026: Guru Gochar Effect on All 12 Zodiacs &amp; Remedies - Pramogh</a></li>
+<li><a href="https://www.reddit.com/r/AstrologyCharts/comments/1rvynix/jupiter_transit_happening_on_2_june_2026_12/">Jupiter Transit Happening on 2 June 2026: 12 Zodiac Signs Prediction : r/AstrologyCharts</a></li>
+<li><a href="https://www.astroved.com/transit/jupiter-transit-cancer">Jupiter Transit 2026-2027 Predictions for Cancer Moon Sign - AstroVed</a></li>
+<li><a href="https://www.astroved.com/transit/jupiter-transit-aries">Jupiter Transit 2026 to 2027 Predictions for Aries Moon Sign - AstroVed</a></li>
+<li><a href="https://www.hindustantimes.com/astrology/jupiter-in-leo-2026-the-reality-behind-the-13-months-of-expansion-everyone-is-talking-about-101783495402847.html">Jupiter in Leo 2026: The reality behind the 13 months of expansion everyone is talking about | Astrology - Hindustan Times</a></li>
+<li><a href="https://www.astroved.com/articles/jupiter-adhisara-peyarchi-in-leo-20262027-growth-leadership-reflection">Jupiter Adhisara Peyarchi in Leo 2026–2027: Growth, Leadership &amp; Reflection - AstroVed</a></li>
+<li><a href="https://myastrodiary.com/intuitive-astrology-diary/jupiter-in-leo-2026">Jupiter Enters Leo 2026: What It Means for Each Zodiac Sign - my astro diaries</a></li>
+<li><a href="https://astromedha.in/insights/vedic/capricorn-horoscope-december-2026">Capricorn Horoscope December 2026 | Makara Rashi | AstroMedha</a></li>
+<li><a href="https://astromedha.in/insights/vedic/aries-horoscope-december-2026">Aries Horoscope December 2026 | Mesha Rashi Forecast - AstroMedha</a></li>
+<li><a href="https://saketbhatia.com/jupiter-retrograde-combust-effects-vedic-astrology/">Jupiter Retrograde &amp; Combust Effects in Vedic Astrology: Wealth, Career &amp; Decision Insights</a></li>
+<li><a href="https://astrologicalmusings.com/hindu-new-year-2026-19-march-2026-to-8-march-2027-what-it-foretells-for-india/">Hindu New Year chart 2026 for India - Astrological Musings</a></li>
+<li><a href="https://thevediccrystals.com/products/guru-yantra-guru-yantram">Guru Yantram | Jupiter Yantra + Shree Yantra - Vedic Crystals</a></li>
+<li><a href="https://buy.astrosage.com/yantra/guru-yantra?language=en">Guru Yantra</a></li>
+<li><a href="https://astroamrut.com/product/shri-guru-yantra/">Shri Guru Yantra - Astro Amrut</a></li>
+<li><a href="https://vastuyantra.in/top-10-benefits-of-guru-yantra-locket-wearing-method-abhishek-procedure/">Top 10 Benefits of Guru Yantra Locket – Wearing Method &amp; Abhishek Procedure</a></li>
+<li><a href="https://www.mewargemart.com/blogs/news/yellow-sapphire-wearing-guide">A Complete Guide to Wearing Yellow Sapphire - Mewar Gem Art</a></li>
+<li><a href="https://pramogh.com/blogs/content/how-to-wear-pukhraj-stone">How to Wear Pukhraj stone According to Vedic Astrology - Pramogh</a></li>
+<li><a href="https://www.gempundit.com/blog/how-to-wear-pukhraj-yellow-sapphire">Procedure to Wear Yellow Sapphire Gemstone</a></li>
+<li><a href="https://gemstones.astrotalk.store/blogs/gemstones/which-finger-to-wear-pukhraj-stone">Which Finger to Wear Pukhraj Stone? - Astrotalk Gemstones</a></li>
+<li><a href="https://myratna.com/blogs/content/which-finger-to-wear-yellow-sapphire-pukhraj">Which Finger to Wear Yellow Sapphire (Pukhraj)? - MyRatna</a></li>
+<li><a href="https://www.shubhgems.com/blog/post/gemstone-procedure-wear-planetary-stone">Correct Procedure to Wear Astrological Gemstones - Shubh Blogs</a></li>
+<li><a href="https://divinestore.sanatanajourney.com/products/thursday-brihaspativar-vrat-katha-vidhi-e-book">Brihaspativar Vrat Katha eBook - Sanatana Journey</a></li>
+<li><a href="https://www.rudraksha-ratna.com/buy/brihaspati-var-vrat-katha-for-jupiter">Brihaspati Var Vrat Katha - for Jupiter - Rudraksha Ratna</a></li>
+<li><a href="https://www.astromantra.com/products/books/puja-sadhana-books/brihaspativar-vrat-katha-book-randhir-prakashan/">Brihaspativar Vrat Katha Book (बृहस्पतिवार व्रत कथा पुस्तक) | Buy - Astro Mantra</a></li>
+<li><a href="https://www.aajtak.in/religion/worship/story/guruvar-vrat-katha-importance-of-brihaspativar-vrat-katha-tlifd-1324032-2021-09-09">Guruvar Vrat Katha: गुरुवार व्रत की पूरी कथा जिसे सुनने से मिलेगी देव बृहस्पति की कृपा - AajTak</a></li>
+<li><a href="https://www.pillaicenter.com/planetary-pooja-jupiter-pooja-P92.aspx">Jupiter Pooja - Pillai Center</a></li>
+<li><a href="https://pujariji.com/en/vishnu-sahasranam-path-uebppefs">Vishnu Sahasranam Path | Benefits &amp; Booking - Pujari Ji</a></li>
+<li><a href="https://www.visvasvsn.org/vsnpower.aspx">vsn power - VISVAS CHARITABLE TRUST</a></li>
+<li><a href="https://timesofindia.indiatimes.com/religion/mantras-chants/vishnu-sahasranama-meaning-importance-and-life-changing-benefits/articleshow/131223907.cms">Vishnu Sahasranama: Meaning, importance, and life-changing benefits - The Times of India</a></li>
+<li><a href="https://www.scribd.com/document/367892367/English-Vishnu-Sahasranama">Vishnu Sahasranama for Planetary Remedies | PDF | Hindu Literature - Scribd</a></li>
+<li><a href="https://vedikheritageblog.wordpress.com/prayers-for-days-of-the-week/thursday-worship/">Thursday Worship - Vedikheritage - WordPress.com</a></li>
+<li><a href="https://www.dattavani.org/pravachana-malika/datta-vaakya/sri-guru-gita-etv/">Sri Guru Gita ETV - Dattavani</a></li>
+<li><a href="https://www.nisargaherbs.com/blogs/all/is-shankhpushpi-good-for-brain-health">What Is Shankhpushpi? Benefits for Brain, Memory &amp; Stress Relief - Nisarga Herbs</a></li>
+<li><a href="https://ayurvedastore.co.nz/blogs/the-ayurveda-blog/shankhpushpi">Shankhpushpi: Your Brain&#x27;s Best Friend | Benefits | How to use - Ayurveda Store</a></li>
+<li><a href="https://www.researchgate.net/publication/353380748_An_updated_review_of_Shankhpushpi_as_Medhya_Rasayan">An updated review on Shankhpushpi- As Medhya Rasayana - ResearchGate</a></li>
+<li><a href="https://www.gomataseva.org/what-is-brahmi-ghrita-and-how-does-it-help-with-memory-and-stress-gomataseva/">What is Brahmi Ghrita and how does it help with memory and stress? | Gomataseva</a></li>
+<li><a href="https://www.easyayurveda.com/brahmi-benefits-dose-side-effects-research/">Brahmi (Bacopa Monnieri) Benefits, Dose, Side Effects, Research - Easy Ayurveda Hospital</a></li>
+<li><a href="https://www.ayuayurveda.com/ayurvedic-blog/cinnamon">5 Powerful herbs for Memory - Ayu Ayurveda</a></li>
+<li><a href="https://www.ayurveda-herbs.com/blogs/ayurveda-blog/how-to-discover-your-dosha-through-astrology">Find Your Dosha Through Astrology | Ayurveda Guide - Ayurvedic Rasayanas</a></li>
+<li><a href="https://www.easyayurveda.com/shankhapushpi-convolvulus-pluricaulis-benefits-dose-side-effects/">Shankhapushpi Convolvulus pluricaulis Benefits, Dose, Side Effects</a></li>
+<li><a href="https://www.netmeds.com/c/health-library/post/shankhpushpi-benefits-uses-dosage-formulations-and-side-effects">Shankhpushpi: Benefits, Uses, Dosage, Formulations, and Side Effects - Netmeds</a></li>
+<li><a href="https://healthreactive.com/article/blog/Shankhpushpi-Plant-%E2%80%93-How-To-Use-Flower%20-Leaves%20-Ro">Shankhpushpi Plant – How To Use Flower, Leaves, Roots &amp; Seed For Health</a></li>
+<li><a href="https://www.researchgate.net/publication/287305345_ShankhapushpiConvolvulus_pluricaulisChoisy_Validation_of_the_Ayurvedic_therapeutic_claims_through_contemporary_studies">Shankhapushpi(Convolvulus pluricaulisChoisy): Validation of the Ayurvedic therapeutic claims through contemporary studies - ResearchGate</a></li>
+<li><a href="https://astroambe.com/blog/best-wedding-dates-2026-astrology">Best Wedding Dates 2026 According to Vedic Astrology — Vivah Muhurat by Month - Astro Ambe</a></li>
+<li><a href="https://iivs.com/best-wedding-dates-2026-astrology/">Find Auspicious Dates | Best Wedding Dates 2026 Astrology</a></li>
+<li><a href="https://nakshatrica.com/transits">Planetary Transits Today (Grah Gochar) | Live Vedic Tracker - Nakshatrica</a></li>
+<li><a href="https://jagannathhora.com/vedic-planetary-transit-calendar/">Vedic Planetary Transit Calendar (2025–2035): Complete Graha Gochar Dates</a></li>
+<li><a href="https://pujahome.com/blogs/articles/yantras">Yantras: Benefits, Properties, Types, and Their Meaning - Pujahome</a></li>
+<li><a href="https://www.reddit.com/r/Nakshatras/comments/1srgu88/can_you_please_confirm_if_jupiter_will_in_cancer/">Can you please confirm if Jupiter will in cancer till Oct 31 2026 or June 26, 2027? - Reddit</a></li>
+<li><a href="https://www.scribd.com/document/993462043/Unified-Calendar-2026-FINAL">Unified Calendar 2026 FINAL | PDF | Hindu Astrology | Ancient Astronomy - Scribd</a></li>
+<li><a href="https://timesofindia.indiatimes.com/astrology/vastu-feng-shui/jupiter-falling-asleep-powerful-vastu-remedies-to-sanitise-your-home/articleshow/132372901.cms">Jupiter Falling Asleep: Powerful Vastu Remedies To Sanitise Your Home</a></li>
+<li><a href="https://starwalk.space/en/news/what-is-retrograde-motion">What Is Retrograde Motion? Which Planets Are Retrograde Right Now (July 2026) - Star Walk</a></li>
+<li><a href="https://www.scribd.com/document/259872937/070-astangata-asta-1">Understanding Astangata in Astrology | PDF | Planets | Ptolemy - Scribd</a></li>
+<li><a href="https://vastuyantra.in/durga-bisa-silver-yantra-locket-benefits-wearing-rules-abhishek-procedure/">Durga Bisa Silver Yantra Locket – Benefits, Wearing Rules &amp; Abhishek Procedure</a></li>
+<li><a href="https://discoveringyouniverse.com/posts/jupiters-exalted-transit-2026-27-through-nakshatras/">Jupiter&#x27;s Exalted Transit 2026-27 - Through Nakshatras - Discovering Youniverse</a></li>
+<li><a href="https://astrochart.ai/jupiter-retrograde-calendar-2027">Jupiter Retrograde 2027 - Dates &amp; Effects - AstroChart.ai</a></li>
+<li><a href="https://m.youtube.com/watch?v=8yjxJEXPHpo">Guru Asta Mein Kya Nahi Karna Chahiye? | Kaunse Shubh Kaam Avoid Karein? - YouTube</a></li>
+<li><a href="https://www.zodiscope.io/journal/jupiter-in-leo-2026">Jupiter in Leo 2026: 13 Months That Start June 30 - Zodiscope</a></li>
+<li><a href="https://www.reddit.com/r/Nakshatras/comments/1txeqav/jupiter_in_cancer_3_underrated_facts_you_probably/">Jupiter in Cancer: 3 Underrated Facts You Probably Missed : r/Nakshatras - Reddit</a></li>
+<li><a href="https://www.youtube.com/watch?v=ekD6IOFv9P0">JUPITER TRANSIT IN CANCER (EXALTED) - 02.06.2026 to 26.06.2027 - ALL 12 ASCENDANTS #JupiterInCancer - YouTube</a></li>
+<li><a href="https://parade.com/astrology/zodiac-signs/">Zodiac Signs - Astrology - Parade</a></li>
+<li><a href="https://www.astroved.com/blogs/amazing-benefits-chanting-vishnu-sahasranama">Amazing Benefits Of Chanting Of The Vishnu Sahasranama | AstroVed.com</a></li>
+<li><a href="https://www.youtube.com/watch?v=Tx0hdPglRXE">June 2026 Transit Astrology - YouTube</a></li>
+<li><a href="https://www.reddit.com/r/vedicastrology/comments/1v1d7w4/42m_ready_for_my_next_career_challenge/">42m ready for my next career challenge : r/vedicastrology - Reddit</a></li>
+<li><a href="https://incarnation14.wordpress.com/guru-geeta-datta-vaakya/">Guru Geeta – Datta Vaakya - Prasad Bharadwaj Incarnation 14 Blog</a></li>
+<li><a href="https://shlokapreneurdivyaa.com/the-avatar-of-lord-vishnu/">THE AVATARS OF LORD VISHNU - Gurukulam – The Shloka Learning Center</a></li>
+<li><a href="https://wiralfeed.wordpress.com/2015/12/03/brihaspativar-vrat-katha/">Brihaspativar Vrat Katha : बृहस्पतिवार व्रत कथा - Wiral Feed</a></li>
+<li><a href="https://music.youtube.com/search?q=%23vratstoryinhindi">YouTube Music</a></li>
+</ol>
+</div>
+        </article>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jupiter Retrograde Remedies</title>
+    <style>
+        :root {
+            --bg-color: #FDF9F1;
+            --text-color: #3E2723;
+            --indian-yellow: #E4A025;
+            --indian-orange: #E65100;
+            --accent-light: #FFECB3;
+            --ref-bg: #FFF3E0;
+        }
+
+        body {
+            font-family: 'Georgia', 'Nirmala UI', 'Mangal', serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(var(--bg-color) 80%, var(--accent-light) 100%);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #FFFFFF;
+            padding: 50px 60px;
+            box-shadow: 0 10px 30px rgba(62, 39, 35, 0.1);
+            border-top: 8px solid var(--indian-orange);
+            border-bottom: 8px solid var(--indian-yellow);
+            border-radius: 4px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed var(--indian-yellow);
+        }
+
+        h1 {
+            color: var(--indian-orange);
+            font-size: 2.5em;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        h2 {
+            color: var(--indian-yellow);
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--indian-orange);
+            padding-left: 15px;
+        }
+
+        h3, h4 {
+            color: var(--indian-orange);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        .intro-text::first-letter {
+            float: left;
+            font-size: 3.5em;
+            line-height: 0.8;
+            padding-right: 8px;
+            padding-top: 4px;
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        ul, ol {
+            margin: 0 0 24px 0;
+            padding-left: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ol {
+            list-style-position: outside;
+            padding-left: 2.2em;
+        }
+
+        ul li, ol li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        ol li {
+            padding-left: 0.35em;
+        }
+
+        ul li::before {
+            content: '\2022';
+            position: absolute;
+            left: 0;
+            top: 0.05em;
+            color: var(--indian-orange);
+            font-size: 1.2em;
+            line-height: 1;
+        }
+
+        ol li::marker {
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        strong {
+            color: var(--indian-orange);
+        }
+
+        .image-placeholder-container {
+            margin: 30px 0;
+            text-align: center;
+            font-style: italic;
+            color: #795548;
+            background-color: var(--accent-light);
+            padding: 20px;
+            border-radius: 4px;
+            border: 1px solid var(--indian-yellow);
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.98em;
+            background-color: #FFFDF8;
+        }
+
+        th, td {
+            border: 1px solid #F0D49B;
+            padding: 10px 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--ref-bg);
+            color: var(--indian-orange);
+        }
+
+        blockquote {
+            margin: 30px 0;
+            padding: 20px 25px;
+            background-color: var(--accent-light);
+            border-left: 5px solid var(--indian-orange);
+            font-style: italic;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px dashed var(--indian-yellow);
+            margin: 32px 0;
+        }
+
+        .references {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: var(--ref-bg);
+            border-radius: 8px;
+            font-size: 0.9em;
+        }
+
+        .references h2, .references h3 {
+            color: var(--text-color);
+            margin-top: 0;
+            border-bottom: 1px solid var(--indian-yellow);
+            padding-bottom: 10px;
+            border-left: 0;
+            padding-left: 0;
+        }
+
+        .references p, .references li {
+            margin-bottom: 12px;
+            word-wrap: break-word;
+        }
+
+        .references a {
+            color: var(--indian-orange);
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Jupiter Retrograde Remedies</h1>
+        </header>
+
+        <article>
+<h3>1. Introduction: A Once-in-a-Twelve-Year Cosmic Event</h3>
+<p class="intro-text">On June 2, 2026, Jupiter (Brihaspati), the "King of Planets" and the Great Benefic, returns to his "throne" in the sign of Cancer. In the sacred science of Jyotish, this marks a state of <strong>Exaltation</strong>, the highest point of a planet's strength where its capacity to bestow wisdom, prosperity, and divine grace is at its absolute peak.</p>
+<div class="image-placeholder-container">
+    <img src="blog65_Image.png" alt="Upcoming Jupiter (Guru) retrograde period with exact IST start and end dates: the 121 day Wisdom Window begins on December 13 2026 when Jupiter stations retrograde at 05 degrees Leo and resumes direct motion on April 12 2027 at 10:22 PM IST at around 16 degrees 59 minutes Cancer (Karka). Jupiter re-enters exalted Cancer on January 25 2027 at 12:52 AM IST while retrograde. Wider exaltation context: Jupiter entered exalted Cancer on June 2 2026 at 02:25 AM IST and stays until June 12 2027 with final Leo ingress on June 26 2027. Jupiter combustion (Asta) July 14 to August 12 2026 with functional restoration on August 13 2026. Three Ketu karmic confrontations on November 11 2026 at 1 degree Leo, February 22 2027 at 26 degrees Cancer, and April 23 2027 at 22 degrees Cancer. Nakshatra chapters: Punarvasu June 2 to June 18 2026, Pushya June 18 to August 19 2026 (deepest exaltation at 5 degrees Cancer), Ashlesha August 18 to October 31 2026 and January 25 to June 26 2027. Remedial astrology: Guru Graha Shanti Beej Mantra Om Gram Greem Grom Sah Gurave Namah 108 times Thursday mornings, Vishnu Sahasranama, Thursday Brihaspativar Vrat with yellow garments turmeric chana dal gur jaggery and yellow flowers (avoid banana), Yellow Sapphire Pukhraj 1/12th body weight in carats on index finger with Prana Pratishtha in raw milk honey and Gangajal, contraindicated for Taurus Gemini Libra Capricorn Aquarius and caution for Virgo, Guru Yantra. Deity energies: Lord Vishnu, Dattatreya, Hayagriva and Guru Brihaspati. Twelve rashi house activations for marriage children higher education finance wisdom and favorable versus unfavorable signs. Ayurveda: Kapha pacification and Medha Rasayana with Brahmi Shankhapushpi and Brahmi Ghrita medicated ghee for memory and learning. Vedic counselling for dharma alignment and guru discipline with devotion spirituality and holistic wellbeing. Year end 2026 year start 2027 planetary transit energies and remedial upaay.">
+</div>
+<p>This is not merely a cycle of "good luck" or random windfalls. This transit is about "right alignment"—a celestial invitation to move from impulsive desire to intelligent cultivation. As Jupiter traverses the watery, nurturing sign of Cancer, the cosmic focus shifts toward emotional wisdom and the restoration of consciousness. This is a time to build stable foundations rooted in integrity rather than speed.</p>
+<h3>2. The Master Timeline: Key Dates for Your Calendar</h3>
+<p>The following chronological architecture outlines the essential phases of this transit. Please note that while physical sign boundaries are crossed on certain dates, the "functional" delivery of energy is often restored or culminated on specific points noted below.</p>
+<table>
+<thead><tr><th>Date (IST)</th><th>Astronomical Event</th><th>Operational Quality (How it Feels / What it Means)</th></tr></thead>
+<tbody>
+<tr><td><strong>June 2, 2026 (02:25 AM)</strong></td><td><strong>Exaltation Ingress</strong></td><td>Jupiter enters 00°00' Cancer. The Golden Period begins amidst the Adhik Maas reflection phase.</td></tr>
+<tr><td><strong>July 14 – Aug 12, 2026</strong></td><td><strong>Jupiter Combustion (Asta)</strong></td><td>Jupiter is eclipsed by the Sun. The ego may overpower wisdom; pause major initiations (weddings, launches).</td></tr>
+<tr><td><strong>August 13, 2026</strong></td><td><strong>Functional Restoration</strong></td><td>Jupiter emerges from the Sun's orb. Functional delivery of blessings and outer strength is fully restored.</td></tr>
+<tr><td><strong>Oct 31, 2026 (12:50 PM)</strong></td><td><strong>First Leo Ingress</strong></td><td>Temporary exit from exaltation; shift toward leadership and outward visibility.</td></tr>
+<tr><td><strong>Dec 13, 2026</strong></td><td><strong>Retrograde Station (Start)</strong></td><td>Beginning of the 121-day "Wisdom Window" at 05°00' Leo. Energy turns inward.</td></tr>
+<tr><td><strong>Jan 25, 2027 (12:52 AM)</strong></td><td><strong>Cancer Re-entry (Retrograde)</strong></td><td>Exalted retrograde status resumes at 30°00' Cancer. Intense re-evaluation of emotional roots.</td></tr>
+<tr><td><strong>April 12, 2027 (10:22 PM)</strong></td><td><strong>Direct Station (End)</strong></td><td>Jupiter stops backward motion at ~16°59' Cancer. Internal insights begin to manifest as outward clarity.</td></tr>
+<tr><td><strong>June 12, 2027</strong></td><td><strong>Operational Culmination</strong></td><td>The spiritual-operational cycle completes; the energetic "work" of the transit reaches its peak.</td></tr>
+<tr><td><strong>June 26, 2027</strong></td><td><strong>Final Leo Ingress</strong></td><td>Physical exit from Cancer. The Exaltation cycle concludes.</td></tr>
+</tbody>
+</table>
+<h3>3. The Three Chapters of Growth: Nakshatra Ingress</h3>
+<p>Jupiter’s energy is filtered through three distinct stellar sectors, each offering a unique psychological and wellness curriculum.</p>
+<ol>
+<li><strong>Chapter 1: Punarvasu (The Welcome)</strong></li>
+</ol>
+<p><em>June 2 – June 18, 2026</em> Described as "The Doorway of Restoration," this phase represents healing after crisis. Within this sector, Jupiter enters a <strong>Pushkara Navamsha</strong> and becomes <em>Vargottama</em>, granting exceptional purity and healing potential. Wellness Focus: Intellectual concepts begin to drop from the head into the heart, stabilizing the nervous system.</p>
+<ol>
+<li><strong>Chapter 2: Pushya (The Flowering)</strong></li>
+</ol>
+<p><em>June 18 – August 19, 2026</em> The "Peak of Nourishment" occurs here, with Jupiter reaching deepest exaltation at 5° Cancer. Presided over by Brihaspati and ruled by Saturn, this phase favors structured growth over sudden windfalls. It is a stabilizing anchor for the mind, encouraging consistent, disciplined progress in health and finance.</p>
+<ol>
+<li><strong>Chapter 3: Ashlesha (The Legacy &amp; Shadow Work)</strong></li>
+</ol>
+<p><em>August 18, 2026 – Oct 31, 2026 | Jan 25, 2027 – June 26, 2027</em> Driven by "Serpent Intelligence" and the Naga deities, this phase explores the duality of "poison vs. medicine." It requires lineage auditing—naming family patterns and addressing inherited emotional grief. Wellness Focus: Psychological "poison" (unresolved trauma) can manifest as metabolic sluggishness or Kapha stagnation if not addressed through honest introspection.</p>
+<h3>4. The "Luck Score": Personalizing the Transit with Ashtakavarga</h3>
+<p>An exalted planet does not benefit everyone equally. The "Ashtakavarga Secret" uses your personal birth chart to determine your receptivity to Jupiter’s energy on a scale of 0 to 8 points.</p>
+<ul>
+<li><strong>5–8 Points: "The Jackpot"</strong> – Tangible gains, wealth expansion, and spiritual ease.</li>
+<li><strong>4 Points: "Steady Progress"</strong> – A year for consolidation, average results, and incremental wisdom.</li>
+<li><strong>0–3 Points: "The Spiritual Work"</strong> – The transit may feel weak; results require extra effort and intense internal focus.</li>
+</ul>
+<p><strong>Quick Self-Check:</strong> The presence of certain planets in your natal Cancer sign acts as a <strong>multiplier</strong> for these results. If your natal <strong>Moon</strong> (sign lord) or <strong>Venus</strong> (naturally strong in Cancer) is placed here, your receptivity to this transit's "Golden" effects is significantly higher.</p>
+<h3>5. Sign-by-Sign Forecast: What it Means for You</h3>
+<p>Impacts are calculated primarily from the Moon sign (Chandra Rashi) and secondarily from the Ascendant (Lagna).</p>
+<table>
+<thead><tr><th>Sign</th><th>Activated House</th><th>Top Opportunity</th><th>Critical Caution</th></tr></thead>
+<tbody>
+<tr><td><strong>Aries</strong></td><td>4th House</td><td>Real estate gains and domestic peace.</td><td><strong>Insomnia</strong> and rising domestic expenses.</td></tr>
+<tr><td><strong>Taurus</strong></td><td>3rd House</td><td>Courage and sibling support.</td><td><strong>Joint stiffness</strong> and physical laziness.</td></tr>
+<tr><td><strong>Gemini</strong></td><td>2nd House</td><td>Financial growth and family savings.</td><td>Throat infections and conflicts with authority.</td></tr>
+<tr><td><strong>Cancer</strong></td><td>1st House</td><td>Personal growth and confidence.</td><td>Over-sensitivity; partner detachment.</td></tr>
+<tr><td><strong>Leo</strong></td><td>12th House</td><td>Spiritual retreat and foreign studies.</td><td>Career instability and <strong>weight gain</strong>.</td></tr>
+<tr><td><strong>Virgo</strong></td><td>11th House</td><td>Wealth gains and network expansion.</td><td>Partnership tests and <strong>digestive sensitivity</strong>.</td></tr>
+<tr><td><strong>Libra</strong></td><td>10th House</td><td>Career promotions and public reputation.</td><td><strong>Respiratory sensitivity</strong>; overconfidence.</td></tr>
+<tr><td><strong>Scorpio</strong></td><td>9th House</td><td>Higher education and spiritual luck.</td><td>Risky speculative investments.</td></tr>
+<tr><td><strong>Sagittarius</strong></td><td>8th House</td><td>Inheritance and occult research.</td><td>Sudden travel fatigue and unplanned costs.</td></tr>
+<tr><td><strong>Capricorn</strong></td><td>7th House</td><td>Marriage and business partnerships.</td><td><strong>Bone density issues</strong>; emotional detachment.</td></tr>
+<tr><td><strong>Aquarius</strong></td><td>6th House</td><td>Victory in disputes and exams.</td><td><strong>Eye strain</strong> and Sade Sati financial pressure.</td></tr>
+<tr><td><strong>Pisces</strong></td><td>5th House</td><td>Creative breakthroughs and joy via children.</td><td><strong>Heavy physical exhaustion</strong>; structural stress.</td></tr>
+</tbody>
+</table>
+<h3>6. Navigating the "Wisdom Window": Retrograde and Ketu Conjunctions</h3>
+<p>The retrograde period (December 13, 2026 – April 12, 2027) is a "Wisdom Window" for internal auditing. It is a time to recalibrate faith rather than launch material projects. This phase is punctuated by three <strong>"Karmic Confrontations"</strong> as Jupiter meets Ketu:</p>
+<ul>
+<li><strong>November 11, 2026 (1° Leo):</strong> The initial spiritual wake-up call and call to detachment.</li>
+<li><strong>February 22, 2027 (26° Cancer):</strong> A deep descent into ancestral shadow work and psychological roots.</li>
+<li><strong>April 23, 2027 (22° Cancer):</strong> Integration of insights as Jupiter prepares to move forward.</li>
+</ul>
+<h3>7. Remedial Science: Strengthening the Guru Connection</h3>
+<p>To harmonize with Jupiter’s frequency, especially during retrograde and combustion phases:</p>
+<ul>
+<li><strong>Mantra Sadhana:</strong> Chant the <strong>Guru Graha Shanti Beej Mantra</strong> 108 times on Thursday mornings: <em>Om Gram Greem Grom Sah Gurave Namah</em>.</li>
+<li><strong>Thursday Fasting (Guruwar Vrat):</strong> Wear yellow garments and offer turmeric, chana dal, and jaggery. <strong>Constraint:</strong> Avoid eating bananas, as the tree represents Jupiter.</li>
+<li><strong>Yellow Sapphire (Pukhraj) Therapy:</strong></li>
+<li><strong>Weight:</strong> Ideally <strong>1/12th of your body weight</strong> in carats (e.g., 6 carats for a 72kg person).</li>
+<li><strong>Prana Pratishtha:</strong> Purify in raw milk/honey/Gangajal on a Thursday morning (waxing moon) before wearing on the index finger.</li>
+<li><strong>Contraindications:</strong> Natives of Taurus, Gemini, Libra, Capricorn, and Aquarius should avoid the stone. <strong>Virgo</strong> natives should exercise extreme caution; while Jupiter brings "Gains" (11th House), it remains a functional malefic for this sign, making the stone potentially problematic without professional guidance.</li>
+</ul>
+<h3>8. The Ayurvedic Anchor: Balancing Kapha and Boosting the Brain</h3>
+<p>Exalted Jupiter in Cancer (a water sign) triggers a <strong>"Kapha Provocation,"</strong> manifesting as metabolic sluggishness, fluid retention, or congestion. To maintain "Medha" (intelligence) during the retrograde loop, utilize these Nootropics:</p>
+<ul>
+<li><strong>Shankhapushpi:</strong> Supports "Grahanashakti" (grasping power). Take 1/2 tsp with warm milk.</li>
+<li><strong>Brahmi:</strong> A premier nervine tonic for cognitive performance.</li>
+<li><strong>Brahmi Ghrita (Medicated Ghee):</strong> Crucial as a lipophilic carrier to help herbal compounds cross the <strong>blood-brain barrier</strong>, nourishing the cerebral tissues directly. Take 5-10ml with warm water in the morning.</li>
+</ul>
+<h3>9. Conclusion: Your Next Best Move</h3>
+<p>The Golden Exaltation of 2026 offers a rare wave of grace, provided your timing is strategic:</p>
+<ul>
+<li><strong>PLAN:</strong> During <strong>Adhik Maas (June 2–15, 2026)</strong>, focus on internal strategy and meditation. Avoid material initiations.</li>
+<li><strong>ACT:</strong> Utilize the <strong>pre-combust Pushya window (June 16 – July 13, 2026)</strong> or the <strong>post-restoration window (starting August 13, 2026)</strong> for major launches.</li>
+<li><strong>REFLECT:</strong> Use the <strong>Ashlesha retrograde loop (Dec 2026 – April 2027)</strong> to audit your heart's attachments.</li>
+</ul>
+<p>Focus on <strong>Alignment over Speed</strong> and <strong>Wisdom over Impulse</strong>. The universe is not asking for bigger moves; it is asking for better ones.</p>
+
+<div class="references">
+<h2>Sources</h2>
+<ol>
+<li><a href="https://panchangbodh.com/planets/jupiter-retrograde">Jupiter Retrograde 2026 New Delhi - Dates &amp; Timings - PanchangBodh</a></li>
+<li><a href="https://www.starstell.com/blog/jupiter-transit-in-cancer-june-2026-effect-and-significance/">Jupiter Transit in Cancer June 2026: Effect and Significance - StarsTell</a></li>
+<li><a href="https://jagannathhora.com/jupiter-transit-2026-predictions-all-12-rashis/">Jupiter Transit 2026 – Effects &amp; Predictions for All 12 Rashis (Vedic Astrology)</a></li>
+<li><a href="https://jagannathhora.com/jupiter-transit-2026-exalted-luck-score-jhora/">Jupiter Transit 2026 into Cancer: Exact Dates &amp; Vedic Astrology - Jagannath Hora</a></li>
+<li><a href="https://moondanceastrology.substack.com/p/jupiter-in-cancer-2026-palace-of-the-heart">The Palace of the Heart: Jupiter in Cancer 2026–2027</a></li>
+<li><a href="https://astrozindagi.in/transit/jupiter-transit/jupiter-transit-cancer-2026/">Jupiter Transit in Cancer 2026: 4 Zodiac Signs Facing Major Fortune</a></li>
+<li><a href="https://astrologyayurveda.com/blog/jupiter-transit-in-cancer-june-2026/">Jupiter in Cancer 2026: Your Next Best Move | A&amp;A - Vedic Astrology and Ayurveda</a></li>
+<li><a href="https://timesofindia.indiatimes.com/astrology/planets-transits/jupiter-combust-2026-essential-dos-and-donts-to-protect-your-luck-and-wealth/articleshow/132309995.cms">Jupiter Combust 2026: Essential Dos and Don&#x27;ts to Protect Your Luck and Wealth</a></li>
+<li><a href="https://astropatri.com/transits/jupiter-transit-in-the-cancer-2nd-june-2026">Jupiter Transit in Cancer 2026: Effects on All Zodiac Signs, Benefits &amp; Remedies - Astropatri</a></li>
+<li><a href="https://www.astroved.com/astropedia/en/retrograde/jupiter-retrograde">Jupiter Turns Retrograde from July 13, 2026 to April 13, 2027 - AstroVed</a></li>
+<li><a href="https://www.pavitrajyotish.com/article/jupiter-transit-cancer-2-june-2026/">Jupiter Transit Cancer 2 June 2026 - PavitraJyotish</a></li>
+<li><a href="https://www.omspiritualshop.com/blogs/news/guru-peyarchi-2026-jupiter-transit-cancer">Guru Peyarchi 2026 Date, Time &amp; Palangal | Jupiter Transit in Cancer — Vakya &amp; Thirukanitha Panchangam - Om Spiritual Shop</a></li>
+<li><a href="https://lifehoroscopespiritual.com/blogs/news/jupiter-transit-2026-2027-predictions-for-all-zodiac-signs">Jupiter Transit 2026–2027 Predictions for All Zodiac Signs - Life Horoscope Spiritual</a></li>
+<li><a href="https://astrologicalmagazine.com/key-events/jupiter-transit-cancer-2026.html">Jupiter Transit in Cancer 2026: Moon Sign Guide | The Astrological eMagazine</a></li>
+<li><a href="https://myratna.com/blogs/content/guru-jupiter-transit-2026-date-time">Jupiter Transit 2026 | Guru Transit Date, Time, Effects and Remedies - MyRatna</a></li>
+<li><a href="https://www.indastro.com/astrology-articles/vedic-astrology/jupiter-in-cancer.html">Jupiter in Cancer (June 2, 2026 – October 31, 2026): When Grace Finds You Without Effort</a></li>
+<li><a href="https://pramogh.com/blogs/content/jupiter-transit-2026-effects-guru-gochar-remedies">Jupiter Transit 2026: Guru Gochar Effect on All 12 Zodiacs &amp; Remedies - Pramogh</a></li>
+<li><a href="https://www.reddit.com/r/AstrologyCharts/comments/1rvynix/jupiter_transit_happening_on_2_june_2026_12/">Jupiter Transit Happening on 2 June 2026: 12 Zodiac Signs Prediction : r/AstrologyCharts</a></li>
+<li><a href="https://www.astroved.com/transit/jupiter-transit-cancer">Jupiter Transit 2026-2027 Predictions for Cancer Moon Sign - AstroVed</a></li>
+<li><a href="https://www.astroved.com/transit/jupiter-transit-aries">Jupiter Transit 2026 to 2027 Predictions for Aries Moon Sign - AstroVed</a></li>
+<li><a href="https://www.hindustantimes.com/astrology/jupiter-in-leo-2026-the-reality-behind-the-13-months-of-expansion-everyone-is-talking-about-101783495402847.html">Jupiter in Leo 2026: The reality behind the 13 months of expansion everyone is talking about | Astrology - Hindustan Times</a></li>
+<li><a href="https://www.astroved.com/articles/jupiter-adhisara-peyarchi-in-leo-20262027-growth-leadership-reflection">Jupiter Adhisara Peyarchi in Leo 2026–2027: Growth, Leadership &amp; Reflection - AstroVed</a></li>
+<li><a href="https://myastrodiary.com/intuitive-astrology-diary/jupiter-in-leo-2026">Jupiter Enters Leo 2026: What It Means for Each Zodiac Sign - my astro diaries</a></li>
+<li><a href="https://astromedha.in/insights/vedic/capricorn-horoscope-december-2026">Capricorn Horoscope December 2026 | Makara Rashi | AstroMedha</a></li>
+<li><a href="https://astromedha.in/insights/vedic/aries-horoscope-december-2026">Aries Horoscope December 2026 | Mesha Rashi Forecast - AstroMedha</a></li>
+<li><a href="https://saketbhatia.com/jupiter-retrograde-combust-effects-vedic-astrology/">Jupiter Retrograde &amp; Combust Effects in Vedic Astrology: Wealth, Career &amp; Decision Insights</a></li>
+<li><a href="https://astrologicalmusings.com/hindu-new-year-2026-19-march-2026-to-8-march-2027-what-it-foretells-for-india/">Hindu New Year chart 2026 for India - Astrological Musings</a></li>
+<li><a href="https://thevediccrystals.com/products/guru-yantra-guru-yantram">Guru Yantram | Jupiter Yantra + Shree Yantra - Vedic Crystals</a></li>
+<li><a href="https://buy.astrosage.com/yantra/guru-yantra?language=en">Guru Yantra</a></li>
+<li><a href="https://astroamrut.com/product/shri-guru-yantra/">Shri Guru Yantra - Astro Amrut</a></li>
+<li><a href="https://vastuyantra.in/top-10-benefits-of-guru-yantra-locket-wearing-method-abhishek-procedure/">Top 10 Benefits of Guru Yantra Locket – Wearing Method &amp; Abhishek Procedure</a></li>
+<li><a href="https://www.mewargemart.com/blogs/news/yellow-sapphire-wearing-guide">A Complete Guide to Wearing Yellow Sapphire - Mewar Gem Art</a></li>
+<li><a href="https://pramogh.com/blogs/content/how-to-wear-pukhraj-stone">How to Wear Pukhraj stone According to Vedic Astrology - Pramogh</a></li>
+<li><a href="https://www.gempundit.com/blog/how-to-wear-pukhraj-yellow-sapphire">Procedure to Wear Yellow Sapphire Gemstone</a></li>
+<li><a href="https://gemstones.astrotalk.store/blogs/gemstones/which-finger-to-wear-pukhraj-stone">Which Finger to Wear Pukhraj Stone? - Astrotalk Gemstones</a></li>
+<li><a href="https://myratna.com/blogs/content/which-finger-to-wear-yellow-sapphire-pukhraj">Which Finger to Wear Yellow Sapphire (Pukhraj)? - MyRatna</a></li>
+<li><a href="https://www.shubhgems.com/blog/post/gemstone-procedure-wear-planetary-stone">Correct Procedure to Wear Astrological Gemstones - Shubh Blogs</a></li>
+<li><a href="https://divinestore.sanatanajourney.com/products/thursday-brihaspativar-vrat-katha-vidhi-e-book">Brihaspativar Vrat Katha eBook - Sanatana Journey</a></li>
+<li><a href="https://www.rudraksha-ratna.com/buy/brihaspati-var-vrat-katha-for-jupiter">Brihaspati Var Vrat Katha - for Jupiter - Rudraksha Ratna</a></li>
+<li><a href="https://www.astromantra.com/products/books/puja-sadhana-books/brihaspativar-vrat-katha-book-randhir-prakashan/">Brihaspativar Vrat Katha Book (बृहस्पतिवार व्रत कथा पुस्तक) | Buy - Astro Mantra</a></li>
+<li><a href="https://www.aajtak.in/religion/worship/story/guruvar-vrat-katha-importance-of-brihaspativar-vrat-katha-tlifd-1324032-2021-09-09">Guruvar Vrat Katha: गुरुवार व्रत की पूरी कथा जिसे सुनने से मिलेगी देव बृहस्पति की कृपा - AajTak</a></li>
+<li><a href="https://www.pillaicenter.com/planetary-pooja-jupiter-pooja-P92.aspx">Jupiter Pooja - Pillai Center</a></li>
+<li><a href="https://pujariji.com/en/vishnu-sahasranam-path-uebppefs">Vishnu Sahasranam Path | Benefits &amp; Booking - Pujari Ji</a></li>
+<li><a href="https://www.visvasvsn.org/vsnpower.aspx">vsn power - VISVAS CHARITABLE TRUST</a></li>
+<li><a href="https://timesofindia.indiatimes.com/religion/mantras-chants/vishnu-sahasranama-meaning-importance-and-life-changing-benefits/articleshow/131223907.cms">Vishnu Sahasranama: Meaning, importance, and life-changing benefits - The Times of India</a></li>
+<li><a href="https://www.scribd.com/document/367892367/English-Vishnu-Sahasranama">Vishnu Sahasranama for Planetary Remedies | PDF | Hindu Literature - Scribd</a></li>
+<li><a href="https://vedikheritageblog.wordpress.com/prayers-for-days-of-the-week/thursday-worship/">Thursday Worship - Vedikheritage - WordPress.com</a></li>
+<li><a href="https://www.dattavani.org/pravachana-malika/datta-vaakya/sri-guru-gita-etv/">Sri Guru Gita ETV - Dattavani</a></li>
+<li><a href="https://www.nisargaherbs.com/blogs/all/is-shankhpushpi-good-for-brain-health">What Is Shankhpushpi? Benefits for Brain, Memory &amp; Stress Relief - Nisarga Herbs</a></li>
+<li><a href="https://ayurvedastore.co.nz/blogs/the-ayurveda-blog/shankhpushpi">Shankhpushpi: Your Brain&#x27;s Best Friend | Benefits | How to use - Ayurveda Store</a></li>
+<li><a href="https://www.researchgate.net/publication/353380748_An_updated_review_of_Shankhpushpi_as_Medhya_Rasayan">An updated review on Shankhpushpi- As Medhya Rasayana - ResearchGate</a></li>
+<li><a href="https://www.gomataseva.org/what-is-brahmi-ghrita-and-how-does-it-help-with-memory-and-stress-gomataseva/">What is Brahmi Ghrita and how does it help with memory and stress? | Gomataseva</a></li>
+<li><a href="https://www.easyayurveda.com/brahmi-benefits-dose-side-effects-research/">Brahmi (Bacopa Monnieri) Benefits, Dose, Side Effects, Research - Easy Ayurveda Hospital</a></li>
+<li><a href="https://www.ayuayurveda.com/ayurvedic-blog/cinnamon">5 Powerful herbs for Memory - Ayu Ayurveda</a></li>
+<li><a href="https://www.ayurveda-herbs.com/blogs/ayurveda-blog/how-to-discover-your-dosha-through-astrology">Find Your Dosha Through Astrology | Ayurveda Guide - Ayurvedic Rasayanas</a></li>
+<li><a href="https://www.easyayurveda.com/shankhapushpi-convolvulus-pluricaulis-benefits-dose-side-effects/">Shankhapushpi Convolvulus pluricaulis Benefits, Dose, Side Effects</a></li>
+<li><a href="https://www.netmeds.com/c/health-library/post/shankhpushpi-benefits-uses-dosage-formulations-and-side-effects">Shankhpushpi: Benefits, Uses, Dosage, Formulations, and Side Effects - Netmeds</a></li>
+<li><a href="https://healthreactive.com/article/blog/Shankhpushpi-Plant-%E2%80%93-How-To-Use-Flower%20-Leaves%20-Ro">Shankhpushpi Plant – How To Use Flower, Leaves, Roots &amp; Seed For Health</a></li>
+<li><a href="https://www.researchgate.net/publication/287305345_ShankhapushpiConvolvulus_pluricaulisChoisy_Validation_of_the_Ayurvedic_therapeutic_claims_through_contemporary_studies">Shankhapushpi(Convolvulus pluricaulisChoisy): Validation of the Ayurvedic therapeutic claims through contemporary studies - ResearchGate</a></li>
+<li><a href="https://astroambe.com/blog/best-wedding-dates-2026-astrology">Best Wedding Dates 2026 According to Vedic Astrology — Vivah Muhurat by Month - Astro Ambe</a></li>
+<li><a href="https://iivs.com/best-wedding-dates-2026-astrology/">Find Auspicious Dates | Best Wedding Dates 2026 Astrology</a></li>
+<li><a href="https://nakshatrica.com/transits">Planetary Transits Today (Grah Gochar) | Live Vedic Tracker - Nakshatrica</a></li>
+<li><a href="https://jagannathhora.com/vedic-planetary-transit-calendar/">Vedic Planetary Transit Calendar (2025–2035): Complete Graha Gochar Dates</a></li>
+<li><a href="https://pujahome.com/blogs/articles/yantras">Yantras: Benefits, Properties, Types, and Their Meaning - Pujahome</a></li>
+<li><a href="https://www.reddit.com/r/Nakshatras/comments/1srgu88/can_you_please_confirm_if_jupiter_will_in_cancer/">Can you please confirm if Jupiter will in cancer till Oct 31 2026 or June 26, 2027? - Reddit</a></li>
+<li><a href="https://www.scribd.com/document/993462043/Unified-Calendar-2026-FINAL">Unified Calendar 2026 FINAL | PDF | Hindu Astrology | Ancient Astronomy - Scribd</a></li>
+<li><a href="https://timesofindia.indiatimes.com/astrology/vastu-feng-shui/jupiter-falling-asleep-powerful-vastu-remedies-to-sanitise-your-home/articleshow/132372901.cms">Jupiter Falling Asleep: Powerful Vastu Remedies To Sanitise Your Home</a></li>
+<li><a href="https://starwalk.space/en/news/what-is-retrograde-motion">What Is Retrograde Motion? Which Planets Are Retrograde Right Now (July 2026) - Star Walk</a></li>
+<li><a href="https://www.scribd.com/document/259872937/070-astangata-asta-1">Understanding Astangata in Astrology | PDF | Planets | Ptolemy - Scribd</a></li>
+<li><a href="https://vastuyantra.in/durga-bisa-silver-yantra-locket-benefits-wearing-rules-abhishek-procedure/">Durga Bisa Silver Yantra Locket – Benefits, Wearing Rules &amp; Abhishek Procedure</a></li>
+<li><a href="https://discoveringyouniverse.com/posts/jupiters-exalted-transit-2026-27-through-nakshatras/">Jupiter&#x27;s Exalted Transit 2026-27 - Through Nakshatras - Discovering Youniverse</a></li>
+<li><a href="https://astrochart.ai/jupiter-retrograde-calendar-2027">Jupiter Retrograde 2027 - Dates &amp; Effects - AstroChart.ai</a></li>
+<li><a href="https://m.youtube.com/watch?v=8yjxJEXPHpo">Guru Asta Mein Kya Nahi Karna Chahiye? | Kaunse Shubh Kaam Avoid Karein? - YouTube</a></li>
+<li><a href="https://www.zodiscope.io/journal/jupiter-in-leo-2026">Jupiter in Leo 2026: 13 Months That Start June 30 - Zodiscope</a></li>
+<li><a href="https://www.reddit.com/r/Nakshatras/comments/1txeqav/jupiter_in_cancer_3_underrated_facts_you_probably/">Jupiter in Cancer: 3 Underrated Facts You Probably Missed : r/Nakshatras - Reddit</a></li>
+<li><a href="https://www.youtube.com/watch?v=ekD6IOFv9P0">JUPITER TRANSIT IN CANCER (EXALTED) - 02.06.2026 to 26.06.2027 - ALL 12 ASCENDANTS #JupiterInCancer - YouTube</a></li>
+<li><a href="https://parade.com/astrology/zodiac-signs/">Zodiac Signs - Astrology - Parade</a></li>
+<li><a href="https://www.astroved.com/blogs/amazing-benefits-chanting-vishnu-sahasranama">Amazing Benefits Of Chanting Of The Vishnu Sahasranama | AstroVed.com</a></li>
+<li><a href="https://www.youtube.com/watch?v=Tx0hdPglRXE">June 2026 Transit Astrology - YouTube</a></li>
+<li><a href="https://www.reddit.com/r/vedicastrology/comments/1v1d7w4/42m_ready_for_my_next_career_challenge/">42m ready for my next career challenge : r/vedicastrology - Reddit</a></li>
+<li><a href="https://incarnation14.wordpress.com/guru-geeta-datta-vaakya/">Guru Geeta – Datta Vaakya - Prasad Bharadwaj Incarnation 14 Blog</a></li>
+<li><a href="https://shlokapreneurdivyaa.com/the-avatar-of-lord-vishnu/">THE AVATARS OF LORD VISHNU - Gurukulam – The Shloka Learning Center</a></li>
+<li><a href="https://wiralfeed.wordpress.com/2015/12/03/brihaspativar-vrat-katha/">Brihaspativar Vrat Katha : बृहस्पतिवार व्रत कथा - Wiral Feed</a></li>
+<li><a href="https://music.youtube.com/search?q=%23vratstoryinhindi">YouTube Music</a></li>
+</ol>
+</div>
+        </article>
+    </div>
+
+</body>
+</html>
