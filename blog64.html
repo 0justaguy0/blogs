@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahu Ketu Transit Remedies</title>
+    <style>
+        :root {
+            --bg-color: #FDF9F1;
+            --text-color: #3E2723;
+            --indian-yellow: #E4A025;
+            --indian-orange: #E65100;
+            --accent-light: #FFECB3;
+            --ref-bg: #FFF3E0;
+        }
+
+        body {
+            font-family: 'Georgia', 'Nirmala UI', 'Mangal', serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(var(--bg-color) 80%, var(--accent-light) 100%);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #FFFFFF;
+            padding: 50px 60px;
+            box-shadow: 0 10px 30px rgba(62, 39, 35, 0.1);
+            border-top: 8px solid var(--indian-orange);
+            border-bottom: 8px solid var(--indian-yellow);
+            border-radius: 4px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed var(--indian-yellow);
+        }
+
+        h1 {
+            color: var(--indian-orange);
+            font-size: 2.5em;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        h2 {
+            color: var(--indian-yellow);
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--indian-orange);
+            padding-left: 15px;
+        }
+
+        h3, h4 {
+            color: var(--indian-orange);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        .intro-text::first-letter {
+            float: left;
+            font-size: 3.5em;
+            line-height: 0.8;
+            padding-right: 8px;
+            padding-top: 4px;
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        ul, ol {
+            margin: 0 0 24px 0;
+            padding-left: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ol {
+            list-style-position: outside;
+            padding-left: 2.2em;
+        }
+
+        ul li, ol li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        ol li {
+            padding-left: 0.35em;
+        }
+
+        ul li::before {
+            content: '\2022';
+            position: absolute;
+            left: 0;
+            top: 0.05em;
+            color: var(--indian-orange);
+            font-size: 1.2em;
+            line-height: 1;
+        }
+
+        ol li::marker {
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        strong {
+            color: var(--indian-orange);
+        }
+
+        .image-placeholder-container {
+            margin: 30px 0;
+            text-align: center;
+            font-style: italic;
+            color: #795548;
+            background-color: var(--accent-light);
+            padding: 20px;
+            border-radius: 4px;
+            border: 1px solid var(--indian-yellow);
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.98em;
+            background-color: #FFFDF8;
+        }
+
+        th, td {
+            border: 1px solid #F0D49B;
+            padding: 10px 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--ref-bg);
+            color: var(--indian-orange);
+        }
+
+        blockquote {
+            margin: 30px 0;
+            padding: 20px 25px;
+            background-color: var(--accent-light);
+            border-left: 5px solid var(--indian-orange);
+            font-style: italic;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px dashed var(--indian-yellow);
+            margin: 32px 0;
+        }
+
+        .references {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: var(--ref-bg);
+            border-radius: 8px;
+            font-size: 0.9em;
+        }
+
+        .references h2, .references h3 {
+            color: var(--text-color);
+            margin-top: 0;
+            border-bottom: 1px solid var(--indian-yellow);
+            padding-bottom: 10px;
+            border-left: 0;
+            padding-left: 0;
+        }
+
+        .references p, .references li {
+            margin-bottom: 12px;
+            word-wrap: break-word;
+        }
+
+        .references a {
+            color: var(--indian-orange);
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Rahu Ketu Transit Remedies</h1>
+        </header>
+
+        <article>
+<p class="intro-text">In the sacred science of <em>Jyotish</em>, the movement of the lunar nodes represents the structural spine of our karmic evolution. The year 2026 stands as a "peak delivery point" for destiny—a window where the <em>Chhaya Grahas</em> (Shadowy Planets), Rahu and Ketu, orchestrate the final manifestation of long-standing "birth promises." As Rahu governs our material hunger and expansion, and Ketu directs our spiritual detachment and ancestral release, their 2026 transition marks a global realignment of ambition and security.</p>
+<div class="image-placeholder-container">
+    <img src="blog64_Image.png" alt="Upcoming Rahu Ketu nodal axis transit with exact start and end dates in IST: Rahu in Aquarius (Kumbha) and Ketu in Leo (Simha) phase running until December 5 2026, then the Great Karmic Shift on December 5 2026 at 8:03 PM IST (Lahiri Ayanamsa) when Rahu enters Capricorn (Makara) and Ketu enters Cancer (Karka), starting an 18 month cycle lasting until July 2028. Sub-period anchors: Rahu in Dhanishtha Nakshatra from August 1 2026 and Ketu in Magha Nakshatra the Star of Ancestors, Sun conjunct Ketu in Leo August September 2026 Synodic Peak, Jupiter exaltation in Cancer from June 2 2026 ending its aspect on Rahu, Jupiter combustion July to August 2026 and Jupiter retrograde from December 13 2026, Venus retrograde and combustion October to November 2026, Mercury combustion starting December 7 2026. Remedial astrology with Rahu and Ketu Graha Shanti beej mantra japa, Om Bhram Bhreem Bhroum Sah Rahave Namah 108 times at twilight and Om Sraam Sreem Sraum Sah Ketave Namah 108 times at dawn, Homa and Daan. Deity energies: Goddess Durga on Fridays for Rahu, Lord Ganesha for Ketu, Lord Kalbhairava on Saturdays. Twelve rashi house activations for favorable and unfavorable signs. Vedic counselling for karmic release and past life resolve, devotion spirituality and holistic wellbeing.">
+</div>
+<p>This year is divided into two distinct movements: the high-octane finale of the Aquarius-Leo axis, which concludes on December 5, and the entry into the disciplined Capricorn-Cancer axis, initiating an 18-month cycle of structural and emotional purification.</p>
+<h2>The Final Phase: Rahu in Dhanishtha &amp; Ketu in Magha (Until December 5, 2026)</h2>
+<p>Until late 2026, the nodal axis occupies the Aquarius-Leo signs, arguably the most "dignified" and potent placement for the nodes in the zodiac. Here, Rahu operates with uncharacteristic clarity, while Ketu taps into the deep authority of the solar lineage.</p>
+<h3>Dhanishtha: The Star of Abundance</h3>
+<p>On August 1, 2026, Rahu enters <strong>Dhanishtha Nakshatra</strong> (ruled by Mars). Known as the "Star of Abundance" and presided over by the <em>Ashta Vasus</em> (eight divine beings), this placement amplifies material ambition through "perfect divine timing." For those in technology, finance, and entertainment, this phase triggers sudden elevation and the manifestation of fame and wealth.</p>
+<h3>Magha: The Star of Ancestors</h3>
+<p>Simultaneously, Ketu occupies <strong>Magha Nakshatra</strong> (ruled by Ketu itself). This is the "Star of Ancestors," connected to the <em>Pitrs</em> (ancestral spirits) and royal legacy. It brings to fruition efforts spanning multiple lifetimes. During this window, old karmic debts are settled, and individuals often receive authoritative recognition or ancestral property settlements that feel destined.</p>
+<blockquote><p><strong>Pro-Tip: The Intense Window (August – September 2026)</strong></p><p>During this period, the Sun conjoins Ketu in Leo. This "Synodic Peak" illuminates hidden truths and triggers sudden revelations, power reversals, and dramatic karmic completions. Expect shifts in authority both in your personal life and on the global stage.</p></blockquote>
+<h2>Jupiter’s Exaltation: The End of Rahu’s Restraint</h2>
+<p>A major shift in planetary "policing" occurs on <strong>June 2, 2026</strong>, when Jupiter enters Cancer, its sign of exaltation. While Jupiter is traditionally protective, its move away from Gemini means it no longer casts its moderating ninth aspect on Rahu in Aquarius.</p>
+<p>Without Jupiter’s ethical guidance, Rahu’s energy becomes <strong>raw, ambitious, and unfiltered</strong>. This transition is further complicated as Jupiter undergoes its own "weakness" via combustion (July–August 2026) and eventual retrogression (starting December 13). This necessitates heightened self-monitoring.</p>
+<p><strong>Handling Independent Rahu Energy:</strong></p>
+<ul>
+<li><strong>Do:</strong> Channel ambition into "physical and tangible commodities" (infrastructure, real estate) rather than just "virtual or speculative assets."</li>
+<li><strong>Do:</strong> Maintain rigorous transparency; Rahu without Jupiter can tempt one toward unethical shortcuts.</li>
+<li><strong>Don't:</strong> Succumb to status-driven obsession at the cost of your integrity.</li>
+<li><strong>Don't:</strong> Ignore health; Rahu’s raw heat can lead to burnout if not balanced with physical discipline.</li>
+</ul>
+<h2>The Big Shift: December 5, 2026 Ingress</h2>
+<p>On <strong>December 5, 2026, at 8:03 PM IST</strong> (Lahiri Ayanamsa), the nodes officially exit the Aquarius-Leo axis and enter the <strong>Capricorn-Cancer</strong> axis. This ingress occurs amidst a period of "Synodic Congestion"—a volatile year-end featuring Venus Retrograde/Combustion (October–November) and Mercury Combustion (starting December 7). These overlapping cycles suggest that value judgments may be clouded and negotiations complicated as the new axis begins.</p>
+<table>
+<thead><tr><th>Theme</th><th>Old Axis (Aquarius-Leo)</th><th>New Axis (Capricorn-Cancer)</th></tr></thead>
+<tbody>
+<tr><td><strong>Primary Focus</strong></td><td>Networking, AI, and Social Reform</td><td>Institutional Authority and Infrastructure</td></tr>
+<tr><td><strong>Psychological Shift</strong></td><td>Finding meaning in the collective</td><td>Building structure and finding inner security</td></tr>
+<tr><td><strong>Material Expression</strong></td><td>Virtual and Speculative Assets</td><td>Physical Commodities and Earned Status</td></tr>
+</tbody>
+</table>
+<p><strong>Who feels the shift most?</strong></p>
+<ul>
+<li><strong>Capricorn and Cancer Moons:</strong> Experience a direct identity and relationship transformation; the nodes sit directly on your lunar axis.</li>
+<li><strong>Aries and Libra Moons:</strong> Feel a "square" pressure, demanding a choice between professional ambition and emotional/domestic needs.</li>
+</ul>
+<h2>Zodiac Compass: Impact Analysis for the 12 Signs</h2>
+<p>This transit activates specific houses based on your Ascendant or Moon sign.</p>
+<h3>The Gain Seekers</h3>
+<ul>
+<li><strong>Aries: Career Surge &amp; Domestic Detachment.</strong> Rahu in the 10th house provides the most powerful career transit possible. Expect professional gains, but prepare for emotional restlessness at home.</li>
+<li><strong>Taurus: Fortune Expansion &amp; Spiritual Seeking.</strong> Favorable for foreign travel and higher education. Fortune arrives through unconventional or foreign channels.</li>
+<li><strong>Gemini: Strategic Growth &amp; Sudden Changes.</strong> Activates an axis of transformation. While research and occult insights deepen, manage anxiety regarding joint finances or taxes.</li>
+<li><strong>Libra: Property Focus &amp; Career Detachment.</strong> A constructive period for real estate and home renovation. You may feel a natural indifference toward public fame or corporate status.</li>
+</ul>
+<h3>The Truth Seekers</h3>
+<ul>
+<li><strong>Pisces: Income Expansion &amp; Creative Detachment.</strong> Highly favorable for material gains and network expansion. Your creative work shifts from being commerce-driven to personally meaningful.</li>
+<li><strong>Sagittarius: Bold Initiatives &amp; Psychological Depth.</strong> Entrepreneurial courage surges. However, be mindful of "psychological/existential pressure" as Ketu probes the 8th house of transformation.</li>
+<li><strong>Leo: Competitive Victory &amp; Spiritual Growth.</strong> A highly balanced placement. You gain the upper hand over rivals (Rahu in 6th) while experiencing a profound spiritual opening (Ketu in 12th).</li>
+</ul>
+<h3>The Transformation Seekers</h3>
+<ul>
+<li><strong>Cancer: Identity Shift &amp; Relationship Intensity.</strong> A period of personal reinvention. Be vigilant regarding "digestive and chest-related concerns" as Ketu influences the self/identity.</li>
+<li><strong>Scorpio: Domestic Expansion &amp; Career Review.</strong> Real estate matters take center stage, while your professional direction undergoes a deep spiritual review.</li>
+<li><strong>Virgo: Service Victory &amp; Network Refinement.</strong> Success in overcoming obstacles. Your social circle naturally thins, leaving only authentic, purposeful connections.</li>
+<li><strong>Aquarius: Identity Reinvention &amp; Expenditure Vigilance.</strong> A reflective phase. Foreign opportunities may emerge, but track "expenditure anxiety" and maintain physical rest.</li>
+<li><strong>Capricorn: Personal Reinvention &amp; Relationship Release.</strong> Rahu in the 1st house initiates a major life-direction shift. Partnerships undergo a karmic review to ensure they support your new, authentic self.</li>
+</ul>
+<h2>Karmic Remedies: Balancing the Nodal Energies</h2>
+<p>To harmonize the vibrations of the <em>Chhaya Grahas</em>, the following Vedic protocols are recommended:</p>
+<p><strong>Deity Worship</strong></p>
+<ul>
+<li><strong>Goddess Durga:</strong> Worship on Fridays to steady Rahu’s ambition and cut through <em>Maya</em> (illusion).</li>
+<li><strong>Lord Ganesha:</strong> Worship to stabilize Ketu’s energy, especially to resolve "headless" or impulsive emotional reactions.</li>
+<li><strong>Lord Kalbhairava:</strong> Worship on Saturdays to pacify Rahu’s shadow influence.</li>
+</ul>
+<p><strong>Mantra Therapy</strong></p>
+<ul>
+<li><strong>Rahu Beeja Mantra:</strong> <em>Om Bhram Bhreem Bhroum Sah Rahave Namah</em> (108 times daily at <strong>twilight</strong>).</li>
+<li><strong>Ketu Beeja Mantra:</strong> <em>Om Sraam Sreem Sraum Sah Ketave Namah</em> (108 times daily at <strong>dawn</strong>).</li>
+</ul>
+<p><strong>Actionable Charity (Daan)</strong></p>
+<ul>
+<li><strong>For Rahu:</strong> Support musicians and artists. Donate dark blankets or mustard oil on <strong>Saturday afternoons</strong>.</li>
+<li><strong>For Ketu:</strong> Feed street dogs or birds regularly. Donate "seven grains" (<em>Sapta-Dhanya</em>) or multi-colored blankets on <strong>Tuesday mornings</strong>.</li>
+</ul>
+<h2>Conclusion: Wisdom for the Transition</h2>
+<p>The 2026 transit reminds us that the nodes deliver exactly what the soul has earned. As we move into 2027, the focus shifts toward <strong>Shravana Nakshatra</strong>—the "Star of Listening"—making it a year for strategic reputation management and deep learning.</p>
+<h3>3 Actionable Takeaways for 2026</h3>
+<ol>
+<li><strong>Prioritize Ethics Over Speed:</strong> With Rahu operating independently after June, ensure your professional rise is built on transparency.</li>
+<li><strong>Honor Ancestral Roots:</strong> Use the Magha phase (until Dec 5) to settle family debts and express gratitude to your lineage.</li>
+<li><strong>Build Internal Security:</strong> As the axis shifts to Cancer-Capricorn, stop relying on external comfort. True security is built from within.</li>
+</ol>
+<h2>Frequently Asked Questions (FAQs)</h2>
+<p><strong>Why is Rahu in Aquarius considered so powerful?</strong> Aquarius is co-ruled by Rahu. In this sign, Rahu’s drive for innovation, technology, and mass influence is expressed with maximum effectiveness and clarity.</p>
+<p><strong>What is the difference between "Mean" and "True" nodes?</strong> "True" nodes account for the precise astronomical oscillations of the lunar orbit, while "Mean" nodes use a mathematical average. There is an <strong>11-day difference</strong> between the two systems regarding transit dates; this article utilizes the Mean node timing for general forecasting.</p>
+<p>*<em>Why do those in a Rahu or Ketu </em>Dasha<em> feel this most?</em>* If you are in a major or minor planetary period of Rahu or Ketu, your "natal promise" is already active. This transit serves as the "timing trigger," making the events described far more prominent and life-defining for you than for others.</p>
+
+<div class="references">
+<h2>Sources</h2>
+<ol>
+<li><a href="https://www.vedicblessing.com/blog/rahu-ketu-transit-2026-when-it-happens-which-rashis-are-affected-and-simple-vedic-remedies-for-a-blessed-year-ahead">Rahu-Ketu Transit 2026: Rashi Effects, Dates &amp; Remedies - Vedic Blessing</a></li>
+<li><a href="https://jagannathhora.com/rahu-ketu-transit-capricorn-cancer-2026-2028/">Rahu-Ketu Transit in Capricorn-Cancer 2026-2028: Exact Dates, Nakshatra Phases, Eclipse Connection &amp; Complete Analysis - Jagannath Hora</a></li>
+<li><a href="https://pebblegalaxy.blog/2025/11/14/rahu-ketu-2026-zodiac-axis-shift-what-it-means-for-your-life-karma/">Rahu-Ketu 2026 Zodiac Axis Shift: What It Means for Your Life &amp; Karma</a></li>
+<li><a href="https://astromedha.in/insights/vedic/rahu-ketu-transit-2026">Rahu Ketu Transit 2026: Nodal Axis Shifts December 6 | AstroMedha</a></li>
+<li><a href="https://lifehoroscopespiritual.com/products/rahu-ketu-transit-2026-to-2028-predictions">Rahu Ketu Transit 2026 to 2028 Predictions - Life Horoscope Spiritual</a></li>
+<li><a href="https://www.divinehindu.in/blogs/news/rahu-ketu-transit-2026-27-effects-on-every-rashi">Rahu-Ketu Transit 2026-27: Effects on Every Rashi - Divine Hindu</a></li>
+<li><a href="https://jagannathhora.com/rahu-ketu-transit-2027-moon-sign-predictions/">Rahu-Ketu Transit 2026-2028 Predictions for All 12 Moon Signs (Rashi): Capricorn-Cancer Axis Effects - Jagannath Hora</a></li>
+<li><a href="https://jagannathhora.com/rahu-ketu-capricorn-cancer-2027-ascendant-predictions/">Rahu-Ketu Transit 2026-2028 Predictions for All 12 Ascendants: Capricorn-Cancer Axis Effects on Career, Marriage &amp; Health - Jagannath Hora</a></li>
+<li><a href="https://www.dkscore.com/jyotishmedium/2026-rahuketu-transit-rahu-in-dhanishtha-ketu-in-magha-effects-for-all-12-signs-2391">2026 Rahu Ketu Transit: Rahu in Dhanishtha Ketu in Magha – Effects for All 12 Signs - dkscore</a></li>
+<li><a href="https://www.dkscore.com/jyotishmedium/rahu-in-dhanishtha-nakshatra-transit-2025-wealth-fame-all-zodiac-signs-impact-2393">Rahu in Dhanishtha Nakshatra Transit 2026: Wealth Fame &amp; All Zodiac Signs Impact</a></li>
+<li><a href="https://www.scribd.com/document/482430548/Rahu-Ketu-Transit">Rahu Ketu Transit Dates 2025-2030 | PDF - Scribd</a></li>
+<li><a href="https://astropatri.com/rahu-ketu-transit-2025">Rahu Ketu Transit in 2025 For All Zodiac Signs - Astropatri</a></li>
+<li><a href="https://myratna.com/blogs/content/rahu-ketu-transit-2025">Rahu Ketu Transit 2025 For All Zodiac Signs Effects &amp;amp; Remedies - MyRatna</a></li>
+<li><a href="https://jagannathhora.com/rahu-aquarius-ketu-leo-2026-business/">Rahu in Aquarius and Ketu in Leo (2026): The New Karmic Axis for Business</a></li>
+<li><a href="https://www.reddit.com/r/Nakshatras/comments/1uaxmqz/rahu_in_aquarius_20252026_house_effects_for_all/">Rahu in Aquarius 2025–2026 — House effects for all 12 ascendants | Analytical breakdown</a></li>
+<li><a href="https://www.hindustantimes.com/astrology/horoscope/rahu-in-aquarius-and-ketu-in-leo-how-this-18-month-long-transit-may-reshape-your-priorities-101750759358628.html">Rahu in Aquarius and Ketu in Leo: How this 18-month-long transit may reshape your priorities | Astrology - Hindustan Times</a></li>
+<li><a href="https://www.reddit.com/r/vedicastrologyexperts/comments/1sj6k1o/rahuketu_transit_dec_2026/">Rahu–Ketu Transit Dec 2026... : r/vedicastrologyexperts - Reddit</a></li>
+<li><a href="https://astropatri.com/transits/rahu">Rahu Transit (Rahu Gochar) 2026: Dates, Effects &amp; Zodiac Sign Predictions - Astropatri</a></li>
+<li><a href="https://girlandhermoon.com/north-node-aquarius-2026-astrology-horoscopes-collective-evolution/">North Node Aquarius 2026: Astrology, Horoscopes &amp; Collective Evolution</a></li>
+<li><a href="https://99pandit.com/de/service/rahu-ketu-shanti-puja/">Rahu Ketu Shanti Puja | Book Puja for Improvement in Health - 99Pandit</a></li>
+<li><a href="https://nakshatraai.ai/blog/rahu-graha-shanti-puja-complete-vidhi-samagri-and-benefits-wzw1t">Rahu Graha Shanti Puja: Complete Vidhi, Samagri and Benefits - Nakshatra.ai</a></li>
+<li><a href="https://gokarnapuja.com/rahu-shanti-pooja-effects-remedies-mantra-and-cost/">Rahu Shanti Pooja Effects, Remedies, Mantra, and cost - Gokarna Puja</a></li>
+<li><a href="https://gokarnapuja.com/rahu-ketu-puja-for-the-marriage-the-powerful-ritual/">Rahu Ketu Puja for the Marriage: The Powerful Ritual</a></li>
+<li><a href="https://vedapathshala.com/2020/03/29/remedies-for-nine-planets-in-astrology/">Remedies for Nine Planets in Astrology - School of wisdom and knowledge</a></li>
+<li><a href="https://www.rudraksha-center.com/pages/remedies-of-planet-rahu-as-per-vedic-astrology">Remedies of planet Rahu as per Vedic Astrology - Rudraksha Center</a></li>
+<li><a href="https://www.rudraksha-center.com/pages/remedial-measures-for-planet-rahu-as-per-lal-kitab">Remedial Measures for planet Rahu as per Lal Kitab - Rudraksha Center</a></li>
+<li><a href="https://gokarnapuja.com/kuja-rahu-sandhi-shanti-procedure-benefits-and-cost/">Kuja Rahu Sandhi Shanti Procedure, Benefits and Cost - Gokarna Puja</a></li>
+<li><a href="https://www.thestonestudio.in/rahu-ketu-spiritual-significance/">Rahu &amp; Ketu Spiritual Significance - The Stone Studio</a></li>
+<li><a href="https://navgrahmandir.org/jupiter-transit-remedies-for-each-rashi/">Jupiter Transit Remedies for Each Rashi: Guru Gochar 2026 Guide</a></li>
+<li><a href="https://astrozindagi.in/transit/jupiter-transit/jupiter-transit-cancer-2026/">Jupiter Transit in Cancer 2026: 4 Zodiac Signs Facing Major Fortune</a></li>
+<li><a href="https://myratna.com/blogs/content/guru-jupiter-transit-2026-date-time">Jupiter Transit 2026 | Guru Transit Date, Time, Effects and Remedies - MyRatna</a></li>
+<li><a href="https://pebblegalaxy.blog/2025/11/06/jupiter-in-2026-indian-astrologys-year-of-exaltation-accelerated-blessings-and-cosmic-shifts/">Jupiter in 2026: Indian Astrology&#x27;s Year of Exaltation, Accelerated Blessings, and Cosmic Shifts - Between Stars &amp; Silence - Pebble&#x27;s Galaxy: a blog.</a></li>
+<li><a href="https://timesofindia.indiatimes.com/astrology/planets-transits/jupiter-combust-2026-essential-dos-and-donts-to-protect-your-luck-and-wealth/articleshow/132309995.cms">Jupiter Combust 2026: Essential Dos and Don&#x27;ts to Protect Your Luck and Wealth</a></li>
+<li><a href="https://blog.align27.com/jupiter-combust-in-cancer-a-test-of-faith/">Jupiter Combust in Cancer ~ A test of faith - align 27</a></li>
+<li><a href="https://saketbhatia.com/jupiter-retrograde-combust-effects-vedic-astrology/">Jupiter Retrograde &amp; Combust Effects in Vedic Astrology: Wealth, Career &amp; Decision Insights</a></li>
+<li><a href="https://rashibyte.com/blog/venus-combustion-2026-love-finance-effects-shukra-asta-upay">Venus Combustion 2026: Love &amp; Finance Effects — शुक्र अस्त 2026 उपाय — RashiByte Blog</a></li>
+<li><a href="https://astromedha.in/insights/vedic/venus-retrograde-2026">Venus Retrograde 2026: Love and Money Effects (Vedic) | AstroMedha</a></li>
+<li><a href="https://www.almanac.com/venus-retrograde">Venus Retrograde 2026: Dates, Meaning &amp; How It Affects Love, Money, and Relationships</a></li>
+<li><a href="https://parade.com/astrology/2026-key-dates-venus-retrograde">Guide to Venus Retrograde 2026: Meaning, Dates &amp; Astrology - Parade</a></li>
+<li><a href="https://www.scribd.com/document/477711295/Venus">Understanding Venus Combustion Effects | PDF - Scribd</a></li>
+<li><a href="https://www.reddit.com/r/TeamLA/comments/1oqm3ye/venus_combustion_emptiness_despite_abundance/">Venus Combustion: Emptiness Despite Abundance : r/TeamLA - Reddit</a></li>
+<li><a href="https://blog.align27.com/venus-combust-in-libra-go-the-extra-mile-for-love/">Venus Combust in Libra ~ Go the extra mile for love - align 27</a></li>
+<li><a href="https://jagannathhora.com/mercury-retrograde-2026-dates-vedic/">Mercury Retrograde 2026: Complete Dates, Times &amp; Sidereal Positions (All 3 Cycles)</a></li>
+<li><a href="https://www.starstell.com/blog/mercury-retrograde-in-cancer-june-2026-know-dos-and-donts/">Mercury Retrograde in Cancer June 2026: Know Do&#x27;s and Don&#x27;ts - StarsTell</a></li>
+<li><a href="https://panchangbodh.com/planets/mercury-combustion?city=new-delhi&amp;year=2026">Mercury Combustion 2026 New Delhi - Dates &amp; Timings - PanchangBodh</a></li>
+<li><a href="https://panchangbodh.com/planets/mercury-retrograde">Mercury Retrograde 2026 New Delhi - Dates &amp; Timings - PanchangBodh</a></li>
+<li><a href="https://astropatri.com/transits/mercury">Mercury Transit (Budh Gochar): Dates, Effects &amp; Predictions for All Zodiac Signs - Astropatri</a></li>
+<li><a href="https://jagannathhora.com/vedic-planetary-positions-july-2026/">Vedic Planetary Positions July 2026: Complete Sidereal Ephemeris (Lahiri)</a></li>
+<li><a href="https://jagannathhora.com/vedic-planetary-transit-calendar/">Vedic Planetary Transit Calendar (2025–2035): Complete Graha Gochar Dates</a></li>
+<li><a href="https://www.scribd.com/document/1030567281/Correction-Time-Window-for-Nifty-as-Per-Financial-Astrology-for-2026">Correction Time Window For Nifty As Per Financial Astrology For 2026 | PDF - Scribd</a></li>
+<li><a href="https://www.scribd.com/document/943350013/Planet-Pidit-Calendar-2025-2026-Hinglish">Mercury Retrograde Calendar 2025-2026 | PDF | Solar System | Astronomy - Scribd</a></li>
+<li><a href="https://www.astrovedickundli.com/predictions/stock-market-2026">Stock Market Predictions 2026 - Astro Vedic Kundli</a></li>
+<li><a href="https://www.scribd.com/document/1027965870/2026-Planetary-Transits-Gochar-Explained-Dates-Effects-Predictions">2026 Planetary Transits (Gochar) Explained – Dates, Effects &amp; Predictions | PDF - Scribd</a></li>
+<li><a href="https://moondanceastrology.substack.com/p/december-vedic-astrology-guide-initiations">December Vedic Astrology Guide: Initiations at the Karmic Crossing</a></li>
+<li><a href="https://wyldemoon.co.uk/notes-from-the-universe/2026-retrograde-planetary-forecast/">The 2026 Retrograde and Planetary Forecast to Help You Flow with Cosmic Energy</a></li>
+<li><a href="https://astrologymatters.com/retrograde-planets-2026/">Retrograde Planets 2026 - Astrology Matters</a></li>
+<li><a href="https://astrogiva.com/planet-retrograde-2026/">Planet Retrograde 2026 - astrogiva</a></li>
+<li><a href="https://www.dkscore.com/jyotishmedium/publication/past-life-18">Past Life for Personal Insight By DKSCORE</a></li>
+<li><a href="https://adikkachannels.com/karma-mental-health-the-science-of-depression-anxiety-in-hindu-scriptures/">Karma &amp; Mental Health – The Science Of Depression &amp; Anxiety In Hindu Scriptures</a></li>
+<li><a href="https://iivs.com/how-to-learn-past-life-regression/">Learn Online: How to Learn Past Life Regression Therapy - Indian Institute of Vedic Science</a></li>
+<li><a href="https://astroanuradha.com/product/past-life-analysis/">Past Life Analysis Reading | Karmic Astrology Insights - Astro Anuradha</a></li>
+<li><a href="https://soulhealingfoundation.com/learn/past-life-regression-for-relationships">Past Life Regression for Relationships &amp; Soul Contracts | SHF - Soul Healing Foundation</a></li>
+<li><a href="https://www.reddit.com/r/vedicastrology/comments/1jdhst9/how_to_find_ishtadevta_from_horoscope_some_books/">How to find ishtadevta from horoscope some books say 5th house some say 12th from Atmakarak in Navamsh - Reddit</a></li>
+<li><a href="https://www.reddit.com/r/vedicastrology/comments/1q4k43p/what_are_the_daily_habits_that_improve_each/">What are the daily habits that improve each planet in vedic astrology? - Reddit</a></li>
+<li><a href="https://www.reddit.com/r/vedicastrologyexperts/comments/1rwuhbo/5th_house_souls_password_from_last_life_mantra/">5th house : Soul&#x27;s password from Last life, Mantra Siddhi, Who can be your IshthaDev and many more... - Reddit</a></li>
+<li><a href="https://omai.app/rashifal-2026.html">Rashifal 2026 - Yearly Horoscope, All 12 Signs - Om.AI</a></li>
+<li><a href="https://blog.align27.com/the-rahu-ketu-transit-predictions-and-remedies-2025/">The Rahu-Ketu Transit Predictions and Remedies</a></li>
+<li><a href="https://www.astroved.com/transit/rahu-ketu-transit-capricorn-moon-sign">Rahu Ketu Transit 2025 to 2026 Predictions for Capricorn Moon Sign - AstroVed</a></li>
+<li><a href="https://www.scribd.com/doc/214114786/Transit-Rahu">Rahu Transit Dates 1900-2099 | PDF | History - Scribd</a></li>
+<li><a href="https://panchangbodh.com/planets/planets-combustion">Planets Combustion 2026 - Graha Asta in Vedic Astrology - PanchangBodh</a></li>
+<li><a href="https://palashthhakur.com/2026-astrology-planetary-combustions-and-retrogrades">2026 Astrology: Planetary Combustions and Retrogrades | PALASH THHAKUR</a></li>
+<li><a href="https://www.reddit.com/r/vedicastrology/comments/1qohwkh/confusion_about_venus_combustion_end_date/">Confusion about Venus combustion end date. : r/vedicastrology - Reddit</a></li>
+<li><a href="https://www.youtube.com/watch?v=usZRtppgFN0">Jupiter Combustion 2026: Luck, Wealth &amp; Karma Reset for All Zodiac Signs - YouTube</a></li>
+<li><a href="https://blog.align27.com/your-predictions-jupiter-combust-in-cancer/">Your Predictions - Jupiter Combust in Cancer - align 27</a></li>
+<li><a href="https://timesofindia.indiatimes.com/astrology/planets-transits/jupiter-combust-2026-when-will-the-marriage-season-restart/articleshow/132373079.cms">Jupiter Combust 2026: When Will the Marriage Season Restart? - The Times of India</a></li>
+<li><a href="https://www.youtube.com/watch?v=5XxeYOY-5dc">Jupiter Combustion 2026: Luck, Wealth &amp; Karma Reset for All Zodiac Signs - YouTube</a></li>
+<li><a href="https://www.astroved.com/articles/rahu-ketu-transit-2025-to-2026-predictions-for-12-zodiac-signs">Rahu Ketu Transit 2025 To 2026: Predictions For 12 Zodiac Signs - AstroVed</a></li>
+<li><a href="https://www.dkscore.com/jyotishmedium/rahu-in-dhanishtha-nakshatra-transit-2025-wealth-fame-all-zodiac-signs-impact-2393#:~:text=Rahu%20enters%20Dhanishtha%20Nakshatra%20on,across%20all%20twelve%20zodiac%20signs.">Source 79</a></li>
+<li><a href="https://www.chani.com/blogs/your-guide-to-the-lunar-nodes-in-aquarius-and-leo">Your guide to the lunar nodes in Aquarius and Leo | CHANI</a></li>
+<li><a href="https://starpowered.com/lunar-nodes-in-aquarius-and-leo-stretching-into-collective-moving-past-applause/">Lunar Nodes in Aquarius and Leo: Stretching into Collective, Moving past Applause</a></li>
+<li><a href="https://jessicadavidson.co.uk/2026/07/13/north-node-in-aquarius-july-2026-to-march-2028/">North Node in Aquarius: July 2026 to March 2028 - Jessica Davidson – Astrologer</a></li>
+<li><a href="https://www.yourtango.com/zodiac/zodiac-signs-life-peaceful-end-july-2026">Life Gets A Lot More Peaceful For 4 Zodiac Signs By The End Of July 2026 | YourTango</a></li>
+<li><a href="https://www.reddit.com/r/Advancedastrology/comments/1j8c66k/north_node_in_aquarius_south_node_in_leo/">North Node in Aquarius, South Node in Leo : r/Advancedastrology - Reddit</a></li>
+<li><a href="https://bonniesorsby.com/north-node-in-aquarius-2026-2028/">North Node in Aquarius 2026 Insight &amp; Collective Evolution - Bonnie Sorsby</a></li>
+<li><a href="https://www.youtube.com/watch?v=RxW3skM-AWA">North Node enters Aquarius &amp; THIS is Where FATED CHANGES Are Coming Your Way • All Signs Forecast - YouTube</a></li>
+<li><a href="https://www.astrotalks.online/post/north-node-in-aquarius-south-node-in-leo-the-individual-must-now-serve-the-future-2026-2028">North Node in Aquarius, South Node in Leo: The Individual Must Now Serve the Future (2026-2028) - AstroTalks Online</a></li>
+<li><a href="https://www.chani.com/this-year/key-dates/astrological-key-dates-of-2026">Astrological key dates of 2026 - CHANI</a></li>
+<li><a href="https://www.indastro.com/astrology-reports/rahu-ketu-megatransit.php">Journey of Rahu in Aquarius and Ketu through Leo</a></li>
+<li><a href="https://psychologicallyastrology.com/2025/11/22/venus-also-combust-extreme-fiery-energy-2025-26/">Venus also Combust: Extreme fiery energy 2025-26 - Psychologically Astrology</a></li>
+<li><a href="https://www.youtube.com/watch?v=s1pt9yE0hyw">MARS/VENUS In Combustion Status 10 Dec 2025-31Jan 2026 Firey energy &amp; Relationship All Zodiac Signs - YouTube</a></li>
+<li><a href="https://www.reddit.com/r/AstrologyDiscovery/comments/1u0e89g/june_9_2026_astrology_venus_conjunct_jupiter_luck/">June 9, 2026 Astrology: Venus Conjunct Jupiter, Luck With a Caveat- One of the Best Astrological Days of the Year : r/AstrologyDiscovery - Reddit</a></li>
+<li><a href="https://blog.align27.com/your-predictions-mercury-in-vishakha-meets-combust-venus-in-libra/">Your Predictions – Mercury in Vishakha Meets Combust Venus in Libra</a></li>
+<li><a href="https://timesofindia.indiatimes.com/astrology/planets-transits/jupiter-combust-today-4-zodiac-signs-facing-major-blindspots-this-month/articleshow/132372995.cms">Jupiter Combust Today: 4 Zodiac Signs Facing Major Blindspots This Month</a></li>
+<li><a href="https://consciouscalendars.com/first-mercury-retrograde-2026/">Important Date - First Mercury Retrograde of 2026 - Conscious Calendars</a></li>
+<li><a href="https://astrozindagi.in/transit/mercury-transit/mercury-retrograde-june-2026/">Mercury Retrograde June 2026: The 25-Day Survival Guide For Every Zodiac Sign</a></li>
+<li><a href="https://moondanceastrology.substack.com/p/mercury-retrograde-cancer-2026">The Mercury Retrograde Built for Stillness: June and July 2026 - Moondance Vedic Astrology</a></li>
+<li><a href="https://www.chani.com/this-year/key-dates/2026-astrological-key-dates-mercury-retrogrades">2026 astrological key dates: Mercury retrogrades | CHANI</a></li>
+<li><a href="https://www.space.com/brightest-planets-january-2026-night-sky">Only 2 planets shine in January&#x27;s night sky to the naked eye — here&#x27;s where to look | Space</a></li>
+<li><a href="https://komilla.com/planetary-news.html">Planetary News 2026 | from Komilla Sutton</a></li>
+<li><a href="https://www.quora.com/I-was-laid-off-in-February-2026-When-will-I-get-the-next-job-Does-my-chart-support-a-creative-field-career-such-as-a-writer-My-DOB-is-20-09-99-11-39-AM-Varanasi">I was laid off in February 2026. When will I get the next job? Does my chart support a creative field career such as a writer? My DOB is 20/09/99, 11:39 AM, Varanasi. - Quora</a></li>
+<li><a href="https://www.youtube.com/shorts/4FqxR_P5eYQ">2026 పెళ్లి ముహూర్తాలు ఇవే..! || AnyNews #2026WeddingDates #ShukraMoudhyami</a></li>
+<li><a href="https://www.hindustantimes.com/astrology/horoscope/end-of-venus-combustion-love-in-the-air-as-wedding-season-set-to-commence-101668859195506.html">End of Venus Combustion: Love in the air as wedding season set to commence | Astrology</a></li>
+<li><a href="https://blog.align27.com/planetary-combustions-what-to-do-when-the-heat-rises/">Planetary Combustions - What to do when the Heat Rises - align 27</a></li>
+<li><a href="https://iivs.com/best-wedding-dates-2026-astrology/">Find Auspicious Dates | Best Wedding Dates 2026 Astrology</a></li>
+<li><a href="https://www.magicandmastery.com/blog/venus-retrograde-in-scorpio-and-libra-2026">Venus Retrograde in Scorpio and Libra 2026 - School of Magic &amp; Mastery</a></li>
+<li><a href="https://panchangbodh.com/planets/jupiter-retrograde">Jupiter Retrograde 2026 New Delhi - Dates &amp; Timings - PanchangBodh</a></li>
+<li><a href="https://www.russh.com/every-retrograde-in-2026/">Every planetary retrograde in 2026 and what they mean for you - RUSSH</a></li>
+<li><a href="https://pandoraastrology.com/transits-this-year/planetary-retrogrades-stations/jupiter-station-retrograde/">This Year&#x27;s Jupiter Retrograde And Stations - Pandora Astrology</a></li>
+<li><a href="https://astropuja.com/blog/post/rahu-ketu-gochaara-parihara-homam">Who are affected by Rahu-Ketu Gochara Phala? What Remedies? - Astropuja</a></li>
+<li><a href="https://www.scribd.com/document/948022754/Judy-Hall-Past-Life-Astrology">Unlocking Past Life Karma Through Astrology | PDF - Scribd</a></li>
+<li><a href="https://www.crystals.com/blogs/news/2026-astrological-events-calendar-crystal-guide">2026 Astrological Calendar: Eclipses, Moon Phases &amp; Mercury Retrograde - Crystals.com</a></li>
+<li><a href="https://jessicadavidson.co.uk/2025/12/29/the-astrology-of-2026/">The Astrology of 2026 – Jessica Davidson</a></li>
+</ol>
+</div>
+        </article>
+    </div>
+
+</body>
+</html>

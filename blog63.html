@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 Eclipse Season Remedies</title>
+    <style>
+        :root {
+            --bg-color: #FDF9F1;
+            --text-color: #3E2723;
+            --indian-yellow: #E4A025;
+            --indian-orange: #E65100;
+            --accent-light: #FFECB3;
+            --ref-bg: #FFF3E0;
+        }
+
+        body {
+            font-family: 'Georgia', 'Nirmala UI', 'Mangal', serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(var(--bg-color) 80%, var(--accent-light) 100%);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #FFFFFF;
+            padding: 50px 60px;
+            box-shadow: 0 10px 30px rgba(62, 39, 35, 0.1);
+            border-top: 8px solid var(--indian-orange);
+            border-bottom: 8px solid var(--indian-yellow);
+            border-radius: 4px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed var(--indian-yellow);
+        }
+
+        h1 {
+            color: var(--indian-orange);
+            font-size: 2.5em;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        h2 {
+            color: var(--indian-yellow);
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--indian-orange);
+            padding-left: 15px;
+        }
+
+        h3, h4 {
+            color: var(--indian-orange);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        .intro-text::first-letter {
+            float: left;
+            font-size: 3.5em;
+            line-height: 0.8;
+            padding-right: 8px;
+            padding-top: 4px;
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        ul, ol {
+            margin: 0 0 24px 0;
+            padding-left: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ol {
+            list-style-position: outside;
+            padding-left: 2.2em;
+        }
+
+        ul li, ol li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        ol li {
+            padding-left: 0.35em;
+        }
+
+        ul li::before {
+            content: '\2022';
+            position: absolute;
+            left: 0;
+            top: 0.05em;
+            color: var(--indian-orange);
+            font-size: 1.2em;
+            line-height: 1;
+        }
+
+        ol li::marker {
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        strong {
+            color: var(--indian-orange);
+        }
+
+        .image-placeholder-container {
+            margin: 30px 0;
+            text-align: center;
+            font-style: italic;
+            color: #795548;
+            background-color: var(--accent-light);
+            padding: 20px;
+            border-radius: 4px;
+            border: 1px solid var(--indian-yellow);
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.98em;
+            background-color: #FFFDF8;
+        }
+
+        th, td {
+            border: 1px solid #F0D49B;
+            padding: 10px 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--ref-bg);
+            color: var(--indian-orange);
+        }
+
+        blockquote {
+            margin: 30px 0;
+            padding: 20px 25px;
+            background-color: var(--accent-light);
+            border-left: 5px solid var(--indian-orange);
+            font-style: italic;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px dashed var(--indian-yellow);
+            margin: 32px 0;
+        }
+
+        .references {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: var(--ref-bg);
+            border-radius: 8px;
+            font-size: 0.9em;
+        }
+
+        .references h2, .references h3 {
+            color: var(--text-color);
+            margin-top: 0;
+            border-bottom: 1px solid var(--indian-yellow);
+            padding-bottom: 10px;
+            border-left: 0;
+            padding-left: 0;
+        }
+
+        .references p, .references li {
+            margin-bottom: 12px;
+            word-wrap: break-word;
+        }
+
+        .references a {
+            color: var(--indian-orange);
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>2026 Eclipse Season Remedies</h1>
+        </header>
+
+        <article>
+<h2>1. Introduction: The Power of the Eclipse Season</h2>
+<p class="intro-text">In the sophisticated landscape of Vedic astrology, "eclipse seasons" are more than mere astronomical alignments; they are the universe’s most potent catalysts for accelerated evolution. While standard New and Full Moons occur monthly, eclipses function as "supercharged" lunations. They act as cosmic portals that facilitate radical breakthroughs, emotional epiphanies, and sudden shifts in the structures of our lives—be it our professional status or our most intimate relationships.</p>
+<div class="image-placeholder-container">
+    <img src="blog63_Image.png" alt="2026 eclipse season Pralaya Kaal remedial windows with exact IST start (Grahanarambha), mid (Grahana Madhya) and end (Grahana Moksha) timings: Annular Solar Eclipse February 17 2026 in Aquarius Dhanishta not visible in India, Total Lunar Eclipse March 3 2026 in Leo Purva Phalguni visible in Northeast India with 9-hour Sutak applicable, Total Solar Eclipse August 12 2026 in Cancer Ashlesha at 25 degree 48 minute Gandanta zone with Sun Moon Mercury and exalted Jupiter four-planet cluster not visible in India, Partial Lunar Eclipse August 28 2026 in Aquarius Shatabhisha coinciding with Raksha Bandhan not visible in India so no Sutak and Shubh Muhurat for Rakhi remains valid, Partial Solar Eclipse September 12 2026 in Virgo, Rahu Ketu nodal axis shift from Virgo-Pisces to Leo-Aquarius then Capricorn-Cancer on December 5 2026, Sutak Kaal 9-hour pre-eclipse rules with temple closures and dietary precautions, Ketu and Rahu deity energies with Ganesha and Durga devotion, Maha Mrityunjaya and Chandra Beej mantra japa during Grahana, post-eclipse purification Snana with milk and Daan of white items rice milk sugar silver, remedial astrology Vedic counselling devotion spirituality holistic wellbeing">
+</div>
+<p>The year 2026 serves as a pivotal astrological bridge. Featuring four primary eclipses—two in late winter and two in late summer—this year marks a profound transition between major nodal axes. It is a time designed for "karmic clearing," where the celestial shadows fall precisely where we are required to let go, allowing us to integrate new wisdom before the next great cycle begins.</p>
+<h2>2. The 2026 Eclipse Calendar: Dates to Watch</h2>
+<p>According to technical data from <em>Jagannath Hora</em> and <em>Astro Zindagi</em>, the following dates represent the high-intensity windows of 2026. For those in India, the distinction between global energetic influence and local ritual necessity (<em>Sutak</em>) is critical.</p>
+<table>
+<thead><tr><th>Date (IST)</th><th>Type of Eclipse</th><th>Sign / Nakshatra Placement</th><th>Visibility / Sutak Status in India</th></tr></thead>
+<tbody>
+<tr><td><strong>Feb 17, 2026</strong></td><td>Annular Solar</td><td>Aquarius / Dhanishta</td><td>Not Visible / Not Applicable</td></tr>
+<tr><td><strong>Mar 3, 2026</strong></td><td>Total Lunar</td><td>Leo / Purva Phalguni</td><td>Visible (NE India) / <strong>Sutak Applicable</strong>*</td></tr>
+<tr><td><strong>Aug 12, 2026</strong></td><td>Total Solar</td><td>Cancer / Ashlesha</td><td>Not Visible / Not Applicable</td></tr>
+<tr><td><strong>Aug 28, 2026</strong></td><td>Partial Lunar</td><td>Aquarius / Shatabhisha</td><td>Not Visible / Not Applicable</td></tr>
+</tbody>
+</table>
+<p><em>\</em>Note: Sutak rules for the March 3 eclipse apply only to regions where visibility is recorded (e.g., Assam, Arunachal Pradesh). For the rest of India, and specifically for the August eclipses, daily rituals remain uninterrupted.*</p>
+<h2>3. The Big Picture: Shifting Nodal Axes</h2>
+<p>The year 2026 is defined by the retrograde movement of the Lunar Nodes (Rahu and Ketu). We are currently navigating a complex transition from the Virgo-Pisces axis into the Leo-Aquarius series, culminating in a major "karmic finale" on <strong>December 5, 2026</strong>, when the nodes officially enter the Capricorn-Cancer axis.</p>
+<ul>
+<li><strong>Leo-Aquarius Focus (Primary 2026 Theme):</strong> This axis demands a balance between individual creativity, romance, and the "Self" (Leo) against the needs of the community, collective innovation, and the "Greater Good" (Aquarius).</li>
+<li><strong>Virgo-Pisces Focus (The Healing Echo):</strong> These eclipses conclude a cycle of physical health, logic, and routine (Virgo) versus spiritual surrender, intuition, and the "Heart" (Pisces).</li>
+<li><strong>Incoming Capricorn-Cancer Focus (Dec 2026 Launch):</strong> This shift moves the spotlight to the tension between institutional power and professional structures (Capricorn) versus emotional roots, domestic security, and the home (Cancer).</li>
+</ul>
+<h2>4. Deep Dive: The August 12 Total Solar Eclipse</h2>
+<p>The Total Solar Eclipse on August 12, 2026, is the most significant astrological event of the year. While totality will be visible across Greenland, Iceland, and Spain (earning it the title of the "Great European Eclipse"), its energetic footprint is global and technically profound.</p>
+<p>This eclipse is uniquely potent due to a <strong>four-planet cluster in Cancer</strong> involving the Sun, Moon, Mercury, and an exalted Jupiter. Because Mercury is positioned in its own Nakshatra (<strong>Ashlesha</strong>), this eclipse is a harbinger of hidden truths revealed through <strong>documents, contracts, and technical disclosures</strong>.</p>
+<p>Furthermore, the eclipse occurs at <strong>25° 48′ Cancer</strong>, placing it within the <strong>Gandanta zone</strong>—the volatile "knot" or transition point between water and fire signs. In Vedic thought, this is a zone of karmic intensification where emotional structures must dissolve to make way for the "fire" of new leadership and dharma. Expect revelations that challenge existing hierarchies and demand a return to wisdom and integrity.</p>
+<h2>5. Zodiac Sign Forecasts: How the Eclipses Shake Things Up</h2>
+<p>Based on the house-specific activations noted in <em>Jagannath Hora</em>, here is how the 2026 eclipse seasons will impact your rising or moon sign:</p>
+<h3>Cardinal Signs (Aries, Cancer, Libra, Capricorn)</h3>
+<ul>
+<li><strong>Aries:</strong> You are navigating a shift between your <strong>4th house of domestic stability</strong> and your <strong>11th house of professional networking</strong>. Expect changes in your home life to fuel a reorganization of your long-term gains.</li>
+<li><strong>Cancer:</strong> With the eclipse falling directly in your <strong>1st house of identity</strong>, you are undergoing a personal makeover. This coincides with shifts in your <strong>8th house of joint resources</strong>, requiring you to transform how you handle shared finances.</li>
+<li><strong>Libra:</strong> Your <strong>10th house of career</strong> is under the spotlight, paired with a re-evaluation of your <strong>5th house of creativity and children</strong>. Professional transitions may require more heart-centered engagement.</li>
+<li><strong>Capricorn:</strong> Focus shifts to your <strong>7th house of partnerships</strong> and <strong>2nd house of wealth</strong>. Relationships—both marital and business—will undergo a structural review that impacts your accumulated assets.</li>
+</ul>
+<h3>Fixed Signs (Taurus, Leo, Scorpio, Aquarius)</h3>
+<ul>
+<li><strong>Taurus:</strong> The <strong>3rd house of communication</strong> and <strong>10th house of public reputation</strong> are active. Pervasive shifts in how you speak and travel will lead to a new professional era.</li>
+<li><strong>Leo:</strong> A total review of your <strong>12th house of solitude</strong> and <strong>7th house of partnerships</strong>. You are learning to balance deep spiritual isolation with the wild ride of one-on-one bonds.</li>
+<li><strong>Scorpio:</strong> Your <strong>9th house of worldview</strong> and <strong>4th house of emotional roots</strong> are under review. A shift in your personal philosophy will lead you to switch up how you relate to your family and physical home.</li>
+<li><strong>Aquarius:</strong> Expect intense self-work in your <strong>1st house of identity</strong> while managing your <strong>6th house of wellness and service</strong>. It is time to determine what habits must die for your new self-image to live.</li>
+</ul>
+<h3>Mutable Signs (Gemini, Virgo, Sagittarius, Pisces)</h3>
+<ul>
+<li><strong>Gemini:</strong> The focus is on your <strong>2nd house of finances</strong> and <strong>9th house of higher learning</strong>. Rethink how you define success as you move past antiquated ideas about wealth.</li>
+<li><strong>Virgo:</strong> Your <strong>11th house of networking</strong> and <strong>6th house of routine</strong> are active. Rapid changes in your social circle will require you to level up your physical and mental health.</li>
+<li><strong>Sagittarius:</strong> Transformations occur in your <strong>8th house of joint resources</strong> and <strong>3rd house of communication</strong>. Deep psychological work will change how you express yourself to siblings and colleagues.</li>
+<li><strong>Pisces:</strong> An emotional rollercoaster through the <strong>5th house of romance</strong> and <strong>12th house of spiritual release</strong>. You are being prepared for a greater self-understanding within your most private life.</li>
+</ul>
+<h2>6. The "Sutak" Mystery: Why Visibility Matters</h2>
+<p>A primary concern for the Indian diaspora is the "Sutak" or period of ritual restriction. Vedic astrology follows the rule of <em>“Yatra Drishyam, Tatra Phalam”</em> (Where it is seen, the results are felt).</p>
+<p>The <strong>March 3 Lunar Eclipse</strong> is visible in parts of Northeast India; thus, a nine-hour Sutak applies in those specific regions, involving temple closures and dietary precautions. However, the <strong>August 28 Lunar Eclipse</strong>—which coincides with <strong>Raksha Bandhan</strong>—is entirely invisible in India.</p>
+<p><strong>The Lifestyle Hook:</strong> Because there is <strong>zero Grahan Dosha</strong> in India on August 28, the <em>Shubh Muhurat</em> for tying Rakhi remains fully valid and auspicious. You may celebrate the festival with complete peace of mind, as the ritual sanctity is unaffected by the lunar shadow occurring elsewhere in the world.</p>
+<h2>7. Actionable Insights: Rituals and Remedies for Balance</h2>
+<p>While the August eclipses may not be visible in India, the "Siddha" (empowered) time remains a golden window for internal work.</p>
+<ul>
+<li><strong>Mantra Chanting:</strong> To stabilize the "Manas" (mind), repeat the <em>Maha Mrityunjaya</em> or <em>Chandra Beej</em> mantras during the eclipse hours.</li>
+<li><strong>Charity (Daan):</strong> Eclipses amplify the power of giving. Donate white items—rice, milk, sugar, or silver—on eclipse days to balance lunar energies.</li>
+<li><strong>Remedial Mirroring:</strong> To clear negative mental impressions, look at your reflection in a bowl of milk. To complete the remedy, this milk must be gifted to a <strong>white dog or cow</strong>, specifically, to honor the Vedic tradition of mirroring and release.</li>
+<li><strong>Emotional Release:</strong> Use the partial phase of the eclipse to write down limiting habits on paper. Once the eclipse concludes globally, destroy the paper to symbolize the dissolution of the old self.</li>
+</ul>
+<h2>8. Conclusion: Embracing the Transformation</h2>
+<p>The 2026 eclipse cycle is not a reason for panic, but a call for integration. It is a year of structural reorganization where the "mind of all beings"—represented by the Moon—is being recalibrated. By observing the technical revelations of the August 12 solar event and respecting the cultural sanctity of the August 28 lunar event, you can navigate these cosmic storms with both grace and strategy. Remember: eclipses don't just cast shadows; they reveal the light that remains when the temporary obscurations of life are stripped away.</p>
+
+<div class="references">
+<h2>Sources</h2>
+<ol>
+<li><a href="https://jagannathhora.com/eclipse-2026-complete-guide-vedic-astrology/">Eclipse 2026 Complete Guide: All Four Eclipses, Dates, Effects for 12 Ascendants</a></li>
+<li><a href="https://astrozindagi.in/festivals/2026/chandra-grahan-on-raksha-bandhan-2026/">Chandra Grahan on Raksha Bandhan 2026: Time, Effects, Zodiac Predictions</a></li>
+<li><a href="https://astrozindagi.in/festivals/2026/chandra-grahan-2026/">Chandra Grahan 2026: Date, Timing &amp; No Sutak in India Facts - Astro Zindagi</a></li>
+<li><a href="https://www.astroved.com/wp-content/uploads/2025/02/rahu-ketu-transit-2025-to-2026-complete-report.pdf">Rahu Ketu transit May 2025 to December 2026 - AstroVed</a></li>
+<li><a href="https://m.economictimes.com/astrology/others/august-2026-hindu-festival-calendar-complete-list-of-ekadashi-vrat-teej-raksha-bandhan-eclipses-important-dates/amp_articleshow/132604037.cms">August 2026 Hindu Festival Calendar: Complete List of Ekadashi, Vrat, Teej, Raksha Bandhan, Eclipses &amp; Important Dates - The Economic Times</a></li>
+<li><a href="https://www.vedicblessing.com/blog/rahu-ketu-transit-2026-when-it-happens-which-rashis-are-affected-and-simple-vedic-remedies-for-a-blessed-year-ahead">Rahu-Ketu Transit 2026: Rashi Effects, Dates &amp; Remedies - Vedic Blessing</a></li>
+<li><a href="https://astrologyayurveda.com/blog/astrological-transits-2026/">Astrological Transits 2026: Key Planetary Shifts Ahead | A&amp;A</a></li>
+<li><a href="https://jagannathhora.com/rahu-ketu-transit-capricorn-cancer-2026-2028/">Rahu-Ketu Transit in Capricorn-Cancer 2026-2028: Exact Dates, Nakshatra Phases, Eclipse Connection &amp; Complete Analysis - Jagannath Hora</a></li>
+<li><a href="https://pebblegalaxy.blog/2025/11/03/moon-in-2026-navigating-lunar-wisdom-through-indian-astrology/">Moon in 2026: Navigating Lunar Wisdom Through Indian Astrology - Between Stars &amp; Silence - Pebble&#x27;s Galaxy: a blog.</a></li>
+<li><a href="https://www.astrosage.com/2026/rahu-transit-2026.asp">Rahu Transit 2026: Impact &amp; Remedies! - AstroSage</a></li>
+<li><a href="https://timesofindia.indiatimes.com/astrology/planets-transits/solar-and-lunar-eclipse-2026-dates-timings-visibility-in-india-and-check-complete-guide/articleshow/127601136.cms">Solar and Lunar Eclipse 2026: Dates, Timings, Visibility in India and Check Complete Guide</a></li>
+<li><a href="https://www.womansworld.com/life/horoscopes/solar-eclipse-and-lunar-eclipse-horoscopes-by-zodiac-sign">2026 Solar Eclipse and Lunar Eclipse Horoscopes by Zodiac Sign | Woman&#x27;s World</a></li>
+<li><a href="https://zendaruniverse.com/updates/august-2026-night-sky-india-perseids-planet-parade/">August 2026 Night Sky India: Perseids &amp; Planet Parade - Zendar Universe</a></li>
+<li><a href="https://www.astroved.com/reports/rahu-ketu-transit">Rahu Ketu Transit Report 2025 to 2026 | AstroVed.com</a></li>
+<li><a href="https://m.economictimes.com/astrology/others/rahuketu-transit-2026-4-zodiac-signs-experience-destiny-shifts/articleshow/129605814.cms">Rahu–Ketu Transit 2026: 4 Zodiac Signs Experience Destiny Shifts - The Economic Times</a></li>
+<li><a href="https://omai.app/blog/rahu-ketu-transit-2026.html">Rahu-Ketu Transit 2026: Capricorn &amp; Cancer Effects - Om.AI</a></li>
+<li><a href="https://www.reddit.com/r/vedicastrologyexperts/comments/1sj6k1o/rahuketu_transit_dec_2026/">Rahu–Ketu Transit Dec 2026... : r/vedicastrologyexperts - Reddit</a></li>
+<li><a href="https://knowyourplanets.quora.com/https-accurateastrologyreading-quora-com-Rahu-Ketu-Transit-2025-2026-Virgo-Ascendant-Forecast">Rahu–Ketu Transit 2025–2026: Virgo Ascendant Forecast - Know Your Planets (Astrology)</a></li>
+<li><a href="https://grokipedia.com/page/august_2026_lunar_eclipse">August 2026 lunar eclipse - Grokipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/August_2026_lunar_eclipse">August 2026 lunar eclipse - Wikipedia</a></li>
+<li><a href="https://earthsky.org/astronomy-essentials/partial-lunar-eclipse-of-the-august-27-28-2026/">Partial lunar eclipse of the August 27-28 full Sturgeon Moon - EarthSky</a></li>
+<li><a href="https://www.timeanddate.com/eclipse/solar/2026-august-12">Total Solar Eclipse on August 12, 2026</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Solar_eclipse_of_August_12,_2026">Solar eclipse of August 12, 2026 - Wikipedia</a></li>
+<li><a href="https://www.skyatnightmagazine.com/advice/solar-lunar-eclipse-guide-when-where">When is the next eclipse? Solar and lunar eclipses 2026 - BBC Sky at Night Magazine</a></li>
+<li><a href="https://www.almanac.com/eclipses">Solar and Lunar Eclipse Dates for 2026 and 2027 - Farmer&#x27;s Almanac</a></li>
+<li><a href="https://www.chani.com/this-year/key-dates/2026-astrological-key-dates-eclipses">2026 astrological key dates: eclipses - CHANI</a></li>
+<li><a href="https://www.scribd.com/document/482430548/Rahu-Ketu-Transit">Rahu Ketu Transit Dates 2025-2030 | PDF - Scribd</a></li>
+<li><a href="https://ahobilamutt.org/events/">Events from April 4 – July 18 – Ahobilamutt</a></li>
+<li><a href="https://parks.canada.ca/pn-np/on/pelee/activ/calendrier-calendar">Calendar of events - Point Pelee National Park - Parks Canada</a></li>
+<li><a href="https://www.timeanddate.com/holidays/us/rosh-hashana">Rosh Hashana 2026 in the United States - Time and Date</a></li>
+<li><a href="https://www.timeanddate.com/countdown/to?msg=buy_ativan_now_one_step_health%27s%20birthday&amp;year=2026&amp;month=9&amp;day=12&amp;hour=0&amp;min=0&amp;sec=0&amp;fromtheme=birthday">Countdown to Sep 12, 2026 in New York - Time and Date</a></li>
+<li><a href="https://www.space.com/stargazing/lunar-eclipses/august-2026-lunar-eclipse-everything-you-need-to-know-about-the-96-percent-blood-moon">August 2026 lunar eclipse: Everything you need to know about the 96% &#x27;blood moon&#x27;</a></li>
+<li><a href="https://www.youtube.com/watch?v=miJggl8k324">Aquarius in 2026 :: Discover the Fate with Rahu Ketu Transit! - YouTube</a></li>
+<li><a href="https://theskylive.com/lunar-eclipses/2026-08-28">Partial Lunar Eclipse of August 28, 2026 - TheSkyLive</a></li>
+<li><a href="https://science.nasa.gov/moon/eclipses/">Eclipses and the Moon - NASA Science</a></li>
+<li><a href="http://www.theskyscrapers.org/the-total-lunar-eclipse-experience-2026">The Total Lunar Eclipse Experience - Skyscrapers, Inc.</a></li>
+<li><a href="https://optycs.aapt.org/events/">OPTYCs Events</a></li>
+<li><a href="https://www.betemunah.org/eclipse.html">Eclipse and Comets - The Watchman</a></li>
+<li><a href="https://www.almanac.com/august-2026-lunar-eclipse">August 2026 Lunar Eclipse: When and Where to See It - Farmer&#x27;s Almanac</a></li>
+<li><a href="https://www.scribd.com/document/612090775/Brihat-Horoscope">Comprehensive Brihat Horoscope Analysis | PDF | Planets In Astrology - Scribd</a></li>
+<li><a href="https://jagannathhora.com/festival-calendar-2026-hindu-festivals/">2026 Hindu Festival Calendar: Complete Guide (75+ National &amp; Regional Festivals)</a></li>
+<li><a href="https://www.timeanddate.com/eclipse/in/@5505969?iso=20260828">August 28, 2026 Partial Lunar Eclipse in India Ravine, Nevada, USA - Time and Date</a></li>
+<li><a href="https://starwalk.space/en/news/partial-lunar-eclipse-august-28-2026">Partial Lunar Eclipse August 2026: 96% of the Moon Covered</a></li>
+<li><a href="https://nightsky.jpl.nasa.gov/events/121276/">Night Sky Network Muskegon Astronomical Society | Star Party/Open House</a></li>
+<li><a href="https://optycs.aapt.org/CPDW/">Continuing Professional Development Workshops - OPTYCs</a></li>
+<li><a href="https://info.mysticstamp.com/learn/2026-new-issue-stamps/">2026 New Issue Stamps | Mystic Stamp Discovery Center</a></li>
+<li><a href="https://www.ballroommarfa.org/program/space-sightings/">Space Sightings - Ballroom Marfa</a></li>
+<li><a href="https://divinesansar.com/blogs/guide/are-rahu-and-ketu-real-planets">Are Rahu and Ketu Real Planets? Meaning + UAE Guide - Divine Sansar</a></li>
+<li><a href="https://www.scribd.com/document/931763840/Sarina-Div-Kundli">Vedic Astrology Chart for Sarina Div | PDF - Scribd</a></li>
+<li><a href="https://www.timeanddate.com/holidays/israel/rosh-hashana">Rosh Hashana 2026 in Israel - Holidays - Time and Date</a></li>
+<li><a href="https://www.timeanddate.com/holidays/australia/rosh-hashana">Rosh Hashana 2026 in Australia - Time and Date</a></li>
+<li><a href="https://www.timeanddate.com/holidays/canada/rosh-hashana">Rosh Hashana 2026 in Canada - Time and Date</a></li>
+<li><a href="https://www.timeanddate.com/holidays/argentina/rosh-hashana">Rosh Hashana 2026 in Argentina - Time and Date</a></li>
+<li><a href="https://www.timeanddate.com/holidays/croatia/rosh-hashana">Rosh Hashana 2026 in Croatia - Time and Date</a></li>
+<li><a href="https://science.nasa.gov/eclipses/future-eclipses/total-solar-eclipse-on-august-12-2026/">Total Solar Eclipse on August 12, 2026 - NASA Science</a></li>
+<li><a href="https://www.rmg.co.uk/stories/space-astronomy/how-see-12-august-2026-partial-solar-eclipse">How to see the 12 August 2026 partial solar eclipse - Royal Museums Greenwich</a></li>
+<li><a href="https://www.timeanddate.com/eclipse/2026">Solar and Lunar Eclipses Worldwide – 2026 - Time and Date</a></li>
+<li><a href="https://nationaleclipse.com/cities/lists/2026-partial-solar-eclipse-cities.html">2026 Partial Solar Eclipse Data for U.S. and World Cities</a></li>
+<li><a href="https://www.bfloparks.org/event/eclipse/">Total Solar Eclipse | Events - Buffalo Olmsted Parks Conservancy</a></li>
+<li><a href="https://ohiodnr.gov/wps/portal/gov/odnr/home/news-and-events/all-events/parks-wc-events/NE-Ohio/TastingintheWoodsFindleySP-9-12-26">Tasting in the Woods - Findley | Ohio Department of Natural Resources</a></li>
+<li><a href="https://greenburghlibrary.libcal.com/calendar/Libraryevents?&amp;t=d&amp;d=0000-00-00&amp;cal%5B%5D=7925&amp;ct%5B%5D=50608">Library Events - Greenburgh Public Library LibCal - Greenburgh Public Library</a></li>
+<li><a href="https://blount.as.ua.edu/events/week/2026-09-06/">Events for week of September 6, 2026 - The Blount Scholars Program</a></li>
+<li><a href="https://ohiodnr.gov/wps/portal/gov/odnr/home/news-and-events/all-events/Natural-Areas-and-Preserves/SW%20Ohio/sqm-littlemiami-09-12-2026">Stream Quality Monitoring Workshop - Little Miami River | Ohio Department of Natural Resources</a></li>
+<li><a href="https://w.paducahky.gov/events/day/2026-09-12">Saturday, September 12, 2026 - City of Paducah</a></li>
+<li><a href="https://orbridge.com/groups/tour_details/tcu_sanjuanislands_2026">Pacific Northwest Discovery The San Juan Islands, Whales, Wildlife and Coastal Culture - Orbridge</a></li>
+<li><a href="https://www.noboleisvineyards.com/event/solar-eclipse-at-noboleis-vineyards">Solar Eclipse in the Vineyard</a></li>
+<li><a href="https://www.prnewswire.com/news-releases/princess-cruises-to-sail-largest-ever-europe-cruise-and-cruisetour-season-in-2026-302141810.html">Princess Cruises to Sail Largest-Ever Europe Cruise and Cruisetour Season in 2026</a></li>
+<li><a href="https://www.princess.com/news/news-releases/2024/05/princess-cruises-to-sail-largest-ever-europe-cruise-and-cruisetour-season-in-2026">Princess Cruises to Sail Largest-Ever Europe Cruise and Cruisetour Season in 2026</a></li>
+<li><a href="https://www.astroswamig.com/planetary-transits/moon">Moon Transit 2026 Date and Time - Astroswamig</a></li>
+<li><a href="https://iist.ac.in/">Indian Institute of Space Science and Technology: Home</a></li>
+<li><a href="https://traveltradejournal.com/princess-cruises-to-sail-largest-ever-europe-cruise-and-cruise-tour-season-in-2026/">Princess Cruises to sail largest-ever Europe cruise and cruise tour season in 2026</a></li>
+<li><a href="https://www.farmersalmanac.com/full-moon-horoscope-july">Buck Moon Zodiac 2026: July Full Moon Date, Sign, and Planning Calendar</a></li>
+<li><a href="https://thomsonsafaris.com/safaris/founders-safari/">Founders&#x27; Safari in Tanzania, Africa - Thomson Safaris</a></li>
+<li><a href="https://www.columbusonthecheap.com/events/view-date/08-28-2026/">Calendar of Events in Columbus - Columbus on the Cheap</a></li>
+<li><a href="https://www.astrovoice.ai/blog/uranus-retrograde-on-september-10-2026-rethinking-progress-across-the-zodiac/">Uranus Retrograde on September 10, 2026: Rethinking Progress Across the Zodiac. - Astro Voice AI - Blog</a></li>
+<li><a href="https://timesofindia.indiatimes.com/entertainment/telugu/movies/news/mirai-teja-sajja-hopes-for-avengers-style-union-of-indian-superheroes-minnal-murali-lokah-hanuman-and-more/articleshow/123824824.cms">&#x27;Mirai&#x27;: Teja Sajja hopes for &#x27;Avengers&#x27; style union of Indian superheroes &#x27;Minnal Murali&#x27;, &#x27;Lokah&#x27;, &#x27;HanuMan&#x27; and more | - The Times of India</a></li>
+<li><a href="https://thegreenmanstore.com/2026-astrology-forecast-major-transits-eclipses-retrogrades-and-a-year-of-change/">2026 Astrology Forecast: Major Transits, Eclipses, Retrogrades, and a Year of Change</a></li>
+<li><a href="https://www.ace.aaa.com/travel/advocacy/upcoming-solar-eclipses.html">How to See Upcoming Solar Eclipses in 2026 &amp; Beyond - AAA</a></li>
+<li><a href="https://dubaitelescope.com/the-next-solar-eclipse/">When is the Next Solar Eclipse? Details Here! - Dubai Telescope</a></li>
+<li><a href="https://www.cbsnews.com/live-updates/watch-total-solar-eclipse-2024/">Missed the 2024 total solar eclipse? Watch video of moments from the event here.</a></li>
+<li><a href="https://www.space.com/16830-full-moon-calendar.html">Full moon calendar 2026: When to see the next full moon | Space</a></li>
+<li><a href="https://www.helioclipse.com/en/blog/lunar-nodes-eclipse-seasons-explained-simple/">Lunar nodes and eclipse seasons explained simply - Helioclipse</a></li>
+<li><a href="https://electronics.alibaba.com/product/solar-lunar-eclipses">Best Eclipse Viewing Products for 2026 Total Solar &amp; Lunar Eclipses</a></li>
+<li><a href="https://www.nationalparksatnight.com/monument-valley-geminids-2026">Monument Valley &amp; the Geminids 2026 - National Parks at Night</a></li>
+<li><a href="https://ticketbud.com/events/0421189e-816e-11f1-ba93-42010a717021">ECLIPSE- THE ULTIMATE JOURNEY TRIBUTE | Buy Tickets in Red Lion | Ticketbud</a></li>
+<li><a href="https://www.port-montreal.com/en/cruises/arrivals-and-departures">Arrivals and departures</a></li>
+<li><a href="https://www.mizzou.com/travel">Touring Tigers - Mizzou Alumni Association</a></li>
+<li><a href="https://journalofsupplychain.com/">Supply Chain News | Latest and Breaking News Updates</a></li>
+</ol>
+</div>
+        </article>
+    </div>
+
+</body>
+</html>
