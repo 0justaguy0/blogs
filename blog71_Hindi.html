@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>गुरु अस्त उपाय</title>
+    <style>
+        :root {
+            --bg-color: #FDF9F1;
+            --text-color: #3E2723;
+            --indian-yellow: #E4A025;
+            --indian-orange: #E65100;
+            --accent-light: #FFECB3;
+            --ref-bg: #FFF3E0;
+        }
+
+        body {
+            font-family: 'Georgia', 'Nirmala UI', 'Mangal', serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(var(--bg-color) 80%, var(--accent-light) 100%);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #FFFFFF;
+            padding: 50px 60px;
+            box-shadow: 0 10px 30px rgba(62, 39, 35, 0.1);
+            border-top: 8px solid var(--indian-orange);
+            border-bottom: 8px solid var(--indian-yellow);
+            border-radius: 4px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed var(--indian-yellow);
+        }
+
+        h1 {
+            color: var(--indian-orange);
+            font-size: 2.5em;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        h2 {
+            color: var(--indian-yellow);
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--indian-orange);
+            padding-left: 15px;
+        }
+
+        h3, h4 {
+            color: var(--indian-orange);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        .intro-text::first-letter {
+            float: left;
+            font-size: 3.5em;
+            line-height: 0.8;
+            padding-right: 8px;
+            padding-top: 4px;
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        ul, ol {
+            margin: 0 0 24px 0;
+            padding-left: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ol {
+            list-style-position: outside;
+            padding-left: 2.2em;
+        }
+
+        ul li, ol li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        ol li {
+            padding-left: 0.35em;
+        }
+
+        ul li::before {
+            content: '\2022';
+            position: absolute;
+            left: 0;
+            top: 0.05em;
+            color: var(--indian-orange);
+            font-size: 1.2em;
+            line-height: 1;
+        }
+
+        ol li::marker {
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        strong {
+            color: var(--indian-orange);
+        }
+
+        .image-placeholder-container {
+            margin: 30px 0;
+            text-align: center;
+            font-style: italic;
+            color: #795548;
+            background-color: var(--accent-light);
+            padding: 20px;
+            border-radius: 4px;
+            border: 1px solid var(--indian-yellow);
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.98em;
+            background-color: #FFFDF8;
+        }
+
+        th, td {
+            border: 1px solid #F0D49B;
+            padding: 10px 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--ref-bg);
+            color: var(--indian-orange);
+        }
+
+        blockquote {
+            margin: 30px 0;
+            padding: 20px 25px;
+            background-color: var(--accent-light);
+            border-left: 5px solid var(--indian-orange);
+            font-style: italic;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px dashed var(--indian-yellow);
+            margin: 32px 0;
+        }
+
+        .references {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: var(--ref-bg);
+            border-radius: 8px;
+            font-size: 0.9em;
+        }
+
+        .references h2, .references h3 {
+            color: var(--text-color);
+            margin-top: 0;
+            border-bottom: 1px solid var(--indian-yellow);
+            padding-bottom: 10px;
+            border-left: 0;
+            padding-left: 0;
+        }
+
+        .references p, .references li {
+            margin-bottom: 12px;
+            word-wrap: break-word;
+        }
+
+        .references a {
+            color: var(--indian-orange);
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>गुरु अस्त उपाय</h1>
+        </header>
+
+        <article>
+<p class="intro-text">वैदिक ज्योतिष के आकाशमंडल में देवगुरु बृहस्पति को सर्वाधिक शुभत्व और दैवीय कृपा का कारक माना गया है। वर्ष 2026 में एक अत्यंत दुर्लभ और गूढ़ ज्योतिषीय घटना होने जा रही है—<strong>गुरु अस्त (Jupiter Combust)</strong>। जब ज्ञान, भाग्य और संतान के कारक गुरु सूर्य के अत्यंत समीप आ जाते हैं, तो सूर्य का प्रचंड तेज गुरु की दृश्य शक्ति को 'अस्त' कर देता है।</p>
+<div class="image-placeholder-container">
+    <img src="blog71_Image.png" alt="आगामी गुरु (बृहस्पति) का अस्त कल 2026 कर्क (कर्क) राशि में सटीक IST आरंभ और समाप्ति समय और मुख्य उपचारात्मक खिड़कीयों के साथ: अस्त प्रारंभ मंगलवार 14 जुलाई 2026 को लगभग 11:47 बजे IST जब कर्क राशि में उच्च गुरु सूर्य के निकट आते हैं और अस्त शुरू होता है जिससे उनका बाह्य संरक्षा विराम हो जाता है, कर्क संक्रांति 16 जुलाई 2026 को दक्षिणायन का आरंभ होता है जो तपस अध्यात्म निरीक्षण शास्त्रीय अध्ययन और आंतरिक दृष्टि के लिए है, दोहरा अंधा विंडो 13 से 25 जुलाई 2026 के बीच जब गुरु अस्त है और बुध भी वर्की और अस्त है जिससे ज्ञान और संवाद दोनों अस्पष्ट हो जाते हैं इसलिए कानूनी प्रतिबद्ध बड़े वित्तीय वार्ता और उच्च दांव प्रवचन से बचें, गहन अस्त का शिखर 12 अगस्त 2026 को जब गुरु सूर्य के सबसे निकट हैं और दैवीय ज्ञान सबसे अधिक अस्पष्ट है, गुरु उदय हेलियकल उदय और अस्त समाप्ति लगभग 8 सितंबर 2026 को सुबह 06:52 बजे IST जब गुरु भोर से पहले प्रताह के तारे के रूप में पुनः प्रकट होते हैं और उनका कृपायुक्त हंस योग संरक्षा फिर शुरू हो जाती है जिससे शुभ विवाह मुहूर्त फिर शुरू होता है। गुरु ग्रह दोष उपाय विवाह में देरी संतान और पुत्र शिक्षा और वित्तीय अनुशासन के लिए। उपाय: गुरु बीज मंत्र ओम् ग्राम ग्रीम ग्रोम् सह गुरवे नमह गुरुवार सुबह 108 बार, विष्णु सहस्रनाम पाठ, हयग्रीव और दत्तात्रेय आराधना, गुरुवार व्रत पीले पीले चने के दाल बेसन पीले कपड़े पीले फूल और हल्दी के साथ, पुखराज पुख्कराज रत्न कठिन ज्योतिषीय परीक्षा से पहले और विकल्प पीला टोपाज़ या सिट्रीन, गुरुवार उपवास और गुरु पूजा और भगवान विष्णु ब्रह्मा और दत्तात्रेय आराधना, माता पिता गुरु और बजुर्गुरु का सम्मान करना सबसे असर उपाय, नदी या समुद्र का दर्शन और समुद्र नमक के साथ लूणा स्नान, घर के उत्तर पूर्व ईशान कोने को साफ और व्यवस्थित रखना। देव ऊर्जा भगवान महाविष्णु दत्तात्रेय हयग्रीव और देवों के गुरु भृगु महर्षि अंगिरस के पुत्र। आयुर्वेद मज्जा धातु मेदा धातु कफ पित्त संतुलन ब्रह्मी शंखपुष्पी अश्वगंधा हल्दी और आमला के साथ। सावधान और निर्णय में विश्वास बहाल शिक्षा पुत्र विवाह और वित्तीय अनुशासन के लिए वैदिक परामर्श भक्ति आध्यात्मता और समग्र कल्याण। जुलाई से सितंबर 2026 ग्रह गोचर ऊर्जा और गुरु अस्त गोचर के लिए उपाय।">
+</div>
+<h3>1. गुरु अस्त: विवेक की परीक्षा और अंतर्मुखी चेतना का समय</h3>
+<p>2026 का गुरु अस्त सामान्य से भिन्न है। इस दौरान गुरु अपनी उच्च राशि <strong>'कर्क' (Cancer)</strong> में विराजमान रहेंगे। ज्योतिषीय दृष्टिकोण से यह <strong>'उच्चत्व और अस्तत्व'</strong> का एक अनूठा विरोधाभास है। उच्च के गुरु में अपार आंतरिक शक्ति होती है, किंतु सूर्य के प्रभाव से उनका बाहरी प्रकाश ओझल हो जाता है। यह समय ज्ञान के लुप्त होने का नहीं, बल्कि उसके परिमार्जन (Refinement) और परीक्षण का है। यह <strong>'आत्म-साधना का संधिकाल'</strong> है, जहाँ हमें बाहरी विस्तार के बजाय अपनी आंतरिक चेतना और धर्म-परायणता पर ध्यान केंद्रित करना चाहिए।</p>
+<h3>2. समय-सारणी: गुरु अस्त 2026 की महत्वपूर्ण तिथियां</h3>
+<p>विभिन्न पंचांग गणनाओं के आधार पर गुरु के अस्त और उदय की अवधि इस प्रकार रहेगी:</p>
+<ul>
+<li><strong>गुरु अस्त प्रारंभ:</strong> 15 जुलाई 2026 (कुछ गणनाओं के अनुसार 14 जुलाई)।</li>
+<li><strong>सर्वाधिक संवेदनशील समय (Double Blindspot):</strong> 13 जुलाई से 25 जुलाई।</li>
+<li><em>विशेष सावधानी:</em> इस कालखंड में गुरु (विवेक) के साथ-साथ बुध (तर्क और संवाद) भी वक्री या अस्त स्थिति में रहेंगे। यह समय 'दोहरे अंधेपन' जैसा है, जहाँ निर्णय लेने की क्षमता और संचार दोनों भ्रमित हो सकते हैं।</li>
+<li><strong>गुरु उदय (शुभ कार्यों की वापसी):</strong> 12 या 13 अगस्त 2026।</li>
+</ul>
+<p><strong>महत्वपूर्ण चेतावनी:</strong> इस अवधि में 'हिट-एंड-होप' (तुक्का भिड़ाने) की प्रवृत्ति से बचें। अंध-आशावाद के आधार पर लिए गए निर्णय भविष्य में भारी पड़ सकते हैं।</p>
+<h3>3. विवाह और मांगलिक कार्यों पर प्रभाव</h3>
+<p>सनातन धर्म में गुरु को वैवाहिक स्थिरता और सुख का मुख्य आधार माना जाता है। गुरु के आशीर्वाद (गुरु-बल) के बिना विवाह जैसे पवित्र संस्कार पूर्णता प्राप्त नहीं करते।</p>
+<ul>
+<li><strong>वर्जित कार्य:</strong> विवाह, सगाई, गृह प्रवेश, उपनयन संस्कार और बड़े निवेश।</li>
+<li><strong>जोखिम:</strong> गुरु के अस्त होने से दैवीय संरक्षण में कमी आती है, जिससे परिवारों के बीच असहमति पैदा हो सकती है या रिश्तों में छिपे 'चेतावनी के संकेतों' (Warning Signs) को नजरअंदाज करने की आशंका बढ़ जाती है।</li>
+</ul>
+<p><strong>भावी जोड़ों (Couples) के लिए सकारात्मक मार्गदर्शन:</strong> यह समय केवल रुकने का नहीं, बल्कि भविष्य की सुदृढ़ नींव रखने का है:</p>
+<ul>
+<li>विवाह की तिथियों पर गहन चर्चा करें और पंचांग अनुसार मुहूर्त चुनें।</li>
+<li>पारिवारिक अपेक्षाओं, वित्तीय योजना और भविष्य के लक्ष्यों पर संवाद बढ़ाएं।</li>
+<li>आवश्यक दस्तावेजों की तैयारी करें, लेकिन अंतिम रस्में गुरु उदय के बाद ही संपन्न करें।</li>
+</ul>
+<h3>4. राशि अनुसार प्रभाव: किसे लाभ, किसे सावधानी?</h3>
+<p>गुरु का कर्क राशि में उच्च होकर अस्त होना सभी राशियों के जीवन को अलग-अलग भावों से प्रभावित करेगा।</p>
+<table>
+<thead><tr><th>श्रेणी</th><th>राशियां</th><th>मुख्य प्रभाव और की-वर्ड्स (Keywords)</th></tr></thead>
+<tbody>
+<tr><td><strong>भाग्यशाली (Beneficiaries)</strong></td><td>वृषभ, कन्या, तुला, वृश्चिक, मीन</td><td><strong>वृषभ:</strong> नेटवर्किंग लाभ; <strong>कन्या:</strong> आय में वृद्धि; <strong>तुला:</strong> करियर प्रतिष्ठा; <strong>वृश्चिक:</strong> आध्यात्मिक यात्रा; <strong>मीन:</strong> रचनात्मक सफलता।</td></tr>
+<tr><td><strong>सावधानी (Cautions)</strong></td><td>मिथुन, सिंह, धनु, कुंभ, मकर</td><td><strong>मिथुन:</strong> निवेश से बचें; <strong>सिंह:</strong> व्यय पर नियंत्रण; <strong>धनु:</strong> जोखिम भरे निर्णय न लें; <strong>कुंभ:</strong> स्वास्थ्य सतर्कता; <strong>मकर:</strong> साझेदारी में विवाद संभव।</td></tr>
+<tr><td><strong>विशेष उल्लेख (Golden Year)</strong></td><td><strong>कर्क (Cancer)</strong></td><td>आपकी ही राशि में गुरु उच्च के हैं। यह व्यक्तित्व विकास का <strong>'स्वर्ण वर्ष'</strong> है। अस्त काल आपके लिए 'आंतरिक शोधन' का समय है, जिसके बाद आपका प्रभाव और बढ़ेगा।</td></tr>
+</tbody>
+</table>
+<h3>5. वैश्विक और सामाजिक प्रभाव: मानवता की ओर वापसी</h3>
+<p>वैश्विक स्तर पर गुरु का कर्क में होना 'हसल कल्चर' (Hustle Culture) से हटकर सुरक्षित और मानवीय मूल्यों की ओर लौटने का संकेत है:</p>
+<ul>
+<li><strong>रियल एस्टेट:</strong> बहु-पीढ़ीगत और पर्यावरण-अनुकूल आवास (Eco-conscious housing) की मांग बढ़ेगी। हाउसिंग मार्केट में स्थिरता और सामूहिकता पर जोर दिया जाएगा।</li>
+<li><strong>कृषि और जल:</strong> महासागरों के स्वास्थ्य और खाद्य सुरक्षा (Food Security) पर बड़े अंतरराष्ट्रीय समझौते हो सकते हैं। जैविक खेती और प्राचीन बीजों के संरक्षण को बढ़ावा मिलेगा।</li>
+<li><strong>स्वास्थ्य:</strong> हीलिंग आर्ट्स (Somatic Healing) और मानसिक स्वास्थ्य के क्षेत्र में एक पुनर्जागरण देखा जाएगा।</li>
+</ul>
+<h3>6. गुरु देव को प्रसन्न करने के अचूक उपाय (Remedies)</h3>
+<p>गुरु की ऊर्जा को सुदृढ़ करने और उनके शुभत्व की वृद्धि के लिए निम्नलिखित शास्त्रोक्त उपाय करें:</p>
+<ul>
+<li><strong>मंत्र साधना:</strong> प्रतिदिन 108 बार <strong>"ॐ ग्रां ग्रीं ग्रौं स: गुरवे नम:"</strong> का जाप करें। यह मंत्र अंतरात्मा को जागृत करता है।</li>
+<li><strong>दान-धर्म:</strong> गुरुवार को पीली वस्तुओं (चना दाल, हल्दी, केले, केसर, पीला वस्त्र) का दान ब्राह्मणों या जरूरतमंदों को करें।</li>
+<li><strong>गुरु सेवा:</strong> अपने माता-पिता, शिक्षकों और बुजुर्गों का हृदय से सम्मान करें। उनकी सेवा ही सबसे बड़ा 'गुरु-उपाय' है।</li>
+<li><strong>धार्मिक स्वाध्याय:</strong> इस शांत अवधि में <strong>श्रीमद्भगवद्गीता</strong> या <strong>विष्णु सहस्रनाम</strong> का पाठ करना परम कल्याणकारी है।</li>
+</ul>
+<p><strong>सख्त सावधानी:</strong> गुरु अस्त के दौरान 'पीला पुखराज' (Yellow Sapphire) रत्न किसी योग्य और अनुभवी ज्योतिषी के परामर्श के बिना कदापि धारण न करें।</p>
+<h3>7. निष्कर्ष और मुख्य सीख</h3>
+<p>2026 का गुरु अस्त हमें यह सिखाता है कि मौन में भी शक्ति होती है। जब बाहरी जगत में मार्ग धुंधला दिखाई दे, तब अपने भीतर के गुरु को जागृत करना चाहिए।</p>
+<ol>
+<li><strong>धैर्य और धर्म:</strong> जल्दबाजी में लिए गए निर्णय 'अंध-आशावाद' का परिणाम हो सकते हैं, अत: धैर्य रखें।</li>
+<li><strong>शिक्षा और चरित्र:</strong> अपनी शिक्षा को केवल जीविका का साधन नहीं, बल्कि चरित्र निर्माण का माध्यम बनाएं।</li>
+<li><strong>आंतरिक परिपक्वता:</strong> गुरु उदय (13 अगस्त) के बाद आपकी यही परिपक्वता सफलता के द्वार खोलेगी।</li>
+</ol>
+<p><em>"शिक्षा का अंत चरित्र है।"</em> इस विचार को आत्मसात करते हुए गुरु अस्त की इस अवधि को आत्म-मंथन और धर्म के मार्ग पर चलने में व्यतीत करें। शुभत्व की प्राप्ति निश्चित है।</p>
+<p><strong>ॐ तत् सत्।</strong></p>
+
+<div class="references">
+<h2>Sources</h2>
+<ol>
+<li><a href="https://astrozindagi.in/transit/jupiter-transit/jupiter-combustion-2026/">Jupiter Combustion 2026: Guru Tara Asta Dates, Effects, and Remedies - Astro Zindagi</a></li>
+<li><a href="https://navgrahmandir.org/jupiter-transit-remedies-for-each-rashi/">Jupiter Transit Remedies for Each Rashi: Guru Gochar 2026 Guide</a></li>
+<li><a href="https://astrozindagi.in/transit/jupiter-transit/jupiter-in-cancer-2026-cosmic-shift/">Jupiter in Cancer 2026: The Most Powerful Cosmic Shift of the Decade Is Happening on June 2 - Astro Zindagi</a></li>
+<li><a href="https://timesofindia.indiatimes.com/astrology/planets-transits/jupiter-combust-today-4-zodiac-signs-facing-major-blindspots-this-month/articleshow/132372995.cms">Jupiter Combust Today: 4 Zodiac Signs Facing Major Blindspots This Month</a></li>
+<li><a href="https://m.economictimes.com/astrology/others/jupiter-combust-in-cancer-15th-july-12th-august-2026-these-5-zodiac-signs-could-see-major-career-and-money-gains/articleshow/132384311.cms">Jupiter Combust in Cancer (15th July - 12th August, 2026): These 5 Zodiac Signs Could See Major Career and Money Gains - The Economic Times</a></li>
+<li><a href="https://ravindergrover.com/the-hidden-light-of-wisdom-guru-asta-14-july-13-august-2026/">The Hidden Light of Wisdom – Guru Asta (14 July–13 August 2026) - Ravinder Grover</a></li>
+<li><a href="https://timesofindia.indiatimes.com/astrology/planets-transits/jupiter-combust-2026-essential-dos-and-donts-to-protect-your-luck-and-wealth/articleshow/132309995.cms">Jupiter Combust 2026: Essential Dos and Don&#x27;ts to Protect Your Luck and Wealth</a></li>
+<li><a href="https://timesofindia.indiatimes.com/astrology/planets-transits/jupiter-combust-2026-when-will-the-marriage-season-restart/articleshow/132373079.cms">Jupiter Combust 2026: When Will the Marriage Season Restart? - The Times of India</a></li>
+<li><a href="https://komilla.com/planetary-news.html">Planetary News 2026 | from Komilla Sutton</a></li>
+<li><a href="https://blog.align27.com/jupiter-combust-in-cancer-a-test-of-faith/">Jupiter Combust in Cancer ~ A test of faith - align 27</a></li>
+<li><a href="https://www.youtube.com/watch?v=DRHzBrtSoDI">15 जुलाई से गुरु होंगे अस्त, इन राशियों को रहना होगा सावधान ! Guru Asta 2026 | Jupiter Combust</a></li>
+<li><a href="https://www.youtube.com/watch?v=Y1IpduffFjE">उच्च के गुरु अस्त : Is It Auspicious or Inauspicious? | July 14 to August 12, 2026 - YouTube</a></li>
+<li><a href="https://timesofindia.indiatimes.com/astrology/planets-transits/sun-jupiter-conjunction-a-massive-life-reset-is-coming-for-4-zodiac-signs/articleshow/132398436.cms">Sun-Jupiter Conjunction: A Massive Life Reset Is Coming for 4 Zodiac Signs</a></li>
+<li><a href="https://thevediccrystals.com/blogs/articles-around-gemstones/how-to-wear-pukhraj-yellow-sapphire-for-jupiter">How to wear and activate Pukhraj - Vedic Crystals</a></li>
+<li><a href="https://ayurvedahub.in/blogs/ayurvedic-wellness/saptadhatu-7-body-tissues-ayurveda-rasa-rakta-mansa-meda-asthi-majja-shukra">Saptadhatu: The 7 Body Tissues in Ayurveda — How They Build Skin, Hair, Bones &amp; Vitality</a></li>
+<li><a href="https://anandastrology.com/full-moon-guru-purnima-guidance-and-gratitude-vedic-astrology">Full Moon GURU PURNIMA | Guidance and Gratitude | Vedic Astrology</a></li>
+<li><a href="https://www.astrovedickundli.com/predictions/stock-market-2026">Stock Market Predictions 2026 - Astro Vedic Kundli</a></li>
+<li><a href="https://ravindergrover.com/2026-an-astrological-year-of-unveiling-realignment-and-responsibility/">2026 - An Astrological Year of Unveiling, Realignment, and Responsibility - Ravinder Grover</a></li>
+<li><a href="https://www.dkscore.com/jyotishmedium/jupiter-transit-in-cancer-2025-effects-for-all-12-ascendants-2387">Jupiter Transit in Cancer 2026: Effects for All 12 Ascendants - dkscore</a></li>
+<li><a href="https://astrozindagi.in/transit/jupiter-transit/jupiter-transit-punarvasu-nakshatra-2026/">Jupiter Transit in Punarvasu Nakshatra 2026: A Powerful Destiny Reset - Astro Zindagi</a></li>
+<li><a href="https://ayurhealing.net/category/ayurveda-treatments/page/2/">Ayurveda Treatments Archives - Page 2 of 23 - Ayurhealing</a></li>
+<li><a href="https://www.navratan.com/blog/how-to-check-if-yellow-sapphire-suits-you">How To Check If Yellow Sapphire Suits You - Navratan</a></li>
+<li><a href="https://rashiratanjaipur.net/Blog/how-to-know-yellow-sapphire-is-working/">How to Check If Yellow Sapphire Suits You? - Pmkk Gems</a></li>
+<li><a href="https://crescentgems.com/blogs/information-pages-complete-guide/buying-sapphires-for-jyotish-vedic-astrology">Buying Sapphires for Jyotish (Vedic Astrology): Requirements &amp; Common Mistakes (2026)</a></li>
+<li><a href="https://blog.align27.com/your-predictions-jupiter-combust-in-cancer/">Your Predictions - Jupiter Combust in Cancer - align 27</a></li>
+<li><a href="https://astrologicalmusings.com/retrograde-saturn-in-pisces-what-it-foretell-for-india-usa-and-israel-in-second-half-of-2026/">Saturn Retrograde in Pisces and Student&#x27;s Protest in India - Astrological Musings</a></li>
+<li><a href="https://www.scribd.com/document/1030567281/Correction-Time-Window-for-Nifty-as-Per-Financial-Astrology-for-2026">Correction Time Window For Nifty As Per Financial Astrology For 2026 | PDF - Scribd</a></li>
+<li><a href="https://www.vhp.org.au/2026%20-%20Monthly%20Panchang%20for%20Australia.pdf">The 2026 Unified Monthly Panchang Australia - vhp.org.au</a></li>
+<li><a href="https://www.scribd.com/document/993462043/Unified-Calendar-2026-FINAL">Unified Calendar 2026 FINAL | PDF | Hindu Astrology | Ancient Astronomy - Scribd</a></li>
+<li><a href="https://astrozindagi.in/astrology-articles/chiron-in-taurus-2026/">Chiron in Taurus 2026: 7-Year Shift in Wealth &amp; Worth - Astro Zindagi</a></li>
+<li><a href="https://qna.org.qa/en/News-Area/News/2026-7/29/jupiter-to-pass-behind-sun-over-qatar-wednesday">Jupiter to Pass Behind Sun Over Qatar Wednesday</a></li>
+<li><a href="https://whenthecurveslineup.com/2026/07/20/2026-july-29-jupiter-begins-a-new-apparition-after-solar-conjunction/">2026, July 29: Jupiter Begins a New Apparition After Solar Conjunction</a></li>
+<li><a href="https://barbarapijan.com/bpa/Graha_Yoga_Combi/Guru_yuti_Surya.htm">Guru yuti Surya * Jupiter conjunct Sun * BP Lama Jyotishavidya</a></li>
+<li><a href="https://www.nakedeyeplanets.com/jupiter.htm">The Position of Jupiter in the Night Sky: 2025 to 2029 - The Naked Eye Planets</a></li>
+<li><a href="https://celestron.co.uk/blogs/knowledgebase/the-ultimate-guide-to-observing-jupiter">The Ultimate Guide to Observing Jupiter - Celestron Global Limited</a></li>
+<li><a href="https://www.scribd.com/document/879443283/Predicting-the-Timing-of-Experiencing-the-Happiness-of-Owning-a-House-1">Timing Home Ownership Happiness | PDF | Planets In Astrology - Scribd</a></li>
+<li><a href="https://neiafmr.org.in/wp-content/uploads/2024/03/Recent-Advances-in-Ayurveda-Drug-Development.pdf">Recent Advances in Ayurveda and Drug Development | NEIAFMR</a></li>
+<li><a href="https://astrozindagi.in/transit/jupiter-transit/jupiter-combustion-2026/#:~:text=This%20condition%20is%20known%20as,a%20period%20of%2028%20days.">Source 39</a></li>
+<li><a href="https://timesofindia.indiatimes.com/astrology/planets-transits/guru-purnima-2026-sun-and-jupiter-conjunction-to-bring-sudden-luck-for-these-zodiac-signs/articleshow/132687840.cms">Guru Purnima 2026: Sun and Jupiter Conjunction To Bring Sudden Luck For These Zodiac Signs - The Times of India</a></li>
+<li><a href="https://blog.align27.com/jupiter-in-pushya-growth-and-good-fortune/">Jupiter in Pushya ~ Growth and good fortune - align 27</a></li>
+<li><a href="https://www.myzodiaq.in/en/online-library/yog-and-dasha/conjunction-2026/sun-jupiter-cancer">Sun and Jupiter Conjunction in Cancer: Life and Guidance - ZODIAQ</a></li>
+<li><a href="https://moondanceastrology.substack.com/p/july-2026-vedic-astrology-guide">Brightness Within the Undercurrent: July 2026 Vedic Astrology Guide</a></li>
+<li><a href="https://www.youtube.com/watch?v=0tie6h2tKtU">Part 2 | TDC: Jupiter in Deep Exaltation at 5° | Analysis by Punneit - YouTube</a></li>
+<li><a href="https://ravindergrover.com/2026-the-year-the-global-power-structure-begins-to-change/">2026: The Year the Global Power Structure Begins to Change - Ravinder Grover</a></li>
+<li><a href="https://www.researchgate.net/publication/347886873_Ayurveda_and_Brain_health">Ayurveda and Brain health | Request PDF - ResearchGate</a></li>
+<li><a href="https://www.banyanbotanicals.com/blogs/wellness/cultivating-juiciness-with-ayurveda">Cultivating Ojas with Ayurveda - Banyan Botanicals</a></li>
+<li><a href="https://www.gemsroot.com/blogs/guide/yellow-sapphire-vs-blue-sapphire">Yellow Sapphire vs Blue Sapphire: Meaning, Benefits &amp; Which to Wear</a></li>
+<li><a href="https://www.youtube.com/watch?v=96bjkJYqVTk">July Horoscope 2026 | Effects of Jupiter Combustion on CANCER... - YouTube</a></li>
+<li><a href="https://timesofindia.indiatimes.com/astrology/numerology-tarot/lucky-number-and-colour-today-14-july-2026-know-what-your-zodiac-sign-should-use-for-good-luck/articleshow/132370603.cms">Lucky Number and Colour Today, 14 July 2026: Know What Your Zodiac Sign Should Use for Good Luck - The Times of India</a></li>
+<li><a href="https://www.russh.com/every-retrograde-in-2026/">Every planetary retrograde in 2026 and what they mean for you - RUSSH</a></li>
+<li><a href="https://www.almanac.com/content/meteor-shower-calendar">Meteor Shower Calendar 2026: Peak Times and Dates | The Old Farmer&#x27;s Almanac</a></li>
+<li><a href="https://www.celestron.com/blogs/knowledgebase/the-ultimate-guide-to-observing-jupiter">The Ultimate Guide to Observing Jupiter - Celestron</a></li>
+<li><a href="unknown_url">Source 54</a></li>
+<li><a href="https://www.youtube.com/watch?v=ezErCILAw2Y">Sun Transit In Cancer 2026 | Sun - Jupiter Conjunction Effects On 12 Zodiac Signs</a></li>
+<li><a href="https://www.yourtango.com/2026398435/zodiac-signs-gift-universe-july-29-2026">3 Zodiac Signs Receive A Powerful Gift From The Universe On July 29, 2026 | YourTango</a></li>
+<li><a href="https://www.reddit.com/r/Nakshatras/comments/1ufffsb/research_jupiter_appearance/">Research: Jupiter &amp; appearance : r/Nakshatras - Reddit</a></li>
+<li><a href="https://medium.com/the-mercurial-gazette/jupiter-conjunct-sun-sun-conjunct-jupiter-synastry-d65af213aeb0">Jupiter Conjunct Sun/Sun Conjunct Jupiter Synastry | by Perfectly Imperfect Thoughts | The Mercurial Gazette | Medium</a></li>
+<li><a href="https://www.brainscape.com/flashcards/sun-in-cancer-in-the-8th-house-your-iden-13652967/packs/21458003">Sun in Cancer in the 8th house (Your identity and where you shine) Flashcards - Brainscape</a></li>
+<li><a href="https://hniizato.com/jupiter-conjunct-ascendant-transit/">Transit Jupiter Conjunct Ascendant: Expand Your Self-Image</a></li>
+<li><a href="https://astrozindagi.in/zodiac-signs/libra/">Libra - The Balance of Life - Astro Zindagi</a></li>
+<li><a href="https://jagannathhora.com/auspicious-marriage-dates-vivah-muhurat/">Auspicious Marriage Dates 2026 (Vivah Muhurat): Hindu Calendar &amp; Adhik Maas Guide</a></li>
+<li><a href="https://astrozindagi.in/zodiac-signs/virgo/">Virgo - The Wisdom of Life - Astro Zindagi</a></li>
+<li><a href="https://iivs.com/best-wedding-dates-2026-astrology/">Find Auspicious Dates | Best Wedding Dates 2026 Astrology</a></li>
+<li><a href="https://destinationweddingsindia.com/shaadi-muhurat-2027/">Shaadi Muhurat 2027 | Shubh Vivah Muhurat &amp; Lagan Dates - Destination Weddings India</a></li>
+<li><a href="https://directory.libsyn.com/shows/view/id/thesavvyluminary">Star Powered®- Astrology for Changemakers with Leslie Tagorda | Libsyn Directory</a></li>
+<li><a href="https://jagannathhora.com/vedic-planetary-transit-calendar/">Vedic Planetary Transit Calendar (2025–2035): Complete Graha Gochar Dates</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLOrAvqkcha4E">July 2026 Transit - YouTube</a></li>
+<li><a href="https://warblerwatch.com/birding-links/nature-watch-calendar-2011/">Nature Watch Calendar 2026* (scroll below for recurring terrestrial# and sky events related to each month of the year)</a></li>
+<li><a href="https://www.inkdrinkersanonymous.com/product/jupiter-rising-by-gary-d-schmidt-paperback-/CR2NODEGADRWCYF5W6W2U7CY">Jupiter Rising by Gary D. Schmidt (Paperback) | Ink Drinkers Anonymous LLC</a></li>
+<li><a href="https://www.harpercollins.com/products/jupiter-rising-gary-d-schmidt">Jupiter Rising - HarperCollins Publishers</a></li>
+<li><a href="https://www.highpointscientific.com/astronomy-hub/post/2026-astronomy-calendar">2026 Astronomy Calendar | Astronomical &amp; Celestial Events - High Point Scientific</a></li>
+<li><a href="https://pioneerworks.org/broadcast/big-apple-sky-calendar-july-august-september-2026-joe-patterson">Big Apple Sky Calendar: July, August, September 2026 | Broadcast - Pioneer Works</a></li>
+<li><a href="https://www.jupiter.fl.us/m/newsflash/Home/Detail/8634">Public Hearing Notice - 1666 N Old Dixie Hwy-Future Land Use Map Amendment - Town of Jupiter</a></li>
+<li><a href="https://www.cloudynights.com/forums/topic/1004270-alpo-comet-news-for-july-2026/">ALPO Comet News for July 2026 - Cloudy Nights</a></li>
+<li><a href="https://www.scribd.com/document/564845316/818TMAdig17">818 TMAdig 17 | PDF | Planets In Astrology - Scribd</a></li>
+<li><a href="https://www.dinastro.com/pages/articles/">Articles - Dinastro</a></li>
+<li><a href="https://blog.align27.com/your-predictions-mars-venus-conjunction-in-scorpio/">Your Predictions - Mars, Venus Conjunction in Scorpio</a></li>
+<li><a href="https://www.mastroify.com/vedic-astrology/nakshatras/uttara-phalguni">Uttara Phalguni Nakshatra: Deity, Padas, Traits, Compatibility &amp; Meaning - Mastroify</a></li>
+<li><a href="https://barbarapijan.com/bpa/Amsha/karaka_main_page.htm">karakamsha portion of notable activity * BP Lama Jyotishavidya</a></li>
+<li><a href="https://psychologicallyastrology.com/2021/10/31/analysing-harsh-combinations-in-navamsha/">Analysing harsh combinations in Navamsha - Psychologically Astrology</a></li>
+<li><a href="https://www.tirumalahills.org/2021/07/hindu-marriage-calendar.html">Hindu Marriage Calendar - ॐ Welcome to TirumalaHills</a></li>
+<li><a href="https://www.tirumalahills.org/2021/07/griha-pravesh-dates-with-muhurat-timings.html">Griha Pravesh dates with Muhurat timings - ॐ Welcome to TirumalaHills</a></li>
+<li><a href="https://www.scribd.com/document/829281562/Shobhana-Nama-Samvatsara">Panchangam Calendar 2023-2026 | PDF | Hindu Gods - Scribd</a></li>
+<li><a href="http://sandhyapatrike.com/2024/06/13/leela-natya-kalavrinda-dr-sushmitha-n-shetty-rangapravesha/">Leela Natya Kalavrinda- Dr. Sushmitha N Shetty Rangapravesha - Sandhya Patrike</a></li>
+<li><a href="https://in-the-sky.org/news.php?id=20260908_16_100">Lunar occultation of Jupiter - In-The-Sky.org</a></li>
+<li><a href="https://www.universetoday.com/articles/by-jove-jupiter-reaches-opposition-for-2026">By Jove: Jupiter Reaches Opposition for 2026 - Universe Today</a></li>
+<li><a href="https://www.mpm.edu/theater-planetarium/2026-sky-space-calendar">2026 Sky and Space Calendar | Milwaukee Public Museum</a></li>
+<li><a href="https://www.youtube.com/watch?v=tIfeAdxA6lY">Uma Devarakonda: Aries Horoscope | July 2026 Predictions | Effects of Jupiter Combustion on Aries... - YouTube</a></li>
+<li><a href="https://dokumen.pub/ayurveda-and-marma-therapy-energy-points-in-yogic-healing.html">Ayurveda-and-Marma-Therapy-Energy-Points-in-Yogic-Healing - dokumen.pub</a></li>
+</ol>
+</div>
+        </article>
+    </div>
+
+</body>
+</html>
