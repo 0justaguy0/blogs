@@ -1,0 +1,427 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>????? ?? ??????? 2026 ????</title>
+    <style>
+        :root {
+            --bg-color: #FDF9F1;
+            --text-color: #3E2723;
+            --indian-yellow: #E4A025;
+            --indian-orange: #E65100;
+            --accent-light: #FFECB3;
+            --ref-bg: #FFF3E0;
+        }
+
+        body {
+            font-family: 'Georgia', 'Nirmala UI', 'Mangal', serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(var(--bg-color) 80%, var(--accent-light) 100%);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #FFFFFF;
+            padding: 50px 60px;
+            box-shadow: 0 10px 30px rgba(62, 39, 35, 0.1);
+            border-top: 8px solid var(--indian-orange);
+            border-bottom: 8px solid var(--indian-yellow);
+            border-radius: 4px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed var(--indian-yellow);
+        }
+
+        h1 {
+            color: var(--indian-orange);
+            font-size: 2.5em;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        h2 {
+            color: var(--indian-yellow);
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--indian-orange);
+            padding-left: 15px;
+        }
+
+        h3, h4 {
+            color: var(--indian-orange);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        .intro-text::first-letter {
+            float: left;
+            font-size: 3.5em;
+            line-height: 0.8;
+            padding-right: 8px;
+            padding-top: 4px;
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        ul, ol {
+            margin: 0 0 24px 0;
+            padding-left: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ol {
+            list-style-position: outside;
+            padding-left: 2.2em;
+        }
+
+        ul li, ol li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        ol li {
+            padding-left: 0.35em;
+        }
+
+        ul li::before {
+            content: '\2022';
+            position: absolute;
+            left: 0;
+            top: 0.05em;
+            color: var(--indian-orange);
+            font-size: 1.2em;
+            line-height: 1;
+        }
+
+        ol li::marker {
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        strong {
+            color: var(--indian-orange);
+        }
+
+        .image-placeholder-container {
+            margin: 30px 0;
+            text-align: center;
+            font-style: italic;
+            color: #795548;
+            background-color: var(--accent-light);
+            padding: 20px;
+            border-radius: 4px;
+            border: 1px solid var(--indian-yellow);
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.98em;
+            background-color: #FFFDF8;
+        }
+
+        th, td {
+            border: 1px solid #F0D49B;
+            padding: 10px 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--ref-bg);
+            color: var(--indian-orange);
+        }
+
+        blockquote {
+            margin: 30px 0;
+            padding: 20px 25px;
+            background-color: var(--accent-light);
+            border-left: 5px solid var(--indian-orange);
+            font-style: italic;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px dashed var(--indian-yellow);
+            margin: 32px 0;
+        }
+
+        .references {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: var(--ref-bg);
+            border-radius: 8px;
+            font-size: 0.9em;
+        }
+
+        .references h2, .references h3 {
+            color: var(--text-color);
+            margin-top: 0;
+            border-bottom: 1px solid var(--indian-yellow);
+            padding-bottom: 10px;
+            border-left: 0;
+            padding-left: 0;
+        }
+
+        .references p, .references li {
+            margin-bottom: 12px;
+            word-wrap: break-word;
+        }
+
+        .references a {
+            color: var(--indian-orange);
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        }
+    </style>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>????? ?? ??????? 2026 ????</h1>
+        </header>
+
+        <article>
+<p class="intro-text">नमस्ते प्रिय पाठकों! ज्योतिषीय दृष्टिकोण से वर्ष 2026 का अगस्त से अक्टूबर तक का समय कोई साधारण अंतराल नहीं है। इसे 'कर्मों के गहन मंथन' और 'कार्मिक आसवन' (Karmic Distillation) का एक अत्यंत शक्तिशाली कालखंड माना जा रहा है। इस दौरान ग्रहों का दहन, नक्षत्रों का परिवर्तन और ग्रहणों की एक विशेष श्रृंखला हमारे सूक्ष्म ऊर्जा स्तरों और विद्युत-चुंबकीय क्षेत्र को गहराई से प्रभावित करेगी।</p>
+<div class="image-placeholder-container">
+    <img src="blog70_Image.png" alt="Upcoming time periods August to October 2026 with exact IST start and end times and key remedial windows: Total Solar Eclipse August 12 2026 sadhana window 09:04 PM IST August 12 to 01:28 AM IST August 13 in Ashlesha Nakshatra Cancer, Partial Lunar Eclipse August 28 2026 active phase 08:03 AM to 11:21 AM IST ending 12:31 PM IST in Shatabhisha Nakshatra Aquarius coinciding with Raksha Bandhan, Mercury simulated retrograde in Leo August 9 to August 25 2026 with Ketu proximity, Sun Ketu critical bottleneck August 22 to September 7 2026 for ancestral clearing, Kanya Sankranti Vishwakarma Puja September 17 2026 ingress 07:49 AM IST Maha Punya Kaal 07:49 AM to 08:13 AM IST Punya Kaal 07:49 AM to 02:16 PM IST, Jupiter combustion phase July 14 to August 12 2026 then exalted Hamsa Yoga in Cancer with retrograde, Rahu Ketu axis Rahu in Dhanishta Aquarius and Ketu in Magha Leo throughout the trimester, Jupiter ingress into Ashlesha Nakshatra October 12 to 15 2026. Remedial astrology: Gayatri Mantra, Mahamrityunjaya Mantra, Chandra Beej Mantra Om Shram Shreem Shroum Sah Chandraya Namah, Budha Beej Mantra, Rahu Beej Mantra Om Bhraam Bhreem Bhraum Sah Rahave Namah, Ketu Beej Mantra Om Sraam Sreem Sraum Sah Ketave Namah, Guru Beej Mantra, Vishwakarma Mantra. Vedic deities Surya, Vishwakarma, Lord Vishnu, Shiva Bhairava, Lord Ganesha, Lord Dattatreya, Chandra Dev. Donations copper utensils wheat black sesame, green gram emerald silk, dark blue blankets, multi colored woolen blankets, saffron turmeric yellow lentils, white silk sandalwood white rice raw cow milk. Gemstones Ruby Manik Emerald Panna Yellow Sapphire Pukhraj Hessonite Gomed Cats Eye Lehsuniya with strict prohibition on first wearing during eclipse windows. Vedic counselling for ancestral clearing karmic release nervous anxiety communication clarity and holistic wellbeing. Autumn 2026 planetary transit energies and remedial upaay.">
+</div>
+<p>खगोलीय वास्तुकला में होने वाले ये बदलाव हमें स्वयं को ब्रह्मांडीय ऊर्जाओं के अनुरूप ढालने की चुनौती देंगे। यह समय घबराने का नहीं, बल्कि संभलने और अपनी आध्यात्मिक शक्ति को जगाने का है। आइए जानते हैं कि इस त्रैमासिक अवधि में ग्रहों की चाल आपके जीवन को कैसे दिशा देगी और किन उपायों से आप इस समय को अपनी उन्नति का आधार बना सकते हैं।</p>
+<h3>1. कन्या संक्रांति और विश्वकर्मा पूजा: सितंबर 17 का महत्व</h3>
+<p>17 सितंबर 2026 को सूर्य देव सिंह राशि के राजकीय प्रभाव को छोड़कर बुध प्रधान कन्या राशि (Virgo) में प्रवेश करेंगे। ज्योतिष में कन्या राशि विश्लेषण, सेवा और व्यावहारिक संगठन का प्रतीक है। यह संक्रांति हमें अपनी कार्यक्षमता को निखारने और व्यवस्था की ओर बढ़ने का संदेश देती है। इसी दिन ब्रह्मांड के दिव्य शिल्पी भगवान विश्वकर्मा की पूजा भी की जाती है, जो सृजन और तकनीक के स्वामी हैं।</p>
+<p><strong>कन्या संक्रांति: प्रमुख समय और मुहूर्त (IST)</strong></p>
+<table><thead><tr><th>घटना</th><th>समय (IST) और तिथि</th><th>आध्यात्मिक महत्व</th></tr></thead><tbody><tr><td><strong>संक्रांति क्षण (Ingress)</strong></td><td>सुबह 07:49, 17 सितंबर 2026</td><td>सूर्य का कन्या राशि में प्रवेश; तत्वों का अग्नि से पृथ्वी में परिवर्तन।</td></tr><tr><td><strong>पुण्य काल</strong></td><td>सुबह 07:49 से शाम 06:25, 17 सितंबर 2026</td><td>आध्यात्मिक शुद्धि, स्नान और जप के लिए अत्यंत शुभ समय।</td></tr><tr><td><strong>महा पुण्य काल</strong></td><td>सुबह 07:49 से 08:13, 17 सितंबर 2026</td><td>संक्रांति के प्रथम 24 मिनट; होम और विशेष दान के लिए सर्वोत्तम।</td></tr></tbody></table>
+<p><strong>सफलता के उपाय (Remedies for Success):</strong></p>
+<ul>
+<li><strong>सूर्य अर्घ्य:</strong> तांबे के लोटे में जल, लाल चंदन और गेहूं मिलाकर सूर्य देव को अर्घ्य दें। गायत्री मंत्र का मानसिक जाप करें।</li>
+<li><strong>विश्वकर्मा मंत्र:</strong> अपने औजारों, लैपटॉप या मशीनरी की पूजा करें और इस मंत्र का जाप करें: <em>"ॐ आधार शक्तपे नमः, ॐ कूमयि नमः, ॐ अनन्तम नमः, पृथिव्यै नमः"</em>।</li>
+<li><strong>आहार नियम:</strong> इस दिन सात्विक आहार लें। विशेष रूप से खिचड़ी, खीर और नारियल पानी का सेवन और दान अत्यंत शुभ फलदायी होता है।</li>
+</ul>
+<h3>2. बुध का सिंह राशि में 'सिम्युलेटेड वक्री' प्रभाव</h3>
+<p>अगस्त 2026 में बुध की चाल को लेकर व्यापक भ्रम हो सकता है। यद्यपि बुध मार्गी गति से चलेगा, परंतु केतु के साथ इसकी युति और सूर्य-केतु के गहन प्रभाव के कारण यह "सिम्युलेटेड वक्री" (आभासी वक्री प्रभाव) पैदा करेगा।</p>
+<ul>
+<li><strong>मनोवैज्ञानिक प्रभाव:</strong> इस दौरान अहंकार प्रेरित संवाद (Ego-driven communication) और दूसरों के इरादों को गलत समझने की प्रवृत्तियां बढ़ सकती हैं। आपकी रचनात्मक क्षमता पर अचानक संदेह के बादल छा सकते हैं।</li>
+<li><strong>निवारण:</strong> भगवान विष्णु की आराधना करें और विष्णु सहस्रनाम का पाठ करें। बुध के बीज मंत्र <em>"ॐ ब्रां ब्रीं ब्रौं सः बुधाय नमः"</em> का जाप बुद्धि को स्थिरता प्रदान करेगा।</li>
+<li><strong>बुधवार का विशेष आहार:</strong> बुधवार के दिन नमक रहित आहार लें। इसमें मूंग की दाल और हरी पत्तेदार सब्जियां शामिल करें। <strong>विशेष ध्यान दें:</strong> इस दौरान प्रसंस्कृत चीनी (Processed Sugar) के सेवन से बचें, क्योंकि यह आपकी तंत्रिका तंत्र की संवेदनशीलता को बढ़ा सकता है।</li>
+</ul>
+<h3>3. राहु-केतु का अक्ष: धनिष्ठा और मघा नक्षत्र</h3>
+<p>वर्ष 2026 के इस त्रैमास में राहु और केतु कुंभ और सिंह राशि के अक्ष पर विराजमान रहेंगे। यह सामूहिक नवाचार और व्यक्तिगत अहंकार के विसर्जन के बीच एक कर्मिक तनाव पैदा करता है।</p>
+<ul>
+<li><strong>राहु (धनिष्ठा):</strong> मंगल द्वारा शासित और <strong>'अष्ट वसुओं'</strong> द्वारा अधिष्ठित यह नक्षत्र भौतिक महत्वाकांक्षा और डिजिटल क्रांति को बढ़ाता है। यहाँ राहु नेटवर्क क्रैश या अचानक जोखिम जैसी चुनौतियां दे सकता है।</li>
+<li><strong>केतु (मघा):</strong> यह नक्षत्र <strong>'पितरों'</strong> (Ancestors) द्वारा शासित है। केतु यहाँ अहंकार के शुद्धिकरण और प्रसिद्धि से वैराग्य की ओर ले जाता है।</li>
+</ul>
+<p><strong>सावधान:</strong> 22 अगस्त से 7 सितंबर 2026 के बीच एक 'क्रिटिकल बॉटलनेक' (गहन अवरोध) की स्थिति बनेगी जब सूर्य और केतु की युति होगी। यह पूर्वजों के कर्मिक ऋण चुकाने और करियर में बड़े बदलाव का समय है।</p>
+<p><strong>निवारण विधि (Remediation Protocol):</strong></p>
+<ul>
+<li><strong>राहु हेतु:</strong> भगवान भैरव या शिव की पूजा करें। शनिवार की शाम काले तिल, नीले कंबल या संगीत वाद्ययंत्र (जैसे ड्रम) का दान करें।</li>
+<li><strong>केतु हेतु:</strong> भगवान गणेश की दैनिक पूजा करें। मघा नक्षत्र के दौरान 'पितृ तर्पण' करें और आवारा कुत्तों को भोजन कराएं।</li>
+</ul>
+<h3>4. कर्क राशि में उच्च का बृहस्पति: गुरु का आशीर्वाद</h3>
+<p>2 जून से 31 अक्टूबर 2026 तक बृहस्पति (गुरु) अपनी उच्च राशि कर्क में रहकर "हंस योग" का निर्माण करेंगे। यह ज्ञान और करुणा के विस्तार का श्रेष्ठ समय है।</p>
+<p><strong>दहन विरोधाभास (The Combustion Paradox):</strong> यहाँ एक सूक्ष्म ज्योतिषीय बिंदु है—यद्यपि गुरु उच्च के हैं, लेकिन 14 जुलाई से 12 अगस्त 2026 के बीच वे सूर्य के निकट होने के कारण "अस्त" रहेंगे। इस दौरान बाहरी भाग्य या लाभ की गति धीमी हो सकती है।</p>
+<p><strong>क्या करें और क्या न करें:</strong></p>
+<ul>
+<li><strong>क्या न करें:</strong> गुरु के अस्त होने की अवधि में नया व्यवसाय शुरू करने या विवाह जैसे मांगलिक कार्यों से बचें।</li>
+<li><strong>क्या करें:</strong> इस समय को आत्म-चिंतन, गुरु सेवा और गहन आंतरिक अध्ययन के लिए उपयोग करें। बाहरी प्रदर्शन के बजाय आंतरिक परिपक्वता पर ध्यान दें।</li>
+</ul>
+<h3>5. अगस्त 2026 का ग्रहण काल और 'प्रो-टिप'</h3>
+<p>अगस्त में दो प्रमुख ग्रहण होंगे, जो कर्मिक शोधन के लिए 'रिसेट बटन' की तरह कार्य करेंगे।</p>
+<p><strong>A. पूर्ण सूर्य ग्रहण (12 अगस्त):</strong> यह अश्लेषा नक्षत्र (सर्प ऊर्जा) में होगा। यह दबी हुई भावनाओं और पीढ़ीगत पैटर्न से मुक्ति का समय है। भारत में यह रात के समय होगा, अतः सूतक लागू नहीं होगा, लेकिन साधना हेतु <strong>रात 09:04 से 01:28</strong> का समय अत्यंत प्रभावी है।</p>
+<p><strong>B. आंशिक चंद्र ग्रहण (28 अगस्त):</strong> यह शतभिषा नक्षत्र (निवारण और उपचार का तारा) में होगा। यह पुरानी आदतों और भावनात्मक जकड़न को छोड़ने का समय है।</p>
+<blockquote><strong>🌟 प्रो-टिप (रक्षाबंधन विशेष):</strong> चूंकि यह चंद्र ग्रहण भारत में दिन के समय होगा और चंद्रमा क्षितिज के नीचे होगा, इसलिए <strong>रक्षाबंधन के अनुष्ठानों पर इसका कोई नकारात्मक प्रभाव नहीं पड़ेगा।</strong> बहनें बिना किसी हिचकिचाहट के रक्षा सूत्र बांध सकती हैं।</blockquote>
+<p><strong>कर्म मुक्ति अभ्यास (Karmic Release Practice):</strong> 28 अगस्त को सुबह 08:03 से 11:21 के बीच अपनी उन आदतों या चिंताओं को एक कागज पर लिखें जिन्हें आप छोड़ना चाहते हैं। दोपहर <strong>12:31 बजे</strong> (जब ग्रहण का उपच्छाया चरण समाप्त होता है और चंद्रमा की पूर्ण शुद्धता बहाल होती है), इस कागज को जला दें।</p>
+<h3>6. प्रमुख उपचारात्मक रजिस्ट्री (Master Remedial Registry)</h3>
+<p>इस तिमाही की ऊर्जाओं को संतुलित करने हेतु निम्नलिखित रजिस्ट्री का पालन करें:</p>
+<table><thead><tr><th>गृह/गोचर</th><th>देवता</th><th>मंत्र</th><th>दान</th><th>रत्न, धातु और अंगुली</th></tr></thead><tbody><tr><td><strong>सूर्य (संक्रांति)</strong></td><td>सूर्य देव</td><td>गायत्री मंत्र</td><td>तांबा, गेहूं, गुड़</td><td><strong>माणिक:</strong> अनामिका (Ring finger), तांबा/सोना।</td></tr><tr><td><strong>बुध (सिंह राशि)</strong></td><td>भगवान विष्णु</td><td>विष्णु सहस्रनाम</td><td>हरी मूंग, हरे कपड़े</td><td><strong>पन्ना:</strong> कनिष्ठा (Little finger), चांदी/सोना।</td></tr><tr><td><strong>राहु (धनिष्ठा)</strong></td><td>भैरव / दुर्गा</td><td>राहु बीज मंत्र</td><td>नीले कंबल, ड्रम</td><td><strong>गोमेद:</strong> मध्यमा (Middle finger), चांदी।</td></tr><tr><td><strong>केतु (मघा)</strong></td><td>गणेश / पितृ</td><td>केतु बीज मंत्र</td><td>चितकबरा कंबल, कुत्ते को भोजन</td><td><strong>लहसुनिया:</strong> अनामिका (Ring finger), चांदी।</td></tr><tr><td><strong>गुरु (कर्क राशि)</strong></td><td>दत्तात्रेय</td><td>गुरु बीज मंत्र</td><td>हल्दी, चने की दाल</td><td><strong>पुखराज:</strong> तर्जनी (Index finger), सोना।</td></tr></tbody></table>
+<h3>निष्कर्ष: रणनीतिक सुझाव और आध्यात्मिक विकास</h3>
+<p>अगस्त से अक्टूबर 2026 की यह अवधि केवल चुनौतियों की सूची नहीं है, बल्कि आपके आध्यात्मिक विकास का एक सुनहरा अवसर है। इस कालखंड को सफलतापूर्वक पार करने के लिए ये तीन रणनीतिक सुझाव याद रखें:</p>
+<ol>
+<li><strong>भौतिक विस्तार में धैर्य:</strong> गुरु के अस्त रहने और ग्रहण काल के दौरान बड़े वित्तीय निवेशों या नए अनुबंधों को टालना ही बुद्धिमानी है।</li>
+<li><strong>जड़ों की ओर वापसी:</strong> केतु और ग्रहण के प्रभाव के कारण पितृ दोष निवारण, पूर्वजों का सम्मान और आत्म-निरीक्षण को प्राथमिकता दें।</li>
+<li><strong>अनुशासित दिनचर्या:</strong> मंत्र जप, दान और सात्विक आहार के माध्यम से आप कठिन ग्रहों के संरेखण को भी अपने पक्ष में मोड़ सकते हैं।</li>
+</ol>
+<p>प्रिय पाठकों, ज्योतिष भाग्य का बंधन नहीं, बल्कि ऊर्जा का मानचित्र है। यदि आप धैर्य और अनुशासन के साथ इस अवधि में स्वयं पर कार्य करते हैं, तो यह त्रैमास आपके दीर्घकालिक उत्थान के लिए एक मजबूत आधारशिला सिद्ध होगा। आपकी यात्रा मंगलमय हो!</p>
+
+<div class="references">
+<h2>Sources</h2>
+<ol>
+<li><a href="https://jagannathhora.com/eclipse-2026-complete-guide-vedic-astrology/">Eclipse 2026 Complete Guide: All Four Eclipses, Dates, Effects for 12 Ascendants</a></li>
+<li><a href="https://pebblegalaxy.blog/2025/11/11/top-remedies-and-mantras-to-harness-cosmic-energy-in-2026-a-vedic-astrology-guide/">Top Remedies and Mantras to Harness Cosmic Energy in 2026: A Vedic Astrology Guide - Between Stars & Silence - Pebble's Galaxy: a blog.</a></li>
+<li><a href="https://www.myzodiaq.in/en/online-library/festivals-and-astrology/festival-muhurat-ritual-2026/kanya-sankranti-2026">Kanya Sankranti 2026: Auspicious Timings and Puja Guide - ZODIAQ</a></li>
+<li><a href="https://www.astroved.com/us/specials/solar-eclipse">Solar Eclipse 2026 Remedies & Rituals - AstroVed</a></li>
+<li><a href="https://www.dkscore.com/jyotishmedium/2026-rahuketu-transit-rahu-in-dhanishtha-ketu-in-magha-effects-for-all-12-signs-2391">2026 Rahu Ketu Transit: Rahu in Dhanishtha Ketu in Magha – Effects for All 12 Signs - dkscore</a></li>
+<li><a href="https://www.astroved.com/us/specials/lunar-eclipse">Lunar Eclipse 2026 (Chandra Grahan) | Effects & Remedies - AstroVed</a></li>
+<li><a href="https://jagannathhora.com/mercury-retrograde-2026-dates-vedic/">Mercury Retrograde 2026: Complete Dates, Times & Sidereal Positions (All 3 Cycles)</a></li>
+<li><a href="https://navgrahmandir.org/jupiter-transit-2026/">Jupiter Transit 2026 – Exalted Jupiter in Cancer - Navgrah Mandir</a></li>
+<li><a href="https://astrozindagi.in/transit/mercury-transit/mercury-retrograde-june-2026/">Mercury Retrograde June 2026: The 25-Day Survival Guide For Every Zodiac Sign</a></li>
+<li><a href="https://www.shriramtemple.org.in/news/details/2026-sankranti-calendar">2026 Sankranti Calendar – Month-wise Dates, Exact Timings (IST), Muhurat & Importance</a></li>
+<li><a href="https://rashibyte.com/blog/jupiter-enters-ashlesha-nakshatra-october-2026-effects-remedies">Jupiter Enters Ashlesha Nakshatra October 2026: Effects & Remedies — गुरु आश्लेषा नक्षत्र 2026 — RashiByte Blog</a></li>
+<li><a href="https://www.rudraksha-ratna.com/articles/vishwakarma-puja">Vishwakarma Jayanti 2026 | Date, Significance, Puja Vidhi, Mantras & History</a></li>
+<li><a href="https://www.indastro.com/astrology-articles/planetary-transit/rahu-ketu-transit-in-astrology.html">Rahu Ketu Transit (29th May 2025 till 25th November 2026)</a></li>
+<li><a href="https://www.astroved.com/us/specials/rahu-ketu-transit">Rahu Ketu Transit 2025–2026: Peyarchi & Remedies - AstroVed</a></li>
+<li><a href="https://nakshatrica.com/panchang/sankranti/2026">Sankranti 2026 - Sun Transit Dates & Punya Kaal | Nakshatrica</a></li>
+<li><a href="https://www.bda.ai/festival/kanya-sankranti/2026">Kanya Sankranti (Vishwakarma Puja) 2026 Date - 17 Sept 2026 | BDA</a></li>
+<li><a href="https://saketbhatia.com/jupiter-transit-2026-cancer-leo/">Jupiter Transit in 2026: From Emotional Expansion in Cancer to Bold Growth in Leo</a></li>
+<li><a href="https://www.eomega.org/articles/august-2026-horoscopes">August 2026 Horoscopes | Omega Institute</a></li>
+<li><a href="https://m.economictimes.com/astrology/others/august-2026-eclipse-season-everything-you-need-to-know-about-the-solar-and-lunar-eclipses/articleshow/132711243.cms">August 2026 Eclipse Season: Everything You Need to Know About the Solar and Lunar Eclipses - The Economic Times</a></li>
+<li><a href="https://zendaruniverse.com/updates/surya-grahan-2026-date-time-in-india-visibility-live-stream/">Surya Grahan 2026: Date, Time in India, Visibility & Live Stream - Zendar Universe</a></li>
+<li><a href="https://zendaruniverse.com/updates/chandra-grahan-2026-aug-28-raksha-bandhan-lunar-eclipse-india-time-sutak/">Chandra Grahan 2026: Aug 28 Raksha Bandhan Lunar Eclipse, India Time & Sutak</a></li>
+<li><a href="https://astrozindagi.in/festivals/2026/chandra-grahan-2026/">Chandra Grahan 2026: Date, Timing & No Sutak in India Facts - Astro Zindagi</a></li>
+<li><a href="https://www.jyotishgram.com/blog/why-2026-is-a-turning-point-year-in-planetary-cycles/">Why 2026 Is a Turning Point Year in Planetary Cycles - JyotishGram</a></li>
+<li><a href="https://www.reddit.com/r/vedicastrologyexperts/comments/1tik99b/jupiter_transits_cancer_june_2026_cancer_ascendant/">Jupiter Transits Cancer June 2026 : Cancer Ascendant : r/vedicastrologyexperts - Reddit</a></li>
+<li><a href="https://nakshatraai.ai/blog/grahan-dosh-for-vrishabh-ascendant-effects-severity-and-remedies-932vt">Grahan Dosh for Vrishabh Ascendant: Effects, Severity, and Remedies | NakshatraAI Blog</a></li>
+<li><a href="https://www.anytimeastro.com/blog/trending/kanya-sanskriti/">Kanya Sanskriti 2026 Date, Time, and Importance - Anytime Astro</a></li>
+<li><a href="https://www.bustle.com/life/august-2026-astrological-events-moons-eclipses-virgo-season">August 2026's Astrology Includes Eclipses & Virgo Season - Bustle</a></li>
+<li><a href="https://www.countryandtownhouse.com/style/august-2026-horoscope/">Your August 2026 Horoscope Is Here | Astrology - Country and Town House</a></li>
+<li><a href="https://myrahpenaloza.com/blogs/journal/cancer-mercury-retrograde-to-leo-sunlight">Mercury Retrograde to Leo Season 2026 | Myrah Penaloza</a></li>
+<li><a href="https://m.economictimes.com/astrology/us/mercury-retrograde-in-cancer-2026-why-are-astrologers-linking-this-rare-cycle-to-summer-2020-and-why-could-cancer-aries-libra-and-capricorn-feel-it-most/articleshow/132558999.cms">Mercury Retrograde in Cancer 2026: Why are astrologers linking this rare cycle to summer 2020, and why could Cancer, Aries, Libra and Capricorn feel it most? - The Economic Times</a></li>
+<li><a href="https://m.economictimes.com/astrology/us/mercury-retrograde-ends-today-what-changes-after-july-23-and-why-the-shadow-period-lasts-until-august-7-and-which-zodiac-signs-may-feel-relief-first/articleshow/132559490.cms">Mercury retrograde ends today: What changes after July 23 and why the shadow period lasts until August 7 and which zodiac signs may feel relief first? - The Economic Times</a></li>
+<li><a href="https://timesofindia.indiatimes.com/astrology/planets-transits/mercury-retrograde-2026-survival-guide-for-every-zodiac-sign/photostory/128802731.cms">Mercury Retrograde 2026 survival guide for every zodiac sign - The Times of India</a></li>
+<li><a href="https://astrologymatters.com/retrograde-planets-2026/">Retrograde Planets 2026 - Astrology Matters</a></li>
+<li><a href="https://www.scribd.com/document/1027965884/2026-Planetary-Transits-3">2026 Planetary Transits 3 | PDF | Planets In Astrology - Scribd</a></li>
+<li><a href="https://www.scribd.com/document/980893148/2026-Energy-Forecast-Understanding-Cosmic-Energies-Karma-Life-Direction">2026 Cosmic Energy Forecast Guide | PDF | Planets In Astrology | Karma - Scribd</a></li>
+<li><a href="https://lifehoroscopespiritual.com/blogs/news/rahu-ketu-peyarchi-2026-to-2028">Rahu Ketu Peyarchi 2026 to 2028 - Life Horoscope Spiritual</a></li>
+<li><a href="https://jagannathhora.com/rahu-aquarius-ketu-leo-2026-business/">Rahu in Aquarius and Ketu in Leo (2026): The New Karmic Axis for Business</a></li>
+<li><a href="https://www.chani.com/this-year/key-dates/2026-astrological-key-dates-mercury-retrogrades">2026 astrological key dates: Mercury retrogrades | CHANI</a></li>
+<li><a href="https://starwalk.space/en/news/partial-lunar-eclipse-august-28-2026">Partial Lunar Eclipse August 2026: 96% of the Moon Covered</a></li>
+<li><a href="https://www.timeanddate.com/eclipse/solar/2026-august-12">Total Solar Eclipse on August 12, 2026</a></li>
+<li><a href="https://www.timeanddate.com/eclipse/in/@2962334?iso=20260828">August 28, 2026 Partial Lunar Eclipse in Naas, Leinster, Ireland - Time and Date</a></li>
+<li><a href="https://vydic.com/chandra-grahana-shanti-yagya-remedial-yagya-for-lunar-eclipse/">Chandra Grahana (Lunar Eclipse) Shanti Yagya - Vydic Yagya Centre</a></li>
+<li><a href="https://www.indastro.com/astrology-reports/rahu-ketu-megatransit.php">Journey of Rahu in Aquarius and Ketu through Leo</a></li>
+<li><a href="https://savitarrealty.com/blog/bhumi-puja-muhurat-dates">Bhumi Pujan Muhurat 2026-27: Best Dates & Vastu Guide - Savitar Realty</a></li>
+<li><a href="https://www.mastroify.com/blog/astrology/vedic/are-remedies-more-powerful-than-god">If Everything Is Written… Are Remedies More Powerful Than God? - Mastroify</a></li>
+<li><a href="https://timesofindia.indiatimes.com/astrology/planets-transits/jupiter-retrograde-in-gemini-2025-2026-what-it-means-for-you-and-how-to-navigate-this-period-of-review-and-realignment/articleshow/125634373.cms">Jupiter Retrograde in Gemini 2025-2026: What it means for you and how to navigate this period of review and realignment - The Times of India</a></li>
+<li><a href="https://www.yourtango.com/2026399462/zodiac-signs-life-better-end-august-2026">Life Gets So Much Better For 3 Zodiac Signs By The End Of August 2026 - YourTango</a></li>
+<li><a href="https://www.shriramtemple.org.in/news/details/vishwakarma-puja-2025">Vishwakarma Puja 2025: Date, Rituals, Importance & Blessings Explained</a></li>
+<li><a href="https://prashnakundli.com/guru-gochar-2026/">Guru Gochar 2026: Effects, Remedies and Rashi Predictions</a></li>
+<li><a href="https://myratna.com/blogs/content/guru-jupiter-transit-2026-date-time">Jupiter Transit 2026 | Guru Transit Date, Time, Effects and Remedies - MyRatna</a></li>
+<li><a href="https://www.vedicblessing.com/blog/rahu-ketu-transit-2026-when-it-happens-which-rashis-are-affected-and-simple-vedic-remedies-for-a-blessed-year-ahead">Rahu-Ketu Transit 2026: Rashi Effects, Dates & Remedies - Vedic Blessing</a></li>
+<li><a href="https://www.dkscore.com/jyotishmedium/rahu-in-dhanishtha-nakshatra-transit-2025-wealth-fame-all-zodiac-signs-impact-2393">Rahu in Dhanishtha Nakshatra Transit 2026: Wealth Fame & All Zodiac Signs Impact</a></li>
+<li><a href="https://www.dkscore.com/jyotishmedium/planetary-transit/rahu-in-dhanishta">Rahu in Dhanista Nakshatra Transit 2026-27 - dkscore</a></li>
+<li><a href="https://www.astroswamig.com/blog/jupiter-transit-2026/">Jupiter Transit 2026 in Cancer (June 2): Dates, Effects & Zodiac Predictions - Astroswamig</a></li>
+<li><a href="https://zendaruniverse.com/updates/surya-grahan-2026-aug-12-solar-eclipse-india-visibility-sutak/">Surya Grahan 2026: Aug 12 Solar Eclipse India Visibility & Sutak | Zendar Universe</a></li>
+<li><a href="https://timesofindia.indiatimes.com/astrology/planets-transits/solar-eclipse-august-2026-when-is-surya-grahan-check-correct-date-and-significance/articleshow/129324881.cms">Solar Eclipse August 2026: When is Surya Grahan? Check correct date and significance</a></li>
+<li><a href="https://www.myzodiaq.in/en/online-library/festivals-and-astrology/festival-muhurat-ritual-2026/rakshabandhan-lunar-eclipse">Lunar Eclipse and Raksha Bandhan 2026: Timing & Rituals - ZODIAQ</a></li>
+<li><a href="https://www.sannyasapeeth.net/sankranti.php">Welcome to Sannyasa Peeth - Monthly Programs - Sankranti</a></li>
+<li><a href="https://www.bankbazaar.com/indian-holiday/makar-sankranti-holiday.html">Makar Sankranti 2026 - Know the Date, Significance & Traditions - BankBazaar</a></li>
+<li><a href="https://www.astrologyzone.com/forecasts/leo-horoscope-for-july-2026/3/">Leo Horoscope for July 2026 - Page 3 of 10 - Susan Miller Astrology Zone</a></li>
+<li><a href="https://www.indastro.com/astrology-articles/planetary-transit/mercury-retrograde-2026.html">Mercury Retrograde June–July 2026: Why This One Hits in Two Waves</a></li>
+<li><a href="https://www.thegoodtrade.com/features/what-is-mercury-retrograde/">What Is Mercury Retrograde? (Plus 2026 Dates) - The Good Trade</a></li>
+<li><a href="https://www.lifestyleasia.com/ind/astrology/mercury-retrograde-july-2026-dates-and-impact-on-zodiac-signs/">Mercury retrograde in Cancer: What it means for your zodiac sign in July 2026</a></li>
+<li><a href="https://m.economictimes.com/astrology/others/rahu-ketu-karmic-shift-2026-destiny-lessons-you-cant-avoid/articleshow/129628186.cms">Rahu-Ketu Karmic Shift 2026: Destiny Lessons You Can't Avoid - The Economic Times</a></li>
+<li><a href="https://www.reddit.com/r/vedicastrologyexperts/comments/1sj6k1o/rahuketu_transit_dec_2026/">Rahu–Ketu Transit Dec 2026... : r/vedicastrologyexperts - Reddit</a></li>
+<li><a href="https://www.russh.com/every-retrograde-in-2026/">Every planetary retrograde in 2026 and what they mean for you - RUSSH</a></li>
+<li><a href="https://www.astrologyzone.com/forecasts/leo-horoscope-for-july-2026/3/#:~:text=Your%20July%202026%20Horoscope%20for%20Leo&amp;text=Delays%20will%20work%20in%20your,starting%20to%20race%20forward%20again.">Source 68</a></li>
+<li><a href="https://www.almanac.com/content/mercury-retrograde-dates">Mercury Retrograde 2026: Dates, Meaning, and What to Do | The Old Farmer's Almanac</a></li>
+<li><a href="https://www.astrologyzone.com/forecasts/leo-horoscope-for-june-2026/5/">Leo Horoscope for June 2026 - Page 5 of 8 - Susan Miller Astrology Zone</a></li>
+<li><a href="https://www.hindustantimes.com/astrology/horoscope/mercury-retrograde-2026-june-29-triple-cosmic-shift-what-each-zodiac-sign-should-expect-shares-an-astrologer-101782743576139.html">Mercury Retrograde 2026: What each zodiac sign should expect, shares an astrologer</a></li>
+<li><a href="https://www.britannica.com/question/When-is-Mercury-in-retrograde-in-2026">When is Mercury in retrograde in 2026? - Britannica</a></li>
+<li><a href="https://www.yourtango.com/2026399302/zodiac-signs-life-easier-mercury-retrograde-ends-july-23-2026">Life Gets A Lot Easier For 5 Zodiac Signs Once Mercury Retrograde Ends On July 23, 2026</a></li>
+<li><a href="https://www.youtube.com/watch?v=mWX-W8NTtB4">Rahu-Ketu in Aquarius-Leo | The Journey from Me to We - YouTube</a></li>
+<li><a href="https://parade.com/astrology/jupiter-retrograde-ends-lucky-zodiac-signs">Jupiter Retrograde Ends! 4 Zodiac Signs Attract Luck & Blessings - Parade</a></li>
+<li><a href="https://www.reddit.com/r/Nakshatras/comments/1r6i9am/jupiter_in_cancer_in_2026/">Jupiter In Cancer In 2026. : r/Nakshatras - Reddit</a></li>
+<li><a href="https://pandoraastrology.com/transits-this-year/planetary-retrogrades-stations/jupiter-station-retrograde/">This Year's Jupiter Retrograde And Stations - Pandora Astrology</a></li>
+<li><a href="https://girlandhermoon.com/jupiter-retrograde-in-cancer-2025-2026-astrology-horoscopes/">Jupiter Retrograde in Cancer 2025 - 2026: Astrology & Horoscopes - Girl and Her Moon</a></li>
+<li><a href="https://www.reddit.com/r/ireland/comments/1v9tac1/6500_free_eclipse_glasses_available_in_cork_ahead/">6,500 free eclipse glasses available in Cork ahead of rare solar eclipse : r/ireland - Reddit</a></li>
+<li><a href="https://timesofindia.indiatimes.com/etimes/trending/when-is-the-lunar-eclipse-in-2026-date-and-timing-in-india-ist-where-to-watch-chandra-grahan/articleshow/128938915.cms">When is the Lunar Eclipse in 2026? Date and timing in India (IST) - where to watch Chandra Grahan</a></li>
+<li><a href="https://www.lifestyleasia.com/ind/astrology/upcoming-retrogrades-of-2026-dates-and-significance/">Upcoming planetary retrogrades of 2026 to look out for: Dates and astrological effects</a></li>
+<li><a href="https://www.reddit.com/r/Nakshatras/comments/1txeqav/jupiter_in_cancer_3_underrated_facts_you_probably/">Jupiter in Cancer: 3 Underrated Facts You Probably Missed : r/Nakshatras - Reddit</a></li>
+<li><a href="https://mindfulsouls.com/blogs/crystals/jupiter-retrograde-in-leo-2026-dates-meaning-rituals-crystals">Jupiter Retrograde in Leo 2026: Dates, Meaning, Rituals & Crystals - Mindful Souls</a></li>
+<li><a href="https://m.economictimes.com/news/international/us/jupiter-retrograde-ends-4-zodiac-signs-set-to-attract-wealth-growth-and-big-opportunities-till-june-2026/articleshow/129781979.cms">Jupiter Retrograde ends: 4 Zodiac signs set to attract wealth, growth and big opportunities till June 2026 - The Economic Times</a></li>
+<li><a href="https://www.hindustantimes.com/astrology/horoscope/jupiter-turns-direct-in-cancer-2026-what-changes-are-coming-for-your-zodiac-sign-after-march-20-101773570635351.html">Jupiter turns direct in Cancer 2026: What changes are coming for your zodiac sign after March 20 | Astrology - Hindustan Times</a></li>
+<li><a href="https://www.nssgclub.com/en/astro/43909/retrograde-planets-2026-meaning-mercury-how-to-survive-zodiac-signs">Retrograde planets 2026: complete guide to movements and effects on zodiac signs - nss G-Club</a></li>
+<li><a href="https://www.hindustantimes.com/astrology/horoscope/mercury-retrograde-2026-date-time-and-astrological-significance-101783172698802.html">Mercury Retrograde 2026: Date, time, and astrological significance - Hindustan Times</a></li>
+<li><a href="https://timesofindia.indiatimes.com/astrology/planets-transits/mercury-retrograde-ends-these-4-zodiac-signs-may-make-a-breakthrough-decision/articleshow/132575241.cms">Mercury Retrograde Ends: These 4 Zodiac Signs May Make a Breakthrough Decision</a></li>
+<li><a href="https://m.economictimes.com/astrology/others/4-zodiac-signs-whose-destiny-changes-during-rahus-current-transit-in-2026/articleshow/131245813.cms">4 Zodiac Signs Whose Destiny Changes During Rahu's Current Transit in 2026</a></li>
+<li><a href="https://www.hindustantimes.com/astrology/horoscope/jupiter-retrograde-2026-ends-7-surprising-changes-you-may-notice-now-101773319585289.html">Jupiter retrograde 2026 ends: 7 surprising changes you may notice now | Astrology</a></li>
+<li><a href="https://www.astroved.com/astropedia/en/retrograde/jupiter-retrograde">Jupiter Turns Retrograde from July 13, 2026 to April 13, 2027 - AstroVed</a></li>
+<li><a href="https://www.hindustantimes.com/astrology/jupiter-in-leo-2026-the-reality-behind-the-13-months-of-expansion-everyone-is-talking-about-101783495402847.html">Jupiter in Leo 2026: The reality behind the 13 months of expansion everyone is talking about | Astrology - Hindustan Times</a></li>
+<li><a href="https://discoveringyouniverse.com/posts/jupiter-exalted-the-most-awaited-transit-of-the-year/">Jupiter Exalted: The Most Awaited Transit of the Year - Discovering Youniverse</a></li>
+<li><a href="https://www.vedicq.com/en/ultimate-guide-to-planetary-transits-2026-vedic-astrology-gochar-horoscope-predictions-md/">Ultimate Guide to Planetary Transits 2026: Vedic Astrology Gochar & Horoscope Predictions</a></li>
+<li><a href="https://www.ndtv.com/india-news/vishwakarma-puja-2018-history-date-time-facts-all-you-need-to-know-1917546">Vishwakarma Puja 2018: A Day Dedicated To The Divine Creator - NDTV</a></li>
+<li><a href="https://zendaruniverse.com/updates/eclipse-2026-spain-will-wildfire-smoke-ruin-totality/">Eclipse 2026 Spain: Will Wildfire Smoke Ruin Totality? - Zendar Universe</a></li>
+<li><a href="https://zendaruniverse.com/updates/total-solar-eclipse-2026-august-12-path-times-live-guide/">Total Solar Eclipse 2026: Aug 12 Path & Times - Zendar Universe</a></li>
+<li><a href="https://www.skyatnightmagazine.com/advice/12-august-2026-total-solar-eclipse-guide">August 2026 solar eclipse – Path map, key locations and timings | BBC Sky at Night Magazine</a></li>
+<li><a href="https://starwalk.space/en/news/total-solar-eclipse-august-12-2026">Total Solar Eclipse of August 12, 2026: Path, Times, Map & Best Places to Watch - Star Walk</a></li>
+<li><a href="https://m.economictimes.com/astrology/others/august-2026-astrology-warning-critical-cosmic-dates-every-zodiac-sign-must-watch/articleshow/132638413.cms">August 2026 Astrology Warning: Critical Cosmic Dates Every Zodiac Sign Must Watch</a></li>
+<li><a href="https://www.etsy.com/market/vedic_astrology_transit">Vedic Astrology Transit - Etsy</a></li>
+<li><a href="https://www.scribd.com/document/994582038/ESTFebruary2026-Issue">ESTFebruary2026 Issue | PDF - Scribd</a></li>
+<li><a href="https://www.jyotishajournal.com/pdf/2026/vol11issue7/PartA/11-6-16-603.pdf">Rahu and Ketu deciphered: Astronomical, climatic and civilisational evidence for the earth axis hypothesis - International Journal of Jyotish Research</a></li>
+<li><a href="https://api.prokerala.com/reports/sample/rahu-ketu-transit-report-en.pdf">KAREN LAURET - Prokerala Astrology API</a></li>
+<li><a href="https://omai.app/blog/rahu-ketu-transit-2026.html">Rahu-Ketu Transit 2026: Capricorn & Cancer Effects - Om.AI</a></li>
+<li><a href="https://nakshatraai.ai/">Vedic Astrology AI – Talk to Jyotish Online</a></li>
+<li><a href="https://www.astroyuga.in/">Astroyuga - Free Online Astrology Predictions by Best Astrologer</a></li>
+<li><a href="https://www.scribd.com/document/974103422/CANCER-2026-docx">2026 Predictions for Cancer Ascendants | PDF | Wisdom | Leadership - Scribd</a></li>
+<li><a href="https://blog.align27.com/jupiter-retrograde-in-cancer-seize-your-opportunities/">Jupiter Retrograde in Cancer ~ Seize your opportunities - align 27</a></li>
+<li><a href="https://vedicrishi.in/jupiter-transit-in-cancer">Jupiter (Guru) Transit in Cancer 2026 - Free Calculator</a></li>
+<li><a href="https://www.almanac.com/jupiter-enters-leo-fortune-favors-boldest">Jupiter Enters Leo: Fortune Favors the Boldest - Farmer's Almanac</a></li>
+<li><a href="https://www.scribd.com/document/1007549374/Retrograde-Planets-2026-Online-Calendar">Retrograde Planets 2026, Online Calendar | PDF | Hindu Astrology | Local Interstellar Cloud</a></li>
+<li><a href="https://in-the-sky.org/news.php?id=20260311_12_100">Jupiter ends retrograde motion - In-The-Sky.org</a></li>
+<li><a href="https://www.nakedeyeplanets.com/jupiter.htm">The Position of Jupiter in the Night Sky: 2025 to 2029 - The Naked Eye Planets</a></li>
+<li><a href="https://www.zodiscope.io/journal/jupiter-in-leo-2026">Jupiter in Leo 2026: 13 Months That Start June 30 - Zodiscope</a></li>
+<li><a href="https://komilla.com/lib-vakri-grahas.html">Vakri Grahas - Retrograde Planets - Komilla Sutton</a></li>
+<li><a href="https://www.reddit.com/r/Advancedastrology/comments/1pvg2fp/predictions_for_2026/">Predictions for 2026? : r/Advancedastrology - Reddit</a></li>
+<li><a href="https://benebellwen.com/2025/09/19/2026-metaphysicians-day-planner-17/">2026 Metaphysician's Day Planner $17 - Benebell Wen</a></li>
+<li><a href="https://graziamagazine.com/us/articles/why-august-2026-is-about-to-change-everything-for-3-zodiac-signs-are-you-one-of-them-for-good/">Why August 2026 Is About to Change Everything for 3 Zodiac Signs — Are You One of Them for Good - Grazia</a></li>
+<li><a href="https://api.substack.com/feed/podcast/3176039/s/171731.rss">Sacred Rituals & Devotion of India by Dharmikvibes - Substack</a></li>
+<li><a href="https://www.scribd.com/document/970284469/Panchayatana-Puja-Panchadevopasana-A4-FINAL-v2-0-2">Panchāyatana Pūjā: A Guide to Worship | PDF | Religious Philosophical Concepts - Scribd</a></li>
+<li><a href="https://www.pavitrajyotish.com/article/lunar-eclipse-on-3-march-2026/">Lunar Eclipse on 3 March 2026 - PavitraJyotish</a></li>
+<li><a href="https://www.venkateswaratemple.org/flyer/2026_27_EnglishPanchangamFinal.pdf">NORTH AMERICA ENGLISH PANCHANGAM 2026-27 - ::Sri Venkateswara Temple::</a></li>
+<li><a href="https://timesofindia.indiatimes.com/astrology/planets-transits/when-is-next-solar-eclipse-2026-check-date-and-how-to-witness-this-surya-grahan/articleshow/130547878.cms">When is next Solar Eclipse 2026? Check date and how to witness this Surya Grahan</a></li>
+</ol>
+</div>
+        </article>
+    </div>
+
+</body>
+</html>
