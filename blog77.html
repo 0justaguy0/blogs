@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spirit Affliction Remedies</title>
+    <style>
+        :root {
+            --bg-color: #FDF9F1;
+            --text-color: #3E2723;
+            --indian-yellow: #E4A025;
+            --indian-orange: #E65100;
+            --accent-light: #FFECB3;
+            --ref-bg: #FFF3E0;
+        }
+
+        body {
+            font-family: 'Georgia', 'Nirmala UI', 'Mangal', serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(var(--bg-color) 80%, var(--accent-light) 100%);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #FFFFFF;
+            padding: 50px 60px;
+            box-shadow: 0 10px 30px rgba(62, 39, 35, 0.1);
+            border-top: 8px solid var(--indian-orange);
+            border-bottom: 8px solid var(--indian-yellow);
+            border-radius: 4px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed var(--indian-yellow);
+        }
+
+        h1 {
+            color: var(--indian-orange);
+            font-size: 2.5em;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        h2 {
+            color: var(--indian-yellow);
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--indian-orange);
+            padding-left: 15px;
+        }
+
+        h3, h4 {
+            color: var(--indian-orange);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        .intro-text::first-letter {
+            float: left;
+            font-size: 3.5em;
+            line-height: 0.8;
+            padding-right: 8px;
+            padding-top: 4px;
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        ul, ol {
+            margin: 0 0 24px 0;
+            padding-left: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ol {
+            list-style-position: outside;
+            padding-left: 2.2em;
+        }
+
+        ul li, ol li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        ol li {
+            padding-left: 0.35em;
+        }
+
+        ul li::before {
+            content: '\2022';
+            position: absolute;
+            left: 0;
+            top: 0.05em;
+            color: var(--indian-orange);
+            font-size: 1.2em;
+            line-height: 1;
+        }
+
+        ol li::marker {
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        strong {
+            color: var(--indian-orange);
+        }
+
+        .image-placeholder-container {
+            margin: 30px 0;
+            text-align: center;
+            font-style: italic;
+            color: #795548;
+            background-color: var(--accent-light);
+            padding: 20px;
+            border-radius: 4px;
+            border: 1px solid var(--indian-yellow);
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.98em;
+            background-color: #FFFDF8;
+        }
+
+        th, td {
+            border: 1px solid #F0D49B;
+            padding: 10px 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--ref-bg);
+            color: var(--indian-orange);
+        }
+
+        blockquote {
+            margin: 30px 0;
+            padding: 20px 25px;
+            background-color: var(--accent-light);
+            border-left: 5px solid var(--indian-orange);
+            font-style: italic;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px dashed var(--indian-yellow);
+            margin: 32px 0;
+        }
+
+        .references {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: var(--ref-bg);
+            border-radius: 8px;
+            font-size: 0.9em;
+        }
+
+        .references h2, .references h3 {
+            color: var(--text-color);
+            margin-top: 0;
+            border-bottom: 1px solid var(--indian-yellow);
+            padding-bottom: 10px;
+            border-left: 0;
+            padding-left: 0;
+        }
+
+        .references p, .references li {
+            margin-bottom: 12px;
+            word-wrap: break-word;
+        }
+
+        .references a {
+            color: var(--indian-orange);
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Spirit Affliction Remedies</h1>
+        </header>
+
+        <article>
+<h2>1. Introduction: Recognizing the Signs of Spiritual Interference</h2>
+<p class="intro-text">In the high-vibrational science of Vedic tradition, a person may occasionally experience disturbances that defy physical explanation. Symptoms such as unexplained, bone-deep fatigue, recurring nightmares, paranoid hallucinations, and sudden, violent shifts in behavior are frequently the signature of <em>Pret Badha</em> (spirit affliction). These interferences manifest when the structural integrity of the subtle body’s protective shield, known as <em>Ojas</em>, is compromised.</p>
+<div class="image-placeholder-container">
+    <img src="blog77_Image.png" alt="Remedies for Pisacha Bhut Preta Badha spirit affliction and Tantrik occult rituals: the five spirit affliction types (Preta Badha from departed souls with Saturn in 8th house and Mandi Gulika in 4th house on Bharani Magha Moola Nakshatras, Bhut Badha lower astral entities with Sun or Moon and Rahu in Lagna on Krittika Ashlesha Shatabhisha, Pisacha Badha aggressive astral parasites with weak Moon and Saturn in Lagna and Mars aspect from 6th or 8th house on Jyeshtha Chitra Dhanishta, Shakini Dakini Badha directed sorcery and female astral projections with Venus Ketu Shukra Ketu in watery signs Cancer Scorpio Pisces on Ardra Ashlesha Vishakha, and Brahma Rakshasa corrupted scholar spirits with afflicted Jupiter and Badhakasthana 7th 9th or 11th houses on Purva Bhadrapada Pushya Revati); Vulnerability Ratio formula V badha equals malefic Badhakesha plus 6th lord plus Rahu plus Saturn divided by Ascendant lord plus Jupiter with ratio greater than one indicating susceptibility; Trik Bhavas 6th Ripu Bhava 8th Mrityu Bhava 12th Vyaya Bhava as portals of entry; weak Ascendant Lord Lagnesha with Rahu or Saturn in Trik Bhava; Moon Manas Karaka with Rahu or Ketu forming Pishacha Yoga; Mercury in 8th house in airy signs Gemini allowing astral projection; Gulika Mandi in 1st or 4th houses indicating Preta Sabam curse of departed soul; Trilokya Vijaya Homa fire ritual for victory over three worlds and all spirit realms with exact vidhi and mantras and samagri; Narasimha Pratyangira Kavacha recitation and Pratyangira Homam for destroying demoniac and spirit attacks with Pratyangira Beej Mantra; Bagalamukhi Homa and Bagalamukhi Stotram for stopping speech and black magic of enemies with Bagalamukhi Beej Mantra Om Hleem Bagalamukhi Sarva Dushtam Stambhayam Stambhayam Hleem Hleem Swaha with yellow items offering; Kala Bhairava Ashtami worship and Kala Bhairava Ashtakam recitation with black sesame oil lamps mustard oil and black dog feeding; Chhinnamasta Devi worship for cutting ego attachments with Chhinnamasta Beej Mantra and red flower and red chandan offerings; Panchamukhi Hanuman worship with Panchamukhi Hanuman Kavach and Hanuman Chalisa and Bajrang Baan with 40 day Anushthan, five faces Narasimha east Garuda west Varaha north Hayagriva up Hanuma south; Narasimha worship for Preta Badha and Pisacha Badha with Narasimha Kavacha and Narasimha Mantra Raja and Narasimha Jayanti and Narasimha Chaturdashi observance and Swati and Chitra Nakshatra alignments; occult home cleansing rituals lemongrass and Guggul Dhoop, rock salt Saindhav Lavan four corners, camphor Kapur burning Aarti, Ganga jal sprinkling with Ganga Stotra, peacock feather Mor Pankh placement, iron nail or horseshoe at door threshold; Durga Saptashati Devi Mahatmyam Pradhanika Rahasya and Vaikritika Rahasya chapters for destroying Mahishasura Chanda Munda Shumbha Nishumbha and Raktabija; Smashan Kali worship at cremation ground with Kali Beej Mantra and Mahakali Stotra and Tantrokta Kali Khadga Mala and Bhoota Damara Stotra of Lord Shiva for subjugating all spirit entities; Vedic deities Lord Shiva as Bhootnath lord of ghosts with Nandi Bhringi and Bhoota Gana, Lord Vishnu Narasimha Varaha Hayagriva avatar protection, Goddess Durga Kali Pratyangira, Lord Hanuman ultimate protector against Saturn and spirit afflictions, Lord Bhairava guardian of cremation ground and time deity, Navadurga worship; 14 Mukhi Rudraksha Deva Mani ruled by Shiva and Hanuman for spirit protection, 11 Mukhi Rudraksha ruled by Hanuman for courage, 9 Mukhi Rudraksha ruled by Durga for destroying fear and spirit attacks, Cats Eye Lehsuniya for Ketu psychic protection, wearing procedures and ascendant sign guidance; Ayurvedic protocols for anxiety insomnia panic attacks unexplained body pain chronic fatigue and psychic disturbances with Brahmi Mandukaparni Jatamansi Ashwagandha Vacha Acorus calamus Sarpagandha and Tulsi, Nasya therapy with Anu Taila or Shadbindu Taila, Dhoomapana medicinal smoking with Guggul and Loban for aura cleansing, Ayurvedic Ojas as energetic immunity against spirit attack; mythological Puranic basis of Pisachas Bhutas Pretas and Rakshasas from Brahmas creation, Lord Shiva as Bhootnath consuming Halahala poison creating Neelkanth form, destruction of Andhaka by Shiva, Mahishasura by Durga, Hiranyakashipu by Narasimha, Shumbha Nishumbha and Raktabija by Kali; 12 rashi zodiac house activations and effects from 1st house Lagna to 12th house with specific remedies for each house placement; transit timing Rahu transiting 6th 8th or 12th house from Ascendant, Ketu transiting Ascendant or Moon, Saturn Ashtama Shani in 8th house, Yamaganda Kaal and Gulika Kaal inauspicious timing with transit based remedies; Vedic counselling distinction between spirit affliction and mental health conditions, not replacing psychiatric care with rituals, holistic approach combining Vedic remedies with mental health support for unexplained fear recurring nightmares sleep paralysis feeling of being watched sudden mood changes and chronic unexplained health issues; Chhinnamasta Pratyangira and Bagalamukhi Mahavidya worship for advanced practitioners with guru initiation requirements, Dakshina Marga right hand path and Vama Marga left hand path distinction, importance of purity and devotion, with remedial astrology and Vedic deities and holistic wellbeing.">
+</div>
+<p>When this energetic skin is thinned, the native becomes a host for external disembodied consciousnesses, malevolent elementals, or directed occult currents known as <em>Abhichara</em>. The affected individual may exhibit unusual traits: breathing fast and audibly, becoming suddenly powerful enough to perform impossible tasks, or losing the fundamental biological desire for hunger and thirst. Grounded in <em>Jyotish</em> (astrology) and <em>Bhuta Vidya</em> (Ayurvedic psychopathology), identifying these interferences is the first step toward reclaiming your energetic sovereignty.</p>
+<h2>2. The Astrological DNA: How Your Birth Chart Maps Vulnerability</h2>
+<p>Vulnerability to astral intrusion is not random; it is mathematically mapped within the <em>Janma Kundali</em> (birth chart). Specific planetary alignments create an "open energetic threshold," allowing negative frequencies to bypass the rational intellect and anchor in the physical body.</p>
+<h3>The Mathematical Formula of Badha</h3>
+<p>To assess the risk of spirit interference, we evaluate the ratio of malefic "Badha Force" to the native's structural strength:</p>
+<p>$$V_{badha} = \frac{\mu(B_{lord}) + \mu(H_6) + \mu(\text{Rahu}) + \mu(\text{Saturn})}{\lambda(L_{lord}) + \lambda(\text{Jupiter})}$$</p>
+<p>In this technical evaluation, $\mu$ represents the functional malefic strength of the <em>Badhakesha</em> (the planet of obstruction) and the 6th Lord ($H_6$), while $\lambda$ represents the structural strength of the Ascendant Lord ($L_{lord}$) and the protective aspect of Jupiter. A ratio where $V_{badha} &gt; 1$ indicates a high susceptibility to psychic paralysis and possession.</p>
+<h3>Portals of Entry: The Trik Bhavas</h3>
+<p>The primary entry points for negative energy are the <em>Trik Bhavas</em>:</p>
+<ul>
+<li><strong>6th House (Ripu Bhava):</strong> The gateway for obstacles and the active deployment of <em>Abhichara</em> (sorcery).</li>
+<li><strong>8th House (Mrityu Bhava):</strong> A portal for hidden dimensions and earthbound astral entities.</li>
+<li><strong>12th House (Vyaya Bhava):</strong> Governs the subconscious and sleep; when afflicted, it leaves the native vulnerable to night terrors and sleep paralysis.</li>
+</ul>
+<h3>High-Risk Planetary Indicators</h3>
+<ul>
+<li>*<em>Weak Ascendant Lord (</em>Lagnanesha<em>):</em><em> If the ruler of the 1st house is conjoined with Rahu or Saturn in a </em>Trik Bhava*, the body’s natural vitality is compromised.</li>
+<li>*<em>The Moon (</em>Manas Karaka<em>) Affliction:</em><em> When the Moon is conjoined with Rahu or Ketu, it forms </em>Pishacha Yoga*, creating a cognitive fog that invites discarnate attachments.</li>
+<li><strong>Mercury in the 8th House:</strong> As the ruler of the nervous system, Mercury in the 8th house—particularly in an airy sign like Gemini—allows astral projections to bypass the rational intellect.</li>
+<li><strong>The Dark Upagrahas:</strong> The presence of <em>Gulika</em> or <em>Mandi</em> in the 1st or 4th houses indicates <em>Preta Sabam</em> (the curse of a departed soul), often manifesting as unexplained cold spots in the home or erratic motor behavior.</li>
+</ul>
+<h2>3. Typologies of Affliction: Identifying the Energy</h2>
+<p>Vedic texts classify spiritual interferences based on their origins and the specific geometric alignments of the cosmos that allow them to manifest.</p>
+<table>
+<thead><tr><th>Type</th><th>Origin/Cause</th><th>Astrological Indicator</th><th>Key Nakshatras</th></tr></thead>
+<tbody>
+<tr><td><strong>Preta Badha</strong></td><td>Unresolved desires of departed souls.</td><td>Saturn in the 8th house; <em>Mandi</em> or <em>Gulika</em> in the 4th house.</td><td><em>Bharani, Magha, Moola</em></td></tr>
+<tr><td><strong>Bhut Badha</strong></td><td>Lower-level astral entities or nature spirits.</td><td>Sun/Moon with Rahu in the Lagna; Malefics in the 5th/9th houses.</td><td><em>Krittika, Ashlesha, Shatabhisha</em></td></tr>
+<tr><td><strong>Pisacha Badha</strong></td><td>Aggressive, low-vibrational astral parasites.</td><td>Weak Moon with Saturn in Lagna; Mars aspecting from the 6th/8th.</td><td><em>Jyeshtha, Chitra, Dhanishta</em></td></tr>
+<tr><td><strong>Shakini/Dakini</strong></td><td>Directed sorcery or female astral projections.</td><td>Venus-Ketu (<em>Shukra-Ketu</em>) in watery signs (Cancer, Scorpio, Pisces).</td><td><em>Ardra, Ashlesha, Vishakha</em></td></tr>
+<tr><td><strong>Brahma Rakshasa</strong></td><td>Corrupted spirits of highly educated scholars.</td><td>Afflicted Jupiter associated with the <em>Badhakasthana</em> (7th, 9th, or 11th houses).</td><td><em>Purva Bhadrapada, Pushya, Revati</em></td></tr>
+</tbody>
+</table>
+<h2>4. The Remedial Action Plan: Mantras and Rituals for Protection</h2>
+<p>Dismantling a spirit affliction requires precise metaphysical technologies that mechanically alter the local energetic field.</p>
+<h3>Primary Deities and Technical Timing</h3>
+<ul>
+<li><strong>Lord Shiva (Bhootnath):</strong> The master of all elements and ghosts. For maximum effect, perform <em>Rudrabhishek</em> on Monday mornings.</li>
+<li><strong>Lord Hanuman:</strong> The ultimate shield. Recite the <em>Hanuman Chalisa</em> to remove "bad sight."</li>
+<li><strong>Lord Narasimha:</strong> The primordial protector. His vibration is the specific antidote to <em>Pisacha</em> attachments.</li>
+<li><strong>Technical Timing:</strong> High-intensity rituals like the <em>Trilokya Vijaya Homa</em> should be conducted on a Thursday or Sunday when the moon aligns with the <em>Swati</em> or <em>Pushya</em> Nakshatras.</li>
+</ul>
+<h3>Essential Mantras</h3>
+<ul>
+<li><strong>Mahamrityunjaya Mantra:</strong> Stabilizes the nervous system and protects against chronic transformation.</li>
+<li><strong>Narasimha Beej ("KSRAUM"):</strong> Use this seed-mantra to protect the head and seat of consciousness.</li>
+</ul>
+<h3>The Power of the Kavacha: Verbal Shields</h3>
+<p>Specialized "verbal shields" offer targeted protection. The <strong>Kamakalakali Trilokyamohana Kavacham</strong> is a guarded secret involving 34 goddesses who protect specific bodily parts. The benefits are tied to the count of recitations:</p>
+<ul>
+<li><strong>Single Recitation:</strong> Destroys accumulated sins.</li>
+<li><strong>Three Times:</strong> Grants long life and cures acute ailments.</li>
+<li><strong>100 Times:</strong> Bestows all types of <em>Siddhis</em> (superhuman powers).</li>
+<li><strong>10,000 Times:</strong> The native achieves complete spiritual union (becoming Shiva).</li>
+</ul>
+<h2>5. Domestic Defense: External Shields for the Living Space</h2>
+<p>Negative astral imprints can be neutralized by maintaining a high vibrational frequency within the home.</p>
+<ul>
+<li><strong>Smoke Cleansing:</strong> Burn a mixture of Guggul resin, Loban, and dried lemongrass on cow dung cakes. Carry the burner clockwise through every room to expel low-frequency entities.</li>
+<li>*<em>Rock Salt (</em>Saindhav Lavan<em>):</em>* Place bowls of coarse salt in room corners for 24 hours to absorb stagnant psychic projections. Mop floors with salt water daily to dissolve lingering astral imprints.</li>
+<li>*<em>Holy Water (</em>Ganga Jal<em>):</em><em> Every Monday morning, sprinkle </em>Ganga Jal<em> throughout the house while chanting the </em>Ganga Stotra* to elevate the domestic vibration.</li>
+<li><strong>Physical Barriers:</strong> Place a bundle of nine peacock feathers (<em>Mor Pankh</em>) above the main entrance to filter malicious intent. Iron nails or a black horseshoe can establish a protective grid when placed on a Saturday.</li>
+</ul>
+<h2>6. Wearable Fortification: Internal Shields and Zodiac Remedies</h2>
+<p>Physical objects held against the skin can structurally fortify the aura and stabilize the biological body.</p>
+<h3>Rudraksha and Gemstones</h3>
+<ul>
+<li><strong>14 Mukhi (Deva Mani):</strong> The most powerful bead for absolute protection and strengthening willpower.</li>
+<li><strong>11 Mukhi:</strong> Ruled by the eleven forms of Rudra; stabilizes the nervous system and eliminates fear.</li>
+<li><strong>9 Mukhi:</strong> Governed by Goddess Durga; blocks external psychic attacks and neutralizes Rahu.</li>
+<li>*<em>Cat’s Eye (</em>Lehsuniya<em>):</em>* Set in silver and worn on the middle finger, this stone is essential for blocking astral hallucinations.</li>
+</ul>
+<h3>Zodiac-Specific Quick Reference</h3>
+<ul>
+<li><strong>Aries:</strong> Recite <em>Hanuman Chalisa</em> daily.</li>
+<li><strong>Taurus:</strong> Regular chanting of the <em>Mahamrityunjaya Mantra</em>.</li>
+<li><strong>Gemini:</strong> Perform <em>Rudrabhishek</em> at a Shiva temple.</li>
+<li><strong>Cancer:</strong> Chant the <em>Gayatri Mantra</em> daily.</li>
+<li><strong>Leo:</strong> Offer water to the Sun every morning.</li>
+<li><strong>Virgo:</strong> Read <em>Vishnu Sahasranama</em> regularly.</li>
+<li><strong>Libra:</strong> Donate black sesame and mustard oil to the needy.</li>
+<li><strong>Scorpio:</strong> Chant <em>Mahamrityunjaya Mantra</em> and light an oil lamp in a Shiva temple.</li>
+<li><strong>Sagittarius:</strong> Offer water to a Peepal tree and chant the <em>Gayatri Mantra</em>.</li>
+<li><strong>Capricorn:</strong> Recite <em>Hanuman Chalisa</em> daily.</li>
+<li><strong>Aquarius:</strong> Chant the <em>Shiva Stotra</em> regularly.</li>
+<li><strong>Pisces:</strong> Offer milk and water to Lord Shiva and chant the <em>Mahamrityunjaya Mantra</em>.</li>
+</ul>
+<h2>7. A Note on Integrity: Spiritual vs. Clinical Care</h2>
+<p>It is vital to maintain a "Clinical Boundary." While spiritual rituals stabilize the subtle energy field (<em>Sukshma Sharira</em>), they do not replace professional psychiatric care for biochemical imbalances like clinical depression or schizophrenia.</p>
+<p>In the branch of <em>Bhuta Vidya</em>, we use Ayurvedic psychotherapy to rebuild the protective myelin sheaths of the nervous system. Herbs like <strong>Brahmi</strong>, <strong>Jatamansi</strong>, and <strong>Vacha</strong> are utilized to restore <em>Ojas</em> and cognitive clarity. A <em>Sattvik</em> lifestyle—consuming clean, fresh food and maintaining ethical living—remains the ultimate foundation for immunity against interference.</p>
+<h2>8. Conclusion: Reclaiming Your Energetic Sovereignty</h2>
+<p>Protection is not merely about occasional rituals; it is about the frequency you maintain through daily habits. By lighting a ghee lamp, practicing forgiveness, and maintaining physical and mental purity, you build an impenetrable aura. Reclaiming your sovereignty begins with the realization that your energetic protection is a duty—one supported by the ancient, scientific wisdom of the Vedic tradition.</p>
+
+<div class="references">
+<h2>Sources</h2>
+<p>51. [Homa Variations: The Study of Ritual Change across the Longue Durée (Oxford Ritual Studies) \[1 ed.\] 9780199351589, 0199351589 - DOKUMEN.PUB](https://dokumen.pub/homa-variations-the-study-of-ritual-change-across-the-longue-duree-oxford-ritual-studies-1nbsped-9780199351589-0199351589.html)</p>
+<p>68. [Bhuta - Damara Tantra \[English\] By Giri Ratna Mishra - Bookkish India](https://bookkish.com/products/bhuta-damara-tantra)</p>
+<ol>
+<li><a href="https://astrologicalmusings.com/pret-badha-yoga-or-pishacha-yoga-in-astrology-trouble-through-evil-spirits/">Pret Badha Yoga or Pishacha Yoga in Astrology- Trouble through evil spirits</a></li>
+<li><a href="https://www.scribd.com/document/466414726/Karma-and-miseries">Understanding Abhichara and Misery | PDF | Science - Scribd</a></li>
+<li><a href="https://www.stephen-knapp.com/prayers_to_lord_narasimhadeva.htm">Prayers to Lord Narasimhadeva - Stephen Knapp</a></li>
+<li><a href="https://www.scribd.com/document/268123101/Maha-Narsimha">Understanding Narasimha Avatar Forms | PDF | Vishnu | Transcendence (Religion) - Scribd</a></li>
+<li><a href="https://www.reddit.com/r/Tantrasadhaks/comments/1ipw2no/kundli_me_black_magic_yog/?tl=en">Black magic yoga in Kundli : r/Tantrasadhaks - Reddit</a></li>
+<li><a href="https://www.rudraksha-ratna.com/buy/pratyangira-devi-mantra-japa-and-yajna-night-puja">Pratyangira Devi Mantra Japa and Yajna- Night Puja - Rudraksha Ratna</a></li>
+<li><a href="https://vedapath.app/blog/panchamukhi-hanuman-the-five-faced-form-that-saved-rama-from-the-underworld">Panchamukhi Hanuman - The Five-Faced Form That Saved Rama from the Underworld</a></li>
+<li><a href="https://www.exoticindiaart.com/blog/panchamukhi-hanuman-stories-and-significance/">Panchamukhi Hanuman: Story, Five Faces and Spiritual Significance - Exotic India Art</a></li>
+<li><a href="https://manblunder.com/articlesview/kamakalakali-trilokyamohana-kavacham">Kamakalakali Trilokyamohana Kavacham - Manblunder</a></li>
+<li><a href="https://www.astrovidhi.com/pret-badha/">Bhoot Pret Badha Dosh Nivaran/Upaay and Remedies, Vashikaran Manta - AstroVidhi</a></li>
+<li><a href="https://astroshaadi.co.in/blogs/how-astrology-identifies-the-presence-of-preta-dosha-in-your-birth-chart">How Astrology Identifies the Presence of Preta Dosha in Your Birth Chart - AstroShaadi</a></li>
+<li><a href="https://saptarishisastrology.com/pret-badha-by-astrologer-rakesh-soni/">Pret Badha by Astrologer Rakesh Soni</a></li>
+<li><a href="https://www.scribd.com/document/83688450/161-20070318">Badhaka Shanti: Types and Remedies | PDF | Planets In Astrology - Scribd</a></li>
+<li><a href="https://www.scribd.com/document/520641382/Badhakasthana">Badhakasthana Analysis in Astrology | PDF | Ancient Astronomy - Scribd</a></li>
+<li><a href="https://www.scribd.com/document/158000926/ExtractsPrashna-Marga">Prashna Marga: Astrology Insights | PDF - Scribd</a></li>
+<li><a href="https://anandsoni.com/ghosts-spirits/">Ghosts &amp; Spirits - Anand Soni</a></li>
+<li><a href="https://www.scribd.com/doc/254634665/Ghost-Badha-and-Astrology">Analyzing Pret Badha in Astrology | PDF - Scribd</a></li>
+<li><a href="https://www.scribd.com/document/793832456/Dakshina-kalika">Dakshina Kalika Khadgamala Mantras | PDF | Gender And Hinduism - Scribd</a></li>
+<li><a href="https://www.rudraksha-ratna.com/buy/vipreet-pratyangira-devi-mantra-japa-and-yajna-night-puja">Vipreet Pratyangira Devi Mantra Japa and Yajna- Night Puja - Rudraksha Ratna</a></li>
+<li><a href="https://www.exoticindiaart.com/book/details/bhuta-damara-tantra-authoritative-tantra-of-sri-krodha-bhairava-along-with-his-mantras-mandal-worship-rituals-and-accomplishment-rituals-of-bhutinis-yakshinis-snake-girls-etc-nak836/">Bhuta Damara Tantra (An Authoritative Tantra of Sri Krodha Bhairava Along with His Mantras, Mandal Worship Rituals and Accomplishment Rituals of Bhutinis, Yakshinis, Snake-Girls etc.)</a></li>
+<li><a href="https://www.scribd.com/document/622797465/Surya-Homam">Simple Surya Homa Guide | PDF | Mantra - Scribd</a></li>
+<li><a href="https://vedabharathipeetham.org/pratyangira-mantra-japatarpana-homam-108/">Pratyangira Mantra JapaTarpana &amp; Homam 108</a></li>
+<li><a href="https://ijsrme.crystalpen.in/uploads/68073136b54dd_347.pdf">1 VASTHUSHASTRAM IN INDIAN ASTROLOGY - HEROIC PLANETS MANTHI S. Murugesan* &amp; Dr. Mahalakshmi**</a></li>
+<li><a href="https://www.scribd.com/doc/114277537/Yajna-Science">Vedic Yagna: Principles and Practices | PDF | Carbon Dioxide | Smoke - Scribd</a></li>
+<li><a href="https://www.reddit.com/r/Tantrasadhaks/comments/1neqz0o/bhuta_experience_from_bhuta_damra_tantra/">Bhuta experience from Bhuta damra tantra : r/Tantrasadhaks - Reddit</a></li>
+<li><a href="https://www.scribd.com/doc/310033040/dakshinakalika-khadgamala-stotram">Dakshina Kali Khadgamala Stotram | PDF | Language Arts &amp; Discipline - Scribd</a></li>
+<li><a href="https://www.reddit.com/r/Shaktism/comments/1tfjtk0/my_simple_worship_in_kali/">My simple worship in Kali : r/Shaktism - Reddit</a></li>
+<li><a href="https://www.reddit.com/r/vedicastrology/comments/1rktmen/tantrik_preta_badha_problem/">Tantrik /preta badha problem : r/vedicastrology - Reddit</a></li>
+<li><a href="https://www.scribd.com/document/540233411/Astro-secrets">Dasa Trend Analysis in Astrology | PDF - Scribd</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Kali">Kali - Wikipedia</a></li>
+<li><a href="https://sitharsastrology.com/blog/planetary-combinations-in-vedic-astrology">Planetary Combinations in Vedic Astrology</a></li>
+<li><a href="https://timesofindia.indiatimes.com/astrology/planets-transits/the-most-dangerous-planetary-combinations-in-a-birth-chart/articleshow/126500693.cms">The most dangerous planetary combinations in a birth chart - The Times of India</a></li>
+<li><a href="https://www.astroved.com/blogs/rakshasa-gana-its-meaning-characteristics-effects-on-marriage">Rakshasa Gana: Its Meaning, Characteristics, &amp; Effects on Marriage - AstroVed</a></li>
+<li><a href="https://cilguru.com/blog/the-3-ganas-in-vedic-astrology-deva-manushya-rakshasa-explained/">The 3 Ganas in Vedic Astrology: Deva, Manushya &amp; Rakshasa Explained - Cilguru</a></li>
+<li><a href="https://www.melooha.com/blog/type-of-ganas-in-astrology">Discover Types of Ganas In Astrology</a></li>
+<li><a href="https://gurukripa.org.in/shop/yantra/upari-badha-nivaran-yantra">Upari Badha Nivaran Yantra | ऊपरी बाधा निवारण यन्त्र - GuruKripa</a></li>
+<li><a href="https://www.scribd.com/document/831676641/Esoteric-Astrological-Combinations-Excerpts-From-Yogis-Destiny-and-Wheel-of-Time">Esoteric Astrology Combinations Explained | PDF - Scribd</a></li>
+<li><a href="https://saptarishisshop.com/nabhasa-yogas-by-g-k-goel/">Nabhasa Yogas By G.K. Goel | Saptarishis Astrology</a></li>
+<li><a href="https://www.kamakoti.org/kamakoti/brahmandapurana/bookview.php?chapnum=15">Chapter 15: PARASHURAMA CHARITRA - King Kaartaveeryarjuna and his invincibility - Essence of Brahmanda Purana | Sri Kanchi Kamakoti Peetham</a></li>
+<li><a href="https://www.scribd.com/document/871269915/Jyotish-2021-Tirupur-S-Gopalakrishnan-Ashtamangala-Prasannam">Ashtamangala Prasna: A Guide to Astrology | PDF - Scribd</a></li>
+<li><a href="http://mudigeretemple.weebly.com/stotras/sri-narasimha-kavacha">SRI NARASIMHA KAVACHA - mudigere sri yoga narasimha swamy temple</a></li>
+<li><a href="https://www.scribd.com/document/138653548/Narsimha-mantra-docx">Narasimha Mantra and 108 Names | PDF | Hindu Texts | Theism - Scribd</a></li>
+<li><a href="https://gurukripa.org.in/blog/devi/sarv-devi/pratyangira-mala-mantra">Pratyangira Mala Mantra | Vidhi | Benefits | माला मन्त्र - GuruKripa</a></li>
+<li><a href="https://ru.scribd.com/doc/201917618/Pratyangira-Homam">Pratyangira Homam Item Checklist | PDF | Cuisine - Scribd</a></li>
+<li><a href="http://mudigeretemple.weebly.com/stotras">Stotras - mudigere sri yoga narasimha swamy temple</a></li>
+<li><a href="https://www.scribd.com/doc/77039745/Karma-Miseries-of-Men">Understanding Karma and Human Misery | PDF | Astrological Sign - Scribd</a></li>
+<li><a href="https://www.youtube.com/watch?v=qiJKsijelLc">श्री दक्षिणकाली खड्गमाला स्तोत्र | DakShina Kali KhaDgamala - YouTube</a></li>
+<li><a href="https://www.scribd.com/document/825277726/Bnn-Diploma-4">BNN Astrology Combinations Overview | PDF - Scribd</a></li>
+<li><a href="https://www.scribd.com/document/337226755/B-V-Raman-Prasna-Marga-1-pdf">B.V. Raman - Prasna Marga-1 PDF - Scribd</a></li>
+<li><a href="https://www.scribd.com/document/840748019/Prayers-Addressed-to-Lord-Krishna-in-Sanskrit-Tamil-Malayalam-Hindi">Prayers to Lord Krishna in Multiple Languages | PDF - Scribd</a></li>
+<li><a href="https://www.youtube.com/watch?v=_f5wSIJ44As">Vastu Puja and Vastu Shanti Mantra - YouTube</a></li>
+<li><a href="https://www.youtube.com/watch?v=eO3oRwNwcQ4">ఎటువంటి వారిపైన అయినా విజయం సాధించే అత్యంత రహస్యమైనటువంటి మంత్రం Trailokya Vijaya Vidya Mantram - YouTube</a></li>
+<li><a href="https://www.youtube.com/watch?v=mzNqDtoFGVs">सर्वारिष्ट निवारण स्तोत्र || Sarvaristha Nivaran Stotra 3 Times - YouTube</a></li>
+<li><a href="https://enlightenmentthangka.com/products/trailakya-vijaya-tara-9x13-akg-lhasa-stone-21147">Trilokya Vijaya Tara | 21 Tara of Surya Gupta Thangka</a></li>
+<li><a href="https://www.youtube.com/watch?v=tBg35KHqpAA">Narasimha Mantra Raja Pada Stotram - YouTube</a></li>
+<li><a href="https://www.scribd.com/document/483242370/narasimha-kavaca-b-samhita">Nrsimha Kavaca Stotram Overview | PDF | Mantra | Hindu Literature - Scribd</a></li>
+<li><a href="https://www.youtube.com/watch?v=dlPO7hGAhqc">Narasimha Puja &amp; Yagna Vidhi in brief - YouTube</a></li>
+<li><a href="https://www.scribd.com/doc/201917618/Pratyangira-Homam">Pratyangira Homam Item Checklist | PDF - Scribd</a></li>
+<li><a href="https://astronavprayas.wordpress.com/author/astronavprayas/page/30/">astronavprayas – Page 30</a></li>
+<li><a href="https://vedastro.org/Complete-List-VedAstro-API-Methods-Calculators.html">Complete List of VedAstro API Methods | 600+ Vedic Astrology Calculators</a></li>
+<li><a href="https://archive.org/stream/PrasnaMargaBVR/Prasna%20Marga%201_djvu.txt">Full text of &quot;Prasna Marga - Dr. BV Raman&quot; - Internet Archive</a></li>
+<li><a href="https://sanskritdocuments.org/doc_devii/dakShiNakAlIkhaDgamAlAstotram.html">Shri Dakshinakali Khadgamala stotram - Sanskrit Documents</a></li>
+<li><a href="https://www.scribd.com/document/632997639/PRASNA-MARGA">Prasna Marga | PDF | Hindu Astrology - Scribd</a></li>
+<li><a href="https://www.scribd.com/document/890689686/Jyotish-Prasna-Tantra-B-v-Raman-no-Sanskrit">Prasna Tantra: A Guide to Horary Astrology | PDF - Scribd</a></li>
+<li><a href="https://archive.org/stream/shastras-prayer-hymns-nava-grahas/Prayer%20Hymns%20-%20Graha%20Stotras_djvu.txt">Full text of &quot;Prayer Hymns: Nava Graha Stotras&quot; - Internet Archive</a></li>
+<li><a href="https://www.abebooks.com/9789385005459/Bhuta-Damara-Tantra-Authoritative-Sri-9385005456/plp">Bhuta Damara Tantra (An Authoritative Tantra of Sri Krodha Bhairava Along with His Mantras, Mandal Worship Rituals and Accomplishment Rituals of Bhutinis, Yakshinis, Snake-Girls etc.) - Giri Ratna Mishra: 9789385005459 - AbeBooks</a></li>
+<li><a href="https://megamitensei.fandom.com/wiki/Bhuta_Damara">Bhuta Damara - Megami Tensei Wiki - Fandom</a></li>
+<li><a href="https://www.goodreads.com/book/show/40816944-bhuta-damara-tantra">Bhuta Damara Tantra by Giri Ratna Mishra - Goodreads</a></li>
+<li><a href="https://vedapath.app/en/brahmanda-purana/anushanga-pada">Anushanga Pada - Brahmanda Purana | English | Vedapath</a></li>
+</ol>
+</div>
+        </article>
+    </div>
+
+</body>
+</html>
