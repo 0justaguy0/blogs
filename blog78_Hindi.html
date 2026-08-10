@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कर्मिक शाप उपाय</title>
+    <style>
+        :root {
+            --bg-color: #FDF9F1;
+            --text-color: #3E2723;
+            --indian-yellow: #E4A025;
+            --indian-orange: #E65100;
+            --accent-light: #FFECB3;
+            --ref-bg: #FFF3E0;
+        }
+
+        body {
+            font-family: 'Georgia', 'Nirmala UI', 'Mangal', serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(var(--bg-color) 80%, var(--accent-light) 100%);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #FFFFFF;
+            padding: 50px 60px;
+            box-shadow: 0 10px 30px rgba(62, 39, 35, 0.1);
+            border-top: 8px solid var(--indian-orange);
+            border-bottom: 8px solid var(--indian-yellow);
+            border-radius: 4px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed var(--indian-yellow);
+        }
+
+        h1 {
+            color: var(--indian-orange);
+            font-size: 2.5em;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        h2 {
+            color: var(--indian-yellow);
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--indian-orange);
+            padding-left: 15px;
+        }
+
+        h3, h4 {
+            color: var(--indian-orange);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        .intro-text::first-letter {
+            float: left;
+            font-size: 3.5em;
+            line-height: 0.8;
+            padding-right: 8px;
+            padding-top: 4px;
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        ul, ol {
+            margin: 0 0 24px 0;
+            padding-left: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ol {
+            list-style-position: outside;
+            padding-left: 2.2em;
+        }
+
+        ul li, ol li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        ol li {
+            padding-left: 0.35em;
+        }
+
+        ul li::before {
+            content: '\2022';
+            position: absolute;
+            left: 0;
+            top: 0.05em;
+            color: var(--indian-orange);
+            font-size: 1.2em;
+            line-height: 1;
+        }
+
+        ol li::marker {
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        strong {
+            color: var(--indian-orange);
+        }
+
+        .image-placeholder-container {
+            margin: 30px 0;
+            text-align: center;
+            font-style: italic;
+            color: #795548;
+            background-color: var(--accent-light);
+            padding: 20px;
+            border-radius: 4px;
+            border: 1px solid var(--indian-yellow);
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.98em;
+            background-color: #FFFDF8;
+        }
+
+        th, td {
+            border: 1px solid #F0D49B;
+            padding: 10px 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--ref-bg);
+            color: var(--indian-orange);
+        }
+
+        blockquote {
+            margin: 30px 0;
+            padding: 20px 25px;
+            background-color: var(--accent-light);
+            border-left: 5px solid var(--indian-orange);
+            font-style: italic;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px dashed var(--indian-yellow);
+            margin: 32px 0;
+        }
+
+        .references {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: var(--ref-bg);
+            border-radius: 8px;
+            font-size: 0.9em;
+        }
+
+        .references h2, .references h3 {
+            color: var(--text-color);
+            margin-top: 0;
+            border-bottom: 1px solid var(--indian-yellow);
+            padding-bottom: 10px;
+            border-left: 0;
+            padding-left: 0;
+        }
+
+        .references p, .references li {
+            margin-bottom: 12px;
+            word-wrap: break-word;
+        }
+
+        .references a {
+            color: var(--indian-orange);
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>कर्मिक शाप उपाय</h1>
+        </header>
+
+        <article>
+<p class="intro-text">सनातन धर्म के गूढ़ सिद्धांतों के अनुसार, मनुष्य का जन्म केवल एक जैविक घटना नहीं है, बल्कि यह संचित कर्मों और 'धार्मिक ऋणों' (Dharmic Debts) का एक अनवरत चक्र है। क्या आपने कभी अनुभव किया है कि पूर्ण योग्यता और अथक परिश्रम के बाद भी आपकी सफलता के द्वार अंतिम क्षण में बंद हो जाते हैं? ज्योतिषीय दृष्टिकोण से, ये बाधाएं कोई आकस्मिक अवरोध नहीं, बल्कि वे 'अनपेक्षित बिल' (Unpaid Bills) या 'ऋण' हैं, जो हमारे पूर्वजों के कर्मों से जुड़े हैं। इस लेख का उद्देश्य पितृ दोष, शापित दोष और 'D60 चार्ट' के माध्यम से आपके जीवन की इन अदृश्य बाधाओं के रहस्यों को उजागर करना है।</p>
+<div class="image-placeholder-container">
+    <img src="blog78_Image.png" alt="शापित दोष और कर्मिक शाप उपाय: शनि राहु योग श्रापित दोष और कम जाने वाले वैदिक तांत्रिक और्कत ब्रह्म निर्माण और शाप मोचन के लिए: श्रापित योग शनि राहु योग दृढ़ं संयोग और विस्तृत श्रापित दोष परस्पर दृष्टि से बनने वाले कर्मिक शापा बंधन, त्रिक भाव 6वां 8वां 12वां श्रापित प्रभाव बढ़ाते हैं, 1वें लग्न से 12वें मोच्च भाव तक क्रियाजन्य, 10 डिग्री के भीतर कम संयोग बनाम श्रेष्ठ; सात प्रकार के कर्मिक शाप का वर्गीकरण: पितृ शाप पिता या पूर्वजों का शाप अश्लिष्ट सूर्य और 9वां भाव लॉर्ड और 9वें या 10वें में शनि, मातृ शाप अश्लिष्ट चंद्रमा और 4वां भाव लॉर्ड, देव शाप अश्लिष्ट गुरु और 5वां 9वां भाव, सर्प शाप राहु केतु अश्लिष्ट और काल सर्प योग अश्लेषा रोहिणी रेवती नक्षत्र पर, भ्राता शाप अश्लिष्ट मंगळ और 3वां भाव लॉर्ड, स्त्री शाप स्त्री या पत्नी का शाप अश्लिष्ट शुक्र और 7वां भाव, गुरु शाप गुरु या शिक्षक का शाप अश्लिष्ट गुरु और 9वां भाव, राज शाप राजा या सत्ता का शाप अश्लिष्ट सूर्य और 10वां भाव; नाड़ी शोधन शाप निर्णय D60 शस्तिंश चार्ट से पूर्व जन्म कर्म की पहचान; त्रिनाड़ी शुद्धि अभ्यास पीजाकला सुषुम्ना नाड़ी शुद्धि से शनि बीज ओम शम शनैश्चराय नमह और राहु बीज ओम राहवे नमह; पञ्च देव नारायण बलि अनुष्ठान के लिए विष्णु शिव ब्रह्मा गणेश सूर्य को पाँच देवता प्रसाद के साथ; कुंभ विवाह विवाह क्रिया जिसमें व्यक्ति मिट्टी से विवाह करता है और फिर मिट्टी को तोड़ता है, अर्क विवाह जिसमें अर्क पौधे से विवाह होता है, विष्णु सयन की शोकासन मुद्रा विष्णु को प्रार्थना; महामृत्युजय अनुष्ठान ओम त्र्यंबकम यजामहे सुगन्धिम पुष्टिवर्धनम ्र्योर्मुक्षीय मामृतात मन्त्र 1 25 000 2 50 000 8 00 000 क्रम में 21 या 40 दिन अनुष्ठान ब्रह्म मुहूर्त काल शिवलिंग पर दूध और जल; अघोर मंत्र ओम अघोरेभ्यो थ अघोरेभ्यो घोर घोर तरेभ्यह सर्वेभ्यवह सर्व शरभ सर्वेभ्यो भूयस्त्थ भूयस्त्थ नमह; नक्षत्र आधारित शाप निवारण अश्लेषा रोहिणी रेवती मूल भरणी मघ मूला नक्षत्र शांति होम; वैदिक देवता शिव मृत्युजय विष्णु नारायण कवच गणेश अथर्वशीषा दुर्गा हनुमान पितृ देवता; नीली सेफ्फायर शनि के लिए और गोमेद राहु के लिए, 7 मुखी रुद्राक्ष लक्ष्मी और शनि के लिए, 8 मुखी रुद्राक्ष गणेश के लिए, 14 मुखी रुद्राक्ष देव मणि; आयुर्वेद प्रोटोकॉल अश्वगंधा शिलाजित गुग्गुल बला रस्ना और ओजस प्राण तेजस के साथ, वात दोष वाल्यन संतुलन द्वारा शनि शांत; पौराणिक कथा दक्ष शाप शिव पर तथा नंदी का देवताओं को शाप, दुर्वासा मुनि का अंबरीश और शकुंतला पर, भृगु मुनि का विष्णु पर, गौतम मुनि का इंद्र पर अहल्या कथा, यज उपजाय का ययाति पर वृद्धावस्था शाप, ब्रह्मा का शिव पर अपराध शाप, अगस्त्य मुनि का विंध्य पर्वत शाप, देवल मुनि का समुद्र पर नमक शाप; कुंडली भाव क्रियाजन्य 1वें लग्न से 12वें मोच्च भाव तक के लिए विशिष्ट उपाय; शनि का नामी राहु पर गुजारा या राहु का नामी शनि पर गुजारा से श्रापित योग सक्रिय, शनि वापसी साढे सती और ढैया श्रापित प्रभाव बढ़ाते, राहु काल और यमगंद काल; पिशाच मोचन और भूत शुद्धि कम जाने वाले अभिलाग्य अभ्यास, दक्षिण मार्ग और वाम मार्ग का अंतर, गुरु दीक्षा की आवश्यकता, वैदिक परामर्श ढंग जिसमें कर्मिक शाप को अचेतन दोहराव के रूप में समझा गया है।">
+</div>
+<h2>पितृ ऋण और चार प्रकार के धार्मिक ऋण</h2>
+<p>वेदों के अनुसार, प्रत्येक जीव जन्म के साथ ही कुछ ऋणों से आबद्ध होता है। 'शतपथ ब्राह्मण' (श्लोक 1.7.2.1) में इसकी स्पष्ट व्याख्या मिलती है:</p>
+<blockquote><p><strong>ऋणं हा वै जायते योस्ति स जायमाने एव।</strong></p><p><strong>देवेभ्य ऋषिभ्यपितृभ्यो मानुषेभ्यः ॥</strong></p></blockquote>
+<p>इसका अर्थ है कि प्रत्येक अस्तित्ववान प्राणी जन्म लेते ही देवताओं, ऋषियों, पितरों और मनुष्यों का ऋणी हो जाता है। सनातन परंपरा में इन चार ऋणों को चुकाना अनिवार्य माना गया है:</p>
+<table>
+<thead><tr><th>ऋण का प्रकार</th><th>किसके प्रति उत्तरदायित्व</th></tr></thead>
+<tbody>
+<tr><td><strong>देव ऋण</strong></td><td>दिव्य शक्तियों और प्रकृति के प्रति कृतज्ञता</td></tr>
+<tr><td><strong>ऋषि ऋण</strong></td><td>गुरुओं, ऋषियों और ज्ञान की परंपरा के प्रति</td></tr>
+<tr><td><strong>पितृ ऋण</strong></td><td>पूर्वजों और वंश परंपरा के प्रति</td></tr>
+<tr><td><strong>मनुष्य ऋण</strong></td><td>मानवता और समाज के कल्याण के प्रति</td></tr>
+</tbody>
+</table>
+<p>शास्त्रों के अनुसार, <strong>पितृ ऋण</strong> से मुक्ति का सर्वोत्तम मार्ग 'गृहस्थाश्रम' है, जहाँ धर्मसम्मत जीवन जीते हुए उत्तम संतान की उत्पत्ति और उनका पोषण कर वंश परंपरा को आगे बढ़ाया जाता है।</p>
+<h2>कुंडली में पितृ दोष: अतीत, वर्तमान और भविष्य का अंतर्संबंध</h2>
+<p>पितृ दोष पूर्वजों द्वारा संचित कर्म ऋण है जो सूक्ष्म रूप से वंशजों की कुंडली में परिलक्षित होता है। ज्योतिष में इसके मुख्य संकेतक सूर्य (पितृकारक), चंद्रमा (मातृकारक) और कुंडली का <strong>9वां भाव</strong> (भाग्य और पूर्वज) हैं।</p>
+<p>कुंडली के त्रिकोणीय भाव (1, 5, 9) वस्तुतः काल के चक्र को दर्शाते हैं। 9वां भाव हमारे 'अतीत' (पूर्वज) को, लग्न (1ला भाव) हमारे 'वर्तमान' (स्वयं) को, और 5वां भाव हमारे 'भविष्य' (संतान) को संबोधित करता है। इन भावों को 'धर्म भाव' कहा जाता है क्योंकि ये हमारे अस्तित्व के नैतिक आधार को नियंत्रित करते हैं।</p>
+<h3>गंडांत नक्षत्र और वंशावली का विकास</h3>
+<p>वंश के विकास और कर्मों के हस्तांतरण को समझने के लिए 'गंडांत' नक्षत्रों का विश्लेषण अत्यंत महत्वपूर्ण है:</p>
+<table>
+<thead><tr><th>गंडांत नक्षत्र</th><th>राशि</th><th>अधिष्ठाता देवता</th><th>विकास की अवस्था</th><th>संबंध</th></tr></thead>
+<tbody>
+<tr><td><strong>मूला</strong></td><td>धनु</td><td>निरृति</td><td>मूल/जड़ (अतीत)</td><td>पिता/पूर्वज</td></tr>
+<tr><td><strong>अश्विनी</strong></td><td>मेष</td><td>अश्विनी कुमार</td><td>बीज/प्रारंभ (वर्तमान)</td><td>स्वयं (Self)</td></tr>
+<tr><td><strong>मघा</strong></td><td>सिंह</td><td>पितृदेवता</td><td>प्रस्फुटन (भविष्य)</td><td>संतान</td></tr>
+</tbody>
+</table>
+<p>यहाँ 'मूला' नक्षत्र हमारे अस्तित्व की जड़ है, जिससे गुण और कर्म प्रवाहित होते हैं, जबकि 'अश्विनी' एक नए जीवन के बीज का प्रतीक है।</p>
+<h2>शनि-राहु शापित दोष: कर्मों की सूक्ष्म गाँठ</h2>
+<p>जब किसी कुंडली में <strong>शनि और राहु की युति</strong> होती है या वे एक-दूसरे पर पूर्ण दृष्टि डालते हैं, तो 'शापित दोष' का निर्माण होता है। यह दोष पिछले जन्मों के किसी गंभीर अपराध या अपमान के फलस्वरूप उत्पन्न ऊर्जा का परिणाम है।</p>
+<p><strong>शापित दोष के प्रमुख लक्षण और सावधानियां:</strong></p>
+<ul>
+<li>व्यक्ति सुख-साधनों के बीच रहकर भी मानसिक शांति और भौतिक सुख का आनंद नहीं ले पाता।</li>
+<li>जीवन प्रायः उद्देश्यहीन और निरर्थक प्रतीत होने लगता है।</li>
+<li><strong>भावों का प्रभाव:</strong> यह दोष <strong>1, 4, 7, 8 और 12वें भाव</strong> में अत्यंत विनाशकारी होता है। हालांकि, उपचय भावों (<strong>3, 6 और 11वें भाव</strong>) में इसकी नकारात्मकता काफी कम हो जाती है।</li>
+</ul>
+<p><strong>विशेषज्ञ परामर्श:</strong> ज्योतिषीय गणना के अनुसार, यह योग लगभग 8% कुंडलियों में स्वाभाविक रूप से पाया जाता है। अतः इसके नाम से भयभीत होकर व्यावसायिक शोषण का शिकार न बनें, बल्कि इसके कर्म सुधार के संकेतों को समझें।</p>
+<h2>D60 (षष्ट्यंश) चार्ट: कर्मों का सूक्ष्म एक्सरे</h2>
+<p>महर्षि पराशर ने D60 चार्ट को 'विंशोपक बल' में 5 अंक देकर इसे राशि कुंडली (3 अंक) और नवमांश (1.5 अंक) से भी अधिक महत्वपूर्ण बताया है। यह चार्ट केवल यह नहीं बताता कि क्या होगा, बल्कि यह बताता है कि <strong>क्यों</strong> होगा।</p>
+<p><strong>D60 की गणना का सूक्ष्म तंत्र (Mechanics):</strong> D60 की गणना के लिए राशि के प्रत्येक 1/2 डिग्री (30 मिनट) को विभाजित किया जाता है। इसकी गणना की विधि विशेष है:</p>
+<ol>
+<li><strong>विषम राशियों</strong> (मेष, मिथुन, आदि) में देवताओं की गणना 1 से 60 के <strong>सीधे क्रम</strong> (Sequential Order) में होती है।</li>
+<li><strong>सम राशियों</strong> (वृषभ, कर्क, आदि) में यही गणना 60 से 1 के <strong>विपरीत क्रम</strong> (Reverse Order) में की जाती है।</li>
+</ol>
+<p><strong>देवताओं का प्रभाव:</strong></p>
+<ul>
+<li><strong>अशुभ अंश:</strong> यदि कोई ग्रह 'घोर' (भयानक), 'राक्षस' (दुष्ट), 'कुलघ्न' (वंश नाशक) या 'गरल' (विष) जैसे अंशों में है, तो वह पिछले जन्म के गंभीर ऋणों की वसूली को दर्शाता है।</li>
+<li><strong>शुभ अंश:</strong> 'देव', 'अमृत', 'सुधा' जैसे अंशों में स्थित ग्रह 'पूर्व पुण्य' और दैवीय सुरक्षा के परिचायक हैं।</li>
+<li><strong>चंद्रमा और लग्न:</strong> D60 में चंद्रमा की स्थिति आत्मा की संचित स्मृतियों और उन मानसिक आघातों को प्रकट करती है जिन्हें व्यक्ति अनजाने में साथ लेकर आया है।</li>
+</ul>
+<h2>पितृ एवं शापित दोष के निवारण: नारायण बलि पूजा</h2>
+<p>गरुड़ पुराण के अनुसार, जब किसी परिवार में <strong>'दुर्मरण'</strong> (अप्राकृतिक मृत्यु) होती है, तो आत्मा <strong>'प्रेत'</strong> (अतृप्त स्थिति) के रूप में भटकती है। नारायण बलि पूजा इस भटकती हुई आत्मा को मुक्ति दिलाने का अंतिम 'रेस्क्यू' (बचाव) अनुष्ठान है।</p>
+<p><strong>निवारण की आवश्यकता वाले 90 प्रकार के मरण:</strong> मुख्य रूप से आकस्मिक मृत्यु, आत्महत्या, सर्पदंश, बिजली गिरना, संतानहीन अवस्था में मृत्यु या घर छोड़कर लापता (Pollination) हो जाने वाले व्यक्तियों के लिए यह पूजा अनिवार्य है।</p>
+<h3>पूजा सामग्री और प्रतीकात्मक संबंध (Checklist):</h3>
+<ul>
+<li><strong>दर्भा (कुश) घास:</strong> यह <strong>केतु</strong> का प्रतीक है, जो मोक्ष का कारक है।</li>
+<li><strong>काले तिल:</strong> यह <strong>शनि और राहु</strong> के प्रतीक हैं, जो कर्मों के शोधन हेतु उपयोग किए जाते हैं।</li>
+<li><strong>उड़द की दाल:</strong> यह <strong>राहु</strong> की नकारात्मक ऊर्जा को शांत करने के लिए प्रयुक्त होती है।</li>
+<li><strong>अन्य:</strong> विष्णु और यमराज की स्वर्ण/रजत प्रतिमा, पंचामृत, तुलसी (अनिवार्य), और गेहूँ के आटे का पुतला (प्रतीकात्मक शरीर के लिए)।</li>
+</ul>
+<h3>तीन दिवसीय अनुष्ठान प्रक्रिया:</h3>
+<ol>
+<li><strong>प्रथम दिन:</strong> पवित्र नदी में स्नान, संकल्प और गेहूँ के पुतले के माध्यम से प्रतीकात्मक दाह संस्कार। 10 पिंडों का दान।</li>
+<li><strong>द्वितीय दिन:</strong> सपिंडीकरण श्राद्ध और तर्पण।</li>
+<li><strong>तृतीय दिन:</strong> भगवान गणेश का पूजन, स्वर्ण सर्प की पूजा और <strong>ब्राह्मण भोजन</strong> के साथ दान-दक्षिणा।</li>
+</ol>
+<p><strong>अन्य प्रभावी उपाय:</strong></p>
+<ul>
+<li><strong>रुद्राक्ष धारण:</strong> शनि के लिए <strong>7 मुखी</strong> और राहु के लिए <strong>8 मुखी</strong> रुद्राक्ष का संयोजन धारण करें।</li>
+<li><strong>बीज मंत्र:</strong> "ॐ शनैश्चराय नमः" और "ॐ राहवे नमः" का नियमित 108 बार जाप।</li>
+<li><strong>अभिषेक:</strong> प्रत्येक सोमवार को शिवलिंग पर कच्चे दूध में काले तिल मिलाकर अर्पित करें।</li>
+</ul>
+<h2>निष्कर्ष: भाग्यवादी सोच से परे कर्म का सुधार</h2>
+<p>'जगन्नाथ होरा' की अंतर्दृष्टि हमें सिखाती है कि पितृ दोष या शापित दोष को 'अभिशाप' के रूप में नहीं, बल्कि अपने सुधार के एक अवसर के रूप में देखना चाहिए। इन दोषों को अपनी पहचान (Identity) न बनने दें। यदि आप इन्हें 'भाग्य का अटल सत्य' मानकर बैठ जाएंगे, तो यह आपकी कर्म करने की शक्ति को कम कर देगा।</p>
+<p>दोषों का अर्थ यह नहीं है कि आपकी उन्नति रुकी हुई है, बल्कि यह एक संकेत है कि आपको अपने जीवन में कुछ नैतिक और आध्यात्मिक ऋणों का भुगतान करना है। शुद्ध हृदय, उचित अनुष्ठान और सेवा भाव से आप अपने कर्मों के भार को हल्का कर सकते हैं और आने वाली पीढ़ियों के लिए एक सुगम मार्ग प्रशस्त कर सकते हैं।</p>
+
+<div class="references">
+<h2>Sources</h2>
+<p>31. [Soulful Surrender: Delving into the Depths of Bhakti Yoga - विवेचन सारांश | \[2024-01-14\] 12th Adhyay (1/2) - by ŚRĪ DR. ASHU GOYAL JI](https://vivechan.learngeeta.com/vivechan-page/4249/)</p>
+<ol>
+<li><a href="https://jagannathhora.com/shrapit-dosha-saturn-rahu-complete-guide/">Shrapit Dosha: Complete Guide to the Saturn-Rahu Combination and Honest KP Assessment - Jagannath Hora</a></li>
+<li><a href="https://astromedha.in/insights/vedic/shrapit-dosha-remedies">Shrapit Dosha: Formation, Effects &amp; Real Remedies | AstroMedha</a></li>
+<li><a href="https://paramarsh.app/patrika/compatibility/shrapit-dosha">Shrapit Dosha: Saturn-Rahu Conjunction - Paramarsh</a></li>
+<li><a href="https://www.divine-rudraksha.com/pages/shani-rahu-shrapit-dosha">Shani Rahu Shrapit Dosha - Divine Rudraksha</a></li>
+<li><a href="https://www.astrologer-rameshkhaitan.com/pages/shani-rahu-shrapit-dosha">Shani Rahu Shrapit Dosha: Causes, Effects &amp; Remedies</a></li>
+<li><a href="https://astrologicalmusings.com/pitru-dosha-or-purva-janma-shrapa-as-per-brihat-parashara-hora-shastra/">Pitru Dosha or Purva Janma Shrapa as per Brihat Parashara Hora Shastra</a></li>
+<li><a href="https://www.melooha.com/blog/ancestors-lineage-astrological-significance">Ancestors, Lineage - An Astrological Significance - Melooha</a></li>
+<li><a href="https://adyajotirlingtrimbakeshwar.com/pooja-services/narayan-nagbali/">Narayan Nagbali - Adyajotirling Trimbakeshwar</a></li>
+<li><a href="https://narayannagbalitrimbakeshwar.com/narayan-bali-puja-samagri-and-vidhi/">Narayan Bali Puja Samagri And Vidhi In Trimbakeshwar Guide</a></li>
+<li><a href="https://www.trendingastro.com/Home/Shashtyamsa">Understanding D60 - Trending Astro</a></li>
+<li><a href="https://www.shivohampath.com/post/d60-shashtiamsha-past-life-karma-at-full-resolution">D60 Shashtiamsha: Past-Life Karma at Full Resolution - Shivohampath</a></li>
+<li><a href="https://www.scribd.com/document/701109656/SignD27E">Analyzing Shashtiamsha in Astrology | PDF | Hindu Mythology | Indian Religions - Scribd</a></li>
+<li><a href="https://www.scribd.com/document/687455175/Shastiamsa-D60-Chart">Understanding the D60 Shashtiamsha Chart | PDF | Hindu Mythology - Scribd</a></li>
+<li><a href="https://www.aghori.it/aghori_mantra_eng.htm">Aghori Mantra Eng</a></li>
+<li><a href="https://www.scribd.com/document/802651123/sugunu-tidikaj">Aghora Mantra for Protection and Healing | PDF | Shiva | Puranas - Scribd</a></li>
+<li><a href="https://www.scribd.com/document/746189205/Text">Aghorebhya Mantra: Salutations to All | PDF | Foreign Language Studies - Scribd</a></li>
+<li><a href="http://www.isasen.org/beliefs.html">Types of Aghori Sects - ISASEN-Aghor Sanathan Dharm Movement</a></li>
+<li><a href="https://manblunder.com/articlesview/Dakshinakali-and-chinnamasta-curse-removal-mantras">Dakshinakali and Chinnamasta Curse Removal Mantras - Manblunder</a></li>
+<li><a href="https://www.poojalu.com/services/special-services/kumbha-vivaha-puja/">Kumbha Vivaha Puja – Remedy for Manglik, Naga Dosha &amp; Delayed Marriage | Poojalu.com</a></li>
+<li><a href="https://pujahome.com/blogs/articles/kumbh-vivah-puja">Kumbh Vivah Puja Method, Dates, Expenses and Benefits - Pujahome</a></li>
+<li><a href="https://www.rudraksha-ratna.com/buy/ark-vivah---kumbh-vivah">Book Ark Vivah for Manglik Male - Rudraksha Ratna</a></li>
+<li><a href="https://diyabaati.co.in/product/ark-vivah-for-male/">Ark Vivah For Male - Diyabati</a></li>
+<li><a href="https://www.harivara.com/services/shanti-pujas/kumbh-vivah/">Kumbh Vivah For Female - Harivara.com</a></li>
+<li><a href="https://www.scribd.com/document/184783620/Pooja">Panchayatana Puja: Worship of Five Deities | PDF | Shiva | Vishnu - Scribd</a></li>
+<li><a href="https://saptarishisastrology.com/jupiters-curse-part-1-by-kiran-gupta/">Jupiter&#x27;s Curse Part 1 by Kiran Gupta - Saptarishis Astrology</a></li>
+<li><a href="https://www.astroved.com/astropedia/en/nakshatra">Nakshatras of Vedic Astrology - AstroVed</a></li>
+<li><a href="https://www.scribd.com/document/973042086/NAKSHATARAS-3">Understanding Nakshatras in Astrology | PDF - Scribd</a></li>
+<li><a href="https://astrotalk.com/nakshatras-constellations">27 Nakshatras in Vedic Astrology - Astrotalk</a></li>
+<li><a href="https://www.kamakoti.org/kamakoti/details/bhagvatpurana35.html">Essence Of Maha Bhagavatha Purana Salvation of Gajendra - Kamakoti.org</a></li>
+<li><a href="https://vivekitam.wordpress.com/tag/shiva/">Shiva | Vivekitam - WordPress.com</a></li>
+<li><a href="https://ardhanarishwar.wordpress.com/2013/07/04/kaliyuga-2-0/">Kaliyuga, 2.0 | Sthapati Samanvayam - WordPress.com</a></li>
+<li><a href="https://ardhanarishwar.wordpress.com/tag/yuga/">Yuga | Sthapati Samanvayam</a></li>
+<li><a href="http://innertraditions.blogspot.com/2010/12/nalayani-past-life-of-draupadi.html">Nalayani: the Past Life of Draupadi - inner traditions</a></li>
+<li><a href="https://ancientvoice.wikidot.com/panchali">Panchali - AncientVoice - Wikidot</a></li>
+<li><a href="https://ia801804.us.archive.org/17/items/the-mahabharata-set-of-10-volumes/The%20Mahabharata%20Set%20of%2010%20Volumes.pdf">The Mahabharata (Set of 10 Volumes) - Bibek Debroy</a></li>
+<li><a href="https://www.quora.com/Does-astrology-suggest-that-our-career-paths-are-predetermined-or-can-we-influence-them">Does astrology suggest that our career paths are predetermined, or can we influence them?</a></li>
+<li><a href="https://shivshankardaily.wordpress.com/2016/09/27/the-aghori-tradition-and-its-practices/">The Aghori Tradition and its practices | Vedic Astrology - Acharya Priti Bhargava</a></li>
+<li><a href="https://www.astroshastra.com/nakshatras/marriagebynakshatra.php">Marriage Compatibility by Nakshatra - Astroshastra</a></li>
+<li><a href="https://www.platform.benelli.com/journal/aghora-maha-mantra">aghora maha mantra</a></li>
+<li><a href="https://www.scribd.com/document/403059411/Aghori-Mantra-Eng">Aghori Mantra Lyrics and Meaning | PDF | Kali | Religious Belief And Doctrine - Scribd</a></li>
+<li><a href="https://butagallery.com/userfiles/files/tavekulu.pdf">tavekulu.pdf</a></li>
+<li><a href="https://www.youtube.com/watch?v=o_YExBqmx3k">Awaken Supreme Consciousness | Aghora Gayatri Mantra | Tantric Shaiva Tradition</a></li>
+<li><a href="https://asksoma.ai/baby-names/by-nakshatra/revati">Revati Nakshatra Baby Names — Pada syllables De, Do, Cha, Chi | AskSoma</a></li>
+<li><a href="https://www.indica.today/long-reads/mahabharata-and-charity/">Mahabharata and Charity - Indica Today</a></li>
+<li><a href="https://vaniquotes.org/wiki/King_Huhu_was_cursed_by_Devala_Muni_to_become_a_crocodile">King Huhu was cursed by Devala Muni to become a crocodile - Vaniquotes</a></li>
+<li><a href="https://vaniquotes.org/wiki/The_best_of_the_Gandharvas,_King_Huhu,_having_been_cursed_by_Devala_Muni,_had_become_a_crocodile._Now,_having_been_delivered_by_the_Supreme_Personality_of_Godhead,_he_assumed_a_very_beautiful_form_as_a_Gandharva">The best of the Gandharvas, King Huhu, having been cursed by Devala Muni, had become a crocodile. Now, having been delivered by the Supreme Personality of Godhead, he assumed a very beautiful form as a Gandharva - Vaniquotes</a></li>
+<li><a href="https://www.boloji.com/articles/54951/agastya-and-devala--the-great-sages">Agastya and Devala - the Great Sages - Boloji</a></li>
+<li><a href="https://www.newindianexpress.com/cities/kochi/2022/Dec/03/tales-of-lord-siva-arjuna-and-the-serpent-rishi-2524474.html">Tales of Lord Siva, Arjuna and the &#x27;serpent&#x27; rishi - The New Indian Express</a></li>
+<li><a href="https://bhagavata.keshavaswami.com/canto-08/g.o.l.d/g-gajendra-1-4/gajendras-past-life">Gajendra&#x27;s Past Life - Book Bhagavata</a></li>
+<li><a href="https://vedabase.io/en/library/sb/8/4/">Gajendra Returns to the Spiritual World - Bhaktivedanta Vedabase</a></li>
+</ol>
+</div>
+        </article>
+    </div>
+
+</body>
+</html>
