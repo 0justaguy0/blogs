@@ -1,0 +1,447 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shrapit Yoga Remedies</title>
+    <style>
+        :root {
+            --bg-color: #FDF9F1;
+            --text-color: #3E2723;
+            --indian-yellow: #E4A025;
+            --indian-orange: #E65100;
+            --accent-light: #FFECB3;
+            --ref-bg: #FFF3E0;
+        }
+
+        body {
+            font-family: 'Georgia', 'Nirmala UI', 'Mangal', serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(var(--bg-color) 80%, var(--accent-light) 100%);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #FFFFFF;
+            padding: 50px 60px;
+            box-shadow: 0 10px 30px rgba(62, 39, 35, 0.1);
+            border-top: 8px solid var(--indian-orange);
+            border-bottom: 8px solid var(--indian-yellow);
+            border-radius: 4px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed var(--indian-yellow);
+        }
+
+        h1 {
+            color: var(--indian-orange);
+            font-size: 2.5em;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        h2 {
+            color: var(--indian-yellow);
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--indian-orange);
+            padding-left: 15px;
+        }
+
+        h3, h4 {
+            color: var(--indian-orange);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        .intro-text::first-letter {
+            float: left;
+            font-size: 3.5em;
+            line-height: 0.8;
+            padding-right: 8px;
+            padding-top: 4px;
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        ul, ol {
+            margin: 0 0 24px 0;
+            padding-left: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ol {
+            list-style-position: outside;
+            padding-left: 2.2em;
+        }
+
+        ul li, ol li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        ol li {
+            padding-left: 0.35em;
+        }
+
+        ul li::before {
+            content: '\2022';
+            position: absolute;
+            left: 0;
+            top: 0.05em;
+            color: var(--indian-orange);
+            font-size: 1.2em;
+            line-height: 1;
+        }
+
+        ol li::marker {
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        strong {
+            color: var(--indian-orange);
+        }
+
+        .image-placeholder-container {
+            margin: 30px 0;
+            text-align: center;
+            font-style: italic;
+            color: #795548;
+            background-color: var(--accent-light);
+            padding: 20px;
+            border-radius: 4px;
+            border: 1px solid var(--indian-yellow);
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.98em;
+            background-color: #FFFDF8;
+        }
+
+        th, td {
+            border: 1px solid #F0D49B;
+            padding: 10px 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--ref-bg);
+            color: var(--indian-orange);
+        }
+
+        blockquote {
+            margin: 30px 0;
+            padding: 20px 25px;
+            background-color: var(--accent-light);
+            border-left: 5px solid var(--indian-orange);
+            font-style: italic;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px dashed var(--indian-yellow);
+            margin: 32px 0;
+        }
+
+        .references {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: var(--ref-bg);
+            border-radius: 8px;
+            font-size: 0.9em;
+        }
+
+        .references h2, .references h3 {
+            color: var(--text-color);
+            margin-top: 0;
+            border-bottom: 1px solid var(--indian-yellow);
+            padding-bottom: 10px;
+            border-left: 0;
+            padding-left: 0;
+        }
+
+        .references p, .references li {
+            margin-bottom: 12px;
+            word-wrap: break-word;
+        }
+
+        .references a {
+            color: var(--indian-orange);
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Shrapit Yoga Remedies</h1>
+        </header>
+
+        <article>
+<p class="intro-text">In the sacred geometry of the heavens, certain alignments serve as a "pralaya"—a localized dissolution of old structures to make way for a more profound reality. In early 2025, we approach such a decisive hour. From March 29 to May 18, the heavy, disciplined hand of Saturn will join the obsessive, boundary-breaking energy of Rahu in the sign of Pisces. </p>
+<div class="image-placeholder-container">
+    <img src="blog84_Image.png" alt="Remedies for Shrapit Yoga the Saturn Rahu conjunction karmic curse yoga via lesser known Tantrik and Vedic remedial astrology the exact condition when Saturn Shani and Rahu occupy the same sign or aspect one another creating the Shrapit Dosha the cursed yoga of karmic debt and delayed success the distinction between Shrapit Yoga proper Saturn and Rahu conjunct in the same house and the aspect-based Shrapit Yoga Saturn and Rahu in mutual aspect the lesser known Pishach Yoga and the difference from Shrapit Yoga the role of Purva Bhadrapada nakshatra in the 2025 Pisces conjunction the Dridha Shrapit Yoga strong Saturn Rahu with no benefic aspect requiring extensive remedy versus Adridha Shrapit Yoga with benefic aspect or benefic navamsa with simpler remedy and the cancellation Bhanga conditions a strong benefic Jupiter aspecting the Saturn Rahu pair or the pair in a benefic navamsa dissolving the curse the Chinnamasta Sadhana the fierce Dasa Maha Vidya deity of Rahu and the atomic energy metaphor the self decapitation as the removal of the granthis psychic knots and the opening of the Sushumna nadi the secret musicological link between Chinnamasta and the Veena the Rahu governance of the nervous system and breath and nails and the Saturn governed steel strings of the Veena the precise tension of the Veena strings as the remedy for the Saturn Rahu tension the Ugra Sadhana selection Mahakali Tara Pratyangira Jwalamalini and Kalabhairav for the Saturn Rahu and Saturn Ketu fierce combinations the Baglamukhi and Uchishta Ganapati for the Jupiter Rahu combination with the expert caution on the siddhi being taken back in anger by the Goddess when Jupiter is weak and integrity is compromised the Shivlinga Abhishekam with unheated fresh milk water and black lentils every Monday the Pitru Tarpan on Amavasya for the unresolved ancestral debts the Saturnian charity of feeding crows and stray animals on Saturdays the Saturn beej mantra Om Shanishcharaya Namah and the Rahu beej mantra Om Rahvey Namah 108 times daily the Hanuman propitiation and the Tantric symbology of the smoke as Rahu and Hanuman as the son of Vayu mastering the Rahu energy the Rudraksha therapy of two 7 faced beads for Saturn and one 8 faced bead for Rahu the Western quarter remedy of lighting eight sesame oil lamps facing West on Saturdays the Western wall remedy of securing a horseshoe to the western wall and sprinkling Ganges water and rock salt in the western quarter the 12 rashi house activations with specific remedies the transit timing through Dasha and Bhukti of Saturn and Rahu the role of Sade Sati in amplifying the Shrapit loneliness the role of Amavasya and the dark moon in triggering the Shrapit depletion the role of Purnima and the full moon in restoring the flow lesser known Nadi and Tantrik practices for clearing the Shrapit karma Dakshina Marga right hand path vs Vama Marga left hand path for these Saturn Rahu remedial practices the importance of guru initiation for advanced practices and the exact Diksha procedure protective Kavachas and Yantras for daily protection Shani Kavach Rahu Kavach Navagraha Kavach and the Shrapit Dosh Nivaran Yantra the Vedic counselling framework for understanding Shrapit Yoga patterns as karmic apprenticeship initiations and growth edges rather than literal planetary curses integrating the psychological and symbolic meaning as the soul learning to transform the Saturn Rahu tension into the Gandharvic melody of a disciplined life">
+</div>
+
+<p>While many practitioners fear this union as "Pishach Yoga" or the "Shaapit Yoga" (the Cursed Yoga), the initiate understands that this is the "Celestial Crucible." It is a period governed by the fierce grace of Goddess Chinnamasta, the sixth Dasa Maha Vidya and the deity of Rahu. Just as the steel strings of a Veena must be held under precise tension to produce a divine melody, the constraints of this transit are designed to facilitate <em>Kapala Bhedana</em>—the piercing of the skull-knot—leading the seeker from karmic illusion to spiritual liberation.</p>
+<h2>Decoding the 2025 Saturn-Rahu Transit</h2>
+<p>The 2025 conjunction is historically significant, marked by a convergence of technical factors that amplify its potency.</p>
+<ul>
+<li><strong>Date Range:</strong> March 29, 2025 – May 18, 2025</li>
+<li><strong>Zodiac Sign:</strong> Pisces (Meena Rashi)</li>
+<li><strong>Nakshatra:</strong> Purva Bhadrapada (The "Former Blessed Foot," associated with fire, mystery, and the occult)</li>
+<li><strong>Historical Rarity:</strong> This specific alignment in Pisces has not occurred since 1968. In 2025, its impact is intensified by a coinciding solar eclipse and the presence of a debilitated Mercury, heightening the risk of cognitive dissonance and impracticality.</li>
+</ul>
+<p><strong>Global and Societal Turmoil</strong><br />
+In mundane astrology, the watery depth of Pisces meeting the airy obsession of Rahu often manifests as natural calamities, specifically floods, cyclones, and maritime disruptions. Economically, we should anticipate significant volatility and financial shocks as the "Shadow" (Rahu) attempts to disrupt the "Structure" (Saturn).</p>
+<h2>The Shadow and the Shield: An Honest Assessment of "Shaapit Yoga"</h2>
+<p>"Shaapit Yoga" is traditionally formed when Saturn and Rahu occupy the same sign or aspect one another. While often used to instill fear, a sophisticated Vedic analysis reveals that Saturn and Rahu are actually mutually neutral to mildly friendly. They share a resonance for the margins of society—foreigners, outcasts, and the unseen.</p>
+<p>In a natal chart, the effects are most striking when this conjunction occurs in the 1st, 4th, 5th, 7th, 8th, 9th, or 12th houses. The "curse" is rarely a random punishment; rather, it represents <strong>extreme ambition operating under extreme constraint</strong>. </p>
+<p><strong>The Mastery of Apprenticeship</strong><br />
+For the professional, this yoga demands an "extended apprenticeship." Success is not denied, but it is delayed, requiring the native to master a system from the outside before being granted authority within it. The "Hidden Assets" of this combination include exceptional pattern recognition under pressure and a persistence born of alienation. You learn to see the underground architecture of systems that others ignore.</p>
+<h2>Chinnamasta: The Goddess of the Thunderbolt and the Veena</h2>
+<p>Goddess Chinnamasta, also known as <em>Prachanda Chandika</em>, is the spiritual power behind Rahu. Her residency in the <em>Surya Mandala</em> and her striking iconography—holding her own severed head while three streams of blood gush forth—is a profound map of the subtle body.</p>
+<p><strong>Atomic Energy and the Nadis</strong><br />
+Unlike Goddess Kali, who represents electrical energy, Chinnamasta represents <strong>atomic energy</strong>. She is the force of the thunderbolt (<em>Vajra Vairochani</em>). The three bloodstreams represent the <em>Ida</em> (left), <em>Pingala</em> (right), and <em>Sushumna</em> (center) nadis. Her act of self-decapitation symbolizes the removal of the <em>granthis</em> (psychic knots), allowing the seeker to become <em>Urdhvaretas</em>—one whose vital seed and energy are drawn upward.</p>
+<p><strong>The Music of the Nervous System</strong><br />
+There is a secret musicological link here. Chinnamasta is the hidden power behind the playing of the Veena. To play the instrument, one requires Rahu’s governance over the nervous system, the breath, and the nails. However, the strings themselves are traditionally steel—the metal of Saturn. The "tension" of this 2025 transit is the tension of the Veena strings. If the strings are too loose, there is no sound; if too tight, they break. This transit is about finding the precise tension required to transform your life into a Gandharvic melody.</p>
+<h2>Karmic Guidance by Moon Sign</h2>
+<p>The following table synthesizes the impact of the March–May 2025 window based on the transit through the 12 Rashis.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Moon Sign (Rashi)</th>
+<th style="text-align: left;">General Impact</th>
+<th style="text-align: left;">Key Advice</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Aries</strong></td>
+<td style="text-align: left;">Financial and relationship confusion.</td>
+<td style="text-align: left;">Manage impulse; delay major life decisions.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Taurus</strong></td>
+<td style="text-align: left;">Ambitions and social circles tested.</td>
+<td style="text-align: left;">Avoid risky associations; review long-term goals.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Gemini</strong></td>
+<td style="text-align: left;">Career authority and reputation challenges.</td>
+<td style="text-align: left;">Stay disciplined; exercise caution in public.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Cancer</strong></td>
+<td style="text-align: left;">Spiritual doubt and travel-related losses.</td>
+<td style="text-align: left;">Avoid shortcuts; maintain a strict daily routine.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Leo</strong></td>
+<td style="text-align: left;">Emotional volatility; debt or inheritance concerns.</td>
+<td style="text-align: left;">Avoid risky speculation; manage internal anger.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Virgo</strong></td>
+<td style="text-align: left;">Relational confusion; legal matters surfacing.</td>
+<td style="text-align: left;">Prioritize dialogue; reassess all commitments.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Libra</strong></td>
+<td style="text-align: left;">Health and daily routine disruptions.</td>
+<td style="text-align: left;">Focus on self-care; adhere to ethical conduct.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Scorpio</strong></td>
+<td style="text-align: left;">Detachment in creative or romantic pursuits.</td>
+<td style="text-align: left;">Avoid new investments; nurture family ties.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sagittarius</strong></td>
+<td style="text-align: left;">Home instability; emotional insecurity.</td>
+<td style="text-align: left;">Prioritize domestic stability; avoid disputes.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Capricorn</strong></td>
+<td style="text-align: left;">Communication glitches; sibling tension.</td>
+<td style="text-align: left;">Avoid rumors; practice mindfulness and silence.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Aquarius</strong></td>
+<td style="text-align: left;">Resource management and income in flux.</td>
+<td style="text-align: left;">Save extra; avoid lending or borrowing capital.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Pisces</strong></td>
+<td style="text-align: left;">Self-identity stress and existential shifts.</td>
+<td style="text-align: left;">Seek grounding; meditate; limit all speculation.</td>
+</tr>
+</tbody>
+</table>
+<h2>Sadhana Selection: Aligning Deity Worship</h2>
+<p>When the 5th house (Tantra/Mantra) or 9th house (Dharma/Guru) is afflicted, selecting the correct deity is vital for protection.</p>
+<ul>
+<li><strong>Sun-Ketu:</strong> Propitiate Chinnamasta, Ashutosh Shiva, or Aghor Shiva.</li>
+<li><strong>Sun-Saturn or Sun-Rahu:</strong> Worship Mahakali, Tara, or Kalabhairav.</li>
+<li><strong>Saturn-Rahu / Saturn-Ketu:</strong> These fierce combinations require "Ugra" (fierce) Sadhanas for protection, such as <strong>Mahakali, Tara, Pratyangira, or Jwalamalini</strong>.</li>
+<li><strong>Jupiter-Rahu:</strong> Worship Baglamukhi or Uchishta Ganapati. <ul>
+<li><em>Expert Caution:</em> If Jupiter is weak in the natal chart, a <em>siddhi</em> obtained through these deities can be destroyed by negative karma or "taken back in anger" by the Goddess. Integrity is non-negotiable.</li>
+</ul>
+</li>
+</ul>
+<h2>Practical Remedies for Spiritual Protection</h2>
+<p>To mitigate the "Shrapit" influence during the 2025 crucible, apply these traditional remedial measures.</p>
+<h3>Rituals &amp; Offerings</h3>
+<ul>
+<li><strong>Shivlinga Abhishekam:</strong> Offer unheated fresh milk mixed with water and black lentils to a Shivlinga every Monday to soothe Saturn’s pressure.</li>
+<li><strong>Pitru Tarpan:</strong> Perform ritual offerings to ancestors on Amavasya. Shaapit Yoga often points to unresolved ancestral debts that must be paid through memory and water.</li>
+<li><strong>Saturnian Charity:</strong> On Saturdays, feed crows (Saturn's vehicle) and stray animals.</li>
+</ul>
+<h3>Mantra &amp; Meditation</h3>
+<ul>
+<li><strong>Beej Mantras:</strong> Recite the Saturn beej (<em>Om Shanishcharaya Namah</em>) and Rahu beej (<em>Om Rahvey Namah</em>) 108 times daily.</li>
+<li><strong>Hanuman Propitiation:</strong> Regularly recite the Hanuman Chalisa. <ul>
+<li><em>Remedy Logic:</em> Light incense near Lord Hanuman. In Tantric symbology, the smoke represents Rahu, and Hanuman’s total control over the element of air (as the son of Vayu) allows Him to master the Rahu energy on your behalf.</li>
+</ul>
+</li>
+</ul>
+<h3>Physical Remedials</h3>
+<ul>
+<li><strong>Rudraksha:</strong> For specific Shrapit Dosha protection, wear a combination of <strong>two 7-faced beads (Saturn) and one 8-faced bead (Rahu)</strong>.</li>
+<li><strong>The Western Quarter:</strong> Saturn rules the West. Light eight sesame oil lamps facing West on Saturdays.</li>
+<li><strong>Western Wall Remedy:</strong> Secure a horseshoe to the <strong>western wall</strong> of your residence. On Saturdays, sprinkle the western quarter of your home with Ganges water and rock salt to neutralize stagnant energy.</li>
+</ul>
+<h2>Conclusion: From Illusion to Liberation</h2>
+<p>The Saturn-Rahu conjunction of 2025 is a transition from the shadow of the self to the light of the soul. It is a "Shrapit" period only if we resist the necessary discipline of the apprenticeship. By honoring the atomic energy of Chinnamasta and maintaining the "Veena-tension" of a disciplined life, we allow the <em>Vajra Nadi</em> to open. Faith in Dharma is your ultimate armor.</p>
+<h3>Key Takeaways</h3>
+<ul>
+<li><strong>Critical Window:</strong> Maintain vigilance from March 29 to May 18, 2025.</li>
+<li><strong>Career Logic:</strong> Accept the "extended apprenticeship"; do not seek shortcuts.</li>
+<li><strong>Spiritual Focus:</strong> Propitiate Chinnamasta to transform Rahu’s obsession into the "atomic" power of meditation.</li>
+<li><strong>Remedy Focus:</strong> Prioritize the Western quarter of the home and the 7-7-8 Rudraksha combination.</li>
+</ul>
+<div class="references">
+<h2>Sources</h2>
+<p>NotebookLM notebook: `7f1f68a4-d51f-442d-a557-d96f02cbda65`</p>
+<ol>
+<li><a href="https://jagannathhora.com/shrapit-dosha-saturn-rahu-complete-guide/">Shrapit Dosha: Complete Guide to the Saturn-Rahu Combination and Honest KP Assessment - Jagannath Hora</a></li>
+<li><a href="https://www.scribd.com/document/52404984/Shrapit-Dosha-Remedies">Shrapit Dosha: Meaning and Remedies | PDF | Gemstone | Planets In Astrology - Scribd</a></li>
+<li><a href="https://www.astroved.com/dosha-pariharam/shrapit-dosha-remedies/">Shani Rahu Shrapit Dosha Remedies | AstroVed.com</a></li>
+<li><a href="https://paramarsh.app/patrika/compatibility/shrapit-dosha">Shrapit Dosha: Saturn-Rahu Conjunction - Paramarsh</a></li>
+<li><a href="https://www.laxminarsimha.com/post/sadhana-selection-according-to-astrology">Sadhana selection according to astrology: - Tantra | Laxminarasimha</a></li>
+<li><a href="http://egayathri.blogspot.com/2009/10/chinnamastaveena.html">Chinnamasta/Veena - Jasmine Strings</a></li>
+<li><a href="http://itzhoroscope.astrosage.com/2009/04/shrapit-dosh-shrapit-yog-shrapit-yoga.html">Shrapit Dosh/ Shrapit Yog/ Shrapit Yoga Explained - Itz Horoscope 2026: Blog by Punit Pandey</a></li>
+<li><a href="https://astromedha.in/insights/vedic/saturn-rahu-conjunction">Saturn-Rahu Conjunction in Vedic Astrology Meaning - AstroMedha</a></li>
+<li><a href="https://www.scribd.com/document/524757308/Shrapit-Yoga-Saturn-Rahu-Conjunction-Netchanting-Blog-1">Shrapit Yoga: Saturn-Rahu Conjunction | PDF | Planets In Astrology - Scribd</a></li>
+<li><a href="https://www.divine-rudraksha.com/pages/shani-rahu-shrapit-dosha">Shani Rahu Shrapit Dosha - Divine Rudraksha</a></li>
+<li><a href="https://www.astroved.com/articles/shrapit-dosh-its-effects-and-remedies">Shrapit Dosh: Its Effects and Remedies | AstroVed.com</a></li>
+<li><a href="https://www.myzodiaq.in/en/online-library/yog-and-dasha/conjunction-2025/will-the-saturn-and-rahu-pishach-yoga-in-pisces-test-the-fire-of-your-karma-march-29-may-18-2025">Pishach Yoga 2025: Saturn Rahu Conjunction in Pisces. Karmic Test, Illusion and Remedies. - ZODIAQ</a></li>
+<li><a href="https://www.reddit.com/r/Nakshatras/comments/1qokr1q/saturnrahu_conjunction_pisach_durta_and_nandi/">Saturn–Rahu Conjunction: Pisach, Durta, and Nandi Yoga Explained! - Reddit</a></li>
+<li><a href="https://shivablessings.com/shrapit-dosh-puja/">Shrapit Dosh Puja - श्रापित दोष पूजा - Shiva Blessings</a></li>
+<li><a href="https://divyayogastore.com/product/shrapit-dosh-nivaran-yantra-for-karmic-relief/">Shrapit Dosh Nivaran Yantra for Karmic Relief - Divyayoga Store</a></li>
+<li><a href="https://www.rudraksha-center.com/pages/shani-rahu-shrapit-dosha">Shani Rahu Shrapit Dosha - Rudraksha Center</a></li>
+<li><a href="https://www.scribd.com/document/253786852/Saturn-Conjunct-Rahu-Shaapit-or-Cursed-Yoga">Saturn-Rahu Conjunction: Cursed Yoga Effects | PDF | Planets In Astrology - Scribd</a></li>
+<li><a href="https://www.divine-rudraksha.com/pages/remedial-measures-for-planet-saturn-as-per-lal-kitab">Remedial Measures for Planet Saturn as per Lal Kitab - Divine Rudraksha</a></li>
+<li><a href="https://www.rudraksha-center.com/pages/remedial-measures-for-planet-rahu-as-per-lal-kitab">Remedial Measures for planet Rahu as per Lal Kitab - Rudraksha Center</a></li>
+<li><a href="https://aanchaltarot.com/pitra-paksha-healing-pitra-dosh-ancestral-karma-for-a-harmonious-life/">Pitra Paksha: Healing Pitra Dosh &amp; Ancestral Karma for a Harmonious Life - Aanchal Tarot</a></li>
+<li><a href="https://astropuja.com/blog/post/dasha-maha-vidyas-and-homam">Dasha Maha Vidyas &amp; Homam | Wisdom Goddesses Ritual Guide - Astropuja</a></li>
+<li><a href="https://theastrologyonline.com/the-saturn-rahu-conjunction/">The Saturn - Rahu Conjunction - Astrologer Sidharth</a></li>
+<li><a href="https://www.scribd.com/document/396607853/Devis-Ruling-Planets">Dasa Mahavidyas and Their Planetary Influence | PDF | Nature - Scribd</a></li>
+<li><a href="https://arunraj.org/dasa-mahavidya/">Dasa Mahavidya: 10 Divine Wisdom Goddesses Guide - Arun Raj Foundation</a></li>
+<li><a href="https://www.rudraksha-ratna.com/articles/dus-mahavidyas">10 Mahavidyas/The Ten Mahavidyas: Names, Mantra, Stotra, Path - Rudraksha Ratna</a></li>
+<li><a href="https://www.reddit.com/r/Tantrasadhaks/comments/1u82vd9/which_diety_to_be_worshipped_for_reducing_malefic/">Which Diety to be worshipped for reducing Malefic effects of Rahu &amp; Shani both at same time ? : r/Tantrasadhaks - Reddit</a></li>
+<li><a href="https://www.quora.com/topic/Shrapit-Yoga">Shrapit Yoga - Quora</a></li>
+<li><a href="https://www.youtube.com/watch?v=InAFqVhVfaA">Tantrik Navagraha Bhairava with Kala Samhara Bhairava &amp; Swarna Akarshana Bhairava Homam | Vedicfolks - YouTube</a></li>
+<li><a href="https://www.divine-rudraksha.com/products/vipreet-pratyangira-mantra-japa-puja">Vipreet Pratyangira Mantra Japa &amp; Puja - Divine Rudraksha</a></li>
+<li><a href="https://astropuja.com/blog/post/how-pitru-dosh-affects-family-prosperity-and-how-to-remove-it">How Pitru Dosh Affects Family Prosperity &amp; Removal Remedies - Astropuja</a></li>
+<li><a href="https://www.scribd.com/document/218640188/Lal-Kitab-Remedies">Lal Kitab Remedies for Planets | PDF - Scribd</a></li>
+<li><a href="https://www.etsy.com/il-en/listing/1813775436/shrapit-dosh-nivaran-yantra-gold-plated">Shrapit Dosh Nivaran Yantra Gold Plated - Etsy Israel</a></li>
+<li><a href="https://trimbakeshwartemple.in/">Trimbakeshwar Online Pooja Booking | Kaal Sarp, Pitru Dosh &amp; More</a></li>
+<li><a href="https://divyayogastore.com/product/akshobhya-bhairava-sadhana-for-wealth-protection/">Akshobhya Bhairava Sadhana For Wealth &amp; Protection - Divyayoga Store</a></li>
+<li><a href="https://www.scribd.com/document/838773305/Remedies-workshop">Vedic Remedies: Basic Overview Guide | PDF | Mantra | Indian Religions - Scribd</a></li>
+<li><a href="https://www.scribd.com/document/898957817/25-Jyotish-Ram-Babu-Sao-Perfect-Astrology-Three-Monsters-Pitra">Understanding Vedic Astrology's Dosh | PDF - Scribd</a></li>
+<li><a href="https://www.scribd.com/document/871306374/Jyotish-2016-Marc-Boney-Iron-and-Steel-Rahu-Saturn-and-Saturn-Rahu">Rahu-Saturn Periods in Astrology | PDF - Scribd</a></li>
+<li><a href="https://shaligram.com/Siddha_Mangal_Chandra_Shani_Rahu_Ketu_Yuti_Dosh_Nivaran_Siddha_Puja_and_Yagna_for_Removal_of_curse_of_not_Able_to_Stay_with_Wife_/_Husband_due_to_Worse_Relatives_/_Friends_and_Destroying_all_Enemies_/_Relatives_OPS_30_37-0-681-925-31433-1.php9">Mangal Chandra Shani Rahu Ketu Yuti Dosh Nivaran Puja - Shaligram Shala</a></li>
+<li><a href="https://paramarsh.app/patrika/planets-navagraha/rahu-ketu-shadow-planets">Rahu and Ketu: Shadow Planets (Lunar Nodes) - Paramarsh</a></li>
+<li><a href="https://www.etsy.com/market/remedy_for_rahu">Remedy for Rahu - Etsy</a></li>
+<li><a href="https://www.vamtantra.com/">Tantra Sadhana, Tantrik vidya and Tantric Puja</a></li>
+<li><a href="https://www.reddit.com/r/Nakshatras/comments/1ts0hyn/rahu_and_saturn_conjuction/">Rahu and Saturn Conjuction : r/Nakshatras - Reddit</a></li>
+<li><a href="https://www.youtube.com/shorts/ikjcs9-dxKc">40 temples to add to your temple list. Save this for your next spiritual journey!! - YouTube</a></li>
+<li><a href="https://www.scribd.com/document/891122953/Remedies-for-Saturn-Rahu-and-Ketu">Remedies for Saturn, Rahu, and Ketu | PDF - Scribd</a></li>
+<li><a href="https://theastrologyonline.com/lal-kitab-remedies-for-9-planets/">Lal Kitab Remedies for 9 Planets in all 12 Houses - Astrologer Sidharth</a></li>
+<li><a href="https://thevediccrystals.com/blogs/articles-around-gemstones/rahu-stone-benefits">Rahu stone benefits - Vedic Crystals</a></li>
+<li><a href="https://www.navratan.com/blog/best-gem-pairs-to-wear-and-dangerous-combos-to-avoid">Best Gem Pairs to Wear and Dangerous Combos to Avoid - Navratan</a></li>
+<li><a href="https://gemsmantra.com/blogs/news/which-gemstones-to-wear-together">Which Gemstones Can You Wear Together? A Vedic Compatibility Guide</a></li>
+<li><a href="https://www.gemstoneuniverse.com/hessonite-gemstone-astrology.html">Who can wear Hessonite Gemstone| Hessonite Astrology Gemstone Rahu - Gemstone Universe</a></li>
+<li><a href="https://www.aghori.it/great_mother.htm">GREAT MOTHER - Aghori.it</a></li>
+<li><a href="https://divyayogastore.com/product/shrinathji-yantra-for-divine-grace-prosperity/">Shrinathji Yantra for Divine Grace &amp; Prosperity - Divyayoga Store</a></li>
+<li><a href="https://www.justdial.com/jdmart/Delhi/shani-yantra/jdm-1121866-ent-6-13346671">Shani Yantra in Delhi - Powerful, Protective, Auspicious - Justdial Verified</a></li>
+<li><a href="https://product.mypandit.com/product-category/store/yantra-en/">Buy 100% Original &amp; Certified Yantra Online - Mypandit</a></li>
+<li><a href="https://buyhatke.com/lookalike/flipkart-galaxy-navgrah-yantra-silver-pendant-price-in-india-2-11223168">Price History of Galaxy Navgrah Yantra Silver Pendant from Flipkart 2_11223168 - Buyhatke</a></li>
+<li><a href="https://www.scribd.com/doc/129981033/Doshas-and-Remedies">Understanding Vedic Astrology Doshas | PDF - Scribd</a></li>
+<li><a href="https://www.etsy.com/market/rahu_remedies">Rahu Remedies - Etsy</a></li>
+<li><a href="https://www.scribd.com/document/340069035/Mantra-Remedies-for-the-Nine-Planets-Sun-Moon-Mars-Mercury-Jupiter-Venus-Saturn-Rahu-and-Ke">Mantra Remedies For The Nine Planets - Sun - Moon - Mars - Mercury - Jupiter - Venus - Saturn - Rahu and Ke | PDF | Mantra | Tantra - Scribd</a></li>
+<li><a href="https://www.hariharbooks.com/sadhana-upasana/250-siddha-bagalamukhi-sadhana.html">Siddha Bagalamukhi Sadhana - Shree Harihar Pustakalay</a></li>
+<li><a href="https://www.youtube.com/watch?v=fjK9TJ7nbEg">The Secret of 108 Planetary Positions | Only 20% Give Negative Results | Siddhaguru</a></li>
+</ol>
+</div>
+        </article>
+    </div>
+
+</body>
+</html>
