@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>दृष्टि दोष उपाय</title>
+    <style>
+        :root {
+            --bg-color: #FDF9F1;
+            --text-color: #3E2723;
+            --indian-yellow: #E4A025;
+            --indian-orange: #E65100;
+            --accent-light: #FFECB3;
+            --ref-bg: #FFF3E0;
+        }
+
+        body {
+            font-family: 'Georgia', 'Nirmala UI', 'Mangal', serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(var(--bg-color) 80%, var(--accent-light) 100%);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #FFFFFF;
+            padding: 50px 60px;
+            box-shadow: 0 10px 30px rgba(62, 39, 35, 0.1);
+            border-top: 8px solid var(--indian-orange);
+            border-bottom: 8px solid var(--indian-yellow);
+            border-radius: 4px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed var(--indian-yellow);
+        }
+
+        h1 {
+            color: var(--indian-orange);
+            font-size: 2.5em;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        h2 {
+            color: var(--indian-yellow);
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--indian-orange);
+            padding-left: 15px;
+        }
+
+        h3, h4 {
+            color: var(--indian-orange);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        .intro-text::first-letter {
+            float: left;
+            font-size: 3.5em;
+            line-height: 0.8;
+            padding-right: 8px;
+            padding-top: 4px;
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        ul, ol {
+            margin: 0 0 24px 0;
+            padding-left: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ol {
+            list-style-position: outside;
+            padding-left: 2.2em;
+        }
+
+        ul li, ol li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        ol li {
+            padding-left: 0.35em;
+        }
+
+        ul li::before {
+            content: '\2022';
+            position: absolute;
+            left: 0;
+            top: 0.05em;
+            color: var(--indian-orange);
+            font-size: 1.2em;
+            line-height: 1;
+        }
+
+        ol li::marker {
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        strong {
+            color: var(--indian-orange);
+        }
+
+        .image-placeholder-container {
+            margin: 30px 0;
+            text-align: center;
+            font-style: italic;
+            color: #795548;
+            background-color: var(--accent-light);
+            padding: 20px;
+            border-radius: 4px;
+            border: 1px solid var(--indian-yellow);
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.98em;
+            background-color: #FFFDF8;
+        }
+
+        th, td {
+            border: 1px solid #F0D49B;
+            padding: 10px 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--ref-bg);
+            color: var(--indian-orange);
+        }
+
+        blockquote {
+            margin: 30px 0;
+            padding: 20px 25px;
+            background-color: var(--accent-light);
+            border-left: 5px solid var(--indian-orange);
+            font-style: italic;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px dashed var(--indian-yellow);
+            margin: 32px 0;
+        }
+
+        .references {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: var(--ref-bg);
+            border-radius: 8px;
+            font-size: 0.9em;
+        }
+
+        .references h2, .references h3 {
+            color: var(--text-color);
+            margin-top: 0;
+            border-bottom: 1px solid var(--indian-yellow);
+            padding-bottom: 10px;
+            border-left: 0;
+        }
+
+        .references p, .references li {
+            margin-bottom: 12px;
+            word-wrap: break-word;
+        }
+
+        .references ol {
+            padding-left: 1.5em;
+        }
+
+        .references li {
+            font-size: 0.85em;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>दृष्टि दोष उपाय</h1>
+        </header>
+
+        <article>
+<p class="intro-text">जीवन में सब कुछ ठीक चल रहा होता है और अचानक परिस्थितियाँ प्रतिकूल होने लगती हैं। बिना किसी चिकित्सकीय कारण के शिशु का बेकाबू होकर रोना, एक सफल लॉन्च के बाद व्यवसाय का अचानक ठप हो जाना, या किसी उत्सव के बाद असहनीय सिरदर्द—ये अनुभव संयुक्त अरब अमीरात (UAE) में रहने वाले हिंदू परिवारों के लिए नए नहीं हैं। जिसे हम 'बुरी नज़र' (Buri Nazar) कहते हैं, वह वास्तव में ऊर्जा का एक जटिल विज्ञान है।</p>
+<div class="image-placeholder-container">
+    <img src="blog88_Image.png" alt="दृष्टि दोष उपाय">
+</div>
+
+<p>एक वैदिक विद्वान और आध्यात्मिक जीवनशैली विशेषज्ञ के रूप में, मेरा उद्देश्य आपको इस सूक्ष्म ऊर्जा प्रवाह के पीछे के सत्य और इसके निवारण के पारंपरिक, शास्त्रोक्त उपायों से अवगत कराना है।</p>
+<h3>1. परिचय: क्या है बुरी नज़र? (ऊर्जा का विज्ञान)</h3>
+<p>वैदिक तत्वमीमांसा (Metaphysics) के अनुसार, मानव दृष्टि केवल एक दृश्य इंद्रिय नहीं है, बल्कि 'प्राण' (Prana) का एक सक्रिय प्रक्षेपण (Active Projection) है। 'नज़र' का अर्थ है भावनाओं और इरादों का स्थानांतरण। जब कोई व्यक्ति ईर्ष्या, अत्यधिक प्रशंसा या गहन ध्यान (Intense Focused Attention) से किसी को देखता है, तो वह अनजाने में एक नकारात्मक ऊर्जावान तरंग भेजता है।</p>
+<p>यह हमारे 'आभामंडल' (Aura) की परतों को प्रभावित करता है। शास्त्र बताते हैं कि आभामंडल की चार प्रमुख परतें होती हैं: <strong>शारीरिक (Physical), मानसिक (Mental), भावनात्मक (Emotional) और आध्यात्मिक (Spiritual)</strong>। जब बाहरी नकारात्मक ऊर्जा इन परतों में प्रवेश करती है, तो यह हमारे ऊर्जा चक्रों (Chakras) के संतुलन को बिगाड़ देती है, जिसे दुनिया भर में 'इविल आई' (Evil Eye) या 'दृष्टि दोष' के नाम से जाना जाता है।</p>
+<h3>2. बुरी नज़र के मुख्य कारण और प्रभाव</h3>
+<p>नज़र लगने के लिए हमेशा दुर्भावना अनिवार्य नहीं है; कभी-कभी अत्यधिक प्रेम या बिना प्रकट की गई प्रशंसा भी ऊर्जा का असंतुलन पैदा कर सकती है।</p>
+<p><strong>कौन सबसे अधिक असुरक्षित (Vulnerable) है?</strong>
+*   <strong>नवजात शिशु और बच्चे:</strong> उनका आभामंडल अत्यंत कोमल और असुरक्षित (Fragile Aura) होता है।
+*   <strong>गर्भवती महिलाएं:</strong> उनकी ऊर्जा प्रणाली इस समय अत्यधिक ग्रहणशील (Receptive) होती है।
+*   <strong>नए व्यवसाय या घर:</strong> नई सफलता हमेशा ध्यान आकर्षित करती है।
+*   <strong>महत्वपूर्ण जीवन परिवर्तन:</strong> पदोन्नति (Promotion), नया वाहन या विवाह जैसे अवसर।</p>
+<h3>3. नज़र लगने के लक्षण: पहचान कैसे करें?</h3>
+<p>नीचे दिए गए लक्षणों का अचानक उभरना बुरी नज़र का संकेत हो सकता है:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">श्रेणी</th>
+<th style="text-align: left;">लक्षण (Symptoms)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>शारीरिक लक्षण</strong></td>
+<td style="text-align: left;">अस्पष्ट सिरदर्द, शरीर में भारीपन, अचानक मतली (Nausea), थकान, और बच्चों का लगातार रोना।</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>मानसिक और भावनात्मक</strong></td>
+<td style="text-align: left;">अचानक बेचैनी (Restlessness), चिड़चिड़ापन, निर्णय लेने में असमर्थता, और परिवार में कलह।</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>बाहरी संकेत</strong></td>
+<td style="text-align: left;">दूध का फटना, उपकरणों का बार-बार खराब होना, व्यापार में अचानक गिरावट, और घर में भारीपन।</td>
+</tr>
+</tbody>
+</table>
+<h3><strong>महत्वपूर्ण चेतावनी (Medical Warning)</strong></h3>
+<p><strong>यदि लक्षण शारीरिक और गंभीर हैं (जैसे तेज बुखार, बेहोशी या सीने में दर्द), तो सबसे पहले एक योग्य डॉक्टर (Medical Professional) से परामर्श करें। ये आध्यात्मिक उपाय ऊर्जा की शुद्धि के लिए हैं और चिकित्सा का विकल्प नहीं हैं।</strong></p>
+<h3>4. नज़र उतारने के 7 प्रभावी घरेलू उपाय (Remedies)</h3>
+<p>नज़र उतारने की प्रक्रिया (Nazar Utarna) के लिए <strong>गुरुवार, रविवार, पूर्णिमा या अमावस्या</strong> के दिन सबसे प्रभावशाली माने जाते हैं।</p>
+<ol>
+<li><strong>निंबू-मिर्च का टोटका (Lakshmi-Alakshmi Myth):</strong> सात मिर्च और एक नींबू को काले धागे में बांधें। पौराणिक कथा के अनुसार, लक्ष्मी की बड़ी बहन 'अलक्ष्मी' (Alakshmi) को खट्टा और तीखा पसंद है। द्वार पर इसे लटकाने से वह बाहर ही तृप्त होकर लौट जाती हैं, जिससे घर के भीतर लक्ष्मी के प्रवेश का मार्ग प्रशस्त होता है। इसे हर शनिवार बदलें।</li>
+<li><strong>राई और नमक उतारना:</strong> एक मुट्ठी राई (Mustard Seeds) और मोटा नमक (Rock Salt) लें। इसे प्रभावित व्यक्ति के ऊपर से <strong>3, 7, 11 या 21 बार</strong> सिर से पैर तक घुमाएं और आग में डाल दें। <strong>विशेष निर्देश:</strong> नज़र उतारने वाले व्यक्ति को प्रक्रिया के बाद हाथ-पैर धोकर ही घर में प्रवेश करना चाहिए।</li>
+<li><strong>काला टीका (Kala Tikka):</strong> बच्चों के कान के पीछे या तलवों पर काला टीका लगाएं। काला रंग नकारात्मक ऊर्जा को सोखने (Absorb) का काम करता है।</li>
+<li><strong>फिटकरी (Alum) और आकृतियाँ:</strong> फिटकरी का टुकड़ा सिर के चारों ओर 7 बार घुमाकर गर्म तवे पर जलाएं। इसकी आकृति से नज़र की पहचान की जाती है:<ul>
+<li><strong>मानवीय चेहरा:</strong> पूर्वजों का दोष (Ancestral Burden)।</li>
+<li><strong>हड्डी की आकृति:</strong> गंभीर श्मशान-आधारित नकारात्मकता (Cemetery Magic)।</li>
+<li><strong>पशु/पक्षी:</strong> पशुओं के माध्यम से आई नकारात्मकता।</li>
+<li><strong>गुड़िया/मानव मूर्ति:</strong> सक्रिय अभिचार कर्म (Black Magic/Karani)।</li>
+</ul>
+</li>
+<li><strong>लाल मिर्च और नारियल (Scent Test):</strong> दो सूखी लाल मिर्च और नारियल व्यक्ति के चारों ओर घुमाकर बाहर जलाएं। यदि मिर्च जलते समय <strong>तीखी गंध (Acrid Smell)</strong> न आए, तो यह पुख्ता संकेत है कि नज़र का प्रभाव गहरा था।</li>
+<li><strong>हनुमान चालीसा और बजरंग बाण:</strong> आध्यात्मिक सुरक्षा कवच (Shield) के रूप में इनका पाठ करें। भगवान हनुमान को 'संकटमोचन' कहा जाता है जो सुरक्षा चक्र का निर्माण करते हैं।</li>
+<li><strong>गोमती चक्र:</strong> सात गोमती चक्रों को लाल कपड़े में बांधकर तिजोरी या घर के उत्तर-पूर्व कोने में रखें।</li>
+</ol>
+<p><strong>सावधानी:</strong> गर्भवती महिलाओं को इन अनुष्ठानों को नहीं देखना चाहिए, क्योंकि उनकी ऊर्जा संवेदनशील होती है।</p>
+<h3>5. घर और कार्यालय के लिए सुरक्षात्मक कवच</h3>
+<ul>
+<li><strong>नज़र बट्टू और कीर्तिमुख (Kirtimukha):</strong> घर के मुख्य द्वार पर कीर्तिमुख का मुखौटा लगाएं। यह एक सुरक्षा प्रहरी (Sentinel) की तरह कार्य करता है। ध्यान रखें कि कीर्तिमुख का मुख बेडरूम या बाथरूम की ओर न हो।</li>
+<li><strong>काले घोड़े की नाल (Horse Shoe):</strong> इसे 'U' आकार में ऊपर की ओर मुख करके लगाएं। यह शनि (Saturn) की स्थिरता और सुरक्षात्मक ऊर्जा प्रदान करता है।</li>
+<li><strong>नमक के पानी का पोंछा:</strong> पोंछे के पानी में समुद्री नमक मिलाएं। यह घर की रुकी हुई ऊर्जा (Stagnant Energy) को साफ करता है।</li>
+<li><strong>साप्ताहिक धूप और कपूर:</strong> हर शनिवार शाम को घर के कोनों में धूप जलाएं।</li>
+</ul>
+<h3>6. सुरक्षा के लिए रत्न (Crystals for Protection)</h3>
+<ul>
+<li><strong>ब्लैक टूरमलाइन (Black Tourmaline):</strong> इसे मुख्य द्वार के पास रखने से नकारात्मकता के विरुद्ध एक सीमा (Boundary) बनती है।</li>
+<li><strong>ऑब्सीडियन (Obsidian):</strong> यह गहरी ग्राउंडिंग (Grounding) और नकारात्मकता को सोखने के लिए उत्तम है।</li>
+<li><strong>टाइगर्स आई (Tiger’s Eye):</strong> यह ईर्ष्या की ऊर्जा को उसके स्रोत की ओर वापस भेजने (Deflecting) का काम करता है।</li>
+</ul>
+<h3>7. ज्योतिषीय दृष्टिकोण: चंद्र दोष और बाधक स्थान</h3>
+<p>कुंडली में 'चंद्रमा' मन का स्वामी है। यदि चंद्रमा कमजोर है, तो व्यक्ति बाहरी ऊर्जाओं के प्रति अधिक संवेदनशील (Sensitive) हो जाता है।</p>
+<p><strong>बाधक स्थान (Badhaka Sthana) की पहचान:</strong>
+आपकी कुंडली के अनुसार बाधक भाव बाहरी बाधाओं का कारण बनता है:
+*   <strong>चर राशि (Movable Signs):</strong> 11वां भाव बाधक है।
+*   <strong>स्थिर राशि (Fixed Signs):</strong> 9वां भाव बाधक है।
+*   <strong>द्विस्वभाव राशि (Dual Signs):</strong> 7वां भाव बाधक है।</p>
+<p><strong>निवारण:</strong> चंद्रमा को मजबूत करने के लिए <strong>"ओम सोम सोमाय नमः"</strong> बीज मंत्र का 108 बार जाप करें और सोमवार को शिवजी को दूध अर्पित करें।</p>
+<h3>8. UAE के संदर्भ में विशेष सुझाव (UAE Families Context)</h3>
+<p>दुबई, अबू धाबी और शारजाह जैसे शहरों में हम एक अत्यंत सामाजिक और दृश्य (Visible) जीवन जीते हैं। सोशल मीडिया पर उपलब्धियां साझा करना 'सामाजिक दृश्यता' को बढ़ाता है।
+*   <strong>नई शुरुआत:</strong> यदि आप 'दुबई हिल्स' (Dubai Hills) या 'अरेबियन रेंचेस' (Arabian Ranches) जैसे समुदायों में नए विला में जा रहे हैं, तो गृह-प्रवेश से पहले एक संपूर्ण <strong>'गृह शांति'</strong> (Grah Shanti) अनुष्ठान अवश्य कराएं।
+*   <strong>ऊर्जावान स्वच्छता (Energetic Hygiene):</strong> बड़े आयोजनों या शादियों के बाद 'नज़र उतारने' की प्रक्रिया को अपनी दिनचर्या का हिस्सा बनाएं।</p>
+<h3>9. निष्कर्ष और मुख्य संदेश (Takeaways)</h3>
+<p>बुरी नज़र से बचाव के ये उपाय केवल अंधविश्वास नहीं, बल्कि 'ऊर्जावान स्वच्छता' (Energetic Hygiene) का एक अनिवार्य हिस्सा हैं। जिस प्रकार हम शारीरिक स्वच्छता का ध्यान रखते हैं, उसी प्रकार अपने आभामंडल और घर की ऊर्जा को शुद्ध रखना भी आवश्यक है।</p>
+<p>जागरूक रहें और अपनी खुशियों की सुरक्षा करें। याद रखें, एक सकारात्मक मन और भगवान के प्रति अटूट विश्वास ही आपका सबसे बड़ा सुरक्षा कवच है।</p>
+<hr />
+
+        <div class="references">
+<h2>Sources</h2>
+<p>NotebookLM notebook: `f4baa398-0fa3-4972-8361-b341a6f51cc9`</p>
+<ol>
+<li><a href="https://www.divinehindu.in/blogs/news/nazar-dosh-remedies">Nazar / Drishti Dosh (Evil Eye): Causes, Signs & Remedies - Divine Hindu</a></li>
+<li><a href="https://theancientindia.blogspot.com/2012/03/what-is-dristhi-evileye-drishti.html">Dristhi - The Evil Eye - Ancient India</a></li>
+<li><a href="https://divinesansar.com/blogs/guide/evil-eye-buri-nazar-and-how-to-get-rid-of-them">Buri Nazar Remedies UAE - How to Remove the Evil Eye at Home – Divine Sansar</a></li>
+<li><a href="https://www.hindujagruti.org/hinduism/protection-from-evil-eye">Method of protection from evil-eye using salt and mustard seeds - Hindu Janajagruti Samiti</a></li>
+<li><a href="https://srivishnumaya.com/drishti-removal-signs-symptoms-and-spiritual-remedies/">Drishti Removal: Signs, Symptoms, and Spiritual Remedies - Sri Vishnumaya Temple</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Drishti_bommai">Drishti bommai - Wikipedia</a></li>
+<li><a href="https://shop.dharmsaar.com/blogs/news/why-do-we-hang-nimbu-mirchi-explained">Why Do We Hang Nimbu Mirchi? Explained - Dharmsaar</a></li>
+<li><a href="https://www.sanatan.org/en/a/94945.html">Method of casting off the evil-eye using Alum and How to get rid of negative energy</a></li>
+<li><a href="https://pujanpujari.com/collections/vastu-products/products/nazar-battu-for-home-entrance-big-size-brass-kirtimukha-keerthi-mukudu-mukha-idol-for-home-entrance">Brass Kirtimukha Wall Hanging for Home Entrance & Door Vastu Online - Puja N Pujari</a></li>
+<li><a href="https://rudhvi.in/blogs/news/karungali-mala-evil-eye-protection-mala-for-spiritual-safety">Karungali Mala – Evil Eye Protection Mala is a Must-Have for Spiritual Safety - Rudhvi</a></li>
+<li><a href="https://timesofindia.indiatimes.com/astrology/zodiacs-astrology/7-powerful-benefits-of-keeping-a-horseshoe-at-home-for-luck-and-protection/articleshow/122196909.cms">Horseshoe Benefits: 7 Powerful Benefits of Keeping a Horseshoe at Home for Luck and Protection | - Times of India</a></li>
+<li><a href="https://pujayagna.com/blogs/pooja-havan-yagya/chandra-dosha">Chandra Dosha Effects, Remedies and Mantras for Chandra Dosha removal – Eshwar Bhakti</a></li>
+<li><a href="https://www.pillaicenter.com/blog/coconut-breaking-ritual-shivas-surrogate-and-ganeshas-secret-to-dissolving-karma">Coconut Breaking Ritual: Shiva's Surrogate and Ganesha's Secret to Dissolving Karma</a></li>
+<li><a href="https://www.vedadhara.com/prayer-seeking-protection-from-evil-rituals">Atharva Veda Mantra For Protection From Evil Rituals - Vedadhara</a></li>
+<li><a href="https://www.easyayurveda.com/apamarga-achyranthus-aspera-home-remedies/">Apamarga Achyranthus Aspera Home Remedies: Dysuria, Diabetes - Easy Ayurveda Hospital</a></li>
+<li><a href="https://www.reddit.com/r/hinduism/comments/1exqe5t/how_to_remove_nazar/">How to remove Nazar : r/hinduism - Reddit</a></li>
+<li><a href="https://smithjewels.com/blogs/news/why-black-thread-anklets-are-your-best-defense-against-nazar-unraveling-the-myths-and-benefits">The Enduring Power of the Black Thread Anklet for Nazar: Tradition, Pr - Smith Jewels</a></li>
+<li><a href="https://www.youtube.com/watch?v=brjaK-jO3n0">Significance of HANGING PUMPKIN in FRONT of the House | EVIL EYE | Prathi Udayam Manakosam - YouTube</a></li>
+<li><a href="https://mydivinesutra.com/blogs/blogs/can-keerthi-mukha-be-placed-inside-the-home-dos-and-don-ts">Can Keerthi Mukha Be Placed Inside the Home? Dos and Don'ts</a></li>
+<li><a href="https://swarnaprashana.org/art-of-removing-drishti/">Art of Removing Drishti - Swarna Prashana</a></li>
+<li><a href="https://perinkulams.wordpress.com/2011/12/03/suttipodal-to-ward-off-drishti-or-evil-eye/">Suttipodal- to ward off 'drishti' or evil eye | Shivam Perinkulam</a></li>
+<li><a href="https://www.reddit.com/r/ismailis/comments/1nanbf8/protection_against_nazar/">Protection against Nazar : r/ismailis - Reddit</a></li>
+<li><a href="https://glutlust.wordpress.com/2020/06/23/food-superstition-casting-off-evil-eye-with-simple-kitchen-ingredients/">Casting Off Evil Eye With Simple Kitchen Ingredients - Glutlust - WordPress.com</a></li>
+<li><a href="https://www.scribd.com/document/77307944/Drishti-badha">Drishti Dosha: Remedies and Insights | PDF | Hindu Mythology | Mahabharata - Scribd</a></li>
+<li><a href="https://www.navratan.com/blog/what-if-my-moon-is-weak">What If My Moon Is Weak? Understanding the Impact and Remedies</a></li>
+<li><a href="https://www.youtube.com/watch?v=NADLmPJBGmE">Hanuman Mantra to Remove all Types of Bad Spirits and Fears - YouTube</a></li>
+<li><a href="https://www.ibiblio.org/sripedia/ebooks/vdesikan/sudarsana_ashtakam/index.html">SriPedia sudarsana ashtakam - Ibiblio</a></li>
+<li><a href="https://manblunder.com/articlesview/shri-sudarshana-narasimha-navadashakshara-mahamantra">Shri Sudarshana Narasimha Navadashakshara Mahamantra - Manblunder</a></li>
+<li><a href="https://www.youtube.com/shorts/UE1PpNlePx4">Sudarshana Mantra for removal of Negativity and Evil Eye ‪@Jothishi‬ - YouTube</a></li>
+<li><a href="https://www.indastro.com/learn-astrology/history-vedic-astrology.html">History, Key Concept and Origin of Vedic Astrology</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Hindu_zodiac">Hindu astrology - Wikipedia</a></li>
+<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3202268/">Historical development of basic concepts of Ayurveda from Veda up to Samhita - PMC</a></li>
+<li><a href="https://www.saspublishers.com/article/12976/download/">Scholars Journal of Arts, Humanities and Social Sciences A Concise History of Hindu Astrology and Indian Spirituality - SAS Publishers</a></li>
+<li><a href="https://www.reddit.com/r/Nakshatras/comments/1popnol/strong_moon_weak_moon_my_observation_and_what/">Strong Moon & Weak Moon My Observation and What Classical Texts Say : r/Nakshatras - Reddit</a></li>
+<li><a href="https://www.rudraksha-ratna.com/articles/planet-moon-in-astrology-and-remedies">Moon (Chandra Graha) in Astrology: Meaning, Effects, and Remedies - Rudraksha Ratna</a></li>
+<li><a href="https://timesofindia.indiatimes.com/astrology/vastu-feng-shui/how-to-use-alum-fitkari-to-remove-negative-energy/articleshow/121253371.cms">How to use Alum (Fitkari) to remove negative energy - The Times of India</a></li>
+<li><a href="https://timesofindia.indiatimes.com/astrology/gemstones/5-traditional-alum-fitkari-remedies-believed-to-remove-negativity/articleshow/126002598.cms">5 Traditional Alum (Fitkari) remedies believed to remove negativity - The Times of India</a></li>
+<li><a href="https://luxeartisanship.com/blogs/article/brass-nazar-battu-horse-statue-protection-from-negativity">Are You Really Safe? The Hidden Power of Brass Nazar Battu & Horse Statue That Shields Your Home from Unseen Negativity - Luxeartisanship</a></li>
+<li><a href="https://vastulabh.com/horse-shoe-vastu-harnessing-good-luck-with-black-horse-shoe/">Harnessing Good Luck with Black Horse Shoe - Vastu Labh</a></li>
+<li><a href="https://mymythmythology.wordpress.com/2021/02/10/nimbu-mirchi/">NIMBU MIRCHI – My Myth Mythology - WordPress.com</a></li>
+<li><a href="https://pujayagna.com/blogs/hindu-customs/why-hang-nimbu-mirchi-outside-door">Why hang Nimbu-Mirchi outside door? - Lemon Chilli outside Door – Eshwar Bhakti</a></li>
+<li><a href="https://www.naaginsauce.com/blogs/chillipedia/nimbu-mirchi-combo-explained">Nimbu-mirchi Combo – Explained! - Naagin Sauce</a></li>
+<li><a href="https://www.easyayurveda.com/winter-melon-health-benefits-medicinal-use-side-effects-ayurveda/">Winter Melon Health Benefits, Medicinal Use, Side Effects - Easy Ayurveda Hospital</a></li>
+<li><a href="https://isha.sadhguru.org/en/blog/article/ash-gourd-benefits-recipes">Ash Gourd (Winter Melon), the “Cool” Vegetable: Benefits & Recipes - Isha Foundation</a></li>
+<li><a href="https://www.youtube.com/watch?v=nXBd92ic97I">ఇంటికి దిష్టి గుమ్మడికాయ | Powerful Vastu Remedy: When & How to Tie Dristi Ash Gourd at Home - YouTube</a></li>
+<li><a href="https://timesofindia.indiatimes.com/astrology/others/what-is-kushmanda-deepam-7-astrological-benefits-of-lighting-the-ash-gourd-diya/articleshow/132576062.cms">What is Kushmanda Deepam? 7 astrological benefits of lighting the ash gourd diya</a></li>
+<li><a href="https://indicus.in/the-unblinking-sentinel-indicus-crossections-explores-drishti-bommai/">The Unblinking Sentinel: Indicus Crossections Explores Drishti Bommai</a></li>
+<li><a href="https://theverandahclub.com/article/drishti-bommai-and-other-practices-to-ward-off-the-evil-eye-1055">Drishti Bommai and Other Practices to Ward off the Evil Eye - The Verandah Club</a></li>
+<li><a href="https://vedicvaani.com/kirtimukha-vastu-nazar-raksha-mask">Brass Kirtimukha Vastu Nazar Raksha Mask - Door Wall Hanging for Home Decor</a></li>
+<li><a href="https://www.rudraksha-ratna.com/articles/benefits-of-black-horse-shoe-ring">Benefits Of Black Horse Shoe Ring</a></li>
+<li><a href="https://crystalheaven.in/store/blog/karungali-bracelet-necklace-spiritual-healing-you-can-wear">Karungali Bracelet & Necklace: Spiritual Healing You Can Wear - Crystal Heaven</a></li>
+<li><a href="https://astrowealth.store/blogs/blog/karungali-mala-benefits-10-powerful-reasons-to-wear-ebony-wood">Karungali Mala Benefits: 10 Powerful Reasons to Wear Ebony Wood - Astrowealth</a></li>
+<li><a href="https://www.divinehindu.in/blogs/news/mystical-powers-of-karungali">Karungali Benefits: Mystical Powers & Planet Mars Energy - Divine Hindu</a></li>
+<li><a href="https://www.ornativo.com/blogs/news/karungali-bracelet-benefits">Karungali Bracelet Benefits: Does This Black Wood Really Work? - Ornativo</a></li>
+<li><a href="https://www.wisdomlib.org/hinduism/essay/charms-of-the-atharvaveda-samhita-study/d/doc1888361.html">Part 3 - Trees, plants and herbs used in Abhicāra</a></li>
+<li><a href="https://www.imedpub.com/articles/apamarga-emachyranthes-asperaem-a-lord-of-all-plants.php?aid=53551">Apamarga (Achyranthes aspera) a Lord of All Plants - iMedPub</a></li>
+<li><a href="https://rjpponline.org/HTML_Papers/Research%20Journal%20of%20Pharmacognosy%20and%20Phytochemistry__PID__2023-15-2-8.html">Apamarga (Achyranthes aspera), A Lord of All Plants - Research Journal of Pharmacognosy and Phytochemistry</a></li>
+<li><a href="https://www.intratext.com/IXT/ENG0042/_P2F.HTM">Atharva-Veda: text - IntraText CT</a></li>
+<li><a href="https://ask-ayurveda.com/questions/12491-what-are-the-benefits-of-apamarga-plant-root-in-ayurveda-and-how-is-it-used-medicinally">What Are the Benefits of Apamarga Plant Root in Ayurveda, and How Is It Used Medicinally? - 2 answers from Ayurvedic Doctors</a></li>
+<li><a href="https://www.vedadhara.com/do-you-know-that-durva-grass-can-neutralize-and-protect-you-from-curses-and-evil-eye">Durva Grass Protects From Curses and Evil Eye - Vedadhara</a></li>
+<li><a href="https://www.youtube.com/watch?v=Ix4V2LNGYsI">Sudarshana Ashtakam | Divine Shield for Protection, Success & Spiritual Strength | Veeramani Kannan - YouTube</a></li>
+<li><a href="https://www.devshoppe.com/blogs/articles/shri-sudarshana-ashtakam-in-sanskrit">Shri Sudarshana Ashtakam with meaning ( श्री सुदर्शनाष्टकं ) - Devshoppe</a></li>
+<li><a href="https://www.scribd.com/presentation/751258509/Sudarshana-Ashtaka">Benefits of Sudarshana Ashtakam | PDF | Shiva | Hindu Literature - Scribd</a></li>
+<li><a href="https://www.youtube.com/shorts/t4b2ywj-QeY">Dr. Pillai: Coconut Breaking Ritual To Remove Karma | Vinayagar Chaturthi 2022 - YouTube</a></li>
+<li><a href="https://www.youtube.com/shorts/CghaSQNK5BQ">Remove EVIL EYE, Negativity & Blockages with Ganesh Ji! #shorts - YouTube</a></li>
+<li><a href="https://jayanthdev.com/coconut-break-temple-why-facts/">Why Break Coconut at Temples? Hindu Spiritual Science Explained - Jayanth Dev</a></li>
+<li><a href="https://www.crazywisdomjournal.com/thecrazywisdomjournalonline/2014/5/1/discovering-vedic-astrology-and-its-ancient-roots">Discovering Vedic Astrology and Its Ancient Roots - Crazy Wisdom Community Journal</a></li>
+<li><a href="https://www.livevaastu.com/nazar-battu">Nazar Battu | Evil Eye Remedy For Home - Live Vastu</a></li>
+<li><a href="https://www.youtube.com/shorts/7JWZgwOYpAc">Drishti Durga Mantra--( To Remove All Evil Eyes--Buri Nazar--Bad Intentions--Negativity )</a></li>
+<li><a href="https://www.youtube.com/watch?v=f4LDYpRuWYU">Remove Black Magic & Evil Eye Instantly | Ganapati Atharva Shirsha Recited by Acharya Addittya - YouTube</a></li>
+<li><a href="https://thejaadu.com/blogs/blog-42/the-silent-guardian-power-and-meaning-behind-the-black-nazar-battu">Black Nazar Battu in Clay | Handcrafted Evil Eye Charm - TheJaadu.com</a></li>
+<li><a href="https://www.ebay.com/itm/156035919831">Indian traditional Metal Surya Black Nazar Battu for Home Entrance Wall Henging - eBay</a></li>
+<li><a href="https://www.etsy.com/market/indian_nazar_battu">Indian Nazar Battu - Etsy</a></li>
+<li><a href="https://www.mahakaalprasad.com/products/original-real-nazar-battu-bead-energized-to-protect-from-evil-eyes">Original & Real Nazar Battu Bead - Energized to protect from Evil Eyes - Mahakaal Prasad</a></li>
+<li><a href="https://astrodidi.com/products/astrodidi-nazar-battu-raksha-kavach-for-evil-eye-protection-black">ASTRODIDI Nazar Battu Raksha Kavach for Evil Eye Protection - Black</a></li>
+<li><a href="https://www.scribd.com/doc/190211695/Sudharsana-Narasimha">Narasimha Mantras for Health and Wealth | PDF | Hindu Literature - Scribd</a></li>
+<li><a href="https://www.youtube.com/watch?v=JmxkcVWkko0">Lord Narasimha Maha Mantra To Remove Problems - YouTube</a></li>
+<li><a href="https://www.apollo247.com/health-topics/general-medical-consultation/benefits-of-kushamaand-benefits-and-side-effects">Kushamaand Benefits And Side Effects - Apollo 247</a></li>
+<li><a href="https://www.youtube.com/watch?v=ZHTbGLmmkgY">ఈ ఒక్క బొట్టుతో నరదృష్టి మాయం | Nara Drishti Pariharam in Telugu for Home - YouTube</a></li>
+<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3249908/">Semecarpus anacardium Linn.: A review - PMC</a></li>
+<li><a href="https://www.everayu.com/blogs/blogs/bhilawa-semecarpus-anacardium-benefits-uses-and-ayurvedic-importance">Bhilawa (Semecarpus anacardium) – Benefits, Uses, and Ayurvedic Import - everAyu</a></li>
+<li><a href="https://www.planetayurveda.com/library/bhallataka-semecarpus-anacardium/">Bhallataka (Semecarpus anacardium) - Properties, Benefits, Uses & Dosage</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Semecarpus_anacardium">Semecarpus anacardium - Wikipedia</a></li>
+<li><a href="https://forrest-ecology.org/2022/03/semecarpus-anacardium/">Semecarpus anacardium - Forrest-ecology</a></li>
+<li><a href="https://pfaf.org/user/Plant.aspx?LatinName=Semecarpus%20anacardium">Semecarpus anacardium Marking Nut Tree. Oriental Cashew PFAF Plant Database</a></li>
+<li><a href="https://desibydil.com/blogs/traditions-of-india/warding-off-the-evil-eye-the-tradition-of-hanging-nimbu-mirchi-in-india">Warding Off the Evil Eye: The Tradition of Hanging Nimbu-Mirchi in Ind - DesiByDil</a></li>
+<li><a href="https://themeans2madness.wordpress.com/2019/08/03/spice-up-life-with-nimbu-mirchi/">Spice up your life with some Nimbu-Mirchi - Means 2 Madness</a></li>
+<li><a href="https://aathilife.com/product/karungali-and-chakra-with-evil-eye-bracelet-8mm/">Karungali And Chakra with Evil Eye Bracelet – 8mm - aathilife</a></li>
+<li><a href="https://www.ebay.com/itm/366406042332">Brass Kirtimukha Wall Hanging | Traditional Vastu Wall Décor - eBay</a></li>
+<li><a href="https://gayatriheritage.com/collections/brass-kirtimukha-wall-decor">Brass Kirtimukha Wall Decor - Gayatri Heritage</a></li>
+<li><a href="https://www.youtube.com/shorts/eXTtUjrGMKY">Sudarshana Shadakshari—A shield from negative energies, evil eyes, enemies. - YouTube</a></li>
+<li><a href="https://www.indianmirror.com/culture/indian-folklore/Pumpkin.html">TYING PUMPKIN AT THE ENTRANCE OF A NEW BUILDING-INDIANMIRROR</a></li>
+</ol>
+</div>
+        </article>
+    </div>
+
+</body>
+</html>
