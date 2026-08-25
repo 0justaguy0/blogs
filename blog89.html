@@ -1,0 +1,492 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purvajanma Shapa Remedies</title>
+    <style>
+        :root {
+            --bg-color: #FDF9F1;
+            --text-color: #3E2723;
+            --indian-yellow: #E4A025;
+            --indian-orange: #E65100;
+            --accent-light: #FFECB3;
+            --ref-bg: #FFF3E0;
+        }
+
+        body {
+            font-family: 'Georgia', 'Nirmala UI', 'Mangal', serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(var(--bg-color) 80%, var(--accent-light) 100%);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #FFFFFF;
+            padding: 50px 60px;
+            box-shadow: 0 10px 30px rgba(62, 39, 35, 0.1);
+            border-top: 8px solid var(--indian-orange);
+            border-bottom: 8px solid var(--indian-yellow);
+            border-radius: 4px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed var(--indian-yellow);
+        }
+
+        h1 {
+            color: var(--indian-orange);
+            font-size: 2.5em;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        h2 {
+            color: var(--indian-yellow);
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--indian-orange);
+            padding-left: 15px;
+        }
+
+        h3, h4 {
+            color: var(--indian-orange);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        .intro-text::first-letter {
+            float: left;
+            font-size: 3.5em;
+            line-height: 0.8;
+            padding-right: 8px;
+            padding-top: 4px;
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        ul, ol {
+            margin: 0 0 24px 0;
+            padding-left: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ol {
+            list-style-position: outside;
+            padding-left: 2.2em;
+        }
+
+        ul li, ol li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        ol li {
+            padding-left: 0.35em;
+        }
+
+        ul li::before {
+            content: '\2022';
+            position: absolute;
+            left: 0;
+            top: 0.05em;
+            color: var(--indian-orange);
+            font-size: 1.2em;
+            line-height: 1;
+        }
+
+        ol li::marker {
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        strong {
+            color: var(--indian-orange);
+        }
+
+        .image-placeholder-container {
+            margin: 30px 0;
+            text-align: center;
+            font-style: italic;
+            color: #795548;
+            background-color: var(--accent-light);
+            padding: 20px;
+            border-radius: 4px;
+            border: 1px solid var(--indian-yellow);
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.98em;
+            background-color: #FFFDF8;
+        }
+
+        th, td {
+            border: 1px solid #F0D49B;
+            padding: 10px 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--ref-bg);
+            color: var(--indian-orange);
+        }
+
+        blockquote {
+            margin: 30px 0;
+            padding: 20px 25px;
+            background-color: var(--accent-light);
+            border-left: 5px solid var(--indian-orange);
+            font-style: italic;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px dashed var(--indian-yellow);
+            margin: 32px 0;
+        }
+
+        .references {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: var(--ref-bg);
+            border-radius: 8px;
+            font-size: 0.9em;
+        }
+
+        .references h2, .references h3 {
+            color: var(--text-color);
+            margin-top: 0;
+            border-bottom: 1px solid var(--indian-yellow);
+            padding-bottom: 10px;
+            border-left: 0;
+            padding-left: 0;
+        }
+
+        .references p, .references li {
+            margin-bottom: 12px;
+            word-wrap: break-word;
+        }
+
+        .references a {
+            color: var(--indian-orange);
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="container">
+        <header>
+            <h1>Purvajanma Shapa Remedies</h1>
+        </header>
+
+        <article>
+<h2>1. Introduction: The Silent Threads of Destiny</h2>
+<p class="intro-text">In my years of practice, I have often encountered a specific, modern heartache: the individual who is "perfectly fit"—medically healthy, financially stable, and psychologically resilient—yet faces unyielding blockages in the most sacred corridors of life. Whether it is the repeated denial of parenthood or a career that remains stagnant despite immense effort, these barriers often defy logical explanation. </p>
+<div class="image-placeholder-container">
+    <img src="blog89_Image.png" alt="Purvajanma Shapa Remedies">
+</div>
+<p>Through the lens of <strong><em>Jyotisha</em></strong> (Vedic Astrology), we understand that we are not merely physical beings but souls navigating the currents of <strong><em>Prarabdha Karma</em></strong>—the specific portion of our past-life actions that has matured for resolution in this incarnation. When these currents meet severe obstruction, we find the presence of a <strong><em>Shapa</em></strong> (curse). A curse is not an act of divine malice; it is an energetic deficit or a "karmic knot" etched into the <strong><em>Atma</em></strong> (soul) due to severe past-life transgressions. These knots represent vibrational debts that must be unraveled through specific spiritual labor and divine grace.</p>
+<h2>2. The Diagnostic Lens: The 5th House and the Solar Signature</h2>
+<p>The primary diagnostic focal point for ancestral merit is the 5th House (<strong><em>Putra Bhava</em></strong>), the house of <strong><em>Purva Punya</em></strong> (accumulated past-life merit). To the master astrologer, the 5th House is seen as the "9th from the 9th"—the house of fortune derived from our deep patriarchal lineage. This structural link explains why the 5th House serves as the bridge between our ancestors' deeds and our own ability to bring forth progeny.</p>
+<p>To differentiate between a simple physical ailment and a deep spiritual blockage, we employ the <strong><em>Deha</em></strong> methodology of Sage Parashara and Jaimini. This involves analyzing the <strong><em>Arudha Padas</em></strong> (reflected positions) of the 3rd and 9th houses from two distinct anchors:</p>
+<ul>
+<li><strong>Lagna-derived Padas (A3/A9):</strong> These represent the physical frame (<strong><em>Deha</em></strong>). Afflictions here point to anatomical or physiological issues that modern medical science is equipped to treat.</li>
+<li><strong>Sun-derived Padas (AS3/AS9):</strong> The Sun is the significator of the soul’s vital force. Afflictions here indicate a spiritual deficit where the soul’s energetic capacity to manifest life or success is bound.</li>
+</ul>
+<blockquote>
+<p><strong>Key Insight:</strong> While medical science treats the <strong><em>Lagna</em></strong> (the body), <strong><em>Shanti</em></strong> rituals address the Sun (the soul’s capacity). Using the <strong><em>Deha</em></strong> method, we see that if the AS3 or AS9 are afflicted by malefics like Saturn or Rahu, no amount of medicine can resolve the delay; only the untying of the soul's energetic knot can restore the flow.</p>
+</blockquote>
+<h2>3. The Eight Primary Curses (<strong><em>Shrapa Yogas</em></strong>)</h2>
+<p>Maharishi Parashara identifies eight primary curses that severely afflict the 5th house axis, often denying the birth of children or the continuity of the family line. These are activated when natural malefics—Mars, Saturn, or Rahu—severely assault the <strong><em>Putrakaraka</em></strong> (Jupiter) and the house of children.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Curse Type</th>
+<th style="text-align: left;">Planetary Significator</th>
+<th style="text-align: left;">Past-Life Origin</th>
+<th style="text-align: left;">Present-Life Manifestation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong><em>Sarpaśāpa</em></strong></td>
+<td style="text-align: left;">Rahu</td>
+<td style="text-align: left;">Harming or killing divine serpents; Rahu in 5th aspected by Mars.</td>
+<td style="text-align: left;">Childlessness, sudden infant demise, or chronic fear of reptiles.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><em>Pitṛśāpa</em></strong></td>
+<td style="text-align: left;">Sun</td>
+<td style="text-align: left;">Neglecting or insulting the father; Sun in 5th in Saturn's navamsa.</td>
+<td style="text-align: left;">Loss of ancestral property, total lack of lineage, and father-son conflicts.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><em>Mātṛśāpa</em></strong></td>
+<td style="text-align: left;">Moon</td>
+<td style="text-align: left;">Emotional abuse or neglect of the mother; Moon afflicted by Saturn/Rahu.</td>
+<td style="text-align: left;">Psychological distress, lack of mental peace, and severe property disputes.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><em>Bhrātṛśāpa</em></strong></td>
+<td style="text-align: left;">Mars</td>
+<td style="text-align: left;">Betraying siblings for gain; 3rd lord conjunct Mars and Rahu in the 5th.</td>
+<td style="text-align: left;">Death of siblings, court battles with co-borns, and loss of progeny.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><em>Mātulśāpa</em></strong></td>
+<td style="text-align: left;">Mercury</td>
+<td style="text-align: left;">Deceit by or toward a maternal uncle; Mercury conjunct Mars and Rahu in 5th.</td>
+<td style="text-align: left;">Chronic skin/kidney diseases and inability to maintain stable wealth.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><em>Brahmaśāpa</em></strong></td>
+<td style="text-align: left;">Jupiter</td>
+<td style="text-align: left;">Being "mad with power and wealth" and insulting a Priest, Guru, or learned scholar.</td>
+<td style="text-align: left;">Failure of education, memory loss, and absolute lack of fortune (<strong><em>Bhagya</em></strong>).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><em>Patnīśāpa</em></strong></td>
+<td style="text-align: left;">Venus</td>
+<td style="text-align: left;">Betraying, abandoning, or tormenting a spouse; Venus in 5th afflicted by Rahu.</td>
+<td style="text-align: left;">Severe marital disharmony, public defamation through women, or death of spouse.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><em>Pretaśāpa</em></strong></td>
+<td style="text-align: left;">Saturn</td>
+<td style="text-align: left;">Failing to perform <strong><em>Shraddha</em></strong> (ancestral rites) for deceased parents.</td>
+<td style="text-align: left;">Paranormal encounters, chronic family illness, and mentally challenged offspring.</td>
+</tr>
+</tbody>
+</table>
+<h2>4. The Psychological Shadow: Ketu’s Behavioral Imprint</h2>
+<p>While the primary planets enforce the external curse, Ketu reveals the "Shadow" or behavioral residue carried in the subtle body. Ketu’s sign placement acts as a psychic echo of the previous incarnation’s character.</p>
+<ul>
+<li><strong>Aries / 1st House:</strong><ul>
+<li><em>Past-Life Character:</em> An impulsive, self-centered warrior driven by ego.</li>
+<li><em>Present-Life Echo:</em> Natural independence coupled with a struggle with sudden anger and a fractured relational identity.</li>
+</ul>
+</li>
+<li><strong>Taurus / 2nd House:</strong><ul>
+<li><em>Past-Life Character:</em> A wealthy, materialistic merchant devoid of any spiritual quality.</li>
+<li><em>Present-Life Echo:</em> Extreme attachment to material security; financial instability persists until a spiritual path is embraced.</li>
+</ul>
+</li>
+<li><strong>Scorpio / 8th House:</strong><ul>
+<li><em>Past-Life Character:</em> An occult practitioner who experienced trauma, betrayal, or misused secret knowledge.</li>
+<li><em>Present-Life Echo:</em> Intense psychic intuition and a persistent, irrational fear of betrayal; a magnetic attraction to hidden sciences.</li>
+</ul>
+</li>
+<li><strong>Capricorn / 10th House:</strong><ul>
+<li><em>Past-Life Character:</em> A cold, status-driven achiever who repressed all emotion for professional gain.</li>
+<li><em>Present-Life Echo:</em> Outstanding organizational skills but a profound struggle with vulnerability and a sense of emotional dryness.</li>
+</ul>
+</li>
+</ul>
+<h2>5. The Planetary Executive Matrix: Saturn and Mercury</h2>
+<p>The administration of your karmic ledger is overseen by two primary "executives": Saturn and Mercury.</p>
+<p><strong>Saturn as the Karmic Executor:</strong> Saturn represents the original "sin" (<strong><em>Papa</em></strong>). His placement and aspects reveal where the debt is most heavy. If the planet enforcing a curse is <strong><em>Vakri</em></strong> (retrograde), the karmic knot is "unyielding." In such cases, rituals may face resistance, and the native is often required to endure the entire <strong><em>Dasha</em></strong> (planetary period) to satisfy the soul's obligation.</p>
+<p><strong>Mercury as the Storage of Memories:</strong> Mercury governs the cognitive storage of soul talents. A "cognitive curse" manifests when Mercury is deeply afflicted. For instance, a Mercury debilitated in Pisces (the 12th sign of dissolution) represents a loss of touch with accumulated soul talents, causing the native to feel intellectually adrift. In the case of a Taurus Ascendant, a debilitated Mercury often produces irrational financial anxiety—a subconscious memory of having wealth stolen by family in a previous life.</p>
+<h2>6. Canonical Remedial Frameworks (<strong><em>Shanti Vidhi</em></strong>)</h2>
+<p>To neutralize specialized blockages, one must perform rituals that restore balance to the subtle body. For <strong><em>Pitṛśāpa</em></strong>, the Gaya <strong><em>Pind Daan</em></strong> is essential; for <strong><em>Sarpaśāpa</em></strong>, a golden <strong><em>Naga Raja</em></strong> idol must be donated; for <strong><em>Pretaśāpa</em></strong>, the <strong><em>Narayan Bali</em></strong> ritual releases the earthbound spirit.</p>
+<p>The technical fire ritual (<strong><em>Havan</em></strong>) is the primary mechanism of transmutation. The prescribed wood (<strong><em>Samidh</em></strong>) must be mixed with honey, curd, and milk and offered either 108 or 28 times to the fire to effectively transmute the malefic energy.</p>
+<h3>The Planetary Remedial Matrix</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Planet</th>
+<th style="text-align: left;">Mantra Count</th>
+<th style="text-align: left;">Sacred Wood (<strong><em>Samidh</em></strong>)</th>
+<th style="text-align: left;">Targeted Charity Item</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Sun</strong></td>
+<td style="text-align: left;">7,000</td>
+<td style="text-align: left;"><strong><em>Aak</em></strong> (Arka)</td>
+<td style="text-align: left;">Healthy cow with its calf</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Moon</strong></td>
+<td style="text-align: left;">11,000</td>
+<td style="text-align: left;"><strong><em>Palash</em></strong></td>
+<td style="text-align: left;">White sea conch (<strong><em>Shankha</em></strong>)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Mars</strong></td>
+<td style="text-align: left;">11,000</td>
+<td style="text-align: left;"><strong><em>Khair</em></strong> (Khadira)</td>
+<td style="text-align: left;">Strong, healthy bullock</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Mercury</strong></td>
+<td style="text-align: left;">9,000</td>
+<td style="text-align: left;"><strong><em>Apamarga</em></strong></td>
+<td style="text-align: left;">Pure gold</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Jupiter</strong></td>
+<td style="text-align: left;">19,000</td>
+<td style="text-align: left;"><strong><em>Peepal</em></strong> (Pippala)</td>
+<td style="text-align: left;">Fine yellow robes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Venus</strong></td>
+<td style="text-align: left;">16,000</td>
+<td style="text-align: left;"><strong><em>Gular</em></strong> (Oudumbara)</td>
+<td style="text-align: left;">Healthy horse</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Saturn</strong></td>
+<td style="text-align: left;">23,000</td>
+<td style="text-align: left;"><strong><em>Shami</em></strong></td>
+<td style="text-align: left;">Healthy black cow</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Rahu</strong></td>
+<td style="text-align: left;">10,000</td>
+<td style="text-align: left;"><strong><em>Doob</em></strong> (Durva grass)</td>
+<td style="text-align: left;">Defensive weapons (iron)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ketu</strong></td>
+<td style="text-align: left;">17,000</td>
+<td style="text-align: left;"><strong><em>Kush</em></strong> (Dharba grass)</td>
+<td style="text-align: left;">Healthy goat</td>
+</tr>
+</tbody>
+</table>
+<h2>7. Sacred Geography: The Power of <strong><em>Parihara Sthalams</em></strong></h2>
+<p>When the birth chart reveals the weight of <strong><em>Brahmahatya Dosha</em></strong>—the karmic burden of the "seven worst sins" (arson, poisoning, disrespecting Gurus, neglecting parents, neglecting ancestral souls, preventing help to the needy, and stealing family wealth)—home rituals are often insufficient. One must travel to energized centers where the geography itself acts as a karmic solvent.</p>
+<ol>
+<li><strong>Ramanathaswamy Temple (Rameswaram):</strong> Here, the native bathes in 22 sacred wells in a precise sequence to purify the soul of ancestral and maternal curses.</li>
+<li><strong>Kukke Subramanya:</strong> The primary site for <strong><em>Sarpa Samskara</em></strong>; it is essential for neutralizing Rahu’s "venomous" influence on the progeny line.</li>
+<li><strong>Trimbakeshwar:</strong> Renowned for the multi-day <strong><em>Narayan Nagbali</em></strong>, designed to release spirits from the wind-bound <strong><em>preta yoni</em></strong> (ghostly state).</li>
+<li><strong>Thirunageswaram:</strong> A site of profound mystery where the milk <strong><em>Abhishekam</em></strong> turns blue upon touching the idol of Rahu, signifying the deity's absorption of the native’s past-life "venom."</li>
+<li><strong>Vishnupad Temple (Gaya):</strong> The final destination for ancestral liberation; offerings made directly on the footprint of Lord Vishnu grant <strong><em>Mukti</em></strong> (freedom) to wandering forefathers.</li>
+</ol>
+<h2>8. Conclusion: Moving Toward Aligned Living</h2>
+<p>While the performance of rituals and pilgrimages is a powerful tool for untying karmic knots, it is not a substitute for ethical living. The most unyielding karma begins to melt when the native couples these rituals with genuine compassion, respect for elders, and selfless service to the community.</p>
+<p><strong>Takeaway Checklist:</strong>
+1.  <strong>Consult a qualified Jyotishi</strong> to identify the specific <strong><em>Shrapa Yogas</em></strong> and house afflictions within your chart.
+2.  <strong>Differentiate between the physical (</strong><em>Lagna</em><strong>) and the karmic (Sun)</strong> to apply the correct remedial framework.
+3.  <strong>Perform prescribed mantra counts</strong> using the correct <strong><em>Samidh</em></strong> mixed with honey, curd, and milk for fire sacrifices.
+4.  <strong>Fulfill outstanding debts</strong> through ancestral rites (<strong><em>Shraddha</em></strong>) and charitable acts directed at the groups harmed in the past.</p>
+<p>Remember, no karmic debt is so heavy that it cannot be mitigated. Even in the presence of a severe curse, the glance of Jupiter—the planet of divine grace—offers a path toward redemption, restoration, and the eventual realization of peace.</p>
+
+<div class="references">
+<h2>Sources</h2>
+<p>NotebookLM notebook: <code>8a6dac11-fdc2-4406-9a55-ca593bfdeba6</code></p>
+<ol>
+<li><a href="https://sarbanirath.com/jyoti%E1%B9%A3a/timing-curses-and-their-remedies-1/">Timing Curses and their Remedies (1) - Sarbani Rath</a></li>
+<li><a href="https://astrosutras.in/index.php/2025/02/27/curses-and-past-life-karma-in-vedic-astrology-as-per-karm-vipak-samhita/">Curses and Past-Life Karma in Vedic Astrology as per Karm Vipak Samhita - astrosutras.in</a></li>
+<li><a href="https://www.scribd.com/document/603613075/curses">Hindu Curses and Ritual Remedies | PDF - Scribd</a></li>
+<li><a href="https://www.asttrolok.com/blog/childlessness-principal-and-remedy">CHILDLESSNESS PRINCIPAL AND REMEDY - Asttrolok</a></li>
+<li><a href="https://www.scribd.com/document/1059218850/Brihat-Parashara-Hora-Sashtra-by-Rishi-Parashara">Brihat Parashara Hora Sashtra by Rishi Parashara | PDF | Curse | Sun - Scribd</a></li>
+<li><a href="https://www.scribd.com/document/63799539/Ch-83-Effects-of-Curses-in-the-Previous-Birth-Brahat-Parashar-Hora">Curses and Childlessness in Astrology | PDF | Hindu Literature - Scribd</a></li>
+<li><a href="https://astrologicalmusings.com/pitru-dosha-or-purva-janma-shrapa-as-per-brihat-parashara-hora-shastra/">Pitru Dosha or Purva Janma Shrapa as per Brihat Parashara Hora Shastra</a></li>
+<li><a href="https://sharadkumarsonisspace.quora.com/How-to-understand-Curse-%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%AA-by-Astrology-along-with-some-interesting-stories-Your-Bad-Karma-Set-the-Cause-of-C">How to understand Curse (श्राप) by Astrology along with some interesting stories : ' Your Bad Karma Set the Cause of Curse ' - Sharad Kumar Soni The 'Brihat Parashara Hora Shastra' which is one of the most respected astrological treatises gives a</a></li>
+<li><a href="https://www.scribd.com/document/469805731/X-Past-Life-Current-Life">Past Life Curses in Current Horoscope | PDF | Reincarnation | Karma - Scribd</a></li>
+<li><a href="https://www.scribd.com/doc/183798147/Dohsa-and-their-Remedies-docx">Remedies for Vedic Astrology Doshas | PDF - Scribd</a></li>
+<li><a href="https://epuja.co.in/parihara-pooja-temple-thirupathiripuliyur">Poorva Janma Dosha Pariharam Temple Thirupathiripuliyur | Parihara Pooja</a></li>
+<li><a href="https://timesofindia.indiatimes.com/astrology/kundali-dasha-remedies/this-temple-in-south-india-is-said-to-reverse-bad-karma-know-how/articleshow/125590526.cms">This temple in South India is said to reverse bad karma; know how | - The Times of India</a></li>
+<li><a href="https://astroulagam.com.my/lifestyle/thiruvalithayam-temple-where-curses-are-lifted-and-divine-grace-prevails-297124">Thiruvalithayam Temple: Where Curses Are Lifted and Divine Grace Prevails - Astro Ulagam</a></li>
+<li><a href="https://sitharsastrology.com/blog/thiruvallam-sri-parasurama-swamy-temple">Thiruvallam Sri Parasurama Swamy Temple | Sithars Astrology</a></li>
+<li><a href="https://timesofindia.indiatimes.com/religion/religious-places/6-temples-in-south-india-believed-to-remove-curses-karma-and-doshas/articleshow/129587118.cms">6 Temples in South India believed to remove curses, karma and doshas - The Times of India</a></li>
+<li><a href="https://timesofindia.indiatimes.com/religion/rituals-puja/curses-of-forefathers-pitra-dosha-astrological-implications/articleshow/68207039.cms">Curses of Forefathers (Pitra Dosha) - Astrological Implications - The Times of India</a></li>
+<li><a href="https://www.scribd.com/document/215311883/Nadi-Remedy">Remedies from Brihat Parashara Hora | PDF | Planets | Astrology - Scribd</a></li>
+<li><a href="https://www.astroved.com/us/specials/karma-removal-packages">Yearlong Karma &amp; Planetary Affliction Removal Program - AstroVed</a></li>
+<li><a href="https://lunarastro.org/memories-of-past-life/">Memories of Past Life - Lunar Astro Vedic Academy</a></li>
+<li><a href="https://aaskplanets.medium.com/how-karma-boomerangs-in-future-as-seen-through-vedic-astrology-5e0b4be6e9af">How Karma Boomerangs In Future— As Seen Through Vedic Astrology | by Yashraj Sharma</a></li>
+<li><a href="https://timesofindia.indiatimes.com/astrology/others/unlocking-past-life-karma-insights-from-the-5th-house-and-navamsa-chart/articleshow/122153224.cms">Past life karma from the 5th house and D-9 (Navamsa) - The Times of India</a></li>
+<li><a href="https://paramarsh.app/patrika/dharma-karma-moksha/past-life-karma-5th-8th-12th-houses">Past-Life Karma: 5th, 8th and 12th Houses - Paramarsh</a></li>
+<li><a href="https://fr.scribd.com/document/468135221/Past-Life-in-Astrology-by-Karma">Insights on Past Life through Astrology | PDF - Scribd</a></li>
+<li><a href="https://www.reddit.com/r/Nakshatras/comments/1pzbca7/strongest_indicators_of_heavy_pastlife/">strongest indicators of heavy past-life load(conjunction) : r/Nakshatras - Reddit</a></li>
+<li><a href="https://www.scribd.com/document/844301971/K-N-Rao-Your-Children-and-Your-Karma">Your Children and Their Karmas | PDF | Planets In Astrology - Scribd</a></li>
+<li><a href="https://vedicakshat.com/2018/04/02/deadly-conjunctions-saturn-ketu/">Deadly Conjunctions: Saturn Ketu - Vedic Akshat</a></li>
+<li><a href="https://www.scribd.com/document/817195056/Child-Birth-in-Astrology-Gender-Misfortune-Curse-Time-Denial-and-Fertility-in-Horoscope-Jyotish-Z-library">Astrology Insights on Childbirth | PDF - Scribd</a></li>
+<li><a href="https://www.scribd.com/doc/214392614/Varahamihira-Progeny-in-Jyotish-I-Fertility-of-Parents">Progeny Predictions in Jyotish Astrology | PDF - Scribd</a></li>
+<li><a href="https://www.reddit.com/r/Nakshatras/comments/1ufcfb5/5th_house_lets_dive_into_past/">5th House- Let's Dive Into Past. : r/Nakshatras - Reddit</a></li>
+<li><a href="https://lunarastro.org/daivik-curses-and-nakshatras/">Daivik Curses and Nakshatras - - Lunar Astro</a></li>
+<li><a href="https://www.scribd.com/document/437435994/How-to-Unlock-Your-Pending-Karma-s-of-Past-Life-From-the-Natal-Chart-Part-1">Unlocking Past Life Karmas in Astrology | PDF - Scribd</a></li>
+<li><a href="https://www.scribd.com/document/657223387/16180047309">Brihat Parashara Hora Shastra Vol 2 PDF | PDF | Hindu Astrology | Sanskrit - Scribd</a></li>
+<li><a href="https://www.scribd.com/document/860702380/Lecture-6-Naadi-Praveen">Naadi Astrology: 12 Bhavas Explained | PDF - Scribd</a></li>
+<li><a href="https://www.youtube.com/watch?v=x4mpK1HU8ao">Vedic Remedies for Past Lives #Curses and #Karma Removal by Dr. Navnit J Krishna</a></li>
+<li><a href="https://www.scribd.com/document/420219853/My-3-Books-Contents">My 3 Books Contents | PDF | Hindu Astrology | Indian Religions - Scribd</a></li>
+<li><a href="https://www.scribd.com/document/540233759/Astro-secrets-1">Parental Relationships in Astrology | PDF - Scribd</a></li>
+<li><a href="https://www.scribd.com/document/251841306/D7-Progeny-Sarajit">Fertility Insights in Jyotish Astrology | PDF | Superstitions | Occult - Scribd</a></li>
+<li><a href="https://archive.org/stream/sanjayrathcruxofvedicastrologytimingofevents19982/Sanjay%20Rath%20-%20Crux%20of%20Vedic%20Astrology-Timing%20of%20Events%20%281998%29_2_djvu.txt">Full text of "Sanjay Rath Crux Of Vedic Astrology: Timing Of Events ( 1998)" - Internet Archive</a></li>
+<li><a href="https://www.scribd.com/document/11492831/Index">Antidotes to Evils in Astrology | PDF | New Age Practices | Hindu Philosophy - Scribd</a></li>
+<li><a href="https://archive.org/stream/BPHSEnglish/BPHS%20-%202%20RSanthanam_djvu.txt">Full text of "Brihat Parashara Hora Shastra" - Internet Archive</a></li>
+<li><a href="https://en.bharatpedia.org/wiki/Brihat_Parashara_Hora_Shastra">Brihat Parashara Hora Shastra - Bharatpedia</a></li>
+<li><a href="https://www.scribd.com/document/222124680/Medical-Jyotish">Medical Astrology: Diagnosis &amp; Remedies | PDF - Scribd</a></li>
+<li><a href="https://www.scribd.com/document/851840989/Medical-Astrology-Dr-S-K-Kumar">Medical Astrology Dr. S K Kumar | PDF - Scribd</a></li>
+<li><a href="https://www.scribd.com/document/403096259/brihat-parashara-hora-shastra-english-V-pdf">Brihat Parashara Hora Shastra Overview | PDF | Hindu Astrology - Scribd</a></li>
+<li><a href="http://www.reliableastrology.com/mphs.htm">Maharshi Parasara's Brihat Parasara Hora Sastra - Reliable Astrology.com</a></li>
+<li><a href="https://www.scribd.com/document/608981309/Sun">Sun | PDF - Scribd</a></li>
+<li><a href="https://www.scribd.com/doc/90732603/47430777-Medical-Jyotish">Medical Astrology: Diagnosis &amp; Remedies | PDF - Scribd</a></li>
+<li><a href="https://timesofindia.indiatimes.com/astrology/planets-transits/how-to-strengthen-the-sun-surya-without-fear-based-remedies/articleshow/133459710.cms">How to strengthen the Sun (Surya) without fear-based remedies - The Times of India</a></li>
+<li><a href="https://barbarapijan.com/bpa/VimshottariDasha/Budha_Mahadasha_BPHS.htm">BPHS Budha MahaDasha Vimshottari *BP Lama Jyotishavidya</a></li>
+<li><a href="https://barbarapijan.com/bpa/VimshottariDasha/Zukra_Mahadasha_BPHS.htm">BPHS Shukra * Venus Vimshottari Dasha * BP Lama Jyotishavidya</a></li>
+<li><a href="https://www.reddit.com/r/Nakshatras/comments/1vv9668/some_extraordinaryspecial_placements/">Some Extraordinary/Special placements. : r/Nakshatras - Reddit</a></li>
+</ol>
+</div>
+        </article>
+    </div>
+
+</body>
+</html>
