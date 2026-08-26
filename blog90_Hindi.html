@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>देवी मंदिर रक्षा उपाय</title>
+    <style>
+        :root {
+            --bg-color: #FDF9F1;
+            --text-color: #3E2723;
+            --indian-yellow: #E4A025;
+            --indian-orange: #E65100;
+            --accent-light: #FFECB3;
+            --ref-bg: #FFF3E0;
+        }
+
+        body {
+            font-family: 'Georgia', 'Nirmala UI', 'Mangal', serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(var(--bg-color) 80%, var(--accent-light) 100%);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #FFFFFF;
+            padding: 50px 60px;
+            box-shadow: 0 10px 30px rgba(62, 39, 35, 0.1);
+            border-top: 8px solid var(--indian-orange);
+            border-bottom: 8px solid var(--indian-yellow);
+            border-radius: 4px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed var(--indian-yellow);
+        }
+
+        h1 {
+            color: var(--indian-orange);
+            font-size: 2.5em;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        h2 {
+            color: var(--indian-yellow);
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--indian-orange);
+            padding-left: 15px;
+        }
+
+        h3, h4 {
+            color: var(--indian-orange);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        .intro-text::first-letter {
+            float: left;
+            font-size: 3.5em;
+            line-height: 0.8;
+            padding-right: 8px;
+            padding-top: 4px;
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        ul, ol {
+            margin: 0 0 24px 0;
+            padding-left: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ol {
+            list-style-position: outside;
+            padding-left: 2.2em;
+        }
+
+        ul li, ol li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        ol li {
+            padding-left: 0.35em;
+        }
+
+        ul li::before {
+            content: '\2022';
+            position: absolute;
+            left: 0;
+            top: 0.05em;
+            color: var(--indian-orange);
+            font-size: 1.2em;
+            line-height: 1;
+        }
+
+        ol li::marker {
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        strong {
+            color: var(--indian-orange);
+        }
+
+        .image-placeholder-container {
+            margin: 30px 0;
+            text-align: center;
+            font-style: italic;
+            color: #795548;
+            background-color: var(--accent-light);
+            padding: 20px;
+            border-radius: 4px;
+            border: 1px solid var(--indian-yellow);
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.98em;
+            background-color: #FFFDF8;
+        }
+
+        th, td {
+            border: 1px solid #F0D49B;
+            padding: 10px 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--ref-bg);
+            color: var(--indian-orange);
+        }
+
+        blockquote {
+            margin: 30px 0;
+            padding: 20px 25px;
+            background-color: var(--accent-light);
+            border-left: 5px solid var(--indian-orange);
+            font-style: italic;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px dashed var(--indian-yellow);
+            margin: 32px 0;
+        }
+
+        .references {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: var(--ref-bg);
+            border-radius: 8px;
+            font-size: 0.9em;
+        }
+
+        .references h2, .references h3 {
+            color: var(--text-color);
+            margin-top: 0;
+            border-bottom: 1px solid var(--indian-yellow);
+            padding-bottom: 10px;
+            border-left: 0;
+            padding-left: 0;
+        }
+
+        .references p, .references li {
+            margin-bottom: 12px;
+            word-wrap: break-word;
+        }
+
+        .references a {
+            color: var(--indian-orange);
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>देवी मंदिर रक्षा उपाय</h1>
+        </header>
+
+        <article>
+<p class="intro-text">आज के इस संघर्षपूर्ण युग में मनुष्य अक्सर तामसिक प्रभावों, अज्ञात भय और गंभीर मनोविकारों से घिरा रहता है। जब भौतिक उपचार और मानवीय प्रयास विफल हो जाते हैं, तब केवल आदि-शक्ति का दिव्य हस्तक्षेप ही एकमात्र शरण बनता है। केरल का पावन 'छोटानिकारा भगवती मंदिर' और तमिलनाडु का 'अय्यावदी श्री महा प्रत्यंगिरा देवी मंदिर' आध्यात्मिक उपचार और आसुरी शक्तियों के विनाश के वे स्तंभ हैं, जहाँ श्रद्धा और अनुष्ठान मिलकर असंभव को भी संभव कर देते हैं।</p>
+<div class="image-placeholder-container">
+    <img src="blog90_Image.png" alt="देवी मंदिर रक्षा उपाय">
+</div>
+<h2>छोटानिकारा भगवती मंदिर: आध्यात्मिक उपचार का केंद्र</h2>
+<p>कोच्चि (केरल) के समीप स्थित छोटानिकारा भगवती मंदिर अपनी अद्वितीय उपचार शक्तियों के लिए जगत-प्रसिद्ध है। यहाँ की अधिष्ठात्री देवी माता राजराजेश्वरी (आदिपाराशक्ति) साक्षात 'स्वयंभू' (स्वयं प्रकट) स्वरूप में विराजमान हैं। माता की मूर्ति के साथ भगवान विष्णु की उपस्थिति उन्हें 'अम्मेनारायण' और 'लक्ष्मीनारायण' के संयुक्त दिव्य स्वरूप में स्थापित करती है।</p>
+<p>इस मंदिर की विलक्षण परंपरा यह है कि माता भगवती दिन के तीन अलग-अलग प्रहरों में तीन विशिष्ट स्वरूपों में दर्शन देकर भक्तों का कल्याण करती हैं:</p>
+<ul>
+<li><strong>प्रातः काल:</strong> माता सरस्वती के रूप में, जो धवल (सफेद) वस्त्रों में ज्ञान का संचार करती हैं।</li>
+<li><strong>मध्याह्न (दोपहर):</strong> माता लक्ष्मी के रूप में, जो किरमिजी (Crimson/गहरा लाल) वस्त्रों में वैभव का आशीष देती हैं।</li>
+<li><strong>सांयकाल:</strong> माता दुर्गा (महाकाली) के रूप में, जो नीले वस्त्रों में संहारक शक्ति बनकर प्रकट होती हैं।</li>
+</ul>
+<h2>पौराणिक कथा और श्रद्धा का आधार</h2>
+<p>मंदिर की जड़ें 'कन्नप्पन' नामक एक व्यक्ति की कथा से जुड़ी हैं, जो पूर्व में हिंसक था। माता काली को बछड़े की बलि देने के उसके कृत्य और उसके पश्चात उसकी पुत्री की रहस्यमयी मृत्यु ने उसे पश्चाताप की अग्नि में झोंक दिया। जिस स्थान पर बछड़ा खड़ा था, वहाँ स्वयं श्री विष्णु और लक्ष्मी की पावन शिला प्रकट हुई। कालांतर में, महान संत विल्वमंगलम स्वामियार ने मंदिर के 'यक्षिकुलम' नामक सरोवर से माता भद्रकाली की दिव्य मूर्ति खोजी, जिन्हें मंदिर के निचले हिस्से (कीझकावु) में प्रतिष्ठित किया गया।</p>
+<h2>गुरुथी पूजा और 'भजनम': आधि-व्याधि का निवारण</h2>
+<p>छोटानिकारा में संध्या काल में होने वाली 'गुरुथी पूजा' किसी भी प्रकार की नकारात्मक ऊर्जा और बुरी नजर को नष्ट करने का अचूक अस्त्र है। इसके साथ ही, गंभीर मनोविकारों (Mental Illnesses) से मुक्ति हेतु 'भजनम' की परंपरा अत्यंत महत्वपूर्ण है, जिसमें भक्त मंदिर परिसर में रहकर निरंतर प्रार्थना और ध्यान करते हैं।</p>
+<p>गुरुथी पूजा के शास्त्रीय चरण इस प्रकार हैं:</p>
+<ol>
+<li><strong>संकल्प:</strong> व्याधि मुक्ति और शुद्धि हेतु दृढ़ प्रतिज्ञा।</li>
+<li><strong>गौरी गणेश पूजन:</strong> विघ्नहर्ता के आह्वान के साथ अनुष्ठान का आरंभ।</li>
+<li><strong>कलश नवग्रह पूजन:</strong> ब्रह्मांडीय असंतुलन को शांत करने हेतु ग्रहों का पूजन।</li>
+<li><strong>दुर्गा सप्तशती पाठ:</strong> महाविद्याओं के मंत्रों का सस्वर पाठ।</li>
+<li><strong>आरती और प्रसाद:</strong> अग्नि शुद्धि के साथ दिव्य कृपा का वितरण।</li>
+</ol>
+<h2>कीझकावु मंदिर और 'कील ठोकने' की कठोर रस्म</h2>
+<p>मुख्य मंदिर के समीप ही माता भद्रकाली का 'कीझकावु' मंदिर है। यहाँ 'पाला' (Pala) के वृक्ष पर कील ठोकने की एक विस्मयकारी परंपरा है। जो भक्त भीषण नकारात्मक शक्तियों या प्रेत-बाधाओं से ग्रसित होते हैं, वे अपने अटूट विश्वास को प्रदर्शित करने हेतु कभी-कभी अपनी <strong>मस्तक (Forehead)</strong> से कीलों को वृक्ष में ठोक देते हैं। यह समर्पण इस विश्वास पर आधारित है कि ऐसा करने से उस नकारात्मक शक्ति की गति पूर्णतः अक्षम हो जाती है और भक्त को स्थायी सुरक्षा प्राप्त होती है।</p>
+<h2>अय्यावदी श्री महा प्रत्यंगिरा देवी: भय का विनाश</h2>
+<p>तमिलनाडु के तंजावुर जिले में स्थित 'अय्यावदी' मंदिर साक्षात 'अथर्वण भद्रकाली' माता प्रत्यंगिरा को समर्पित है। देवी का यह स्वरूप 'नरसिम्हिनी' के नाम से भी जाना जाता है, जिनका मुख सिंह का और शरीर नारी का है।</p>
+<p>यहाँ होने वाला <strong>'निकुम्बला यागम'</strong> और <strong>'अमावस्या'</strong> का हवन आध्यात्मिक जगत में सुरक्षा का सर्वोच्च कवच माना जाता है। इस यागम में <strong>लाल मिर्चों</strong> की भारी मात्रा में आहुति दी जाती है, जो शत्रुओं और आंतरिक विकारों के भस्म होने का प्रतीक है। माता के आयुध—त्रिशूल, डमरू, कपाल और पाश—भक्त को हर दिशा से रक्षित करते हैं। माना जाता है कि रामायण काल में मेघनाद ने इसी निकुम्बला यज्ञ के माध्यम से अजेय शक्ति प्राप्त करने का प्रयास किया था।</p>
+<h2>आध्यात्मिक अंतर्दृष्टि: ज्योतिष और 'क्षं' (Kṣam̐) बीज मंत्र का रहस्य</h2>
+<p>वैदिक तंत्र शास्त्र के अनुसार, व्यक्ति को अपने 'अमात्यकारक' (Amatyakaraka) ग्रह के आधार पर अपने मार्गदर्शक देवता का चयन करना चाहिए। माता प्रत्यंगिरा का संबंध <strong>'क्षं' (Kṣam̐)</strong> बीज मंत्र से है, जिसे 'अक्षर पुरुष' भी कहा जाता है।</p>
+<p><strong>'क्षं' मंत्र का गहरा रहस्य:</strong> यह 'निवृत्तिकला' (Nivṛttikalā) बीज है। सृष्टि के विस्तार में यह वह निम्नतम बिंदु है जहाँ से ऊर्जा नीचे नहीं गिर सकती। अतः, 'क्षं' मंत्र का प्रयोग सृजन की दिशा को बदलकर साधक को निम्नतम बिंदु से सर्वोच्च चेतना (परब्रह्म) तक ले जाने की क्षमता रखता है।</p>
+<p>विभिन्न ग्रहों और उनसे संबंधित तांत्रिक शक्तियों का विवरण निम्न तालिका में है:</p>
+<table>
+<thead><tr><th>ग्रह (Planet)</th><th>संबंधित तांत्रिक शक्ति (Deity)</th><th>आध्यात्मिक/लौकिक प्रभाव</th></tr></thead>
+<tbody>
+<tr><td>मंगल</td><td>प्रत्यंगिरा / भद्रकाली</td><td>शत्रु विनाश और प्रचंड इच्छाशक्ति</td></tr>
+<tr><td>शनि</td><td>काली / धुमावती</td><td>कर्मों की शुद्धि और स्थिरता</td></tr>
+<tr><td>सूर्य</td><td>मातंगी / रुद्र</td><td>आत्मज्ञान और ओजस्वी तेज</td></tr>
+<tr><td>चंद्र</td><td>ललिता त्रिपुरा सुंदरी</td><td>मानसिक शांति और श्री-सौभाग्य</td></tr>
+<tr><td>बुध</td><td>तारा / वाक् देवी</td><td>प्रखर बुद्धि और संवादात्मक शक्ति</td></tr>
+<tr><td>शुक्र</td><td>महालक्ष्मी / भुवनेश्वरी</td><td>ऐश्वर्य और आध्यात्मिक वैभव</td></tr>
+</tbody>
+</table>
+<h2>भक्तों के लिए मार्गदर्शिका (Devotee Guide)</h2>
+<ul>
+<li><strong>दर्शन समय:</strong> प्रातः 8:00 AM से दोपहर 1:00 PM और सायं 4:30 PM से रात्रि 8:30 PM तक।</li>
+<li><strong>विशेष अवसर:</strong> अमावस्या और नवरात्रि के दौरान विशेष पूजन हेतु पूर्व बुकिंग आवश्यक है।</li>
+<li><strong>अनुष्ठान:</strong> ऑनलाइन पूजा बुकिंग और भोग की सुविधा भी उपलब्ध है।</li>
+<li><strong>वस्त्र संहिता:</strong> भक्तों को पारंपरिक और शालीन वस्त्र धारण करना अनिवार्य है।</li>
+</ul>
+<h2>निष्कर्ष और आध्यात्मिक सार</h2>
+<p>छोटानिकारा भगवती और माता प्रत्यंगिरा की शरण में जाना केवल एक धार्मिक कृत्य नहीं, बल्कि अपनी आत्मा को सुरक्षा के दिव्य आवरण में लपेटना है। जहाँ छोटानिकारा मानसिक शांति और हीलिंग का केंद्र है, वहीं अय्यावदी सुरक्षा और रक्षात्मक शक्ति का। विश्वास की कील और मंत्रों की आहुति से जीवन के समस्त अवरोधों को भस्म किया जा सकता है।</p>
+<h3><strong>महत्वपूर्ण चेकलिस्ट (Actionable Checklist):</strong></h3>
+<ul>
+<li>[ ] <strong>मानसिक व्याधियों के लिए:</strong> छोटानिकारा में 'भजनम' (प्रवास) और गुरुथी पूजा का संकल्प लें।</li>
+<li>[ ] <strong>शत्रु बाधा और भय के लिए:</strong> अमावस्या के दिन अय्यावदी में निकुम्बला यागम में लाल मिर्च की आहुति दें।</li>
+<li>[ ] <strong>आध्यात्मिक प्रगति के लिए:</strong> अपने अमात्यकारक ग्रह के अनुसार 'क्षं' या संबंधित बीज मंत्र का गुरु-निर्देशानुसार जप करें।</li>
+<li>[ ] <strong>स्थायी सुरक्षा के लिए:</strong> माता भद्रकाली के पाला वृक्ष पर अटूट विश्वास के साथ अपनी समस्याओं को 'कील' दें।</li>
+</ul>
+
+<div class="references">
+<h2>Sources</h2>
+<ol>
+<li><a href="https://www.scribd.com/document/229735815/Black-Magic">Identifying Black Magic in Horoscopes | PDF | Planets In Astrology - Scribd</a></li>
+<li><a href="https://www.scribd.com/document/282151280/Sri-Maha-Pratyangira-Devi-the-Goddess-to-Counter-Black-Magic">Pratyangira Devi: Goddess Against Black Magic | PDF - Scribd</a></li>
+<li><a href="https://www.scribd.com/document/83688450/161-20070318">Badhaka Shanti: Types and Remedies | PDF | Planets In Astrology - Scribd</a></li>
+<li><a href="https://manblunder.com/articlesview/shri-atharvana-bhadrakali-pratyangira-mahamantra">Shri Atharvana Bhadrakali Pratyangira Mahamantra - Manblunder</a></li>
+<li><a href="https://www.scribd.com/document/204141404/Badhaka-remidy">Remedies for Badhaka Planets | PDF - Scribd</a></li>
+<li><a href="https://www.vedadhara.com/sudarshana-ashtakam-lyrics">Sudarshana Ashtakam - Vedadhara</a></li>
+<li><a href="https://www.scribd.com/doc/238563721/Shri-Hanuman-Vadvanal-Stotra-in-Hindi-Sanskrit-and-English-PDF">Hanuman Vadvanal Stotra PDF Download | PDF | Mantra | Indian Religious Texts - Scribd</a></li>
+<li><a href="https://www.chamundaswamiji.com/the-ghosts-of-ganagapur-temple-karnataka/">The Ghosts of Ganagapur Temple, Karnataka - Chamunda Swami Ji | Spiritual Healing Center New york</a></li>
+<li><a href="https://www.saranam.com/pujas/173/alleviating-negativity/chottanikkara-bhagavathy-temple">Alleviating Negativity at Chottanikkara Bhagavathy Temple | Puja for Bhagawati, Kochi</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Pratyangira">Pratyangira - Wikipedia</a></li>
+<li><a href="https://www.karthitravels.com/temples/maha-prathyankaradevi-temple-ayyavadi">Maha Prathyankaradevi Temple Ayyavadi | Sri Pratyangira Devi Temple - Karthi Travels</a></li>
+<li><a href="https://pujahome.com/blogs/articles/guruthi-pooja">Guruthi Pooja Chottanikkara Temple Timings, Vidhi, And Cost? - Pujahome</a></li>
+<li><a href="https://www.scribd.com/document/793448177/Pratyangira-devi-The-Goddess-who-Counters-Negative-energies">Pratyangira Devi: Goddess of Power and Protection | PDF - Scribd</a></li>
+<li><a href="https://ganagapura.com/frequently-asked-questions.html">Frequently Asked Questions - GANAGAPURA POOJA SERVICES</a></li>
+<li><a href="https://astropuja.com/energized-sudarshana-yantra.html">Energized Sudarshana Yantra | Invite Positive Vibes | Attain Goals | Career | Success</a></li>
+<li><a href="https://www.scribd.com/document/977604321/Badhaka-Has-a-Big-Role-2">Understanding Badhaka Sthana in Astrology | PDF - Scribd</a></li>
+<li><a href="https://www.scribd.com/document/40614546/Gulika-ACompilation">Gulika ACompilation | PDF | Divination | Astrology - Scribd</a></li>
+<li><a href="https://www.scribd.com/document/402214507/Badhakasthana-Badhakesh">Understanding Badhaka Sthana in Astrology | PDF | Ancient Astronomy | Divination - Scribd</a></li>
+<li><a href="https://www.scribd.com/document/1030597793/Gayatri-Devi-Vasudev-Advanced-Principles-of-Astrology">Gayatri Devi Vasudev - Advanced Principles of Astrology | PDF - Scribd</a></li>
+<li><a href="https://www.youtube.com/watch?v=4mtJFcvd5vY">Hanuman Vadvanal Stotram by Vibhishana | Powerful Hanuman Protection &amp; Enemy Vanishing Mantra - YouTube</a></li>
+<li><a href="https://music.youtube.com/podcast/2u8d9oqdjHI">Black Magic in July (Ashadh): Types of Tantric Attacks &amp; My Battle Through Rahu Mahadasha #rahu - YouTube Music</a></li>
+<li><a href="http://malolamusic.blogspot.com/2007/11/narasimhi.html">Narasimhi - Malola on Tour</a></li>
+<li><a href="https://wanderlog.com/place/details/8922587/ayyavadi-maha-prathyankaradevi-temple">Ayyavadi Maha Prathyankaradevi Temple, Kumbakonam, India - Reviews, Ratings, Tips and Why You Should Go - Wanderlog</a></li>
+<li><a href="https://www.youtube.com/watch?v=bhN4zjioR30">Only Those With Good Past Life Deeds Can Know About Maa Pratyangira - YouTube</a></li>
+<li><a href="https://shaligram.com/Shri_Hanuman_Vadvanal_Stotra_Path_to_Remove_Jeen,_Bhoot_Pret,_Baital,_Dakini_Sakini_etc_OPS_14_23-0-681-742-23165-1.php9">Shri Hanuman Vadvanal Stotra | Hanuman Vadvanal Stotram | Vadvanal Strotra Paath - Shaligram Shala</a></li>
+<li><a href="https://chottanikkarabhagavathy.org/bhajanam.php">for the kind attention of those devotees who conduct bhajanam at this temple - Chottanikkara Bhagavathy</a></li>
+<li><a href="https://www.astroved.com/astropedia/en/temples/south-india/chottanikkara-bhagavathy-temple">Chottanikkara Bhagavathy Temple - Timings, History, Architecture &amp; Benefits - AstroVed</a></li>
+<li><a href="https://www.bluebirdtravels.in/chottanikkara-temple/">Chottanikkara Temple: Maha Shakti &amp; Healing in Kochi - Blue Bird Travels</a></li>
+<li><a href="https://myoksha.com/chottanikkara-temple/">Chottanikkara Temple Guide | Timings, Vazhipadu, Poojas, Dress Code - Myoksha Travels</a></li>
+<li><a href="https://chottanikkarabhagavathy.org/">Chottanikkara Bhagavathy</a></li>
+<li><a href="https://blog.yatradham.org/chottanikkara-temple-darshan-pooja-timing/">Chottanikkara Temple Timings, Online Pooja Booking &amp; Dress code - YatraDham</a></li>
+<li><a href="https://archive.org/stream/PrasnaMargaBVR/Prasna%20Marga%202_djvu.txt">Full text of &quot;Prasna Marga - Dr. BV Raman&quot; - Internet Archive</a></li>
+<li><a href="https://www.scribd.com/document/337226755/B-V-Raman-Prasna-Marga-1-pdf">B.V. Raman - Prasna Marga-1 PDF - Scribd</a></li>
+<li><a href="https://tripnetra.com/blog/karnataka-gangapur-dattatreya-temple">Karnataka Gangapur Dattatreya Temple – History, Timings, Darshan, Pooja - Tripnetra</a></li>
+<li><a href="https://tirumalahills.wordpress.com/2016/05/20/lord-narasimha-sanskrit-%E0%A4%A8%E0%A4%B0%E0%A4%B8%E0%A4%BF%E0%A4%82%E0%A4%B9-iast-narasi%E1%B9%81ha-lit-man-lion-narasingh-narsingh-and-narasingha-and-narasimhar/">Lord Narasimha (Sanskrit: नरसिंह IAST: Narasiṁha, lit. man-lion), Narasingh, Narsingh and Narasingha and Narasimhar – Tirumala Hills</a></li>
+<li><a href="https://timesofindia.indiatimes.com/travel/web-stories/8-temples-in-india-known-for-exorcism-practices/photostory/108265679.cms">8 temples in India known for exorcism practices</a></li>
+<li><a href="https://www.devshoppe.com/blogs/articles/shri-sudarshana-ashtakam-in-sanskrit">Shri Sudarshana Ashtakam with meaning ( श्री सुदर्शनाष्टकं ) - Devshoppe</a></li>
+<li><a href="https://www.scribd.com/document/351198537/Sudarsana-Chakra">Sudarshana Chakra: Symbolism and Significance | PDF | Vaishnavism | Forms Of Vishnu - Scribd</a></li>
+<li><a href="https://medium.com/@harikrishnan.pa/between-ghosts-and-gods-6f407dcfce04">Between Ghosts and Gods. Living Among Them | by Hari Krishnan P A - Medium</a></li>
+<li><a href="https://vastutantraastro.wordpress.com/">Vastutantraastro – A complete house of solutions to every problems in life</a></li>
+<li><a href="https://www.scribd.com/document/372517237/Essence-of-Manu-Smriti">Essence of Manu Smriti: Aachara Khanda | PDF | Puranas | Hindu Literature - Scribd</a></li>
+<li><a href="https://vishvasa.github.io/devaH/tengrism/articles/MT/2024-03-03_some-further-notes-on-the-mongol-religion-3/">देवेषु विश्वासटिप्पन्यः | Some further notes on</a></li>
+<li><a href="https://www.vedadhara.com/shield-yourself-from-black-magic-and-negative-energy-with-hanuman-mantra">Shield Yourself from Black Magic and Negative Energy with Hanuman&#x27;s Mantra - Vedadhara</a></li>
+<li><a href="https://asp.bhaktikalpa.com/mantras_stotram.aspx?godname=Vishnu">Home - Bhaktikalpa</a></li>
+<li><a href="https://vedastro.org/Complete-List-VedAstro-API-Methods-Calculators.html">Complete List of VedAstro API Methods | 600+ Vedic Astrology Calculators</a></li>
+<li><a href="https://www.scribd.com/document/251372551/Essence-of-Devi-Bhagavata-Purana">Essence of Devi Bhagavati Purana | PDF - Scribd</a></li>
+<li><a href="https://www.scribd.com/document/254338894/Bhagavata-6-Repaired">Dictionary of Bhagavata Entries | PDF | Krishna | Hinduism - Scribd</a></li>
+<li><a href="https://www.scribd.com/document/975724696/Jyotish-1997-Deepak-Kapoor-Prashna-Shastra-Vol-1">Prashna Shastra: Horary Astrology Insights | PDF - Scribd</a></li>
+<li><a href="https://archive.org/stream/PrasnaMargaBVR/Prasna%20Marga%201_djvu.txt">Full text of &quot;Prasna Marga - Dr. BV Raman&quot; - Internet Archive</a></li>
+<li><a href="https://bible-quran.com/wp-content/uploads/2019/04/Hinduism-Ninan-Story-India-Churches.pdf">M.M.Ninan - Bible-quran.com</a></li>
+<li><a href="https://www.scribd.com/document/540233759/Astro-secrets-1">Parental Relationships in Astrology | PDF - Scribd</a></li>
+<li><a href="https://tripnetra.com/blog/chottanikkara-bhagavathy-temple-timings">Chottanikkara Bhagavathy Temple Timings, History, Pooja Details - Tripnetra</a></li>
+<li><a href="http://www.svetlikanje.si/spoznanje/MahanirvanaTantra.htm">Mahanirvana Tantra - Preface &amp; Introduction</a></li>
+<li><a href="https://astropuja.com/blog/post/pratyangira-devi">Pratyangira Devi: The Fierce Protector – Goddess of Ultimate Power and Transformation - Astropuja</a></li>
+<li><a href="https://manblunder.com/articlesview/sri-atharvana-bhadrakali-pratyangira-maha-mantra-japa">Sri Atharvana Bhadrakali Pratyangira Mahamantra - Manblunder</a></li>
+<li><a href="https://www.scribd.com/doc/209333579/Prash-Na-Marga">Prash Na Marga | PDF - Scribd</a></li>
+<li><a href="https://www.scribd.com/document/405146048/Prasna-Marga-II-b-v-Raman-pdf">Prasna Marga II B V Raman PDF - Scribd</a></li>
+</ol>
+</div>
+        </article>
+    </div>
+
+</body>
+</html>
