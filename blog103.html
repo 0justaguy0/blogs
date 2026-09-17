@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garga Nakshatra Mastery</title>
+    <style>
+:root {
+            --bg-color: #FDF9F1;
+            --text-color: #3E2723;
+            --indian-yellow: #E4A025;
+            --indian-orange: #E65100;
+            --accent-light: #FFECB3;
+            --ref-bg: #FFF3E0;
+        }
+
+        body {
+            font-family: 'Georgia', 'Nirmala UI', 'Mangal', serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(var(--bg-color) 80%, var(--accent-light) 100%);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #FFFFFF;
+            padding: 50px 60px;
+            box-shadow: 0 10px 30px rgba(62, 39, 35, 0.1);
+            border-top: 8px solid var(--indian-orange);
+            border-bottom: 8px solid var(--indian-yellow);
+            border-radius: 4px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed var(--indian-yellow);
+        }
+
+        h1 {
+            color: var(--indian-orange);
+            font-size: 2.5em;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        h2 {
+            color: var(--indian-yellow);
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--indian-orange);
+            padding-left: 15px;
+        }
+
+        h3, h4 {
+            color: var(--indian-orange);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        .intro-text::first-letter {
+            float: left;
+            font-size: 3.5em;
+            line-height: 0.8;
+            padding-right: 8px;
+            padding-top: 4px;
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        ul, ol {
+            margin: 0 0 24px 0;
+            padding-left: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ol {
+            list-style-position: outside;
+            padding-left: 2.2em;
+        }
+
+        ul li, ol li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        ol li {
+            padding-left: 0.35em;
+        }
+
+        ul li::before {
+            content: '\2022';
+            position: absolute;
+            left: 0;
+            top: 0.05em;
+            color: var(--indian-orange);
+            font-size: 1.2em;
+            line-height: 1;
+        }
+
+        ol li::marker {
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        strong {
+            color: var(--indian-orange);
+        }
+
+        .image-placeholder-container {
+            margin: 30px 0;
+            text-align: center;
+            font-style: italic;
+            color: #795548;
+            background-color: var(--accent-light);
+            padding: 20px;
+            border-radius: 4px;
+            border: 1px solid var(--indian-yellow);
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.98em;
+            background-color: #FFFDF8;
+        }
+
+        th, td {
+            border: 1px solid #F0D49B;
+            padding: 10px 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--ref-bg);
+            color: var(--indian-orange);
+        }
+
+        blockquote {
+            margin: 30px 0;
+            padding: 20px 25px;
+            background-color: var(--accent-light);
+            border-left: 5px solid var(--indian-orange);
+            font-style: italic;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px dashed var(--indian-yellow);
+            margin: 32px 0;
+        }
+
+        .references {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: var(--ref-bg);
+            border-radius: 8px;
+            font-size: 0.9em;
+        }
+
+        .references h2, .references h3 {
+            color: var(--text-color);
+            margin-top: 0;
+            border-bottom: 1px solid var(--indian-yellow);
+            padding-bottom: 10px;
+            border-left: 0;
+            padding-left: 0;
+        }
+
+        .references p, .references li {
+            margin-bottom: 12px;
+            word-wrap: break-word;
+        }
+
+        .references a {
+            color: var(--indian-orange);
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Garga Nakshatra Mastery</h1>
+        </header>
+
+        <article>
+<h3>1. Introduction: The Silent Architect of the Yadu Dynasty</h3>
+<p class="intro-text">In the luminous records of Vedic history, few figures command as much quiet authority as Garga Maharṣi. Often hailed as the "keeper of divine secrets," Garga served as the indispensable spiritual anchor of the Yadu dynasty during its most transformative epoch. He was a luminary of multifaceted brilliance: a composer of Rigvedic hymns, a peerless master of celestial science, and the discerning <em>Kula-guru</em> who pierced the veil of <em>Maya</em> to recognize the Absolute in the infant Krishna. While the world saw a simple child of Gokulam, Garga recognized the supreme architect of the universe, and his guidance ensured that the path of the Yadavas remained aligned with the cosmic order.</p>
+<div class="image-placeholder-container">
+    <img src="blog103_Image.png" alt="How Sage Garga achieved the mastery of Nakshatra astrology and divine prophecy through the Garga Samhita and Navagraha Sadhana. The mythological story of Garga Maharshi the kulaguru of the Yadu dynasty who performed Krishnas secret naming ceremony in Gokulam. Garga Samhita the foundational text of Vedic astrology. Navagraha Sadhana and planetary remedy rituals. Nakshatra Devata worship and mantra sadhana. Garga Hora and Garga Samhita astrological predictions. Shiva as the divine guru of Garga. Navagraha mantra and Yantra worship. Nakshatra Purusha and Kala Purusha correspondence. Hora Shastra and Muhurta electional astrology. Rig Veda 6.47 Garga Sukta. Bharadvaja lineage and gotra. Krishna avatar prophecy. Remedial astrology and gemstone recommendations. Navagraha Shanti rituals.">
+</div>
+<h3>2. Lineage and Ancestry: From Bharadvāja to Garga</h3>
+<p>Garga Maharṣi’s lineage is a confluence of priestly wisdom and regal heritage, documented with slight variations across sacred texts. The reconciliation of these records reveals a deep-rooted ancestry:</p>
+<ul>
+<li><strong>The Lineage of Vitatha:</strong> According to the <em>Garga Saṁhitā</em> and Puranic traditions, Garga is a descendant of the great Bharadvāja. The sequence flows: Bharadvāja -&gt; Vitatha (raised by deities and given to King Bharata) -&gt; Manya -&gt; Bṛhatkṣatra -&gt; Jaya -&gt; Garga.</li>
+<li><strong>Alternative Traditions:</strong> Katyayana’s <em>Sarvanukramani</em> abridges this genealogy, identifying Garga simply as the son of <strong>Bharadvaja Barhaspatya</strong>. Other Puranic accounts suggest he was the son of <strong>Bhumanyu</strong> and the great-grandson of Vidathin Bharadvaja.</li>
+<li><strong>Siblings and Variation:</strong> Garga’s brother is consistently identified as <strong>Nara</strong> (father of the famed Rantideva). However, it is important to note that figures like <strong>Brhatkshatra</strong> and <strong>Mahavirya</strong> appear as ancestors in some records while being listed as brothers in others.</li>
+<li><strong>Spiritual Heritage:</strong> Classified in the <em>Atharvaveda Parisistha</em> as Brahmins of Kshatriya ancestry, the Gargas represent a unique "Kshatra-Brahmin" synthesis, blending the authority of the sage with the heritage of the warrior.</li>
+</ul>
+<h3>3. The Spiritual Preceptor: Guiding Kings and Clans</h3>
+<p>Since his earliest years, Garga Maharṣi was a profound devotee of Lord Shiva, whom he considered his direct Guru. It was from Mahadeva himself that Garga received the mastery of all sacred sciences, including the Vedas and Shastras. His renown as a preceptor drew thousands of disciples, leading him to serve as the spiritual guide for multiple Kṣatriya clans, most notably the Haihaya lineage and eventually the Yadu dynasty.</p>
+<blockquote>
+<p><strong>Actionable Insight: The Authority of the Objective Advisor</strong>
+In the Vedic era, the <em>Kula-guru</em> was the ultimate check on power—an objective advisor who viewed decisions through the lens of <em>Kālajñāna</em> (knowledge of time) and cosmic order rather than immediate gain. For the modern leader, the lesson is clear: long-term success requires an "internal sage"—a commitment to objective principles and ethical timing that transcends the pressures of the present moment.</p>
+</blockquote>
+<h3>4. The Secret of Gokulam: Naming the Supreme</h3>
+<p>The naming ceremony in Gokulam was perhaps Garga’s most high-stakes divine duty. Visiting Nanda’s home in secret, Garga revealed the supreme truth: the child in Yaśodā’s lap was the biological son of Vasudeva, brought there to escape the tyranny of Kamsa. He identified the infant not merely as a prince, but as Śrī Mahā Viṣṇu Himself, the Bhagavān of Goloka.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Divine Names for Krishna</th>
+<th style="text-align: left;">Spiritual Significance/Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Krishna</strong></td>
+<td style="text-align: left;">A sacred etymological composite: <strong>Ka</strong> (Brahman), <strong>Ra</strong> (Infinite), <strong>Sa</strong> (Shiva), <strong>Na</strong> (Dharma), and <strong>A</strong> (Vishnu).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Kamsadhvaṁsi</strong></td>
+<td style="text-align: left;">A prophetic title foretelling his future role as the slayer of the tyrant Kamsa.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Pītāmbara</strong></td>
+<td style="text-align: left;">He who is adorned in yellow silk garments, representing the brilliance of the sun.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Acyuta</strong></td>
+<td style="text-align: left;">The infallible one who never deviates from his divine nature.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Devakīnandana</strong></td>
+<td style="text-align: left;">Identifying him as the biological joy and son of Devakī.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Govinda</strong></td>
+<td style="text-align: left;">The protector of cows and the ultimate Lord of the senses.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sarveśvara</strong></td>
+<td style="text-align: left;">The Supreme Lord over all beings and manifestations.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Hari</strong></td>
+<td style="text-align: left;">The one who "steals" or removes the sins and karmas of his devotees.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sanātana</strong></td>
+<td style="text-align: left;">The eternal being who exists beyond the boundaries of time.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Yaśodānandana</strong></td>
+<td style="text-align: left;">The beloved foster son who brought delight to Mother Yaśodā.</td>
+</tr>
+</tbody>
+</table>
+<p>Garga also named the elder brother <strong>Balarama</strong>, using titles that reflected his cosmic power:
+*   <strong>Saṅkarṣaṇa:</strong> Reflecting his mystical transfer from Devakī’s womb to Rohiṇī’s.
+*   <strong>Ananta &amp; Baladeva:</strong> Denoting his boundless strength and limitless power.
+*   <strong>Musali &amp; Hali:</strong> Identifying him by his iconic weapons, the <strong>Musala</strong> (Pestle) and the <strong>Hala</strong> (Plough).</p>
+<h3>5. Master of the Stars: Garga’s Contributions to Science and Law</h3>
+<p>Garga was the premier authority on <em>Nakshatra Śāstra</em> (constellation science). His mastery of time was so absolute that he could perceive planetary influences as clearly as an object held in his palm. He famously illustrated this when the sage Ṛtuvant sought an explanation for his son’s wicked behavior; Garga revealed the child was born under the unfavorable influences of the Revati Nakṣatra, explaining how specific temporal conditions shape destiny.</p>
+<p>His influence on the social fabric was equally profound. Garga’s legal and civil ślokas provided the foundational architecture for the <em>Dharma Śāstra</em>. His works were cited extensively by later legalists in the <em>Mitākṣarā</em> and <em>Smṛti-Candrikā</em>, ensuring that his wisdom regarding civil conduct remained part of the Indian legal consciousness for millennia.</p>
+<h3>6. Wisdom, Curses, and Strategy: The Story of Kālayavana</h3>
+<p>The legacy of Garga Maharṣi includes a stark reminder of the sanctity of the preceptor. When the Yādavas became intoxicated by their power, they mocked Garga, questioning his utility and insulting his manhood by calling him "no true puruṣa" and "like a strī." Angered by this arrogance, Garga pronounced a curse: a calamity named <strong>Kālayavana</strong> would arise through him to bring destruction upon the clan.</p>
+<p>Through Garga's power, Kālayavana was born to an apsaras and raised by a Yavana king. Garga bestowed upon him a formidable boon: he was invincible to all known <strong>weapons and warriors</strong>. This divine protection made a direct military engagement impossible, forcing Śrī Krishna to employ a <em>Māyopāya</em> (divine strategy):</p>
+<ol>
+<li><strong>The Pursuit:</strong> Krishna led Kālayavana on a chase, knowing the Yavana could not be defeated in combat.</li>
+<li><strong>The Instrument of Fate:</strong> Krishna led him into a mountain cave where King <strong>Mucikunda</strong> was sleeping. Mucikunda possessed a boon from Brahma: anyone who woke him would be reduced to ash by his first gaze.</li>
+<li><strong>The Dissolution:</strong> Krishna hid behind a rock; Kālayavana, mistaking the sleeping king for Krishna, kicked him. Mucikunda awoke, and his gaze instantly turned the invincible warrior to ash, fulfilling the curse while liberating the king.</li>
+</ol>
+<h3>7. The Garga Saṁhitā and Lasting Influence</h3>
+<p>The intellectual and spiritual climax of Garga’s work is the <em>Garga Saṁhitā</em>. This text was narrated by Garga to <strong>Vajranābha</strong> (the son of Aniruddha and grandson of Pradyumna) specifically to preserve the history of the Yādava dynasty and its divine incarnations after their earthly departure. </p>
+<p>The Saṁhitā is renowned for the <em>Śrī Kṛṣṇa Sahasranāmāvali</em> (1,088 names), which uniquely links Krishna to the highest peaks of Sanskrit scholarship. The names within the text associate the Lord with the grammarian <strong>Pāṇini</strong>, the philosopher <strong>Patañjali</strong>, the scholar <strong>Kātyāyana</strong>, and <strong>Piṅgala Maharṣi</strong> (the father of <em>Chandaḥ Śāstra</em>). This demonstrates Garga’s view that the divine essence is one with the very structure of language and cosmic law.</p>
+<p>Garga’s physical legacy endures in the village of <strong>Garagaparru</strong> in the <strong>West Godāvari district</strong>, believed to be the site of his ancient <em>Āśrama</em>.</p>
+<h3>8. Conclusion: Key Takeaways for the Modern Reader</h3>
+<p>Garga Maharṣi stands as the ultimate bridge between the scientific and the spiritual, proving that true wisdom requires both the calculation of the stars and the devotion of the heart.</p>
+<ol>
+<li><strong>The Power of Recognition:</strong> Garga’s greatness lay in his ability to perceive the "Supreme Secret" of divinity within the ordinary, reminding us to look deeper than the surface of our reality.</li>
+<li><strong>The Authority of Knowledge:</strong> His mastery over <em>Nakshatra Śāstra</em> and law proves that spiritual authority is most potent when grounded in a rigorous understanding of natural and cosmic laws.</li>
+<li><strong>The Importance of Respect:</strong> The tragedy of the Yādavas serves as a timeless warning: the mockery of one's mentors and the dismissal of ancestral wisdom invite calamities that even the strongest cannot fight with weapons alone.</li>
+</ol>
+<p>To honor Garga Maharṣi is to honor the tradition of the objective advisor, the precise scientist, and the devoted storyteller—a legacy that continues to guard the cosmic path.</p>
+<h2>Sources</h2>
+<p>NotebookLM notebook: <code>f1033c74-2b24-434d-8fff-b310ad992d15</code></p>
+<ol>
+<li><a href="https://vedicpeople.com/puranas/maha-puranas/vishnu-purana/read/">Read Vishnu Maha Purāṇa Online in English, Telugu and Hindi - Vedic People</a></li>
+<li><a href="https://lakshminarayanlenasia.com/downloads/VishnuPurana.pdf">VISHŃU PURÁŃA, The Vishnu Purana</a></li>
+<li><a href="https://vedicpeople.com/people/rishis/garga-maharshi/">Garga Maharṣi - Vedic People</a></li>
+<li><a href="https://vipasana-vidushika.blogspot.com/2014/02/sages-from-hindu-scriptures-rishi-garga.html">Sages from the Hindu Scriptures: Rishi Garga or Garga Muni - Vipasana</a></li>
+<li><a href="https://id.scribd.com/document/544319012/Rishi-Garga">Garga Rishi: Origin of Garga Gotra | PDF | Krishna | Hinduism - Scribd</a></li>
+<li><a href="https://hinduism.stackexchange.com/questions/10873/who-was-maharshi-garga">rishi - Who was Maharshi Garga? - Hinduism Stack Exchange</a></li>
+<li><a href="https://sanatanisrivaishnava.wordpress.com/2014/12/27/gotras-and-pravaras-of-smarta-and-sri-vaishnava-brahmins-angirasa-bharadwaja-garga-14-groups-of-sri-vaishnava-upanayana-brahmachari-grihasta-vanaprastha-pancha-samskari-ekangi-ekaki-deshant/">Gotras and Pravaras of Smarta and Sri Vaishnava Brahmins; Angirasa; Bharadwaja; Garga; 14 Groups of Sri Vaishnava Upanayana, Brahmachari, Grihasta, Vanaprastha, Pancha Samskari, Ekangi, Ekaki, Deshantari and Sanyasi Nambi Nambudiri Nambimar Brahmins; Sri Sarvathanthra Swathanthra Paravastu Swami Mutt | sanatanisrivaishnava</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Garga_(sage)">Garga (sage) - Wikipedia</a></li>
+<li><a href="https://www.exoticindiaart.com/book/details/garga-samhita-by-sage-garga-family-priest-of-yadu-race-set-of-2-volumes-old-and-rare-book-aze634/">Garga Samhita By Sage Garga: The Family Priest of Yadu Race (Set of 2 Volumes) An Old and Rare Book | Exotic India Art</a></li>
+<li><a href="https://archive.org/download/indiaspast0000unse/indiaspast0000unse.pdf">india's past</a></li>
+<li><a href="https://ddceutkal.ac.in/Syllabus/MA_history/paper-11-N.pdf">Politico-Social and Administrative History of Ancient India - DDCE Utkal University</a></li>
+<li><a href="https://www.scribd.com/document/325007645/Hora-RatNam">Understanding Hora Ratnam in Astrology | PDF - Scribd</a></li>
+<li><a href="https://www.indianastrology.com/article/en/introduction-of-astrology-6966">Astrology : An introduction</a></li>
+<li><a href="https://archive.org/stream/pingree1981/Pingree_Jyotihsastra.%20Astral%20and%20mathematical%20literatureocr_djvu.txt">Full text of "Pingree, Jyotihsastra: Astral And Mathematical Literature" - Internet Archive</a></li>
+<li><a href="https://sanjay-koul.blogspot.com/2024/10/vaishnava-agamas.html">Vaishnava Agamas - Sanatana Dharma</a></li>
+<li><a href="https://www.scribd.com/document/481772285/SOME-ESSENTIALS-OF-VASTU-1">Essentials of Vastu Shastra | PDF | Nature - Scribd</a></li>
+<li><a href="https://library.oapen.org/bitstream/id/f711d093-2976-4cf6-803a-d5754d5b5fc9/9781760464417.pdf">The - Viṣṇu Purāṇa - OAPEN Library</a></li>
+<li><a href="https://rigvedaanalysis.wordpress.com/2012/01/24/bharadvajas/">Bharadvajas - The Rig Veda Civilization - WordPress.com</a></li>
+<li><a href="https://www.scribd.com/document/593293769/Jyotish-Lomasha-Samhita-Part1-Ch-1-10-Sreenadh-1">Lomasa Samhita: Vaishnava Astrology Insights | PDF | Shiva | Hindu Literature - Scribd</a></li>
+<li><a href="https://www.scribd.com/document/659154355/CORE-3">Economy and Society in Early India | PDF | Caste - Scribd</a></li>
+<li><a href="https://trsiyengar.com/rishis-history-stories-part-i/">Rishis, History &amp; Stories Part I – Srivaishnavam Practices - TRS Iyengar</a></li>
+<li><a href="https://medium.com/@thandavmamatha/in-search-of-my-lineage-gotra-85febbae4195">in search of my lineage — gotra - Medium</a></li>
+<li><a href="https://www.researchgate.net/publication/397629664_UNFOLDING_STEAM_PERSPECTIVES_FROM_A_VEDAVEDANGA'S_WORLDVIEW_A_COLLABORATIVE_SELF-SANSKARA_INQUIRY">(PDF) UNFOLDING STEAM PERSPECTIVES FROM A VEDA/VEDANGA'S WORLDVIEW: A COLLABORATIVE SELF-SANSKARA INQUIRY - ResearchGate</a></li>
+<li><a href="https://www.exoticindiaart.com/article/saptarishi-the-seven-sages-in-hinduism/">Saptarishi: The Seven Sages of Hinduism, Names, Meaning &amp; Significance - Exotic India Art</a></li>
+<li><a href="https://www.quora.com/Who-is-Saraswati-Is-she-a-goddess-or-a-saint-in-Hinduism-What-are-her-powers-importance-and-significance-in-Hindu-scriptures-Ramayana-Mahabharata">Who is Saraswati? Is she a goddess or a saint in Hinduism? What are her powers, importance and significance in Hindu scriptures (Ramayana, Mahabharata)? - Quora</a></li>
+<li><a href="https://www.gutenberg.org/cache/epub/66208/pg66208-images.html">A PROSE ENGLISH TRANSLATION OF VISHNUPURĀNAM - Project Gutenberg</a></li>
+<li><a href="https://www.scribd.com/document/915409763/Vishnu-Purana">Vishnu Purana | PDF - Scribd</a></li>
+<li><a href="https://www.kamakoti.org/kamakoti/articles/Select%20Stories%20from%20Puranas.pdf">SELECT STORIES FROM PURANAS - Kamakoti.org</a></li>
+<li><a href="https://upload.wikimedia.org/wikipedia/commons/5/5e/The_Vishnu_Purana%2C_a_System_of_Hindu_Mythology_and_Tradition_%28IA_dli.granth.37536%29.pdf?utm_source=commons.wikimedia.org&amp;utm_campaign=index&amp;utm_content=original">I . . .. I 0.1 0 0 Ej - Wikimedia Commons</a></li>
+<li><a href="https://www.dollsofindia.com/usd/library/rishis-1/">Ancient Rishis of India - Agastya | Arundhati | Ansuya | Atri</a></li>
+</ol>
+        </article>
+    </div>
+
+</body>
+</html>
