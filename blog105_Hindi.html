@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>वशिष्ठ सप्तर्षि विजय</title>
+    <style>
+        :root {
+            --bg-color: #FDF9F1;
+            --text-color: #3E2723;
+            --indian-yellow: #E4A025;
+            --indian-orange: #E65100;
+            --accent-light: #FFECB3;
+            --ref-bg: #FFF3E0;
+        }
+
+        body {
+            font-family: 'Georgia', 'Nirmala UI', 'Mangal', serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(var(--bg-color) 80%, var(--accent-light) 100%);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #FFFFFF;
+            padding: 50px 60px;
+            box-shadow: 0 10px 30px rgba(62, 39, 35, 0.1);
+            border-top: 8px solid var(--indian-orange);
+            border-bottom: 8px solid var(--indian-yellow);
+            border-radius: 4px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed var(--indian-yellow);
+        }
+
+        h1 {
+            color: var(--indian-orange);
+            font-size: 2.5em;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        h2 {
+            color: var(--indian-yellow);
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--indian-orange);
+            padding-left: 15px;
+        }
+
+        h3, h4 {
+            color: var(--indian-orange);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        .intro-text::first-letter {
+            float: left;
+            font-size: 3.5em;
+            line-height: 0.8;
+            padding-right: 8px;
+            padding-top: 4px;
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        ul, ol {
+            margin: 0 0 24px 0;
+            padding-left: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ol {
+            list-style-position: outside;
+            padding-left: 2.2em;
+        }
+
+        ul li, ol li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        ol li {
+            padding-left: 0.35em;
+        }
+
+        ul li::before {
+            content: '\2022';
+            position: absolute;
+            left: 0;
+            top: 0.05em;
+            color: var(--indian-orange);
+            font-size: 1.2em;
+            line-height: 1;
+        }
+
+        ol li::marker {
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        strong {
+            color: var(--indian-orange);
+        }
+
+        .image-placeholder-container {
+            margin: 30px 0;
+            text-align: center;
+            font-style: italic;
+            color: #795548;
+            background-color: var(--accent-light);
+            padding: 20px;
+            border-radius: 4px;
+            border: 1px solid var(--indian-yellow);
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.98em;
+            background-color: #FFFDF8;
+        }
+
+        th, td {
+            border: 1px solid #F0D49B;
+            padding: 10px 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--ref-bg);
+            color: var(--indian-orange);
+        }
+
+        blockquote {
+            margin: 30px 0;
+            padding: 20px 25px;
+            background-color: var(--accent-light);
+            border-left: 5px solid var(--indian-orange);
+            font-style: italic;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px dashed var(--indian-yellow);
+            margin: 32px 0;
+        }
+
+        .references {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: var(--ref-bg);
+            border-radius: 8px;
+            font-size: 0.9em;
+        }
+
+        .references h2, .references h3 {
+            color: var(--text-color);
+            margin-top: 0;
+            border-bottom: 1px solid var(--indian-yellow);
+            padding-bottom: 10px;
+            border-left: 0;
+            padding-left: 0;
+        }
+
+        .references p, .references li {
+            margin-bottom: 12px;
+            word-wrap: break-word;
+        }
+
+        .references a {
+            color: var(--indian-orange);
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>वशिष्ठ सप्तर्षि विजय</h1>
+        </header>
+
+        <article>
+<h3>1. प्रस्तावना: क्या वह सब सच है जो हम देखते हैं?</h3>
+<p class="intro-text">क्या यह दृश्यमान संसार वास्तव में वैसा ही है जैसा हमारी इंद्रियां हमें अनुभव कराती हैं, या यह मात्र एक 'विवर्त' (illusory projection) है? वास्तविकता की प्रकृति को समझना मानव चेतना के लिए सदैव एक महान चुनौती रही है। प्राचीन भारत के ऋषियों ने जहाँ अजात-वाद जैसे 'परमार्थ' (absolute truth) दर्शन के माध्यम से चेतना के अद्वैत स्वरूप को पहचाना, वहीं डॉ. वाई. वी. सुब्बा राव जैसे आधुनिक शोधकर्ताओं ने खगोल विज्ञान के 'जीवन पक्ष' (Life side of Astronomy) यानी ज्योतिष के माध्यम से ब्रह्मांडीय ऊर्जा के भौतिक प्रभावों को वैज्ञानिक आधार प्रदान किया है। यह लेख चेतना के उस उच्चतम शिखर और वैज्ञानिक धरातल के संगम की खोज है, जो हमें यह सोचने पर विवश करता है कि क्या वास्तव में कुछ घटित हो रहा है।</p>
+<div class="image-placeholder-container">
+    <img src="blog105_Image.png" alt="भगवान वशिष्ठ ने सप्तर्षि वंश और दिव्य गोमाता कामधेनु नंदिनी पर कैसे विजय प्राप्त की। अरुंधती नक्षत्र उपाय और कार्मिक संबंध चिकित्सा। योग वशिष्ठ के अजात वाद दर्शन का परम सत्य। सप्तर्षि पूजा और वैदिक विवाह में अरुंधती दर्शन। गुरु दोष और बृहस्पति उपाय। वशिष्ठ नाड़ी ज्योतिष परंपरा। पाञ्चरात्र आगम और वैखानस वैष्णव तंत्र। कामधेनु साधना और नंदिनी गोपूजा। ऋग्वेद मंडल ७ वशिष्ठ सूक्त। २०२६ ग्रह गोचर अनुष्ठान। आयुर्वेद रसायन और सात्विक आहार। गुप्त तांत्रिक उपाय।">
+</div>
+<h3>2. अजात-वाद: सृजन का परम सत्य</h3>
+<p>अध्यात्म का परम सत्य 'अजात-वाद' में निहित है। 'अजात' का अर्थ है—वह जो कभी उत्पन्न ही न हुआ हो। गौड़पाद के मांडूक्य उपनिषद कारिका (2:32) का श्लोक इस सत्य को प्रमाणित करता है:</p>
+<blockquote><p><em>"न निरोधो न चोत्पत्तिर्न बद्धो न च साधकः। न मुमुक्षुर्न वै मुक्त इत्येषा परमार्थता॥"</em></p></blockquote>
+<p><strong>भावार्थ:</strong> न कोई विनाश है, न कोई उत्पत्ति; न कोई बंधन में है, न कोई साधक है; न कोई मुमुक्षु है और न ही कोई मुक्त है। यही एकमात्र परम सत्य है।</p>
+<p>भगवान रमण महर्षि के अनुसार, यह 'आत्मन' का अनुभव है जहाँ केवल एक ही वास्तविकता का अस्तित्व है। पापजी (Papaji) ने इस पर गहरा तर्क दिया है: सृजन (Creation) का अर्थ है 'इच्छा' (Desire), और इच्छा का अर्थ है 'अपूर्णता' (Incompleteness)। चूंकि 'स्व' या आत्मा स्वयं में पूर्ण (Purna) है, इसलिए उसमें कोई इच्छा नहीं हो सकती। यदि कोई इच्छा नहीं है, तो सृष्टि का निर्माण कभी हुआ ही नहीं। जिसे हम कारण और प्रभाव (Cause and Effect) कहते हैं, वह 'योग वशिष्ठ' के <strong>'काक-तालीय न्याय' (Crow and Coconut Analogy)</strong> की तरह है—जैसे ताड़ के वृक्ष पर कौआ बैठा और अचानक नारियल गिर गया; कौआ गिरने का कारण नहीं था, पर वह भ्रम पैदा हो गया। वास्तव में, सृष्टि कभी घटित ही नहीं हुई।</p>
+<h3>3. सत्य के तीन स्तर: साधक की क्षमता के अनुसार शिक्षण</h3>
+<p>रमण महर्षि ने स्पष्ट किया कि यद्यपि सत्य एक है, परंतु मन की सीमाओं के कारण इसे तीन स्तरों पर समझाना पड़ता है, क्योंकि मन यह स्वीकार नहीं कर पाता कि भूगोल, विज्ञान और ग्रह पूरी तरह 'असत्य' हैं:</p>
+<ol>
+<li><strong>अजात-वाद (Ajata-vada):</strong> उच्चतम स्तर, जहाँ केवल एकमात्र वास्तविकता (Self) का अस्तित्व है। यहाँ कोई सृष्टि नहीं है।</li>
+<li><strong>दृष्टि-सृष्टि वाद (Drishti-srishti vada):</strong> मध्यम स्तर, जहाँ 'देखने वाला' (Seer) ही अपने मन से 'दृश्य' (Seen) का निर्माण करता है। जैसे स्वप्न में मन ही जगत रचता है, वैसे ही यह जाग्रत अवस्था भी मन का ही प्रक्षेपण है।</li>
+<li><strong>सृष्टि-दृष्टि वाद (Srishti-drishti vada):</strong> प्रारंभिक स्तर, जहाँ यह माना जाता है कि ईश्वर ने सृष्टि की रचना की और जीव उसे देख रहा है। यह उन लोगों के लिए है जो मन के तर्क और भौतिक जगत के नियमों (विज्ञान, मानचित्र, ग्रहों की गति) को सत्य मानते हैं।</li>
+</ol>
+<h3>4. ज्योतिष: खगोल विज्ञान का 'जीवन पक्ष'</h3>
+<p>डॉ. वाई. वी. सुब्बा राव के शोध के अनुसार, ज्योतिष केवल अंधविश्वास नहीं, बल्कि खगोल विज्ञान और प्रकाशिकी (Optics) का एक उन्नत विज्ञान है। ज्योतिष का आधार 'विद्युत-चुंबकीय विकिरण' (Electromagnetism) है।</p>
+<p>इसमें <strong>पृथ्वी को एक 'ग्रह' नहीं, बल्कि एक 'गतिशील वेधशाला' (Moving Observatory)</strong> माना गया है, क्योंकि प्रेक्षक (Observer) और प्रेक्षित ग्रह एक साथ नहीं हो सकते। अन्य ग्रह सूर्य के प्रकाश को पृथ्वी तक दो माध्यमों से पहुँचाते हैं:</p>
+<ul>
+<li><strong>परावर्तन (Reflection):</strong> आंतरिक ग्रह (बुध, शुक्र) और चंद्रमा सूर्य के प्रकाश को सीधे पृथ्वी पर परावर्तित करते हैं।</li>
+<li><strong>विक्षेपण (Deflection):</strong> आइंस्टीन के 'प्रकाश के विक्षेपण' के सिद्धांत के अनुसार, बाहरी ग्रह (मंगल, बृहस्पति, शनि) ब्रह्मांडीय प्रकाश की किरणों को मोड़कर या विचलित करके पृथ्वी तक पहुँचाते हैं।</li>
+</ul>
+<p>चूँकि यूरेनस, नेपच्यून और प्लूटो की दूरी अत्यधिक है, उनका प्रकाश प्रभाव नगण्य है, इसलिए उन्हें भारतीय ज्योतिषीय गणना में सम्मिलित नहीं किया गया है।</p>
+<h3>5. ग्रहों का वैज्ञानिक चयन और 'विंशोत्तरी दशा'</h3>
+<p>विंशोत्तरी दशा प्रणाली (120 वर्ष) भौतिक विज्ञान के 'प्रकाश के परिक्षेपण' (Dispersion of Light - VIBGYOR) पर आधारित है। प्रत्येक ग्रह एक विशिष्ट रंग और आवृत्ति (Frequency) का स्वामी है, और उसके दशा वर्ष 'प्रकाश के विचलन कोण' (Angle of Deviation) के सीधे अनुपात में होते हैं।</p>
+<table>
+<thead><tr><th>ग्रह (Planet)</th><th>प्रकाश का रंग (Signified Colour)</th><th>विंशोत्तरी दशा वर्ष (Dasa Years)</th><th>वैज्ञानिक कारण (Scientific Rationale)</th></tr></thead>
+<tbody>
+<tr><td>शुक्र (Venus)</td><td>बैंगनी (Violet)</td><td>20</td><td>अधिकतम विचलन कोण (Maximum Deviation)</td></tr>
+<tr><td>शनि (Saturn)</td><td>जामुनी (Indigo)</td><td>19</td><td>उच्च विचलन (High Deviation)</td></tr>
+<tr><td>राहु (Rahu)</td><td>नीला (Blue)</td><td>18</td><td>मध्यम-उच्च विचलन</td></tr>
+<tr><td>बुध (Mercury)</td><td>हरा (Green)</td><td>17</td><td>मध्यम विचलन</td></tr>
+<tr><td>बृहस्पति (Jupiter)</td><td>पीला (Yellow)</td><td>16</td><td>औसत विचलन</td></tr>
+<tr><td>सूर्य/चंद्रमा (Sun/Moon)</td><td>नारंगी (Orange)</td><td>06 / 10</td><td>न्यून विचलन</td></tr>
+<tr><td>मंगल/केतु (Mars/Ketu)</td><td>लाल (Red)</td><td>07 / 07</td><td>न्यूनतम विचलन कोण (Minimum Deviation)</td></tr>
+</tbody>
+</table>
+<p><strong>विशेष टिप्पणी:</strong> राहु और केतु 'छाया ग्रह' हैं जो वास्तव में चंद्रमा के प्रकाश और सौर प्रकाश के अंतर्संबंधों को 'मॉड्यूलेट' (नियंत्रित/परिवर्तित) करते हैं।</p>
+<h3>6. सूक्ष्म और स्थूल का संबंध: मानव डीएनए और सौर मंडल</h3>
+<p>ब्रह्मांड और मानव शरीर के बीच का संबंध मात्र दार्शनिक नहीं, बल्कि शारीरिक है। वैज्ञानिक शोध प्रमाणित करते हैं कि मानव <strong>मस्तिष्क का 'बेसल गैन्ग्लिया' (Basal Ganglia) और मानव डीएनए (DNA) की संरचना सौर मंडल की ऊर्जा व्यवस्था की 'सटीक प्रतिकृति' (Exact Replica)</strong> है। जो ऊर्जा का क्रम आकाश में ग्रहों का है, वही क्रम हमारे बेसल गैन्ग्लिया के केंद्रों का है। यह सिद्ध करता है कि 'यथा पिंडे तथा ब्रह्मांडे'—अर्थात जो ब्रह्मांड (Macrocosm) में है, वही इस सूक्ष्म शरीर (Microcosm) में भी विद्यमान है।</p>
+<h3>7. निष्कर्ष: आत्म-बोध की ओर अंतिम कदम</h3>
+<p>चाहे वह अजात-वाद का दर्शन हो या ज्योतिष का वैज्ञानिक आधार, इन सबका परम उद्देश्य मनुष्य को उसके वास्तविक स्वरूप 'आत्मान' की पहचान कराना है। ज्योतिष हमें यह समझाता है कि हमारा भौतिक अस्तित्व ब्रह्मांडीय प्रकाश का खेल है, जबकि अजात-वाद हमें उस खेल से परे ले जाता है।</p>
+<p>पापजी और रमण महर्षि के विचारों का अंतिम संदेश यही है: <strong>'वास्तव में कुछ भी घटित नहीं हुआ है' (Nothing ever happened)</strong>। सृष्टि का कोई अस्तित्व कभी था ही नहीं। जब साधक इस 'परमार्थ' सत्य को जान लेता है कि 'देखने वाला' ही दृश्य का भ्रम पैदा कर रहा है, तब अज्ञानता के साथ सभी इच्छाएं और यह संसार एक स्वप्न की भांति विलीन हो जाते हैं। अंततः, केवल एक शुद्ध, अविभाज्य चेतना ही शेष रहती है।</p>
+
+<div class="references">
+<h2>Sources</h2>
+<ol>
+<li><a href="https://www.exoticindiaart.com/book/details/stories-from-yoga-vasishtha-set-of-3-books-hay234/">Stories from Yoga Vasishtha (Set of 3 Books) - Exotic India Art</a></li>
+<li><a href="https://www.scribd.com/document/808042427/9-Ashlesha-Nakshatra-Mikes-Sleeping-Dog">Ashlesha Nakshatra Insights | PDF - Scribd</a></li>
+<li><a href="https://consultlunarastro.com/2023/03/13/predict-astrology-course-dps/">predict astrology course DPS - Consult Lunar Astro</a></li>
+<li><a href="https://www.exoticindiaart.com/book/details/stories-from-yoga-vasishtha-idk887/">Stories From The Yoga Vasishtha - Exotic India Art</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Vasishtha">Vasishtha - Wikipedia</a></li>
+<li><a href="https://www.reddit.com/r/hinduism/comments/o3oa6e/the_beautiful_significance_of_arundhati_darshanam/">The beautiful significance of &quot;Arundhati darshanam&quot; ritual in South Indian weddings (or what&#x27;s special about the Mizar-Alcor star system) : r/hinduism - Reddit</a></li>
+<li><a href="https://www.exoticindiaart.com/article/saptarishi-the-seven-sages-in-hinduism/">Saptarishi: The Seven Sages of Hinduism, Names, Meaning &amp; Significance - Exotic India Art</a></li>
+<li><a href="https://www.vyasaonline.com/encyclopedia/vasishtha/">Vasishtha - Vyasa Mahabharata</a></li>
+<li><a href="https://realization.org/down/mountain-path/50-2.2013-April.pdf">contents - Realization.org</a></li>
+<li><a href="https://www.scribd.com/document/1007345161/Yoga-Vasistha-Sara">Yoga Vasistha Sara | PDF | Ātman (Hinduism) | Brahman - Scribd</a></li>
+<li><a href="https://www.isvara.org/archive/svaha/">Svaha - Vedic Library by ISVARA.org</a></li>
+<li><a href="https://ancientvoice.wikidot.com/src-mbh-03:section-224">Vana Parva - AncientVoice - Wikidot</a></li>
+<li><a href="https://www.newindianexpress.com/opinion/columns/2021/Dec/07/narratives-around-the-birth-of-kartikeya-2392540.html">Narratives around the birth of Kartikeya - The New Indian Express</a></li>
+<li><a href="https://www.scribd.com/document/845091703/25-Purva-Bhadrapada-Nakshatra">Purva Bhadrapada Nakshatra Overview | PDF | Satan - Scribd</a></li>
+<li><a href="https://www.scribd.com/document/790105477/Subba-Rao-Y-v-Astronomy-and-Astrophysics-in-Jyotish-Astrology-and-Hindu-Culture-2021">Astronomy in Vedic Astrology | PDF - Scribd</a></li>
+<li><a href="https://archive.org/stream/myth-of-the-epoch-of-arundhati/Myth_of_The_Epoch_of_Arundhati_of_Nilesh_djvu.txt">Full text of &quot;Myth Of The Epoch Of Arundhati Of Nilesh Oak&quot; - Internet Archive</a></li>
+<li><a href="https://www.scribd.com/document/456728508/012020-pdf">Visions of Advaita in Spiritual Practice | PDF | Brahman | Vedanta - Scribd</a></li>
+<li><a href="https://www.thestonestudio.in/the-saptarishis-best-stories-symbolism/">The Saptarishis: Best Stories &amp; Symbolism - The Stone Studio</a></li>
+<li><a href="https://vanshmool.com/blog/saptarishis-guide">The 7 Saptarishis — Founding Fathers of All Hindu Gotras | Vanshmool</a></li>
+<li><a href="https://glorioushinduism.com/2017/10/13/vishwamitra/">Vishwamitra - Glorious Hinduism</a></li>
+<li><a href="https://saptarishisastrology.com/wp-content/uploads/2023/01/SA-Vol-6-Part-2.pdf">Panoti Yoga - Saptarishis Astrology</a></li>
+<li><a href="http://sri-ramana-maharshi.blogspot.com/2008/08/ajata.html">Ajata - Arunachala and Ramana Maharshi</a></li>
+<li><a href="https://archive.org/stream/Ganita/Siddhanta%20Darpana%20Chandrashekar%20Simha%20Samanta%20Ed.%20Arun%20Kumar%20Upadhyay%20Vol%202%20Nag%20Publications_djvu.txt">Full text of &quot;Ganita&quot; - Internet Archive</a></li>
+<li><a href="https://www.wisdomlib.org/hinduism/book/mahabharata-english-summary/d/doc1345608.html">Section CCXXIV - The Birth of Skanda: Markandeya reveals the story of Agni, Svaha, and the powerful son born on the White Mountain</a></li>
+<li><a href="https://archive.org/stream/astrology-book-collection/Naksatras_stars_special%20Chakras_Sarvatobhadra/Jyotish_Anthony%20Writer_the%20use%20of%20fixed%20stars%20in%20astrology_djvu.txt">Full text of &quot;Astrology Book Collection&quot; - Internet Archive</a></li>
+<li><a href="https://archive.org/stream/in.gov.ignca.34707/34707_djvu.txt">Full text of &quot;Cultural history of the Hindus&quot; - Internet Archive</a></li>
+<li><a href="https://music.youtube.com/playlist?list=PLD1nfo-60R_KxyOJjmopnzJu24-wD6QLG">Spiritual Science &amp; Consciousness - YouTube Music</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Svaha">Svaha - Wikipedia</a></li>
+<li><a href="https://devotionalindia.com/swami-sivananda-jnana-yoga-categories-in-vedanta/">Categories In Vedanta - Devotional India</a></li>
+<li><a href="https://mypalmleaf.com/the-saptarishi-the-7-great-vedic-sages/">Saptarishi Names: The 7 Great Vedic Sages and Their Stories - Mypalmleaf</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Saptarshi">Saptarshi - Wikipedia</a></li>
+<li><a href="https://www.youtube.com/watch?v=eSRsHs6SmRI">Yoga Vasishtha (045) - “O Rama, Think Yourself as the Supreme Being” - YouTube</a></li>
+<li><a href="http://www.drkcv.org/Books/kcv3chap_4.htm">Dr. KCV Works - Volume-3 » Samkhya</a></li>
+<li><a href="https://www.scribd.com/document/1054759998/Rama-Gita-Part-I">Rama Gita Part I | PDF | Self | Ātman (Hinduism) - Scribd</a></li>
+<li><a href="https://www.reddit.com/r/hinduism/comments/1v6vk8l/question_about_kartikeyas_birth_in_the/">Question about Kartikeya&#x27;s birth in the Mahabharata (Need help finding the exact Parva &amp; Chapter!) : r/hinduism - Reddit</a></li>
+<li><a href="https://www.youtube.com/watch?v=tvngpGtt_sU">The Birth of Kartikeya/Lord Murugan-Born of Fire, Water, and Earth I Divine Tale of mythology - YouTube</a></li>
+<li><a href="https://archive.org/details/in.ernet.dli.2015.128092">Muhurtha Or Electional Astrology : Raman,bangalore Venkata : Free Download, Borrow, and Streaming - Internet Archive</a></li>
+</ol>
+</div>
+        </article>
+    </div>
+
+</body>
+</html>
