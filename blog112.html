@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanuman Shani Mastery</title>
+    <style>
+        :root {
+            --bg-color: #FDF9F1;
+            --text-color: #3E2723;
+            --indian-yellow: #E4A025;
+            --indian-orange: #E65100;
+            --accent-light: #FFECB3;
+            --ref-bg: #FFF3E0;
+        }
+
+        body {
+            font-family: 'Georgia', 'Nirmala UI', 'Mangal', serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(var(--bg-color) 80%, var(--accent-light) 100%);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #FFFFFF;
+            padding: 50px 60px;
+            box-shadow: 0 10px 30px rgba(62, 39, 35, 0.1);
+            border-top: 8px solid var(--indian-orange);
+            border-bottom: 8px solid var(--indian-yellow);
+            border-radius: 4px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed var(--indian-yellow);
+        }
+
+        h1 {
+            color: var(--indian-orange);
+            font-size: 2.5em;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        h2 {
+            color: var(--indian-yellow);
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--indian-orange);
+            padding-left: 15px;
+        }
+
+        h3, h4 {
+            color: var(--indian-orange);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        .intro-text::first-letter {
+            float: left;
+            font-size: 3.5em;
+            line-height: 0.8;
+            padding-right: 8px;
+            padding-top: 4px;
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        ul, ol {
+            margin: 0 0 24px 0;
+            padding-left: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ol {
+            list-style-position: outside;
+            padding-left: 2.2em;
+        }
+
+        ul li, ol li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        ol li {
+            padding-left: 0.35em;
+        }
+
+        ul li::before {
+            content: '\2022';
+            position: absolute;
+            left: 0;
+            top: 0.05em;
+            color: var(--indian-orange);
+            font-size: 1.2em;
+            line-height: 1;
+        }
+
+        ol li::marker {
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        strong {
+            color: var(--indian-orange);
+        }
+
+        .image-placeholder-container {
+            margin: 30px 0;
+            text-align: center;
+            font-style: italic;
+            color: #795548;
+            background-color: var(--accent-light);
+            padding: 20px;
+            border-radius: 4px;
+            border: 1px solid var(--indian-yellow);
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.98em;
+            background-color: #FFFDF8;
+        }
+
+        th, td {
+            border: 1px solid #F0D49B;
+            padding: 10px 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--ref-bg);
+            color: var(--indian-orange);
+        }
+
+        blockquote {
+            margin: 30px 0;
+            padding: 20px 25px;
+            background-color: var(--accent-light);
+            border-left: 5px solid var(--indian-orange);
+            font-style: italic;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px dashed var(--indian-yellow);
+            margin: 32px 0;
+        }
+
+        .references {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: var(--ref-bg);
+            border-radius: 8px;
+            font-size: 0.9em;
+        }
+
+        .references h2, .references h3 {
+            color: var(--text-color);
+            margin-top: 0;
+            border-bottom: 1px solid var(--indian-yellow);
+            padding-bottom: 10px;
+            border-left: 0;
+            padding-left: 0;
+        }
+
+        .references p, .references li {
+            margin-bottom: 12px;
+            word-wrap: break-word;
+        }
+
+        .references a {
+            color: var(--indian-orange);
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Hanuman Shani Mastery</h1>
+        </header>
+
+        <article>
+<p class="intro-text">When Saturn pressure enters a life, people often imagine only delay, fear, heaviness, and repeated tests. Vedic tradition answers that pressure with a more astonishing image: Hanuman, the fearless servant of Rama, holding Shani with such authority that the planet of karma becomes his ally.</p>
+<div class="image-placeholder-container">
+    <img src="blog112_Image.png" alt="Panchamukhi Hanuman radiating golden courage while Shani Dev bows peacefully before the sacred name of Rama, with Saturn symbols, mustard-oil lamp, black sesame, iron, and protective mantra light.">
+</div>
+<p>This is not a story of violence. It is a story of <strong>inner gravity</strong>. Shani moves slowly because time, consequence, and justice cannot be rushed. Hanuman moves fearlessly because devotion gives courage to the mind. When these two forces meet, delay becomes discipline, fear becomes responsibility, and karma becomes work.</p>
+<p>For the Vedic Ghadi app, this is one of the most useful remedial stories. It connects <strong>Rama bhakti, Hanuman worship, Shani remedies, Sade Sati relief, Panchamukhi Hanuman practice, Vayu Prana sadhana, Ayurvedic vata balance, occult protection rituals, and the philosophy of karma</strong>. If you are passing through a difficult Saturn period, the story does not ask you to fight your fate. It asks you to become so steady that fate itself has to teach instead of terrify.</p>
+<h2>1. The Story: Hanuman Frees Shani In Lanka</h2>
+<p>One popular Puranic story says that Ravana had imprisoned Shani Dev in Lanka to prevent Saturn's influence from harming his ambition. When Hanuman enters Lanka during the search for Sita, he discovers Shani bound in a dark cell.</p>
+<p>Hanuman breaks the bondage and carries Shani out on his shoulders. Released, Shani asks Hanuman for a boon. Hanuman does not ask for wealth, victory, or kingdoms. He asks that Shani protect those who remember him with devotion.</p>
+<p>Shani agrees. From that moment, Shani's severity does not vanish, but his relationship changes. Those who serve dharma and remember Hanuman are not exempt from karma; they are supported while karma is being corrected.</p>
+<p>This is the first remedy. Saturn can bind you through fear, or it can teach you through structure. Hanuman's bhakti chooses the second path.</p>
+<h2>2. Why Shani Respects Rama Bhakti</h2>
+<p>Shani is associated with time, justice, labor, limitation, elders, iron, longevity, and the results of past action. His work is often uncomfortable because he removes shortcuts.</p>
+<p>Hanuman represents pure strength offered to a sacred purpose. In astrological symbolism he is often connected with Mars, the planet of courage, energy, and initiative. He is also the son of Vayu, the life-wind, and therefore connected with prana and nervous strength.</p>
+<p>This makes the Hanuman-Shani pairing powerful:</p>
+<ul>
+<li>Shani gives weight; Hanuman gives the strength to carry it.</li>
+<li>Shani reveals karma; Hanuman gives courage to face it.</li>
+<li>Shani teaches patience; Hanuman removes cowardice.</li>
+<li>Shani tests structure; Hanuman builds unbreakable routine.</li>
+<li>Shani humbles the ego; Hanuman surrenders the ego to Rama.</li>
+</ul>
+<p>In practical remedial astrology, people experiencing <strong>Sade Sati</strong>, Shani dosha, Saturn dasha, difficult Saturn transits, career stagnation, legal tension, chronic fear, or exhausting responsibilities are often advised to worship Hanuman on Saturday. The logic is not that Hanuman cancels Saturn. It is that Hanuman gives the mind and body the strength to pass through Saturn without collapsing.</p>
+<h2>3. The 2026 Saturn Window: Pressure In Pisces</h2>
+<p>According to widely published Vedic transit calculations, Saturn remains in Pisces during 2026. Pisces is a watery, emotional, and spiritually sensitive sign. Saturn's presence there can make boundaries feel heavier: sleep disturbed, emotions close to the surface, old fears returning, and unfinished karma demanding attention.</p>
+<p>At the same time, this is a remarkable period for spiritual maturity. Saturn in Pisces rewards those who turn emotion into practice:</p>
+<ul>
+<li>a regular bedtime instead of late-night anxiety,</li>
+<li>one honest repair instead of endless regret,</li>
+<li>service to the elderly, workers, or the sick,</li>
+<li>steady mantra instead of dramatic fear,</li>
+<li>boundaries around time, food, screens, and toxic advice.</li>
+</ul>
+<p>Hanuman is the ideal deity for this transit because he brings fire, breath, and courage into watery heaviness. He does not deny the storm. He gives you a spine while the weather changes.</p>
+<h2>4. Panchamukhi Hanuman: Five Faces Of Protection</h2>
+<p>Panchamukhi Hanuman is a five-faced form worshipped in protective and Tantrik traditions. The common arrangement of the faces is:</p>
+<ul>
+<li><strong>East: Hanuman</strong>, who grants courage and removes fear.</li>
+<li><strong>South: Narasimha</strong>, who cuts destructive fear and protects from hidden enemies.</li>
+<li><strong>West: Garuda</strong>, who removes serpentine entanglement and poison-like karma.</li>
+<li><strong>North: Varaha</strong>, who lifts the earth and restores stability after upheaval.</li>
+<li><strong>Upper: Hayagriva</strong>, who illumines knowledge, mantra, and speech.</li>
+</ul>
+<p>Together the five faces form a complete shield: body, emotion, karma, stability, and intelligence.</p>
+<p>When you visualize this form during Saturn difficulty, you are not imagining an external weapon. You are organizing your own inner forces. Fear cannot easily dominate a mind that has courage, discernment, humility, stability, and devotion working together.</p>
+<h2>5. Saturday Hanuman-Shani Rituals</h2>
+<p>These are household-safe practices. Modify them according to your health, family tradition, and guidance from a qualified teacher.</p>
+<h3>1. Saturday Hanuman Lamp</h3>
+<p>On Saturday evening, visit a Hanuman temple if possible, or place a lamp before Hanuman's image at home. Light a small mustard-oil lamp, offer marigold or jasmine if available, and recite <strong>Hanuman Chalisa</strong> once.</p>
+<p>Before leaving the lamp, say mentally:</p>
+<blockquote><p>Let Shani become my teacher, not my terror.</p></blockquote>
+<p>Let the lamp burn safely, then resume one duty you have been avoiding.</p>
+<h3>2. Sundarakanda Recitation</h3>
+<p>Sundarakanda describes Hanuman crossing the ocean, entering Lanka, and returning with hope after Sita gives him her ring. It is one of the most beloved Saturn remedies because it tells the story of a servant completing an impossible task without ego.</p>
+<p>If the full text is too long, read one sarga each Saturday. The practice is stronger when followed by one concrete action: a phone call, an apology, a medical appointment, a difficult email, or an hour of honest work.</p>
+<h3>3. Black Sesame Offering</h3>
+<p>Offer or donate black sesame on Saturday. You may mix a small quantity with rice and offer it at a temple, or give sesame-based food to someone in need.</p>
+<p>Symbolically, sesame seeds are small, dark, and dense, like the compressed lessons of Saturn. Do not perform this as a bribe. Offer it with one sentence: "Let my hardship become nourishment for someone else."</p>
+<h3>4. Iron And Service</h3>
+<p>Saturn is associated with iron and labor. A traditional remedy is to donate iron or serve workers, security guards, cleaners, drivers, farmers, elderly people, or the sick.</p>
+<p>This is a greater remedy than fear-based purchase of objects. It tells Saturn that you understand its real lesson: dignity of labor and responsibility toward those who carry burdens.</p>
+<h3>5. Peepal Or Banyan Lamp</h3>
+<p>On Saturday evening, if tradition allows, offer a mustard-oil lamp beneath a peepal or banyan tree. Trees connected with Saturn carry the symbolism of patience: roots grow downward before branches rise upward.</p>
+<p>Do not disturb the tree or its surroundings. Offer, thank, and leave quietly.</p>
+<h3>6. Shanipradosh Awareness</h3>
+<p>When Pradosh falls on Saturday, many devotees observe a lighter form of Shiva remembrance. Shani is connected with Lord Shiva's patient justice. Even ten minutes of silence, water offering, or <strong>Om Namah Shivaya</strong> can be used to steady the mind.</p>
+<p>Hanuman devotion and Shiva remembrance are not contradictory. Both teach fearless endurance.</p>
+<h2>6. Vayu Prana Sadhana: Hanuman's Breath Technology</h2>
+<p>Because Hanuman is the son of Vayu, breath is central to his sadhana. Saturn heaviness often appears as shallow breathing, tight shoulders, cold hands, anxious sleep, and loss of initiative. A small Vayu practice can change the nervous state.</p>
+<h3>Vayu Armor Breathing</h3>
+<ol>
+<li>Sit straight with your eyes closed.</li>
+<li>Inhale slowly through the nose for four counts.</li>
+<li>Hold gently for two counts.</li>
+<li>Exhale through the nose for six counts.</li>
+<li>Imagine warm golden breath moving from your navel to your shoulders, arms, and feet.</li>
+<li>Repeat eleven rounds.</li>
+<li>Then recite <strong>Om Hanumate Namah</strong> eleven times.</li>
+</ol>
+<p>Use this before a difficult conversation, court matter, office meeting, medical visit, or sleepless night.</p>
+<p>Do not strain the breath. If you have respiratory illness, heart trouble, pregnancy, or panic disorder, keep the practice gentle and consult a qualified health professional.</p>
+<h2>7. The Hidden Occult Layer Of Hanuman-Shani Mastery</h2>
+<p>Occult practice does not need to become dangerous superstition. Here it means the inner technology hidden in protective symbols.</p>
+<h3>1. Panchamukhi Yantra Visualization</h3>
+<p>Draw a five-pointed star on paper in your mind, or place a simple image of Panchamukhi Hanuman before you. Imagine each face guarding one direction, while your heart holds the name of Rama. The center is not a spirit; it is your chosen duty.</p>
+<h3>2. Shani Bond Release</h3>
+<p>Write one recurring delay that frightens you. Under it write one small action you can complete today. Fold the paper and keep it in your prayer space. Each completed action unties one mental knot.</p>
+<h3>3. Iron Mirror</h3>
+<p>Place a small clean iron object near your workspace. Let it remind you: iron becomes useful only after heat and pressure. It is not a talisman of luck; it is a symbol of endurance.</p>
+<h3>4. Black Sesame Forgiveness</h3>
+<p>Hold a few black sesame seeds. Name one resentment silently. Say: "I release the poison, though I still learn the lesson." Then offer the seeds to flowing water, a temple, or the earth, according to local custom.</p>
+<h3>5. Hanuman Kavach Coconut</h3>
+<p>Some households keep a coconut smeared with sindoor and oil near Hanuman's image as a <strong>Kavach</strong>, or protective symbol. If you follow this tradition, keep the coconut clean, treat it respectfully, and replace it according to your family custom.</p>
+<p>The real Kavach is your discipline: sleep, food, work, honesty, and remembrance.</p>
+<h3>6. Saturn Clock Practice</h3>
+<p>Each hour, pause once for three breaths. Ask only one question: "What is required now?" This trains your mind to stop fighting time and use time.</p>
+<h3>7. Bajrang Baan Caution</h3>
+<p>Bajrang Baan is a powerful Hanuman text used in many traditions for urgent protection. Because of its intensity, it should not be recited casually or as an attack mantra. If you choose it, do so under experienced guidance, with a calm mind and pure intention.</p>
+<p>For most users, Hanuman Chalisa, Sundarakanda, japa, service, and Vayu breathing are sufficient and safer.</p>
+<h2>8. Ayurveda For Shani Pressure And Vata Balance</h2>
+<p>In Ayurveda, Shani's heaviness often resembles disturbed <strong>vata</strong>: anxiety, dryness, cold, insomnia, joint stiffness, irregular routine, and nervous exhaustion.</p>
+<p>A supportive routine may include:</p>
+<ul>
+<li>warm, freshly cooked food at regular times,</li>
+<li>sesame oil or suitable herbal oil for feet and scalp massage,</li>
+<li>warm water, ginger where suitable, and less cold, dry, processed food,</li>
+<li>sleep before 11 pm,</li>
+<li>gentle strength practice such as walking, Surya Namaskar, or simple yoga,</li>
+<li>Ashwagandha, Brahmi, Bala, or Shankhpushpi only with qualified Ayurvedic guidance.</li>
+</ul>
+<p>If you have depression, panic, chronic pain, blood-pressure issues, thyroid trouble, insomnia, or another medical condition, consult a doctor or qualified Ayurvedic practitioner. Ritual supports the field. It does not replace diagnosis or treatment.</p>
+<h2>9. The Philosophy: Work Before Fear</h2>
+<p>Hanuman's greatness is not that he never sees danger. He sees danger and still says, "I am Rama's servant."</p>
+<p>Shani is not merely a punisher. Shani is the law that makes actions ripen. Once you accept that law, life becomes less personal and more workable. You stop asking, "Why me?" and begin asking, "What is being corrected?"</p>
+<p>Rama bhakti completes this teaching. Devotion is not an escape from karma; it is the courage to meet karma without ego.</p>
+<p>This is the mastery:</p>
+<ul>
+<li>do the work before the fear,</li>
+<li>respect time before demanding results,</li>
+<li>serve the burdened before fearing the planet,</li>
+<li>surrender ego before asking for protection,</li>
+<li>and let every delay become a slower, deeper strength.</li>
+</ul>
+<h2>10. The 41-Day Hanuman-Shani Sadhana</h2>
+<p>This adaptation can be used during Sade Sati, Shani dasha, difficult Saturn transits, career pressure, fear, legal stress, or periods of exhaustion. Modify it according to health and guidance.</p>
+<h3>Days 1 To 7: Enter The Field</h3>
+<ul>
+<li>Wake and sleep at a fixed time.</li>
+<li>Recite <strong>Om Hanumate Namah</strong> 27 times.</li>
+<li>Read one short part of Sundarakanda.</li>
+<li>Complete one task you have avoided.</li>
+<li>Light a mustard-oil lamp on Saturday if safe.</li>
+</ul>
+<h3>Days 8 To 14: Build The Body</h3>
+<ul>
+<li>Eat one warm meal at a fixed time.</li>
+<li>Massage your feet with suitable oil.</li>
+<li>Practice eleven rounds of Vayu Armor Breathing.</li>
+<li>Avoid one weakening habit: late screens, excess caffeine, gossip, or reckless anger.</li>
+<li>Help one worker or elderly person.</li>
+</ul>
+<h3>Days 15 To 21: Clean The Karma</h3>
+<ul>
+<li>Offer black sesame or service on Saturday.</li>
+<li>Write one unfinished responsibility and complete one step.</li>
+<li>Practice forgiveness meditation for five minutes.</li>
+<li>Recite Hanuman Chalisa on Saturday.</li>
+<li>Speak one difficult truth gently.</li>
+</ul>
+<h3>Days 22 To 30: Invoke The Five Faces</h3>
+<ul>
+<li>Visualize Panchamukhi Hanuman for five minutes daily.</li>
+<li>Recite <strong>Om Shri Hanumate Namah</strong> 27 times.</li>
+<li>Ask Narasimha for courage, Garuda for release, Varaha for stability, and Hayagriva for clarity.</li>
+<li>Protect one boundary: sleep, food, work time, or mental peace.</li>
+<li>Continue Vayu breathing.</li>
+</ul>
+<h3>Days 31 To 40: Make Protection Practical</h3>
+<ul>
+<li>Serve the sick, elderly, workers, or animals.</li>
+<li>Support someone facing delay, court, grief, or loneliness.</li>
+<li>Finish the written responsibility if possible.</li>
+<li>Keep a clean iron object on your desk as a symbol of patient strength.</li>
+<li>Donate according to capacity: food, sesame, blanket, time, or guidance.</li>
+</ul>
+<h3>Day 41: Completion</h3>
+<ul>
+<li>Recite Hanuman Chalisa once.</li>
+<li>Offer water to a tree or plant.</li>
+<li>Thank Shani as a teacher of time.</li>
+<li>Thank Hanuman as courage in the body.</li>
+<li>Write one sentence: "I did not run from this season."</li>
+</ul>
+<h2>11. Conclusion: Let Saturn Teach, Let Hanuman Carry</h2>
+<p>The story of Hanuman and Shani gives every anxious devotee a better sentence to live by. Saturn is not asking you to become smaller. Saturn is asking you to become slower, truer, and more responsible.</p>
+<p>When the burden is too heavy, do not surrender to fear. Surrender to Rama. Then, like Hanuman, lift what can be lifted, free what can be freed, work while time moves, and let karma become your teacher.</p>
+<p>That is how Hanuman achieved mastery over Shani: not by hating time, but by making every moment a servant of dharma.</p>
+
+<div class="references">
+<h2>Sources</h2>
+<ol>
+<li><a href="https://www.hindu-blog.com/2016/03/hanuman-and-shani-dev.html">Hanuman and Shani Dev - Hindu Blog</a></li>
+<li><a href="https://www.sushmajee.com/shani-articles/hanuman-shani-ji.asp">Hanuman and Shani Ji Parables - Sushmajee</a></li>
+<li><a href="https://shubhdarshika.com/shanivar-vrat-and-its-significance/">Shanivar Vrat And Its Significance - Shubhdarshika</a></li>
+<li><a href="https://www.paramarsh.com/hanuman-mars-saturn-devotion/">Hanuman, Mars, Saturn And Devotion - Paramarsh</a></li>
+<li><a href="https://timesofindia.indiatimes.com/astrology/horoscope/hanuman-chalisa-remedies-sade-sati/articleshow/98987989.cms">Hanuman Chalisa Remedies For Sade Sati - Times of India</a></li>
+<li><a href="https://www.sripanchamukhihanuman.org/">Sri Panchamukhi Hanuman Temple</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Panchamukhi_Hanuman">Panchamukhi Hanuman - Wikipedia</a></li>
+<li><a href="https://www.ramanuja.org/sv/acharyas/articles/panchamukha.html">Panchamukha Archana - Ramanuja.org</a></li>
+<li><a href="https://www.valmikiramayan.net/utf8/sundara/sarga1/sund_1.htm">Valmiki Ramayana, Sundara Kanda, Sarga 1</a></li>
+<li><a href="https://www.sundarakanda.org/">Sundarakanda Audio And Meaning</a></li>
+<li><a href="https://www.sacred-texts.com/hin/han/han.htm">Hanuman Chalisa - Sacred Texts</a></li>
+<li><a href="https://www.drikpanchang.com/jyotisha/saturn/shani-in-vedic-astrology.html">Saturn In Vedic Astrology - Drik Panchang</a></li>
+<li><a href="https://astropedia.com/articles/saturn-transit-in-pisces-2026/">Saturn Transit In Pisces 2026 - Astropedia</a></li>
+<li><a href="https://www.nccih.nih.gov/health/ayurvedic-medicine-an-overview">Ayurvedic Medicine: An Overview - NCCIH</a></li>
+<li><a href="https://www.nccih.nih.gov/health/ashwagandha">Ashwagandha - NCCIH</a></li>
+<li><a href="https://niimh.nic.in/ebooks/ecaraka/">Caraka Samhita Online - NIIMH</a></li>
+</ol>
+</div>
+        </article>
+    </div>
+
+</body>
+</html>
