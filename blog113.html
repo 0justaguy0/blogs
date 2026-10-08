@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudama Wealth Mastery</title>
+    <style>
+        :root {
+            --bg-color: #FDF9F1;
+            --text-color: #3E2723;
+            --indian-yellow: #E4A025;
+            --indian-orange: #E65100;
+            --accent-light: #FFECB3;
+            --ref-bg: #FFF3E0;
+        }
+
+        body {
+            font-family: 'Georgia', 'Nirmala UI', 'Mangal', serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(var(--bg-color) 80%, var(--accent-light) 100%);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #FFFFFF;
+            padding: 50px 60px;
+            box-shadow: 0 10px 30px rgba(62, 39, 35, 0.1);
+            border-top: 8px solid var(--indian-orange);
+            border-bottom: 8px solid var(--indian-yellow);
+            border-radius: 4px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed var(--indian-yellow);
+        }
+
+        h1 {
+            color: var(--indian-orange);
+            font-size: 2.5em;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        h2 {
+            color: var(--indian-yellow);
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--indian-orange);
+            padding-left: 15px;
+        }
+
+        h3, h4 {
+            color: var(--indian-orange);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        .intro-text::first-letter {
+            float: left;
+            font-size: 3.5em;
+            line-height: 0.8;
+            padding-right: 8px;
+            padding-top: 4px;
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        ul, ol {
+            margin: 0 0 24px 0;
+            padding-left: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ol {
+            list-style-position: outside;
+            padding-left: 2.2em;
+        }
+
+        ul li, ol li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        ol li {
+            padding-left: 0.35em;
+        }
+
+        ul li::before {
+            content: '\2022';
+            position: absolute;
+            left: 0;
+            top: 0.05em;
+            color: var(--indian-orange);
+            font-size: 1.2em;
+            line-height: 1;
+        }
+
+        ol li::marker {
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        strong {
+            color: var(--indian-orange);
+        }
+
+        .image-placeholder-container {
+            margin: 30px 0;
+            text-align: center;
+            font-style: italic;
+            color: #795548;
+            background-color: var(--accent-light);
+            padding: 20px;
+            border-radius: 4px;
+            border: 1px solid var(--indian-yellow);
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.98em;
+            background-color: #FFFDF8;
+        }
+
+        th, td {
+            border: 1px solid #F0D49B;
+            padding: 10px 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--ref-bg);
+            color: var(--indian-orange);
+        }
+
+        blockquote {
+            margin: 30px 0;
+            padding: 20px 25px;
+            background-color: var(--accent-light);
+            border-left: 5px solid var(--indian-orange);
+            font-style: italic;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px dashed var(--indian-yellow);
+            margin: 32px 0;
+        }
+
+        .references {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: var(--ref-bg);
+            border-radius: 8px;
+            font-size: 0.9em;
+        }
+
+        .references h2, .references h3 {
+            color: var(--text-color);
+            margin-top: 0;
+            border-bottom: 1px solid var(--indian-yellow);
+            padding-bottom: 10px;
+            border-left: 0;
+            padding-left: 0;
+        }
+
+        .references p, .references li {
+            margin-bottom: 12px;
+            word-wrap: break-word;
+        }
+
+        .references a {
+            color: var(--indian-orange);
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Sudama Wealth Mastery</h1>
+    </header>
+
+    <article>
+<p class="intro-text">When money is stuck, people often imagine that the solution must be equally large: a huge loan, a perfect job, a powerful contact, or a sudden lucky break. The story of Sudama begins with something almost embarrassing in its smallness. A poor Brahmin walks to Dwaraka with four handfuls of flattened rice tied in torn cloth. He returns with palaces he did not ask for.</p>
+<div class="image-placeholder-container">
+    <img src="blog113_Image.png" alt="Poor Brahmin Sudama offering a small bundle of flattened rice to Krishna while Rukmini watches with reverence, golden light spreading into abundance, palaces, grain, coins, lotus, Kubera symbols, and prosperity yantra geometry.">
+</div>
+<p>This is not a fairy tale about flattery. It is one of the most precise remedial stories in Vedic devotion. It shows how <strong>honesty, friendship, humility, right asking, and sacred offering</strong> work together. It also explains why wealth in the Vedic tradition is not the opposite of spirituality. Wealth becomes dangerous only when it is separated from dharma.</p>
+<p>For anyone facing scarcity, debt, delay, shame about asking for help, or fear that their effort is not visible, Sudama's story is medicine. It connects <strong>Krishna bhakti, Lakshmi and Kubera, Venus and Jupiter remedies, the second and eleventh houses, Ayurvedic ojas, lesser-known prosperity rituals, and occult abundance practices</strong>. Read it slowly. Then use it practically.</p>
+<h2>1. The Story: Four Handfuls Of Rice</h2>
+<p>Sudama was Krishna's friend from their student days at the school of Sandipani Muni. Later, Krishna became the ruler of Dwaraka, while Sudama remained a poor scholar. The Bhagavatam describes him as learned, peaceful, detached, and yet unable to maintain his household comfortably.</p>
+<p>His wife, unable to see her husband hungry, gently reminds him that Krishna is his friend and the husband of Lakshmi herself. She does not ask him to manipulate Krishna. She asks him to visit the Lord and receive shelter.</p>
+<p>Sudama agrees, not because he wants to beg, but because darshan of Krishna is itself the greatest gain. Still, he asks whether there is anything at home to offer. His wife borrows four handfuls of flattened rice from neighbours, ties them in an old cloth, and gives the bundle to her husband.</p>
+<p>When Sudama enters the palace, Krishna sees him from a distance. The Lord rises, embraces him, seats him on the bed, washes his feet, honors him with incense and lamps, and offers him a cow. Rukmini, the goddess of fortune, personally fans the poor Brahmin. The palace is shocked. Wealth is serving devotion.</p>
+<p>Then Krishna asks for the gift Sudama is hiding. Sudama is ashamed because the gift is so small. Krishna takes the flattened rice, eats it with delight, and says that a few grains offered with love can satisfy Him and the universe. Rukmini stops the second morsel, saying that one palmful accepted by Krishna is enough to bestow abundance in this world and the next.</p>
+<p>Sudama returns home without asking for money. On the way, he is content simply to have seen Krishna. When he arrives, his hut has become a palace. His wife is adorned like a goddess. The transformation has already happened, but Sudama's inner state has not changed into greed. He recognizes Krishna's grace and remains devoted.</p>
+<h2>2. Why The Gift Matters</h2>
+<p>The flattened rice is not a bribe. It is a symbol of three things:</p>
+<ul>
+<li><strong>Acknowledgment:</strong> Sudama does not go empty-handed. Even in poverty, he makes a sacred offering.</li>
+<li><strong>Honesty:</strong> He offers what he actually has, not what he pretends to have.</li>
+<li><strong>Relationship:</strong> He approaches Krishna as a friend, not as a beggar trying to purchase a favor.</li>
+</ul>
+<p>This is the first wealth remedy. Many people block abundance through two opposite habits. They either feel too ashamed to ask, or they ask without offering anything. Sudama shows a third way: bring your truth to the sacred, ask for shelter with dignity, and let grace decide the form of the answer.</p>
+<p>The offering also has a subtle psychological effect. A small gift made with love loosens the grip of scarcity. It says, "I am not only lack. I still have something to give."</p>
+<h2>3. Sudama's Wealth Astrology</h2>
+<p>Every part of the story can be mapped to remedial astrology without forcing it.</p>
+<table>
+<thead>
+<tr><th>Story element</th><th>Astrological principle</th><th>Remedial lesson</th></tr>
+</thead>
+<tbody>
+<tr><td>Sudama's poor household</td><td>Weak or afflicted 2nd house: accumulated resources, food, speech, and family support</td><td>Strengthen dignity, speech, saving habits, and nourishment before chasing opportunities.</td></tr>
+<tr><td>Krishna as friend</td><td>11th house: gains, networks, elder guidance, and fulfilment of desires</td><td>Do not isolate yourself in scarcity. Maintain sincere, dharmic connection.</td></tr>
+<tr><td>Sandipani Muni's school</td><td>9th house: guru, fortune, dharma, and divine grace</td><td>Respect teachers and mentors. Fortune often enters through the guru principle.</td></tr>
+<tr><td>Sudama's wife</td><td>7th house and Moon: partnership, emotional support, and shared responsibility</td><td>Do not let money stress poison the person standing beside you.</td></tr>
+<tr><td>Four handfuls of rice</td><td>2nd house offering, 5th house intelligence, 12th house charity</td><td>Give something small, honest, and regular before asking.</td></tr>
+<tr><td>Rukmini's service</td><td>Venus, Lakshmi, beauty, and graceful reception</td><td>Wealth responds when devotion is honored, not humiliated.</td></tr>
+<tr><td>Krishna's silent gift</td><td>9th house grace and 8th house sudden or hidden transformation</td><td>Right effort opens doors, but grace may work quietly before it becomes visible.</td></tr>
+</tbody>
+</table>
+<p>The real wealth combination is not merely a yoga in the chart. It is a state of alignment: <strong>a strong self, clean speech, useful skill, honest network, dharmic purpose, and controlled expenditure</strong>. When these connect, money has a channel through which to arrive.</p>
+<h2>4. Venus, Jupiter, And The Wealth Current</h2>
+<p><strong>Venus or Shukra</strong> is the natural significator of Lakshmi energy: comfort, beauty, harmony, relationship, art, and the ability to enjoy wealth without being consumed by it. A disturbed Venus can show as shame, comparison, emotional spending, or poverty consciousness disguised as rejection of money.</p>
+<p><strong>Jupiter or Guru</strong> is the natural significator of expansion, counsel, ethics, teaching, and grace. When Jupiter is weak or afflicted, a person may have knowledge but no recognition, generosity without structure, or belief without action.</p>
+<p><strong>The Moon</strong> governs the mind's ability to receive. A frightened Moon can make a person reject help, hide poverty, or repeat scarcity habits even when opportunity comes.</p>
+<p><strong>Mercury</strong> manages trade, calculation, communication, and contracts. <strong>Saturn</strong> gives slow, lawful accumulation. <strong>Rahu</strong> magnifies ambition and unusual channels, but must be governed by ethics. <strong>Ketu</strong> gives the detachment that prevents wealth from becoming an addiction.</p>
+<p>In practice, examine the condition of:</p>
+<ul>
+<li>the 2nd house and its lord for savings, food, speech, and family resources,</li>
+<li>the 11th house and its lord for gains, clients, friends, and networks,</li>
+<li>the 9th house and its lord for grace, mentorship, and fortune,</li>
+<li>the 1st house and its lord for self-worth and the capacity to receive,</li>
+<li>the 5th house for intelligence, creativity, and past merit,</li>
+<li>the 12th house for expenditure, donation, and leakage.</li>
+</ul>
+<p>A so-called Lakshmi Yoga or Kubera Yoga is not a magic permission slip. In classical reading, a strong ninth lord and ascendant lord, or benefic support to the second and eleventh houses, can indicate the potential for lasting prosperity. But the yoga still needs dasha, transit, effort, and ethical action to unfold.</p>
+<h2>5. When To Align With Prosperity Transits</h2>
+<p>Use timing as a support, not as superstition.</p>
+<ul>
+<li><strong>Friday:</strong> for Venus and Lakshmi. Clean the home, offer white flowers, rice, sugar, or sweets, and recite a Venus or Lakshmi mantra.</li>
+<li><strong>Thursday:</strong> for Jupiter and grace. Respect a teacher, donate books or turmeric, and study one practical money skill.</li>
+<li><strong>Waxing Moon:</strong> for growth, especially the period from Pratipada to Purnima.</li>
+<li><strong>Pushya Nakshatra:</strong> for nourishment, stability, and trusted guidance.</li>
+<li><strong>Rohini Nakshatra:</strong> for Krishna bhakti, beauty, and emotional abundance.</li>
+<li><strong>Dhanteras and Deepavali season:</strong> for annual wealth renewal and Kubera-Lakshmi worship.</li>
+</ul>
+<p>If a Venus or Jupiter transit is moving through your second, fifth, ninth, or eleventh house, or if you are in a Venus or Jupiter period-subperiod, the same practice can feel more responsive. But do not wait for a perfect transit. Sudama's blessing began with an imperfect, frightened journey.</p>
+<h2>6. The Rare Sudama Four-Handful Ritual</h2>
+<p>This simple adaptation is based on the four handfuls of flattened rice. It is suitable for anyone facing scarcity, debt, blocked income, shame about asking, or fear of rejection.</p>
+<h3>Preparation</h3>
+<ul>
+<li>Bathe and wear clean clothes.</li>
+<li>Clean the northeast or north corner of the home, and also the place where you eat.</li>
+<li>Place an image of Krishna, Lakshmi, or Krishna-Rukmini on a clean cloth.</li>
+<li>Keep four small portions of flattened rice, poha, uncooked rice, or another grain you can later donate.</li>
+</ul>
+<h3>The Four Offerings</h3>
+<ol>
+<li><strong>First handful for gratitude:</strong> Offer it while naming one blessing you already have.</li>
+<li><strong>Second handful for honesty:</strong> State one true financial need without exaggeration.</li>
+<li><strong>Third handful for effort:</strong> Commit to one concrete action you will take within 24 hours.</li>
+<li><strong>Fourth handful for circulation:</strong> Promise one act of giving, service, or mentoring according to your capacity.</li>
+</ol>
+<p>You may then offer the grain at a temple, feed a person in need, donate it to a food bank, or cook it as prasada and share it. If you cannot donate externally, water a plant and offer service to your household.</p>
+<p>The ritual works because it trains the mind to stop seeing itself as only empty. Gratitude, truth, action, and giving form a complete current.</p>
+<h2>7. Lesser-Known Lakshmi-Kubera Practices</h2>
+<p>These are less commonly discussed and should be practiced with reverence.</p>
+<h3>Kubera North Corner</h3>
+<p>Kubera is remembered as the guardian of the northern quarter and the treasurer of the gods. Keep the north or northeast area of your home or office clean, light, and uncluttered. A small brass, copper, or clay bowl with a few coins, rice, and turmeric can be used as a symbol of stored wealth. Refresh it weekly. The bowl is not a magic box; it is a discipline of respecting what you already possess.</p>
+<h3>Kubera-Lakshmi Japa</h3>
+<p>On Friday morning or during Brahma Muhurta, sit facing north and recite a Kubera or Ashta-Lakshmi mantra 108 times. A traditional form is:</p>
+<blockquote><p><strong>Om Hreem Shreem Kreem Shreem Kuberaya Ashta-Lakshmi Mama Grihe Dhanam Puraya Puraya Namah.</strong></p><p>Meaning: salutations to Kubera and the eightfold Lakshmi; may wealth continue to fill my home.</p></blockquote>
+<p>If you are not trained in a lineage, listen to a reliable recording, learn the pronunciation, or use the simpler <strong>Om Shreem Mahalakshmyai Namah</strong>. Pronunciation and intention matter more than volume.</p>
+<h3>Kubera Mudra</h3>
+<p>A lesser-known practice uses the hands as a focus for prosperity intention. Join the tips of the thumb, index finger, and middle finger of both hands while folding the remaining fingers inward. Hold the hands comfortably in front of you, breathe slowly, and visualize one clear, dharmic financial goal. Practice for a few minutes after japa. This is not a substitute for work; it is a way to hold the mind steady.</p>
+<h3>Sri Sukta And Shri Chakra</h3>
+<p>Shri Suktam is one of the most powerful Vedic invocations of Lakshmi. Listening to it while cleaning or organizing the home is a gentle beginning. If you are drawn to Shri Chakra or Lakshmi-Kubera Yantra practice, seek guidance from a qualified teacher and treat the yantra as a sacred focus, not as a shortcut.</p>
+<h3>The Owl And The Hidden Resource</h3>
+<p>Lakshmi's owl is often ignored in popular wealth talk. The owl suggests night-vision: the ability to see value where others see only darkness. In practical terms, this means look for neglected skills, underused assets, forgotten receivables, old learning, or quiet support around you before seeking a dramatic outside rescue.</p>
+<h2>8. Ayurveda: Build The Body That Can Hold Wealth</h2>
+<p>Ayurveda does not separate prosperity from health. Chronic financial stress disturbs <strong>Agni</strong>, the digestive fire, and drains <strong>Ojas</strong>, the refined essence of immunity, patience, and stability. Fear can make food irregular, sleep broken, and decisions rushed.</p>
+<p>Support your capacity to receive with these simple habits:</p>
+<ul>
+<li>eat warm, freshly cooked food at regular times,</li>
+<li>begin the morning with warm water and a few deep breaths before checking the phone,</li>
+<li>use light sattvic foods such as rice, moong dal, ghee, soaked almonds, dates, seasonal fruit, and poha with gentle spices,</li>
+<li>sleep before 11 pm and wake at a fixed hour,</li>
+<li>practice Nadi Shodhana or Bhramari for five minutes when money anxiety rises,</li>
+<li>walk in morning light and keep the home dry, clean, and fragrant,</li>
+<li>consider Ashwagandha, Shatavari, Brahmi, or Shatavari-based support only after consulting a qualified Ayurvedic practitioner.</li>
+</ul>
+<p>Flattened rice is light and generally easy to digest when prepared warmly, but it is a devotional symbol, not a prescription. If you have diabetes, gastritis, pregnancy-related needs, or another medical condition, adapt the food suggestions with professional guidance.</p>
+<h2>9. The Philosophy: Ask With Dignity, Receive Without Greed</h2>
+<p>Sudama's greatness is not poverty. His greatness is that poverty does not erase his dignity, learning, friendship, or devotion.</p>
+<p>There is a mistaken idea that spiritual people should never ask for material help. The Vedic tradition places <strong>artha</strong> among the four aims of life: dharma, artha, kama, and moksha. Wealth is legitimate. It becomes harmful when earned without ethics, hoarded without compassion, or worshipped without wisdom.</p>
+<p>Krishna's question, "Have you brought any gift for Me?", does not shame Sudama. It reveals the law of relationship. Even the smallest offering made with love is accepted. The Bhagavad Gita states the same principle: a leaf, flower, fruit, or water offered with devotion is accepted.</p>
+<p>Rukmini stopping the second morsel is equally important. One sincere offering accepted by grace is enough. This does not mean you should do only one ritual and stop. It means the ritual is not a transaction where more pressure produces more result. Purity completes what repetition alone cannot.</p>
+<p>The final blessing is that Sudama becomes rich but does not become greedy. That is true wealth mastery.</p>
+<h2>10. The 41-Day Sudama Prosperity Sadhana</h2>
+<p>Use this during a difficult money period, a Venus or Jupiter transit, or whenever scarcity makes you feel small. Modify it according to health, safety, and guidance.</p>
+<h3>Days 1 To 7: Clean The Field</h3>
+<ul>
+<li>Clean one part of the home every day, especially the kitchen, entrance, and north corner.</li>
+<li>Write your exact income, expenses, debts, and one honest request.</li>
+<li>Offer a small amount of rice or grain daily.</li>
+<li>Recite <strong>Om Shreem Mahalakshmyai Namah</strong> 27 times.</li>
+<li>Speak one truthful, kind sentence about money instead of blame.</li>
+</ul>
+<h3>Days 8 To 14: Strengthen The Self</h3>
+<ul>
+<li>Wake at a fixed time and take morning light.</li>
+<li>Eat one warm meal without screens.</li>
+<li>Practice five minutes of Nadi Shodhana.</li>
+<li>Learn one practical money skill: budgeting, invoicing, negotiation, saving, or basic accounting.</li>
+<li>Repair one relationship where money has caused silence or resentment.</li>
+</ul>
+<h3>Days 15 To 21: Open The Network</h3>
+<ul>
+<li>Contact one teacher, senior, or friend for honest guidance.</li>
+<li>Ask one clear question without demanding a rescue.</li>
+<li>Offer one service according to your skill.</li>
+<li>Recite the Sudama story or listen to Bhagavatam 10.80-81.</li>
+<li>Donate food, knowledge, or time on Friday.</li>
+</ul>
+<h3>Days 22 To 30: Invoke Lakshmi-Kubera</h3>
+<ul>
+<li>Light a ghee lamp on Friday if safe.</li>
+<li>Recite Kubera or Lakshmi mantra 108 times.</li>
+<li>Practice Kubera Mudra for a few minutes.</li>
+<li>Keep the north corner clean and place a small wealth symbol there.</li>
+<li>Review one financial habit: impulse spending, avoidance, hiding bills, or fear-based comparison.</li>
+</ul>
+<h3>Days 31 To 40: Turn Grace Into Action</h3>
+<ul>
+<li>Complete one income-producing task daily.</li>
+<li>Update your resume, portfolio, pricing, or business plan.</li>
+<li>Follow up on one opportunity without shame.</li>
+<li>Help one person who has less than you.</li>
+<li>Write three sentences: what I can give, what I need, and what I will do.</li>
+</ul>
+<h3>Day 41: Completion</h3>
+<ul>
+<li>Offer four handfuls of grain and complete the four intentions again.</li>
+<li>Thank Krishna, Lakshmi, and Kubera in your own words.</li>
+<li>Give a final donation or act of service.</li>
+<li>Write one sentence: "I can receive abundance without losing devotion."</li>
+</ul>
+<h2>11. Conclusion: Wealth Begins Before The Palace</h2>
+<p>Sudama's miracle did not begin when the hut became a palace. It began when a poor man allowed himself to carry four handfuls of rice to his friend. It began when honesty walked toward grace instead of hiding in shame.</p>
+<p>If money is blocked, do not only ask for more. Clean your field, strengthen your body, honor your relationships, offer what you have, ask truthfully, and work steadily. Let Lakshmi bring beauty, let Kubera guard storage, let Jupiter guide ethics, and let Krishna turn even a small offering into grace.</p>
+<p>That is how Sudama achieved wealth mastery: not by pretending poverty was spiritual, and not by begging, but by meeting abundance with truth, friendship, and devotion.</p>
+    </article>
+
+    <div class="references">
+        <h2>Sources</h2>
+        <ol>
+<li><a href="https://vedabase.io/en/library/sb/10/80/">Srimad Bhagavatam 10.80: The Brahmana Sudama Visits Lord Krishna</a></li>
+<li><a href="https://vedabase.io/en/library/sb/10/81/">Srimad Bhagavatam 10.81: The Lord Blesses Sudama Brahmana</a></li>
+<li><a href="https://vedabase.io/en/library/bg/9/26/">Bhagavad Gita 9.26: A Leaf, Flower, Fruit Or Water Offered With Devotion</a></li>
+<li><a href="https://www.anytimeastro.com/blog/astrology/kubera-yoga/">Kubera Yoga In Astrology: Wealth Houses And Remedies</a></li>
+<li><a href="https://jagannathhora.com/lakshmi-yoga-astrology/">Lakshmi Yoga: Classical Formation And Effects</a></li>
+<li><a href="https://astrobhava.com/blog/kuber-ashta-lakshmi-mantra/">Kuber Ashta-Lakshmi Mantra: Text, Meaning And Practice</a></li>
+        </ol>
+    </div>
+</div>
+</body>
+</html>
