@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nachiketa Death Wisdom Mastery</title>
+    <style>
+        :root {
+            --bg-color: #FDF9F1;
+            --text-color: #3E2723;
+            --indian-yellow: #E4A025;
+            --indian-orange: #E65100;
+            --accent-light: #FFECB3;
+            --ref-bg: #FFF3E0;
+        }
+
+        body {
+            font-family: 'Georgia', 'Nirmala UI', 'Mangal', serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(var(--bg-color) 80%, var(--accent-light) 100%);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #FFFFFF;
+            padding: 50px 60px;
+            box-shadow: 0 10px 30px rgba(62, 39, 35, 0.1);
+            border-top: 8px solid var(--indian-orange);
+            border-bottom: 8px solid var(--indian-yellow);
+            border-radius: 4px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed var(--indian-yellow);
+        }
+
+        h1 {
+            color: var(--indian-orange);
+            font-size: 2.5em;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        h2 {
+            color: var(--indian-yellow);
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--indian-orange);
+            padding-left: 15px;
+        }
+
+        h3, h4 {
+            color: var(--indian-orange);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        .intro-text::first-letter {
+            float: left;
+            font-size: 3.5em;
+            line-height: 0.8;
+            padding-right: 8px;
+            padding-top: 4px;
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        ul, ol {
+            margin: 0 0 24px 0;
+            padding-left: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ol {
+            list-style-position: outside;
+            padding-left: 2.2em;
+        }
+
+        ul li, ol li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        ol li {
+            padding-left: 0.35em;
+        }
+
+        ul li::before {
+            content: '\2022';
+            position: absolute;
+            left: 0;
+            top: 0.05em;
+            color: var(--indian-orange);
+            font-size: 1.2em;
+            line-height: 1;
+        }
+
+        ol li::marker {
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        strong {
+            color: var(--indian-orange);
+        }
+
+        .image-placeholder-container {
+            margin: 30px 0;
+            text-align: center;
+            font-style: italic;
+            color: #795548;
+            background-color: var(--accent-light);
+            padding: 20px;
+            border-radius: 4px;
+            border: 1px solid var(--indian-yellow);
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.98em;
+            background-color: #FFFDF8;
+        }
+
+        th, td {
+            border: 1px solid #F0D49B;
+            padding: 10px 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--ref-bg);
+            color: var(--indian-orange);
+        }
+
+        blockquote {
+            margin: 30px 0;
+            padding: 20px 25px;
+            background-color: var(--accent-light);
+            border-left: 5px solid var(--indian-orange);
+            font-style: italic;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px dashed var(--indian-yellow);
+            margin: 32px 0;
+        }
+
+        .references {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: var(--ref-bg);
+            border-radius: 8px;
+            font-size: 0.9em;
+        }
+
+        .references h2, .references h3 {
+            color: var(--text-color);
+            margin-top: 0;
+            border-bottom: 1px solid var(--indian-yellow);
+            padding-bottom: 10px;
+            border-left: 0;
+            padding-left: 0;
+        }
+
+        .references p, .references li {
+            margin-bottom: 12px;
+            word-wrap: break-word;
+        }
+
+        .references a {
+            color: var(--indian-orange);
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Nachiketa Death Wisdom Mastery</h1>
+        </header>
+
+        <article>
+<p class="intro-text">There is a fear that follows people even when everything looks fine. It enters a hospital waiting room, a sleepless night, the anniversary of a loss, or the moment a child asks, "What happens after death?" The mind wants an answer, but the answer feels too vast. So it changes the subject, scrolls, overworks, or hides behind ordinary busyness.</p>
+<div class="image-placeholder-container">
+    <img src="blog117_Image.png" alt="Nachiketa standing calmly before Yama with three flames, ancestral throne, and Ketu light">
+</div>
+<p>Nachiketa is the Vedic answer to this fear.</p>
+<p>His story in the Katha Upanishad is not about a boy who defeated death by denying it. It is about a boy who stood at the threshold and asked the one question most adults postpone: if everything visible is temporary, what remains? He does not accept gold, long life, pleasure, or even reassurance as a substitute for knowledge. He asks until Yama, the lord of death, becomes his teacher.</p>
+<p>This blog is for anyone facing death anxiety, grief, panic, strange dreams, Ketu affliction, Rahu-Ketu confusion, ancestral burden, fear of losing a parent, or the spiritual crisis that often appears when life changes suddenly. It combines Nachiketa's mythological story, remedial astrology, Pitru repair, the Nachiketa fire, Yama Deepam, Ayurvedic fear-care, philosophy, and carefully bounded occult practices. Please use the remedies alongside medical care and mental-health support. They are for courage, clarity, and nervous-system steadiness, not a substitute for treatment.</p>
+<h2>1. The Story: The Boy Who Kept His Father's Word</h2>
+<p>Nachiketa's father, Vajashravasa, performs a great sacrifice in which he gives away possessions for spiritual merit. But Nachiketa sees something troubling: the cows being offered are old, barren, blind, or lame. The outward ritual is grand, but the heart of the gift is empty.</p>
+<p>The boy asks a question that sounds innocent and is actually razor-sharp: "I too belong to you. To whom will you give me?"</p>
+<p>The father, provoked by the truth, replies in anger, "I give you to Death."</p>
+<p>Nachiketa does not argue. He regards his father's word as sacred. He goes to Yama's abode and waits three nights without food or welcome. When Yama returns, he recognizes the breach of hospitality and offers three boons, one for each night.</p>
+<p>For his first boon, Nachiketa asks for his father's peace: when the boy returns, may the father recognize him, lose his anger, and sleep again. For his second, he asks for the sacred fire that leads beyond fear; Yama teaches it and names it the Nachiketa fire. For his third, he asks the impossible question: what happens to a person after death?</p>
+<p>Yama first tries to change the subject. He offers wealth, pleasures, long life, kingdoms, sons, and marriage. Nachiketa refuses them all because they are temporary. A temporary gift cannot answer the fear of ending. Yama finally teaches him the Self, the unchanging witness behind body, senses, mind, and breath.</p>
+<p>The story ends with Nachiketa becoming free from death, not because his body becomes biologically immortal, but because his understanding no longer ends at the body.</p>
+<h2>2. The Three Boons Are Three Remedies</h2>
+<p>Nachiketa's three boons form a complete remedial system.</p>
+<table>
+<thead><tr><th>Boon</th><th>Inner wound</th><th>Remedy</th></tr></thead>
+<tbody>
+<tr><td>Father's peace</td><td>Anger, rejection, family karma, ancestral guilt</td><td>Pitru repair, forgiveness, respectful communication</td></tr>
+<tr><td>Nachiketa fire</td><td>Fear of ending, ritual emptiness</td><td>Three-fold daily practice, study, charity</td></tr>
+<tr><td>Knowledge of the Self</td><td>Existential dread, panic, spiritual confusion</td><td>Katha study, meditation, qualified guidance</td></tr>
+</tbody>
+</table>
+<p>Many people try to begin with the third boon: they want enlightenment while refusing the first. Nachiketa teaches a more workable order. Repair the relationship. Purify the offering. Then ask the great question.</p>
+<h2>3. Ketu Astrology: The Shadow Planet Of Liberation</h2>
+<p>In Vedic astrology, Ketu is the headless south node, a shadow planet associated with detachment, past-life residue, intuition, occult knowledge, and moksha. His energy is not evil. Ketu is the point where the soul has finished over-identifying with a role and is ready to release it.</p>
+<p>When Ketu is strong and integrated, life turns inward with unusual courage. When Ketu is afflicted, the same energy can feel like:</p>
+<ul>
+<li>fear of death or obsessive thoughts about ending,</li>
+<li>dissociation, brain fog, or sudden loss of interest,</li>
+<li>strange dreams and fragmented sleep,</li>
+<li>grief that returns without warning,</li>
+<li>abandonment by a parent, teacher, or group,</li>
+<li>confusion between spiritual awakening and mental exhaustion,</li>
+<li>ancestral patterns that repeat despite effort.</li>
+</ul>
+<h3>Nachiketa's Remedial Chart</h3>
+<table>
+<thead><tr><th>Chart signature</th><th>Possible feeling</th><th>Remedy</th></tr></thead>
+<tbody>
+<tr><td>Ketu in the 8th house</td><td>Fascination and fear around death, inheritance, surgery</td><td>Katha study, gentle breathwork, medical check-ups</td></tr>
+<tr><td>Ketu in the 12th house</td><td>Vivid dreams, sleep disturbance, mystical overwhelm</td><td>Sleep discipline, mantra, grounded guidance</td></tr>
+<tr><td>Ketu with the Moon</td><td>Emotionally detached or anxious mind</td><td>Oil massage, water offerings, therapy</td></tr>
+<tr><td>Ketu with Saturn</td><td>Heavy grief, loneliness, chronic fear</td><td>Consistent routine, service, grief support</td></tr>
+<tr><td>Ketu with Rahu axis</td><td>Torn between status and liberation</td><td>Write down what must be released and what must be built</td></tr>
+<tr><td>Ketu connected with the Sun or 9th house</td><td>Conflict with father, teacher, or dharma</td><td>First-boon forgiveness practice</td></tr>
+</tbody>
+</table>
+<p>These indications should never be read as fixed predictions. They are entry points for self-repair. A qualified astrologer reads the whole chart, dasha, divisional charts, and current transits before prescribing.</p>
+<h2>4. The 2026 Magha Alignment: Ancestors On The Throne</h2>
+<p>Magha, the royal nakshatra in Leo, is traditionally ruled by Ketu and presided over by the Pitris, the ancestors. Its symbol is a throne. Magha holds honor, lineage, inherited authority, and the burden of inherited patterns.</p>
+<p>The 2026 Ketu nakshatra transit is moving through Magha, making this an especially useful season for Nachiketa work. The axis is asking: are you carrying your lineage with reverence, or are you trapped in its old fear?</p>
+<p>In November, the Kartik dark fortnight brings Yama Deepam on Dhanteras, which falls on 6 November 2026. This gives a natural ritual window: prepare for three days, honor the father and ancestors, kindle the Nachiketa fire, and then place the south-facing lamp for Yama.</p>
+<p>Do not turn this into superstition. A transit does not decide your fate. It simply gives weather. The remedy is to move with the weather instead of against it.</p>
+<h2>5. The Nachiketa Fire: A Rare Threefold Practice</h2>
+<p>Yama teaches Nachiketa a fire ritual and then says that one who kindles the Nachiketa fire three times, unites with the three, and performs the three duties crosses beyond the fear of birth and death. The classical ritual has technical details, but the inner structure can be practiced at home.</p>
+<h3>Home Version</h3>
+<ol>
+<li>Clean a small altar and place a lamp, water, black sesame, white flowers, and fruit.</li>
+<li>Sit facing east if possible and take nine slow breaths.</li>
+<li>Name three relationships that gave you life: mother, father, and teacher.</li>
+<li>Light the lamp and say: "May I receive my lineage without inheriting its fear."</li>
+<li>Recite the peace prayer three times: <strong>Om Asato Maa Sadgamaya, Tamaso Maa Jyotirgamaya, Mrityor Maa Amritam Gamaya.</strong></li>
+<li>Offer water and sesame to your ancestors with gratitude, asking that any debt be completed with love.</li>
+<li>Perform three actions before ending: learn one verse, give one useful thing, and speak one kind sentence.</li>
+</ol>
+<p>The "three" is the discipline. Knowledge without action becomes fantasy. Charity without study becomes guilt management. Speech without practice becomes pretense. Nachiketa joins all three.</p>
+<h2>6. The First Boon: Repairing The Father And The Line</h2>
+<p>Nachiketa's first request is not for himself. He asks for his father's peace. This is why ancestral repair comes before occult exploration.</p>
+<p>If a parent is living and communication is safe, choose one small act this week: call, forgive, express gratitude, or simply stop rehearsing the old argument. If reconciliation is unsafe, do not force contact. Repair can begin inwardly.</p>
+<h3>Simple Pitru Remembrance</h3>
+<ul>
+<li>Use clean water, black sesame, and darbha or kusha grass if available.</li>
+<li>Face south with a calm mind.</li>
+<li>Name three generations: father, grandfather, and great-grandfather.</li>
+<li>Say: "I remember you. I thank you. I release what was incomplete."</li>
+<li>Offer water gently and conclude with a simple meal donation or service.</li>
+</ul>
+<p>Formal tarpana, shraddha, and pinda rites should follow family tradition and, ideally, a priest's guidance. The purpose is not to bribe ancestors or remove fear magically. The purpose is to bring unfinished love into order.</p>
+<h2>7. Yama Deepam: The South-Facing Lamp</h2>
+<p>Yama Deepam is one of the lesser-known protective rituals of the Diwali season. On Kartik Krishna Trayodashi, a lamp is placed outside the home, often facing south, the direction of Yama. The lamp is a sign of hospitality and remembrance, not an invitation to doom.</p>
+<h3>Practice</h3>
+<ol>
+<li>Clean the area near the main entrance or southern threshold.</li>
+<li>Use a safe, stable lamp with enough oil or a battery candle if fire safety is a concern.</li>
+<li>Light it in the evening on Dhanteras or a Saturday during a difficult period.</li>
+<li>Say: "May no one in this house be swept away by fear. May time arrive as justice, not accident."</li>
+<li>Keep the flame protected, then sleep on time.</li>
+</ol>
+<p>This ritual does not replace safety measures, medical care, security, or emergency planning. It trains the mind to face the direction it fears while keeping the home illuminated.</p>
+<h2>8. Ganesha And Ketu: Removing The Knot</h2>
+<p>Ganesha is commonly recommended in Ketu remedies. This is not merely because Ganesha removes obstacles. It is because Ketu cuts identity, and Ganesha teaches the soul to move through a broken pattern with intelligence.</p>
+<p>A simple Ketu practice is:</p>
+<ul>
+<li>Offer durva or grass, red flowers, and a modak or fruit to Ganesha.</li>
+<li>Chant <strong>Om Gam Ganapataye Namah</strong> 108 times.</li>
+<li>Then chant <strong>Om Sraam Sreem Sraum Sah Ketave Namah</strong> 108 times.</li>
+<li>Give sesame, blankets, food, or educational help to someone who is isolated.</li>
+</ul>
+<p>Do this on Tuesday or Saturday, or daily during a Ketu dasha when your astrologer recommends it. The mantra is not a magic shield. It is a way of turning detachment into service.</p>
+<h2>9. The Three-Night Threshold Meditation</h2>
+<p>Nachiketa waited three nights. That waiting can become a safe occult practice if it is understood as shadow work, not spirit contact.</p>
+<h3>Night One: Name The Fear</h3>
+<p>Light a small candle. Sit at arm's length. Breathe in for four, hold for two, and breathe out for six. Say inwardly: "I am willing to know what I am avoiding." Write one sentence about your deepest fear.</p>
+<h3>Night Two: Ask What It Protects</h3>
+<p>Before the same flame, ask: "If this fear were a guardian, what is it trying to protect?" Fear often guards love, responsibility, memory, or the body. Do not interrogate yourself. Listen for five minutes, then thank the fear.</p>
+<h3>Night Three: Return To The Witness</h3>
+<p>Visualize a chariot: body as the chariot, senses as horses, mind as reins, intellect as charioteer, and Self as passenger. Breathe slowly and say: "I am not only the horses, reins, or road. I can observe the journey." End with water and sleep.</p>
+<p>Do not perform this during acute panic. If nightmares, intrusive thoughts, or hopelessness increase, stop and contact a doctor or mental-health professional.</p>
+<h2>10. Yamantaka: The Higher Occult Guardian</h2>
+<p>In Vajrayana Buddhism, Yamantaka means the slayer or terminator of death. Vajrabhairava Yamantaka is a wrathful meditational deity associated with conquering fear, ignorance, and the inner lord of death. His fierce form is not ordinary demonology; it is an advanced method of transforming terror into pristine awareness.</p>
+<p>This practice belongs to Highest Yoga Tantra and traditionally requires empowerment, instructions, commitments, and a qualified teacher. Without that, do not attempt the full sadhana.</p>
+<p>A householder can honor the principle safely: when fear appears, do not make fear the teacher. Make wisdom the teacher, and let fear become the subject being taught. This is the essence of Yamantaka and also of Nachiketa.</p>
+<h2>11. Ayurvedic Sattvavajaya: Turning Fear Into Courage</h2>
+<p>Ayurveda describes <strong>sattvavajaya chikitsa</strong> as the discipline of the mind. It uses knowledge, discernment, courage, memory, and meditation to steady the inner world. One classical principle is pratidwandwa bhavana: deliberately cultivate the opposite quality. Fear is not silenced by force; it is met with courage.</p>
+<h3>Fear-Care Routine</h3>
+<ul>
+<li>Sleep and wake at consistent times.</li>
+<li>Massage the feet and scalp with warm oil if suitable for your constitution.</li>
+<li>Reduce late-night news and doomscrolling.</li>
+<li>Eat warm, simple food at regular times.</li>
+<li>Practice nine slow breaths before speaking about death.</li>
+<li>Try shirodhara or oil-dripping only under a trained Ayurvedic practitioner.</li>
+<li>If panic, depression, or suicidal thoughts appear, seek professional help immediately.</li>
+</ul>
+<p>This is not denial of spirituality. A stable nervous system is the temple in which the Self can be heard.</p>
+<h2>12. Philosophy: The Chariot And The Witness</h2>
+<p>The Katha Upanishad says: <strong>Arise, awake, and learn by approaching the great.</strong></p>
+<p>Death fear usually shrinks a person into the body: this face, this name, this bank balance, this unfinished work. The Upanishad widens the frame. The body is a chariot. The senses are horses. The mind is the reins. The intellect is the charioteer. The Self is the passenger who is not manufactured by the vehicle.</p>
+<p>This does not mean the body is worthless. The chariot is sacred and must be maintained. But the passenger should not mistake every jolt of the road for personal annihilation.</p>
+<p>Nachiketa's liberation is therefore psychological, philosophical, and devotional at once. He honors the father. He performs the rite. He asks the question. He receives the teaching.</p>
+<h2>13. 41-Day Nachiketa Sadhana</h2>
+<p>This sadhana is especially useful during Ketu dasha, Ketu transit periods, grief, or the weeks before Yama Deepam.</p>
+<h3>Daily, 15 Minutes</h3>
+<ol>
+<li>Nine slow breaths.</li>
+<li>Recite <strong>Om Asato Maa Sadgamaya</strong> three times.</li>
+<li>Study one verse of the Katha Upanishad.</li>
+<li>Write one line: "What am I treating as permanent today?"</li>
+<li>On Tuesday and Saturday, chant the Ketu mantra 108 times.</li>
+</ol>
+<h3>Weekly</h3>
+<ul>
+<li>Offer water, sesame, and one practical act of service.</li>
+<li>Speak to or inwardly bless one parent, elder, or teacher.</li>
+<li>Keep one digital-silence hour.</li>
+<li>Complete one medical or mental-health task you have postponed.</li>
+</ul>
+<h3>On Day 41</h3>
+<p>Light a lamp for Nachiketa and Yama. Read the three boons again. Ask yourself which one still needs work: family peace, sacred action, or Self-knowledge. Choose one action for the next month.</p>
+<h2>14. Remedies For Specific Situations</h2>
+<h3>Death Anxiety</h3>
+<p>Practice the three-night threshold meditation in a calm state. Keep the breath longer on exhalation. Speak with a therapist if anxiety becomes persistent.</p>
+<h3>Grief After Losing A Parent</h3>
+<p>Offer tarpana according to family custom. Donate food or education in their name. Write one letter to them, even if you do not send it. Then sleep on time.</p>
+<h3>Fearful Dreams And Broken Sleep</h3>
+<p>Oil the feet, reduce late screens, chant before sleep, and keep water by the altar. If dreams involve trauma or terror, seek trauma-informed therapy.</p>
+<h3>Ketu Confusion And Detachment</h3>
+<p>Worship Ganesha, give to isolated people, and choose one small earthly responsibility each day. Detachment becomes healthy when it still cares.</p>
+<h3>Medical Fear</h3>
+<p>Do the mantra, prayer, and lamp, then schedule the check-up. Nachiketa's greatness is not avoidance; it is clarity joined to action.</p>
+<h2>15. Your Nachiketa Vow</h2>
+<p>Each morning say:</p>
+<blockquote><p>I will not make fear my teacher. I will repair my lineage where it is safe. I will make my actions sincere. I will ask the deeper question. I will care for this body while remembering that I am more than this body.</p></blockquote>
+<p>Then do five things:</p>
+<ol>
+<li>Breathe consciously.</li>
+<li>Speak one kind word.</li>
+<li>Learn one truthful line.</li>
+<li>Give one small thing.</li>
+<li>Complete one earthly duty.</li>
+</ol>
+<p>Nachiketa achieved death wisdom not by escaping life, but by looking straight at the fear and refusing every cheap answer. When you do the same, Yama stops being only the terror at the end of the road and becomes the guardian who teaches you how to live without flinching.</p>
+
+<div class="references">
+<h2>Sources</h2>
+<ol>
+<li><a href="https://en.wikipedia.org/wiki/Category:Rishis">Category: Rishis - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Nachiketa">Nachiketa - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Katha_Upanishad">Katha Upanishad - Wikipedia</a></li>
+<li><a href="https://www.shankaracharya.org/katha_upanishad.html">Katha Upanishad English Translation - Shankaracharya.org</a></li>
+<li><a href="https://upnishads.com/en/upanishad/katha/">Katha Upanishad - Upanishad</a></li>
+<li><a href="https://learn-sanskrit.org/scriptures/upanishads/katha-upanishad/">Katha Upanishad: Sanskrit Text, Translation &amp; Commentary - Learn Sanskrit</a></li>
+<li><a href="https://isha.sadhguru.org/en/wisdom/article/nachiketa-story">The Nachiketa Story - Isha</a></li>
+<li><a href="https://learn.acharyajyotish.com/learn/planets/ketu/">Ketu in Astrology: Significations, Effects &amp; Remedies - Acharya Jyotish</a></li>
+<li><a href="https://vedacharts.com/learn/articles/magha-nakshatra">Magha Nakshatra: The Throne and the Ancestors - VedaCharts</a></li>
+<li><a href="https://www.drikpanchang.com/planet/transit/nakshatra/ketu-nakshatra-transit-date-time.html?year=2026">2026 Ketu Nakshatra Transit - Drik Panchang</a></li>
+<li><a href="https://www.drikpanchang.com/festivals/dhanteras/festivals-dhanteras-puja-timings.html">2026 Dhanteras Puja Date and Timings - Drik Panchang</a></li>
+<li><a href="https://www.hindu-blog.com/2008/10/yamadeepdaan-diwali-yamdeepdan.html">Yamadeepdaan Pooja Importance - Hindu Blog</a></li>
+<li><a href="https://vedajyothi.com/en/articles/pitru-paksha-tarpanam-how-to-meaning-time-traditional-method">Pitru Paksha Tarpanam: Meaning, Time &amp; Traditional Method - VedaJyothi</a></li>
+<li><a href="https://yamantaka.org/practice/terminology/">Yamantaka Context and Terminology</a></li>
+<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6937873/">Integrated Yoga and Shirodhara for Anxiety - PMC</a></li>
+<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3705701/">Ayurvedic Concepts Related to Psychotherapy - PMC</a></li>
+<li><a href="https://visituttarakhand.org/nachiketa-tal-trek/">Nachiketa Tal Trek, Uttarkashi - Visit Uttarakhand</a></li>
+</ol>
+</div>
+        </article>
+    </div>
+
+</body>
+</html>
