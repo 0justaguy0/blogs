@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashtavakra&#x27;s Eight-Cornered Mudra</title>
+    <style>
+        :root {
+            --bg-color: #FDF9F1;
+            --text-color: #3E2723;
+            --indian-yellow: #E4A025;
+            --indian-orange: #E65100;
+            --accent-light: #FFECB3;
+            --ref-bg: #FFF3E0;
+        }
+
+        body {
+            font-family: 'Georgia', 'Nirmala UI', 'Mangal', serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(var(--bg-color) 80%, var(--accent-light) 100%);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #FFFFFF;
+            padding: 50px 60px;
+            box-shadow: 0 10px 30px rgba(62, 39, 35, 0.1);
+            border-top: 8px solid var(--indian-orange);
+            border-bottom: 8px solid var(--indian-yellow);
+            border-radius: 4px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed var(--indian-yellow);
+        }
+
+        h1 {
+            color: var(--indian-orange);
+            font-size: 2.5em;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        h2 {
+            color: var(--indian-yellow);
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--indian-orange);
+            padding-left: 15px;
+        }
+
+        h3, h4 {
+            color: var(--indian-orange);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        .intro-text::first-letter {
+            float: left;
+            font-size: 3.5em;
+            line-height: 0.8;
+            padding-right: 8px;
+            padding-top: 4px;
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        ul, ol {
+            margin: 0 0 24px 0;
+            padding-left: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ol {
+            list-style-position: outside;
+            padding-left: 2.2em;
+        }
+
+        ul li, ol li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        ol li {
+            padding-left: 0.35em;
+        }
+
+        ul li::before {
+            content: '\2022';
+            position: absolute;
+            left: 0;
+            top: 0.05em;
+            color: var(--indian-orange);
+            font-size: 1.2em;
+            line-height: 1;
+        }
+
+        ol li::marker {
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        strong {
+            color: var(--indian-orange);
+        }
+
+        .image-placeholder-container {
+            margin: 30px 0;
+            text-align: center;
+            font-style: italic;
+            color: #795548;
+            background-color: var(--accent-light);
+            padding: 20px;
+            border-radius: 4px;
+            border: 1px solid var(--indian-yellow);
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.98em;
+            background-color: #FFFDF8;
+        }
+
+        th, td {
+            border: 1px solid #F0D49B;
+            padding: 10px 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--ref-bg);
+            color: var(--indian-orange);
+        }
+
+        blockquote {
+            margin: 30px 0;
+            padding: 20px 25px;
+            background-color: var(--accent-light);
+            border-left: 5px solid var(--indian-orange);
+            font-style: italic;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px dashed var(--indian-yellow);
+            margin: 32px 0;
+        }
+
+        .references {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: var(--ref-bg);
+            border-radius: 8px;
+            font-size: 0.9em;
+        }
+
+        .references h2, .references h3 {
+            color: var(--text-color);
+            margin-top: 0;
+            border-bottom: 1px solid var(--indian-yellow);
+            padding-bottom: 10px;
+            border-left: 0;
+            padding-left: 0;
+        }
+
+        .references p, .references li {
+            margin-bottom: 12px;
+            word-wrap: break-word;
+        }
+
+        .references a {
+            color: var(--indian-orange);
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Ashtavakra&#x27;s Eight-Cornered Mudra</h1>
+        </header>
+
+        <article>
+<h3>1. The Boy Who Corrected the Vedas</h3>
+<p class="intro-text">In the Vana Parva of the Mahabharata, the five Pandava princes and Draupadi are walking through the forest on the first year of their twelve-year exile when they meet the sage Lomasha, who tells them the legend of Ashtavakra over three chapters. It is a story about a boy born broken who talks his way into the sacrificial court of a king, and it ends with the boy corrected by a river. But it is also, quietly, a manual for how to live.</p>
+<div class="image-placeholder-container">
+    <img src="blog135_Image.png" alt="Sage Ashtavakra seated in meditation at twilight beside a calm river, hands joined in the sealing gesture, an eight-cornered golden yoni mandala glowing on the ground while dim Saturn, Mars and Rahu are pushed back by golden light">
+</div>
+<blockquote><p>A grey head does not make an elder,</p><p>Not by years, not by grey hairs, not by riches nor by relations did the seers make the Law,</p><p>He who is great to us, is one who has learning.</p><p>— Ashtavakra, Vana Parva, Mahabharata, Book iii</p></blockquote>
+<p>The name Ashtavakra carries its own explanation. Ashtavakra is written Ashtavakra, and it means literally eight deformities: ashta, eight; vakra, crooked. The boy was not called that as a courtesy or a nickname. The name is a receipt for something that was done to him. The legend says his maternal grandfather was the Vedic sage Aruni, whose ashram in the Shatapatha Brahmana and Brihadaranyaka Upanishad tradition taught the Vedas; both his parents were students in that school. His father was Kahoda, his mother Sujata, and Sujata was Aruni's daughter.</p>
+<p>The cause is unusually precise, and it is the first thing the story asks you to notice. Kahoda was reciting the Vedas, and he erred in the intonation. The fetus in Sujata's womb spoke and corrected him. The father, unable to accept that his own unborn child had caught his mistake, cursed the child to be born crooked. Eight deformities followed, and the name followed the deformities. Whatever else this legend is doing, it is a story about what happens when a person cannot stand to be corrected, and about the cost of that refusal being paid by someone who has no say in it.</p>
+<h3>2. The Boy Who Walks Into a King's Sacrifice</h3>
+<p>Kahoda, needing wealth for a poor family, went to King Janaka of Videha and lost a debate to Vandin, and as a consequence was drowned in water. Sujata kept the fate of her husband secret from her son. When Ashtavakra grew up he learned of the curse and of his father's fate, and asked his mother to come with him to witness the great sacrifice of King Janaka. He was stopped at the gate because only learned Brahmans and kings were permitted inside, and he was only ten years old. His eloquence impressed the king, who allowed him in.</p>
+<p>Then came the debate with Vandin, and Ashtavakra won it. He asked the king to subject Vandin to the same fate Vandin had inflicted on the Brahmans who drowned. Vandin then revealed that he was the son of Varuna, and explained that he had drowned those Brahmans as part of a ritual his father was performing for twelve years, which required a large number of Brahmans. By then the ritual had been completed, and all the Brahmans he had submerged, including Kahoda, were freed. On the way home Kahoda asked his son to take a dip in the River Samanga, and when Ashtavakra came out of the river all of his deformities were cured.</p>
+<p>Note what the river does and does not do. It does not reward the boy. It simply removes what was done to him once the thing that was actually wrong had been undone. The order matters: the freeing of the drowned Brahmans comes first, the dip comes second. Ashtavakra's straightness is not a reward for his victory in the debate; it is a repair of a harm that was never his fault.</p>
+<h4>The Test by Numbers</h4>
+<p>In the Puranic telling the scene is sharper. Ashtavakra and Shvetaketu make their way to Janaka's palace, and the gatekeeper tries to keep the young boy out. Ashtavakra persuades him that he is well versed in the scriptures and therefore old, and is admitted. Janaka tests him with cryptic questions, which Ashtavakra answers easily, then sets him against Vandin. The two alternately compose six extempore verses on the numbers one to twelve. When they reach number thirteen, Vandin manages only the first half of a verse, and Ashtavakra supplies the second half and so wins the debate. The whole contest is fought with enigmas and implied meanings built on the numbers one to thirteen.</p>
+<p>That is the last image the tradition leaves us with: a ten-year-old boy defeating a professional debater on the numbers one to thirteen. Whatever the legend was doing in its own century, it lands on a proposition that has never gone out of fashion in India, and that the Ashtavakra Gita states without embarrassment.</p>
+<h3>3. The Ashtavakra Gita: Twenty Chapters on the Only Reality</h3>
+<p>Ashtavakra is credited as the author of the Ashtavakra Gita, also called the Ashtavakra Samhita, a classical Vedanta text presented as a dialogue between the sage and Janaka, king of Mithila. Its subject is the metaphysical nature of existence and the meaning of individual freedom. Its thesis is that there is only one Supreme Reality, Brahman; that the entirety of the universe is one and a manifestation of that reality; that everything is interconnected; and that all Selves, all Atmans, are part of that one. Individual freedom, the text insists, is not the end point but an innate starting point.</p>
+<p>The Gita also insists on the unreality of the external world and the absolute oneness of existence. Commentators note that it mentions no morality and no duties, and that it dismisses names and forms as signs of ignorance. This is why the text sounds unusual in a tradition otherwise dense with instruction, and it is also why the text is so easy to mistake for a doctrine of escape. The Ashtavakra Gita does not offer a way out of the world. It offers a way of being in the world without being made of it.</p>
+<blockquote><p>If you think you are free, You are free.</p><p>If you think you are bound, You are bound.</p><p>Meditate on the Self.</p><p>One without two, Exalted awareness.</p><p>— Ashtavakra Gita 1.4–14, translator Thomas Byrom</p></blockquote>
+<h4>The Structure of the Text</h4>
+<p>The Ashtavakra Gita comprises twenty chapters, and their titles alone map the argument. It opens with the Self as the all-pervading witness, moves through the marvel of the infinite Self beyond nature, the identity of Self in all and all in Self, the knower and the non-knower, the stages of dissolution, the tranquil boundless ocean of the Self, freedom, dispassion, the pure intelligence of the Self, and natural dissolution of the mind. It ends with the unborn Self that is Brahman, self-abidance through the obliteration of the world, absolute aloneness, and the state in which the individual has attained salvation while still alive.</p>
+<table>
+<thead><tr><th>Chapter</th><th>Title</th><th>Sense</th></tr></thead>
+<tbody>
+<tr><td>I</td><td>Saksi</td><td>The Self as the all-pervading witness</td></tr>
+<tr><td>II</td><td>Ascaryam</td><td>The marvel of the infinite Self beyond nature</td></tr>
+<tr><td>III</td><td>Atmadvaita</td><td>The Self in all and all in the Self</td></tr>
+<tr><td>IV</td><td>Sarvamatma</td><td>The knower and the non-knower of the Self</td></tr>
+<tr><td>V</td><td>Laya</td><td>The stages of dissolution of consciousness</td></tr>
+<tr><td>VI</td><td>Prakrteh Parah</td><td>The irrelevance of dissolution of consciousness</td></tr>
+<tr><td>VII</td><td>Santa</td><td>The tranquil and boundless ocean of the Self</td></tr>
+<tr><td>VIII</td><td>Moksa</td><td>Absolute and eternal freedom from all assumed bondages</td></tr>
+<tr><td>IX</td><td>Nirveda</td><td>Indifference</td></tr>
+<tr><td>X</td><td>Vairagya</td><td>Dispassion</td></tr>
+<tr><td>XI</td><td>Cittrupa</td><td>The Self as pure and radiant intelligence</td></tr>
+<tr><td>XII</td><td>Svabhava</td><td>The ascent of contemplation</td></tr>
+<tr><td>XIII</td><td>Yathasukham</td><td>Transcendent bliss</td></tr>
+<tr><td>XIV</td><td>Isvara</td><td>The natural dissolution of the mind</td></tr>
+<tr><td>XV</td><td>Tattvam</td><td>The unborn Self, that is Brahman</td></tr>
+<tr><td>XVI</td><td>Svasthya</td><td>Self-abidance through the obliteration of the world</td></tr>
+<tr><td>XVII</td><td>Kaivalya</td><td>Absolute aloneness of the Self</td></tr>
+<tr><td>XVIII</td><td>Jivanmukti</td><td>Salvation attained while still alive</td></tr>
+<tr><td>XIX</td><td>Svamahima</td><td>The majesty of the Self</td></tr>
+<tr><td>XX</td><td>Akincanabhava</td><td>The transcendence of the Self</td></tr>
+</tbody>
+</table>
+<h4>How Old Is the Text?</h4>
+<p>Nobody knows, and the disagreement is instructive. Radhakamal Mukerjee dated the book to the period immediately after the Bhagavad Gita, at c. 500–400 BCE. J. L. Brockington, emeritus professor of Sanskrit at the University of Edinburgh, places it much later, supposing it was written either in the eighth century CE by a follower of Adi Shankara, or in the fourteenth century during a resurgence of Shankara's teaching. Sri Swami Shantananda Puri argues that since the book contains the seed of the theory of non-creation, Ajata Vada, developed later by Gaudapada in the Mandukya Karika in the sixth century CE, the book must come from a period prior to Gaudapada and therefore prior to Shankara. The honest answer is that the Ashtavakra is a name attached to a text whose layers are not cleanly separable.</p>
+<p>The dating dispute matters for the remedial material at the end of this article, because it tells you how much authority to place under any single line. The myth of Ashtavakra is old and cross-textual. The Ashtavakra Gita is a composite. The yoga material that follows is much later, and it says so. What survives across all of it is a method rather than a doctrine: withdraw the senses, steady the attention, and let the noise in the sky have less authority over you.</p>
+<h3>4. Pratyahara: The Fifth Limb, and the Discipline of the Sealed Sense</h3>
+<p>The remedy this tradition actually offers is not a charm against a planet. It is a practice. Pratyahara is the fifth of the eight stages of Patanjali's Ashtanga Yoga, set out in the Yoga Sutras of Patanjali composed in the second century BCE. Patanjali places it as the bridge between the bahiranga, the external aspects of yoga, namely Yama, Niyama, Asana and Pranayama, and the antaranga, the internal yoga. With pratyahara actualised, a practitioner can engage with Samyama. At this stage the consciousness of the individual is internalised so that the sensations from the senses of taste, touch, sight, hearing and smell do not reach their respective centres in the brain, which leads onward to Dharana, Dhyana and Samadhi, and finally to the recognition of kaivalyam, the aim of Patanjali's practice.</p>
+<p>The word is built from prati, a preposition meaning towards, and ahara, gathering. Together they mean checking the outgoing powers of the mind and freeing it from the thraldom of the senses. That is an exact description of the thing Ashtavakra did at ten years old, and it is also the thing the story is secretly about for the whole of its length: a child who would not let the noise of the world decide what was true.</p>
+<ul>
+<li>Indriya pratyahara, the withdrawal of the senses, deals with the sensory overload that hinders the collection of the mind. One common practice is to bring the attention inward towards the breath and observe it without trying to control it, because the connection with external stimuli is gradually severed. Another is to concentrate on the point between the eyebrows, the Ajna chakra or third eye.</li>
+<li>Prana pratyahara, the withdrawal of prana, requires mastery over the flow of prana, since that is what drives the senses. Control of the senses requires control over the flow of prana, and it is brought about by various practices including bringing the entire focus to a single point in the body.</li>
+<li>Karma pratyahara, the control of action, entails not just control of the motor organs but right action, surrender of every action to the divine, and performing work as an act of service.</li>
+<li>Mano pratyahara, the withdrawal of the mind, is practised by consciously withdrawing attention from anything unwholesome and distracting, and by directing it inwards.</li>
+</ul>
+<p>The method for achieving it is unglamorous and specific. Reduce physical stimuli first, then concentrate on one sense, such as hearing. The mind has a natural tendency to roam between sensory inputs; when there are no longer other significant inputs, the mind tires of hearing and is forced to turn inward. A meditation seat such as Padmasana, the lotus position, combined with pranayama breath-control and kumbhaka, breath retention, and progressively subtler internal objects of focus, complete the work. At the start the objects are gross and directly available to sense perception: the points of focus used to accompany asana practice, including the space between the eyebrows, the tip of the nose, or the navel. More subtle objects follow, such as the chakras with their position, colour and number of petals, and visualisation.</p>
+<h4>The Shandilya Upanishad and the Fivefold Practice</h4>
+<p>The Shandilya Upanishad, one of the twenty Yoga Upanishads in the four Vedas and attached to the Atharvaveda, is among the most detailed Upanishadic texts dedicated to yoga. It describes ten Yamas, ten Niyamas, eight Asanas, three Pranayamas, five types of Pratyaharas, five kinds of Dharana, two types of Dhyana and one Samadhi. It is listed at number 58 in the serial order of the Muktika enumerated by Rama to Hanuman in the modern anthology of 108 Upanishads, and it is also known as the Shandilya Yoga Sutras. Gavin Flood dates it to around 100 BCE to 300 CE; Roy Eugene Davis suggests it probably pre-dates Patanjali's Yoga Sutras, while Georg Feuerstein suggests it probably post-dates them. Thomas McEvilley places it in the neighbourhood of the Dhyanabindu Upanishad and before the Hatha Yoga Pradipika, the Kaulajnananirnaya and the Shiva Samhita.</p>
+<h3>5. The Lineage of the Mudra: From Kapila to Gorakhnath</h3>
+<p>The mudras that this practice uses come from a long line of texts, and it is worth seeing how long, because a remedy that has survived twelve centuries of revision is a different kind of object from one invented this morning. The Dattatreyayogasastra, a Vaishnava text probably composed in the thirteenth century, is the earliest text to provide a systematised form of Hatha yoga and the earliest to place its techniques under the name Hatha. It teaches an eightfold yoga identical with Patanjali's eight limbs, which it attributes to Yajnavalkya and others, and it teaches eight mudras that it says were undertaken by the rishi Kapila and other rishis. Its list is long: mahamudra, mahabandha, khecharimudra, jalandharabandha, uddhiyanabandha, mulabandha, viparitakarana, vajroli, amaroli and sahajoli.</p>
+<p>Before that, the c. 11th century Amritasiddhi, the earliest substantial text describing Hatha yoga although it does not use the term, and a tantric Buddhist work making use of metaphors from alchemy, teaches mahabandha, mahamudra and mahavedha as a means to preserve amrita, or bindu, the vital energy in the head from dripping down the central channel and being burned by the fire at the perineum. A manuscript states its date as 1160. The Amaraugha of the twelfth century, attributed to Goraknath, describes three bandhas to lock the vital energy into the body, adding the raising of Kundalini. The Vivekamartanda, an early Nath text of the thirteenth century also attributed to Goraknath, teaches nabhomudra, that is khecharimudra, mahamudra, viparitakarana and the three bandhas, and it teaches six chakras and the raising of Kundalini by fire yoga.</p>
+<ul>
+<li>The Goraksasataka, a Nath text of the same period, teaches shakticalanimudra, the practice of stimulating Sarasvati, which is done by wrapping the tongue in a cloth and pulling on it, to stimulate the goddess Kundalini said to dwell at the other end of the central channel. It does not mention the preservation of bindu, but says that liberation is achieved by controlling the mind through controlling the breath.</li>
+<li>The Yogabija of the fourteenth century teaches the three bandhas and shakticalanimudra for the purpose of awakening Kundalini.</li>
+<li>The Shivasamhita, a text of the fourteenth or fifteenth century, summarises Saiva non-dualism in its first chapter and then describes yoga, the importance of a guru, various asanas and mudras, and the siddhis to be attained.</li>
+<li>The Hathayogapradipika, one of the most influential texts of Hatha yoga, was compiled by Svatmarama in the fifteenth century CE. It lists 35 great yoga siddhas beginning with Adi Natha, that is Shiva, followed by Matsyendranath and Gorakshanath, and it covers shatkarma, the six acts of self purification, 15 asanas, pranayama, kumbhaka, mudras, meditation, chakras, kundalini and nadanusandhana.</li>
+<li>The Yogacintamani, an early seventeenth-century text on the eight auxiliaries of yoga, describes 34 asanas in its asana section, and variant manuscripts add another 84.</li>
+<li>The Hatha Ratnavali, a seventeenth-century text, states that Hatha yoga consists of ten mudras, eight cleansing methods, nine kumbhakas and 84 asanas.</li>
+<li>The Gheranda Samhita, a seventeenth- or eighteenth-century text, presents Hatha yoga as ghatastha yoga, vessel yoga, in which body and mind carry the soul. It teaches a seven-limbed yoga, in contrast to the eight-limbed yoga of Patanjali, the six-limbed yoga of the Goraksha Samhita and the four-limbed yoga of the Hatha Yoga Pradipika. It presents 6 cleansing methods, 32 asanas, 25 mudras and 10 pranayamas, in seven chapters containing 351 shlokas.</li>
+<li>The Jogapradipika, an eighteenth-century Braj-language text, presents Hatha yoga simply as yoga, with 6 cleansing methods, 84 asanas, 24 mudras and 8 kumbhakas.</li>
+</ul>
+<p>Two names deserve a pause. Gorakhnath, who is credited as the founder of the Nath monastic movement in the early eleventh century, was one of the two disciples of Matsyendranath, and one of the nine Navnath saints in a lineage of nine masters with Shiva as the first direct teacher. His followers are known as Jogi, Gorakhnathi, Darshani or Kanphata, and in Tamil Nadu the Siddhar tradition reveres him as one of the eighteen Siddhars of old. And Adi Natha, who heads the list of 35 great yoga siddhas in the Hathayogapradipika, is Shiva himself.</p>
+<p>The mudras themselves are used in conjunction with pranayama, generally while seated in Padmasana, Ardhasiddhasana, Sukhasana or Vajrasana, to stimulate different parts of the body and mind, and to affect the flow of prana in the body. The seals are not decorative gestures. They are instruments for changing where the attention goes.</p>
+<h3>6. The Two Malefics: Shani and Rahu</h3>
+<h4>Shani, the God of Karma and Delay</h4>
+<p>Shani is the divine personification of the planet Saturn in Hinduism and one of the nine heavenly objects, the Navagraha, in Hindu astrology. He is a male deity of the Puranas whose iconography is a figure with a dark complexion carrying a sword or danda, a sceptre, and sitting on a buffalo or sometimes on a crow. He is the god of karma, time and retribution, and he delivers results depending upon one's thoughts, speech and deeds. His day is Saturday, his colours are blue and black, his abode is Shaniloka, and his numbers are eight, seventeen and twenty-six. His mount includes the buffalo, lion, deer, donkey, horse and dog, and in birds the crow and the vulture. His father is Surya and his mother is Chhaya. Among the birds he is canonically represented riding a large crow or a vulture, and he holds a bow, an arrow, an axe and a trident.</p>
+<p>As a planet Shani appears in the Sanskrit astronomical tradition from the fifth century onwards: in the Aryabhatiya of Aryabhatta, the sixth-century Romaka of Latadeva and the Pancha Siddhantika of Varahamihira, the seventh-century Khandakhadyaka of Brahmagupta, and the eighth-century Sisyadhivrddida of Lalla, where he is referred to by names such as Ara, Kona and Kroda. The Surya Siddhanta, dated somewhere between the fifth and tenth century, presents its chapters on the planets as divine knowledge linked to deities. Shani and the Sun are also the traditional ruling planets of the zodiac sign of Aquarius. He is believed to be an incarnation of Krishna on the authority of the Brahma Vaivarta Purana, in which Krishna says that he is Shani among planets.</p>
+<p>The remedy tradition around him is unusually consistent, because Shani himself is a remedy. In Vedic astrology he is the cosmic teacher of discipline, duty and karma. Rather than only punishing, he tests individuals through delays and hard work to build resilience and guide them toward spiritual growth. He is considered the most malefic planet that brings restrictions and misfortunes, and also the most feared among the astrological gods, and according to the same traditions he is known to be milder when worshipped. This is the single most useful thing to understand about a Shani remedy: the planet is the lesson and the worship is the reminder.</p>
+<h4>Rahu, the Head Without a Body</h4>
+<p>Rahu is one of the nine major celestial bodies, the navagraha, and the king of meteors. It represents the ascent of the Moon in its precessional orbit around the Earth, the north lunar node, and it is paired with Ketu, the south lunar node, as a shadow planet that causes eclipses. In Hindu astrology Rahu and Ketu have an orbital cycle of 18 years and are always 180 degrees from each other, in orbit and in the birth chart alike. This corresponds to a saros, a period of approximately 223 synodic months, or about 6585.3211 days, or 18 years, 11 days and 8 hours, which can be used to predict eclipses of the Sun and Moon. Rahu rules the zodiac sign of Aquarius together with Shani. Its numbers are four, thirteen, twenty-two and thirty-one, its mount is the black lion, its day is Saturday during Rahu kala, and its festival is Amavasya or Rahu kala.</p>
+<p>Its origin story is the reason Rahu works on the mind rather than only on the calendar. In the remotest periods of the earliest of time, the devas and asuras churned the ocean of milk to extract the amrita, the elixir of immortality. Mohini, the female avatar of Vishnu, began distributing the amrita to the devas, but one of the asuras, Svarbhanu, sat in the row of the devas and drank the amrita. Surya and Chandra noticed him and informed Mohini, but by then Svarbhanu had already become immortal. Vishnu, as Mohini, cut off Svarbhanu's head with his discus, the Sudarshana Chakra. Svarbhanu could not die, but his head was separated from his body: the head became Rahu and the body became Ketu. Rahu and Ketu became bitter enemies of Surya and Chandra for exposing the deception, and Rahu pursues them and attempts to consume the Sun and Moon. Since Rahu is the head without the body, the Sun and Moon exit from his throat when he tries to swallow them, and this recurring cycle creates the grahana, the eclipse, which is the temporary revenge of Rahu.</p>
+<p>Because of the obscuration that eclipse phenomena produce, Rahu in Hindu astrology is associated with deceit, delusion, corruption, impiety, materialism, hedonism and toxicity. It is associated with swindlers, jokers, criminals, and afflictions such as addiction and trauma. Like Ketu, Rahu is an enemy of the Sun and Moon, and it is generally considered a malefic planet. In more favourable configurations Rahu may signify elements of science, technology, ecology, entertainment, counterculture, humour and craft. The two nodes are always in retrograde motion, and they always appear in diametrically opposite houses in horoscopes.</p>
+<p>This is where the Ashtavakra method becomes genuinely useful rather than merely calming. Rahu's themes are cognitive: deception, delusion, the addictive pull of what cannot satisfy. Pratyahara is a practice of refusing to let sensory input reach the centres that decide what is real. A person who practises it is not fighting Rahu with symbolism; they are removing the mechanism Rahu actually works through.</p>
+<h3>7. The working form: Putting the Seal Into Your Day</h3>
+<p>The working form: sit in Padmasana or Sukhasana on a stable seat with the spine straight and the shoulders relaxed. Bring the tongue to the roof of the mouth behind the front teeth, as in khecharimudra, and let the jaw rest closed. Join the thumb and the first two fingers of each hand, or simply rest the hands on the knees, and hold the yoni or shakti mudra, the seal of the womb, which closes the lower gate and steadies the breath. Then watch the breath at the tip of the nose for ten minutes without changing it, and let every sound that arrives from outside arrive and pass without being named. This is the eight-cornered discipline: eight directions of attention gathered into one centre, exactly as the number in Ashtavakra's name gathers the eight deformities into one name.</p>
+<p>The working form: once the breath is steady, run the five-sense withdrawal in order. Sound first, because hearing is the sense that reaches furthest into an open mind; then sight, by keeping the eyes closed and letting the after-image fade; then taste and smell, by rinsing the mouth and breathing through the nose without scent; then touch, by resting the hands open on the knees. Spend one minute on each, and if a sense surges back, do not fight it, return to the breath. The Ashtavakra Gita puts the same instruction in a single line: set your body aside and sit in your own awareness.</p>
+<p>The working form: on Saturdays, and for the whole period of a Shani transit in your chart, add the Shani discipline of order rather than effort. Shani answers to regularity, not intensity. Fix one task that you have been avoiding, write it down with a date, and finish it on schedule even when the mood to begin is absent. Dress in blue or black on the day. Light a sesame oil lamp at dusk and recite the Shani mantra, Om Sham Shanaishchara Namah, one hundred and eight times, sitting quietly without looking at the flame directly. Offer water to a black buffalo, or to the crow that feeds near your home, and remember that Shani is the god of justice: the offering is not a bribe, it is the recognition that what is delayed has a reason.</p>
+<p>The working form: for Rahu, work on the recognition rather than on the planet. Sit at dusk on Amavasya, and before you begin, name three places where you have been told a comfortable story that you have never checked. Then recite the Rahu mantra, Om Viprachitti putra Simhika putra Om Navagraha Rahuya Namah, and while reciting, watch the arising of the urge to check whether it is true, without acting on it. Learn to sit with the impulse to grab the next sensation and let it pass. That single skill, practised daily, is a better remedy for Rahu than any object, because Rahu is the impulse itself and the impulse is defeated by the delay.</p>
+<p>The working form: keep the practice short enough that you never have an excuse. Ten minutes of seated seal, five minutes of the five-sense withdrawal, and one line written each evening naming what you noticed in yourself that day. Do it for a full lunar cycle of sixteen days before you judge it, and do not judge it by whether you feel different but by whether you catch yourself reacting more slowly. Ashtavakra cured eight deformities in one morning in the River Samanga. Nobody in the story was made perfect by a single long retreat. The Aranya Kanda version has him still waiting to be released by Rama in the Treta Yuga. Practice is not a miracle; it is a repair that works at the speed of repetition.</p>
+<h3>8. What This Is, and What It Is Not</h3>
+<p>It is worth being plain about the status of all of this. The Ashtavakra myth is an epic narrative preserved across the Ramayana, the Mahabharata and the Puranas, and it is a story about a child, a curse, a debate and a river. The Ashtavakra Gita is a Vedanta text whose date is genuinely disputed between the sixth century BCE and the fourteenth century CE. The yoga material that forms the actual method is medieval, spanning the eleventh to the eighteenth century, and it was written by named people, in named places, for named students. That is not a weakness. A tradition that can tell you exactly which text, which chapter and which century each instruction comes from is doing something quite different from a tradition that asks you to trust it.</p>
+<p>The Ashtavakra is also a character in the first act of the Sanskrit play Uttara-Ramacaritam, composed by Bhavabhuti in the eighth century, and the second half of the 571st volume of the Amar Chitra Katha, first published in 1976, is titled Dhruva and Ashtavakra. A puppet play on Ashtavakra was staged by the Dhaatu Artist group in Ranga Shankara in Bangalore in 2010. The Ashtavakra Gita became widely popular after Sri Sri Ravi Shankar gave a commentary in Bangalore in 1991. These are ordinary cultural facts, and they matter: a figure who shows up in a play, a comic book and a puppet performance is a figure who is still doing work in the world.</p>
+<p>What the story asks of you is not belief. It asks for a habit. Ashtavakra entered a room full of learned men at ten years old and was allowed to stay because of what he could say and do in it. The prayer for a Shani or Rahu transit is not that the planet should leave. It is that you should arrive at your own assembly with your attention still yours.</p>
+
+<div class="references">
+<h2>Sources</h2>
+<ol>
+<li><a href="https://en.wikipedia.org/wiki/Ashtavakra">Ashtavakra - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Ashtavakra_Gita">Ashtavakra Gita - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Pratyahara">Pratyahara - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Shandilya_Upanishad">Shandilya Upanishad - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Hatha_Yoga">Hatha Yoga - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Gheranda_Samhita">Gheranda Samhita - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Gorakhnath">Gorakhnath - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Mudras">Mudras - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Rahu">Rahu - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Shani">Shani - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Janaka">Janaka - Wikipedia</a></li>
+</ol>
+</div>
+        </article>
+    </div>
+
+</body>
+</html>
