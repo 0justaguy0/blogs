@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satyakama&#x27;s Four Direction Watchers</title>
+    <style>
+        :root {
+            --bg-color: #FDF9F1;
+            --text-color: #3E2723;
+            --indian-yellow: #E4A025;
+            --indian-orange: #E65100;
+            --accent-light: #FFECB3;
+            --ref-bg: #FFF3E0;
+        }
+
+        body {
+            font-family: 'Georgia', 'Nirmala UI', 'Mangal', serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(var(--bg-color) 80%, var(--accent-light) 100%);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #FFFFFF;
+            padding: 50px 60px;
+            box-shadow: 0 10px 30px rgba(62, 39, 35, 0.1);
+            border-top: 8px solid var(--indian-orange);
+            border-bottom: 8px solid var(--indian-yellow);
+            border-radius: 4px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed var(--indian-yellow);
+        }
+
+        h1 {
+            color: var(--indian-orange);
+            font-size: 2.5em;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        h2 {
+            color: var(--indian-yellow);
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--indian-orange);
+            padding-left: 15px;
+        }
+
+        h3, h4 {
+            color: var(--indian-orange);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        .intro-text::first-letter {
+            float: left;
+            font-size: 3.5em;
+            line-height: 0.8;
+            padding-right: 8px;
+            padding-top: 4px;
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        ul, ol {
+            margin: 0 0 24px 0;
+            padding-left: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ol {
+            list-style-position: outside;
+            padding-left: 2.2em;
+        }
+
+        ul li, ol li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        ol li {
+            padding-left: 0.35em;
+        }
+
+        ul li::before {
+            content: '\2022';
+            position: absolute;
+            left: 0;
+            top: 0.05em;
+            color: var(--indian-orange);
+            font-size: 1.2em;
+            line-height: 1;
+        }
+
+        ol li::marker {
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        strong {
+            color: var(--indian-orange);
+        }
+
+        .image-placeholder-container {
+            margin: 30px 0;
+            text-align: center;
+            font-style: italic;
+            color: #795548;
+            background-color: var(--accent-light);
+            padding: 20px;
+            border-radius: 4px;
+            border: 1px solid var(--indian-yellow);
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.98em;
+            background-color: #FFFDF8;
+        }
+
+        th, td {
+            border: 1px solid #F0D49B;
+            padding: 10px 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--ref-bg);
+            color: var(--indian-orange);
+        }
+
+        blockquote {
+            margin: 30px 0;
+            padding: 20px 25px;
+            background-color: var(--accent-light);
+            border-left: 5px solid var(--indian-orange);
+            font-style: italic;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px dashed var(--indian-yellow);
+            margin: 32px 0;
+        }
+
+        .references {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: var(--ref-bg);
+            border-radius: 8px;
+            font-size: 0.9em;
+        }
+
+        .references h2, .references h3 {
+            color: var(--text-color);
+            margin-top: 0;
+            border-bottom: 1px solid var(--indian-yellow);
+            padding-bottom: 10px;
+            border-left: 0;
+            padding-left: 0;
+        }
+
+        .references p, .references li {
+            margin-bottom: 12px;
+            word-wrap: break-word;
+        }
+
+        .references a {
+            color: var(--indian-orange);
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Satyakama&#x27;s Four Direction Watchers</h1>
+        </header>
+
+        <article>
+<h3>1. The boy who told the truth before he knew anything</h3>
+<p class="intro-text">Start with the strangest thing about Satyakama Jabala, because it is the part almost nobody tells you, and it is the whole key to what follows.</p>
+<div class="image-placeholder-container">
+    <img src="blog138_Image.png" alt="Satyakama Jabala learning from the bull, fire, swan and diving bird, beside the four direction watchers of the compass">
+</div>
+<p>He was not born into a lineage. He was a boy who asked his mother where he came from, and she had to say: I do not know. She had moved from place to place in her youth, attending on different people in their service, and she never learned who his father was. So she gave him the only name she could: <strong>Satyakama Jabala</strong> — "Jabala" as her family name, and "Satyakama" because he wanted the truth. As the Upanishad puts it, she told him that in this world, all that she has is him, and he is all that he has. So you shall be called Satyakama Jabala.</p>
+<p>Then he did the thing that made the story worth telling down to the present day. He walked to a teacher — Haridrumata Gautama — asked permission to live in his school as a brahmachari, and when the teacher asked him the standard first question, <em>what family do you come from</em>, he told the truth again. The record of the Upanishad is blunt about the teacher's reaction: <strong>the boy's honesty is the mark of a brahmaṇa, a true seeker of the knowledge of Brahman.</strong> Not the birth. The honesty.</p>
+<p>Notice what this establishes before a single remedy is said. In this tradition, the qualification for the knowledge is not ancestry — it is the refusal to hide. And the boy's very name is a declaration of intent: <em>Satyakama</em>. The one who wants the truth. The teacher renamed him <strong>Patan</strong>, and a Vedic school and the <strong>Jabala Upanishad</strong> — a treatise on sannyasa, the life of the renouncer — carry his name. His student was <strong>Upakosala Kamalayana</strong>.</p>
+<p>The boy was then sent away to tend <strong>four hundred cows</strong>, and told to return when they had multiplied to a thousand. That is the whole assignment. No list of texts, no qualifications, no lineage certificate. Four hundred animals, and the number one thousand.</p>
+<h3>2. What the four teachers actually were</h3>
+<p>When the cows had multiplied to a thousand, Satyakama went back and asked his teacher the remaining questions. And the answers came from four voices that no one would have put on a syllabus.</p>
+<p>The Upanishad records his conversations with a <strong>bull</strong>, a <strong>fire</strong>, a <strong>swan</strong> (hamsa), and a <strong>diving bird</strong> (madgu). They are not decorative animals. Each one <em>is</em> a power: the bull is <strong>Vayu</strong> (the wind), the fire is <strong>Agni</strong>, the swan is <strong>Aditya</strong> (the sun), and the diving bird is <strong>Prana</strong> — the vital breath itself. The bird that dives and comes back up is the emblem of the breath that goes down into the body and returns.</p>
+<p>And from these four, Satyakama learned that the forms of Brahman are present in <strong>all four cardinal directions</strong> (north, south, east, west), in the <strong>world-bodies</strong> (earth, atmosphere, sky, ocean), in the <strong>sources of light</strong> (fire, sun, moon, lightning), and <strong>in man himself</strong> (breath, eye, ear, mind).</p>
+<p>That last set is the one that matters for remedial work. The four teachers do not teach him about distant gods. They teach him that the same four powers that hold the compass are the ones inside your chest and behind your eyes. Wind, fire, sun, breath — one set of four, running through the sky and through the body at the same time.</p>
+<p>This is the whole achievement: <strong>Satyakama learned the direction-system of the cosmos from the four beings that were already around him, and learned that it was the same system inside him.</strong> He did not go somewhere to get it. He tended animals, and the animals taught him.</p>
+<h3>3. The four watchers, and what each one rules</h3>
+<p>Now the part that has direct, practical consequence for anyone doing remedial work.</p>
+<p>In the Vedic scheme Satyakama received, the four cardinal directions are not empty space. Each has a <strong>watcher</strong> — a deity that holds that quarter and begets from it. The system that grew out of this is the <strong>dikpala</strong> system: the guardians of the directions, called the <strong>lokapalas</strong> in Hinduism for the cardinal four, and the <strong>ashta-dikpala</strong> (eight) when the intermediate quarters are added, with <strong>Brahma</strong> at the zenith in the centre. The intermediate quarters have their own names and their own guardians:</p>
+<ul>
+<li><strong>Northeast — Isana</strong></li>
+<li><strong>Southeast — Agni</strong></li>
+<li><strong>Northwest — Vayu</strong></li>
+<li><strong>Southwest — Nirrti</strong></li>
+<li><strong>Zenith — Brahma (urdhva)</strong>, <strong>Nadir — Adhah</strong></li>
+</ul>
+<p>And in the cardinal scheme, the great four are the ones that carry the ritual weight: <strong>Yama as the guardian of the south</strong>, with Varuna, Kubera and Indra ranged around him under Brahma at the centre. Yama — the god of death and justice, also called <strong>Kala</strong> (time) and <strong>Dharmaraja</strong> (lord of dharma), the first mortal who died and therefore the ruler of the departed, the judge who assigns souls to the realm of the Pitris, to Naraka, or back to the earth — is a <strong>direction guardian</strong>. And Vayu, who taught the lesson through the bull, is the <strong>Dikpala Vayu</strong>, the northwest guardian, whose weapon in that office is the <strong>goad</strong>.</p>
+<p>Read that list again against the four teachers and the symmetry becomes exact. <strong>Yama holds the south.</strong> <strong>Agni holds the southeast.</strong> <strong>Vayu holds the northwest.</strong> These are not metaphors floating free of the ritual system — they are the roster of the guardians you face when you sit down to pray.</p>
+<h3>4. Why this is the Vedic root of dig bala</h3>
+<p>Here is where this stops being a story and becomes a method, and this is why Satyakama's education is worth an article in a remedial astrology app rather than a piece of religious history.</p>
+<p>In classical Jyotisha, <strong>dig bala</strong> — directional strength — is the principle that a planet gains power from the direction it rules, and loses power in the direction it does not. The standard scheme assigns the planets' directional strengths to the cardinal quarters, with <strong>Sun and Mars strong in the south, Moon and Venus in the east, Jupiter and Mercury in the north, Saturn in the west</strong>, and it works by placing the planet in one of the four angles — the first, fourth, seventh or tenth house from the ascendant.</p>
+<p>That grid has exactly the shape of Satyakāma's four-watchers: four cardinal directions, each with a power that rules it, each power begetting a further element from its own quarter. The remedy logic that follows is straightforward and genuinely usable:</p>
+<p><strong>To strengthen a planet, you do not do a rite at large. You do it in that planet's direction, facing that direction, at the hour that planet rules.</strong></p>
+<p>That is a ritual with a spatial axis, and it is much less commonly taught than the mantra-and-gem default. Most people performing Shani remedies have never been told which way to face.</p>
+<h3>5. The working form: how to build the direction into your remedy</h3>
+<p>Here is the protocol, drawn straight out of the story so that it is actually actionable.</p>
+<p><strong>The working form:</strong> <strong>the direction is the prescription.</strong> Before you recite a single mantra, write down the planet that is actually causing your problem — the graha that is debilitated, afflicted, or running the transit that is squeezing you. Then write down the direction that graha rules. Do the rite <strong>facing that direction</strong>, and if the rite involves an offering, <strong>place the offering in that quarter of the space you are working in</strong>. Not the direction that "feels" right. The direction of the planet that is in trouble. The direction that the deity who is that planet's guardian holds.</p>
+<p><strong>The working form:</strong> <strong>the four quarters and their holders.</strong> South is <strong>Yama</strong>, and Yama is Kala — time — and Dharmaraja, the lord of dharma and the judge of the dead. Southeast is <strong>Agni</strong>, the fire. Northwest is <strong>Vayu</strong>, the wind, with the goad. Northeast is <strong>Isana</strong>, the northeast. When Saturn's window is the problem, note that Saturn is the western planet, and the western quarter is also the one held in the Yama–Varuna–Kubera–Indra roster around Brahma. Yama holds the south in that same roster. So the two directions that carry death-and-time and the ones that carry the wealth and the war sit at the two ends of the same axis, and Saturn — the karaka for hard work, discipline, old age and authority — is the graha that most needs the work done in a fixed direction. Pick a fixed direction for a fixed planet and keep it for the whole window. A remedy that changes its facing every week is a remedy with no axis.</p>
+<p><strong>The working form:</strong> <strong>the teacher, not the lineage.</strong> Satyakama's qualification was established by his answer to a single question about who he was, and the answer was the truth. In practical remedial terms: the tradition does not ask you to prove your ancestry to be helped. It asks you to say what is actually the case. Write down the real condition of the thing you are trying to fix — not the version you would like to present — and let that be the basis of the rite. This is the oldest documented instance of a principle that every good remedy depends on: <strong>the diagnosis must be honest or the dose is wrong.</strong> A remedy built on a flattering diagnosis treats the wrong planet, and no amount of japa in the right direction fixes a planet you were not actually treating.</p>
+<p><strong>The working form:</strong> <strong>four hundred and one thousand.</strong> His assignment was four hundred cows, and the return condition was a thousand. That is a structure, not a metaphor: the tradition asks you to begin with a countable, bounded thing and to continue until a larger countable thing is achieved. Do the same with the remedy. Set the count before you start. If Saturn has entered the sign before your Moon, the Sade Sati window is <strong>seven and a half years</strong>, and Saturn spends roughly <strong>two and a half years in each sign</strong>. So the count is already given to you: this sign, this length. You do not need to invent the discipline. You need to accept the count that the transit has already assigned. Tending four hundred and returning with a thousand is the shape; the transit supplies the numbers.</p>
+<p><strong>The working form:</strong> <strong>the bird that dives.</strong> The last of the four teachers was the diving bird — the emblem of Prana, which goes down and comes back up. The tradition's own image for the breath is a bird that can submerge and return, and that is the physiology of the remedy: it goes down into the dark (the afflicted house, the feared transit, the condition you will not talk about) and it comes back up with something. What you are not willing to submerge into is the part you will not get back. So: one thing, one direction, one count, one dive per cycle of the planet's own period. The bird does not hover. It commits.</p>
+<p><strong>The working form:</strong> <strong>the four teachers, as a sequence.</strong> Do not treat the four as one rite. Wind first, fire second, sun third, breath last — that is the order the Upanishad gives them, and it is a workable order for a remedy sequence: begin with movement (Vayu — the wind, and the goad that drives the cattle and the reader), then heat (Agni — the fire, and the lamp or the havan that carries the offering), then light (Aditya — the sun, the visibility that lets you see the thing being worked on), and end with breath (Prana — the diving bird, the inner turn where the actual change happens). Most people do it in reverse, starting with the deity they like and ending with the fire. The order in the text is the order that works.</p>
+<p><strong>The working form:</strong> <strong>the honest name.</strong> Satyakama's name was given by his mother because he did not know his father's, and he made it into a statement of purpose rather than a wound. There is a version of this in remedial practice: you cannot fix the chart, but you can name the condition accurately and keep that name. Say the thing as it is. The boy who said <em>I do not know where I come from</em> was accepted into the school of the truth on the spot. The remedy begins at the same doorway.</p>
+<h3>6. The grave that is also a direction</h3>
+<p>One more piece of the puzzle, because it is what makes the southern quarter matter and it is easy to miss.</p>
+<p>Yama holds the south, and Yama is the one who was the <strong>first mortal to die</strong> and who, having seen the way to the celestial abodes, became <strong>the ruler of the departed</strong>. He is the twin of <strong>Yami</strong>, the son of <strong>Surya</strong> (in earlier traditions Vivasvat) and Saranyu, the brother of Manu and the step-brother of Shani — Yama and Shani share a solar father and a step-relationship that explains a great deal about how the two are worked with together. In the Rigveda he is closely associated with Agni, his appearances cluster in the first and tenth books, and his Puranic form is described with four arms, protruding fangs, the complexion of storm clouds, a garland of flames, holding a noose and a mace or sword, riding a water-buffalo, with his wife Dhumorna on the left haunch.</p>
+<p>He is also a Lokapala — the guardian of the south — and in the tradition's own reckoning he is bound to the ancestors with a specificity: in the Rigveda, Yama declares of himself, <strong>"Of departed ancestors I am Aryamā; and among the dispensers of law I am Yama, lord of death."</strong> Three hymns (10, 14, and 35) of the tenth book are addressed to him. And his recorded mantras are specific enough to recite:</p>
+<blockquote><p><strong>Oṃ sūryaputrāya vidmahe Mahākālāya dhīmahi Tanno yama pracodayāt</strong></p><p><strong>Oṃ Vaivasvadaya vidmahe Daṇḍahastaya dhīmahi Tanno Yama pracodayāt</strong></p></blockquote>
+<p>The first is the <strong>Mahākāla</strong> form — the great time, the devourer — and it names him as <em>sūryaputra</em>, son of the Sun, which is exactly the lineage claim. The second is the older Vedic form, <strong>Vaivasvadaya</strong>, with the <em>daṇḍa-hasta</em>, the one who holds the staff. Note also that his assigned planet is <strong>Pluto</strong>, and his weapon is the staff, the noose and the mace.</p>
+<p>Read the implication for remedial work: <strong>the south is the direction of time, of judgement, and of the ancestors.</strong> When you are doing a remedy for Shani — for the seven and a half years, for the slow transit, for the pressure of an old and unforgiving planet — the tradition places the corresponding directional guardian in the south. And the ancestors are not a sentimental category here; they have a direction, a mantra, and an offering.</p>
+<h3>7. The offering that has a direction</h3>
+<p>An offering that is placed without a direction is an offering that is placed nowhere.</p>
+<p>The Vedic calendar was built for exactly this purpose: the year was a <strong>360-day solar year of twelve 30-day months</strong>, and it "arose from a ritual need to identify the exact nights of the new moon (amavasya) and full moon (puranmasi) for sacred sacrifices, which were otherwise difficult to determine by naked eye observation." The priests tracked the moon's night-by-night movement against the fixed stars, establishing a system of <strong>28 nakshatras</strong> — the lunar stations for the 28 nights the moon was visible during a synodic month. The nakshatras are the daughters of <strong>Daksha</strong> and the wives of <strong>Chandra</strong>, and in the equal-division system of later Jyotisha each of the <strong>27</strong> nakshatras spans <strong>13° 20'</strong> of the ecliptic and is divided into <strong>four padas</strong>.</p>
+<p>That is the whole apparatus of directed ritual: a fixed year, a moon tracked night by night, twenty-seven stations each cut into four parts, and a system of deities who hold the quarters. The <strong>shraddha</strong> is the offering made to the ancestors, and the <strong>asvamedha</strong> is the horse-sacrifice that carries the offering power furthest of all — the one rite in the tradition built to be sent out into a direction and arrive.</p>
+<p>The working form of all of this, for an app user, is small and repeatable:</p>
+<ul>
+<li><strong>Name the graha.</strong> Not your life in general. The planet.</li>
+<li><strong>Name the direction that graha holds.</strong></li>
+<li><strong>Name the nakshatra the moon is in.</strong> It gives you the padas to work in, and the deities of those quarters.</li>
+<li><strong>Place the offering in the correct quarter</strong>, face that way, and do it on the day that graha rules.</li>
+<li><strong>Count it.</strong> A bounded number, repeated on the same count, in the same direction, across the transit window.</li>
+</ul>
+<h3>8. What the practice is, and what it is not</h3>
+<p>To be plain about the boundary. This is a ritual and astrological tradition. It is not a substitute for medical, psychological, or legal advice, and the Sade Sati literature itself says the period is not as damaging as folk astrologers claim — that <strong>many people achieve great success during the Sade Sati period</strong>, and that Jawaharlal Nehru, Donald Trump and Narendra Modi all became head of states during one. Read the transit as a description of pressure and a demand for work, not a forecast of ruin.</p>
+<p>What the Satyakama story actually gives you is narrower and more useful than a promise. It gives you:</p>
+<ol>
+<li><strong>A method with an axis.</strong> Direction is a variable most remedies ignore. Give the rite a facing and a quarter and it becomes a discipline instead of an atmosphere.</li>
+<li><strong>An honest gate.</strong> The qualification for the knowledge was the truth of the boy's answer about his own birth. The qualification for a correct remedy is an honest diagnosis.</li>
+<li><strong>A countable practice.</strong> Four hundred, then a thousand. The transit supplies the count; your job is to keep to it.</li>
+<li><strong>An order.</strong> Wind, fire, sun, breath. Movement, heat, light, then the dive.</li>
+</ol>
+<h3>9. What the four teachers left behind</h3>
+<p>Satyakama Jabala is not remembered for a miracle. He is remembered because he went out to tend four hundred cows and came back having been taught by a bull, a fire, a swan and a diving bird, and because the answer he brought home was that the same four powers that hold the compass are the ones in the breath, the eye, the ear and the mind.</p>
+<p>That is a claim about alignment rather than power. It says the world is not one thing and you another; it says the direction you face when you pray is not a gesture but a coordinate, and that the right coordinate for a given affliction is knowable, because the tradition that produced the prayer also produced the roster of the quarters.</p>
+<p>So the next time a transit opens and the remedies start, there is one more question to ask, and it is the question Satyakama's teacher asked him: not <em>which planet do I fear</em>, but <strong>which direction is it in, and am I facing it.</strong></p>
+
+<div class="references">
+<h2>Sources</h2>
+<p>5. <a href="https://en.wikipedia.org/wiki/Yama_(Hinduism">Yama (Hinduism) - Wikipedia</a>)</p>
+<p>16. <a href="https://en.wikipedia.org/wiki/Kama_(Hinduism">Kama (Hinduism) - Wikipedia</a>)</p>
+<ol>
+<li><a href="https://en.wikipedia.org/wiki/Satyak%C4%81ma_J%C4%81b%C4%81la">Satyakāma Jābāla - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Chandogya_Upanishad">Chandogya Upanishad - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Prashna_Upanishad">Prashna Upanishad - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Brihadaranyaka_Upanishad">Brihadaranyaka Upanishad - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Dikpala">Dikpala - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Vayu">Vayu - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Nakshatra">Nakshatra - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Sade_Sati">Sade Sati - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Jyotisha">Jyotisha - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Asvamedha">Asvamedha - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Shraddha">Shraddha - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Pitr">Pitr - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Prashna">Prashna - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Ketu">Ketu - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Revati">Revati - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Shani">Shani - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Hindu_astrology">Hindu astrology - Wikipedia</a></li>
+</ol>
+</div>
+        </article>
+    </div>
+
+</body>
+</html>
