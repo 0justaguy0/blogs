@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marichi&#x27;s Eight Samhitas and Alkaid</title>
+    <style>
+        :root {
+            --bg-color: #FDF9F1;
+            --text-color: #3E2723;
+            --indian-yellow: #E4A025;
+            --indian-orange: #E65100;
+            --accent-light: #FFECB3;
+            --ref-bg: #FFF3E0;
+        }
+
+        body {
+            font-family: 'Georgia', 'Nirmala UI', 'Mangal', serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(var(--bg-color) 80%, var(--accent-light) 100%);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #FFFFFF;
+            padding: 50px 60px;
+            box-shadow: 0 10px 30px rgba(62, 39, 35, 0.1);
+            border-top: 8px solid var(--indian-orange);
+            border-bottom: 8px solid var(--indian-yellow);
+            border-radius: 4px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed var(--indian-yellow);
+        }
+
+        h1 {
+            color: var(--indian-orange);
+            font-size: 2.5em;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        h2 {
+            color: var(--indian-yellow);
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--indian-orange);
+            padding-left: 15px;
+        }
+
+        h3, h4 {
+            color: var(--indian-orange);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        .intro-text::first-letter {
+            float: left;
+            font-size: 3.5em;
+            line-height: 0.8;
+            padding-right: 8px;
+            padding-top: 4px;
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        ul, ol {
+            margin: 0 0 24px 0;
+            padding-left: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ol {
+            list-style-position: outside;
+            padding-left: 2.2em;
+        }
+
+        ul li, ol li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        ol li {
+            padding-left: 0.35em;
+        }
+
+        ul li::before {
+            content: '\2022';
+            position: absolute;
+            left: 0;
+            top: 0.05em;
+            color: var(--indian-orange);
+            font-size: 1.2em;
+            line-height: 1;
+        }
+
+        ol li::marker {
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        strong {
+            color: var(--indian-orange);
+        }
+
+        .image-placeholder-container {
+            margin: 30px 0;
+            text-align: center;
+            font-style: italic;
+            color: #795548;
+            background-color: var(--accent-light);
+            padding: 20px;
+            border-radius: 4px;
+            border: 1px solid var(--indian-yellow);
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.98em;
+            background-color: #FFFDF8;
+        }
+
+        th, td {
+            border: 1px solid #F0D49B;
+            padding: 10px 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--ref-bg);
+            color: var(--indian-orange);
+        }
+
+        blockquote {
+            margin: 30px 0;
+            padding: 20px 25px;
+            background-color: var(--accent-light);
+            border-left: 5px solid var(--indian-orange);
+            font-style: italic;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px dashed var(--indian-yellow);
+            margin: 32px 0;
+        }
+
+        .references {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: var(--ref-bg);
+            border-radius: 8px;
+            font-size: 0.9em;
+        }
+
+        .references h2, .references h3 {
+            color: var(--text-color);
+            margin-top: 0;
+            border-bottom: 1px solid var(--indian-yellow);
+            padding-bottom: 10px;
+            border-left: 0;
+            padding-left: 0;
+        }
+
+        .references p, .references li {
+            margin-bottom: 12px;
+            word-wrap: break-word;
+        }
+
+        .references a {
+            color: var(--indian-orange);
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Marichi&#x27;s Eight Samhitas and Alkaid</h1>
+        </header>
+
+        <article>
+<h3>1. His name was a beam of light, and he was born of a mind</h3>
+<p class="intro-text">Start with the word itself, because in this tradition the name is rarely decorative.</p>
+<div class="image-placeholder-container">
+    <img src="blog140_Image.png" alt="Marichi, the ray of light, raising the golden image above the yajna fire, with the Alkaid star burning over the Great Bear">
+</div>
+<p><strong>Marīci</strong> (मरीचि) means <em>a ray of light, a beam</em>. And the first thing the tradition tells you about him is that he is a <strong>manasputra</strong> — a mind-born son of <strong>Brahma</strong>. Not born from a body, not born from a sacrifice. Born from thought.</p>
+<p>Wikipedia's <em>Marichi</em> article lists him as one of the ten Prajapatis, the mind-born rulers who are answerable for the rest of creation:</p>
+<blockquote><p>Marichi, Atri, Angirasa, Pulaha, Pulasthya, Krathu, Vasishta, Prachethasa, Bhrigu, Narada.</p></blockquote>
+<p>Ten of them. One of them was a beam of light.</p>
+<p>He is also one of the <strong>Saptarishi</strong> — the seven seers. And here the tradition is careful: the Vedic Samhitas never enumerate these seven by name. It is the later Brahmanas and Upanishads that do so, and the <strong>Mahabharata</strong> that gives them their working biographies. In parts of India, the seven stars of the Big Dipper are <em>named</em> after these seven rishis — Vasishtha, Marichi, Pulastya, Pulaha, Atri, Angiras and Kratu — with a faint companion star near Vasishtha called Arundhati.</p>
+<p>There is one more line in the Marichi article that is worth reading twice, because it does quiet damage to the easy version of this story: <strong>Marichi is not directly mentioned in the Vedas.</strong> It is his <em>descendant</em> <strong>Kaśyapa Mārīca</strong> to whom the Anukramaṇī attributes several suktas of the Rigveda. So the man we are writing about is a <strong>post-Vedic, text-transmitting figure</strong> — a compiler and ritual author, not a hymnic visionary. Hold that in mind. It is the reason his achievement is a <em>manual</em>, and not a revelation.</p>
+<p>And then this, which is the line that should make you stop and re-read the name:</p>
+<blockquote><p>Marichi, like some of the other sages, followed the path of worldly duties denouncing total renunciation. He had many children, the notable one being sage Kashyapa.</p></blockquote>
+<p>A mind-born son of Brahma who <strong>declined renunciation</strong>. He chose the household. Which makes the next section unavoidable.</p>
+<h3>2. The stone that became a shrine: what happened to Dharmavrata</h3>
+<p>This is the rarest and most occult thing in Marichi's record, and almost nobody has written about it.</p>
+<p>Marichi had a wife named <strong>Dharmavrata</strong>. One day he asked her to massage his legs — a servant's task, and in the household of a rishi it carried its own weight. While she was working, <strong>he fell asleep</strong>. And in that sleep, <strong>Brahma came to her</strong>.</p>
+<p>Now put yourself inside that moment. A woman is performing an intimate act for her husband. The Creator of the universe appears beside her. And she has to decide, in the seconds available, which duty is greater.</p>
+<p>She chose the deity. She attended to Brahma.</p>
+<p>Marichi woke and found his wife gone from her duty. And he cursed her — <strong>petrified her</strong>, turned her to stone.</p>
+<p>She did not accept it. She <strong>proved her innocence by performing penance amid the fires</strong> — that is, she stood in fire and the fire did not take her, because her conduct had been correct. <strong>Vishnu was pleased by her devotion.</strong> She asked Vishnu to reverse the curse.</p>
+<p>And Vishnu said no — <strong>but with a modification that saved the entire story</strong>. The curse itself could not be undone. However, the stone she would become would <strong>continue to be regarded as Devashila</strong>, and would be considered sacred, and would carry <strong>the essence of the Trimurti and of Lakshmi</strong>.</p>
+<p>Read that again. A man's anger turned his wife's body to stone. The stone then became a vessel holding Brahma, Vishnu, Shiva and Lakshmi together. The most violent act in his biography produced the most capacious object in it.</p>
+<p><strong>The working form:</strong> <strong>the curse that becomes a shrine.</strong> In remedial astrology, the worst-shaped obstacles are frequently the ones that carry a hidden charge. A Devashila stone in your chart is not a rock; it is a stone with four deities and Lakshmi already inside it. When you diagnose a chart, look for the placements that are harsh <em>and</em> freighted — a hard aspect that also carries a significator of an institution, a lineage, a mother-figure, a house, or an inheritance. Those are not the problems to be attacked. Those are the problems to be <strong>mobilised</strong>. The classical move is to build the remedy around what the stone already holds, rather than to break the stone in order to get at what is inside it.</p>
+<p><strong>The working form:</strong> <strong>the offering that outranks the sacrifice.</strong> Note the shape of Dharmavrata's story: she chose the deity over the husband's immediate command, and the tradition <strong>confirmed her</strong>, while the tradition did <strong>not</strong> reverse her husband's curse. The husband's standing was the thing that failed the test, not the wife's. That is a diagnostic you can use on a person: the demand that was refused was not the demand itself but the <strong>authority</strong> behind it.</p>
+<p>And one more thing, which will matter later. Marichi married <strong>Kala</strong> — Time itself, or the goddess of it — and fathered <strong>Kashyapa</strong>, and through him the grandfather of the devas and the asuras. The same man who made a stone sacred was the ancestor of the entire branching lineage of gods and demons.</p>
+<h3>3. Nine disciples, four survivors, and one of them wrote the blueprint</h3>
+<p>Now the thread that becomes the spine of this article.</p>
+<p>The <strong>Vaikhanasa</strong> tradition, one of the two great South Indian Vaishnava Agama systems (the other being Pancharatra), tells a very specific story about its founding.</p>
+<p>A sage named <strong>Vikhanasa</strong> — a manifestation of <strong>Vishnu</strong> — mastered the Vedas and the Shastras. He learned how to worship Vishnu as an <strong>arcāvatāra</strong>: a temple image regarded as the deity's iconic form. He travelled to the holy forest of <strong>Naimisharanya</strong> and composed the <strong>Vaikhanasa Kalpasutra</strong>. Then he taught the <strong>Sri Vaikhanasa Bhagavad Shastra</strong> to his four disciples: <strong>Atri, Bhrigu, Kashyapa and Marichi</strong>. That text contained the procedures of <strong>Samurtarcana</strong> and <strong>Amurtarchana</strong> — worship with the image and worship without it — and the whole discipline of serving Vishnu in his image form.</p>
+<p>And here is the detail that makes the story sharp: Vikhanasa's <strong>first</strong> transmission, in the very first manvantara, went to <strong>nine</strong> disciples —</p>
+<blockquote><p>Atri, Bhrigu, Marichi, Kashyapa, Vasishta, Pulaha, Pulasthya, Krathu and Angiras.</p></blockquote>
+<p><strong>Only four of the nine have a surviving line today: Bhrigu, Marichi, Kashyapa and Atri.</strong> Those four are named as the propagators of the Vaikhanasa śāstra. Five of the nine are gone. That is a lineage loss rate of better than half, and it happened early.</p>
+<p>Now the sharpest fact of all, and it is buried in a sentence about a scripture:</p>
+<blockquote><p>A composition by Sage Vikhanasa's disciple <strong>Marichi</strong>, namely, <strong>Ananda-Samhita</strong> states Vikhanasa prepared the Vaikhanasa Sutra according to a branch of Yajurveda and <strong>was Brahma himself</strong>.</p></blockquote>
+<p><strong>Marichi is the man who wrote the attestation that his own teacher was his own father.</strong></p>
+<p>A mind-born son of Brahma wrote the scripture that says his guru was Brahma. Do not skip that. It means Marichi had the standing to make a theological claim about the origin of the tradition he would then carry, and the tradition preserved the claim and kept his texts in circulation. This is not a sage quoting a tradition. This is a sage <em>legislating</em> one.</p>
+<p><strong>The working form:</strong> <strong>transmission is the remedy.</strong> When a graha is obstructed, ask the question Marichi's authorship answers: <em>who is the authorised transmitter of this teaching, and is that line intact?</em> In Jyotiṣa terms, this is the func of the fourth house and the fourth lord — education, lineage, the estate, the vehicle of transmission, the thing that must be carried forward for the thing to survive. A fourth-house problem is very often not "my education is bad" but "the chain is broken". The remedy is re-establish the chain: the teacher, the lineage, the daily transmission. A mantra recited without a teacher, without a lineage, and without a fixed time is Marichi's Vaiṣṇava tradition without a Vaiṣṇava — the text survives, the transmission does not.</p>
+<h3>4. The eight Saṃhitās: what Marichi actually wrote</h3>
+<p>Here is the inventory, and it is the core of the answer to "what did he achieve".</p>
+<p>The extant Vaikhanasa Agama material <strong>numbers twenty-eight texts</strong>. And Wikipedia records exactly where that list comes from:</p>
+<blockquote><p>The extant texts of Vaikhānasa Agama number 28 in total and are known from the texts <strong>Vimānārcakakalpa and Ānanda saṃhitā, both composed by Marīci</strong>, which enumerate them.</p></blockquote>
+<p><strong>Both of the index texts are by Marichi.</strong> So the man did not merely survive in the lineage — he wrote the catalogues. He is the reason we know the shape of the canon at all.</p>
+<p>Then the eight, which the same article attributes directly to him:</p>
+<blockquote><p>The eight Saṃhitās authored by Marīci are <strong>Jaya saṃhitā, Ananda saṃhitā, Saṃjnāna saṃhitā, Vīra saṃhitā, Vijaya saṃhitā, Vijita saṃhitā, Vimala saṃhitā and Jnāna saṃhitā.</strong></p></blockquote>
+<p>And then a scrupulous little footnote that most people would skip and that I am going to make a point of:</p>
+<blockquote><p>However, ānanda saṃhitā <strong>attributes the following works</strong> to Marīci: jaya, ānanda, saṃjnāna, vīra, vijaya, vijita, vimala and <strong>kalpa saṃhitā</strong>.</p></blockquote>
+<p>Same eight names in the same order — with <strong>Jnāna</strong> in one list and <strong>Kalpa</strong> in the other. The corpus is not identical according to its own index. A library that disagrees with itself by one title is a real library, not a tidy one.</p>
+<p>Now look at what the eight names actually are, because this is where the article gets its teeth:</p>
+<p><strong>Jaya</strong> — victory. <strong>Ananda</strong> — bliss. <strong>Saṃjnāna</strong> — right knowledge. <strong>Vīra</strong> — the hero. <strong>Vijaya</strong> — victory again, distinct from Jaya. <strong>Vijita</strong> — the conquered, or the one who has conquered. <strong>Vimala</strong> — the pure. <strong>Jnāna / Kalpa</strong> — knowledge, or the rite.</p>
+<p>That is a curriculum in eight movements. It opens with <strong>victory</strong> and closes with <strong>knowledge or the rite</strong> — and in between it puts <em>bliss</em>, <em>right knowledge</em>, <em>heroism</em>, and <em>purity</em>. A manual that begins by resolving the question "who wins" and ends by resolving "what do I know and what must I do" is describing a whole life, not a liturgy.</p>
+<p>And this is where the <strong>numbers</strong> come in, because the numbers are the house style of this tradition and they are worth doing properly:</p>
+<ul>
+<li><strong>28</strong> — the extant Vaikhanasa Agamas, enumerated by Marichi's own two texts.</li>
+<li><strong>28 Shaiva Agamas, 64 Shakta Agamas (called Tantras), and 108 Vaishnava Agamas (the Pancharatra Saṃhitās)</strong> — the three branches of Agama literature, plus numerous Upa-Agamas.</li>
+<li>And a separate census, from the <strong>Paramanada Tantra</strong>, of sectarian tantras: <strong>6,000 Vaishnava, 10,000 Shaiva, 100,000 Shakta, 1,000 Ganapatya, 2,000 Saura, 7,000 Bhairava, and 2,000 Yaksha-bhūtadi-sādhana.</strong></li>
+</ul>
+<p>Set these side by side and you see the real shape of the tradition: a <strong>28</strong> here, a <strong>64</strong> there, a <strong>108</strong> at the top, and a whole census running into six figures. And here is the coincidence that is not a coincidence — <strong>108 is the sacred number of the rosary, the bead count, and the fine division of the zodiac into 108 padas.</strong> Twenty-seven nakshatras × four padas = 108 padas of 3° 20'. The 108 Vaishnava Agamas and the 108 padas of the sky are the same number doing the same job: they are how a large totality is made countable.</p>
+<p><strong>The working form:</strong> <strong>the eight movements are a sequence, and you are at one of them.</strong> Do not do all eight. Identify which movement your chart is actually in, and do that one properly. <em>Jaya</em> — victory against an obstacle; <em>Vijaya</em> — victory that comes with the claim attached; <em>Vijita</em> — the conquered one, which is the hardest (the work of being conquered rather than conquering); <em>Vimala</em> — purity, the removal of contamination; <em>Saṃjnāna</em> — getting the diagnosis right; <em>Ananda</em> — the result that is actually wanted; <em>Vīra</em> — courage, the one that is needed when the other seven are done. Read your chart against that ladder and name the rung. A remedy for the wrong rung is why the previous remedy failed.</p>
+<h3>5. The ranking that changed how the ritual was done</h3>
+<p>Here is the single most decisive sentence in the whole Vaikhanasa record, and it is about Marichi.</p>
+<blockquote><p>The Vaikhanasa doctrine states that spiritual liberation (<em>moksha</em>) is release into Vishnu's abode of Vaikuntha. The nature of a devotee's moksha is regarded to be dependent on their performance of <strong>japa</strong> (attentive repetition of prayer), <strong>huta</strong>, <strong>yajna</strong> (ritual sacrifice), <strong>archana</strong> (service to images), and <strong>dhyana</strong> (yogic meditation). Of the four, the text known as the <strong>Marichi Samhita offers precedence to archana</strong>.</p></blockquote>
+<p>Read the ranking: <strong>archana</strong> — service to the image — is placed above <strong>huta</strong> and <strong>yajna</strong>, the fire sacrifice. The man whose name means a ray of light wrote the manual that puts the <strong>image above the fire</strong>.</p>
+<p>And note the honest little wobble in the sentence: it lists <strong>five</strong> practices — japa, huta, yajna, archana, dhyana — and then says "of the four". The text is itself slightly untidy, which is what real liturgical manuals look like.</p>
+<p>Now the Vaikhanasa doctrine behind it, in the same article:</p>
+<blockquote><p>Most Vaikhanasa literature is almost completely concerned with rituals... To Vaikhanasas, their temple worship is a <strong>continuation of the Vedic yajna</strong>. Regular and correct worship of Vishnu in a temple are regarded to bring the <strong>same results as the fire sacrifice</strong> even for people who do not maintain their fires.</p></blockquote>
+<p>And then the actual sequence, which Wikipedia sets out in detail and which is the most practically useful ritual I have found in a long time:</p>
+<ul>
+<li>After <strong>purification and meditation</strong> to identify with Vishnu, the devotee surrenders to Vishnu and places the <strong>movable image on a bathing pedestal</strong> and elaborately bathes it. This prepares for receiving the presence of God by immediate contact via a <strong>connecting string</strong>.</li>
+<li>The invocation begins with a <strong>Mantra</strong>: the Imperishable is linked to the Perishable, and the Self is released from all evil as it knows God.</li>
+<li><strong>Flowers</strong> are presented to all the deities present. Then the <strong>Aatmasukta</strong> is recited, identifying the body of the devotee with the cosmos.</li>
+<li>Then <strong>meditation on Vishnu's Niśkala aspect</strong> — the formless aspect — with a specific purpose: to request Vishnu take his <strong>Sakala</strong> form, the manifest form, in the movable image, <strong>so that the devotee can converse with Him.</strong></li>
+<li>A <strong>Puja</strong> ceremony takes place with God as the <strong>royal guest</strong>.</li>
+<li>Then a <strong>Homa</strong> — an offering into the fire — <strong>Homaagni</strong> — and a <strong>Bali</strong>, an offering that may be visible, touchable, audible or eatable.</li>
+<li>An offering of <strong>Havis</strong>, cooked food, is important as <strong>God's meal</strong>. Afterwards the <strong>Prasaada</strong> is eaten by the worshippers and devotees.</li>
+<li>The offering area is cleaned and a <strong>Bali of cooked rice sprinkled with butter</strong> is offered.</li>
+<li>Then <strong>Pradakshina</strong>, circumambulation from left to right clockwise, around the temple.</li>
+<li>After <strong>Daksina</strong>, the officiating Brahman's share of the Prasadam is given.</li>
+<li><strong>Vishnu is meditated upon as the personal manifestation of the sacrifice.</strong></li>
+<li>Finally <strong>Puspanjali</strong>, known as <strong>Mantra Pushpam</strong>, offering a handful of flowers at God's lotus feet after chanting the holy mantras, and the temple door is closed after <strong>Mangala arathi</strong>.</li>
+</ul>
+<p>Look at the shape of it. There is a <strong>fire in the middle of the image-worship</strong>, not instead of it. Homaagni is <em>inside</em> the archana. The image is bathed, dressed with flowers, fed, served, circled, and then the door is closed. It is not a meditation. It is a <strong>service with a sequence and a timetable</strong>, and the sequence ends by shutting a door.</p>
+<p><strong>The working form:</strong> <strong>the escalation ladder for a stalled remedy.</strong> Marichi's own ranking gives you a lawful order of operations when a remedy is not working, and the order is not the one most people try: japa first (attentive repetition of prayer), then dhyana (yogic meditation), then the fire — huta and yajna — and <strong>archana last in the list of methods but first in precedence</strong>. If you have been reciting for months and nothing has moved, the tradition's own answer is not <em>more reciting</em>. It is: get the <strong>image</strong> involved. Install or commission one. Wash it. Light the lamp in front of it. Offer it food and take the prasāda home and eat it. Offer it flowers and a cloth and a lamp daily at a fixed hour. Circumambulate it. <strong>And keep the fire too</strong> — because Marichi's manual puts Homaagni inside the archana, not in place of it. Do the escalation in his order: prayer, meditation, fire, then the image — and when you reach the image, do it properly, in a sequence, at a fixed time, with the door closed at the end.</p>
+<p><strong>The working form:</strong> <strong>close the door.</strong> This is the most underrated instruction in the whole sequence. The temple door is closed after the arati. The ritual ends by <strong>ending</strong> — by declaring the session over. Almost every remedial practice fails because it never ends: the lamp burns on, the mantra repeats without a close, the offering sits out, and the session leaks into the rest of the day, where it has no force at all. Fix a length, fix a closing act, and close the door. A remedy with an ending is a remedy with a dose.</p>
+<p><strong>The working form:</strong> <strong>converse, don't just attend.</strong> The stated purpose of the Niśkala meditation is not to achieve a state but to <strong>request</strong> that the deity take a manifest form <strong>so that the devotee can converse with Him</strong>. That is a very different instruction from the one most people give themselves at a shrine. Do not go to be seen. Go to be addressed. Ask a specific question, hear an answer, and leave with one instruction to carry out. If you cannot report what was said to you, you have not done archana — you have attended.</p>
+<h3>6. Alkaid: the star at the tip of the handle that never sets</h3>
+<p>Now the second half of the title, and the astrological spine of the article.</p>
+<p>In ancient Indian astronomy, the pattern known in North America as the Big Dipper, in most of Europe as the Plough, and elsewhere as the Great Wagon — part of the larger constellation of <strong>Ursa Major</strong> — is called the <strong>Saptarshi</strong>. The seven stars represent seven rishis. And Wikipedia's <em>Saptarshi</em> article gives the full Indian assignment of the seven stars of the Saptarishi Mandala:</p>
+<table>
+<thead><tr><th>Indian name</th><th>Bayer</th><th>Western name</th></tr></thead>
+<tbody>
+<tr><td>Kratu</td><td>α UMa</td><td>Dubhe</td></tr>
+<tr><td>Pulaha</td><td>β UMa</td><td>Merak</td></tr>
+<tr><td>Pulastya</td><td>γ UMa</td><td>Phecda</td></tr>
+<tr><td>Atri</td><td>δ UMa</td><td>Megrez</td></tr>
+<tr><td>Angiras</td><td>ε UMa</td><td>Alioth</td></tr>
+<tr><td>Vasishtha</td><td>ζ UMa</td><td>Mizar</td></tr>
+<tr><td><strong>Marichi</strong></td><td><strong>η UMa</strong></td><td><strong>Alkaid</strong></td></tr>
+</tbody>
+</table>
+<p><strong>Marichi is Alkaid</strong> — the last star in the handle of the Great Wagon, the bright one that forms the point of the ladle's rim. And Vasishtha, two stars back along the handle, is Mizar, whose faint companion Arundhati is the <strong>Alcor</strong> double star.</p>
+<p>Now the astronomy that matters for a remedy. <strong>η Ursae Majoris is circumpolar.</strong> At a declination of roughly +49°, it never sets for any observer north of about 41° latitude. It is always above the horizon. It circles the pole all night and all year, and the whole seven-star configuration rotates around one fixed point.</p>
+<p>And that is the old Indian technique that has nothing to do with horoscopes: <strong>the Great Wagon is a clock.</strong> Its position against the pole tells you the season and the hour of the night. The seven rishis are not pictures in the sky; they are <strong>the dial</strong>, and their fixed stars are the <strong>hour-marks</strong>. And the rishi whose star sits at the tip of the handle — the pointer that indicates the pole — is <strong>Marichi</strong>.</p>
+<p>So the seer called a beam of light is also the star that <strong>never leaves the sky</strong>. And his ritual manual says: the image outranks the fire. And his own name says: the light. And the star he owns is the one that <strong>never goes out</strong>.</p>
+<p><strong>The working form:</strong> <strong>the fixed point and the turning wheel.</strong> The remedy framework has two clocks, and you need both. The <strong>wheel</strong> turns — that is your transit, your dasha, your current mahadasha lord, the graha actually running your life. The <strong>fixed point</strong> does not turn — that is the dhruva, the anchor, the seat of the discipline, the deity you serve, the guru whose chain is unbroken. Marichi's two contributions give you the pairing exactly: <strong>the pole that does not move, and the beam of light that never sets.</strong> So the working rule is: <strong>every transit-window remedy must be anchored to something that does not move with the transit, or it will move with the transit.</strong></p>
+<p>Concretely: when you set a remedy for a bad Jupiter year, your Jupiter-facing prayer must be tied to a fixed anchor — a fixed hour, a fixed seat, a fixed image, a fixed teacher, a fixed count. Not "when Jupiter is in X, I will do this" but "at this hour, in this place, before this image, for this count, for the whole duration of Jupiter's passage." The star that never sets is the model. The remedy that never moves is the method.</p>
+<h3>7. Three rosters, one wheel: the rishi-names change and the stars do not</h3>
+<p>Here is the thing that makes the Saptarshi usable in remedial work rather than decorative, and it comes from the same Wikipedia article.</p>
+<p>The <strong>names</strong> attached to the seven have never been stable. The article gives three formal lists from the early texts and they are all different:</p>
+<ul>
+<li><strong>Jaiminiya Brahmana 2.218–221:</strong> Agastya, Atri, Bharadvaja, Gautama, Jamadagni, Vasishtha, Vishvamitra.</li>
+<li><strong>Brihadaranyaka Upanishad 2.2.6:</strong> Atri, Bharadvaja, Gautama, Jamadagni, Kashyapa, Vasishtha, Vishvamitra.</li>
+<li><strong>Gopatha Brahmana 1.2.8:</strong> Vasistha, Vishvamitra, Jamadagni, Gautama, Bharadvaja, Gungu, Agastya, Kashyapa.</li>
+</ul>
+<p>And then the roster for the <strong>next manvantara</strong> is different again: Diptimat, Galava, Parashurama, Kripa, Drauni or Ashvatthama, Vyasa, Rishyasringa.</p>
+<p>So the roster <strong>turns over</strong>. Every manvantara the seven are replaced — and a manvantara is <strong>71 Mahayugas</strong>, which is <strong>306,720,000 solar years</strong>, with fourteen manvantaras to a kalpa.</p>
+<p>But the <strong>stars do not turn over</strong>. η UMa is η UMa in every manvantara. Kratu is α UMa today and α UMa in the next cycle. The seven points of light are the permanent frame; the seven names are the shifting assignment.</p>
+<p><strong>That is the entire method in one sentence: use the wheel to tell you the time, and use the roster to tell you the era.</strong></p>
+<p>In remedial astrology terms this is unusually clean and it is fully sourced. *<em>The fixed signs, houses and degrees are your clock — they are the same wheel that Marichi's star belongs to and they do not change their identity. The dasha and the transit are the hour-hand and the minute-hand, and they do change. And the </em>name<em> you attach to a graha's position is the roster, which changes with the era, not with the week.</em>*</p>
+<p><strong>The working form:</strong> <strong>name the graha, not the mood.</strong> The rishi-names turn over on a 306-million-year cycle, which is the tradition's way of saying that the <em>assignment of qualities to positions</em> is not permanent, while the <em>positions themselves</em> are. Practically: when you analyse a chart, do not read the planet's effect from a fixed keyword list you inherited. Read the planet's effect <strong>from its position</strong> — from the house it occupies, the sign it holds, the padas it crosses, the aspects it receives, and the graha actually running the dasha. The keyword list is the roster; the position is the star. A roster-based reading is astrology by slogan. A position-based reading is astrology by clock.</p>
+<p><strong>The working form:</strong> <strong>the count that survives the era.</strong> The Vaikhanasa canon is twenty-eight because Marichi's own two catalogues say so. The Agama census runs 28 / 64 / 108 and then into the thousands. The rosary is 108 and the padas are 108. The reason a fixed count is used rather than an open-ended "do it for a while" is precisely what the Saptarshi teaches: <strong>a count is a coordinate.</strong> It tells you where on the wheel you are. 108 beads is one full turn of 360° at the resolution of 3° 20'. Twenty-eight is one turn of the wheel at the resolution of a single nakshatra plus one. When you set a remedy count, you are choosing a <strong>resolution</strong> — how finely you are cutting the circle for this particular work. Choose the resolution to match the size of the problem: a pada-count for a graha-level correction, a nakshatra-count for a mansion-level one, a mala of 108 for a full-cycle correction.</p>
+<h3>8. The monk who could not keep the rule, and started his own</h3>
+<p>One more strand, and it is the most human thing in the record.</p>
+<p>In the Jain tradition, the story is different and strange. Wikipedia's <em>Marichi</em> article says that in Jain scriptures, Marichi was the son of <strong>Bharata Chakravartin</strong>, who after many births was born as the 24th Tirthankara, <strong>Mahavira</strong>.</p>
+<p>And in his life <em>as Marichi</em>, the article continues, he became a Jain monk following <strong>Rishabhanatha</strong>, the first Tirthankara — <strong>but was unable to follow the hard rules of Jain penance</strong>. So he took a robe, pedales and an umbrella, and <strong>founded his own religion</strong>, taking <strong>Kapila</strong> as his first disciple.</p>
+<p>Read the discipline in that sentence, because it is the point of the whole anecdote. He did not leave the order because he was lax. He left because the rule was not his. He tried the hardest discipline available, found he could not keep it, and instead of continuing to fail inside someone else's frame, <strong>he built a frame he could actually keep</strong> — and he staffed it, taking Kapila as his first disciple.</p>
+<p>This is the same man who, in the Vaikhanasa account, wrote the manual that ranks archana above the fire sacrifice. <strong>Both halves of the record are the same teaching: build the structure you can actually keep.</strong> The Jain tradition says he could not keep the hardest ascetic rule and so founded his own school. The Vaikhanasa tradition says he wrote the manual in which the image outranks the sacrifice, and that the image-worship itself contains a fire rite, a bath, a meal, a circumambulation, a share handed to the officiant, a flower-offering and a closed door. <strong>A workable frame, not a perfect one.</strong></p>
+<p><strong>The working form:</strong> <strong>build the frame you can actually keep.</strong> Almost every failed remedy programme is a person inside somebody else's perfect rule: a vow with a start date and no end date, a count of 10,000 that assumes no illness, a daily practice that assumes a particular diet and a particular hour and a particular mood. Marichi's two lives converge on one remedy for this. <strong>Audit your practice against your actual life, and reduce it until it survives a bad week.</strong> Keep the smallest version that you will still be doing in twelve months, and make that version structurally correct — fixed hour, fixed place, fixed count, fixed closing act — so that it does not need willpower to continue. A rule you keep at 60% beats a rule you keep at 100% for nine days.</p>
+<p><strong>The working form:</strong> <strong>the share given away.</strong> In the Vaikhanasa sequence, after the circumambulation and the Daksina, the <strong>officiating Brahman's share of the Prasadam is given</strong>. The prasāda that came back from the deity is then partly handed to the person who performed the service. The meal is not consumed alone by the one who offered it. If your remedy is entirely private, entirely about you, and consumed entirely by you, it has no prasāda in it — and a remedy that gives nothing away is a remedy that has not been distributed yet. Put a portion of the offering into someone else's hands. Feed somebody who did not ask. That is the Daksina, and it is the step most people skip because it is the only step that costs something visible.</p>
+<h3>9. What this practice is, and what it is not</h3>
+<p>It is worth being precise, because a name like "Marichi" invites a lot of fog.</p>
+<p><strong>This is not</strong> a claim that Marichi composed the Rigveda. He is <strong>not directly mentioned in the Vedas</strong>; it is his descendant Kaśyapa Mārīca to whom the Anukramaṇī attributes several suktas. <strong>This is not</strong> a claim that the eight Saṃhitās survive — they are known to us through the two index texts attributed to him, and through later testimony. <strong>This is not</strong> a claim that the Saptarshi assignment of rishi-names to stars is the original one; the article shows three early formal rosters that disagree with each other, and a fourth for the next manvantara. <strong>This is not</strong> a claim that Marichi is a solar deity — the name means "ray of light", and the Soura Agamas are a separate Sun-worship system with its own census.</p>
+<p>What <strong>is</strong> on the table, and is verifiable, is this:</p>
+<ol>
+<li>A mind-born son of Brahma, named for a beam of light, who <strong>chose the household over renunciation</strong>.</li>
+<li>A wife turned to stone by his curse, and a stone that was then declared to carry the essence of the <strong>Trimurti and Lakshmi</strong>.</li>
+<li>One of <strong>nine</strong> original disciples of Vikhanasa, one of only <strong>four</strong> whose line survives.</li>
+<li>The author of the scripture attesting that <strong>Vikhanasa was Brahma</strong> — and thus, in effect, that his own guru was his own father.</li>
+<li>The author of <strong>eight Saṃhitās</strong> and of the <strong>Vimānārcakakalpa</strong>, the two texts from which the canon of <strong>twenty-eight</strong> Vaikhanasa Agamas is known.</li>
+<li>The author of the <strong>Marichi Samhita</strong>, which places <strong>archana — service to the image — above huta and yajna, the fire sacrifice</strong>, for the sake of moksha.</li>
+<li>The star <strong>η UMa, Alkaid</strong> — the tip of the Great Wagon's handle, circumpolar, never setting, pointing at the fixed pole.</li>
+<li>A Jain tradition in which he broke with the hardest rule available and founded a school he could keep, with <strong>Kapila</strong> as his first disciple.</li>
+</ol>
+<p>Pull it together and the practice that falls out is coherent, and it is the same practice in both the Shaiva-Vaishnava and the Jain registers: <strong>resolve the frame first, then work the frame, and let the frame be one you can keep.</strong></p>
+<ul>
+<li>Anchor to what does not move: the fixed hour, the fixed seat, the fixed image, the unbroken chain of transmission, the star that never sets.</li>
+<li>Escalate in Marichi's order: <strong>japa</strong>, then <strong>dhyana</strong>, then the <strong>fire</strong>, then <strong>archana</strong> — and when you reach the image, do the whole sequence, including the fire inside it, including the food, including the circumambulation, including the closed door.</li>
+<li>Count, because a count is a coordinate and a coordinate is a place on the wheel.</li>
+<li>Hand the prasāda on. Close the door.</li>
+</ul>
+<p>That is what a beam of light does when it is asked to build a manual instead of a hymn. Marichi is not remembered as a seer of fire. He is remembered as the man who wrote the books that tell you <strong>how to worship an image properly enough that the image outranks the sacrifice</strong> — and who was, himself, the star at the end of the handle that never goes out.</p>
+
+<div class="references">
+<h2>Sources</h2>
+<p>4. <a href="https://en.wikipedia.org/wiki/Agama_(Hinduism">Agama (Hinduism) - Wikipedia</a>)</p>
+<ol>
+<li><a href="https://en.wikipedia.org/wiki/Marichi">Marichi - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Saptarshi">Saptarshi - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Vaikhanasa">Vaikhanasa - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Pratyangira">Pratyangira - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Shandilya_Upanishad">Shandilya Upanishad - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Pranayama">Pranayama - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Chakra">Chakra - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Yoga_Yajnavalkya">Yoga Yajnavalkya - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Shandilya_Vidya">Shandilya Vidya - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Siddhi">Siddhi - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Brihadaranyaka_Upanishad">Brihadaranyaka Upanishad - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Yuga">Yuga - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Nakshatra">Nakshatra - Wikipedia</a></li>
+</ol>
+</div>
+        </article>
+    </div>
+
+</body>
+</html>
