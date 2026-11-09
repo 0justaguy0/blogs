@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paila&#x27;s Addressable Rigveda</title>
+    <style>
+        :root {
+            --bg-color: #FDF9F1;
+            --text-color: #3E2723;
+            --indian-yellow: #E4A025;
+            --indian-orange: #E65100;
+            --accent-light: #FFECB3;
+            --ref-bg: #FFF3E0;
+        }
+
+        body {
+            font-family: 'Georgia', 'Nirmala UI', 'Mangal', serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(var(--bg-color) 80%, var(--accent-light) 100%);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #FFFFFF;
+            padding: 50px 60px;
+            box-shadow: 0 10px 30px rgba(62, 39, 35, 0.1);
+            border-top: 8px solid var(--indian-orange);
+            border-bottom: 8px solid var(--indian-yellow);
+            border-radius: 4px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed var(--indian-yellow);
+        }
+
+        h1 {
+            color: var(--indian-orange);
+            font-size: 2.5em;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        h2 {
+            color: var(--indian-yellow);
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--indian-orange);
+            padding-left: 15px;
+        }
+
+        h3, h4 {
+            color: var(--indian-orange);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        .intro-text::first-letter {
+            float: left;
+            font-size: 3.5em;
+            line-height: 0.8;
+            padding-right: 8px;
+            padding-top: 4px;
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        ul, ol {
+            margin: 0 0 24px 0;
+            padding-left: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ol {
+            list-style-position: outside;
+            padding-left: 2.2em;
+        }
+
+        ul li, ol li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        ol li {
+            padding-left: 0.35em;
+        }
+
+        ul li::before {
+            content: '\2022';
+            position: absolute;
+            left: 0;
+            top: 0.05em;
+            color: var(--indian-orange);
+            font-size: 1.2em;
+            line-height: 1;
+        }
+
+        ol li::marker {
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        strong {
+            color: var(--indian-orange);
+        }
+
+        .image-placeholder-container {
+            margin: 30px 0;
+            text-align: center;
+            font-style: italic;
+            color: #795548;
+            background-color: var(--accent-light);
+            padding: 20px;
+            border-radius: 4px;
+            border: 1px solid var(--indian-yellow);
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.98em;
+            background-color: #FFFDF8;
+        }
+
+        th, td {
+            border: 1px solid #F0D49B;
+            padding: 10px 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--ref-bg);
+            color: var(--indian-orange);
+        }
+
+        blockquote {
+            margin: 30px 0;
+            padding: 20px 25px;
+            background-color: var(--accent-light);
+            border-left: 5px solid var(--indian-orange);
+            font-style: italic;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px dashed var(--indian-yellow);
+            margin: 32px 0;
+        }
+
+        .references {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: var(--ref-bg);
+            border-radius: 8px;
+            font-size: 0.9em;
+        }
+
+        .references h2, .references h3 {
+            color: var(--text-color);
+            margin-top: 0;
+            border-bottom: 1px solid var(--indian-yellow);
+            padding-bottom: 10px;
+            border-left: 0;
+            padding-left: 0;
+        }
+
+        .references p, .references li {
+            margin-bottom: 12px;
+            word-wrap: break-word;
+        }
+
+        .references a {
+            color: var(--indian-orange);
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Paila&#x27;s Addressable Rigveda</h1>
+        </header>
+
+        <article>
+<h3>1. His job title was "promulgator" — and that is exactly what a remedy library is</h3>
+<p class="intro-text">Start with the function, because in this tradition the function is the whole point.</p>
+<div class="image-placeholder-container">
+    <img src="blog142_Image.png" alt="Sage Paila indexing the Rigveda by clan, with 1,028 hymns mapped across two living branches">
+</div>
+<p>Wikipedia's <em>Paila (Rishi)</em> article does not give Paila a birth myth, a demon he defeated, or a curse he lifted. It gives him a <strong>desk</strong>. The article's opening line is that "Paila (Sanskrit: पैल) was a prominent Vedic Rishi in the ancient Indian subcontinent. He was one of the four major disciples of the revered Vedic sage Veda Vyasa. He mastered the hymns or mantras of the Rigveda. He was selected as the preserver and promotor of the Rigveda branch of the Vedas by Veda Vyasa. He is known as the promulgator of the holy text Rigaveda in Hinduism."</p>
+<p>Read the operative words twice: <strong>preserver</strong> and <strong>promulgator</strong>. Not composer — the hymns were already there. Not reviver — nothing had decayed. Paila's achievement is that a body of material became <strong>findable</strong>. He made a corpus <em>addressable</em>.</p>
+<p>And the article's own summary line says it in a single phrase: "the sage Paila arrange the text and became the first Acharya of Rigaveda." That is the entire career in one sentence. <strong>Arrange the text.</strong> Then everything else in this article is the working out of what that one clause actually required.</p>
+<p>There is also a title. The article records that "In the texts of Puranas, Paila is honoured as an eminent revered Rishi with the title Paramarshi." And Wikipedia's <em>Rigveda</em> article records the same figure in the same functional terms: "According to the Puranic tradition, Ved Vyasa compiled all the four Vedas, along with the Mahabharata and the Puranas. Vyasa then taught the Rigveda samhita to Paila, who started the oral tradition."</p>
+<p><strong>Paila started the oral tradition.</strong> Not the tradition of the Veda — the tradition of <em>carrying</em> it, intact, by voice, to somebody who was not there when it was composed. That is the ancestor of every person who has ever learned a remedy by hearing it spoken and then said it back correctly.</p>
+<p><strong>The working form:</strong> <strong>build the remedy library by its address, not by its subject.</strong> The first thing every serious remedial practice needs is not a better mantra — it is a way to get the <em>right</em> mantra at the moment it is needed, without re-reading everything. Paila's answer was to make the text addressable. Your answer should be the same: index your remedies by the thing you will actually have in hand when you need them (the planet, the house, the day, the transit), not by the thing that is elegant to organise (the symptom, the theory, the lineage of the teaching). A remedy library indexed by symptom is a library you will search at 2 a.m. A remedy library indexed by address is a library you can open with one hand.</p>
+<h3>2. His own name was inherited — and the sources disagree about it</h3>
+<p>Even the naming is a lesson, and the sources are honest about their disagreement.</p>
+<p>The <em>Paila (Rishi)</em> article states that "He was the son of the sage Pilâ. The name of Paila was derived from his father's name Pilâ." But it immediately records the conflict: "According to the 35th Shloka in the 33rd chapter of the Sabhā Parva in the text Mahabharata, the father name of Paila is Vasu."</p>
+<p>Two sources, two fathers: <strong>Pilâ</strong> in the biographical tradition, <strong>Vasu</strong> in the <em>Mahabharata</em>. Wikipedia does not pretend the matter is settled, and neither should you. What is not in dispute is the mechanism of the name: it is a <strong>patronymic</strong>. Paila is the son of Pilâ, named from his father. This is how the lineage names carry.</p>
+<p>And the article records the lineage around him as a working arrangement, not a bloodline: "Later, Paila lived in the guidance of his teacher Parashara. Paila's contemporary colleague was Ashvala. The Vedic sage Parashara was the father of Veda Vyasa. After the death of the sage Parashara, Paila was looked after by Veda Vyasa."</p>
+<p>Three separate arrangements in two sentences: a <strong>teacher</strong> (Parashara), a <strong>contemporary colleague</strong> (Ashvala), and a <strong>guardian</strong> (Vyasa, after Parashara's death). Paila's formation was a set of overlapping practical relationships, not a single unbroken chain.</p>
+<p><strong>The working form:</strong> <strong>when two sources give you two names for the same upstream, do not average them — keep both and use them as two entry points.</strong> In your own remedy records, you will find the same thing: two teachers claiming the same lineage, two lineages claiming the same verse, two lineages claiming the same verse, two dates for the same initiation. Resist the urge to pick the one that makes your chart look tidier. The two traditions are two <em>branches</em>, and — as section 8 will show — two branches that differ only slightly are precisely what kept the thing alive. Write both names on the record. Then you have addressed it twice instead of once, and you can see whether the two branches actually disagree when you put them side by side.</p>
+<h3>3. He was eight years older than the man who taught him</h3>
+<p>Here is the detail that most cleanly separates this tradition from the modern one, and it is simply stated in the source.</p>
+<p>"Even though Paila was taught by Veda Vyasa, he was older in age by eight years with Veda Vyasa." The <em>Paila (Rishi)</em> article puts it without softening. The man who was the promulgator of the Rigveda was <strong>eight years senior</strong> to his own teacher. Wikipedia's infobox gives the succession in the same blunt way: predecessor <strong>Veda Vyasa</strong>, successors <strong>Bashkala</strong> and <strong>Indrapramiti</strong>, and the title of the seat is <em>Acharya of Rigaveda</em>.</p>
+<p>And the curriculum is specific. "Veda Vyasa taught Vahvricha Rik-Samhita to his disciple Paila. The Vahvricha Rik-Samhita refers to the Samhita part of the text Rigveda."</p>
+<p>So the transmission was: Parashara → Paila directly, and Parashara → Vyasa → Paila as a second line. Paila had a teacher and a guardian, and after his teacher's death he was looked after by his teacher's son. The boy who raised him then taught him. He was the older man in the room throughout.</p>
+<p><strong>The working form:</strong> <strong>the person who supervises your protocol is not the person who has lived longest, and it does not have to be.</strong> This is the single most practically useful thing in the article for anybody taking a remedy seriously. You are routinely taught by people younger than you. Sometimes they are far younger. If your rule is "I take direction only from an elder," you will reject competent teachers and end up with no teacher at all. The tradition that produced Paila did not operate on seniority — it operated on <strong>authority to transmit a specific corpus</strong>. That is a transferable test: <em>does this person hold the text, and can they transmit it accurately?</em> Nothing in the record asks about their age. If your chart has a teacher younger than you, that is not the obstacle you were told it was.</p>
+<h3>4. The act itself: he arranged the text, then split it in two</h3>
+<p>Here is the whole of it, in the source's own order, and it is three sentences long:</p>
+<p>"Veda Vyasa taught Vahvricha Rik-Samhita to his disciple Paila. The Vahvricha Rik-Samhita refers to the Samhita part of the text Rigveda. The sage Paila arrange the text and became the first Acharya of Rigaveda. Later, he divided it into two parts to his disciples Bashkala and Indrapramiti."</p>
+<p>Three moves:</p>
+<ol>
+<li><strong>He received a body of text.</strong></li>
+<li><strong>He arranged it</strong> — and became its first Acharya.</li>
+<li><strong>He divided it into two parts</strong> and gave them to two disciples, Bashkala and Indrapramiti.</li>
+</ol>
+<p>The third move is the one nobody discusses, and it is the one that made the first two survivable. Splitting a text into two branches is a <strong>redundancy strategy executed at the moment of canonicalisation</strong>, not a copy made later when someone got nervous. Paila did not distribute his finished work. He distributed the <em>responsibility</em>.</p>
+<p>Note also the direction of travel: the branching goes <strong>outward from the arranger</strong>, not inward from a council. One man decides the arrangement, then arms two others to carry it. That is a very different institution from a committee.</p>
+<p><strong>The working form:</strong> <strong>the moment you finish building a remedy protocol, split it in two and arm two people.</strong> Almost everyone reading this has, at some point, privately built a protocol that works — a sequence of mantras with a count, a start day, a closing act — and then kept it in their own head. That protocol is one illness, one house fire, one lost phone away from being gone. Paila's move is the antidote: at the moment the arrangement is clean, write it down and <strong>hand it to two different people</strong>, each responsible for one branch, each able to recite it exactly. Not because you distrust them. Because a single carrier is a single point of failure, and the tradition whose entire achievement was the survival of a text understood that in the first generation.</p>
+<h3>5. He indexed by clan, not by subject — and 95% of the cases fall into ten buckets</h3>
+<p>This is the technical heart of the article, and it is the part that transfers most directly to remedial astrology.</p>
+<p>Wikipedia's <em>Rigveda</em> article sets out how the surviving text is organised. The "family books" are mandalas 2 through 7, and they are arranged <strong>by family of the composer</strong>, not by subject matter:</p>
+<blockquote><p>The "family books" (2 – 7) are associated with various clans and chieftains, containing hymns by members of the same clan in each book; but other clans are also represented in the Rigveda. The family books are associated with specific regions, and mention prominent Bharata and Pūru kings.</p></blockquote>
+<p>And the article gives the index directly:</p>
+<table>
+<thead><tr><th>Book</th><th>Clan</th><th>Region</th></tr></thead>
+<tbody>
+<tr><td>Mandala 2</td><td>Gṛtsamāda</td><td>NW, Punjab</td></tr>
+<tr><td>Mandala 3</td><td>Viśvāmitra</td><td>Punjab, Sarasvatī</td></tr>
+<tr><td>Mandala 4</td><td>Vāmadeva</td><td>NW, Punjab</td></tr>
+<tr><td>Mandala 5</td><td>Atri</td><td>NW → Punjab → Yamunā</td></tr>
+<tr><td>Mandala 6</td><td>Bharadvāja</td><td>NW, Punjab, Sarasvati → Gaṅgā</td></tr>
+<tr><td>Mandala 7</td><td>Vasiṣṭha</td><td>Punjab, Sarasvatī → Yamunā</td></tr>
+<tr><td>Mandala 8</td><td>Kaṇva and Āṅgirasa</td><td>NW, Punjab</td></tr>
+</tbody>
+</table>
+<p>And then the sentence that decides everything:</p>
+<blockquote><p>Tradition associates a rishi (the composer) with each ṛc (verse) of the Rigveda. Most sūktas are attributed to single composers; <strong>for each of them the Rigveda includes a lineage-specific āprī hymn (a special sūkta of rigidly formulaic structure, used for rituals).</strong> In all, <strong>10 families of rishis account for more than 95 per cent of the ṛcs.</strong></p></blockquote>
+<p>Two facts in one paragraph, and both of them are engineering:</p>
+<ul>
+<li>The index key is the <strong>clan</strong>, and the ten clans cover <strong>more than 95 per cent</strong> of all verses.</li>
+<li>Every single hymn carries a <strong>lineage-specific āprī</strong> — a fixed, formulaic ritual verse attached to it.</li>
+</ul>
+<p>So the design is: <strong>few large buckets, and a ritual formula attached to every item.</strong> Not "hymns about fire," "hymns about cows," "hymns about kings." Clans, regions, and a ritual address. That is an index a human being can actually navigate under pressure.</p>
+<p><strong>The working form:</strong> <strong>index your remedies by the cause-lineage, not by the symptom — and accept that 95% of cases will land in ten buckets.</strong> If your remedial archive is organised by symptom ("money problems," "marriage delay," "skin disease"), you will never find anything at 2 a.m. Organise it by <strong>cause-lineage</strong>: the significator that generates the condition — the 8th house and Saturn, the 7th and Venus, the 2nd and Jupiter, the 5th and Mercury, the 6th and Mars, the 12th and Rahu-Ketu, the 1st and Sun, the 4th and Moon, the 11th and Moon, the 10th and the ruler of the 10th. Ten buckets. Every chart you will ever look at will put its problem into one of them. When the diagnosis is muddy, you are not short of knowledge — you are using the wrong index. <strong>Switch the key and the same library that felt empty becomes crowded.</strong> And then: attach one fixed opening verse to each bucket, so that every remedy carries its own ritual address (see section 6).</p>
+<h3>6. The āprī: one rigidly formulaic ritual verse for every family</h3>
+<p>This is the occult centrepiece of the article, and it sits in a single clause of Wikipedia's <em>Rigveda</em> article that most readers will skim past.</p>
+<blockquote><p>for each of them the Rigveda includes a <strong>lineage-specific āprī hymn (a special sūkta of rigidly formulaic structure, used for rituals)</strong></p></blockquote>
+<p>Three words in that clause carry the weight. <strong>Lineage-specific</strong> — it belongs to that clan, not to a general pool. <strong>Rigidly formulaic</strong> — its structure is fixed, so it is not improvised. <strong>Used for rituals</strong> — it is not a reading for devotion; it is an operative verse, recited to do something.</p>
+<p>Understand what this means for the shape of the corpus. Paila did not simply arrange hymns. He arranged them so that <strong>every hymn had a ritual handle attached to it</strong> — a fixed-formula verse that opens the transaction with the deity addressed by that clan. The arrangement and the ritual apparatus were built at the same time, in the same act. A Rigveda without āprīs is a poem collection. A Rigveda with an āprī attached to every suktā is a <strong>procedure manual</strong>.</p>
+<p>And it is worth noticing what the <em>Rigveda</em> article says about what happened later, because it explains why this apparatus was so badly needed. The article records that by the period of Puranic Hinduism "the language of the hymns had become 'almost entirely unintelligible', and their interpretation mostly hinged on mystical ideas and sound symbolism." The plain sense went first. What survived was <strong>the sound and the formula</strong> — because the formula was fixed, it could be transmitted even when the meaning could not be parsed.</p>
+<p><strong>The working form:</strong> <strong>every remedy gets one fixed opening verse, and you never improvise it.</strong> This is the most immediately usable occult mechanic in the article, and it costs nothing. For each bucket in your archive, choose <strong>one</strong> verse — the fixed ritual address that opens that class of work: the deity, the planet, the nakshatra, the specific power you are invoking. Recite it identically every time. Do not paraphrase it. Do not "improve" it. Do not use a different one on a bad day. The reason the āprī was <strong>rigidly formulaic</strong> is the same reason a mantra count is fixed: a formulaic opening is the one part of the practice you can guarantee you will execute perfectly, which means that when the rest of the practice is done badly — when you are tired, when the day went wrong, when the count slipped — the opening still landed perfectly. <strong>A protocol with one immovable verse has a floor. A protocol improvised fresh each time has no floor at all.</strong> Write the āprī down. Say it out loud once a day for a week until it is automatic. Then never change it again.</p>
+<h3>7. The checksum: 432,000 syllables, and the count that came up short</h3>
+<p>Now the part that makes the whole enterprise verifiable, and it is arithmetic.</p>
+<p>Wikipedia's <em>Rigveda</em> article is precise about the scale of the corpus and precise about how it was checked:</p>
+<blockquote><p>The Rigveda Samhita is the core text and is a collection of 10 books (maṇḍala s) with <strong>1,028 hymns (sūkta s)</strong> in about <strong>10,600 verses</strong> (called ṛc, eponymous of the name Rigveda).</p></blockquote>
+<blockquote><p>In the 1877 edition of Aufrecht, the 1028 hymns of the Rigveda contain a total of <strong>10,552 ṛcs, or 39,831 padas</strong>. The Shatapatha Brahmana gives the number of syllables to be <strong>432,000</strong>, while the metrical text of van Nooten and Holland (1994) has a total of <strong>395,563 syllables</strong> (or an average of 9.93 syllables per pada); counting the number of syllables is not straightforward because of issues with sandhi and the post-Rigvedic pronunciation of syllables like súvar as svàr.</p></blockquote>
+<p>Sit with that for a moment. The tradition had a <strong>target number</strong>. 432,000 syllables — a fixed, canonical total, asserted by the <em>Shatapatha Brahmana</em>, and available to be checked against. And when modern scholars actually counted the text as it survives, they got <strong>395,563</strong>. Not close. Off by more than 36,000 syllables.</p>
+<p>And the article explains why the count is hard <em>and</em> what was done about it:</p>
+<blockquote><p>The fixing of the Vedic chant (by enforcing regular application of sandhi) and of the padapāṭha (by dissolving Sandhi out of the earlier metrical text), occurred during the later Brahmana period, in roughly the 6th century BCE.</p></blockquote>
+<p>Two forms. One <strong>smooth</strong> form (sandhi enforced — the joined, spoken text) and one <strong>dissolved</strong> form (padapāṭha — sandhi taken back out, so every word stands separate). And Wikipedia's infobox records the physical artefact: a "Rigveda MS2097.jpg" manuscript in Devanāgarī, early 19th century, in which "the pitch-accent is marked by underscores and vertical overscores in red." The pitch accent is not inferred. It is <strong>written down</strong>, in a second colour, above the text.</p>
+<p>There is one more constraint that makes the whole design comprehensible. Wikipedia's <em>Rigveda</em> article notes that "according to the Smriti rules that forbade the writing down the Vedas" the text was not written down — "The oral tradition continued as a means of transmission until modern times." So for most of its life this was a <strong>voice with no backup</strong>, and it was nonetheless transmitted "with precision... through methods of memorisation of exceptional complexity, rigour and fidelity."</p>
+<p><strong>The working form:</strong> <strong>give your protocol a number, then actually count it — and expect the count to disagree with the number you inherited.</strong> Three moves. (1) <em>State the canonical figure.</em> Your tradition will have one: 108 beads, 40 days, 21 repetitions, 432,000 syllables. Write it down as the target. (2) <em>Count what you actually do.</em> Not what you plan, not what you did on your best day — what the practice consists of, syllable by syllable, bead by bead, over a full cycle. The Rigveda's own tradition hit exactly this: a canonical target of 432,000, an actual count of 395,563, and a 36,000-syllable gap. (3) <em>Do not hide the gap.</em> Wikipedia reports it plainly, and so should you. The gap is where the sandhi lives — where the joined sound is carrying more than the separated words. That is not an error in your practice; it is the part of the practice that operates on sound rather than on meaning, and it is the part that survives when your understanding of the practice goes fuzzy. <strong>If your count and your intention disagree, the difference is usually the part of the ritual you have not yet understood — and it is still working.</strong> Also: keep a second written form of your practice, a "dissolved" version where each item stands alone and nothing is implied. That is the padapāṭha. It is what you read when you need to check that the smooth version is still correct.</p>
+<h3>8. The two branches that kept it alive — and how little they disagree</h3>
+<p>Back to the two disciples. Bashkala and Indrapramiti received the two parts of the divided text, and the <em>Rigveda</em> article confirms that the branch structure outlived Paila by a long way and became a formal system of its own.</p>
+<p>Wikipedia calls these <strong>śākhās</strong> and explains the term: "Several shakhas (from skt. śākhā f. 'branch', i. e. 'recension') of the Rig Veda are known to have existed in the past. Of these, <strong>Śākala Śākhā (named after the scholar Śākalya) is the only one to have survived in its entirety.</strong> Another śākhā that may have survived is the Bāṣkala, although this is uncertain."</p>
+<p>The article lists the branches and their fingerprints:</p>
+<ul>
+<li><strong>Śākala</strong> — 1,017 regular hymns, plus an appendix of 11 vālakhilya hymns, customarily included in the 8th mandala (8.49–8.59), for 1,028 hymns total. The surviving padapāṭha version is ascribed to Śākalya.</li>
+<li><strong>Bāṣkala</strong> — includes eight of those vālakhilya hymns among its regular hymns, making 1,025 regular hymns, plus <strong>its own appendix of 98 hymns, the Khilani</strong>.</li>
+<li><strong>Māṇḍukāyana</strong> — "Perhaps the oldest of the Rigvedic shakhas."</li>
+<li><strong>Aśvalāyana</strong> — "Includes 212 verses, all of which are newer than the other Rigvedic hymns."</li>
+<li><strong>Śaṅkhāyana</strong> — "Very similar to Aśvalāyana."</li>
+<li><strong>Saisiriya</strong> — "Mentioned in the Rigveda Pratisakhya. Very similar to Śākala, with a few additional verses; might have derived from or merged with it."</li>
+</ul>
+<p>And then the sentence that should be read aloud slowly, because it is the entire point of the branch system:</p>
+<blockquote><p>The differences between all these shakhas are <strong>very minor, limited to varying order of content and inclusion (or non-inclusion) of a few verses.</strong></p></blockquote>
+<p>Now compare that with what a branch system is usually assumed to be. A branch system is normally imagined as the place where things drift apart — schism, divergence, a fork in the road that gets wider every generation. The documented Rigveda branches are the opposite: <strong>five or six independent carriers of essentially the same text, differing in the order of a few items and in whether a handful of verses are present at all.</strong> They are <em>variants</em>, not rivals. And the one branch that survives entire is the one that is also the one with the cleanest fingerprint — the <em>padapāṭha</em> is ascribed to Śākalya.</p>
+<p>Paila's division of the text into two parts, in the generation of the arranger himself, is what made six such branches possible at all. The redundancy was installed before the drift began.</p>
+<p><strong>The working form:</strong> <strong>build redundancy that is designed to stay close — and measure the distance.</strong> The instinct to preserve a tradition is usually to preserve it exactly, and to treat any difference as a defect to be corrected. The śākhā record shows a more sophisticated technique: <strong>run several carriers, accept that they will diverge slightly, and periodically measure exactly how far.</strong> Concretely, for a remedy protocol you have taught to two people, keep a <strong>branch note</strong> — a one-page record of the differences you know about: the verse they render differently, the count they use, the closing act they have added. Write "we differ here, and this is why." Do not silently converge them, and do not treat the difference as an error. A branch note of three lines is a maintenance document. A branch note of three pages is a schism, and schisms are what the Rigveda's own history shows we cannot afford — because the text survived by a near-total agreement of six carriers, and the <em>one</em> branch that survives complete is the one with the cleanest, most checkable form.</p>
+<h3>9. The verses almost nobody recites: vālakhilya and Khilani</h3>
+<p>Every branch system has a tail, and the Rigveda's tail is named, dated and specific.</p>
+<p><strong>Vālakhilya</strong> is the Śākala appendix: eleven hymns which "are now customarily included in the 8th mandala (as 8.49 – 8.59)" — that is, folded into the eighth book, out of their original order, where they are still counted but no longer stand where they were set. <strong>Khilani</strong> is the Bāṣkala appendix: 98 hymns that exist only in that branch, "its own appendix of 98 hymns." Bāṣkala also absorbs eight of the eleven vālakhilya into its regular body.</p>
+<p>And then there is the branch with the newest material: <strong>Aśvalāyana</strong>, which "Includes 212 verses, all of which are newer than the other Rigvedic hymns." The tradition did not throw away the later material. It <strong>kept it, and labelled it</strong> — newer, additive, held in a branch rather than inserted into the main body.</p>
+<p>This is a mechanism for handling material that arrives after the arrangement is fixed. It is not deletion and it is not uncontrolled insertion. It is a <strong>parking area with a label</strong>.</p>
+<p><strong>The working form:</strong> <strong>park late material in a labelled branch instead of inserting it into the core.</strong> Almost every remedial tradition accumulates new material — a teacher's addition, a family's variant, a verse somebody found in an old book — and almost every tradition handles it badly, in one of two ways: it is inserted into the main sequence immediately, where it silently changes the count and the timing and nobody can say when it arrived; or it is dismissed, and then it resurfaces in a different branch. The Rigveda has a third option that is visible in its own structure. <strong>Create a branch. Name it. Date what is in it.</strong> Keep the core count and the core order unchanged; hold the new verses in the branch, with a note of where they came from and when they entered. Then the archive stays legible: the core is what everybody does, the branch is what this particular line does differently, and the label tells the truth about which is which. Paila's arrangement did not expire — it acquired a shelf.</p>
+<h3>10. The library was built after a war, by the winners, to hold together clans that did not want to be held together</h3>
+<p>This is the political layer, and it is in the record.</p>
+<p>Wikipedia's <em>Rigveda</em> article dates the codification and then explains its motive:</p>
+<blockquote><p>The codification of the Rigveda took place late in the Rigvedic or rather in the early post-Rigvedic period at c. 1200 BCE, by members of the early Kuru tribe, when the centre of Vedic culture moved east from the Punjab into what is now Uttar Pradesh. The Rigveda was codified by compiling the hymns, including the arrangement of the individual hymns in ten books, coeval with the composition of the younger Veda Samhitas. According to Witzel, the initial collection took place after the Bharata victory in the Battle of the Ten Kings, under king Sudās, over other Puru kings. <strong>This collection was an effort to reconcile various factions in the clans which were united in the Kuru kingdom under a Bharata king.</strong> This collection was re-arranged and expanded in the Kuru kingdom, reflecting the establishment of a new Bharata-Puru lineage and new srauta rituals.</p></blockquote>
+<p>Read the whole of that last passage rather than the first sentence. The library was assembled <strong>after</strong> the Battle of the Ten Kings, by the winning side, and its explicit purpose was <strong>reconciliation</strong>. Not preservation for its own sake. Not devotion. The collection was an instrument of political integration: the Bharata king had won the war, the Puru clans had been defeated and were now inside a single Kuru kingdom, and something had to be made that all of them could hold in common.</p>
+<p>And it was re-arranged and expanded again afterwards, "reflecting the establishment of a new Bharata-Puru lineage and new srauta rituals" — that is, the text was revised to fit the new ruling house and the new ritual calendar.</p>
+<p><strong>The working form:</strong> <strong>an archive is a political instrument — know which side built it, and why.</strong> The remedy corpus you inherited was assembled by people with interests, at a moment of their own good fortune, for reasons that had nothing to do with your chart. That is not a disqualification. It is a <strong>reading instruction</strong>. Ask: who was the dominant lineage at the time this corpus was fixed? Which family or school had the seat? Which victory had just happened? Which ritual calendar was it written to serve? Then read every remedy in it as the practice of a <strong>ruling house</strong>, not as a neutral law of nature. "This is what the people who won the Battle of the Ten Kings decided should be done about Saturn" is a more accurate statement than "this is what Saturn requires" — and it is the more useful one, because it tells you what the practice is <em>for</em>. Remedies that were never political will not survive. Remedies that were built as instruments of reconciliation will survive precisely because they did their work once.</p>
+<h3>11. The Veda's own address system: nakshatra, pada, and the key that is not equal-sized</h3>
+<p>Now the part that ties a 3,000-year-old arrangement directly to your transit work.</p>
+<p>The Rigveda was indexed by clan. The <strong>sky</strong> was indexed by nakshatra, and Wikipedia's <em>Nakshatra</em> article explains the design in detail — including a structural correction that is the same kind of thinking Paila demonstrated.</p>
+<blockquote><p>In Hindu astronomy, there was an older tradition of <strong>28 nakshatras</strong> which were used as celestial markers. When these were mapped into equal divisions of the ecliptic, a division of <strong>27 portions</strong> was adopted since that resulted in a clearer definition of each segment, subtending <strong>13° 20′</strong> rather than the 12° 51 + 3 ⁄ 7 ′ that 28 segments would give. In the process, the nakshatra <strong>Abhijit was left out without a portion</strong>. However, the Abhijit nakshatra becomes important when deciding on the timing of an auspicious event.</p></blockquote>
+<p>The old 28 were not equal. The article gives the sizes: "Weixing Nui provides a list of the extent of the original 28 nakshatras expressed in Muhurtas (with one Muhurta = 48 minutes of arc). Hindu texts note there were <strong>16 nakshatras of 30 Muhurtas, 6 of 45 Muhurtas, 5 of 15 Muhurtas and one of 6 Muhurtas.</strong> The 28 mansions of the 360° lunar zodiac total <strong>831 Muhurtas or 27.7 days.</strong>"</p>
+<p>Check the arithmetic: 16×30 = 480, 6×45 = 270, 5×15 = 75, 1×6 = 6. Total = <strong>831.</strong> The unequal system is internally exact.</p>
+<p>And the 27 was adopted not because it was more accurate but because it was <strong>more addressable</strong>: "a division of 27 portions was adopted since that resulted in a clearer definition of each segment." Equal segments. Uniform keys. The Chinese, the article notes, "retained all of their original 28 lunar mansions. These were grouped into four equal quarters which would have been fundamentally disrupted if it had been decided to reduce the number of divisions to 27." So two systems, one equalised, one preserved.</p>
+<p>There is a further structural point that matters more than the count. The nakshatra is not a single slot: "Every nakshatra is divided into four <strong>padas</strong> (literal translation 'parts', 'steps')." And the entry point itself was revised: "The starting point for the nakshatras according to the Vedas is 'Krittika'... but in more recent compilations, the start of the nakshatra list is the point on the ecliptic directly opposite the star Spica, called Chitrā in Sanskrit."</p>
+<p><strong>The working form:</strong> <strong>make your transit keys uniform, but keep the old unequal ones — and never lose the padas.</strong> Three practical consequences. (1) <em>Uniformity wins in practice.</em> The reason the tradition moved from 28 uneven segments to 27 equal ones of 13° 20′ each is that a uniform key is findable: when you know the segment, you know its size, and you can convert a time into a position without a lookup table. When you set up your own transit reminders, make the keys <strong>uniform</strong> — the same window for every graha, every nakshatra, every house. (2) <em>But keep the uneven table in the drawer.</em> The 28-muhurta scheme is exact and was the working system for centuries; it tells you which mansions are <strong>long</strong> (30 and 45 muhurtas) and which are <strong>short</strong> (15 and 6), and that difference changes how much work a transit can actually absorb. A remedy that fits in 15 muhurtas and one that needs 45 are not the same remedy. (3) <em>Use the padas.</em> Four steps per nakshatra means <strong>four sub-windows inside every transit</strong> — and four is exactly the granularity at which a multi-day protocol can be staged: entry, build, peak, close. Most people plan one window per transit and then wonder why the middle feels flat. Stage it in four.</p>
+<h3>12. The boon table: what each nakshatra is actually asked for</h3>
+<p>This is the payoff section, and it is a genuine ritual index — not a list of associations.</p>
+<p>Wikipedia's <em>Nakshatra</em> article quotes, from Griffith's 1895 translation of the Atharva Veda, a five-verse hymn that asks each nakshatra for a <strong>specific, named thing</strong>. The Sanskrit is preserved in the article's notes. Broken out, the requests run:</p>
+<ul>
+<li><strong>Kṛttikā and Rohiṇī</strong> — the good one, with Agni invoked; goodness is asked of the pair.</li>
+<li><strong>Mṛgaśiraḥ</strong> — <strong>śām</strong>, peace. Plainly and specifically peace.</li>
+<li><strong>Ārdrā</strong> and <strong>Punarvasū</strong> — <strong>sūnṛtā</strong>, happiness, and <strong>cāru</strong>, beauty.</li>
+<li><strong>Pūṣyaḥ</strong> — <strong>bhānu</strong>, the sun.</li>
+<li><strong>Āśleṣā</strong> — <strong>ayanaṃ</strong>, a journey, a path, a going.</li>
+<li><strong>Maghā</strong> — <strong>me punyaṃ</strong>, merit for me.</li>
+<li><strong>Pūrva Phālgunī, Uttara Phālgunī, Hasta, Citrā, Svāti</strong> — <strong>śivā</strong>, auspiciousness, and <strong>sukho me astu</strong>, let happiness be mine.</li>
+<li><strong>Vishākhā</strong> — <strong>suhāvānurādhā</strong>, prosperity and its opposite.</li>
+<li><strong>Jyeṣṭhā</strong> and <strong>Sunakṣatram</strong> — <strong>ariṣṭa mūlam</strong>, a stable foundation.</li>
+<li><strong>Pūrva Aṣāḍhā</strong> — <strong>annaṃ</strong>, food, and <strong>rasatāṃ</strong>, juice or sap.</li>
+<li><strong>Uttarā</strong> — <strong>ūrjaṃ</strong>, vigour, strength.</li>
+<li><strong>Abhijit</strong> — <strong>rasatāṃ punyaṃ eva</strong>, only happiness, for me.</li>
+<li><strong>Śrāvaṇa</strong> and <strong>Śrāviṣṭhā</strong> — <strong>supuṣṭim</strong>, great prosperity.</li>
+<li><strong>Mahāc chatābhiṣag</strong> — the <strong>great herb</strong>, the best medicine.</li>
+<li><strong>The two Bhādrapadā</strong> — <strong>suśarma</strong>, ease, comfort, well-being.</li>
+<li><strong>Revatī</strong> and <strong>Āśvayujau</strong> — <strong>bhágaṃ</strong> and <strong>rayiṃ</strong>, good fortune and wealth.</li>
+</ul>
+<p>Every nakshatra has an assigned <strong>boon</strong>, stated as a noun. Not a vague blessing — <em>peace</em>, <em>a journey</em>, <em>a stable foundation</em>, <em>food</em>, <em>vigour</em>, <em>the great herb</em>, <em>ease</em>, <em>wealth</em>. The verse is a shopping list with the sky as the supplier.</p>
+<p>And the <em>Nakshatra</em> article supplies the matching keys in a table. Each of the 27 has "its own symbol, an associated mythological deity, and a planetary ruler (navagraha)," with the regions of sky given "as per Basham (1954)":</p>
+<table>
+<thead><tr><th>Nakshatra</th><th>Graha</th><th>Deity</th><th>Symbol</th></tr></thead>
+<tbody>
+<tr><td>Aśvinī</td><td>Ketu (South node)</td><td>Ashvins</td><td>Horse's head</td></tr>
+<tr><td>Bharaṇī</td><td>Shukra (Venus)</td><td>Yama, god of death and Dharma</td><td>Yoni</td></tr>
+<tr><td>Kṛttikā</td><td>Surya (Sun)</td><td>Agni, god of fire</td><td>Knife or spear</td></tr>
+<tr><td>Rohiṇī</td><td>Chandra (Moon)</td><td>Prajapati, rigvedic form of Brahma</td><td>Cart or chariot, temple, banyan tree</td></tr>
+<tr><td>Mṛgaśiraḥ</td><td>Mangala (Mars)</td><td>Soma, the moon god</td><td>Deer's head</td></tr>
+<tr><td>Ārdrā</td><td>Rahu (North node)</td><td>Rudra, rigvedic fierce form of Shiva</td><td>Teardrop, diamond, human head</td></tr>
+<tr><td>Punarvasū</td><td>Guru (Jupiter)</td><td>Aditi</td><td>—</td></tr>
+<tr><td>Pūṣya</td><td>Saturn</td><td>Brihaspati</td><td>—</td></tr>
+<tr><td>Āśleṣā</td><td>Mercury</td><td>Rahu</td><td>—</td></tr>
+<tr><td>Maghā</td><td>Ketu</td><td>Pitr</td><td>—</td></tr>
+<tr><td>Pūrva Phālgunī</td><td>Venus</td><td>Bhaga</td><td>—</td></tr>
+<tr><td>Uttara Phālgunī</td><td>Sun</td><td>Sun</td><td>—</td></tr>
+<tr><td>Hasta</td><td>Moon</td><td>Savitr</td><td>—</td></tr>
+<tr><td>Citrā</td><td>Mars</td><td>Vishwakarma</td><td>—</td></tr>
+<tr><td>Svāti</td><td>Rahu</td><td>Vayu</td><td>—</td></tr>
+<tr><td>Vishākhā</td><td>Jupiter</td><td>Indra, Agni</td><td>—</td></tr>
+<tr><td>Anurādhā</td><td>Saturn</td><td>Mitra</td><td>—</td></tr>
+<tr><td>Jyeṣṭhā</td><td>Mercury</td><td>Indra</td><td>—</td></tr>
+<tr><td>Mūla</td><td>Ketu</td><td>Varuna, Nirriti</td><td>—</td></tr>
+<tr><td>Pūrva Aṣāḍhā</td><td>Venus</td><td>Apah</td><td>—</td></tr>
+<tr><td>Uttara Aṣāḍhā</td><td>Sun</td><td>Visvedevas</td><td>—</td></tr>
+<tr><td>Śrāvaṇa</td><td>Moon</td><td>Vishnu</td><td>—</td></tr>
+<tr><td>Dhaniṣṭhā</td><td>Mars</td><td>Vasus</td><td>—</td></tr>
+<tr><td>Śatabhiṣā</td><td>Rahu</td><td>Varuna</td><td>—</td></tr>
+<tr><td>Pūrva Bhādrapadā</td><td>Jupiter</td><td>Aja, Ek Pada</td><td>—</td></tr>
+<tr><td>Uttara Bhādrapadā</td><td>Saturn</td><td>Ahirbudhnya</td><td>—</td></tr>
+<tr><td>Revatī</td><td>Mercury</td><td>Pooshan</td><td>—</td></tr>
+</tbody>
+</table>
+<p><strong>The working form:</strong> <strong>when the Moon is in a nakshatra, ask that nakshatra for its own named boon — and use its graha and deity to route the request.</strong> This is the cleanest transit-alignment ritual available, and it is not an invention; it is the arrangement, executed. Four steps. (1) <em>Find the Moon's nakshatra</em> — "Finding a person's nakshatra requires mathematical calculations using the exact time, date and coordinates of their birth," which is the article's own description of the natal calculation, and for a transit you need only the current position. (2) <em>Look up the nakshatra's boon</em> from the list above — peace, a journey, a stable foundation, food, vigour, the great herb, ease, wealth, merit. (3) <em>Recite the matching Veda verse</em> for that nakshatra, and use its <strong>graha</strong> as the routing signal and its <strong>deity</strong> as the address. So when the Moon stands in <strong>Āśleṣā</strong> you are asking <em>specifically</em> for a path, a going, a way forward — with Mercury as the graha and Rahu as the deity; when it stands in <strong>Mūla</strong> you are asking for uprooting and foundation, with Ketu and Varuna/Nirriti. (4) <em>Keep the padas as four sub-steps</em> — entry, build, peak, close. Then the work you do is aligned to what the sky segment is actually offering, rather than to a generic "let me be happy" petition. <strong>The Moon's nakshatra is not mood. It is a specification.</strong></p>
+<h3>13. The remedy book that was supposed to be gone — and the branch that came back from Odisha</h3>
+<p>One more branch, one more survival, and this one is the most directly useful to anybody building a practice library today.</p>
+<p>Wikipedia's <em>Atharvaveda</em> article describes the fourth Veda as "the 'knowledge storehouse of atharvans, the procedures for everyday life'," a late addition to the Vedic scriptures, containing "a collection of 730 hymns with about 6,000 mantras, divided into 20 books" — the books are <em>kāṇḍas</em>. It notes that "about a sixth of the Atharvaveda texts adapt verses from the Rigveda," so the two texts are already interpenetrated in the source.</p>
+<p>Then the branch story, and it is remarkable:</p>
+<blockquote><p>Two different recensions of the text – the Paippalāda and the Śaunakīya – have survived into modern times. Reliable manuscripts of the Paippalada edition were believed lost, but <strong>a well-preserved version was discovered among a collection of palm-leaf manuscripts in Odisha in 1957.</strong></p></blockquote>
+<p>And the article is careful about the label: the Atharvaveda "is sometimes called the 'Veda of magical formulas', a description other scholars consider incorrect." But it also records what the tradition claims about the text's origin — it is named after Atharvan, "the legendary priest named Atharvan who was first to develop prayers to fire, offer Soma, and who composed 'formulas and spells intended to counteract diseases and calamities'." And it notes a contrast in register: "In contrast to the 'hieratic religion' of the other three Vedas, the Atharvaveda is said to represent a 'popular religion', incorporating not only formulas for magic, but also the daily rituals for initiation into learning (upanayana), marriage and funerals."</p>
+<p>The article also records the two remedies directly, and they are practical rather than abstract. <strong>Atharvaveda 5.21</strong> is a fever hymn: "Heaven our father, and Earth our mother, Agni the men-watcher, let them send the ten days' fever far away from us... O fever, these snowy mountains with Soma on their back have made the wind, the messenger, the healer for us, Disappear from here to the Maratas." And <strong>Atharvaveda 8.7</strong> invokes the plants themselves: "The tawny colored, and the pale, the variegated and the red, the dusky tinted, and the black – all Plants we summon hitherward... I call for thee the fibrous, and the reed like, and branching plants, dear to Vishwa Devas, powerful, giving life to men. The conquering strength, the power and might, which ye, victorious plants possess, Therewith deliver this man here from this consumption, O ye Plants: so I prepare the remedy."</p>
+<p>Note the last clause. "<strong>So I prepare the remedy.</strong>" The remedy is not begged for. It is <em>prepared</em>, from named materials, addressed to the plants as agents who can be instructed.</p>
+<p><strong>The working form:</strong> <strong>the branch you think is gone is worth searching for — and a remedy is a preparation, not a plea.</strong> Two halves. On the search: that Paippalāda recension was <em>believed</em> lost and then turned up in a palm-leaf collection in Odisha in 1957, decades after people had stopped looking. Whenever a remedy line in your archive appears to have died out — a teacher's teacher's teacher's variant, a family manuscript, a printed booklet from a city nobody visits — <strong>do not record it as extinct; record it as "believed lost."</strong> The odds are better than they look, and the cost of the search is an afternoon. On the preparation: the Atharvaveda's own remedy grammar is an <strong>instruction to agents</strong>, not a request to a boss. "Therewith deliver this man here from this consumption... so I prepare the remedy." Write your protocols the same way: name the material, name the agent, name the specific deliverable, and state the act of preparation. That is a different prayer from "please remove my problem," and it is the difference between a remedy and a complaint.</p>
+<h3>14. What this article is not</h3>
+<p>It is not a claim that astrology has explanatory power. Wikipedia's <em>Nakshatra</em> article is explicit about the practice's own method — "Finding a person's nakshatra requires mathematical calculations using the exact time, date and coordinates of their birth" — and the wider scholarly position on astrology as a predictive system is separate and settled against it. Nothing here should be read as a medical, legal, financial or psychological recommendation, and no verse in this article should be used in place of a doctor's opinion, a lawyer's advice, a licensed therapist's care, or a sound financial plan.</p>
+<p>It is not a claim that the historical Paila authored or arranged the surviving Rigveda in the way the Puranic tradition describes. The <em>Rigveda</em> article itself records a rival account: "An alternate version states that Shakala compiled the Rigveda from the teachings of Vedic rishis, and one of the manuscript recensions mentions Shakala." And it records the dating honestly — the codification "took place... at c. 1200 BCE, by members of the early Kuru tribe," while the bulk of the hymns "was composed in the northwestern region of the Indian subcontinent... most likely between c. 1500 and 1000 BCE." The arrangement and the composition are separated by centuries, and the tradition's own sources disagree about who did which.</p>
+<p>It is not a claim that the āprī, the vālakhilya, the Khilani or the nakshatra-boon hymn have a single uncontested meaning. The <em>Rigveda</em> article records that by the Puranic period the language "had become 'almost entirely unintelligible', and their interpretation mostly hinged on mystical ideas and sound symbolism" — and that the text supports several legitimate interpretive registers at once: "the perspective of religious rites (adhiyajna), from the perspective of the deities (adhidevata), and from the perspective of the soul (adhyatman)," plus a later reading in which "the gods mentioned were viewed as symbolism for legendary individuals or narratives." Where this article uses a rendering, it is a rendering, not the last word.</p>
+<p>What <strong>is</strong> verifiable, and is on the table: a sage whose recorded function was to <strong>arrange</strong> a text and make it findable; who received it from a teacher he outlived by eight years and who then became his teacher in turn; who was looked after after his teacher's death by his teacher's son; who became its first Acharya; who <strong>split it into two branches</strong> in his own lifetime and armed two disciples to carry them; who indexed it by clan and region with ten clans covering more than 95 per cent of the verses; who attached a <strong>rigidly formulaic, lineage-specific ritual verse</strong> to every hymn; whose tradition kept a canonical syllable count of 432,000 against a modern count of 395,563; whose branches differed only in the order of a few items and the presence of a few verses; who parked late material in labelled branches — vālakhilya, Khilani, the 212 newer verses of Aśvalāyana — instead of deleting or smuggling it in; whose library was assembled after a war, by the winners, explicitly to reconcile the clans they had defeated; and whose successors preserved for four thousand years a body of remedies addressed to the sky, one boon per nakshatra, with a graha, a deity and a symbol on each.</p>
+<p>Pull it together, and the practice that falls out of the record is coherent:</p>
+<ul>
+<li><strong>Arrange before you add.</strong> The arrangement and the ritual apparatus were built in the same act. Build the index and the opening verse together, or you will do it twice.</li>
+<li><strong>Index by cause-lineage, not by symptom.</strong> Ten buckets cover more than 95 per cent of the cases. Switch the key and the library that felt empty becomes crowded.</li>
+<li><strong>One fixed opening verse per remedy.</strong> Formulaic, never improvised, recited identically every time. It is the floor of the practice.</li>
+<li><strong>Give the protocol a number, then count it.</strong> 432,000 against 395,563 — the gap is where the sound is doing work the words are not.</li>
+<li><strong>Split it in two and arm two people.</strong> At the moment the arrangement is clean, not later. Two carriers, one protocol.</li>
+<li><strong>Measure the distance between the branches.</strong> Write down the three lines where they differ. Do not silently converge them.</li>
+<li><strong>Park late material in a labelled branch.</strong> Date it, name it, keep the core count unchanged.</li>
+<li><strong>Know who built the archive and after which victory.</strong> Every remedy corpus is the practice of a ruling house.</li>
+<li><strong>Make transit keys uniform, keep the uneven table in the drawer, and stage in four padas.</strong> Entry, build, peak, close.</li>
+<li><strong>Ask the nakshatra for its own named boon.</strong> Peace, a path, a foundation, food, vigour, the great herb, ease, wealth — and route it through that nakshatra's graha and deity.</li>
+<li><strong>A remedy is a preparation, not a plea.</strong> Name the material, name the agent, name the deliverable, state the act.</li>
+<li><strong>"Believed lost" is not "lost."</strong> Search before you record an extinction.</li>
+</ul>
+<p>That is what an arranger does when the task is to make a body of knowledge findable by the people who will need it in the dark — and it is why the Rigveda is still in use, four thousand years later, in a form that a frightened person can open with one hand.</p>
+
+<div class="references">
+<h2>Sources</h2>
+<p>1. <a href="https://en.wikipedia.org/wiki/Paila_(Rishi">Paila (Rishi) - Wikipedia</a>)</p>
+<p><strong>Wikipedia cache files used for this article:</strong></p>
+<p><code>C:\work\nblm\_rishis_category_142.html</code> (Category:Rishis — 136 members parsed)</p>
+<p><code>_p142_PailaRishi.html</code> · <code>_p142_Rigveda.html</code> · <code>_p142_Nakshatra.html</code> · <code>_vyasa_Vedas.html</code> · <code>_vyasa_Atharvaveda.html</code> (pre-existing caches, re-extracted locally)</p>
+<ol>
+<li><a href="https://en.wikipedia.org/wiki/Rigveda">Rigveda - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Vedas">Vedas - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Nakshatra">Nakshatra - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Atharvaveda">Atharvaveda - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Category:Rishis">Category:Rishis - Wikipedia</a></li>
+</ol>
+</div>
+        </article>
+    </div>
+
+</body>
+</html>
