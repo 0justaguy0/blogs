@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>शाण्डिल्य की उद्गीथा और पूर्ण-चंद्र कुंजी</title>
+    <style>
+        :root {
+            --bg-color: #FDF9F1;
+            --text-color: #3E2723;
+            --indian-yellow: #E4A025;
+            --indian-orange: #E65100;
+            --accent-light: #FFECB3;
+            --ref-bg: #FFF3E0;
+        }
+
+        body {
+            font-family: 'Georgia', 'Nirmala UI', 'Mangal', serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(var(--bg-color) 80%, var(--accent-light) 100%);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #FFFFFF;
+            padding: 50px 60px;
+            box-shadow: 0 10px 30px rgba(62, 39, 35, 0.1);
+            border-top: 8px solid var(--indian-orange);
+            border-bottom: 8px solid var(--indian-yellow);
+            border-radius: 4px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed var(--indian-yellow);
+        }
+
+        h1 {
+            color: var(--indian-orange);
+            font-size: 2.5em;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        h2 {
+            color: var(--indian-yellow);
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--indian-orange);
+            padding-left: 15px;
+        }
+
+        h3, h4 {
+            color: var(--indian-orange);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        .intro-text::first-letter {
+            float: left;
+            font-size: 3.5em;
+            line-height: 0.8;
+            padding-right: 8px;
+            padding-top: 4px;
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        ul, ol {
+            margin: 0 0 24px 0;
+            padding-left: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ol {
+            list-style-position: outside;
+            padding-left: 2.2em;
+        }
+
+        ul li, ol li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        ol li {
+            padding-left: 0.35em;
+        }
+
+        ul li::before {
+            content: '\2022';
+            position: absolute;
+            left: 0;
+            top: 0.05em;
+            color: var(--indian-orange);
+            font-size: 1.2em;
+            line-height: 1;
+        }
+
+        ol li::marker {
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        strong {
+            color: var(--indian-orange);
+        }
+
+        .image-placeholder-container {
+            margin: 30px 0;
+            text-align: center;
+            font-style: italic;
+            color: #795548;
+            background-color: var(--accent-light);
+            padding: 20px;
+            border-radius: 4px;
+            border: 1px solid var(--indian-yellow);
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.98em;
+            background-color: #FFFDF8;
+        }
+
+        th, td {
+            border: 1px solid #F0D49B;
+            padding: 10px 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--ref-bg);
+            color: var(--indian-orange);
+        }
+
+        blockquote {
+            margin: 30px 0;
+            padding: 20px 25px;
+            background-color: var(--accent-light);
+            border-left: 5px solid var(--indian-orange);
+            font-style: italic;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px dashed var(--indian-yellow);
+            margin: 32px 0;
+        }
+
+        .references {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: var(--ref-bg);
+            border-radius: 8px;
+            font-size: 0.9em;
+        }
+
+        .references h2, .references h3 {
+            color: var(--text-color);
+            margin-top: 0;
+            border-bottom: 1px solid var(--indian-yellow);
+            padding-bottom: 10px;
+            border-left: 0;
+            padding-left: 0;
+        }
+
+        .references p, .references li {
+            margin-bottom: 12px;
+            word-wrap: break-word;
+        }
+
+        .references a {
+            color: var(--indian-orange);
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>शाण्डिल्य की उद्गीथा और पूर्ण-चंद्र कुंजी</h1>
+        </header>
+
+        <article>
+<p class="intro-text">हर गंभीर उपाय-चिकित्सक जो क्रिया करता है, वह एक अभ्यास का उपयोग करता है — और उसे उस अभ्यास का सही नाम लगभग कोई नहीं बता पाता — और वह ऋषि जिसे वह अभ्यास मिला था, वह शाण्डिल्य थे, चंद्र के पुरोहित, जिन्होंने अपने गुरु शौनक से उद्गीथा विद्या सीखी थी।</p>
+<div class="image-placeholder-container">
+    <img src="blog145_Image.png" alt="चंद्र के पुरोहित ऋषि शाण्डिल्य, पूर्ण-चंद्र के सामने ओं का उच्च स्वर जप और मरम्मत किए गए ग्रहों का मंडल">
+</div>
+<p>वह बैठता है। आँखें बंद करता है। होंठ हिलाता है, एक मंत्र पर, चुपचाप, उँगलियों पर या माला पर गिनते हुए। गिनती 108 पर या 108,000 पर पूरी करता है और समाप्त कर देता है। यदि आप पूछें कि आप क्या कर रहे हैं, तो अधिकांश कहेंगे <em>जप</em>। यदि आप पूछें कि परंपरा उस विशिष्ट रूप को क्या कहती है जो वह कर रहा है, तो अधिकांश ठिठक जाएँगे।</p>
+<p>यही ठिठकाहट इस लेख का विषय है, और यह तुच्छ बात नहीं है। शाण्डिल्य को जो अभ्यास अपने गुरु शौनक से मिला था, वह चुप नहीं था। वह <strong>स्वरयुक्त</strong> था। उसे <strong>उद्गीथा विद्या</strong> कहा गया, और इसीलिए शाण्डिल्य <strong>पूर्ण-चंद्र के ऋषि</strong> हैं — क्योंकि उन्हें मिला अभ्यास <em>सुनने</em> का है, और जिस देवता के लिए वह मिला, वह दिखता तो है पर सुनाई नहीं देता।</p>
+<p>आइए पहले यह स्पष्ट कर लें कि हम किसके बारे में बात कर रहे हैं, क्योंकि स्रोत बार-बार चेतावनी देते हैं कि लोग यहाँ गलती करते हैं।</p>
+<h2>भाग एक: चांद के पूरोहित</h2>
+<h3>1. नाम नहीं है — पदनाम है</h3>
+<p>विकिपीडिया का <em>शाण्डिल्य (ऋषि)</em> लेख इसकी व्युत्पत्ति से शुरू होता है, और उसे ध्यान से पढ़ना चाहिए क्योंकि उसी से बाकी सब निकलता है:</p>
+<blockquote><p>The name derives from the Sanskrit words Śaṇ (roughly, Full), and Dilam (Moon), thus meaning Full Moon, therefore implying Śhāṇḍilya had great devotion towards the Moon God. His descendants have a direct descent from the Chandravamsha and a matrilineal descent from the Suryavamsha.</p></blockquote>
+<p>और <em>शाण्डिल्य</em> गोत्र लेख यही तथ्य पद के रूप में, बिना किसी संदेह के, रखता है:</p>
+<blockquote><p>Śaṇḍilya is a gotra which is named after the great sage Shandilya... The name derives from the Sanskrit words Śaṇ, and Dilam, thus meaning Full Moon, therefore implying Śaṇḍilya to be the priest of the Moon God. People belonging to this gotra are considered to be of lunar race.</p></blockquote>
+<p>इसे दो बार पढ़िए, क्योंकि इससे पूरे लेख का ढाँचा बदल जाता है। शाण्डिल्य कोई ऋषि नहीं थे जिन्हें चाँद से सहज उपनीति हो। <strong>वे चाँद के पुरोहित थे।</strong> एक पारिवारिक पद। एक वंश जिसने एक निश्चित देवता के लिए एक निश्चित अनुष्ठान-अधिकार, पीढ़ी दर पीढ़ी, आगे बढ़ाता रहा।</p>
+<p>इसीलिए यह ऋषि उपाय-ज्योतिष की पाइपलाइन में किसी दार्शनिक सूची में नहीं, बल्कि उपचार-पुस्तिका में आता है। चाँद ज्योतिष में कोई काव्यात्मक प्रतीक नहीं है। वह <strong>आधार-बिंदु</strong> है। पूरी व्यवस्था उसी से मापी जाती है। विंशोत्तरी दशा — वह 120-वर्षीय क्रम जिसे ज्योतिषी कलियुग में सर्वत्र लागू मानते हैं — आपकी जन्म-चंद्र की स्थिति से निर्धारित होती है, और आपकी जन्म-नक्षत्र का स्वामी उस पर राज करता है। सदे सती, वह गोचर जो सबसे ज़ोरदार पड़ता है, आपके जन्म-चंद्र से 45 डिग्री पहले और 45 डिग्री बाद मापा जाता है। नक्षत्र स्वयं — वे सत्ताईस "मंसल" — <em>नक्षत्र</em> लेख के अनुसार दक्ष की पुत्रियाँ और चन्द्र की पत्नियाँ हैं, और वही लेख उन्हें कश्यप की पुत्रियाँ भी बताता है — वही कश्यप जो, <em>शाण्डिल्य (ऋषि)</em> लेख के अनुसार, शाण्डिल्य के अपने पितामह थे।</p>
+<p>एक ऐसा वंश जो एक साथ चाँद का वंश और कश्यप का वंश है, जो <em>सुनने</em> के दिव्य अभ्यास का संचार करता है, और जिसने आत्मा के आकार पर एक ग्रंथ रचा — यह मरम्मत की पुस्तिका का विषय है।</p>
+<p><strong>व्यावहारिक रूप:</strong> <strong>किसी भी उपाय को बनाने से पहले, एक पंक्ति में, कारण के साथ, लिखिए कि आप वास्तव में किस प्राधिकार को आह्वान कर रहे हैं।</strong> साफ़ कहिए: <em>ऋषि शाण्डिल्य, चंद्र के पुरोहित, उद्गीथा विद्या के प्रदाता</em>, या <em>चंद्रवंश-शाण्डिल्य गोत्र</em>, या <em>शाण्डिल्य उपनिषद् के रचयिता</em>। ये एक ही पकड़ नहीं हैं, और इनमें अनुष्ठान-शक्ति अलग-अलग है। गोत्र है <strong>संचार का वंश</strong>। उपनिषद् है <strong>तकनीक की पुस्तिका</strong>। चंद्र का पुरोहित है <strong>पद</strong>। अधिकांश लोग इन तीनों को मिला देते हैं और फिर आश्चर्य करते हैं कि क्रिया से कुछ नहीं हुआ। जो मरम्मत आप कर रहे हैं उससे मेल खाती पकड़ चुनिए और लिख लीजिए। नब्बे सेकंड का काम। यह पूरे लेख की सबसे अधिक लाभदायक आदत है।</p>
+<h3>2. वंश: मातृ-सूर्य और पितृ-चंद्र का पुरोहित</h3>
+<p><em>शाण्डिल्य (ऋषि)</em> लेख कुल-परिवार बहुत असामान्य सटीकता से बताता है:</p>
+<blockquote><p>Śhāṇḍilya is the son of the great sage Devala, the nephew of Surya, through his mother Devadutta and the grandson of Maharishi Kashyapa.</p></blockquote>
+<p>अर्थातः पिता देवल, माता देवदत्त, मातृ-चाचा सूर्य — सूर्य, और पितामह कश्यप। <em>चंद्रवंश</em> से सीधा वंश और <em>सूर्यवंश</em> से मातृ-वंश। पितृ-पक्ष से लूनर, रक्त से सौर। चाँद उसका पद था; सूर्य उसकी खून थी।</p>
+<p>लेख एक ऐसा विवरण भी दर्ज करता है जिसका व्यावहारिक परिणाम है — वंश-आधारित उपाय बनाने वाले किसी भी व्यक्ति के लिए:</p>
+<blockquote><p>Shandilya's devotion towards Lord Chandra is widely known by most but what isn't known by many is that Indumati, granddaughter of Shandilya, married Shatayu, the great grandson of Chandradeva. The couple moved towards the state of modern-day Odisha. They never ruled like their counterparts and lived ascetic lives, as did their descendants.</p></blockquote>
+<p>अर्थात परिवार ने <strong>तपस्वी</strong> आचरण एक नए भू-भाग में ले जाया, और उनके वंशज बाद में उड़ीसा के क्षत्रिय कुलों में, फिर आगे आंध्र में मिल गए। भारत के हर गोत्र के पीछे यही ढर्रा है: एक अभ्यास का केंद्र, उसके वाहकों के बारे में एक नियम, और अभ्यास के यात्रा के साथ धीमा विलय।</p>
+<p><strong>व्यावहारिक रूप:</strong> <strong>उपाय का नाम लेते समय दोनों वंश-पक्षों को मिलाइए मत।</strong> गोत्र लेख तीन <em>प्रवर</em> बताता है — शाण्डिल्य, असित और देवल — और साफ़ कहता है: <em>"Due to having three pravaras in the gotra, it is also called as Treepravara gotra. The Veda of this gotra is Samveda."</em> यही मूल तथ्य है: <strong>सामवेद</strong>, और विशेषतः <strong>कौथुम शाखा</strong>, जिसके अनुयायी <strong>चन्दोग</strong> कहलाते हैं (लेख: <em>"The Brahmins of this gotra follow Kauthuma Sakha of Samaveda and they are known as Kauthumashakhiya"</em>।) वही लेख बताता है कि मिथिला में <strong>44 मूल</strong> हैं — शाखाओं के उद्गम — प्रत्येक के अपने <em>विजि पुरुष</em> के साथ, और कि यह गोत्र <em>"the largest gotra in Maithil Brahmins of Nepal and Bihar"</em> है।</p>
+<p>यह बताता है कि जीवंत वंश का नियम व्यवहार में कैसा दिखता है: एक वेद, एक शाखा, एक पुरोहित-कुल-नाम, अनुष्ठान-प्राधिकारों का एक निश्चित समुच्चय, और शाखाओं का एक भूगोल। यदि आपका उपाय शाण्डिल्य का नाम लेता है, तो बताइए कि आप इन चार में से किस स्तर पर टिके हैं।</p>
+<h3>3. उद्गीथा विद्या: ओं को <em>सुनना</em>, केवल बोलना नहीं</h3>
+<p>यहाँ असली प्रतिभा है। <em>शाण्डिल्य (ऋषि)</em> लेख से:</p>
+<blockquote><p>The learning about the meditation and aloud chanting of the syllable Om, which represents the symbol of the ultimate Brahman, he learned from his teacher Shaunaka is known as Udgitha Vidya.</p></blockquote>
+<p>और गुरु के बारे में:</p>
+<blockquote><p>He was also known as "Udara- Śāṇḍilya", and the disciple of Atidhanvān Śaunaka who taught him about the greatness and the limitlessness of Brahman.</p></blockquote>
+<p>इन दोनों तथ्यों को साथ रखिए। शाण्डिल्य <em>चंद्र देव के पुरोहित</em> हैं — रात्रि के दृश्य देवता — और उन्हें मिला अभ्यास <strong>उद्गीथा</strong> है, यानी स्वरयुक्त उच्चारण। इस शब्द का अर्थ ही उत्तर देता है: <strong>उद्गातृ</strong> वही पुरोहित है जो यज्ञ-सभा में उद्गीथा का गान करता है। शाण्डिल्य को एक वैदिक अनुष्ठान-विशेषज्ञ से <em>स्वरयुक्त</em> अभ्यास मिला, और नाम से वे चाँद के सेवक बने।</p>
+<p>और ध्यान दीजिए कि स्रोत इस अभ्यास को वास्तव में क्या बताता है: *<em>ध्यान </em>और<em> स्वरयुक्त उच्चारण, एक साथ।</em>* एक या दूसरा नहीं। दोनों स्रोत-वाक्य में एक जोड़ी हैं। वही जोड़ी ही कार्य-प्रणाली है, और आधुनिक अभ्यास में यही कुछ खो जाता है।</p>
+<p>यह क्यों महत्त्वपूर्ण है? क्योंकि उपाय-कार्य में दोनों अर्ध-भाग उल्टी दिशा में असफल होते हैं। जो केवल <em>बोलता</em> है, वह ध्वनि बाहर उत्सर्जित कर रहा है — कमरे को, मोटे तौर पर एक प्रसारण; और वह बिखर जाती है। जो केवल <em>मौन</em> रहता है, वह भीतर की ध्यान-दशा बनाता है — यह सच्चा कार्य है — पर उसमें बाहरी अनुष्ठान-सीमा नहीं होती: बाहरी क्षेत्र में कुछ भी प्रतिक्रिया नहीं करता, इसलिए पता ही नहीं चलता कि कुछ हुआ या नहीं। <strong>उद्गीथा अंतर और बाह्य को एक ही मुद्रा में रखता है</strong> — मुख उसी क्रिया में व्यस्त रहता है जिसमें ध्यान। यह उपचार-साधन उतना ही नहीं, एक <strong>निदान-यंत्र</strong> भी है: यदि आप ध्यान के साथ स्वर नहीं निकाल सकते, तो आप यह नहीं जान पाएँगे कि आपने वास्तव में किया क्या था।</p>
+<p><strong>व्यावहारिक रूप:</strong> <strong>मंत्र को स्वरयुक्त बनाइए, और एक निश्चित पंक्ति में बनाइए।</strong> ठोस रूप से: (1) उपाय-कार्य के लिए <em>एक</em> मंत्र चुनिए — वही अंश जो जिस ग्रह की मरम्मत हो उससे मेल खाता है — और उसे मनमाना बदलिए मत; (2) इतनी आवाज़ में गाइए कि दो कदम दूर खड़ा व्यक्ति सुन सके और उसे बोलचाल न समझे — लगभग वही सीमा जहाँ आपको अपनी sternum और नाक-सेतु में कंपन महसूस हो पर गला न दुखे; (3) गिनती तय करिए — 108, या 21, या 11 — और उसे कभी "अच्छा लगा" इसलिए न बढ़ाइए, क्योंकि संख्या ही अर्पण का आकार है; (4) यदि आप पूरी गिनती तक ध्यान और स्वर दोनों नहीं सँभाल पाते, तो गिनती घटाइए, स्वर मत छोड़िए। गिनती समझौते की चीज़ है। स्वरयुक्त होना नहीं।</p>
+<h3>4. तज्जल: चावल के दाने से भी छोटा, पृथ्वी से बड़ा आत्मा</h3>
+<p>शाण्डिल्य की दूसरी विशिष्टता <strong>शाण्डिल्य विद्या</strong> है, और <em>शाण्डिल्य विद्या</em> लेख इसके महत्त्व को साफ़ कहता है:</p>
+<blockquote><p>The concept of the Atman and the supreme Brahman and their unity was first realised by the sage Shandilya. His insight on the concept of the Atman and the supreme Brahman was called as Shandilya Vidya.</p></blockquote>
+<p>यह कहाँ है? लेख बिल्कुल निश्चित है: <em>"It is mentioned in the Section 14 of the third chapter of the Upanishad. It is also repeated with some textual variations in the text Shatapatha Brahmana (x. 6. 3). It is also taught in the Agnirahasya and the Brihadaranyaka Upanishad."</em> <em>शाण्डिल्य (ऋषि)</em> लेख वही शिक्षा <em>चन्दोग्य उपनिषद्</em> III.xiv.1 पर रखता है, और जोड़ता है कि पाठ <em>शतपथ ब्राह्मण</em> का <em>"the concluding part of the Shatapatha Brahmana"</em> X.vi.3 है।</p>
+<p>शिक्षा चार श्लोकों की है, और तीसरा श्लोक वही है जो हर अनुयवी को याद रहता है:</p>
+<blockquote><p>He is my Self within the heart, smaller than a grain of rice, smaller than a grain of barley, smaller than a mustard seed, smaller than a grain of millet; He is my Self within the heart, greater than the earth, greater than the mid-region, greater than heaven, greater than all these worlds.</p></blockquote>
+<p><em>शाण्डिल्य विद्या</em> लेख इसका तकनीकी नाम देता है: आत्मा को <strong>तज्जल</strong> (तज्जलान) कहा जाता है, और <em>शाण्डिल्य (ऋषि)</em> लेख इस शब्द की व्याख्या करता है — <em>"the universe identified with the changeless Brahman, who is not bound by space or time, having three attributes – creator, preserver and destroyer of the universe."</em></p>
+<p>यहाँ <strong>गूढ़</strong> बात है, और छोटी नहीं। उपाय-कार्य को एक <strong>स्थान</strong> चाहिए। हर गंभीर परंपरा में एक होता है — कोयला, घंटी, विशिष्ट दीपक, देवता का अपना पात्र। बिना स्थान के प्रयास सामान्य भलाई में बिखर जाता है, और सामान्य भलाई कुंडली नहीं हिलाती।</p>
+<p>शाण्डिल्य आपको एक ऐसा पता देते हैं जिससे बचा नहीं जा सकता और जो बनाया भी नहीं जा सकता: <strong>हृदय, और उसके भीतर, सरसों के दाने से भी छोटा बिंदु।</strong> लेख बताता है कि यह सिद्धांत <em>"does not distinguish between the lower and the higher Brahman"</em> और कि <em>आत्मान</em> <em>"a positive entity, both great and small, infinite and infinitesimal, surely reachable after death"</em> है। उपाय-चिकित्सक के लिए यह दर्शन-मनन नहीं, बल्कि एक <strong>निश्चल-बिंदु</strong> है: शरीर में वह एक स्थान जहाँ चिकित्सक अपनी ध्यान-दशा भरोसे से, शारीरिक रूप से, प्रत्यक्ष कर सकता है — और परंपरा कहती है कि वह केवल रूपक नहीं है।</p>
+<p><strong>व्यावहारिक रूप:</strong> <strong>हर मरम्मत-अभ्यास को एक शारीरिक पता दीजिए, और हर बार वही पता रखिए।</strong> शाण्डिल्य-आधारित कार्य के लिए वह पता हृदय-बिंदु है — तज्जल — जिसे इस प्रकार खोजा जाता है: दाहिने अंगूठे को उरोस्थ-मध्य पर रखिए और ध्यान को भीतर की ओर और <em>नीचे</em> मोड़िए, सीने के पीछे, ऐसा मानिए जैसे बंद-से-बंद दरवाज़े के पीछे हो। <em>आत्मा</em> को सरसों के दाने से छोटा बताया गया है, इसलिए ध्यान <strong>सूक्ष्म</strong> होना चाहिए — सीने पर भाव की चौड़ी धुंध, जो भाव है, ध्यान नहीं। व्यावहारिक परीक्षण: अनुभूति ऐसी होनी चाहिए जिसे उँगली के सिरे से दिखा सकें, और जो स्थिर महसूस हो, गर्म नहीं। यदि यह फैल जाए, तो आपने देखना छोड़ दिया और महसूस करना शुरू कर दिया — और अभ्यास मरम्मत से बदलकर सहजता बन गया। पता-निर्धारण हमेशा <strong>मंत्र से पहले</strong> कीजिए, बाद में कभी नहीं। मंत्र अर्पण है; पता वहन-स्थान है। इनका क्रम उलटना ही इस बात की कारण है कि इतना सारा उपाय-कार्य कहीं पहुँचता ही नहीं।</p>
+<h2>भाग दो: उपनिषद् में छिपी तकनीक</h2>
+<h3>5. पुस्तिका: शाण्डिल्य उपनिषद् में वास्तव में क्या है</h3>
+<p>तज्जल पता है, तो <em>शाण्डिल्य उपनिषद्</em> पुस्तिका है। और यह पुस्तिका असामान्य रूप से विशिष्ट है — इसीलिए यह अभ्यास के रूप में जीवित रहती है, केवल उद्धरण के रूप में नहीं।</p>
+<p><em>शाण्डिल्य उपनिषद्</em> लेख मूल बातें देता है: <em>"a Sanskrit text and one of the minor Upanishads of Hinduism. It is one of twenty Yoga Upanishads in the four Vedas, and is attached to the Atharvaveda."</em> यह <em>"listed at number 58 in the serial order of the Muktika enumerated by Rama to Hanuman in the modern era anthology of 108 Upanishads"</em> है, और <em>"also known as the Shandilya Yoga Sutras"</em>। तिथि के बारे में लेख सावधान है और तीन विद्वानों के मत देता है: गेविन फ्लूड इसे लगभग 100 ईसा-पूर्व से 300 ईसा के बीच रखते हैं; रॉय यूजीन डेविस मानते हैं कि यह पतंजलि के <em>योगसूत्र</em> से पूर्व का है; जॉर्ज फायरस्टाइन मानते हैं कि यह उसके बाद का है; थॉमस मैकएविली क्रोनोलॉजी को अनिश्चित कहते हैं पर इसे <em>ध्यानबिन्दु उपनिषद्</em> के समय और <em>हठयोगप्रदीपिका</em>, <em>कौलाज्ञाननिर्णय</em> तथा <em>शिव सम्हिता</em> से पहले रखते हैं।</p>
+<p>संरचना तीन अध्यायों की है। पहला सबसे बड़ा है और अभ्यास वहन करता है। लेख पहले अध्याय की ग्यारह खंड ठीक-ठीक बताता है: <strong>यम, नियम, आसन, प्राणायाम (नाड़ियाँ, वायु और कुण्डलिनी), प्राणायाम (नाड़ियों की शुद्धि), प्राणव के साथ प्राणायाम, प्राणायाम (सुषुम्ना आदि की शुद्धि), प्रत्याहार, धारणा, ध्यान, समाधि।</strong> दूसरा अध्याय <em>"expounds the Brahma Vidya"</em>। तीसरा <em>"talks about the nature and forms of Brahman: Sakala Brahman, Niskala Brahman and Sakala-Niskala Brahman."</em></p>
+<p>जो संख्याएँ इसे उपयोगी बनाती हैं, वे ये हैं:</p>
+<blockquote><p>The text is primarily focussed on Yoga techniques, and is among the most detailed in the Upanishadic corpus of texts dedicated to Yoga. It describes ten Yamas (ethical don'ts, restraints), ten Niyamas (ethical to do list, observances) and eight Asanas (postures), along with three Pranayamas, five types of Pratyaharas, five kinds of Dharana, two types of Dhyana and one Samadhi.</p></blockquote>
+<p>और लेख सूचियाँ वास्तव में देता है, परंपरा पर छोड़े बिना। दस यम: <strong>अहिंसा, सत्य, अस्तेय, ब्रह्मचर्य, दया, आर्जव, क्षमा, धृति, मिताहार, शौच।</strong> आठ आसन: <strong>स्वस्तिकासन, गोमुखासन, पद्मासन, वीरासन, सिंहासन, भद्रासन, मुक्तासन, मयूरासन।</strong> तीन प्राणायाम: <strong>उज्जायी, सीत्कार, शीतला।</strong> पाँच प्रत्याहार, लेख के अनुसार: इंद्रियों को बाहर जगत से स्वतंत्र रूप से वापस खींचने की क्षमता; सब कुछ आत्मन् के रूप में देखने की क्षमता; अपने प्रयास के फल दान करने की क्षमता; इंद्रिय-सुख से अप्रभावित रहने की क्षमता; और <em>"the ability to project one's attention to one of eighteen vital parts of one's own body."</em></p>
+<p><strong>व्यावहारिक रूप:</strong> <strong>उपाय को ग्रंथ की अपनी सीढ़ी पर बनाइए, और उस सीढ़ी पर रुकिए जहाँ तक कुंडली वास्तव में माँगती है।</strong> <em>शाण्डिल्य उपनिषद्</em> लेख क्रम स्पष्ट करता है: <em>"The Yogi who has mastered all the Yamas, the Niyamas and an Asana, states the Upanishad, should proceed to the Pranayama."</em> एकल गोचर-मरम्मत के लिए इसका अर्थ है: एक यम-नियम आचरण (दस यम नैतिक-अनुशासन सूची हैं — अहिंसा से शौच तक — और दस नियम आचरण-सूची), आठ में से एक आसन, फिर प्राणायाम, फिर तज्जल पर धारणा। समाधि को उपाय-तकनीक के रूप में करने का प्रयास न कीजिए। लेख समाधि को योग का <em>अंतिम</em> चरण बताता है, और <em>प्राणायाम</em> लेख पतंजलि 1.34 उद्धृत करके शास्त्रीय क्रम की पुष्टि करता है — <em>"pranayama is introduced as a method aimed at stabilizing the mind"</em> — और यही वह कार्य है जो जिस गोचर ने मन को अस्थिर कर दिया हो, तो आप चाहते हैं।</p>
+<h3>6. नाड़ी-शोधन: असली मरम्मत-तंत्र</h3>
+<p>यहाँ लेख सचमुच गूढ़ हो जाता है, और यहाँ यह <em>प्राणायाम</em> लेख के हठ-विवरण से मिलता है।</p>
+<p><em>शाण्डिल्य उपनिषद्</em> लेख पहले अध्याय के <strong>लगातार तीन खंड</strong> सांस और नाड़ियों को देता है — "Pranayama: Nadis, Vayus and Kundalini", "Pranayama: Purification of Nadis", "Pranayama with Pranava" — और एक चौथा, "Pranayama: Purification of Susumna and others"। यानी पूरे अध्याय का एक चौथाई प्राण-शरीर पर। और लेख साफ़ कहता है:</p>
+<blockquote><p>The text is one of the four Upanishads which includes a discussion of Kundalini chakras from Yoga perspective, the other three being Darshana Upanishad, the Yogachudamani Upanishad, and the Yogashikha Upanishad. However, the ideas in the four texts show an acceptance of a diversity of views; for example, this text asserts that Manipura Chakra has 12 petals instead of 10 in the other texts.</p></blockquote>
+<p>अब इसे <em>प्राणायाम</em> लेख के हठ-संवाद-विवरण के साथ साथ रखिए: <em>"Pranayama and mudras unblock the Sushumna nadi; Kuṇḍalinī climbs."</em> और उसकी तकनीकों की सूची, जिसमें वही शामिल है जो शाण्डिल्य उपनिषद् कर रहा है: <strong>नाड़ी शोधन</strong> (alternate nostril breathing, जिसे अनुलोम-विलोम भी कहते हैं), <strong>उज्जायी</strong> (<em>"Victorious Breath"</em>), <strong>शीतली</strong> (लपेटी जीभ से साँस), <strong>भस्त्रिका</strong> (<em>"Bellows Breath"</em>), <strong>कपालभाति</strong> (<em>"Skull-shining Breath"</em>, एक षट्कर्म-क्रिया)। <em>प्राणायाम</em> लेख इस संयुक्त शब्द की तकनीकी परिभाषा भी देता है — मोनियर-विलियम्स के अनुसार <em>"of the three 'breath-exercises' performed during Saṃdhyā"</em> — और तीन चरण <em>पूरक</em> (अंतःश्वास), <em>कुम्भक</em> (प्रवाह-अवरोध) और <em>रेचक</em> (बाह्यश्वास)।</p>
+<p>दोनों लेख मिलकर असली मरम्मत-सिद्धांत देते हैं: <strong>क्षतिग्रस्त गोचर एक अवरुद्ध धारा है, और कार्य उसे खोलना है, उससे विनती करना नहीं।</strong></p>
+<p>यह अधिकांश उपाय-अभ्यास से अलग मानसिक-चित्र है, और यह बेहतर है, क्योंकि इसकी जाँच हो सकती है। <em>शाण्डिल्य उपनिषद्</em> लेख बताता है कि पाठ बार-बार <em>"the importance of ethical virtues in a Yogi"</em> की याद दिलाता है — और यह भी सजावट नहीं है। यह निदान-स्तर है: यदि नाड़ी-कार्य बार-बार असफल हो, तो लेख का अपना क्रम कहता है कि कारण ऊपर है, यम-नियम में, साँस-तकनीक में नहीं।</p>
+<p><strong>व्यावहारिक रूप:</strong> <strong>ग्रह को सम्बोधित करने से पहले धारा की मरम्मत कीजिए।</strong> <em>शाण्डिल्य उपनिषद्</em> लेख का क्रम: नीति (यम/नियम) → आसन → प्राणायाम → प्रत्याहार → धारणा → ध्यान → समाधि। एकल-ग्रह मरम्मत के लिए: (1) एक शौच या अहिंसा-अभ्यास — वे यम जिन्हें लेख <em>"not causing any pain to any living being at any time through the actions of one's mind, speech or body"</em> (अहिंसा) और <em>"the speaking of truth that conduces to the well being of creatures"</em> (सत्य) के रूप में बताता है — क्योंकि क्रोध या प्रतिस्पर्धा से किया गया गोचर-मरम्मत अपने विरुद्ध ही काम करता है; (2) आठ में से एक आसन, परिशांति तक स्थिर रहने योग्य, क्योंकि आसन वही है जहाँ ध्यान रुकना सीखता है; (3) <strong>नाड़ी शोधन</strong>, और मिनट नहीं, चक्कर गिनिए; (4) उज्जायी, जिसे <em>प्राणायाम</em> लेख <em>"Victorious Breath"</em> कहता है, यदि और केवल यदि मरम्मत शनि-प्रकार या वात-प्रकार की पीड़ा हो; (5) तज्जल पर धारणा। अगले सोपान पर तब तक न जाइए जब तक पिछला बिना परिशांति के न टिके। लेख की <em>"as the Yogi progresses"</em> संरचना कदमों का अनुक्रम है, मेन्यू नहीं।</p>
+<h2>भाग तीन: चांद क्यों मरम्मत का आधार है</h2>
+<h3>7. चाँद क्यों — स्रोतों के अपने शब्दों में ज्योतिषीय प्रमाण</h3>
+<p>अब वह हिस्सा जो सब कुछ को उपाय-ज्योतिष से जोड़ता है, और प्रमाण-स्रोत खुद़ लड़ते हैं।</p>
+<p><strong>पहला: कुंडली वहीं से शुरू होती है।</strong> <em>ज्योतिष</em> लेख: <em>"The first Mahā-Daśā is determined by the position of the natal Moon in a given Nakṣatra. The lord of the Nakṣatra governs the Daśā."</em> और <em>दशा (ज्योतिष)</em> लेख गणना देता है: <em>"Each Mahā-Daśā is divided into sub-periods called bhuktis, or antar-daśās, which are proportional divisions of the maha-dasa."</em></p>
+<p><strong>दूसरा: 120 वर्षों में चाँद का हिस्सा।</strong> <em>दशा (ज्योतिष)</em> लेख: <em>"Vimshottari Dasha assumes that the maximum duration of life of an individual human being is 120 Solar sidereal years which is the aggregate duration of all nine planetary periods i.e. Ketu 7, Venus 20, Sun 6, Moon 10, Mars 7, Rahu 18, Jupiter 16, Saturn 19 and Mercury 17, in the order of their operation."</em> चाँद के दस वर्ष इस क्रम में चौथे स्थान पर हैं।</p>
+<p><strong>तीसरा: नक्षत्र चाँद के अपने हैं।</strong> <em>नक्षत्र</em> लेख व्युत्पत्ति देता है — <em>"a special class of heavenly bodies associated with the moon"</em>, जहाँ <em>náks-</em> का अर्थ है "to attain" (पहुँचना) और <em>-tra</em> का अर्थ है "place" (स्थान) — <em>"the place to which the moon attains"</em> — और <em>"In later jyotisha, the term came to denote 27 equal divisions of the ecliptic. In this equal division system, each nakshatra spans 13° 20'."</em> ये <em>"personified as daughters of Daksha and as wives of Chandra, the god of the Moon"</em> हैं और <em>"also described as the daughters of Kashyapa."</em> लेख मूल कथा साबुत रखता है: <em>"When Chandra neglected his other 26 wives in favour of Rohini, his father-in-law cursed him with leprosy and proclaimed that the Moon would wax and wane each month."</em></p>
+<p><strong>चौथा: चाँद का गोचर भावनात्मक है।</strong> <em>सदे सती</em> लेख: <em>"Of all transits in traditional Indian, Vedic astrology, which is based on the sidereal zodiac as against the tropical zodiac, Saturn transit is a solely emotional / mental transit. In that, it is the only transit that affects the emotions."</em> और यह चंद्र से मापा जाता है: <em>"Sade Sati is said to begin when the Saturn is transiting the asterism 45 degrees prior to the position of the natal moon and ends when Saturn transits the asterism 45 degrees past the position of the natal moon."</em></p>
+<p><strong>पाँचवाँ: चाँद का अर्थ।</strong> <em>Planets in astrology</em> लेख: <em>"Chandra or Soma and represents the mind, queenship and mother."</em></p>
+<p>इन पाँचों को जोड़िए तो सिद्धांत स्वयं सँवर जाता है। शाण्डिल्य <strong>उस ग्रह के पुरोहित थे जिससे मरम्मत की पूरी व्यवस्था आरम्भ होती है</strong>, और वह ग्रह <strong>मन</strong> का कारक है। एक ऐसा वंश जो <em>मन</em> के देवता के लिए <em>स्वरयुक्त</em> अभ्यास संचार करता है, छाती के भीतर एक बिंदु पर स्थिर — उस ऋषि के, जिसके पितामह कश्यप हैं, और कश्यप <em>नक्षत्र</em> लेख के अनुसार नक्षत्रों के पिता हैं — यह संयोग नहीं है। यह एक सुसंगत तकनीक है।</p>
+<p><strong>व्यावहारिक रूप:</strong> <strong>पूरी मरम्मत को चाँद पर टिकाइए, और शेष को चाँद के भाव पर निर्भर करने दीजिए।</strong> तीन चरण। (1) अपने जन्म-चंद्र का नक्षत्र और उसका स्वामी ज्ञात कीजिए — वही स्वामी आपकी प्रथम महा-दशा का शासक है, इसलिए वही ग्रह पहले से आपका जीवन चला रहा है, और वहीं मरम्मत का सबसे बड़ा अवसर है; (2) उस चंद्र के सापेक्ष शनि का वर्तमान गोचर देखिए — <em>सदे सती</em> लेख का नियम आपको सटीक जाँच देता है: यदि शनि आपके जन्म-चंद्र की स्थिति से 45 डिग्री के भीतर कहीं है, तो आप उस द्वार के भीतर हैं, और लेख के अपने उपाय नाम दिए हैं: <em>"It is believed that worshipping Lord Hanuman and Lord Ganesha greatly reduces any malefic effects of Sade Sati."</em> (3) चाँद-नियम वाला उपाय <strong>सबसे अंत में</strong> कीजिए — नाड़ी-कार्य के बाद — क्योंकि <em>शाण्डिल्य उपनिषद्</em> लेख का क्रम भीतरी शुद्धि पहले रखता है, और <em>प्राणायाम</em> लेख का पतंजलि-उद्धरण कहता है कि साँस-कार्य का उद्देश्य स्थिर मन है। पहले चैनल की मरम्मत, फिर गोचर को सम्बोधन, फिर चाँद पर कार्य। यही शाण्डिल्य का क्रम है, और यह उलटा है उससे जो अधिकांश ग्राहकों को दिया जाता है।</p>
+<h3>8. चाँद की सत्ताईस पतियाँ: नक्षत्र-तालिका एक उपाय-सूचकांक के रूप में</h3>
+<p><em>नक्षत्र</em> लेख में सत्ताईस मंसलों की पूरी तालिका है, जिसमें तीन कॉलम उपाय-चिकित्सक के लिए मायने रखते हैं — <strong>ज्योतिषीय स्वामी</strong>, <strong>देवता</strong>, और <strong>भारतीय राशि-विस्तार</strong> — और इसे पढ़ना चाहिए यह सोचकर कि यह एक सूचकांक है। हर मंसल के लिए स्वामी और देवता <strong>अलग-अलग सत्ताएँ</strong> हैं। देवता ही उपाय है; स्वामी उस आकाश-खंड पर अधिकार रखने वाला ग्रह है। अभ्यासकर्ता प्रायः केवल पहला कॉलम उपयोग करते हैं। तालिका आपको दोनों देती है।</p>
+<table>
+<thead><tr><th>क्रम</th><th>नक्षत्र</th><th>स्वामी</th><th>देवता</th><th>भारतीय राशि-विस्तार</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>अश्विनी</td><td>केतु</td><td>अश्विन (देवताओं के वैद्य)</td><td>0°–13°20′ मेष</td></tr>
+<tr><td>2</td><td>भरणी</td><td>शुक्र</td><td>यम</td><td>13°20′–26°40′ मेष</td></tr>
+<tr><td>3</td><td>कृत्तिका</td><td>सूर्य</td><td>अग्नि</td><td>26°40′ मेष–10° वृषभ</td></tr>
+<tr><td>4</td><td>रोहिणी</td><td>चंद्र</td><td>प्रजापति</td><td>10°–23°20′ वृषभ</td></tr>
+<tr><td>5</td><td>मृगशिरा</td><td>मंगल</td><td>सोम</td><td>23°20′ वृषभ–6°40′ मिथुन</td></tr>
+<tr><td>6</td><td>आर्द्रा</td><td>राहु</td><td>रुद्र</td><td>6°40′–20° मिथुन</td></tr>
+<tr><td>7</td><td>पुनर्वसु</td><td>गुरु</td><td>अदिति</td><td>20° मिथुन–3°20′ कर्क</td></tr>
+<tr><td>8</td><td>पुष्य</td><td>शनि</td><td>बृहस्पति</td><td>3°20′–16°40′ कर्क</td></tr>
+<tr><td>9</td><td>आश्लेषा</td><td>बुध</td><td>नाग</td><td>16°40′–30° कर्क</td></tr>
+<tr><td>10</td><td>मघा</td><td>केतु</td><td>पितृ — "पितर", पूर्वज</td><td>0°–13°20′ सिंह</td></tr>
+<tr><td>11</td><td>पूर्वफाल्गुनी</td><td>शुक्र</td><td>भग</td><td>13°20′–26°40′ सिंह</td></tr>
+<tr><td>12</td><td>उत्तरफाल्गुनी</td><td>सूर्य</td><td>अर्यमण</td><td>26°40′ सिंह–10° कन्या</td></tr>
+<tr><td>13</td><td>हस्त</td><td>चंद्र</td><td>सवितृ</td><td>10°–23°20′ कन्या</td></tr>
+<tr><td>14</td><td>चित्रा</td><td>मंगल</td><td>त्वष्टृ / विश्वकर्मा</td><td>23°20′ कन्या–6°40′ तुला</td></tr>
+<tr><td>15</td><td>स्वाती</td><td>राहु</td><td>वायु</td><td>6°40′–20° तुला</td></tr>
+<tr><td>16</td><td>विशाखा</td><td>गुरु</td><td>इन्द्र</td><td>20° तुला–3°20′ वृश्चिक</td></tr>
+<tr><td>17</td><td>अनुराधा</td><td>शनि</td><td>मित्र</td><td>3°20′–16°40′ वृश्चिक</td></tr>
+<tr><td>18</td><td>ज्येष्ठा</td><td>बुध</td><td>इन्द्र</td><td>16°40′–30° वृश्चिक</td></tr>
+<tr><td>19</td><td>मूल</td><td>केतु</td><td>निरृति</td><td>0°–13°20′ धनु</td></tr>
+<tr><td>20</td><td>पूर्वाषाढ़ा</td><td>शुक्र</td><td>अपह</td><td>13°20′–26°40′ धनु</td></tr>
+<tr><td>21</td><td>उत्तराषाढ़ा</td><td>सूर्य</td><td>विश्वदेव</td><td>26°40′ धनु–10° मकर</td></tr>
+<tr><td>22</td><td>श्रवण</td><td>चंद्र</td><td>विष्णु</td><td>10°–23°20′ मकर</td></tr>
+<tr><td>23</td><td>धनिष्ठा</td><td>मंगल</td><td>वसु</td><td>23°20′ मकर–6°40′ कुम्भ</td></tr>
+<tr><td>24</td><td>शतभिषा</td><td>राहु</td><td>वरुण</td><td>6°40′–20° कुम्भ</td></tr>
+<tr><td>25</td><td>पूर्वभाद्रपद</td><td>गुरु</td><td>अजैकापाद</td><td>20° कुम्भ–3°20′ मीन</td></tr>
+<tr><td>26</td><td>उत्तरभाद्रपद</td><td>शनि</td><td>अहिबुध्न्य</td><td>3°20′–16°40′ मीन</td></tr>
+<tr><td>27</td><td>रेवती</td><td>बुध</td><td>पूषण</td><td>16°40′–30° मीन</td></tr>
+</tbody>
+</table>
+<p>अब देखिए कि चंद्र-मरम्मत करने वाला अभ्यासकर्ता इसके साथ वास्तव में क्या कर सकता है। <strong>चंद्र</strong> से शासित नक्षत्र ठीक तीन हैं: <strong>रोहिणी</strong> (देवता प्रजापति), <strong>हस्त</strong> (देवता सवितृ), और <strong>श्रवण</strong> (देवता विष्णु)। <strong>शनि</strong> से शासित नक्षत्र हैं <strong>पुष्य</strong> (देवता बृहस्पति), <strong>अनुराधा</strong> (देवता मित्र), और <strong>उत्तरभाद्रपद</strong> (देवता अहिबुध्न्य)। और <strong>केतु</strong> से शासित नक्षत्र — वह ग्रह जो <em>ज्योतिष</em> लेख के अनुसार <em>"the points where the moon crosses the ecliptic plane"</em> है, जिसका <em>"an orbital cycle of 18 years"</em> है और जो <em>"always retrograde in motion"</em> है — हैं <strong>अश्विनी</strong> (देवता अश्विन, देवताओं के वैद्य), <strong>मघा</strong> (देवता पितृ, पूर्वज), और <strong>मूल</strong> (देवता निरृति)।</p>
+<p><strong>मघा</strong> और <strong>मूल</strong> पर ध्यान दीजिए। <em>मघा</em> का देवता शाब्दिक रूप से <strong>पितृ — "पितर"</strong>, पूर्वज हैं; <em>मूल</em> का देवता <strong>निरृति</strong> है, जिसका अर्थ ही विनाश या लय है। <strong>अश्विनी</strong> का देवता <strong>अश्विन, देवताओं के वैद्य</strong> हैं। ये तीन मंसल-देवता सीधे पूर्वज-वंश, विनाश और आरोग्य से जुड़े हैं — और तीनों चंद्र के ही अपने छाया-ग्रह के अधीन हैं। यदि आपकी कुंडली में कोई नोडल या पितृ-पीड़ा है, तो यह तालिका आपको अस्पष्ट "पूर्वजों की पूजा कीजिए" की जगह तीन निश्चित देवता-पते देती है।</p>
+<p>और <em>नक्षत्र</em> लेख का एक और विवरण जिसे अभ्यासकर्ता छोड़ नहीं सकते: नक्षत्र <em>"one of the five elements of a Pañcāṅga"</em> है — <strong>तिथि, नित्ययोग, करण और वार</strong> के साथ। अर्थात चंद्र-मंसल एक पंचांग दैनिक-फ्रेम में केवल एक निर्देशांक है, अकेला तथ्य नहीं।</p>
+<p><strong>व्यावहारिक रूप:</strong> <strong>अपनी कुंडली का मंसल-देवता-विवरण बनाइए और उपाय के लिए स्वामी-कॉलम नहीं, देवता-कॉलम लीजिए।</strong> तीन पंक्तियाँ। (1) अपने जन्म-चंद्र का नक्षत्र, चंद्र के वर्तमान गोचर का नक्षत्र, और पीड़ित ग्रह की वर्तमान स्थिति का नक्षत्र — तीनों लिखिए; (2) हर एक के लिए ऊपर की तालिका से <strong>देवता</strong> लीजिए — स्वामी नहीं; (3) हर पीड़ा के लिए एक देवता तय कीजिए और उसका एक निश्चित रूप दीजिए: देवता का अपना <em>मात्रा</em>, उसका <em>यंत्र</em>, या एक निश्चित हवन, देवता के <em>वार</em> (वार-दिवस) पर, जो पंचांग के <em>वार</em> तत्त्व से मिलता है। *<em>स्वामी-कॉलम को </em>समय<em> के लिए रखिए<strong> — जब मंसल-स्वामी चल रहा हो — और </strong>देवता-कॉलम को </em>संबोधन<em> के लिए।</em>* अधिकांश उपाय-विफलताएँ इन दोनों में से एक कॉलम को दूसरे का काम करवाने से होती हैं।</p>
+<h3>9. यहाँ सचमुच गूढ़ क्या है — और यह केवल अच्छी सलाह क्या है</h3>
+<p>लेख को यह नहीं नकली जाना चाहिए कि ऊपर की सब बातें उतनी ही प्रमाणित हैं। आइए परतों को ईमानदारी से अलग करें, क्योंकि कार्य-अभ्यास वाला पाठक अंतर महसूस कर लेता है।</p>
+<p><strong>पाठ-सिद्ध, और सीधे उपयोगी:</strong></p>
+<ul>
+<li>शाण्डिल्य <em>पूर्ण-चंद्र के ऋषि</em>, चंद्र के पुरोहित, चंद्रवंश-वंशज, देवल के पुत्र, कश्यप के पौत्र।</li>
+<li><strong>उद्गीथा विद्या</strong>: ध्यान <em>और</em> ओं का स्वरयुक्त उच्चारण, शौनक से प्राप्त।</li>
+<li><strong>शाण्डिल्य विद्या</strong> — <em>चन्दोग्य</em> III.xiv और <em>शतपथ ब्राह्मण</em> X.vi.iii में: <em>सर्वं खल्विदं ब्रह्म</em>, तज्जल आत्मा, और यह सिद्धांत कि संकल्प निर्धारित करता है कि मनुष्य क्या बनता है।</li>
+<li><strong>शाण्डिल्य उपनिषद्</strong> अथर्ववेद का योग-उपनिषद्: दस यम, दस नियम, आठ आसन, तीन प्राणायाम, पाँच प्रत्याहार, पाँच धारणा, दो ध्यान, एक समाधि; नाड़ी-शोधन और कुण्डलिनी पर तीन खंड; नीति-प्रथम क्रम।</li>
+<li>गोत्र का वेद (सामवेद), शाखा (कौथुम), पुरोहित-नाम (चन्दोग), तीन प्रवर, मिथिला के 44 मूल।</li>
+</ul>
+<p><strong>ज्योतिषीय पक्ष मानक लेखों से पुष्ट:</strong></p>
+<ul>
+<li>स्वामी, देवता और विस्तार सहित नक्षत्र-तालिका।</li>
+<li>120 वर्षों का विंशोत्तरी बँटवारा, जिसमें चाँद के दस वर्ष।</li>
+<li>प्रथम महा-दशा का जन्म-चंद्र से निर्धारण; सदे सती का 45-डिग्री नियम; हनुमान और गणेश उसके नामित उपाय; मन का ग्रह चंद्र; चन्द्र/सोम।</li>
+</ul>
+<p><strong>वास्तव में गूढ़ परत — जहाँ परंपरा उससे अधिक दावा करती है जितना सिद्ध कर सकती है:</strong></p>
+<ul>
+<li>कि स्वरयुक्त ओं उपाय का <em>वहन-माध्यम</em> है, उसका केवल साथी नहीं।</li>
+<li>कि तज्जल एक <em>स्थानीय</em> पता है, रूपक नहीं।</li>
+<li>कि नाड़ी-अवरोध ही पीड़ित गोचर का कारण-तंत्र है।</li>
+<li>कि एक वंश (गोत्र, प्रवर, वेद, शाखा) उपाय-प्राधिकार संचारित करता है, न कि केवल धार्मिक पहचान।</li>
+</ul>
+<p>और यहाँ वह सीमा है जो स्पष्ट रूप से कही जानी चाहिए, क्योंकि <em>ज्योतिष</em> लेख पूरे क्षेत्र के बारे में यही कहता है:</p>
+<blockquote><p>The scientific consensus is that astrology is a pseudoscience.</p></blockquote>
+<p>उसी लेख में परंपरा के अपने ढाँचे का ऐतिहासिक प्रतिरक्षण भी दिया गया है, और यही ईमानदार संस्करण है कि ज्योतिष केवल कुंडली-दुकान नहीं है: <em>"Jyotiṣa is one of the Vedāṅga, the six auxiliary disciplines used to support Vedic rituals. Early jyotiṣa is concerned with the preparation of a calendar to determine dates for sacrificial rituals, with nothing written regarding planets."</em> नक्षत्रों का सर्वप्रथम प्रमाण पंचांग-सा है — <em>नक्षत्र</em> लेख: <em>"The first astronomical text that lists them is the Vedanga Jyotisha."</em> <em>ज्योतिष</em> लेख वैदिक मूल भी बताता है: <em>jyotish</em>, <em>"which means light, such as that of the sun or the moon or a heavenly body,"</em> और इस शब्द के अंतर्गत <em>"the study of astronomy, astrology, and the science of timekeeping using the movements of astronomical bodies."</em></p>
+<p>अतः परंपरा का अपना दावा यह नहीं कि तारे आपकी किस्मत लिखते हैं। उसका दावा यह है कि क्रिया का <em>समय</em> सही होना चाहिए, कि पंचांग ही पूजा का एक रूप है, और जब आप किसी विशेष द्वार में कार्य को संरेखित करते हैं, तो आप वही कर रहे हैं जिसके लिए अनुष्ठान-पंचांग बनाया गया था। यह दावा केवल उसी तरीके से जाँचा जा सकता है जिससे वह जाँचा जा सकता है: कि क्रिया उस व्यक्ति के लिए सफल होती है या नहीं।</p>
+<p><strong>व्यावहारिक रूप:</strong> <strong>दोनों दावे अलग-अलग रखिए, और दूसरे को पहले का प्राधिकार कभी न लेने दीजिए।</strong> दो अलग पंक्तियों पर लिखिए: (1) <em>स्रोत क्या कहता है</em> — लेख और श्लोक का उद्धरण; (2) <em>मैं अभ्यासकर्ता के लिए क्या दावा कर रहा हूँ</em> — इसे अभ्यास के रूप में चिह्नित कीजिए, शास्त्र के रूप में नहीं। जो उपाय केवल (2) पर टिका हो, वह एक वादा है। जो उपाय (1) पर टिका हो और (2) की ईमानदार रिपोर्ट करे, वह एक अनुशासन है। शाण्डिल्य का साहित्य इस मामले में असामान्य रूप से अनुशासित है, क्योंकि <em>शाण्डिल्य विद्या</em> लेख स्पष्ट करता है कि पूरा दावा एक ही शर्त पर टिका है — <em>"he who has such faith and in whom there is no doubt will certainly attain to that Godhead"</em> — और <em>शाण्डिल्य (ऋषि)</em> लेख उसे दोहराता है: <em>"a person with this faith and no doubt will certainly attain to that Godhead."</em> श्रद्धा को पूर्व-शर्त के रूप में नाम दिया गया है, प्रमाण के रूप में चुपचाप नहीं डाला गया।</p>
+<h2>भाग चार: अभ्यास एकत्रित</h2>
+<h3>10. अभ्यास, एकत्रित</h3>
+<p>ऊपर की सब बातें एक क्रम में सुलझती हैं। यही इस लेख का निवाह है।</p>
+<p><strong>शाण्डिल्य-मरम्मत, चंद्र-शासित या गोचर-पीड़ित कुंडली के लिए:</strong></p>
+<ol>
+<li><strong>पकड़ का नाम रखिए।</strong> आप किस शाण्डिल्य का आह्वान कर रहे हैं — गोत्र, पूर्ण-चंद्र के ऋषि, या उपनिषद् के रचयिता? उपाय के साथ पत्र पर लिखिए। एक पंक्ति।</li>
+<li><strong>चाँद की तीन स्थितियाँ ज्ञात कीजिए।</strong> जन्म-चंद्र का नक्षत्र (इसका स्वामी आपकी प्रथम महा-दशा चलाता है)। चंद्र का वर्तमान गोचर। पीड़ित ग्रह की वर्तमान स्थिति, और क्या शनि आपके जन्म-चंद्र से 45 डिग्री के भीतर है — <em>सदे सती</em> लेख का अपना जाँच-नियम, जिसके नामित उपाय <strong>हनुमान</strong> और <strong>गणेश</strong> हैं।</li>
+<li><strong>देवता लीजिए, स्वामी नहीं।</strong> तालिका से: जन्म-चंद्र के नक्षत्र का देवता (प्रजापति, सवितृ, या विष्णु), गोचर के नक्षत्र का देवता, और नोडल या पितृ-पीड़ा के लिए <strong>मघा</strong> पर <strong>पितृ</strong>, <strong>मूल</strong> पर <strong>निरृति</strong>, या <strong>अश्विनी</strong> पर <strong>अश्विन</strong>। हर समस्या के लिए एक देवता तय कीजिए।</li>
+<li><strong>धारा खोलिए।</strong> एक यम और एक नियम-अभ्यास (<em>शाण्डिल्य उपनिषद्</em> लेख की अहिंसा और सत्य की परिभाषाएँ ही आधार लीजिए)। आठ में से एक आसन। फिर नाड़ी शोधन, चक्कर गिनते हुए। फिर उज्जायी, यदि पीड़ा शनि-प्रकार या वात-प्रकार की हो। कदम-दर-कदम — लेख का क्रम सीढ़ी है, मेन्यू नहीं।</li>
+<li><strong>पता तय कीजिए।</strong> तज्जल — सरसों के दाने से छोटा, हृदय के भीतर, पृथ्वी से बड़ा। ध्यान से खोजिए, अनुभूति से नहीं। उसका एक ऐसा स्थान होना चाहिए जिसे उँगली के सिरे से दिखाया जा सके, और जो स्थिर महसूस हो।</li>
+<li><strong>अर्पण बोलिए।</strong> उद्गीथा-रूप: स्वरयुक्त, निश्चित पंक्ति, निश्चित गिनती, केवल एक मंत्र। कभी भी दिन के हाल से मेल खाने के लिए उसे बदलिए मत।</li>
+<li><strong>रिकॉर्ड रखिए।</strong> नक्षत्र, गोचर-अंश, चुना गया देवता, गिनती, और वास्तव में क्या हुआ — जो आपने चाहा वह नहीं, जो हुआ। <em>नक्षत्र</em> लेख का यह कथन गिनती तय करने का अच्छा कारण है: <em>"108 is also the number of beads in a japa mala, representing all the elements (ansh) of Vishnu"</em> — निश्चित संख्या वाला रूप महीनों के बीच तुलनीय होता है, और बिना संख्या वाला नहीं।</li>
+</ol>
+<p><strong>व्यावहारिक रूप:</strong> <strong>उपाय की परीक्षा करते समय ढाँचा कभी न बदलिए।</strong> मरम्मत का एक ढाँचा होता है: पकड़, देवता, गिनती, पता, वार-दिवस, और आरंभ-तिथि। यदि कोई रूप काम न करे, तो <em>एक</em> तत्व बदलिए, ग्रह के पूरे चक्र की प्रतीक्षा कीजिए, और बाकी कुछ न बदलिए। <em>ज्योतिष</em> लेख गोचर के बारे में इसी कारण से कहता है: <em>"A natal chart shows the positions of the grahas at the moment of birth. After that moment, the grahas move around the zodiac, interacting with the natal chart grahas. This period of interaction is called gochara."</em> यह संपर्क वर्षों लेता है। चलते आकाश के सामने, दो चर बदलकर, की गई किसी भी क्रिया से आप कुछ नहीं सीखते।</p>
+<h3>11. नाम के बारे में एक अंतिम बात</h3>
+<p><em>शाण्डिल्य</em> गोत्र लेख का एक विवरण है जिसे पढ़ते समय आसानी से छोड़ दिया जाता है, पर पढ़ने के बाद उसे अनदेखा नहीं किया जा सकता:</p>
+<blockquote><p>People belonging to this gotra are considered to be of lunar race.</p></blockquote>
+<p>लूनर रेस। केवल "एक आदमी का नाम चाँद से" नहीं। परंपरा की शब्दावली में एक <em>वंश</em> — चंद्र से संबद्ध, सौर-वंश से अलग, अपने वेद, अपनी शाखा, अपने पुरोहित-नाम, अपनी शाखाओं और अपने मंदिरों सहित। लेख उन्हें गिनाता है: राजस्थान के ओसियान में <strong>श्री पीपलाज माता मंदिर</strong>, जिसकी देवी पीपलाज शाण्डिल्य-गोत्र परिवारों की <em>कुलदेवी</em> हैं; मिथिला में बरौनी के पास टेघरा का <strong>शाण्डिल्य धाम मंदिर</strong>, जिसका संचालन स्वयं समुदाय करता है; पुणे के पास चकान में चक्रेश्वर महादेव मंदिर में <strong>शाण्डिल्य ऋषि समाधि</strong>; और हिमाचल प्रदेश के कुल्लू जिले के शालिन गाँव में <strong>शाण्डिल्य ऋषि मंदिर</strong>।</p>
+<p>चार मंदिर, चार प्रदेश, एक अभ्यास। यही एक जीवंत वंश दिखता है जब वह अपना काम कर रहा हो।</p>
+<p>और उपाय-चिकित्सक के लिए इसका महत्त्व <em>शाण्डिल्य (ऋषि)</em> लेख में दर्ज उसी बात से है जो उन्होंने अपने शिष्यों को सिखाया था। लेख कहता है कि शाण्डिल्य ने <em>"certain metaphysical doubts of King Parikshit of Hastinapura and King Vajra of Dwaraka"</em> का समाधान किया — अर्थात वही व्यक्ति थे जिसके पास दरबार जाता था जब प्रश्न था, <em>"सत्य क्या है, और मुझे इसके बारे में क्या करना चाहिए?"</em> उन्हें <strong>शाण्डिल्य भक्ति सूत्र</strong> का श्रेय भी दिया गया, और उसी लेख के अनुसार उनके शिष्य <strong>कौण्डिन्य, अग्निवेश, वत्स्य वामाकक्षयन, वैष्ठपुरेय और भरद्वाज</strong> थे — विद्यार्थी जो अभ्यास को जगत में ले गए और अपनी-अपनी वंश-परंपराएँ खड़ी कीं। उन्होंने तकनीक नहीं दी थी। उन्होंने एक पता दिया, एक स्वर दिया, और आचरण के बारे में एक नियम दिया। तकनीक तो आसान हिस्सा थी। आचरण का नियम ही वह था जिसने काम किया।</p>
+
+<div class="references">
+<h2>Sources</h2>
+<p>1. <a href="https://en.wikipedia.org/wiki/Shandilya_(Rishi">Shandilya (Rishi) - Wikipedia</a>)</p>
+<p>6. <a href="https://en.wikipedia.org/wiki/Dasha_(astrology">Dasha (astrology) - Wikipedia</a>)</p>
+<ol>
+<li><a href="https://en.wikipedia.org/wiki/Shandilya_Vidya">Shandilya Vidya - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Shandilya_Upanishad">Shandilya Upanishad - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Shandilya">Shandilya - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Nakshatra">Nakshatra - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Jyotisha">Jyotisha - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Planets_in_astrology">Planets in astrology - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Sade_Sati">Sade Sati - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Pranayama">Pranayama - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Udgitha">Udgitha - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Category:Rishis">Category:Rishis - Wikipedia</a></li>
+</ol>
+</div>
+        </article>
+    </div>
+
+</body>
+</html>

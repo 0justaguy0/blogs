@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shandilya&#x27;s Udgitha and Full-Moon Key</title>
+    <style>
+        :root {
+            --bg-color: #FDF9F1;
+            --text-color: #3E2723;
+            --indian-yellow: #E4A025;
+            --indian-orange: #E65100;
+            --accent-light: #FFECB3;
+            --ref-bg: #FFF3E0;
+        }
+
+        body {
+            font-family: 'Georgia', 'Nirmala UI', 'Mangal', serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(var(--bg-color) 80%, var(--accent-light) 100%);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #FFFFFF;
+            padding: 50px 60px;
+            box-shadow: 0 10px 30px rgba(62, 39, 35, 0.1);
+            border-top: 8px solid var(--indian-orange);
+            border-bottom: 8px solid var(--indian-yellow);
+            border-radius: 4px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed var(--indian-yellow);
+        }
+
+        h1 {
+            color: var(--indian-orange);
+            font-size: 2.5em;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        h2 {
+            color: var(--indian-yellow);
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--indian-orange);
+            padding-left: 15px;
+        }
+
+        h3, h4 {
+            color: var(--indian-orange);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        .intro-text::first-letter {
+            float: left;
+            font-size: 3.5em;
+            line-height: 0.8;
+            padding-right: 8px;
+            padding-top: 4px;
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        ul, ol {
+            margin: 0 0 24px 0;
+            padding-left: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ol {
+            list-style-position: outside;
+            padding-left: 2.2em;
+        }
+
+        ul li, ol li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        ol li {
+            padding-left: 0.35em;
+        }
+
+        ul li::before {
+            content: '\2022';
+            position: absolute;
+            left: 0;
+            top: 0.05em;
+            color: var(--indian-orange);
+            font-size: 1.2em;
+            line-height: 1;
+        }
+
+        ol li::marker {
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        strong {
+            color: var(--indian-orange);
+        }
+
+        .image-placeholder-container {
+            margin: 30px 0;
+            text-align: center;
+            font-style: italic;
+            color: #795548;
+            background-color: var(--accent-light);
+            padding: 20px;
+            border-radius: 4px;
+            border: 1px solid var(--indian-yellow);
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.98em;
+            background-color: #FFFDF8;
+        }
+
+        th, td {
+            border: 1px solid #F0D49B;
+            padding: 10px 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--ref-bg);
+            color: var(--indian-orange);
+        }
+
+        blockquote {
+            margin: 30px 0;
+            padding: 20px 25px;
+            background-color: var(--accent-light);
+            border-left: 5px solid var(--indian-orange);
+            font-style: italic;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px dashed var(--indian-yellow);
+            margin: 32px 0;
+        }
+
+        .references {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: var(--ref-bg);
+            border-radius: 8px;
+            font-size: 0.9em;
+        }
+
+        .references h2, .references h3 {
+            color: var(--text-color);
+            margin-top: 0;
+            border-bottom: 1px solid var(--indian-yellow);
+            padding-bottom: 10px;
+            border-left: 0;
+            padding-left: 0;
+        }
+
+        .references p, .references li {
+            margin-bottom: 12px;
+            word-wrap: break-word;
+        }
+
+        .references a {
+            color: var(--indian-orange);
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Shandilya&#x27;s Udgitha and Full-Moon Key</h1>
+        </header>
+
+        <article>
+<p class="intro-text">There is a practice that almost every serious remedy practitioner uses and almost nobody can name correctly — and the rishi who was given it was Shandilya, the priest of the Moon, who learned the Udgitha Vidya from his teacher Shaunaka.</p>
+<div class="image-placeholder-container">
+    <img src="blog145_Image.png" alt="The sage Shandilya, priest of the Moon, chanting Om aloud before a full moon and a ring of repaired planets">
+</div>
+<p>They sit. They close the eyes. They move the lips on a mantra, silently, counting on the fingers or on a mala. They hold the count to 108, or to 108,000, and they end. If you asked them what they were doing, most would say <em>japa</em>. If you asked them what the tradition calls the specific form they are performing, most would hesitate.</p>
+<p>That hesitation is the subject of this article, and it is not pedantry. The form Shandilya received from his teacher Shaunaka was not silent. It was <strong>audible</strong>. It was called the <strong>Udgitha Vidya</strong>, and it is the reason Shandilya is the <em>rishi of the Full Moon</em> — because the practice he was given is a practice of <em>hearing</em>, and the deity he was given it for is the one that is seen but never heard.</p>
+<p>Let us be precise about who we are dealing with, because the sources keep warning that people get this wrong.</p>
+<h2>Part One: The Priest of the Moon</h2>
+<h3>1. The name is not a name. It is a job description.</h3>
+<p>Wikipedia's <em>Shandilya (Rishi)</em> article opens with the etymology, and it is worth quoting closely because everything else follows from it:</p>
+<blockquote><p>The name derives from the Sanskrit words Śaṇ (roughly, Full), and Dilam (Moon), thus meaning Full Moon, therefore implying Śhāṇḍilya had great devotion towards the Moon God. His descendants have a direct descent from the Chandravamsha and a matrilineal descent from the Suryavamsha.</p></blockquote>
+<p>And the <em>Shandilya</em> gotra article puts the same fact in occupational terms, without any ambiguity:</p>
+<blockquote><p>Śaṇḍilya is a gotra which is named after the great sage Shandilya... The name derives from the Sanskrit words Śaṇ, and Dilam, thus meaning Full Moon, therefore implying Śaṇḍilya to be the priest of the Moon God. People belonging to this gotra are considered to be of lunar race.</p></blockquote>
+<p>Read that twice, because it reframes the entire article. Shandilya was not a rishi who happened to like the Moon. <strong>He was the Moon's priest.</strong> A family office. A lineage that transmitted a specific ritual authority, generation after generation, for a specific celestial body.</p>
+<p>That is why this rishi belongs in a remedial-astrology pipeline and not merely in a philosophy list. The Moon is not a poetic symbol in Jyotiṣa. It is the anchor. Everything in the system is reckoned from it. The Vimśottarī Daśā — the 120-year sequence that astrologers call universally applicable in the Kali Yuga — begins from the position of your natal Moon, and the lord of your birth nakṣatra governs it. Sade Sati, the transit that strikes hardest, is measured as 45 degrees before and after your natal Moon. The nakṣatras themselves, the twenty-seven "mansions," are, in the words of the <em>Nakshatra</em> article, <em>daughters of Daksha and wives of Chandra</em>, and are also described as daughters of Kashyapa — the very Kashyapa who, by the <em>Shandilya (Rishi)</em> article, is Shandilya's own grandfather.</p>
+<p>A lineage that is simultaneously a lineage of the Moon and a lineage of Kashyapa, that transmits a ritual of <em>hearing</em> the divine, and that produced a text on the size of the soul — that is a subject for a repair manual.</p>
+<p><strong>The working form:</strong> <strong>Before you design one remedy, name the authority you are actually invoking, in one line, with the reason.</strong> Say plainly: <em>the rishi Shandilya, priest of the Moon God, teacher of the Udgitha Vidya</em>, or <em>the Chandravamsha-Shandilya gotra</em>, or <em>the composer of the Shandilya Upanishad</em>. These are not the same handle, and they carry different ritual payload. The gotra is the <em>lineage of transmission</em>. The Upanishad is the <em>technique manual</em>. The priest-of-the-Moon is the <em>office</em>. Most practitioners will accidentally mix the three and then wonder why a rite produced no result. Pick the handle that matches the fix you are making, and write it down. Ninety seconds. It is the highest-leverage habit in this entire article.</p>
+<h3>2. The lineage: a moon-priest with a solar mother</h3>
+<p>The <em>Shandilya (Rishi)</em> article gives the family with a precision that is unusual for hagiography:</p>
+<blockquote><p>Śhāṇḍilya is the son of the great sage Devala, the nephew of Surya, through his mother Devadutta and the grandson of Maharishi Kashyapa.</p></blockquote>
+<p>So: father Devala; mother Devadutta; maternal uncle Surya — the Sun; grandfather Kashyapa. A <em>matrilineal</em> descent from the Suryavaṃśa and a direct descent from the Chandravaṃśa. The lineage is lunar by patrilineal right and solar by maternal blood. The Moon was his title; the Sun was his blood.</p>
+<p>The article also records a detail that has practical consequences for anyone building a lineage-based remedy:</p>
+<blockquote><p>Shandilya's devotion towards Lord Chandra is widely known by most but what isn't known by many is that Indumati, granddaughter of Shandilya, married Shatayu, the great grandson of Chandradeva. The couple moved towards the state of modern-day Odisha. They never ruled like their counterparts and lived ascetic lives, as did their descendants.</p></blockquote>
+<p>So the family carried an <em>ascetic</em> practice into a new geography, and their descendants eventually merged with Kshatriya lines in Odisha and then further south into Andhra. This is the pattern behind every gotra in India: an anchor of practice, a rule about who may carry it, and a slow drift as the practice travels.</p>
+<p><strong>The working form:</strong> <strong>Do not mix the two descent lines when you name a remedy.</strong> The gotra article records three <em>pravara</em> — Sandilya, Asita, and Deval — and states plainly: <em>"Due to having three pravaras in the gotra, it is also called as Treepravara gotra. The Veda of this gotra is Samveda."</em> That is the operative fact: <strong>the Samaveda</strong>, and specifically the <strong>Kauthuma śākhā</strong>, followed by Brahmins known as <strong>Chhandog</strong> (the article: <em>"The Brahmins of this gotra follow Kauthuma Sakha of Samaveda and they are known as Kauthumashakhiya"</em>). The same article records that in Mithila there are <strong>44 mools</strong> — branch origins — each with its own <em>Viji Purusha</em>, and that the gotra is <em>"the largest gotra in Maithil Brahmins of Nepal and Bihar."</em></p>
+<p>This is what a lineage rule looks like in practice: a Veda, a śākhā, a priestly family name, a defined set of ritual authorities, and a geography of branches. If your remedy names Shandilya, name which of those four layers you are leaning on.</p>
+<h3>3. The Udgitha Vidya: the practice of <em>hearing</em> Om, not just speaking it</h3>
+<p>Here is the payload. From the <em>Shandilya (Rishi)</em> article:</p>
+<blockquote><p>The learning about the meditation and aloud chanting of the syllable Om, which represents the symbol of the ultimate Brahman, he learned from his teacher Shaunaka is known as Udgitha Vidya.</p></blockquote>
+<p>And again, on his guru:</p>
+<blockquote><p>He was also known as "Udara- Śāṇḍilya", and the disciple of Atidhanvān Śaunaka who taught him about the greatness and the limitlessness of Brahman.</p></blockquote>
+<p>Set the two facts beside each other. Shandilya is <em>the priest of the Moon God</em> — the deity of the visible, luminous night — and the practice he was given is <strong>Udgitha</strong>: from <em>udgītha</em>, the audible chanting. The disambiguation article on the term is terse but exact: <em>"a name of the mystical syllable Om"</em> and <em>"a division of the Samaveda historically chanted in Vedic ritual by the Udgatr priest."</em></p>
+<p>The ritual title carries the answer. The <strong>Udgātr</strong> is the priest who sings the Udgītha aloud in the sacrificial assembly. Shandilya received an <em>audible</em> practice from a Vedic ritual specialist and became, by name, the servant of the Moon.</p>
+<p>And note what the article says the practice actually is: *<em>meditation </em>and<em> aloud chanting, together.</em>* Not one or the other. The two are a matched pair in the source sentence. That pairing is the mechanism, and it is the part that gets lost in modern practice.</p>
+<p>Why does the pair matter? Because in remedial work, the two halves fail in opposite directions. A practitioner who only <em>speaks</em> is generating sound outward — an offering to the room, essentially a broadcast, and it dissipates. A practitioner who only <em>silences</em> is generating inward attention, which is real work, but has no overt ritual edge to it: nothing in the external field responds, so there is no way to tell whether anything happened. <strong>Udgitha puts the inner and the outer in the same gesture</strong> — the mouth is engaged in the same act as the attention. That is a diagnostic instrument as much as a remedy: if you cannot make the sound and hold the attention at once, you cannot tell which one you actually did.</p>
+<p><strong>The working form:</strong> <strong>Make the mantra audible, and make it audible in a fixed register.</strong> Concretely: (1) choose <em>one</em> mantra for the remedy work — the element that maps to the graha you are repairing — and do not improvise it; (2) chant it at a volume that a person two steps away could hear and could not mistake for speech, which is roughly where you must feel the vibration in your own sternum and nasal bridge but not strain your throat; (3) fix the count — 108, or 21, or 11 — and never extend it "if it feels good," because the number <em>is</em> the shape of the offering; (4) if you cannot sustain both the sound and the attention for the full count, shorten the count rather than dropping the sound. The count is negotiable. The audibility is not.</p>
+<h3>4. The Tajjala: a self smaller than a grain of rice, larger than the earth</h3>
+<p>The second thing Shandilya is credited with is the <strong>Shandilya Vidya</strong>, and the <em>Shandilya Vidya</em> article frames its significance bluntly:</p>
+<blockquote><p>The concept of the Atman and the supreme Brahman and their unity was first realised by the sage Shandilya. His insight on the concept of the Atman and the supreme Brahman was called as Shandilya Vidya.</p></blockquote>
+<p>Where does it live? The article is precise: <em>"It is mentioned in the Section 14 of the third chapter of the Upanishad. It is also repeated with some textual variations in the text Shatapatha Brahmana (x. 6. 3). It is also taught in the Agnirahasya and the Brihadaranyaka Upanishad."</em> The <em>Shandilya (Rishi)</em> article puts the same teaching at <em>Chandogya Upanishad</em> III.xiv.1, and adds that the text of the Upanishad is <em>"the concluding part of the Shatapatha Brahmana"</em> at X.vi.3.</p>
+<p>The teaching is four verses, and the third one is the one that survives in every reformer's memory:</p>
+<blockquote><p>He is my Self within the heart, smaller than a grain of rice, smaller than a grain of barley, smaller than a mustard seed, smaller than a grain of millet; He is my Self within the heart, greater than the earth, greater than the mid-region, greater than heaven, greater than all these worlds.</p></blockquote>
+<p>The <em>Shandilya Vidya</em> article gives the technical name for this: the Atman is called <strong>Tajjala</strong> (तज्जलान), and the <em>Shandilya (Rishi)</em> article explains the term — <em>"the universe identified with the changeless Brahman, who is not bound by space or time, having three attributes – creator, preserver and destroyer of the universe."</em></p>
+<p>Here is the <em>occult</em> content, and it is not small. A repair practice needs a <strong>location</strong>. Every serious tradition has one — the coal, the bell, the specific lamp, the deity's particular vessel. Without a fixed address, the effort disperses into general goodwill, and general goodwill does not move a chart.</p>
+<p>Shandilya gives you an address that cannot be escaped and cannot be built: <strong>the heart, and inside it, a point smaller than a mustard seed.</strong> The article notes that this doctrine <em>"does not distinguish between the lower and the higher Brahman,"</em> and that the <em>Ātmān</em> is <em>"a positive entity, both great and small, infinite and infinitesimal, surely reachable after death."</em> For a remedy practitioner this is not philosophy for its own sake. It is an <strong>anchor point</strong>: the one place in the body where the practitioner can reliably, physically, direct attention, and the one place the tradition says is not merely a metaphor.</p>
+<p><strong>The working form:</strong> <strong>Give every repair practice one physical address, and make it the same address every time.</strong> For Shandilya-derived work, that address is the heart-point — the Tajjala — located by placing the right thumb on the centre of the sternum and turning the attention inward and <em>down</em>, behind the breastbone, as though behind a door that is not quite closed. The <em>Āṭmā</em> is described as smaller than a mustard seed, so the attention must be <em>fine</em> — not a broad wash of feeling over the chest, which is emotion, not attention. Practical test: the sensation should have a location you could point to with a fingertip, and it should feel still rather than warm. If it spreads, you have stopped looking and started feeling, and the practice has stopped being a repair and become a comfort. Perform the location step <em>before</em> the mantra, never after. The mantra is the offering; the address is the delivery point. Reversing them is why so much remedy work never lands anywhere.</p>
+<h2>Part Two: The Manual He Left Behind</h2>
+<h3>5. The manual: what the Shandilya Upanishad actually contains</h3>
+<p>If the Tajjala is the address, the <em>Shandilya Upanishad</em> is the manual. And the manual is unusually specific — which is why it survives as practice and not just as a text to be cited.</p>
+<p>The <em>Shandilya Upanishad</em> article gives the basics: <em>"a Sanskrit text and one of the minor Upanishads of Hinduism. It is one of twenty Yoga Upanishads in the four Vedas, and is attached to the Atharvaveda."</em> It is <em>"listed at number 58 in the serial order of the Muktika enumerated by Rama to Hanuman in the modern era anthology of 108 Upanishads,"</em> and it is <em>"also known as the Shandilya Yoga Sutras."</em> On its dating the article is careful and gives three scholars' positions: Gavin Flood dates it to roughly 100 BCE–300 CE; Roy Eugene Davis thinks it probably predates Patanjali's <em>Yoga Sutras</em>; Georg Feuerstein thinks it probably postdates them; Thomas McEvilley calls the chronology uncertain but places it around the <em>Dhyanabindu Upanishad</em> and before the <em>Hatha Yoga Pradipika</em>, <em>Kaulajnananirnaya</em> and <em>Shiva Samhita</em>.</p>
+<p>The structure is three chapters. The first is the largest and carries the practice. The <em>Shandilya Upanishad</em> article lists the eleven sections of chapter one exactly: <strong>Yama, Niyama, Asana, Pranayama (Nadis, Vayus and Kundalini), Pranayama (Purification of Nadis), Pranayama with Pranava, Pranayama (Purification of Susumna and others), Pratyahara, Dharana, Dhyana, Samadhi.</strong> The second chapter <em>"expounds the Brahma Vidya."</em> The third <em>"talks about the nature and forms of Brahman: Sakala Brahman, Niskala Brahman and Sakala-Niskala Brahman."</em></p>
+<p>The counts are what make it usable:</p>
+<blockquote><p>The text is primarily focussed on Yoga techniques, and is among the most detailed in the Upanishadic corpus of texts dedicated to Yoga. It describes ten Yamas (ethical don'ts, restraints), ten Niyamas (ethical to do list, observances) and eight Asanas (postures), along with three Pranayamas, five types of Pratyaharas, five kinds of Dharana, two types of Dhyana and one Samadhi.</p></blockquote>
+<p>And the article supplies the actual lists rather than leaving them to tradition. The ten Yamas: <strong>Ahimsa, Satya, Asteya, Brahmacharya, Dayā, Ārjava, Kṣamā, Dhṛti, Mitāhāra, Śauca.</strong> The eight Asanas: <strong>Svastikasana, Gomukhasana, Padmasana, Virasana, Simhasana, Bhadrasana, Muktasana, Mayurasana.</strong> The three Pranayamas: <strong>Ujjayi, Sitkara, Sitala.</strong> The five Pratyaharas, per the article: the ability to withdraw the senses from the external world at will; the ability to view everything as the Atman; the ability to give away the fruits of one's effort; the ability to be unaffected by sensual pleasures; and <em>"the ability to project one's attention to one of eighteen vital parts of one's own body."</em></p>
+<p><strong>The working form:</strong> <strong>Build the remedy on the text's own ladder, and stop at the rung the chart actually requires.</strong> The <em>Shandilya Upanishad</em> article is explicit about the order: <em>"The Yogi who has mastered all the Yamas, the Niyamas and an Asana, states the Upanishad, should proceed to the Pranayama."</em> For a repair practice aimed at a single transit, that means: one yama-niyama posture of conduct (the ten Yamas are the ethics list — Ahimsa through Śauca — and the ten Niyamas are the observances list), one asana from the eight named, then pranayama, then dharana on the Tajjala. Do not attempt samadhi as a remedy technique. The article describes Samadhi as the <em>last</em> stage of Yoga, and the <em>Pranayama</em> article confirms the classical ordering by quoting Patanjali 1.34 — <em>"pranayama is introduced as a method aimed at stabilizing the mind"</em> — which is precisely the function you want when a transit has destabilised the mind.</p>
+<h3>6. Nadi purification: the actual repair mechanism</h3>
+<p>Here is where the article becomes genuinely occult, and where it intersects the <em>Pranayama</em> article's Hatha account.</p>
+<p>The <em>Shandilya Upanishad</em> article devotes <strong>three consecutive sections of chapter one</strong> to breath and nadis — "Pranayama: Nadis, Vayus and Kundalini", "Pranayama: Purification of Nadis", "Pranayama with Pranava" — plus a fourth, "Pranayama: Purification of Susumna and others". That is one quarter of the chapter on the pranic body. And it says plainly:</p>
+<blockquote><p>The text is one of the four Upanishads which includes a discussion of Kundalini chakras from Yoga perspective, the other three being Darshana Upanishad, the Yogachudamani Upanishad, and the Yogashikha Upanishad. However, the ideas in the four texts show an acceptance of a diversity of views; for example, this text asserts that Manipura Chakra has 12 petals instead of 10 in the other texts.</p></blockquote>
+<p>Now set that beside the <em>Pranayama</em> article's description of the mechanism in the Hatha model: <em>"Pranayama and mudras unblock the Sushumna nadi; Kuṇḍalinī climbs."</em> And its list of the classical techniques, which includes exactly what the Shandilya Upanishad is doing: <strong>Nadi Shodhana</strong> (alternate nostril breathing, also called Anuloma Viloma), <strong>Ujjayi</strong> ("Victorious Breath"), <strong>Sitali</strong> (breathing through the rolled tongue), <strong>Bhastrika</strong> ("Bellows Breath"), <strong>Kapalabhati</strong> ("Skull-shining Breath", a Śaṭkarman practice). The <em>Pranayama</em> article also gives the technical definition of the compound — Monier-Williams: <em>"of the three 'breath-exercises' performed during Saṃdhyā"</em> — and the three stages as <em>pūraka</em> (inhalation), <em>kumbhaka</em> (retention) and <em>rechaka</em> (exhalation).</p>
+<p>Read those two articles together and you get the actual repair thesis: <strong>a damaged transit is a blocked current, and the work is to unblock it, not to plead with it.</strong></p>
+<p>That is a different mental model from most remedy practice, and it is a better one, because it is testable. The <em>Shandilya Upanishad</em> article notes the text's own habit of reminding <em>"the importance of ethical virtues in a Yogi"</em> — and that is not decoration either. It is the diagnostic layer: if the nadi work keeps failing, the article's own sequence says the cause is upstream, in the Yamas and Niyamas, not in the breath technique.</p>
+<p><strong>The working form:</strong> <strong>Repair the current before you address the planet.</strong> The order the <em>Shandilya Upanishad</em> article gives is: ethics (Yama/Niyama) → asana → pranayama → pratyahara → dharana → dhyana → samadhi. For a single-graha repair: (1) one Śauca or Ahimsa practice — the Yamas the article defines as <em>"not causing any pain to any living being at any time through the actions of one's mind, speech or body"</em> (Ahimsa) and <em>"the speaking of truth that conduces to the well being of creatures"</em> (Satya) — because a transit repair performed out of resentment or competitiveness is working against itself; (2) one asana from the eight named, held long enough to stop fidgeting, because the asana is where the attention learns to stay; (3) <strong>Nadi Shodhana</strong>, and count the rounds rather than the minutes; (4) Ujjayi, which the <em>Pranayama</em> article calls the <em>"Victorious Breath"</em>, if and only if the repair is for a Saturn-type or wind-type affliction; (5) dharana on the Tajjala. Do not move to the next stage until the previous one holds without strain. The article's <em>"as the Yogi progresses"</em> structure is a sequence of gates, not a menu.</p>
+<h2>Part Three: Why the Moon Governs the Repair</h2>
+<h3>7. Why the Moon — the astrological case, in the sources' own words</h3>
+<p>Now the part that connects all of this to remedial astrology, with the sources doing the arguing.</p>
+<p><strong>First: the Moon is where the chart begins.</strong> The <em>Jyotisha</em> article: <em>"The first Mahā-Daśā is determined by the position of the natal Moon in a given Nakṣatra. The lord of the Nakṣatra governs the Daśā."</em> And the <em>Dasha (astrology)</em> article gives the arithmetic: <em>"The first Mahā-Daśā is determined by the position of the natal Moon in a given Nakṣatra. The lord of the Nakṣatra governs the Daśā. Each Mahā-Daśā is divided into sub-periods called bhuktis, or antar-daśās, which are proportional divisions of the maha-dasa."</em></p>
+<p><strong>Second: the Moon's own share of the 120 years.</strong> The <em>Dasha (astrology)</em> article: <em>"Vimshottari Dasha assumes that the maximum duration of life of an individual human being is 120 Solar sidereal years which is the aggregate duration of all nine planetary periods i.e. Ketu 7, Venus 20, Sun 6, Moon 10, Mars 7, Rahu 18, Jupiter 16, Saturn 19 and Mercury 17, in the order of their operation."</em> The Moon's ten years sit fourth in the sequence.</p>
+<p><strong>Third: the nakṣatras are the Moon's own.</strong> The <em>Nakshatra</em> article gives the etymology as <em>"a special class of heavenly bodies associated with the moon"</em>, with <em>náks-</em> meaning "to attain" and <em>-tra</em> meaning "place" — <em>"the place to which the moon attains."</em> And: <em>"In later jyotisha, the term came to denote 27 equal divisions of the ecliptic. In this equal division system, each nakshatra spans 13° 20'."</em> They are <em>"personified as daughters of Daksha and as wives of Chandra, the god of the Moon"</em> and <em>"also described as the daughters of Kashyapa."</em> The article carries the origin legend intact: <em>"When Chandra neglected his other 26 wives in favour of Rohini, his father-in-law cursed him with leprosy and proclaimed that the Moon would wax and wane each month."</em></p>
+<p><strong>Fourth: the Moon's transit is the emotional one.</strong> The <em>Sade Sati</em> article: <em>"Of all transits in traditional Indian, Vedic astrology, which is based on the sidereal zodiac as against the tropical zodiac, Saturn transit is a solely emotional / mental transit. In that, it is the only transit that affects the emotions."</em> And it is measured from the Moon: <em>"Sade Sati is said to begin when the Saturn is transiting the asterism 45 degrees prior to the position of the natal moon and ends when Saturn transits the asterism 45 degrees past the position of the natal moon."</em></p>
+<p><strong>Fifth: what the Moon means.</strong> The <em>Planets in astrology</em> article: <em>"Chandra or Soma and represents the mind, queenship and mother."</em></p>
+<p>Put these five together and the doctrine assembles itself. Shandilya was the <strong>priest of the planet that the system of repair is reckoned from</strong>, and that planet governs <strong>the mind</strong>. A lineage that transmits an <em>audible</em> practice for the deity of the mind, anchored at a point inside the chest, for the rishi whose grandfather is Kashyapa — Kashyapa being, per the <em>Nakshatra</em> article, the father of the nakṣatras themselves — that is not a coincidence. It is a coherent technology.</p>
+<p><strong>The working form:</strong> <strong>Anchor the whole repair at the Moon, and let the Moon's house decide the rest.</strong> Three steps. (1) Find the natal Moon's nakṣatra and its lord — that lord governs the first Mahā-Daśā, so it is the planet already running your life, and it is where a repair has leverage. (2) Find the current transit of Saturn relative to that Moon; the <em>Sade Sati</em> article's rule gives you the exact test — if Saturn is within 45 degrees either side of your natal Moon's position, you are inside the window, and the article's own remedies are named: <em>"It is believed that worshipping Lord Hanuman and Lord Ganesha greatly reduces any malefic effects of Sade Sati."</em> (3) Make the Moon-rule fix the <em>last</em> thing you do, after the nadi work, because the <em>Shandilya Upanishad</em> article's order puts the internal purification first, and the <em>Pranayama</em> article's Patanjali quote says the point of the breath work is a stabilized mind. Repair the channel, then address the transit, then work the Moon. That is the Shandilya sequence, and it is the opposite of what most clients are given.</p>
+<h3>8. The twenty-seven wives: the nakṣatra table as a remedy index</h3>
+<p>The <em>Nakshatra</em> article carries a full table of the twenty-seven mansions with three columns that matter to a remedy practitioner — the <strong>astrological leader</strong>, the <strong>deity</strong>, and the <strong>Indian zodiac span</strong> — and it is worth reading as what it is: an index. For each mansion, the lord who owns it and the deity who presides over it are <em>different beings</em>. The deity is the remedy; the lord is the planet that has authority over that stretch of sky. Practitioners routinely use only the first column. The table gives you both.</p>
+<table>
+<thead><tr><th>No.</th><th>Nakṣatra</th><th>Leader</th><th>Deity</th><th>Indian zodiac span</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>Aśvinī</td><td>Ketu</td><td>Aśvins (the physicians of the gods)</td><td>0°–13°20′ Aries</td></tr>
+<tr><td>2</td><td>Bharaṇī</td><td>Śukra</td><td>Yama</td><td>13°20′–26°40′ Aries</td></tr>
+<tr><td>3</td><td>Kṛttikā</td><td>Sūrya</td><td>Agni</td><td>26°40′ Aries–10° Taurus</td></tr>
+<tr><td>4</td><td>Rohiṇī</td><td>Chandra</td><td>Prajāpati</td><td>10°–23°20′ Taurus</td></tr>
+<tr><td>5</td><td>Mṛgaśiras</td><td>Maṅgala</td><td>Soma</td><td>23°20′ Taurus–6°40′ Gemini</td></tr>
+<tr><td>6</td><td>Ārdrā</td><td>Rāhu</td><td>Rudra</td><td>6°40′–20° Gemini</td></tr>
+<tr><td>7</td><td>Punarvasu</td><td>Guru</td><td>Aditi</td><td>20° Gemini–3°20′ Cancer</td></tr>
+<tr><td>8</td><td>Puṣya</td><td>Śani</td><td>Bṛhaspati</td><td>3°20′–16°40′ Cancer</td></tr>
+<tr><td>9</td><td>Āśleṣā</td><td>Budha</td><td>Nāgas</td><td>16°40′–30° Cancer</td></tr>
+<tr><td>10</td><td>Maghā</td><td>Ketu</td><td>Pītrs — "The Fathers"</td><td>0°–13°20′ Leo</td></tr>
+<tr><td>11</td><td>Pūrvaphalgunī</td><td>Śukra</td><td>Bhaga</td><td>13°20′–26°40′ Leo</td></tr>
+<tr><td>12</td><td>Uttaraphalgunī</td><td>Sūrya</td><td>Aryamaṇ</td><td>26°40′ Leo–10° Virgo</td></tr>
+<tr><td>13</td><td>Hasta</td><td>Chandra</td><td>Savitṛ</td><td>10°–23°20′ Virgo</td></tr>
+<tr><td>14</td><td>Citrā</td><td>Maṅgala</td><td>Tvaṣṭṛ / Viśvakarma</td><td>23°20′ Virgo–6°40′ Libra</td></tr>
+<tr><td>15</td><td>Svātī</td><td>Rāhu</td><td>Vāyu</td><td>6°40′–20° Libra</td></tr>
+<tr><td>16</td><td>Viśākhā</td><td>Guru</td><td>Indra</td><td>20° Libra–3°20′ Scorpio</td></tr>
+<tr><td>17</td><td>Anurādhā</td><td>Śani</td><td>Mitra</td><td>3°20′–16°40′ Scorpio</td></tr>
+<tr><td>18</td><td>Jyeṣṭhā</td><td>Budha</td><td>Indra</td><td>16°40′–30° Scorpio</td></tr>
+<tr><td>19</td><td>Mūla</td><td>Ketu</td><td>Nirṛti</td><td>0°–13°20′ Sagittarius</td></tr>
+<tr><td>20</td><td>Pūrvāṣāḍha</td><td>Śukra</td><td>Apah</td><td>13°20′–26°40′ Sagittarius</td></tr>
+<tr><td>21</td><td>Uttarāṣāḍha</td><td>Sūrya</td><td>Viśvedevas</td><td>26°40′ Sagittarius–10° Capricorn</td></tr>
+<tr><td>22</td><td>Śravaṇa</td><td>Chandra</td><td>Viṣṇu</td><td>10°–23°20′ Capricorn</td></tr>
+<tr><td>23</td><td>Dhaniṣṭhā</td><td>Maṅgala</td><td>Vāsus</td><td>23°20′ Capricorn–6°40′ Aquarius</td></tr>
+<tr><td>24</td><td>Śatabhiṣaj</td><td>Rāhu</td><td>Varuṇa</td><td>6°40′–20° Aquarius</td></tr>
+<tr><td>25</td><td>Pūrvabhādrapada</td><td>Guru</td><td>Ajaikapada</td><td>20° Aquarius–3°20′ Pisces</td></tr>
+<tr><td>26</td><td>Uttarabhādrapada</td><td>Śani</td><td>Ahirbudhnya</td><td>3°20′–16°40′ Pisces</td></tr>
+<tr><td>27</td><td>Revatī</td><td>Budha</td><td>Puṣaṇ</td><td>16°40′–30° Pisces</td></tr>
+</tbody>
+</table>
+<p>Now look at what a Moon-repair practitioner can actually do with this. The nakṣatras ruled by <strong>Chandra</strong> are exactly three: <strong>Rohiṇī</strong> (deity Prajāpati), <strong>Hasta</strong> (deity Savitṛ), and <strong>Śravaṇa</strong> (deity Viṣṇu). The nakṣatras ruled by <strong>Śani</strong> are <strong>Puṣya</strong> (deity Bṛhaspati), <strong>Anurādhā</strong> (deity Mitra), and <strong>Uttarabhādrapada</strong> (deity Ahirbudhnya). And the nakṣatras ruled by <strong>Ketu</strong> — the node that in the <em>Jyotisha</em> article is <em>"the points where the moon crosses the ecliptic plane"</em> and which has <em>"an orbital cycle of 18 years"</em> and is <em>"always retrograde in motion"</em> — are <strong>Aśvinī</strong> (deity the Aśvins, the physicians of the gods), <strong>Maghā</strong> (deity Pītrs, the ancestors), and <strong>Mūla</strong> (deity Nirṛti).</p>
+<p>Notice <strong>Maghā</strong> and <strong>Mūla</strong>. <em>Maghā</em>'s deity is literally <strong>Pītrs — "The Fathers"</strong>, family ancestors; <em>Mūla</em>'s deity is <strong>Nirṛti</strong>, whose name means dissolution or destruction. <strong>Aśvinī</strong>'s deity is the <strong>Aśvins, the physicians of the gods</strong>. These are the three mansion-deities that deal directly with ancestry, dissolution, and healing — and they all fall under the shadow of the Moon's own node. If your chart has a nodal or ancestral affliction, this table hands you three specific deity addresses rather than a vague instruction to "worship ancestors."</p>
+<p>And one more detail from the <em>Nakshatra</em> article that practitioners should not skip: the nakṣatra is <em>"one of the five elements of a Pañcāṅga"</em> — alongside <strong>Tithi, Nityayoga, Karana, and Vāra</strong>. So the Moon mansion is one coordinate in a five-coordinate daily frame, not a standalone fact.</p>
+<p><strong>The working form:</strong> <strong>Build a mansion-deity table for your own chart and use the deity column, not the leader column, to pick the remedy.</strong> Three rows. (1) List the nakṣatra of your natal Moon, of the Moon's current transit, and of the afflicted planet's current position. (2) For each, take the <strong>deity</strong> from the table above — not the leader. (3) Fix one deity per affliction and give it a fixed form: the deity's own <em>mātrā</em>, its <em>yantra</em>, or a specific oblation, done on the deity's <em>vāra</em> (weekday), which the Pañcāṅga article's <em>Vāra</em> element gives you. Keep the leader column for <em>timing</em> — when the mansion lord is running — and the deity column for <em>address</em>. Most remedial failures are one of those two columns being used for the other's job.</p>
+<h3>9. What is genuinely occult here — and what is only good advice</h3>
+<p>The article should not pretend that everything above is equally attested. Let me separate the layers honestly, because a reader with a working practice will feel the difference.</p>
+<p><strong>Textually firm, and directly usable:</strong></p>
+<ul>
+<li>Shandilya as the rishi of the <em>Full Moon</em>, priest of the Moon God, Chandravaṃśa descent, son of Devala, grandson of Kashyapa.</li>
+<li>The <strong>Udgitha Vidya</strong>: meditation <em>and</em> aloud chanting of Om, received from Śaunaka.</li>
+<li>The <strong>Shandilya Vidya</strong> at <em>Chandogya</em> III.xiv and <em>Shatapatha Brāhmaṇa</em> X.vi.iii: <em>sarvam khalv idam brahma</em>, the Tajjala Atman, the doctrine that will determines what one becomes.</li>
+<li>The <strong>Shandilya Upanishad</strong> as a Yoga Upanishad of the Atharvaveda: ten Yamas, ten Niyamas, eight Asanas, three Pranayamas, five Pratyaharas, five Dharana, two Dhyana, one Samadhi; three sections on nadi purification and kundalini; the ethics-first ordering.</li>
+<li>The gotra's Veda (Samaveda), śākhā (Kauthuma), priestly name (Chhandog), three pravaras, 44 Mithila mools.</li>
+</ul>
+<p><strong>Astrologically firm, from the standard articles:</strong></p>
+<ul>
+<li>The nakṣatra table with leader, deity and span.</li>
+<li>The Vimśottarī allotment of 120 years with the Moon's ten.</li>
+<li>The natal-Moon origin of the first Mahā-Daśā; Sade Sati's 45-degree rule; Hanuman and Ganesha as its named remedies; the Moon as the planet of the mind; Chandra/Soma.</li>
+</ul>
+<p><strong>The genuinely occult layer — where the tradition asserts more than it can prove:</strong></p>
+<ul>
+<li>That the audible Om <em>is</em> the remedy's delivery mechanism rather than its accompaniment.</li>
+<li>That the Tajjala is a <em>locatable</em> address, not a metaphor.</li>
+<li>That nadi blockage is the mechanism behind an afflicted transit.</li>
+<li>That a lineage (gotra, pravara, Veda, śākhā) transmits remedial <em>authority</em> and not merely religious identity.</li>
+</ul>
+<p>And here is the boundary that must be stated plainly, because the <em>Jyotisha</em> article states it about the whole field:</p>
+<blockquote><p>The scientific consensus is that astrology is a pseudoscience.</p></blockquote>
+<p>The same article also gives the historical defence of the tradition's own framing, which is the honest version of why Jyotiṣa is not merely a horoscope shop: <em>"Jyotiṣa is one of the Vedāṅga, the six auxiliary disciplines used to support Vedic rituals. Early jyotiṣa is concerned with the preparation of a calendar to determine dates for sacrificial rituals, with nothing written regarding planets."</em> The nakṣatras' first attestation is calendrical — the <em>Nakshatra</em> article: <em>"The first astronomical text that lists them is the Vedanga Jyotisha."</em> The <em>Jyotisha</em> article records the Vedic root: <em>jyotish</em>, <em>"which means light, such as that of the sun or the moon or a heavenly body,"</em> and the term covering <em>"the study of astronomy, astrology, and the science of timekeeping using the movements of astronomical bodies."</em></p>
+<p>So the tradition's own claim is not that the stars write your fate. It is that the <em>timing</em> of the rite must be correct, that a calendar is a form of worship, and that when you align an act with a window, you are doing something the ritual calendar was built to do. That claim is testable in the only way it can be: by whether the practice works for the person doing it.</p>
+<p><strong>The working form:</strong> <strong>Hold the two claims separately, and never let the second borrow the authority of the first.</strong> Write down, on two different lines: (1) <em>What the source says</em> — cite the article and the verse; (2) <em>What I am claiming for the practitioner</em> — mark it as practice, not as scripture. A remedy that rests only on (2) is a promise. A remedy that rests on (1) and reports honestly on (2) is a discipline. Shandilya's own literature is unusually disciplined on this point, because the <em>Shandilya Vidya</em> article is explicit that the whole claim rests on a single condition — <em>"he who has such faith and in whom there is no doubt will certainly attain to that Godhead"</em> — and the <em>Shandilya (Rishi)</em> article repeats it as <em>"a person with this faith and no doubt will certainly attain to that Godhead."</em> Faith is named as the precondition, not smuggled in as proof.</p>
+<h2>Part Four: The Practice, Assembled</h2>
+<h3>10. The practice, assembled</h3>
+<p>Everything above resolves into one sequence. This is the article's payload.</p>
+<p><strong>The Shandilya repair, for a Moon-ruled or transit-afflicted chart:</strong></p>
+<ol>
+<li><strong>Name the handle.</strong> Which Shandilya are you invoking — the gotra, the rishi of the Full Moon, or the Upanishad's author? Write it on the sheet with the remedy. One line.</li>
+<li><strong>Find the Moon's three positions.</strong> Natal Moon's nakṣatra (its lord governs your first Mahā-Daśā). Current Moon transit. The afflicted planet's transit position, and whether Saturn is within 45 degrees of your natal Moon — the <em>Sade Sati</em> article's own test, whose named remedies are <strong>Hanuman</strong> and <strong>Ganesha</strong>.</li>
+<li><strong>Take the deities, not the lords.</strong> From the table: your natal Moon's nakṣatra deity (Prajāpati, Savitṛ, or Viṣṇu), the transit's nakṣatra deity, and for nodal or ancestral problems, <strong>Pītrs</strong> at Maghā, <strong>Nirṛti</strong> at Mūla, or the <strong>Aśvins</strong> at Aśvinī. Fix one deity per problem.</li>
+<li><strong>Open the channel.</strong> One Yama and one Niyama practice (the <em>Shandilya Upanishad</em> article's Ahimsa and Satya definitions are the ones to work from). One asana from the eight named. Then Nadi Shodhana with a counted round. Then Ujjayi if the affliction is Saturn-type or vāta-type. Gate by gate — the article's ordering is a ladder, not a menu.</li>
+<li><strong>Fix the address.</strong> The Tajjala — smaller than a mustard seed, inside the heart, larger than the earth. Locate it by attention, not by feeling. It must have a point you could touch with a fingertip.</li>
+<li><strong>Sound the offering.</strong> The Udgitha form: audible, fixed register, fixed count, one mantra only. Never improvised to match how the day went.</li>
+<li><strong>Keep the record.</strong> Write the nakṣatras, the transit degrees, the deity chosen, the count, and what actually happened. Not what you hoped. The article's own rule about the 108-pada count — the <em>Nakshatra</em> article notes <em>"108 is also the number of beads in a japa mala, representing all the elements (ansh) of Vishnu"</em> — is a good reason to fix the count: a form with a fixed number is comparable across months, and a form without one is not.</li>
+</ol>
+<p><strong>The working form:</strong> <strong>Never change the frame while you are testing a remedy.</strong> A repair has a frame: a handle, a deity, a count, an address, a day of the week, and a start date. If a form does not work, change <em>one</em> element, wait a full cycle of the planet involved, and change nothing else. The <em>Jyotisha</em> article gives the reason this matters in one line about transits: <em>"A natal chart shows the positions of the grahas at the moment of birth. After that moment, the grahas move around the zodiac, interacting with the natal chart grahas. This period of interaction is called gochara."</em> The interaction takes years. A remedy tested against a moving sky, with two variables changed, teaches you nothing.</p>
+<h3>11. A last thing about the name</h3>
+<p>There is a detail in the <em>Shandilya</em> gotra article that is easy to skim and impossible to unsee once you have read it:</p>
+<blockquote><p>People belonging to this gotra are considered to be of lunar race.</p></blockquote>
+<p>Lunar race. Not merely "descendants of a man named after the moon." A <em>race</em>, in the vocabulary of the tradition — a lineage marked as belonging to Chandra, set apart from the solar race, with its own Veda, its own śākhā, its own priestly name, its own branches, its own temples. The article lists them: the <strong>Śrī Piplāj Mātā Mandir at Osian</strong> in Rajasthan, whose deity Piplāj is the <em>kuldevī</em> of the Shandilya-gotra families there; the <strong>Shandilya Dhām Mandir at Teghra</strong> near Barauni in Mithila, maintained by the community itself; the <strong>Shandilya Ṛishi Samādhi</strong> at Chākreshwar Maheśvar Mandir in Chakan near Pune; the <strong>Shandilya Ṛishi Mandir at Shālin</strong> in the Kullu district of Himachal Pradesh.</p>
+<p>Four shrines, four regions, one practice. That is what a living lineage looks like when it is doing its job.</p>
+<p>And the reason that matters, for a repair practitioner, is the one the <em>Shandilya (Rishi)</em> article records about his own teaching. Shandilya resolved, the article says, <em>"certain metaphysical doubts of King Parikshit of Hastinapura and King Vajra of Dwaraka"</em> — that is, he was the person a court went to when the question was <em>"what is actually true, and what should I do about it."</em> He was also credited with the <strong>Shandilya Bhakti Sutra</strong> and, per the same article, his disciples included <strong>Kaundinya, Agnivesha, Vatsya Vamakakshayan, Vaishthapureya and Bharadwaj</strong> — students who carried the practice into the world and built lineages of their own.</p>
+<p>He did not solve the question by giving them a technique. He gave them an address, a sound, and a rule about conduct. The technique was the easy part. The rule about conduct was the part that made it work.</p>
+
+<div class="references">
+<h2>Sources</h2>
+<p>1. <a href="https://en.wikipedia.org/wiki/Shandilya_(Rishi">Shandilya (Rishi) - Wikipedia</a>)</p>
+<p>6. <a href="https://en.wikipedia.org/wiki/Dasha_(astrology">Dasha (astrology) - Wikipedia</a>)</p>
+<ol>
+<li><a href="https://en.wikipedia.org/wiki/Shandilya_Vidya">Shandilya Vidya - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Shandilya_Upanishad">Shandilya Upanishad - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Shandilya">Shandilya - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Nakshatra">Nakshatra - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Jyotisha">Jyotisha - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Planets_in_astrology">Planets in astrology - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Sade_Sati">Sade Sati - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Pranayama">Pranayama - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Udgitha">Udgitha - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Category:Rishis">Category:Rishis - Wikipedia</a></li>
+</ol>
+</div>
+        </article>
+    </div>
+
+</body>
+</html>
