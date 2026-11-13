@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>उदालक आरुणि का मधु-संग्रह मार्ग</title>
+    <style>
+        :root {
+            --bg-color: #FDF9F1;
+            --text-color: #3E2723;
+            --indian-yellow: #E4A025;
+            --indian-orange: #E65100;
+            --accent-light: #FFECB3;
+            --ref-bg: #FFF3E0;
+        }
+
+        body {
+            font-family: 'Georgia', 'Nirmala UI', 'Mangal', serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(var(--bg-color) 80%, var(--accent-light) 100%);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #FFFFFF;
+            padding: 50px 60px;
+            box-shadow: 0 10px 30px rgba(62, 39, 35, 0.1);
+            border-top: 8px solid var(--indian-orange);
+            border-bottom: 8px solid var(--indian-yellow);
+            border-radius: 4px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed var(--indian-yellow);
+        }
+
+        h1 {
+            color: var(--indian-orange);
+            font-size: 2.5em;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        h2 {
+            color: var(--indian-yellow);
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--indian-orange);
+            padding-left: 15px;
+        }
+
+        h3, h4 {
+            color: var(--indian-orange);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        .intro-text::first-letter {
+            float: left;
+            font-size: 3.5em;
+            line-height: 0.8;
+            padding-right: 8px;
+            padding-top: 4px;
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        ul, ol {
+            margin: 0 0 24px 0;
+            padding-left: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ol {
+            list-style-position: outside;
+            padding-left: 2.2em;
+        }
+
+        ul li, ol li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        ol li {
+            padding-left: 0.35em;
+        }
+
+        ul li::before {
+            content: '\2022';
+            position: absolute;
+            left: 0;
+            top: 0.05em;
+            color: var(--indian-orange);
+            font-size: 1.2em;
+            line-height: 1;
+        }
+
+        ol li::marker {
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        strong {
+            color: var(--indian-orange);
+        }
+
+        .image-placeholder-container {
+            margin: 30px 0;
+            text-align: center;
+            font-style: italic;
+            color: #795548;
+            background-color: var(--accent-light);
+            padding: 20px;
+            border-radius: 4px;
+            border: 1px solid var(--indian-yellow);
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.98em;
+            background-color: #FFFDF8;
+        }
+
+        th, td {
+            border: 1px solid #F0D49B;
+            padding: 10px 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--ref-bg);
+            color: var(--indian-orange);
+        }
+
+        blockquote {
+            margin: 30px 0;
+            padding: 20px 25px;
+            background-color: var(--accent-light);
+            border-left: 5px solid var(--indian-orange);
+            font-style: italic;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px dashed var(--indian-yellow);
+            margin: 32px 0;
+        }
+
+        .references {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: var(--ref-bg);
+            border-radius: 8px;
+            font-size: 0.9em;
+        }
+
+        .references h2, .references h3 {
+            color: var(--text-color);
+            margin-top: 0;
+            border-bottom: 1px solid var(--indian-yellow);
+            padding-bottom: 10px;
+            border-left: 0;
+            padding-left: 0;
+        }
+
+        .references p, .references li {
+            margin-bottom: 12px;
+            word-wrap: break-word;
+        }
+
+        .references a {
+            color: var(--indian-orange);
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>उदालक आरुणि का मधु-संग्रह मार्ग</h1>
+        </header>
+
+        <article>
+<p class="intro-text">हर कार्यशील ज्योतिषी जो उपाय करता है, वह एक अभ्यास का उपयोग करता है — और उसे उस अभ्यास का सही नाम लगभग कोई नहीं बता पाता — <strong>संग्रह करना</strong>। एक देवता नहीं, एक मंत्र नहीं, एक मणि नहीं। अनेक स्रोत, एक पात्र में, जब तक पात्र उसमें डाले गए वस्तु से अधिक मूल्यवान न हो जाए।</p>
+<div class="image-placeholder-container">
+    <img src="blog146_Image.png" alt="महर्षि उदालक आरुणि यज्ञवाट में शिष्यों को उपदेश देते हैं">
+</div>
+<p>आप इसे उपाय-सूचियों में देख सकते हैं। "पीड़ित भावों के स्वामियों को और नवम के स्वामी को अर्पित करो।" "पंचम के शुभ ग्रह को विवर्गी के साथ जोड़ो।" "गोचर के देवता को जन्म-चंद्र के देवता के साथ मिलाओ।" चिकित्सक एक <em>थाली</em> जुटाते हैं — एक तख़्ते पर कुछ चढ़ावे, अनेक स्रोतों को एक ही प्रस्तुति-बिंदु पर लाना। और लगभग कोई नहीं पूछता कि स्पष्ट प्रश्न: <strong>इसने सर्वप्रथम किसने लिखा, और उसने मधुमक्खी क्यों चुनी?</strong></p>
+<p>उत्तर है कुरु-पंचाल के मैदान का एक ऋषि, जिसे उदालक आरुणि कहा जाता था, जिसने अपने शिष्य श्वेतकेतु को आँगन में पढ़ाया — कोष्ठक नहीं, आँगन — और जिसे विकिपीडिया के <em>उदालक आरुणि</em> लेख के अनुसार, उस एक बहस में हारा जिसे कोई याद नहीं रखता, और वह भी अपने ही शिष्य के हाथ।</p>
+<p>आइए उसे बिल्कुल ठीक-ठीक रूप में देख लें, क्योंकि स्रोत इस विषय में असामान्य रूप से स्पष्ट हैं, और बाकी सब कुछ पर परदा है।</p>
+<h2>भाग एक: वह गुरु जिसने वह एक बहस हारी जिसका कोई उल्लेख नहीं</h2>
+<h3>1. नाम पदनाम है</h3>
+<p>उदालक आरुणि की वैदिक काल की एक महान उत्पत्ति-कथा है, और वह कथा <strong>वफ़ादारी</strong> की है, ज्ञान की नहीं।</p>
+<p><em>उदालक आरुणि</em> लेख, महाभारत के <em>आदि पर्व</em> का सार देते हुए, यह कहता है:</p>
+<blockquote><p>The Adi Parva describes Aruni as a disciple of Sage Ayoda-Dhaumya. Once a flood took place in the fields of the ashram. A breach was formed in the embankment. Dhaumya sent Aruni to stop the water from entering the embankment. After a long time, Aruni had not returned. So, Dhaumya went out to find Aruni. The latter was lying in the breach of the embankment to prevent the water from entering it. Because of his loyalty, Aruni is also known as Uddalaka Aruni as a mark of his preceptor's respect.</p></blockquote>
+<p>इसे धीरे-धीरे पढ़िए, क्योंकि इससे यह स्पष्ट होता है कि आप उसके नाम का उपयोग कैसे करें।</p>
+<p>उसका व्यक्तिगत नाम <strong>अरुणि</strong> था। उपाधि <em>उदालक</em> <strong>उसके गुरु ने दी थी</strong> — और वह एक साधारण, भौतिक, गौरवशून्य वफ़ादारी के लिए दी गई: एक मनुष्य जो अपने शरीर से भराव के में बैठा, जल को रोकने के लिए, जब तक उसके उपदेशक ने उसे ढूँढने नहीं आया। कोई अग्निहोत्र नहीं। कोई समाधि नहीं। कोई ब्रह्मवेद नहीं। एक भराव के छेद में शरीर, और जल को रोकता हुआ।</p>
+<p>यही इस नाम का पूरा भार है। और ध्यान दीजिए कि इसका अभ्यास के लिए क्या अर्थ है: <strong>यह ऋषि उसी का है जो भराव को सँभाले</strong> — जहाँ बल जा रहा हो, वहीं खड़ा रहना। मरम्मत का, नया आविष्कार नहीं।</p>
+<p><strong>व्यावहारिक रूप:</strong> <strong>उदालक आरुणि का नाम लेने से पहले, एक पंक्ति में, कारण के साथ, लिखिए कि आप किस उदालक आरुणि को आह्वान कर रहे हैं।</strong> साफ़ कहिए: <em>मधु विद्या के प्रदाता ऋषि उदालक आरुणि, श्वेतकेतु के गुरु और याज्ञवल्क्य के उपदेशक</em>, या <em>अरुणि उपनिषद् के रचयिता</em>, या <em>मधु विद्या के प्रणेता</em>। ये एक ही पकड़ नहीं हैं, और इनमें अनुष्ठान-शक्ति अलग-अलग है। मधु विद्या एक <em>तकनीक</em> है। <em>अरुणि उपनिषद्</em> एक <em>त्याग-पुस्तिका</em> है। और यह नाम एक <em>धर्म</em> है। अधिकांश लोग तीनों को मिला देते हैं, फिर आश्चर्य करते हैं कि क्रिया से कुछ नहीं हुआ। जो मरम्मत आप कर रहे हैं उससे मेल खाती पकड़ चुनिए और उपाय के साथ लिख लीजिए। नब्बे सेकंड का काम। यह पूरे लेख की सबसे अधिक लाभदायक आदत है।</p>
+<h3>2. वंश, शिष्य, और एक अत्यंत प्रसिद्ध पराजय</h3>
+<p>यहाँ लेख का अपना सघन जीवन-विवरण है, जिसे हमें खोलकर देखना चाहिए:</p>
+<blockquote><p>Uddālaka Āruṇi was a Brahmin of the Gautama lineage who was from Kuru-Pañcāla. He was the pupil of Aruṇa (his father) and Patañcala Kāpya. He was the preceptor of Yājñavalkya Vājasaneya, Kahola Kauṣītaki, Proti Kausurubindi, and his own son Śvetaketu Auddālaki. He defeated Prācīnayogya Śauceya and likely Bhadrasena Ājātaśatrava in debate, but was defeated in the debate of Bahudakshina Yajna held at the court of King Janaka in Mithila, by his own pupil Yājñavalkya.</p></blockquote>
+<p>उस वाक्य के दो अर्ध-भागों को आमने-सामने रखिए।</p>
+<p><strong>पहला अर्ध-भाग:</strong> उसने प्राचीनायोग्य शौचेय को और सम्भवतः भद्रसेन आजातशत्रव को <em>पराजित</em> किया। दो प्रसिद्ध विद्वान, हारे।</p>
+<p><strong>दूसरा अर्ध-भाग:</strong> उसे <em>पराजित</em> किया उसके अपने शिष्य याज्ञवल्क्य ने, मिथिला में राजा जनक के दरबार में आयोजित बहुदक्षिण यज्ञ में।</p>
+<p>उदालक आरुणि इसलिए भारतीय दार्शनिक इतिहास के उन बहुत कम प्रमाणित उदाहरणों में से हैं जहाँ <strong>गुरु को उसके अपने शिष्य ने सार्वजनिक रूप से पराजित किया</strong> — और वह शिष्य, याज्ञवल्क्य वाजसनेय, स्वयं <em>बृहदारण्यक उपनिषद्</em> की एक विशाल आकृति है। गुरु दोनों में अधिक प्रसिद्ध प्राकृतिक दार्शनिक था, और शिष्य अधिक प्रसिद्ध अध्यात्मवादी। परंपरा ने पराजय छिपाया नहीं, बल्कि उसे <em>आदि पर्व</em> में दर्ज किया — जहाँ अरुणि के अपने नाम की व्याख्या भी दी गई।</p>
+<p>उनके शिष्य इस बात के लिए महत्त्वपूर्ण हैं कि कोई उपाय वैध रूप से क्या दावा कर सकता है:</p>
+<table>
+<thead><tr><th>शिष्य</th><th>संबंध</th><th>इससे क्या प्रमाणित होता है</th></tr></thead>
+<tbody>
+<tr><td><strong>श्वेतकेतु औद्दालकि</strong></td><td>उनका अपना पुत्र</td><td>छान्दोग्य 6.1–16 और 5.3 के संवाद — आत्मा, ब्रह्म, नमक, मधु</td></tr>
+<tr><td><strong>याज्ञवल्क्य वाजसनेय</strong></td><td>वह शिष्य जिसने उन्हें हराया</td><td>एक परंपरा जो <em>बृहदारण्यक</em> तक पहुँचती है</td></tr>
+<tr><td><strong>कहोल कौषीतकी</strong></td><td>शिष्य</td><td><em>कौषीतकी उपनिषद्</em></td></tr>
+<tr><td><strong>प्रोति कौसुरुबिन्दि</strong></td><td>शिष्य</td><td><em>प्रोति उपनिषद्</em> / प्रपथक का गुरु</td></tr>
+</tbody>
+</table>
+<p><em>कौषीतकी उपनिषद्</em> का विवरण भी ध्यान दीजिए, जो पूरा नाम और परिस्थिति दोनों पक्का कर देता है:</p>
+<blockquote><p>In verse 1.1 of the Kaushitaki Upanishad, where the scion of Gangya invites Aruni, but he sends his son to the event. This verse is notable for the conversation therein that suggests the full name of Aruni to be Uddalaka Aruni Gautama, and the mention of him as one of the characters in a group event that hosted "Vedic studies in the hall of sacrifice" ( yajna ).</p></blockquote>
+<p>उसमें दो बातें। पहली, पूरा नाम: <strong>उदालक आरुणि गौतम</strong>। दूसरी, परिस्थिति: एक <strong>यज्ञ</strong> — वैदिक विद्यार्थियों का समूह-यज्ञ-समारोह। उदालक ने किसी एकल आश्रम-कोटरी से नहीं पढ़ाया। उन्होंने कार्यशील यज्ञ-परिसर में, अन्य शिक्षकों और अन्य विद्यार्थियों के साथ, भीड़ के सामने पढ़ाया। और उनके इस सर्वप्रथम अभिलेख में उन्होंने <strong>अपने पुत्र को भेजा</strong>।</p>
+<p><strong>व्यावहारिक रूप:</strong> <strong>जब आप बहु-स्रोत उपाय बनाएँ, तो सबसे छोटे को पहले भेजिए।</strong> यह भावुकता नहीं है; यह <em>कौषीतकी</em> के अभिलेख से निकला क्रम-नियम है। उदालक आरुणि ने निमंत्रण अस्वीकार नहीं किया — उन्होंने उसे <strong>प्रतिनिधित्व</strong> दिया, श्वेतकेतु को भेजकर स्वयं रह गए। तो: जिस उपाय में कई वस्तुएँ जुटानी हों, <strong>सबसे कम शक्तिशाली वस्तु पहले और सबसे प्रबल अंत में</strong> प्रस्तुत कीजिए। क्रम स्वयं अर्पण का हिस्सा है। अधिकांश चिकित्सक अपना सबसे शक्तिशाली देवता पहले रखते हैं, क्योंकि वे उसे काम करते हुआ महसूस करना चाहते हैं। <em>कौषीतकी</em> अध्याय इसका उलटा कहता है: बड़ा पीछे रहता है, छोटा पहले जाता है, और सभी तैयार होने के बाद ही बल आता है।</p>
+<h3>3. जिसने उसे हराया, और जिसने लिखा</h3>
+<p>साक्ष्य की आकृति पर थोड़ा ठहरिए, क्योंकि यह असामान्य है और यह हमें एक विशिष्ट भूल से बचाता है।</p>
+<p>उदालक आरुणि के अपने शब्द केवल इसलिए बचे कि <strong>दूसरे लोगों ने उन्हें लिखा</strong> — मुख्यतः उनके पुत्र ने। <em>उदालक आरुणि</em> लेख इस बारे में सावधान है:</p>
+<blockquote><p>In sections 6.1–16 and 5.3 of the Chandogya Upanishad, as a major dialogue between Aruni and his son Svetaketu, a dialogue about Atman and Brahman that contain ideas foundational to the Vedanta school of Hindu philosophy. The dialogue sets the context of the son, who goes to a Vedic school for twelve years of studies, is conceded that he has learnt the books (Vedas). Aruni, the father enquires and presses Svetaketu whether at school, he pondered and understood the nature of existence, what is truth, what is reality, the meaning of life and self-knowledge, and the relationship between oneself, other beings and the universal self.</p></blockquote>
+<p>यही एकमात्र कारण है कि छान्दोग्य के केंद्रीय संवाद हमारे पास हैं। बारह वर्ष वैदिक पाठ याद करके लौटा हुआ पुत्र, और पिता ने उससे यह नहीं पूछा कि उसने क्या <em>सीखा</em>, बल्कि क्या <em>समझा</em>। और उत्तर मूलतः थोड़ा-सा कुछ नहीं — और इसलिए शिक्षा हुई।</p>
+<p>अब विद्वान-विवरण, जिसे ध्यान से पढ़ना चाहिए क्योंकि यह एक आधुनिक भूल को सुधारता है:</p>
+<blockquote><p>According to Ben-Ami Scharfstein, a professor emeritus of Philosophy at Tel Aviv University, Uddalaka Aruni was one of the first philosophers in recorded history. Debiprasad Chattopadhyaya established Uddalaka Aruni as the first ' natural scientist ' in the intellectual history of the world. In the Chandogya Upanishad, Aruni asks metaphysical questions concerning the nature of reality and truth, observes constant change, and asks if there is something eternal and unchanging. From these questions, embedded in a dialogue with his son, he presents the concept of Ātman (soul, Self) and Brahman (universal Self).</p></blockquote>
+<p>और <em>बृहदारण्यक</em> में उनके उल्लेख का वर्णन सोच-समझकर किया गया है:</p>
+<blockquote><p>In sections 3.7 and 6.2 of the Brihadaranyaka Upanishad, in a dialogue where Aruni is relatively a minor participant.</p></blockquote>
+<p>अतः चित्र यह है: एक मनुष्य जो एक उपनिषद् में <em>केंद्रीय गुरु</em> के रूप में और दूसरे में <em>गौण प्रतिभागी</em> के रूप में प्रकट होता है। <em>बृहदारण्यक</em> उन्हें व्याख्यान करते हुए दर्ज नहीं करता। वह उन्हें कक्ष में दर्ज करता है।</p>
+<p><strong>व्यावहारिक रूप:</strong> <strong>जब कोई उपाय किसी गुरु का उल्लेख करे, तो अभिप्राय का उल्लेख कीजिए, प्रसिद्धि का नहीं।</strong> <em>उदालक आरुणि</em> लेख स्पष्ट है कि उनका शिक्षण <em>संवाद</em> में बचा है — पिता पुत्र को दबाता हुआ, गुरु शिष्य को दबाता हुआ, प्रश्न के पीछे प्रश्न — और स्पष्ट रूप से बताता है कि <em>बृहदारण्यक</em> में उनकी स्थिति <em>गौण प्रतिभागी</em> की है। तो अपने उपाय-अभिलेख में लिखिए <strong>किसने किससे क्या पूछा</strong>। "उदालक आरुणि की मधु विद्या" एक लेबल है। "उदालक आरुणि की मधु विद्या, श्वेतकेतु के साथ छान्दोग्य 3.1–11 के संवाद में, वेदों, इतिहास और उपनिषदों से रस संग्रह करने के लिए मधुमक्खियों-पुष्पों की उपमा" एक रूप है। पहला कोई भी अंजाम कर सकता है। दूसरा नहीं।</p>
+<h3>4. तीन तत्व, और वर्षा का एक सिद्धांत</h3>
+<p>दर्शन से पहले भौतिकी है — और वह अपेक्षा से अधिक विचित्र है।</p>
+<blockquote><p>According to his theory, there are three elements that make up living things, each of which is a power. The elements are heat, water, and food (meaning plant). He believed the primal creation due to desire emanated heat/light, light having same desire emanated water from itself, then water having the same desire emanated food from itself, which according to him explains why there is plenty of food when it rains. Aruni explained that the existent entered these three elements and when it entered, it caused the elements to contain something of the other two. Fire, for example, not only contains heat but also other two elements.</p></blockquote>
+<p>वह संरचना ध्यान में रखिए: <strong>उष्णता, जल, और अन्न (वनस्पति)</strong> — तीन तत्व, प्रत्येक एक <em>शक्ति</em>, प्रत्येक में दूसरे दो का कुछ अंश, और पूरा चलन <em>कामना</em> से प्रत्येक सोपान पर। प्रकाश कामना करता है, इसलिए प्रकाश से जल आता है; जल कामना करता है, इसलिए जल से अन्न आता है। और फिर — वह भाग जो वास्तव में प्रारंभिक वैज्ञानिक अंतर्दृष्टि है — वर्षा में अन्न अधिक क्यों होता है।</p>
+<p>तीन तत्व, जिनमें एक-दूसरे के अंश हैं, यह संरचनात्मक रूप से एक <strong>पंच-आत्मक योजना</strong> है जो बनने को तैयार है। और इस लेख के लिए यह महत्त्वपूर्ण है कि यह योजना उदालक आरुणि ने ही बनाई थी।</p>
+<p><strong>व्यावहारिक रूप:</strong> <strong>जब आप उपाय में स्रोत मिलाते हैं, तो उन्हें उदालक आरुणि के तत्त्वों की भाँति मिलाइए — यानी प्रत्येक में दूसरों का अंश हो।</strong> उदालक आरुणि के तीन तत्व अलग-अलग पात्र नहीं हैं; लेख स्पष्ट है कि <em>"the elements to contain something of the other two,"</em> और कि अग्नि <em>"not only contains heat but also other two elements."</em> अतः उपाय-थाली असंबद्ध चढ़ावों की सूची नहीं है। <strong>प्रत्येक वस्तु में दूसरों का कम-से-कम एक अंश होना चाहिए।</strong> व्यवहारिक रूप में: यदि आप गोचर के देवता को अर्पित कर रहे हैं, तो उसकी चढ़ावी में जन्म-चंद्र के विवर्गी का भी चिह्न होना चाहिए, और इसके विपरीत भी। यदि आप यह नहीं बता सकते कि कोई वस्तु दूसरी को कैसे छूती है, तो आप जोड़ नहीं रहे — केवल कतार लगा रहे हैं।</p>
+<h2>भाग दो: वह नमक जो गायब हो गया</h2>
+<h3>5. मिट्टी और ताँबा: किसी विशेष से सार्वभौमिक को जानना</h3>
+<p>यह पूरी विधि का मोड़ है, और इसे सिद्धांत नहीं, <strong>तकनीक</strong> के रूप में कहा गया है।</p>
+<blockquote><p>Uddalaka begins his explanation that one can know about the universal of a material substance from a particular object made of that substance. For example, by means of something made of clay, one can know clay; by means of an ornament made of copper, one can know copper.</p></blockquote>
+<p>मिट्टी से भूषण, ताँबे से भूषण। विधि है <strong>निगमनात्मक</strong>: एक उदाहरण लीजिए, और उससे जान लीजिए वह द्रव्य जो सर्वत्र है पर सीधे कभी दिखता नहीं।</p>
+<p>यह ठीक वही है जो एक प्रश्न-उत्तर ज्योतिषी करता है। आप कभी "शनि का सार" नहीं देखते। आप एक अंगूठी देखते हैं, और धातु का निगमन करते हैं। आप कभी "नवम भाव" नहीं देखते। आप एक स्थिति देखते हैं, और उस वस्तु का सार निगमन करते हैं। और छान्दोग्य जो अनुशासन इस निगमनकर्ता पर लगाता है, वही पूरे ज्योतिष-उद्यम का अनुशासन है: <strong>विशेष कोई वास्तविक उदाहरण होना चाहिए, उसका प्रतीक नहीं।</strong> मिट्टी का भूषण मिट्टी जानता है। ताँबे का भूषण ताँबा जानता है। भूषण का चित्र कुछ नहीं जानता।</p>
+<p><strong>व्यावहारिक रूप:</strong> <strong>हर उपाय-निविष्ट वास्तविक उदाहरण होना चाहिए, प्रतीक कभी नहीं।</strong> उपाय-थाली बनाने से पहले हर वस्तु को उदालक के प्रश्न से परखिए: <em>क्या इस विशेष के द्वारा मुझे द्रव्य का ज्ञान होता है?</em> यदि उत्तर है "यह मंगल का प्रतीक है" या "यह क्रोध का संकेत है" — तो आपके पास <strong>भूषण का चित्र</strong> है। आपने द्रव्य के बारे में कुछ नहीं जाना, और आपके पास देने को कुछ नहीं है। यदि उत्तर है "यह मंगल का अपना <em>पाद</em> है — उसकी राशि, उसका भाव, उसका स्वामी, उसका देवता" — तो आपके पास वास्तविक उदाहरण है, और निगमन अधिकृत है।</p>
+<p>यह एक छनी अकेली ही लोक-प्रथा का बहुत बड़ा भाग हटा देती है। अधिकांश उपाय-सूचियाँ प्रतीकों से बनी होती हैं।</p>
+<h3>6. नमक, जल, और स्वाद</h3>
+<p>और फिर प्रदर्शन। <em>उदालक आरुणि</em> लेख इसे एक अनुच्छेद में बताता है, और यह यथार्थ रूप से लेना उचित है, क्योंकि <em>विधि</em> ही मुख्य बात है:</p>
+<blockquote><p>Uddalaka next asks his son to put some salt in a glass of water. Shvetaketu does so. Upon being asked by his father to fetch the salt, Shvetaketu could not find it as it had dissolved in the water. Next, Aruni asks his son to taste the water. Upon being found salty, Uddalaka preaches Shvetaketu instruction on the Ultimate Reality.</p></blockquote>
+<blockquote><p>He says, 'You don't perceive that one Reality (sat) exists in your body, my son, but it is truly there. Everything which is has its being in that subtle essence. That is Reality! That is the Soul! And you are that, Shvetaketu!'</p></blockquote>
+<p>यह रूपक-दो-रूपक नहीं है। यह एक <strong>भौतिक प्रदर्शन</strong> है, और इसमें ठीक तीन चरण हैं:</p>
+<ol>
+<li><strong>घोलिए</strong> — एक दृश्य द्रव्य को एक अदृश्य माध्यम में डालिए। नमक वहाँ है। अब आप उसे नहीं देख सकते।</li>
+<li><strong>खोज विफल कीजिए</strong> — विद्यार्थी को उसे लाने कहिए। वह नहीं ला पाता। दृश्य सचमुच दृश्य होना बंद हो चुका है।</li>
+<li><strong>दूसरे इंद्रिय से सिद्ध कीजिए</strong> — चखिए। वहाँ है। वह हमेशा से था। दृष्टि की विफलता केवल <em>दृष्टि</em> की विफलता थी।</li>
+</ol>
+<p>और जो निष्कर्ष वे दबाते हैं: <em>"Everything which is has its being in that subtle essence."</em></p>
+<p>अब इसे पहले चित्र के साथ रखिए — मधुमक्खियाँ और नदियाँ:</p>
+<blockquote><p>Just as bees collect nectar from different sources, but when gathered together they form an undifferentiated mass; just as different rivers after flowing into the ocean become one with the ocean, similarly Atman resides individually in every being but merges with the Brahman and becomes one with it.</p></blockquote>
+<p>अनेक स्रोत, संग्रहित, एक ऐसे पदार्थ में जो दिखाई नहीं देता और जिसे पुनः अलग-अलग नहीं किया जा सकता। मधुमक्खियों का अनेक फूलों से मकरंद संग्रह कर एक अमिश्रित पिंड बनाना। नदियों का एक सागर में प्रवाह। मुट्ठी भर नमक का जल में घुलना। ये <strong>एक ही क्रिया के तीन रूप</strong> हैं: <em>अनेक स्रोत, संग्रहित, एक ऐसे द्रव्य में जो दिखाई नहीं देता।</em></p>
+<p>और यही वह क्रिया है जो ज्योतिष-उपाय-कार्य वास्तव में करता है। आप शनि-पीड़ित कुंडली का मरम्मत शनि जोड़कर नहीं करते। आप अनेकों को इकट्ठा करते हैं — स्वामी, विवर्गी, देवता, नक्षत्र-देवता, धर्मिक और प्रतिकारक — और उन्हें एक <em>रस</em> में सघन करते हैं: एक वस्तु जिसकी उपस्थिति कुंडली पर दिखाई नहीं देती, पर जिसकी उपस्थिति <strong>चखी जा सकती है</strong>। जाँची जा सकती है। वास्तविक।</p>
+<p><strong>व्यावहारिक रूप:</strong> <strong>उपाय ऐसा बनाइए कि वह चखा जा सके और न दिखे।</strong> व्यवहारिक रूप में, यह इस लेख का सबसे उपयोगी नियम है। <strong>ऐसा उपाय मत बनाइए जिसका प्रभाव केवल कुंडली पर दिखे।</strong> यदि आपकी क्रिया के सफल होने का एकमात्र प्रमाण यह है कि बाद में कुंडली कुछ भिन्न दिखती है, तो आपने भूषण का चित्र बनाया है, और आपने द्रव्य के बारे में कुछ नहीं जाना। इसके बजाय ऐसा कुछ बनाइए जिसकी पुष्टि <strong>अनुभवात्मक और शारीरिक</strong> हो: नींद में बदलाव, भूख में, साँस की स्थिरता में, दर्द की समय-सीमा में, आवाज़ के रंग में। यही तो नमक का चरण है — द्रव्य दिखाई नहीं देता, पर चखा जा सकता है। और इसीलिए <em>मधु विद्या</em> अपने मकरंद को <strong>प्रभावों</strong> से परिभाषित करती है, पन्ने की स्थिति से नहीं।</p>
+<h3>7. तत् त्वम् असि, और वह पहचान जो गोचर के पार टिकती है</h3>
+<blockquote><p>Many Mahavakyas are ascribed to sage Uddalaka Aruni. Among those, "Tat Tvam Asi" (That thou art) of the Chandogya Upanishad is an oft-quoted thought in Hinduism. Its teacher is Uddalaka Aruni and the student his son Svetaketu.</p></blockquote>
+<p><strong>तत् त्वम् असि।</strong> यह महावाक्य दुनिया का वर्णन नहीं है। यह <strong>चिकित्सक के बारे में पहचान-दावा</strong> है — और इसे उस मनुष्य का श्रेय दिया गया है जिसने नमक और जल से इसे प्रदर्शित किया।</p>
+<p>उपाय-ज्योतिष के दर्शकों के लिए यह सचमुच भार-वाहक विचार है, क्योंकि यह उस प्रश्न का उत्तर है जो चिकित्सक बार-बार पूछते हैं और बुरी तरह उत्तर देते हैं: <em>यदि कुंडली कहती है कि शनि मेरी अष्टम में नीचा बैठा है, तो मैं हूँ कौन?</em> उदालक आरुणि की विधि का समर्थन करने वाला उत्तर यह है: <strong>आप अपनी कुंडली की स्थितियाँ नहीं हैं, और नमक आज भी जल में है।</strong> ग्रह की दशा दृश्य रूप है। शरीर में घुला सार द्रव्य है। ये दोनों आमने-सामने लड़ रहे दो भिन्न वस्तुएँ नहीं हैं; दूसरा <em>वही है जिससे पहला बना है</em>।</p>
+<p><strong>व्यावहारिक रूप:</strong> <strong>गोचर को कभी पहचान मत बनाइए।</strong> कुंडली में नीचा या वक्री ग्रह एक <em>विशेष पात्र में द्रव्य का वर्णन</em> है — वह कुंडली में नमक है, अब भी नमक, अब भी विद्यमान, अब भी कार्यरत। यह व्यक्ति के बारे में कोई कथन नहीं है। व्यवहारिक रूप में, अपने उपाय-अभिलेख में पीड़ा को <strong>द्रव्य</strong> के स्तंभ में लिखिए, कभी <strong>व्यक्ति</strong> के स्तंभ में नहीं। "अष्टम में नीचा शनि, अष्टम के संकेतों को प्रभावित करता हुआ — भूमि, दीर्घायु, विरासत, छिपे शत्रु" यह द्रव्य-टिप्पणी है। "मैं अभागी हूँ, सब कुछ खो दूँगा, अष्टम मुझे मार डालेगा" यह पहचान-टिप्पणी है, और यही वह टिप्पणी है जो चिकित्सक को काम करना छोड़ देती है।</p>
+<p><em>अरुणि उपनिषद्</em>, जिसे लेख <em>"one of the oldest renunciation and monk life-related Sannyasa Upanishads"</em> बताता है, वही सिद्धांत तपस्वी भाषा में कहती है: <em>"bookish and ritual knowledge is irrelevant, the true pursuit of knowledge is the meaning, the essence and the import of Vedic ideas, one has the right and duty to abandon the worldly life in the singular pursuit of spirituality."</em> सूची पर नहीं, सार पर। दाने पर नहीं, नमक पर।</p>
+<h3>8. परमाणु-बीज: जो नहीं दिखता, वही जुड़ता है</h3>
+<blockquote><p>Parts of his works contain the seeds of Indian atomism, because of his belief that "particles too small to be seen mass together into the substances and objects of experience".</p></blockquote>
+<p>रुकिए और यह वाक्य शेष लेख के साथ पढ़िए। <em>"particles too small to be seen mass together into the substances and objects of experience."</em></p>
+<p>अर्थात्: <strong>अदृश्य द्रव्य के विपरीत नहीं है। अदृश्य ही द्रव्य है, और वही आपके देखने योग्य वस्तुओं में संचय होता है।</strong></p>
+<p>यही मधु-विधि का आधार है। फूल में मकरंद दिखाई नहीं देता। वह केवल मधु-छत्ते में दिखाई देता है — मधुमक्खियाँ उसे संग्रह कर जिस रूप देकर लौटती हैं। मधुमक्खियाँ अनेक <em>दृश्य फूलों</em> से <em>अदृश्य सार</em> लेती हैं और एक <em>दृश्य द्रव्य</em> बनाती हैं। और चिकित्सक वही मधुमक्खी है।</p>
+<p>विकिपीडिया लेख का <em>See also</em> भाग इस बात पर प्रकाश डालता है कि यह विद्वान-ढाँचे में कहाँ बैठता है: <strong>"Empedocles and Greek atomism."</strong> उदालक आरुणि को एम्पेडोक्लीज़ के बगल में रखा जा रहा है। यह एक वैदिक शिक्षक के लिए बहुत बड़ा दावा है, और लेख यह जानबूझकर करता है।</p>
+<p><strong>व्यावहारिक रूप:</strong> <strong>जिसे आप नाम नहीं दे सकते, उसे आप संग्रह नहीं कर सकते।</strong> परमाणु-वादियों का नियम इसका व्यावहारिक परिणाम ठीक यही है: अदृश्य घटक को <strong>निर्दिष्ट</strong> करना पहले होगा, तभी वह संचय हो सकेगा। तो थाली जुटाने से पहले हर स्रोत का कण नाम कीजिए — वह सटीक द्रव्य जो आप संग्रह कर रहे हैं, प्रति वस्तु एक वाक्य में। "शनि का आशीर्वाद" नहीं। नाम कीजिए: <em>"विलंब और अनुशासन का शनि, अष्टम भाव का शनि, दशम भाव का स्वामी शनि।</em> तीन निर्दिष्टताएँ। अब उस फूल का मकरंद नाम योग्य है, और नाम योग्य मकरंद संग्रह किया जा सकता है। अस्पष्ट संकल्प संग्रह नहीं हो सकता, क्योंकि उसका कोई कण ही नहीं होता।</p>
+<h2>भाग तीन: मधु विद्या — मधु-संग्रह विधि</h2>
+<h3>9. फूल, मधुमक्खियाँ, और मधु-छत्ता</h3>
+<p>अब वह अध्याय जो इस लेख को विधि देता है। <em>छान्दोग्य उपनिषद्</em> लेख, तीसरे अध्याय के प्रथम ग्यारह खंडों पर:</p>
+<blockquote><p>The Chandogya Upanishad presents the "Madhu Vidya" ("Honey Knowledge" or "Nectar of Knowledge") in the first eleven volumes of the third chapter. The sun is praised as a source of all light and life, and is stated to be worthy of meditation in a symbolic representation of the sun as the "honey" of all Vedas. The Brahman is stated in these volumes of verses to be the sun of the universe, and the 'natural sun' is a phenomenal manifestation of the Brahman.</p></blockquote>
+<p>और उपमा स्वयं:</p>
+<blockquote><p>The simile of "honey" is extensively developed, with the Vedas, the Itihasa and mythological stories, and the Upanishads are described as flowers. The Rig hymns, the Yajur maxims, the Sama songs, the Atharva verses and the deeper, secret doctrines of the Upanishads are represented as the vehicles of rasa (nectar), that is the bees. The nectar itself is described as "essence [of knowledge], fame, glory of countenance, vigour, strength, and health". The sun is described as the honeycomb laden with glowing light of honey. The rising and setting of the sun are likened to man's cyclic state of clarity and confusion, while the spiritual state of knowing Upanishadic insight of Brahman is described in the Chandogya Upanishad to be one with the Sun, a state of permanent day of perfect knowledge, a day which knows no night.</p></blockquote>
+<p>रुकिए और प्रत्येक पद को चिकित्सक पर मानचित्र कीजिए, क्योंकि हर पद का एक काम है:</p>
+<table>
+<thead><tr><th>छान्दोग्य पद</th><th>यह क्या है</th><th>उपाय में यह क्या है</th></tr></thead>
+<tbody>
+<tr><td><strong>फूल</strong></td><td>वेद, इतिहास, पौराणिक कथाएँ, उपनिषद्</td><td><em>स्रोत</em>: हर पाठ, देवता, मंत्र और स्वामित्व जिसे आप वैध रूप से प्रयोग कर सकते हैं</td></tr>
+<tr><td><strong>मधुमक्खियाँ</strong></td><td>ऋग्वेद के सूक्त, यजुर्वेद के सूत्र, सामवेद के गीत, अथर्ववेद के मंत्र, और उपनिषदों की गूढ़तर शिक्षाएँ</td><td><em>कर्ता</em>: वे विशिष्ट मंत्र, देवता और अनुष्ठान-रूप जो संग्रह करते हैं</td></tr>
+<tr><td><strong>मकरंद (रस)</strong></td><td>"ज्ञान, यश, मुख-शोभा, वीर्य, बल और स्वास्थ्य का सार"</td><td>वह जो वास्तव में संग्रह होता है — और ध्यान दीजिए, यह सूची <strong>शारीरिक और सामाजिक</strong> है, अध्यात्मिक नहीं</td></tr>
+<tr><td><strong>मधु-छत्ता</strong></td><td>सूर्य, प्रकाश से लदा हुआ मधु</td><td><strong>पात्र</strong>: वह स्थान जहाँ संग्रहित सार जमा और अर्पित होता है</td></tr>
+<tr><td><strong>सूर्य का उदय/अस्त</strong></td><td>"मनुष्य की स्पष्टता और भ्रम का चक्रीकरण"</td><td><strong>चक्र</strong>: स्पष्टता की अवस्थाएँ और भ्रम की अवस्थाएँ, दोनों वास्तविक</td></tr>
+<tr><td><strong>स्थायी दिन</strong></td><td>"ज्ञान की स्थायी दशा का एक दिन, जो रात को नहीं जानता"</td><td><strong>लक्ष्य</strong>: वह अवस्था जहाँ चक्र का भ्रम-आधा रुक जाता है</td></tr>
+</tbody>
+</table>
+<p>मकरंद की अपनी परिभाषा पूरे लेख का सबसे अधिक प्रयोगात्मक पंक्ति है, और इसे लगभग कोई उद्धृत नहीं करता। <em>"ज्ञान, यश, मुख-शोभा, वीर्य, बल और स्वास्थ्य का सार।"</em> मोक्ष नहीं। आनंद नहीं। <strong>ज्ञान, यश, मुख-शोभा, वीर्य, बल, स्वास्थ्य।</strong> छह वस्तुएँ, और सभी ऐसी जो एक शहर में सप्ताह के किसी दिन बैठा व्यक्ति वास्तव में चाहता है।</p>
+<p>और ध्यान दीजिए कि मधुमक्खियाँ कौन हैं। फूल नहीं। मधुमक्खियाँ हैं <em>ऋग्वेद के सूक्त, यजुर्वेद के सूत्र, सामवेद के गीत, अथर्ववेद के मंत्र, और उपनिषदों की गूढ़तर शिक्षाएँ</em> — <strong>पाठ-रूप</strong>, देवता नहीं। देवता फूलों में हैं। पाठ कर्मकारी हैं।</p>
+<p><strong>व्यावहारिक रूप:</strong> <strong>आप मधुमक्खी हैं, फूल नहीं।</strong> यही वह पुनर्सुधार है जिस पर पूरा लेख बना है। अधिकांश चिकित्सक अपने आप को देवता के <em>आशीर्वाद का प्राप्तकर्ता</em> रखते हैं — फूल, जिसकी विजय-यात्रा की प्रतीक्षा में रहना है। <em>मधु विद्या</em> कहती है कि शक्ति की स्थिति <strong>कार्यकर्ता</strong> में है: पाठ, मंत्र, जप-सूत्र, विशिष्ट शब्द, फूल से फूल तक ले जाते हुए, जो देवता देने को जाता है उसे संग्रहकर। आप मंगल से कृपा नहीं माँग रहे। <strong>आप वह ऋग्वेद-सूक्त हैं जो मंगल-फूल तक गया और रस लौटकर लाया।</strong> अपना उपाय दूसरे पुरुष में लिखिए। "शनि मुझे धैर्य देगा" नहीं। <em>मेरे द्वारा वहन किया गया [सूत्र/रूप] शनि का धैर्य संग्रह करता है, और मैं उसे अपनी कुंडली में लौटाता हूँ।</em> इस एक वाक्य-परिवर्तन से बदलता है कि अभ्यास कैसा लगता है और वह क्या कर सकता है।</p>
+<h3>10. मधु-छत्ता सूर्य क्यों है</h3>
+<p>दोबारा देखिए कि मधु कहाँ रखा है: <em>"The sun is described as the honeycomb laden with glowing light of honey."</em> पात्र है <strong>सूर्य</strong>। न चंद्रमा, न गुरु, कोई शुभ ग्रह नहीं। सूर्य।</p>
+<p>यह बहुत बड़ा दावा है, और यह मानक ज्योतिष है: <strong>सूर्य आत्मा, राजा, पिता, नेत्र और जीवन-शक्ति का कारक है</strong>; और सूर्य ही <em>प्राण</em> का दाता है, जैसा <em>प्राण</em> लेख कहता है — <em>"In Hindu literature, prāṇa is sometimes described as originating from the Sun and connecting the elements."</em></p>
+<p>यहाँ लेख के दोनों हिस्से जोड़ में बैठते हैं। <strong>मधु-छत्ता</strong> सूर्य है। <strong>मधुमक्खियाँ</strong> पाठ हैं। <strong>फूल</strong> वेद और देवता हैं। <strong>मकरंद</strong> ज्ञान, वीर्य, बल और स्वास्थ्य का सार है। परंतु <em>प्राण</em> — वह वास्तविक जीवन-शक्ति जिसका संग्रह उदालक आरुणि की विधि है — <strong>सूर्य से उत्पन्न</strong> बताया गया है।</p>
+<p>अतः मधु विद्या और प्राण-सिद्धांत दो परंपराएँ नहीं हैं। वे एक हैं: सूर्य वह पात्र है जिसमें संग्रहित सार जीवन-शक्ति बन जाता है, और सूर्य ही वह है जिसे अंततः सब कुछ अर्पित होता है।</p>
+<p><strong>व्यावहारिक रूप:</strong> <strong>संग्रहित सार सूर्य को अर्पित कीजिए, और सूर्य को उसे रखने दीजिए।</strong> व्यवहारिक रूप में, यह ज्योतिष-उपाय का सबसे सरल और सबसे अधिक उपेक्षित नियम है, और इसकी जाँचने योग्य आकृति है: <strong>आपकी बनाई हर थाली सूर्य-चढ़ावे पर समाप्त हो</strong> — सूर्य-वार के देवता, <em>सूर्य</em> मंत्र, सूर्योदय या सूर्यास्त पर प्रज्वलित दीप — और वहीं समाप्त हो, क्योंकि सूर्य ही मधु-छत्ता है, और ऐसे पात्र में मकरंद डालना संग्रह को व्यर्थ करना है। जब कोई उपाय "लगे" नहीं, तो पहले यही देखिए: क्या उसमें सूर्य था? पूरी तरह शुभ-ग्रहों से बनी थाली, जिसमें पात्र में सूर्य नहीं, उसमें मधुमक्खियाँ और फूल हैं, पर मधु-छत्ता नहीं।</p>
+<h3>11. उदय और अस्त: आपका भ्रम-आधा वास्तविक है</h3>
+<blockquote><p>The rising and setting of the sun are likened to man's cyclic state of clarity and confusion.</p></blockquote>
+<p>ध्यान दीजिए कि यह पूरी सपाटता से कहा गया है। यह कोई वादा नहीं करता कि भ्रम-आधा समाप्त हो जाएगा। एक <strong>चक्र</strong> है, और उसके दो आधों में से एक को <em>भ्रम</em> कहा गया है, और वह उतना ही वास्तविक है जितना दूसरा।</p>
+<p>यह <em>छान्दोग्य</em> लेख का 3.14 में <em>शाण्डिल्य</em> के शिक्षण का अपना वर्णन है — जो एक अलग शिक्षक हैं, शाण्डिल्य, उदालक नहीं — पर वही उपाय-रीति-सिद्धांत एक ऐसे रूप में कहता है जिसे जानना उचित है:</p>
+<blockquote><p>This [S]elf (atman) of mine that lies deep within my heart — it is smaller than a grain of rice or barley, smaller than a mustard seed, smaller even than a millet grain or a millet kernel; but it is larger than the [E]arth, larger than the intermediate region, larger than the sky, larger even than all these worlds put together. This [S]elf (atman) of mine that lies deep within my heart—it contains all actions, all desires, all smells, and all tastes; it has captured this whole world; it neither speaks nor pays any heed. It is Brahman . On departing from here after death, I will become that. A man who has this resolve is never beset at all with doubts. This is what Shandilya used to say.</p></blockquote>
+<p>उदालक के नमक की तुलना में शाण्डिल्य का चावल का दाना कीजिए। <strong>दोनों हैं: देखने से बहुत छोटा, पर संसार से बड़ा।</strong> जल में घुला नमक। हृदय में सरसों का दाना जिसमें सब कर्म और सब वासन हैं और जो बोलता नहीं। दो शिक्षक, एक लेख, एक उपनिषद्, अदृश्य द्रव्य के दो प्रदर्शन — विपरीत दिशाओं से उसी तक पहुँचते हुए। उदालक किसी को <strong>घोलकर</strong> दिखाता है कि सार वहाँ है। शाण्डिल्य किसी को <strong>सिकोड़कर</strong> दिखाता है कि सार पात्र से पहले से बड़ा था।</p>
+<p><strong>व्यावहारिक रूप:</strong> <strong>उपाय का परीक्षण केवल स्पष्टता-आधे में मत कीजिए।</strong> अभिलेख ऐसा बनाइए कि वह आपके अगले बुरे दौर में भी टिक सके, क्योंकि लेख स्पष्ट कहता है कि भ्रम-आधा एक <em>आधा</em> है, कोई असफलता नहीं। दो ठोस अनुशासन: (1) गिनती, देवता, पता और वार-दिवस तय कीजिए — फिर उस रूप को <strong>पीड़ित ग्रह के कम-से-कम एक पूरे चक्र</strong> तक चलाइए, ताकि आप केवल अच्छे मौसम का नहीं, दोनों आधों का नमूना लें; (2) जो <strong>भ्रम-आधे</strong> में हुआ, उसे स्पष्टता-आधे के प्रभावों से <strong>अलग</strong> लिखिए। अधिकांश उपाय-अभिलेख केवल अच्छे आधे में लिखे जाते हैं, इसीलिए अधिकांश उपाय-अभिलेख निरर्थक हैं।</p>
+<h2>भाग चार: पंच-प्राण संग्रह</h2>
+<h3>12. वह इंद्रिय जिसे दानव नहीं तोड़ सके</h3>
+<p>शरीर-विवरण से पहले तत्त्व-दर्शन — क्योंकि <em>छान्दोग्य</em> लेख उद्गीथा-कथा बताता है, और उस कथा का अंत ही इस सारे कार्य को उपनिषद्-आधारित उपाय का आधार है।</p>
+<blockquote><p>The gods revered the Udgitha as the sense of smell (the nose), but the demons cursed it and ever since, one smells both good-smelling and bad-smelling things, because the sense of smell is afflicted with good and evil. [...] Then the gods revered the Udgitha as Manas (the mind), but the demons struck it and therefore one imagines both what is worth imagining and what is not worth imagining, because the mind is afflicted with good and evil. Then the gods revered the Udgitha as Prāṇa (vital breath, breath in the mouth, life-principle), and the demons struck it but they fell into pieces. Life-principle is free from evil, it is inherently good. The gods inside humans – the bodily organs and senses are great, but they all revere the life-principle because it is the essence and the lord of all of them. Om is the Udgitha , the symbol of life-principle in humans.</p></blockquote>
+<p>क्रम ध्यान से पढ़िए, क्योंकि यह <strong>पराजय की एक संरचना</strong> है:</p>
+<ul>
+<li>देवताओं ने उद्गीथा को लिया, ताकि दानवों पर विजय कर सकें।</li>
+<li>उन्होंने इसे क्रमशः <strong>गंध</strong> के रूप में पूजा — पीड़ित, इसलिए हम अच्छी और बुरी दोनों गंध सूँघते हैं।</li>
+<li><strong>वाणी</strong> के रूप में — पीड़ित, इसलिए हम सत्य और असत्य दोनों बोलते हैं।</li>
+<li><strong>दृष्टि</strong> के रूप में — पीड़ित, इसलिए हम सुंदर और अशुभ दोनों देखते हैं।</li>
+<li><strong>श्रवण</strong> के रूप में — पीड़ित, इसलिए हम सुनने योग्य और अनसुनने योग्य दोनों सुनते हैं।</li>
+<li><strong>मन</strong> के रूप में — पीड़ित, इसलिए हम कल्पना-योग्य और अकल्पना-योग्य दोनों कल्पित करते हैं।</li>
+<li><strong>प्राण</strong> के रूप में — और <strong>दानवों ने उसे मारा पर वे टुकड़े हो गए।</strong></li>
+</ul>
+<p>हर अन्य अंग बुरे-अच्छे आधे में बँट गया। प्राण नहीं बँटा। उसने विभाजन अस्वीकार कर दिया। और कारण कहा गया है: <em>"the life-principle is free from evil, it is inherently good."</em></p>
+<p>और फिर वह पंक्ति जो इसे मधु से जोड़ती है: <em>"the bodily organs and senses are great, but they all revere the life-principle because it is the essence and the lord of all of them."</em></p>
+<p><strong>व्यावहारिक रूप:</strong> <strong>हर उपाय में प्राण वह चीज़ है जो विभाजित नहीं होता — इसलिए उसे ही सबसे पहले संबोधित कीजिए।</strong> व्यवहारिक रूप में: <strong>हर थाली की पहली वस्तु एक प्राण-वस्तु होनी चाहिए</strong>, क्योंकि प्राण वही अंग है जिसका बुरा आधा नहीं है, इसलिए वह सही प्राप्तकर्ता है किसी भी उस वस्तु के लिए जिसे आप <strong>संघनित</strong> करना चाहते हैं। और लेख उसका सटीक रूप देता है: <em>"Om is the Udgitha, the symbol of life-principle in humans."</em> <strong>ॐ पहले।</strong> पीड़ित ग्रह का मंत्र नहीं — ॐ। संग्रह-पात्र खड़ा होना चाहिए, संग्रह शुरू होने से पहले।</p>
+<h3>13. पंच वायु, और आपका गोचर कौन-सा तोड़ गया</h3>
+<p>अब शरीर-विवरण, <em>प्राण</em> लेख से:</p>
+<blockquote><p>Five types of prāṇa, collectively known as the five vāyus ("winds"), are described in Hindu texts. Ayurveda, tantra and Tibetan medicine all describe prāṇa vāyu as the basic vāyu from which the other vāyus arise.</p></blockquote>
+<blockquote><p>Prana is divided into ten main functions: The five Pranas – Prana, Apana, Udana, Vyana and Samana – and the five Upa-Pranas – Naga, Kurma, Devadatta, Krikala and Dhananjaya.</p></blockquote>
+<blockquote><p>The concept is elaborated upon in great detail in the literature of haṭha yoga, tantra, and Ayurveda.</p></blockquote>
+<p>और लेख की वह तालिका जो प्रयोगात्मक निदान-यंत्र है:</p>
+<table>
+<thead><tr><th>वायु</th><th>स्थान</th><th>गति</th><th>कार्य</th><th>संतुलन → स्वास्थ्य</th></tr></thead>
+<tbody>
+<tr><td><strong>प्राण</strong></td><td>सिर, फेफड़े, हृदय</td><td>अंतर और ऊपर की ओर</td><td>मुख्य जीवन-शक्ति</td><td>शांत मन और संतुलित मनोदशा</td></tr>
+<tr><td><strong>अपान</strong></td><td>निचला उदर</td><td>बाहर और नीचे की ओर</td><td>उत्सर्जन, प्रजनन, अस्थि-स्वास्थ्य (पोषण का अवशोषण)</td><td>स्वस्थ पाचन और प्रजनन-तंत्र</td></tr>
+<tr><td><strong>उदान</strong></td><td>मध्य-पर्दा, कंठ</td><td>ऊपर की ओर</td><td>श्वसन, वाणी, मस्तिष्क-कार्य</td><td>स्वस्थ श्वसन-तंत्र, स्पष्ट वाणी, स्वस्थ मन, अच्छी स्मृति, सृजनशीलता</td></tr>
+<tr><td><strong>समान</strong></td><td>नाभि</td><td>नाभि के चारों ओर भटकने जैसा चक्राकार</td><td>सभी स्तरों पर पाचन</td><td>स्वस्थ चयापचय</td></tr>
+<tr><td><strong>व्यान</strong></td><td>हृदय से, सर्वत्र वितरित</td><td>बाहर की ओर, परिसंचरण जैसा</td><td>परिसंचरण-तंत्र, नerves-तंत्र, हृदय-तंत्र</td><td>स्वस्थ हृदय, परिसंचरण और संतुलित नाड़ियाँ</td></tr>
+</tbody>
+</table>
+<p>और एक पंक्ति जो किसी भी उपाय-पुस्तिका से बेहतर विफलता-तंत्र बताती है:</p>
+<blockquote><p>When the mind is agitated due to our interactions with the world at large, the physical body also follows in its wake. These agitations cause violent fluctuations in the flow of prana in the nadis.</p></blockquote>
+<p><strong>यही बुरे गोचर और लक्षण के बीच यंत्रवत संबंध है।</strong> गोचर मन को उत्तेजित करता है; उत्तेजित मन प्राण-प्रवाह में तीव्र उतार-चढ़ाव उत्पन्न करता है; प्राण-प्रवाह किसी विशेष वायु में उतार-चढ़ाव लेता है; उस वायु का क्षेत्र बिगड़ता है — और <em>प्राण</em> लेख आपको ठीक-ठीक बताता है कि वह क्षेत्र कौन-सा है, एक तालिका में, स्पष्ट परिणाम-सहित।</p>
+<p>अतः एक निदान-योग्य उपाय-प्रोटोकॉल उपलब्ध है:</p>
+<table>
+<thead><tr><th>पीड़ा-पैटर्न</th><th>संबंधित वायु</th><th>वह शारीरिक क्षेत्र जिसका वह संचालन है</th></tr></thead>
+<tbody>
+<tr><td>मन दौड़ना, घबराहट, साँस फूलना, छाती में जकड़न, हिम्मत का खोना</td><td><strong>प्राण</strong></td><td>सिर, फेफड़े, हृदय; "शांत मन और संतुलित मनोदशा"</td></tr>
+<tr><td>पाचन, उत्सर्जन, प्रजनन और अस्थि-दुर्बलता</td><td><strong>अपान</strong></td><td>निचला उदर; "स्वस्थ पाचन और प्रजनन-तंत्र"</td></tr>
+<tr><td>आवाज़, स्मृति, साँस फूलना, मानसिक धुंधलापन</td><td><strong>उदान</strong></td><td>मध्य-पर्दा, कंठ; "स्पष्ट वाणी, स्वस्थ मन, अच्छी स्मृति, सृजनशीलता"</td></tr>
+<tr><td>चयापचय, आयुर्वरण, बिना कारण वजन-परिवर्तन</td><td><strong>समान</strong></td><td>नाभि; "स्वस्थ चयापचय"</td></tr>
+<tr><td>नाड़ियाँ, परिसंचरण, हृदय-लक्षण</td><td><strong>व्यान</strong></td><td>हृदय से सर्वत्र; "स्वस्थ हृदय, परिसंचरण और संतुलित नाड़ियाँ"</td></tr>
+</tbody>
+</table>
+<p><strong>व्यावहारिक रूप:</strong> <strong>देवता चुनने से पहले वायु का निदान कीजिए।</strong> कार्यशील चिकित्सक के लिए यह पूरे लेख की सबसे उपयोगी बात है, और लगभग कोई यह नहीं करता, क्योंकि वायु-तालिका आपको <em>लक्षण</em>-अक्ष देती है जबकि मानक उपाय-सूची <em>ग्रह</em>-अक्ष देती है। दोनों अक्ष एक-दूसरे को काटते हैं, और यही कटना ही निदान है। अष्टम को पीड़ित करता शनि → <em>अपान</em> का हस्ताक्षर खोजिए (अष्टम गृह, भूमि, सुविधा, माँ का शरीर — और अपान अवशोषण, अस्थि-तंत्र और घरेलू क्षेत्र का संचालन करता है)। नवम को पीड़ित करता गुरु → <em>उदान</em> का हस्ताक्षर (वाणी, स्मृति, गुरु, पिता, लंबी यात्रा — और उदान वाणी, स्मृति, मस्तिष्क का संचालन करता है)। सप्तम को पीड़ित करता मंगल → <em>व्यान</em> का हस्ताक्षर (सप्तम साथी, संविदा, आपके जीवन में दूसरों का परिसंचरण)। उपाय-सूचियाँ खोलने से पहले यह कटान लिखिए, वरना आप ऐसा देवता चुन लेंगे जो ग्रह से मेल खाता है और वह छूट जाएगा जो लक्षण से मेल खाता है।</p>
+<h3>14. 72,000 नाड़ियाँ, और वह एक जिस पर आप सच में काम करते हैं</h3>
+<blockquote><p>Indian philosophy describes prana flowing in nadis (channels), though the details vary. The Brhadaranyaka Upanishad (2.I.19) mentions 72,000 nadis in the human body, running out from the heart, whereas the Katha Upanishad (6.16) says that 101 channels radiate from the heart. The Vinashikhatantra (140–146) explains the most common model, namely that the three most important nadis are the Ida on the left, the Pingala on the right, and the Sushumna in the centre connecting the base chakra to the crown chakra, enabling prana to flow throughout the subtle body.</p></blockquote>
+<p>और उसके साथ चलने वाली तकनीक:</p>
+<blockquote><p>Many pranayama techniques are designed to cleanse the nadis, allowing for greater movement of prana. Other techniques may be utilized to arrest the breath for samadhi or to bring awareness to specific areas in the practitioner's subtle or physical body.</p></blockquote>
+<blockquote><p>Pranayama is one of the eight limbs of yoga described in the Yoga Sutras of Patanjali, and is a practice of specific and often intricate breath control techniques. The dynamics and laws of Prana were understood through systematic practice of Pranayama to gain mastery over Prana.</p></blockquote>
+<p>दो बातें पक्की रखिए: <strong>72,000 नाड़ियाँ</strong> (वह आँकड़ा जो ग्रहों को शरीर से जोड़ने वाली ज्योतिष-सन्निहित पद्धतियों में बार-बार आता है), और <strong>एक नाड़ी</strong> जिस पर आप सच में काम करते हैं: सुषुम्ना, मध्य, मूल चक्र से शिरो-चक्र तक।</p>
+<p>और <em>प्राण</em> लेख वैदिक यज्ञ-ढाँचे से सीधा संबंध देता है, जो उपाय-अनुष्ठान के लिए सीधे प्रासंगिक है:</p>
+<blockquote><p>Texts like the Vaikānasasmārta utilized the five prāṇas as an internalization of the five sacrificial fires of a panchāgni homa ceremony.</p></blockquote>
+<p><strong>पंच प्राण, पंच अग्नियों का आंतरिकीकरण हैं।</strong> यही वह दस्तावेज़ी आधार है जिससे इसे "संग्रह" कहना सार्थक होता है: जो पंच वायु शरीर में करते हैं, वही पंचाग्नि आँगन में करती है। होम और प्राणायाम एक ही क्रिया के दो पैमाने हैं।</p>
+<p>और जो चक्र पूरा करता है, <em>तैत्तिरीय उपनिषद्</em> लेख से — ब्रह्म का प्राण-प्रिय-स्थल:</p>
+<blockquote><p>the Brahman whose body is space, whose self is truth ( satya ), whose pleasure ground is the lifebreath ( prana ), and whose joy is the mind; the Brahman who is completely tranquil and immortal. O Pracinayogya, venerate it in this manner!</p></blockquote>
+<p><strong>व्यावहारिक रूप:</strong> <strong>मध्य-नाड़ी पर कार्य कीजिए, और पंच अग्नियों को आंतरिक कीजिए।</strong> दोनों नियम जाँचने योग्य हैं। (1) <strong>संग्रह से पहले शोधन कीजिए।</strong> लेख का क्रम शोधन → गति → फिर <em>विशिष्ट स्थानों में जागरूकता</em> है। गिनती के साथ नाड़ी-शोधन <strong>कभी भी बाद में नहीं</strong>, हमेशा पहले; मैली नाड़ी में किया गया संग्रह, नाली में किया गया संग्रह है। (2) <strong>पंच अग्नियों को आंतरिक कीजिए।</strong> <em>वैकानसस्मार्त</em> का आधार यह है कि पंच वायुओं को अपने-अपने स्थानों में <em>महसूस</em> किया जाए — सिर/फेफड़े/हृदय, निचला उदर, मध्य-पर्दा/कंठ, नाभि, हृदय से सर्वत्र — पाँचों भिन्न स्थानों के रूप में, इससे पहले कि उनमें से किसी से आप चढ़ावा ढोने को कहें। यदि आप पाँचों को स्थानीयकृत नहीं कर सकते, तो आप पंचाग्नि नहीं कर रहे — आप केवल श्वास ले रहे हैं।</p>
+<h3>15. जीवन-शक्ति वैदिक परंपरा की है, तांत्रिक की नहीं</h3>
+<p><em>प्राण</em> लेख की एक और पंक्ति जो उपाय के नैतिकता पर सीधे लागू होती है:</p>
+<blockquote><p>The Bhagavad Gita verse 4.27 describes the yoga of self-control as the sacrifice of the actions of the senses and of prāṇa in the fire kindled by knowledge.</p></blockquote>
+<p><strong>ज्ञान से कुछे हुए अग्नि में।</strong> लालसा से नहीं, भय से नहीं, ग्रह के पितृ-दोष से नहीं। और यह <em>छान्दोग्य</em> लेख के सोम-यज्ञ-उत्सव के नैतिक-विवरण से जुड़ता है:</p>
+<blockquote><p>The section 3.17 of Chandogya Upanishad describes life as a celebration of a Soma-festival, whose dakshina (gifts, payment) is moral conduct and ethical precepts that includes non-violence, truthfulness, non-hypocrisy and charity unto others, as well as simple introspective life. This is one of the earliest mention of the Ahimsa principle as an ethical code of life, that later evolved to become the highest virtue in Hinduism.</p></blockquote>
+<blockquote><p>Now Austerity [(Tapas), meditation], Charity [(Dāna), alms-giving], Uprightness [(Ārjava), sincerity and non-hypocrisy], Non-Violence [(Ahimsa), don't harm others] and Truthfulness [(Satya-vacanam)], - these are his Sacrificial Fees [(Dakshina), gifts, payment to others].</p></blockquote>
+<p><strong>दक्षिणा।</strong> आचार्य को दी जाने वाली शुल्क। 3.17 के सोम-यज्ञ-उत्सव में यह शुल्क <em>आचरण</em> है, वस्तु नहीं। तपस, दान, आर्जव, अहिंसा, सत्य।</p>
+<p>यही <em>मधु विद्या</em> का अनुशासन है, और यही कारण है कि मधु-विधि काम करती है और खरीद-सूची-विधि नहीं। <strong>आप किसी अन्य प्राणी की पीड़ा के फूलों से रस संग्रह नहीं कर सकते।</strong> यही वह नियम है जिस पर पूरी संरचना टिकी है: मकरंद "ज्ञान, यश, मुख-शोभा, वीर्य, बल और स्वास्थ्य का सार" है — पूरा <em>लाभकारी</em> — और <em>छान्दोग्य</em> स्पष्ट कहता है कि शुल्क अहिंसा और सत्य है।</p>
+<p><strong>व्यावहारिक रूप:</strong> <strong>दक्षिणा आचरण है, इसलिए संग्रह से पहले चुकाइए।</strong> क्रिया का नैतिक शुल्क <em>पहले और लिखकर</em> तय कीजिए, उसी पंच-आकार में जिसमें <em>छान्दोग्य</em> देता है: तपस (तप — अनुशासन का स्थिर प्रयास), दान (दान — निश्चित राशि, संग्रह के बाद नहीं, पहले दी जाने वाली), आर्जव (ईमानदारी — न भय से, न अहंकार से की गई क्रिया), अहिंसा (अहिंसा — उपाय किसी को कष्ट न पहुँचाए, तैयारी में भी नहीं: कोई द्रव्य, कोई उपवास, कोई आसन जो कष्टकारी हो), और सत्य (सत्यवचन — अभिलेख में जो हुआ वह लिखिए, न कि आपने क्या आशा की थी)। जो उपाय शुल्क में विफल होता है, वह कम मकरंद नहीं संग्रह करता; वह कुछ और संग्रह करता है।</p>
+<h2>भाग पाँच: मरम्मत, एकत्रित</h2>
+<h3>16. उदालक आरुणि की मरम्मत, कदम-दर-कदम</h3>
+<p>ऊपर का सब कुछ एक क्रम में घुल जाता है। यह लेख का भार है।</p>
+<p><strong>गोचर-पीड़ित कुंडली के लिए उदालक आरुणि की मरम्मत:</strong></p>
+<ol>
+<li><strong>पकड़ चुनिए।</strong> कौन-सा उदालक आरुणि — <em>मधु विद्या</em> के प्रदाता, <em>अरुणि उपनिषद्</em> का त्यागी, या भराव सँभालने वाला वफ़ादार? उपाय के साथ लिखिए। एक पंक्ति। नाम एक पदनाम है; सही पकड़ चुनिए।</li>
+</ol>
+<ol>
+<li><strong>कटान का निदान कीजिए।</strong> कोई भी उपाय-सूची खोलने से पहले <strong>ग्रह-अक्ष</strong> और <strong>वायु-अक्ष</strong> को आमने-सामने रखिए। <em>प्राण</em> तालिका आपको लक्षण-क्षेत्र देती है: प्राण (मन, साँस, छाती), अपान (पाचन, उत्सर्जन, प्रजनन, अस्थि), उदान (वाणी, स्मृति, श्वसन, मस्तिष्क), समान (चयापचय, अवशोषण, नाभि), व्यान (नाड़ियाँ, परिसंचरण, हृदय)। फिर गोचर के भाव को उसके क्षेत्र से मिलाइए। कटान लिखिए। <em>वही</em> निदान है।</li>
+</ol>
+<ol>
+<li><strong>नमक ढूँढिए।</strong> वास्तविक द्रव्य का नाम कीजिए — "शनि का आशीर्वाद" नहीं। विलंब और अनुशासन का शनि; अष्टम भाव का शनि; दशम भाव का स्वामी शनि। उदालक के परमाणुओं के अनुसार प्रति स्रोत तीन निर्दिष्टताएँ।</li>
+</ol>
+<ol>
+<li><strong>पात्र तय कीजिए।</strong> मधु-छत्ता सूर्य है। हर थाली सूर्य-चढ़ावे पर समाप्त हो — देवता, मंत्र, दीप, निश्चित सौर-घंटे पर। और पात्र <em>पहले</em> खड़ा हो: <strong>ॐ पहले</strong>, क्योंकि प्राण वही अंग है जो कभी विभाजित नहीं हुआ, और लेख स्पष्ट कहता है कि शारीरिक अंग <em>"all revere the life-principle because it is the essence and the lord of all of them."</em></li>
+</ol>
+<ol>
+<li><strong>अंशों सहित जोड़िए।</strong> प्रत्येक वस्तु में दूसरों का कम-से-कम एक अंश हो, जैसे उदालक आरुणि के अग्नि में उष्णता <em>और</em> जल <em>और</em> वनस्पति थी। गोचर-देवता जन्म-चंद्र के विवर्गी को वहन करे; जन्म-देवता गोचर के स्वामी को। यदि दो वस्तुओं में कुछ भी साझा नहीं, तो आप जोड़ नहीं रहे, कतार लगा रहे हैं।</li>
+</ol>
+<ol>
+<li><strong>क्रम छोटे से कीजिए।</strong> <em>कौषीतकी</em> का अग्रहास: उदालक आरुणि ने पुत्र भेजा और स्वयं रहे। कम-से-कम प्रबल वस्तु पहले, सबसे प्रबल अंत में। क्रम अर्पण का हिस्सा है।</li>
+</ol>
+<ol>
+<li><strong>शोधन, फिर संग्रह।</strong> गिनती के साथ नाड़ी-शोधन, <em>फिर</em> संग्रह। कभी उल्टा नहीं। फिर पंच वायु, अपने-अपने पाँच स्थानों में महसूस किए हुए — आंतरिक पंचाग्नि।</li>
+</ol>
+<ol>
+<li><strong>फूल नहीं, मधुमक्खियाँ चलाइए।</strong> आप पाठ हैं, सूत्र, जप-रूप। उपाय दूसरे पुरुष में लिखिए: <em>मेरे द्वारा वहन किया गया [रूप] उसका धैर्य संग्रह करता है।</em> "शनि मुझे धैर्य देगा" नहीं।</li>
+</ol>
+<ol>
+<li><strong>सब कुछ तय कीजिए।</strong> गिनती (108, या 21, या 11 — निश्चित, दिन के हाल से समायोजित नहीं)। पता (नाभि से शिरो-चक्र तक सुषुम्ना; पंच वायु-स्थान)। वार-दिवस। आरंभ-तिथि। निश्चित ढाँचे वाला उपाय महीनों में तुलनीय है; बिना ढाँचे वाला नहीं।</li>
+</ol>
+<ol>
+<li><strong>दक्षिणा चुकाइए।</strong> तपस, दान, आर्जव, अहिंसा, सत्य — पहले से लिखकर, और संग्रह से <em>पहले</em> चुकाकर, क्योंकि मकरंद लाभकारी सार है और शुल्क आचरण है।</li>
+</ol>
+<ol>
+<li><strong>अभिलेख रखिए।</strong> क्या संग्रह किया, किस फूल से, किस रूप द्वारा, किस मधु-छत्ते में, कितनी गिनती पर, किस दिन — और पृथक रूप से, चक्र के <strong>भ्रम-आधे</strong> में क्या हुआ। केवल स्पष्टता-आधे में लिखा अभिलेख निरर्थक है, क्योंकि <em>मधु विद्या</em> स्पष्ट कहती है कि सूर्य का अस्त उतना ही वास्तविक है जितना उसका उदय।</li>
+</ol>
+<h3>17. संग्रह के दो रूप: पात्र और औषधि</h3>
+<p>क्योंकि यह लेख <em>गुप्त-अभ्यास</em> के बारे में है, और क्योंकि स्रोत संग्रह से उत्पन्न होने वाली दो वस्तुओं के लिए दो ठोस दिव्य रूप देते हैं, उन्हें नाम दिया जाना चाहिए।</p>
+<p><strong>पात्र — धन्वंतरि।</strong> <em>धन्वंतरि</em> लेख:</p>
+<blockquote><p>Dhanvantari ( Sanskrit : धन्वन्तरि , romanized : Dhanvantari, Dhanvamtari , lit. ' moving in a curve ') is the physician of the devas in Hinduism. He is regarded as an avatar of Vishnu. He is mentioned in the Puranas as the god of Ayurveda.</p></blockquote>
+<blockquote><p>According to the ancient Sanskrit work Vishnudharamottara , Dhanvantari is described as handsome and usually depicted with four hands, with one or two of them carrying a bowl of amrita, the elixir of immortality.</p></blockquote>
+<blockquote><p>The Bala Kanda of the Ramayana and Bhagavata Purana state that Dhanvantari emerged from the Ocean of Milk and appeared with the pot of amrita (elixir of immortality) during the Samudra Manthana, whilst the ocean was being churned by the devas and the asuras, using the Mandara mountain and the serpent Vasuki.</p></blockquote>
+<p><strong>औषधि — हयग्रीव।</strong> <em>हयग्रीव</em> लेख:</p>
+<blockquote><p>is a Hindu deity, the horse-headed avatar of Vishnu. The purpose of this incarnation was to slay a danava also named Hayagriva (A descendant of Kashyapa and Danu), who had the head of a horse and the body of a man.</p></blockquote>
+<blockquote><p>He has four hands, with one in the mode of bestowing knowledge; another holds books of wisdom, and the other two hold the Conch and Discus. His beauty, like fresh cut crystal, is an auspicious brilliance that never decays. May this Lord of speech who showers such cooling rays of grace on me be forever manifest in my heart!</p></blockquote>
+<p>ध्यान दीजिए चार हाथ और उनमें क्या है: <strong>एक ज्ञान देता, एक ज्ञान-पुस्तकें धारण करता, और शंख तथा चक्र।</strong> दोनों आयुध <em>शंख</em> और <em>चक्र</em> हैं — वैदिक परंपरा में प्राण-समूह के दो अंग: <em>छान्दोग्य</em> लेख की उद्गीथा-कथा में उद्गीथा को क्रमशः गंध, वाणी, दृष्टि, श्रवण, मन और प्राण के रूप में लिया गया, और <strong>ॐ प्राण-प्रतीक है</strong>। शंख स्वर है; चक्र मन का चक्र है। हयग्रीव वह रूप है जो <strong>ज्ञान को वस्तु के रूप में</strong> धारण करता है — पुस्तकें — प्राण के दोनों आयुधों के साथ। और लेख उनका मंत्र देता है, जिसकी संरचना सहेजने योग्य है:</p>
+<blockquote><p>jñānānandamayaṃ devaṃ nirmala sphaṭikākṛtim / ādhāraṃ sarva viddyānāṃ hayagrīvaṃ upāsmahe //</p></blockquote>
+<p><em>ज्ञान-आनन्दमयं देवं निर्मल स्फटिकाकृतिम् / आधारं सर्व विद्यानां हयग्रीवं उपास्महे //</em></p>
+<p><strong>व्यावहारिक रूप:</strong> <strong>पात्र और औषधि को अलग-अलग नाम दीजिए, और उन्हें कभी आमने-सामने मत बदलिए।</strong> धन्वंतरि <em>पात्र</em> है — अमृत-पात्र, मन्थन, वह वस्तु जो संग्रहित सार को रखती और सुरक्षित रखती है। हयग्रीव <em>औषधि</em> है — वस्तु बनाया हुआ ज्ञान, पुस्तकें, देने वाला हाथ। व्यवहारिक रूप में: जिस कुंडली की समस्या <strong>हानि, क्षीणता, दुर्बल शरीर या टूटी हुई जीवन-शक्ति</strong> हो (अष्टम, द्वादश, दुर्बल लग्नेश, शनि की नीचा-स्थिति), उपाय <em>पात्र-आकार</em> का है — <strong>धन्वंतरि</strong>, अमृत का पात्र, क्षीर-समुद्र का मन्थन, संग्रहित सार का निक्षेपण। जिस कुंडली की समस्या <strong>अज्ञान, भ्रम, टूटा गुरु, भ्रामक सलाहकार, दूषित शिक्षा-परंपरा</strong> हो (नवम, पीड़ित गुरु, दूषित गुरु-देवता, भ्रांत उपाय), उपाय <em>औषधि-आकार</em> का है — <strong>हयग्रीव</strong>, पुस्तकों में बँधा ज्ञान, शंख और चक्र, वह स्फटिक जो कभी नहीं सड़ता। और ध्यान दीजिए इस ढाँचे पर: <strong>पात्र और औषधि दोनों विष्णु के रूप हैं।</strong> यह कोई संयोग नहीं जिसे सहेजा जाए — यह संरचनात्मक दावा है कि संग्रहित सार और वह बुद्धि जो जानती है उसके साथ क्या करना है, एक ही द्रव्य की दो अवस्थाएँ हैं।</p>
+<h3>18. ग्रह-शब्दकोश: किस ग्रह के लिए कौन-सा फूल</h3>
+<p>क्योंकि मधुमक्खी को फूल पहचानना पड़ता है, और क्योंकि <em>नवग्रह</em> लेख <em>ग्रह</em> की सबसे साफ़ परिभाषा देता है:</p>
+<blockquote><p>are nine heavenly bodies and deities that influence human life on Earth according to Hinduism and Hindu mythology. The term is derived from nava (Sanskrit : नव "nine") and graha (Sanskrit : ग्रह "planet, seizing, laying hold of, holding"). The nine members of the navagraha are the Sun , Moon , planets Mercury , Venus , Mars , Jupiter , and Saturn , and the two nodes of the Moon Rahu, Ketu.</p></blockquote>
+<p><strong>ग्रह का अर्थ है — पकड़ना, अधिकार करना, थामना।</strong> "तारा" नहीं। "भटकती रोशनी" नहीं। <strong>थामना।</strong> और नौ ग्रह हैं: सूर्य, चंद्र, बुध, शुक्र, मंगल, बृहस्पति, शनि, और दो छाया-ग्रह राहु-केतु।</p>
+<p>यह शब्द — <em>थामना</em> — इसीलिए मधु-विधि की आकृति रखता है। ग्रह एक <strong>पकड़</strong> है। प्रत्येक ग्रह किसी-न-किसी संकेतों को पकड़े हुए है, और प्रतिकार-ज्योतिष की पूरी कला यह तय करने में है <strong>कौन-सी पकड़ मज़बूत की जाए, और कौन-सी मोड़ दी जाए</strong>। मधुमक्खी फूल को मज़बूत नहीं करती; वह उससे लेती है और कुछ नया बनाती है। उपाय की क्रिया ठीक यही है: ग्रह की पकड़ हटाई नहीं जाती, वह <strong>पुनर्नियुक्त</strong> की जाती है — उसकी शक्ति ऐसे रूप में संग्रहित की जाती है जिससे आपके ज़रूरत की जगह खर्च हो सके।</p>
+<p><strong>व्यावहारिक रूप:</strong> <strong>अपनी थाली के हर ग्रह के लिए लिखिए कि वह क्या थाम रहा है और आप उसे क्या थामने को कहना चाहते हैं।</strong> यह <em>ग्रह</em> लेख का अपना शब्द-व्यव derivation काम पर लगाना है, और यह इस अंश का सबसे व्यावहारिक निदान है। ग्रह संकेत पकड़ते हैं। तो पीड़ित ग्रह के लिए: <em>यह अ presently [X] पकड़ रहा है; मैं इसे [Y] पकड़ने को कहता हूँ, और इस स्थानांतरण का वाहक है [रूप, पाठ, देवता]।</em> तीनों लिखिए। फिर जाँचिए कि <em>नवग्रह</em> का समूह पूरा है: नौ वस्तुएँ, आठ नहीं — छाया-ग्रह भी गिने जाते हैं, और <strong>राहु और केतु ही इस पद्धति के सबसे अधि-स्थानांतरीय पकड़ हैं</strong>, क्योंकि छाया-ग्रह अपना कुछ नहीं पकड़ता और पूरी तरह जिसके साथ युक्त हो उससे लेता है। जो उपाय अष्टम/षष्ठम-पीड़ित कुंडली में छाया-ग्रहों को छोड़ देता है, वह पट्टे के सबसे चलने योग्य दोहरे पर ध्यान ही नहीं देता।</p>
+<h3>19. नाम के बारे में एक अंतिम बात</h3>
+<p><em>आदि पर्व</em> की कथा पर लौटिए, क्योंकि इसीलिए लेख उसी से आरंभ हुआ।</p>
+<p>एक मनुष्य भराव के छेद में लेटा, अपने शरीर से जल रोकता हुआ, जब तक उसका गुरु उसे ढूँढने नहीं आया। उसे उसके लिए नाम दिया गया। फिर वह उपनिषद् की सबसे कठिन संवाद-विधि सिखाता है — अपने ही पुत्र को, जो बारह वर्ष वैदिक पाठ याद करके घर आया है और एक भी प्रश्न का उत्तर नहीं दे पाता — और उसे नमक और जल द्वारा प्रदर्शित करता है।</p>
+<p>और फिर, राजा जनक के दरबार में, मिथिला में, उस महान बहस में, उसे उसके अपने शिष्य परास करता है।</p>
+<p>परंपरा ने तीनों बातें दर्ज कीं: वफ़ादारी, नमक, और पराजय। उसने एक चुनकर नहीं रखा। यही विधि की आकृति है, और यही मरम्मत की आकृति है। <strong>आप भराव सँभालते हैं। आप दिखाते हैं कि जो दिखता नहीं, वह है। और आप जो हुआ, उसका अभिलेख स्वीकार करते हैं।</strong> यही उदालक आरुणि का मानक है, और यह किसी भी ऐसे उपाय से कहीं ऊँचा है जो सफलता का दावा करता है।</p>
+
+<div class="references">
+<h2>Sources</h2>
+<ol>
+<li><a href="https://en.wikipedia.org/wiki/Uddalaka_Aruni">Uddalaka Aruni - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Chandogya_Upanishad">Chandogya Upanishad - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Prana">Prana - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Taittiriya_Upanishad">Taittiriya Upanishad - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Navagraha">Navagraha - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Dhanvantari">Dhanvantari - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Hayagriva">Hayagriva - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Category:Rishis">Category:Rishis - Wikipedia</a></li>
+</ol>
+</div>
+        </article>
+    </div>
+
+</body>
+</html>
