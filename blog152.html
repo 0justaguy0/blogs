@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mudgala&#x27;s Inexhaustible Grain Vault</title>
+    <style>
+        :root {
+            --bg-color: #FDF9F1;
+            --text-color: #3E2723;
+            --indian-yellow: #E4A025;
+            --indian-orange: #E65100;
+            --accent-light: #FFECB3;
+            --ref-bg: #FFF3E0;
+        }
+
+        body {
+            font-family: 'Georgia', 'Nirmala UI', 'Mangal', serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(var(--bg-color) 80%, var(--accent-light) 100%);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #FFFFFF;
+            padding: 50px 60px;
+            box-shadow: 0 10px 30px rgba(62, 39, 35, 0.1);
+            border-top: 8px solid var(--indian-orange);
+            border-bottom: 8px solid var(--indian-yellow);
+            border-radius: 4px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed var(--indian-yellow);
+        }
+
+        h1 {
+            color: var(--indian-orange);
+            font-size: 2.5em;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        h2 {
+            color: var(--indian-yellow);
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--indian-orange);
+            padding-left: 15px;
+        }
+
+        h3, h4 {
+            color: var(--indian-orange);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        .intro-text::first-letter {
+            float: left;
+            font-size: 3.5em;
+            line-height: 0.8;
+            padding-right: 8px;
+            padding-top: 4px;
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        ul, ol {
+            margin: 0 0 24px 0;
+            padding-left: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ol {
+            list-style-position: outside;
+            padding-left: 2.2em;
+        }
+
+        ul li, ol li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        ol li {
+            padding-left: 0.35em;
+        }
+
+        ul li::before {
+            content: '\2022';
+            position: absolute;
+            left: 0;
+            top: 0.05em;
+            color: var(--indian-orange);
+            font-size: 1.2em;
+            line-height: 1;
+        }
+
+        ol li::marker {
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        strong {
+            color: var(--indian-orange);
+        }
+
+        .image-placeholder-container {
+            margin: 30px 0;
+            text-align: center;
+            font-style: italic;
+            color: #795548;
+            background-color: var(--accent-light);
+            padding: 20px;
+            border-radius: 4px;
+            border: 1px solid var(--indian-yellow);
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.98em;
+            background-color: #FFFDF8;
+        }
+
+        th, td {
+            border: 1px solid #F0D49B;
+            padding: 10px 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--ref-bg);
+            color: var(--indian-orange);
+        }
+
+        blockquote {
+            margin: 30px 0;
+            padding: 20px 25px;
+            background-color: var(--accent-light);
+            border-left: 5px solid var(--indian-orange);
+            font-style: italic;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px dashed var(--indian-yellow);
+            margin: 32px 0;
+        }
+
+        .references {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: var(--ref-bg);
+            border-radius: 8px;
+            font-size: 0.9em;
+        }
+
+        .references h2, .references h3 {
+            color: var(--text-color);
+            margin-top: 0;
+            border-bottom: 1px solid var(--indian-yellow);
+            padding-bottom: 10px;
+            border-left: 0;
+            padding-left: 0;
+        }
+
+        .references p, .references li {
+            margin-bottom: 12px;
+            word-wrap: break-word;
+        }
+
+        .references a {
+            color: var(--indian-orange);
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Mudgala&#x27;s Inexhaustible Grain Vault</h1>
+        </header>
+
+        <article>
+<p class="intro-text">There is a very specific kind of poverty that astrology is asked about, and it is not the poverty of having nothing. It is the poverty of <strong>the ceiling</strong>. The man earns well and the money still ends at the same figure every month. The woman clears a debt and a new one of the same size appears. The family's savings rise to a familiar number, hold there for a year, and then are spent on an emergency that arrives with almost bureaucratic punctuality.</p>
+<div class="image-placeholder-container">
+    <img src="blog152_Image.png" alt="Sage Mudgala offering a handful of rice at a brick fire, grain multiplying">
+</div>
+<p>Classical Jyotisha has a name for this pattern and a sage who is its exact counter-image: <strong>Mudgala</strong>, the gleaner of Kurukshetra, whose handful of rice was said to multiply a hundredfold the moment it was offered — and who was offered heaven itself, in a celestial chariot, with his body intact, and <strong>turned it down</strong>.</p>
+<p>This is the story of how he did it, what the sources actually record, and the working form of the rite that a householder can still perform.</p>
+<p>&#8212;</p>
+<h2>Part One: What the Sources Actually Say</h2>
+<h3>1. The man who ate only what the field had already let fall</h3>
+<p>Mudgala is placed in <strong>Kurukshetra</strong>. He is a son of Bharmyāśva, of the Pāñcāla line, and the Maudgalya brāhmaṇas trace their descent from him. The Bhāgavata Purāṇa gives his genealogy in Canto 9 and, in Canto 10, gives him the epithet by which the whole practice is named: <strong>Uñchavṛtti Mudgala</strong> — <em>the one who lives by uñcha</em>.</p>
+<p><strong>Uñcha</strong> is gleaning. Not begging, not farming, not accepting dakṣiṇā. Gleaning is walking a harvested field and picking up the single grains that the reapers dropped or left. It is the most humble food-acquisition in the Dharmaśāstra hierarchy, and it is deliberately chosen by men who could have had more, because it is the only form of livelihood that takes nothing from anyone.</p>
+<p>The Mahābhārata's account (Vana Parva) says he lived with his wife <strong>Nalayanī</strong>, also called <strong>Indrasenā</strong>, and their son, on grains of rice obtained this way, and that he performed a rite the text calls <strong>iṣṭikṛta</strong> — the rite of the <em>iṣṭakā</em>, the fired brick. It is a small, brick-built Vedic fire, the humblest possible altar, made by hand from earth.</p>
+<p><strong>The first thing to understand about this rite is the size of it.</strong> Mudgala did not build a sattra with a hundred priests. He built a brick fire and put into it the only food he had.</p>
+<h3>2. The hundredfold increase</h3>
+<p>Here is the sentence that makes Mudgala the patron of everyone with a cash-flow problem:</p>
+<blockquote><p>Whenever he offered grains of rice to his learned guests, <strong>they increased hundredfold</strong>, so that all the brāhmaṇas who visited were able to be satiated.</p></blockquote>
+<p>Not "he became rich." The multiplication happens <strong>at the point of offering</strong>, not at the point of owning. This distinction is the entire technology, and every later ritual in this article is a variation on it. The vault opens on the <em>outgoing</em> side.</p>
+<p>The Mahābhārata also says that <strong>Indra and the devas themselves came in person to his āśrama to take part in his sacrifices on the full moon and the new moon</strong> — <em>pūrṇimā</em> and <em>amāvāsyā</em>. Two days a month, the highest court in the cosmos was dining on one gleaner's rice.</p>
+<h3>3. Durvāsā's test — the guest who eats everything and then smears it on himself</h3>
+<p>No account of Mudgala is complete without the Durvāsā episode, because it is the mechanism by which the multiplication was <em>certified</em>.</p>
+<p><strong>Durvāsā</strong> — the most volatile of the rishis, the one whose curse is a byword for sudden loss — arrived at the āśrama. Mudgala received him as a guest, which in the Vedic grammar of hospitality means as <strong>God arriving in a body</strong>. Durvāsā ate the entire meal. All of it. Then he took what remained, smeared it over his own body, and — depending on the recension — either broke the vessels or simply left, without a word of thanks.</p>
+<p>A normal householder would have felt the specific, hot, unspoken grievance of the host who has been treated as a waiter. Mudgala felt nothing of the kind. He had offered; the offering had been accepted, however insultingly. The text's point is that <strong>the rite was complete at the moment of giving, and no behaviour of the recipient could un-complete it.</strong></p>
+<p>Only after this did the heavens move. That ordering is not incidental. <strong>The multiplication is a fruit of giving without retained claim, and the test of "without retained claim" is a guest who gives you nothing back.</strong></p>
+<h3>4. The chariot, and the refusal</h3>
+<p>Then comes the strangest part, and the most useful for a jyotiṣī.</p>
+<p>A <strong>heavenly charioteer</strong> appeared with a <strong>vimāna</strong> and announced that Mudgala had attained <em>nirvāṇa</em> — that he would now go to <strong>Svarga</strong>, in his present body, without dying.</p>
+<p>Mudgala did something almost nobody in the Purāṇas does. He <strong>asked questions</strong>. He enquired about the pros and cons of residence in Svarga, and having heard them, <strong>chose to stay on earth</strong>.</p>
+<p>What he had heard, in the classical formulation, is this: <strong>Svarga is a debit balance.</strong> Merit earned on earth is <em>consumed</em> by enjoyment in heaven. There is no earning there. When the puṇya runs out, the soul falls — <em>cyavana</em>, the fall — back into whatever womb the remaining karma dictates. Heaven is not a destination; it is a <strong>spending account with no deposits</strong>.</p>
+<p>In the Vaiṣṇava recensions, the charioteer then tells him about <strong>Parama Padam</strong>, the supreme abode of light, which has no such exhaustion — and that is what Mudgala sought instead. The Bhāgavata closes the story in one of its most quoted lines (10.72.21): Hariścandra, Rantideva, <strong>Uñchavṛtti Mudgala</strong>, Śibi, Bali — <em>these attained the permanent by means of the impermanent.</em></p>
+<p><strong>Read that as a financial doctrine, because that is how the tradition reads it.</strong> Impermanent means (grain, cash, a salary) used correctly produce a permanent result. Impermanent means <em>retained and enjoyed</em> produce a temporary result that then expires. The man who refused the chariot is the man who understood that <strong>a lump sum in a currency that cannot be earned further is a trap.</strong></p>
+<h3>5. The hymn he is credited with — Ṛgveda 10.102</h3>
+<p>Mudgala is named as the ṛṣi of <strong>Ṛgveda 10.102</strong>, and this hymn is the other half of his teaching. It is a <strong>chariot race</strong> — the famous "race of the wooden chariot," with the slow oxen, the mud, the wheel, and the stakes.</p>
+<p>The tradition reads it as an allegory in which Mudgala's household wins a competitive contest <strong>against competitors who cheated</strong>, not by being faster but by <strong>holding to satya</strong> — truth, the real, the thing that does not shift — while the others cut corners and therefore lost the thing they were chasing. The Wikipedia summary of the hymn's content puts it exactly this way: his wife wins the metaphorical race <strong>despite the handicaps placed against her, because she and Mudgala held on to truth and reality, while the others behaved falsely.</strong></p>
+<p>For anyone whose problem is not "no money" but "money lost to someone else's dishonesty" — a partnership gone wrong, a suit, an inheritance dispute, a contract that was signed in good faith and broken — <strong>this is the hymn of your case</strong>, and it is one of the least-used tools in the remedial repertoire.</p>
+<h3>6. The other things he did with the same hand</h3>
+<p>Two more episodes complete the portrait, and both matter for chart-reading.</p>
+<p><strong>He cursed Rāvaṇa's sword.</strong> The Rāmāyaṇa has Mudgala meditating in <strong>svastikāsana</strong>, shoulders resting on his staff, in the Kadamba forest. Rāvaṇa — idly, playfully, the way a powerful man tests a smaller one — tapped the staff with his sword <strong>Candrahāsa</strong>. The staff broke, the sage fell, his spine broke. Mudgala cursed the sword: <strong>from that day Candrahāsa would be ineffective.</strong> The most celebrated weapon in the epic was neutered by a man who owned one brick altar and a bowl of gleaned rice.</p>
+<p><strong>He is Ahalya's father.</strong> In the Purāṇic genealogy, Mudgala and Nalayanī are the parents of <strong>Ahalya</strong> — the woman cursed to stone and restored by Rāma's foot. It is a strange pairing with the Draupadī story also attached to him (his wife's boon and her subsequent rebirth as Pāñcālī's daughter), and the two together give the family a single signature: <strong>the curse that lands on the next generation, and the remedy that comes from contact.</strong></p>
+<p><strong>A man whose grain multiplies and whose curses disarm weapons.</strong> That is the double signature to hold in mind, because it is the exact double signature of the 2nd house.</p>
+<h3>7. What he left behind</h3>
+<p>Two texts carry his name:</p>
+<ul>
+<li>The <strong>Mudgala Upaniṣad</strong>, a late, short Vaiṣṇava Upaniṣad (number 57 in the Muktika canon recited by Rāma to Hanumān), which takes the ethics of the Mahābhārata story — contentment, non-appropriation, the discipline of enough — and states them as doctrine.</li>
+<li>The <strong>Mudgala Purāṇa</strong>, a Ganeśa upapurāṇa, and the single most important surviving text on the <strong>eight incarnations of Gaṇeśa</strong>, listed at MudP 1.17.24–28. Each of the eight exists to defeat one inner enemy: <strong>Matsara</strong> (envy), <strong>Mada</strong> (arrogance), <strong>Moha</strong> (delusion), <strong>Lobha</strong> (greed), and then <strong>Kāma</strong>, <strong>Krodha</strong>, <strong>Mamatā</strong>, <strong>Abhimāna</strong>.</li>
+</ul>
+<p>That list is not decoration. In Part Two it becomes a diagnostic table.</p>
+<p>&#8212;</p>
+<h2>Part Two: The Grain Vault, Read as a Chart</h2>
+<h3>The ceiling is a second-house event</h3>
+<p><strong>Daridratā</strong> — the state of being stuck at a fixed insufficiency — is not read from the 11th house of income. Income is a flow; the 11th can be excellent while the ceiling holds, because the ceiling is a <strong>storage</strong> problem. It is read from:</p>
+<ul>
+<li><strong>the 2nd house</strong> — accumulated food, savings, the family treasury, and (note this) <em>speech</em> and <em>what you are able to swallow</em>;</li>
+<li><strong>the 2nd lord's condition</strong>, particularly if it is in the 6th, 8th, or 12th, or hemmed between malefics;</li>
+<li><strong>malefics in the 2nd</strong> — Śani here does not merely reduce; it <strong>fixes the number</strong>, which is precisely the "always the same figure" symptom;</li>
+<li><strong>the 12th lord in the 2nd</strong>, the classic signature of <em>money that leaves quietly</em>;</li>
+<li><strong>Ketu in the 2nd or aspecting it</strong> — the vault with a hole in the floor, the recurring inability to say what one owns;</li>
+<li><strong>Candra–Budha affliction</strong>, because the Moon is <em>nourishment received</em> and Budha is <em>counting</em>; when the two are at war, a person cannot hold what arrives.</li>
+</ul>
+<p>And then the sign itself. The 2nd house is the house of <strong>food</strong>, not of money — money is a late substitution. This is why the remedy for a 2nd-house ceiling in the classical corpus is <strong>grain</strong>, and why a sage who never touched money is the patron of a problem everyone experiences as financial.</p>
+<h3>Mudga — the lentil of the low table</h3>
+<p>His name is not ornamental. <strong>Mudga</strong> is <strong>moong</strong>, the green gram — the cheapest legume in the Indian kitchen, the food of the poor, the food of the convalescent, the food of the guest who arrives unannounced. A <em>maudgalya</em> is a man of moong.</p>
+<p>The remedial consequence is direct and unusual: <strong>Mudgala's rite is performed with the cheapest grain in the house, not the costliest.</strong> Every instinct of a frightened client is to buy silver, buy sandalwood, buy an expensive idol. The tradition's answer, in this lineage, is the opposite — <strong>the value of the offering is in the giving, not the price</strong>, and a rite built on moong and rice is the one a poor man can complete. Which is another way of saying: this remedy is available to you <em>now</em>, tonight.</p>
+<h3>The eight enemies as eight grahas</h3>
+<p>The Mudgala Purāṇa's eight Gaṇeśa forms can be laid over the eight classical grahas, and this is one of the few genuinely usable occult diagnostics in the Gāṇapatya material. What follows is the working correspondence used in practice, not a claim that the Purāṇa states it in this form:</p>
+<table>
+<thead><tr><th>Form</th><th>Enemy it defeats</th><th>Graha it answers</th><th>What the client says</th></tr></thead>
+<tbody>
+<tr><td><strong>Vakratuṇḍa</strong> (lion)</td><td>Matsara — envy</td><td><strong>Candra</strong> (Moon)</td><td>"I cannot be happy for anyone."</td></tr>
+<tr><td><strong>Ekadanta</strong> (mouse)</td><td>Mada — arrogance</td><td><strong>Sūrya</strong> (Sun)</td><td>"I know better than my own chart."</td></tr>
+<tr><td><strong>Mahodara</strong> (mouse)</td><td>Moha — delusion</td><td><strong>Rāhu</strong></td><td>"I keep repeating the same mistake."</td></tr>
+<tr><td><strong>Gajānana</strong> (mouse)</td><td>Lobha — greed</td><td><strong>Budha</strong> (Mercury)</td><td>"One more deal and I am safe."</td></tr>
+<tr><td><strong>Lambodara</strong></td><td>Kāma — craving</td><td><strong>Śukra</strong> (Venus)</td><td>"I spend to feel something."</td></tr>
+<tr><td><strong>Vikaṭa</strong></td><td>Krodha — anger</td><td><strong>Maṅgala</strong> (Mars)</td><td>"I broke it with my own mouth."</td></tr>
+<tr><td><strong>Vighnarāja</strong></td><td>Mamatā — mine-ness</td><td><strong>Guru</strong> (Jupiter)</td><td>"It is mine, not ours."</td></tr>
+<tr><td><strong>Dhūmrāvarṇa</strong></td><td>Abhimāna — pride</td><td><strong>Śani</strong> (Saturn)</td><td>"I will not ask for help."</td></tr>
+</tbody>
+</table>
+<p>The practical value is that <strong>every one of these eight is a wealth-blocker that is not a wealth problem.</strong> The client with Śani on the 2nd whose real affliction is <em>Dhūmrāvarṇa</em> — the refusal to ask — will not be helped by any amount of grain. He will be helped by being made to ask, once, out loud, of a person who can refuse him. That is the rite.</p>
+<p>&#8212;</p>
+<h2>Part Three: The Working Form</h2>
+<p>Everything below is the householder's version: no priest required, no large expense, no fixed number of days beyond what is stated.</p>
+<h3>1. The uñcha vow — twenty-one days of gleaning</h3>
+<p><strong>The working form:</strong> For twenty-one consecutive days, eat <strong>only food that was given to you or that would otherwise have been discarded.</strong> Not food bought from a shop for yourself. This means: leftovers from the family pot that would have gone to the bin, a meal offered by someone else, the last portion nobody wanted, the fruit that is too ripe. Nothing may be specially purchased for your own consumption in this period.</p>
+<p>You are not starving. You are <strong>recalibrating the difference between receiving and taking.</strong> The 2nd-house native's chronic error is to feel that money is taken rather than received, and that is exactly the error that makes the ceiling feel moral rather than structural.</p>
+<p>If twenty-one days is impossible — and for a householder with children it often is — do it for <strong>three days</strong>, and do those three days honestly.</p>
+<h3>2. The iṣṭikṛta — the brick fire</h3>
+<p><strong>The working form:</strong> On a <strong>pūrṇimā or amāvāsyā</strong> (the two days the Mahābhārata specifies, and the two days Indra is said to have attended), build a small fire <strong>in or beside a brick</strong>. A single ordinary brick from a builder's yard is correct; a fire-trough of bricks is better. Face east. Offer into it, in this order, with ghee if you have it and without if you do not:</p>
+<ol>
+<li>a pinch of rice — <em>for what was received</em></li>
+<li>a pinch of moong — <em>for what was given away</em></li>
+<li>a pinch of the same, again — <em>for what will be received</em></li>
+</ol>
+<p>Then speak aloud one sentence naming the sum or the shortfall you are asking to have dissolved. Not a wish. <strong>A number.</strong> The tradition is not sentimental about amounts; Mudgala's rice was <em>counted</em> and then <em>counted hundredfold</em>.</p>
+<p>Let the fire go out on its own. Do not extinguish it. Do not repeat the rite in the same fortnight.</p>
+<p><strong>Why the brick:</strong> the <em>iṣṭakā</em> is the smallest permanent unit of a Vedic altar. Every grand śrauta fire in the corpus is described as an assembly of bricks. The doctrine is that <strong>the smallest complete unit is sufficient</strong> — you are not building a temple, you are proving you can lay one brick.</p>
+<h3>3. The akshaya measure — the hundredfold rice</h3>
+<p>This is the core rite, and it is short.</p>
+<p><strong>The working form:</strong> Take a <strong>copper vessel</strong>. Put in it <strong>108 grains of raw rice and 108 grains of moong</strong>, mixed. Keep it in the north-east of the house, on a cloth, off the floor, and cover it — the covering matters, because the tradition treats an uncovered grain vessel as an invitation to loss.</p>
+<p>Each morning for <strong>eleven mornings</strong>, take <strong>one grain of rice and one of moong</strong> from the vessel, hold them in the right palm, and say the offering line; then put them into a separate small bowl. The bowl is the <strong>given</strong> side. Do not eat from it. Do not count it.</p>
+<p>On the eleventh morning the bowl is taken and <strong>given away whole</strong> — to a person, a bird, an ant-hill, running water; the recipient does not matter, the <em>handing over</em> does.</p>
+<p><strong>And here is the rule that is the whole rite:</strong> you do not count what remains in the copper vessel until the eleventh day is over. The hundredfold increase in the Mahābhārata happens while nobody is auditing the pot. The moment you count, you have converted the vault back into a purse.</p>
+<h3>4. Durvāsā's protocol — feeding the guest you cannot afford</h3>
+<p>Once during the eleven days, feed <strong>one person you have never fed before, and who cannot return the favour.</strong> Not family. Not a colleague. Not someone who will be embarrassed. The test in the story is not charity — it is <strong>the absence of return</strong>.</p>
+<p><strong>The working form:</strong> choose a person from whom you expect <strong>no gratitude whatsoever</strong> — and note the resentment when it does not come. The resentment <em>is</em> the data. The rite is complete when you can serve the meal and let the plate go without needing the plate to have meant something.</p>
+<h3>5. The refusal — the deferred boon</h3>
+<p>The teaching of the chariot is the hardest to practise and the most valuable.</p>
+<p><strong>The working form:</strong> identify the <strong>one shortcut currently on offer</strong> — the loan you should not take, the favour with a string, the job that pays more and takes the practice away, the shortcut in a business you know is not clean. Refuse <strong>one of them</strong>, explicitly, once, this month. Not out of pride. Out of the arithmetic of Svarga: <strong>any gain that consumes its own merit has a fall built into it.</strong></p>
+<p>If you cannot refuse it, then at minimum <strong>name it aloud</strong> and record the date. Naming is half the rite.</p>
+<h3>6. Ṛgveda 10.102 — for money lost to dishonesty</h3>
+<p><strong>The working form:</strong> This hymn is for the <strong>contested</strong> rupee — the suit, the fraud, the withheld payment, the broken partnership. It is recited <strong>eleven times on eleven consecutive days</strong>, at the same hour, facing east, on behalf of the specific case and not generally. Before the first recitation, write on a slip of paper the exact amount and the counterparty's name, keep it under the copper vessel described above, and burn it on the eleventh day after the final recitation.</p>
+<p>Do not recite it against a person's life or health. The hymn's logic is the victory of <em>satya</em> in a <strong>contest</strong>, and the tradition is clear that the contest must be a real one with stakes that are legitimately yours.</p>
+<h3>7. Transit and nakshatra alignment</h3>
+<p>The Mudgala material is unusually explicit about timing, so use it:</p>
+<ul>
+<li><strong>Pūrṇimā and amāvāsyā</strong> — the two days the Mahābhārata names for his sacrifices. The brick fire belongs here.</li>
+<li><strong>Hasta</strong> — the nakshatra whose deity is <strong>Savitṛ</strong> and whose symbol is the <strong>open hand</strong>. It is the nakshatra of giving and of the skilled hand, and it is the single best nakshatra for starting the akshaya measure. If you can begin the eleven mornings on a Hasta day, do.</li>
+<li><strong>Rohiṇī and Śravaṇa</strong> — for the <strong>storage</strong> half: Rohiṇī for what is grown and held, Śravaṇa for what is heard and remembered. Good days to place the copper vessel.</li>
+<li><strong>Guru transiting the 2nd or 11th from the natal Moon</strong> — the year the vault is structurally open. Do the eleven days during that transit and the effect is held to come from the transit directly rather than by proxy.</li>
+<li><strong>Śani in the 2nd, or Śani's Daridra-yoga configurations</strong> — the wrong time to <em>ask for increase</em> and the right time to <em>do the uñcha vow</em>. Saturn responds to the discipline of enough, not to petitions for more.</li>
+<li><strong>Ketu in the 2nd</strong> — the eleven-day measure is repeated <strong>once each year</strong>, always in the same lunar month. Ketu is repaired by repetition, not by intensity.</li>
+</ul>
+<h3>8. What not to do</h3>
+<ul>
+<li><strong>Do not borrow to fund any of this.</strong> A remedy financed by debt is a Svarga transaction: the fruit is consumed before it is earned.</li>
+<li><strong>Do not measure the vault mid-rite.</strong> No counting, no checking, no "is it working."</li>
+<li><strong>Do not announce it.</strong> The hundredfold increase in the story is witnessed by guests and devas, not by an audience.</li>
+<li><strong>Do not substitute the expensive item.</strong> If you find yourself buying silver for a rite built on moong, you have already left the lineage.</li>
+</ul>
+<p>&#8212;</p>
+<h2>Part Four: Reading the Chart Before Prescribing</h2>
+<p>Before any Mudgala rite is given, confirm the following. If two or more fail, the rite will be performed and the ceiling will hold.</p>
+<ol>
+<li><strong>Is the ceiling in the 2nd house or the 11th?</strong> If the 11th is strong and the 2nd is afflicted, income is not the problem and no income remedy will work.</li>
+<li><strong>Is there Ketu contact with the 2nd, or the 12th lord in the 2nd?</strong> If yes, the first prescription is <strong>stopping the outflow</strong> — literally, three months of written accounts — before any grain rite.</li>
+<li><strong>Is the 2nd lord in the 6th, 8th, or 12th?</strong> Then the client's money is being spent on <em>someone else's</em> karma: a family member's debt, a medical condition, a litigation. The rite must be done <strong>on their behalf</strong>, with their name spoken, not the client's.</li>
+<li><strong>Which of the eight enemies is live?</strong> Ask the client what they felt when the last sum of money left. Envy points to Candra; arrogance to Sūrya; repetition of the same error to Rāhu; "one more deal" to Budha; craving to Śukra; a hot word to Maṅgala; "it is mine" to Guru; the refusal to ask to Śani. <strong>The rite is chosen by the enemy, not the planet.</strong></li>
+<li><strong>Has the client ever given something they could not afford to give?</strong> If never, no grain multiplier will engage, because the multiplier in every version of the story is triggered by an offering that was <em>all there was</em>.</li>
+<li><strong>Is there a curse in the family line?</strong> Mudgala is Ahalya's father; the curse on the next generation is part of his signature. Where the pattern repeats across two generations, add a <strong>pitṛ</strong> component before beginning.</li>
+<li><strong>Can they complete eleven days without interruption?</strong> If not, shorten to three. An incomplete vrata in this lineage is worse than none, because the entire doctrine of the brick is that <strong>the smallest complete unit is sufficient</strong> — and an incomplete unit is not a unit.</li>
+</ol>
+<p>&#8212;</p>
+<h2>Closing: The One Sentence Worth Keeping</h2>
+<p>Mudgala was offered heaven with his body intact and asked what it would cost him later — and that question, asked once, honestly, about the next shortcut on your own table, is the whole of the remedy; the rice and the moong are only the paperwork.</p>
+<p><strong>अक्षय does not mean "more." It means "not depleted" — and the only vessel in the house that is never depleted is the one that keeps being poured out.</strong></p>
+
+<div class="references">
+<h2>Sources</h2>
+<p>No source URLs were returned by NotebookLM for this run.</p>
+</div>
+        </article>
+    </div>
+
+</body>
+</html>
