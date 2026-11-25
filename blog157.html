@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shunahshepa&#x27;s Varuna Noose Release</title>
+    <style>
+        :root {
+            --bg-color: #FDF9F1;
+            --text-color: #3E2723;
+            --indian-yellow: #E4A025;
+            --indian-orange: #E65100;
+            --accent-light: #FFECB3;
+            --ref-bg: #FFF3E0;
+        }
+
+        body {
+            font-family: 'Georgia', 'Nirmala UI', 'Mangal', serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(var(--bg-color) 80%, var(--accent-light) 100%);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #FFFFFF;
+            padding: 50px 60px;
+            box-shadow: 0 10px 30px rgba(62, 39, 35, 0.1);
+            border-top: 8px solid var(--indian-orange);
+            border-bottom: 8px solid var(--indian-yellow);
+            border-radius: 4px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed var(--indian-yellow);
+        }
+
+        h1 {
+            color: var(--indian-orange);
+            font-size: 2.5em;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        h2 {
+            color: var(--indian-yellow);
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--indian-orange);
+            padding-left: 15px;
+        }
+
+        h3, h4 {
+            color: var(--indian-orange);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', 'Nirmala UI', 'Mangal', Palatino, serif;
+        }
+
+        .intro-text::first-letter {
+            float: left;
+            font-size: 3.5em;
+            line-height: 0.8;
+            padding-right: 8px;
+            padding-top: 4px;
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        ul, ol {
+            margin: 0 0 24px 0;
+            padding-left: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ol {
+            list-style-position: outside;
+            padding-left: 2.2em;
+        }
+
+        ul li, ol li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        ol li {
+            padding-left: 0.35em;
+        }
+
+        ul li::before {
+            content: '\2022';
+            position: absolute;
+            left: 0;
+            top: 0.05em;
+            color: var(--indian-orange);
+            font-size: 1.2em;
+            line-height: 1;
+        }
+
+        ol li::marker {
+            color: var(--indian-orange);
+            font-weight: bold;
+        }
+
+        strong {
+            color: var(--indian-orange);
+        }
+
+        .image-placeholder-container {
+            margin: 30px 0;
+            text-align: center;
+            font-style: italic;
+            color: #795548;
+            background-color: var(--accent-light);
+            padding: 20px;
+            border-radius: 4px;
+            border: 1px solid var(--indian-yellow);
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.98em;
+            background-color: #FFFDF8;
+        }
+
+        th, td {
+            border: 1px solid #F0D49B;
+            padding: 10px 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--ref-bg);
+            color: var(--indian-orange);
+        }
+
+        blockquote {
+            margin: 30px 0;
+            padding: 20px 25px;
+            background-color: var(--accent-light);
+            border-left: 5px solid var(--indian-orange);
+            font-style: italic;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px dashed var(--indian-yellow);
+            margin: 32px 0;
+        }
+
+        .references {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: var(--ref-bg);
+            border-radius: 8px;
+            font-size: 0.9em;
+        }
+
+        .references h2, .references h3 {
+            color: var(--text-color);
+            margin-top: 0;
+            border-bottom: 1px solid var(--indian-yellow);
+            padding-bottom: 10px;
+            border-left: 0;
+            padding-left: 0;
+        }
+
+        .references p, .references li {
+            margin-bottom: 12px;
+            word-wrap: break-word;
+        }
+
+        .references a {
+            color: var(--indian-orange);
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Shunahshepa&#x27;s Varuna Noose Release</h1>
+        </header>
+
+        <article>
+<p class="intro-text">Most of the bondage remedies sold in India today treat the bond as an accident. A curse slipped in, a planet turned hostile, an ancestor forgot a payment — and the fix is to wash it off. Shunahshepa is the one case in the Vedic corpus where the bond was <strong>legal</strong>. It was owed, it was contracted, it was paid for in cows, and it was tied by a father's own hands. And it still came off.</p>
+<div class="image-placeholder-container">
+    <img src="blog157_Image.png" alt="Shunahshepa bound to the sacrificial post as Varuna&#x27;s noose is broken">
+</div>
+<p>That is why his rite matters. If your life feels bound — a debt that will not close, a marriage that will not move, a body that keeps returning to the same illness, a family in which you are the one everybody leans on and nobody protects — you are not looking for a curse-removal. You are looking for the procedure that unties a knot which has every right to be there. The tradition preserved exactly one, and it belongs to a teenage boy who was sold three times in a single afternoon.</p>
+<p>This is the working manual for that rite: who he was, why the noose has three knots, the arithmetic of the ninety-eight verses the tradition rounds up to a hundred, and the form in which it can still be done — with a post and a river if you have them, with a copper pot and a tap if you do not.</p>
+<h2>Who Shunahshepa Was</h2>
+<p>Shunahshepa — <strong>Śunaḥśepa</strong>, "of the lineage of Śunaḥ" by one reading, the name's etymology is disputed and the tradition itself never settles it — is the son of <strong>Ajigarta Sauyavasi</strong>, a starving brahmin of the line of <strong>Angiras</strong>. The family is destitute. That detail is not decoration; it is the engine of the whole story.</p>
+<p>The frame narrative comes from the <strong>Aitareya Brahmana</strong> (7.13–18), and it is repeated with variations in the <strong>Balakanda of the Ramayana</strong> (sarga 61) and borrowed again by the Sankhyana and Baudhayana Shrauta Sutras. King <strong>Harishchandra</strong> of the Ikshvaku line had a hundred wives and no son. On Narada's advice he prayed to <strong>Varuna</strong>, lord of waters and guardian of <em>ṛta</em> — cosmic order, and more importantly, of contracts. Varuna granted the son on one condition: the boy would later be sacrificed back to him. The son, <strong>Rohita</strong>, was born. Varuna came to collect. The king postponed. Varuna struck him with a wasting abdominal illness. Rohita, advised by Indra, refused to be the victim.</p>
+<p>In the sixth year of wandering, Rohita met Ajigarta in the forest and bought one of his three sons for a hundred cows. The eldest was spared because a father will not give the first. The youngest was spared because a mother will not give the last. <strong>The middle son was given.</strong></p>
+<p>Four of the greatest rishis alive were assembled to conduct the rite — <strong>Agastya</strong> as <em>udgātṛ</em>, <strong>Jamadagni</strong> as <em>adhvaryu</em>, <strong>Vasishtha</strong> as <em>brahman</em>, <strong>Vishvamitra</strong> as <em>hotṛ</em>. All four refused to bind the boy to the sacrificial post. So Ajigarta sold his son a second time, for another hundred cows, and bound him himself. Then the priests refused to kill him. So Ajigarta offered to do that too, for a third hundred.</p>
+<p>At that point Shunahshepa recited. The <strong>Anukramani</strong> — the Vedic index that assigns every hymn to a seer — credits him with the hymns of <strong>Rigveda 1.24 through 1.30</strong>: fifteen, twenty-one, eleven, thirteen, nine, seven and twenty-two verses. Ninety-eight verses. Seven hymns. The tradition simply calls them the hundred.</p>
+<p>And then, in the last of them, at the moment of the dawn, <strong>the bonds loosened</strong>. Harishchandra's illness broke at the same instant. Vishvamitra adopted him on the spot, gave him the name <strong>Devarata</strong> — "god-given" — and made him his eldest son, which is a separate and uglier story about the fifty sons who refused to accept it.</p>
+<p>Three things about this are load-bearing for the rite, and all three are usually dropped from the devotional retelling.</p>
+<p><strong>The bond was legitimate.</strong> No one in the story is innocent and no one is a villain. The father needed a son, Varuna named a price, the price was accepted, a substitute was legally purchased. This is not a demon's grip. It is a contract with a due date, and the tradition's whole point is that a contract can be <em>discharged</em> without being <em>destroyed</em>.</p>
+<p><strong>He was bound, not killed.</strong> The post and the rope are the subject. The blade never falls. Everything the rite does happens between the tying and the striking — which is exactly where most people reading this actually live.</p>
+<p><strong>The release came at dawn, not at noon.</strong> The final hymn turns to <strong>Ushas</strong>, the dawn. The tradition is precise about this: the loosening is not a burst of power, it is a <em>turn of the light</em>. Any rite built from this material that does not end facing the sunrise has lost the mechanism.</p>
+<h2>Why Varuna, and Not Shani</h2>
+<p>Almost every bondage remedy in the market is addressed to <strong>Shani</strong>, and for a real reason: Saturn is the planet of time, debt, delay and the slow foreclosure of options. But Shani's grip is <em>chronological</em>. He withholds. He does not hold a rope.</p>
+<p><strong>Varuna holds a rope.</strong> The word is <strong>pāśa</strong> — noose, tether, snare — and it is Varuna's defining attribute in the Rigveda, more than the waters and more than the thousand eyes. His <strong>spaśa</strong>, the spies, watch the oath; the noose is what happens when the oath is broken or unpaid. Varuna does not punish in anger. He <em>enforces</em>. He is the divine bailiff, and his instrument is a cord with knots in it.</p>
+<p>This distinction is the whole diagnostic value of the rite. Four conditions look identical from the inside and require four different instruments:</p>
+<ul>
+<li><strong>Śāpa</strong> — a curse. Someone with will and emotion wished you harm. It behaves like a wound: it hurts, it festers, it can be healed.</li>
+<li><strong>Pāśa</strong> — a bond. A contract, an oath, a vow, a debt, a promise made by you or for you. It does not hurt. It <em>holds</em>. You can live a whole life inside it, comfortably, and never notice you have not moved.</li>
+<li><strong>Doṣa</strong> — a flaw. A structural defect in the chart or the lineage. It repeats.</li>
+<li><strong>Ṛṇa</strong> — a debt. It has a number attached. It can be paid off.</li>
+</ul>
+<p>Shunahshepa's situation was <strong>pāśa plus ṛṇa</strong>: a bond that existed because a debt existed. And the reason his hundred verses are still recited is that this is the most common condition of all, and the least served. Nobody thinks to look for a contract. Everybody looks for a curse.</p>
+<p>There is an astronomical footnote worth knowing. <strong>David Gordon White</strong> has argued that the original Rigvedic layer of the myth may encode an observation about the three stars of the <strong>Ursa Minor</strong> tail, which never descend below the horizon — a knot in the sky that is never untied. Whether or not that is the origin, it is a perfect image for the condition: the bond that holds because it has always held, and that most people assume is simply the shape of the sky.</p>
+<h2>Why the Middle Son</h2>
+<p>The story's most quoted cruelty is the sale. Its most useful detail is the <em>choice of which son</em>.</p>
+<p>The eldest is spared because he carries the name and the inheritance — he has a claim. The youngest is spared because the mother's body refuses — he has a protector. The middle son has neither. He has no claim on the past and no protector for the future. He is, in the precise language of family systems, the one who can be spent.</p>
+<p>If you have ever been that person — the one who adjusted, who mediated, who absorbed the family's shortfall because someone had to and you were the one standing in the middle — you are reading the oldest description of your position in the literature. The rite exists for the middle.</p>
+<p>And the middle position has a signature that shows up in a chart with almost embarrassing clarity. <strong>Pāpa-kartarī</strong> — the "scissors" — is the configuration in which a house or a lagna sits hemmed between malefics, with no benefic aspect to relieve it. <strong>Śrapita</strong> and <strong>viṣa</strong> yogas produce the same shape: held between two pressures, visible to both, protected by neither. Shunahshepa bound to a post between a father who sold him and priests who would not touch him is that configuration drawn as a story.</p>
+<p>So the first diagnostic question this rite asks is not "who cursed me" but <strong>"am I the one in the middle, and who is holding the two ends?"</strong></p>
+<h2>The Three Nooses</h2>
+<p>The single verse on which the entire practice is built is <strong>Rigveda 1.24.14</strong>, from the Shunahshepa hymns, addressed to Varuna:</p>
+<blockquote><p><em>ud uttamaṃ varuṇa pāśam asmād avādhamaṃ vi madhyamaṃ śrathāya —</em></p><p>"Loosen, O Varuna, the uppermost noose from us; slacken the middle; and the lowest — release."</p></blockquote>
+<p>Three nooses, named by height. The commentarial tradition reads the three heights as three registers of binding, and it is remarkably consistent across schools:</p>
+<p><strong>The upper noose — the head.</strong> <em>Saṅkalpa</em>, vow, oath, initiation, the word given. This is the noose of the promise you made and did not keep, or the promise made over you that you never consented to. It governs <strong>cognition</strong>: you cannot think your way out because the thinking itself is inside the knot. In a chart it is the first, fifth and ninth houses — self, intelligence, dharma — and it is what a <strong>Ketu</strong> in those houses or an afflicted <strong>Jupiter</strong> actually describes.</p>
+<p><strong>The middle noose — the heart and chest.</strong> Lineage, marriage, the <em>kula</em>. This is the noose of relationship: the marriage that will not complete, the child that will not come, the family role you cannot step out of. Second, seventh and eleventh houses. Varuna's middle noose is the reason so many people report that their life is fine <em>except</em> in exactly one relationship, and that the exception has been running for years.</p>
+<p><strong>The lower noose — the feet, the body, the ground.</strong> Health, land, money, dwelling, the physical capacity to move. Fourth, sixth and tenth houses. This is the noose that shows up as a body that will not heal and a bank balance that will not rise, in a person whose mind and relationships are fine.</p>
+<p>There is a second, older reading of the same three, and the rite uses both. The three knots are the <strong>three debts</strong> — <em>deva-ṛṇa</em> to the gods, <em>ṛṣi-ṛṇa</em> to the seers, <em>pitṛ-ṛṇa</em> to the ancestors. Every twice-born person is born owing all three. Most people pay the first with occasional ritual and the second with nothing at all. The third they discover only when a line begins to fail.</p>
+<p>The crucial mechanic, and the one thing to get right: <strong>the nooses were tied from the top down, but they come off from the bottom up.</strong> Verse 1.24.14 asks for the uppermost first in the poetry — but the practice reverses it. You untie the lowest knot first. A body that is still bound in the feet cannot hold a head that has been freed; the release has to travel upward or it does not travel at all.</p>
+<h2>The Arithmetic: Ninety-Eight, Not a Hundred</h2>
+<p>Sit with the count for a moment, because it is the most beautiful thing in the material and it is also the practical key to performing the rite.</p>
+<p>Rigveda 1.24 has 15 verses. 1.25 has 21. 1.26 has 11. 1.27 has 13. 1.28 has 9. 1.29 has 7. 1.30 has 22. The total is <strong>98</strong>.</p>
+<p>The tradition calls them the hundred anyway. This is not sloppiness. In Vedic counting, a <em>śata</em> — a hundred — is a <strong>completed vow</strong>, not an arithmetic fact. A hundred is what a count becomes when the count is finished. The two missing verses are not lost; they were never in the text. They are <strong>yours</strong>.</p>
+<p>This is the single most important instruction in the whole rite, so it is stated plainly: <strong>when you perform the Shunahshepa rite, you compose the missing two verses yourself.</strong> Out loud, in your own language, in front of the post.</p>
+<p>The first of the two is the <strong>verse of the debt</strong> — you name the bond. Not vaguely. What it is, who holds the other end, and how long it has been tied. The second is the <strong>verse of the release</strong> — you say what the bond becomes when it is untied. Not "let me be free of it," which is a wish. Something in the form: <em>"What was owed is paid. What was tied is loosed. What was named is now a witness."</em></p>
+<p>Ninety-eight recited, two composed, one hundred complete. The rite cannot be performed by a priest on your behalf for exactly this reason — he can recite the ninety-eight, and he cannot supply your two.</p>
+<h2>The Working Form: Shunahshepa's Bandhana-Moksha Rite</h2>
+<p>This is the sequence as it survives in the Shrauta-derived practice and in the household form that descended from it. The full form is done outdoors with a post and a river. The reduced form is done in one night with a copper pot and any flowing water. The tradition is explicit that the reduced form is not a lesser rite — it is the same rite with fewer witnesses.</p>
+<p><strong>Requirements.</strong> A <strong>post</strong> — <em>khādira</em> (khadira) wood if you can get it, bamboo or a straight branch of any unthorned tree if you cannot. It must be new, uncut from a tree you have not used for anything else, and it must be <strong>set into earth</strong>, not propped. Three lengths of <strong>raw thread</strong>, each cut to your own height measured from the floor to the crown of your head: one <strong>white</strong>, one <strong>red</strong>, one <strong>black</strong>. Whole <strong>turmeric</strong> roots, not powder — three of them. A copper vessel with water. Black sesame. Raw milk. A ghee lamp. A <strong>coconut</strong> for the closing gift. A piece of <strong>unbroken darbha</strong> grass. If you have a river, you need nothing else; if you do not, you need one vessel of water you will later pour into moving water.</p>
+<p><strong>Timing.</strong> Begin on a <strong>Friday</strong> or a <strong>Saturday</strong> — the days of Venus and Saturn, the two planets of contract and consequence — in the <strong>waxing fortnight</strong>. Avoid the day of an eclipse, <em>amavasya</em>, and <em>chaturdashi</em>. The classical occasion is <strong>Varuna's own</strong> — the full moon, and specifically the full moon of <strong>Shravana</strong> or <strong>Kartika</strong> when the moon is in a water sign. The one non-negotiable requirement is that the rite <strong>ends at sunrise</strong>. If you cannot arrange the night, do the reduced form and still end at sunrise.</p>
+<h3>Stage 1 — The post: fixing the point that does not move</h3>
+<p>Choose ground you can leave alone: a riverbank, a field corner, a courtyard edge that no one will walk over. Dig, and set the post so that it stands about <strong>one and a half metres</strong> above the ground and is genuinely firm. This is the <em>yūpa</em>, the sacrificial post, and its function is not symbolic decoration — it is the <strong>fixed reference</strong> against which a knot can be tied and, more importantly, can be <em>seen</em> to come undone.</p>
+<p>Mark <strong>three bands</strong> on the post with turmeric paste: one at the top for the head, one at chest height for the heart, one at ankle height for the feet. Stand facing it, both palms on the post, and say once: <em>"This is the post. I did not choose it. I am here to leave it."</em></p>
+<p>If you are doing the reduced form: use a copper vessel as the post, three turmeric bands around its neck, middle and base, set on a clean cloth on the floor. It is a smaller post with the same three heights. It works.</p>
+<h3>Stage 2 — The three threads: measuring the bond to your own size</h3>
+<p>The threads are cut to your height for a reason that is easy to miss. The noose in the story was not a metaphor — it was measured to a boy. A bond is always cut to fit the person inside it, and it cannot be loosened by a rite that is not cut to the same measure.</p>
+<p>Measure from the floor to the crown of your head, once. Cut all three threads to that length. Hold each one, and before it goes anywhere near the post, <strong>name what it binds</strong>:</p>
+<ul>
+<li><strong>White</strong> in the right hand, at the top band: the head. Name the vow, the promise, the oath, the thing you said you would be.</li>
+<li><strong>Red</strong> at the chest band: the heart. Name the relationship, the person, the line.</li>
+<li><strong>Black</strong> at the ankle band: the feet. Name the body, the money, the ground. Speak plainly, without shame.</li>
+</ul>
+<p>If you have a chart reading in hand, this is where you place it: put the affliction where it actually lands. A Saturn–Rahu contact on the second house is a middle noose. A Ketu in the fourth is a lower noose. The upper noose is almost always a <strong>Jupiter</strong> or <strong>ninth-house</strong> matter, because that is where vows live.</p>
+<h3>Stage 3 — Binding: three knots, tied deliberately</h3>
+<p>Tie one knot in each thread <strong>around the post at its band</strong> — not around yourself, and never around another person. This is the line that cannot be crossed, and the tradition warns about it with unusual force: the Shunahshepa rite is a <strong>moksha</strong> rite. Inverted, it becomes a <strong>bandhana</strong> rite, and a bond tied by this procedure in order to hold someone is the one thing the material explicitly forbids. The noose in the story was tied by a father against his son, and the story exists to get it off. Do not become Ajigarta.</p>
+<p>Tie the white knot saying: <em>"This was given, not taken."</em> Tie the red: <em>"This was owed, not stolen."</em> Tie the black: <em>"This was measured, and it will be measured again."</em></p>
+<p>Then sit. Not in front of the post — beside it, in the position you would sit in if you were waiting for something. The waiting is part of the rite. In the story the boy waited through a whole ritual before he spoke.</p>
+<h3>Stage 4 — The hundred: ninety-eight and two</h3>
+<p>The recitation begins after dark and must still be going at sunrise.</p>
+<p>The core is <strong>Rigveda 1.24.14</strong>, the three-noose verse, and it is recited in a <strong>three-part count</strong>: thirty-three repetitions for the upper noose, thirty-three for the middle, thirty-two for the lower. That is ninety-eight. If you are doing the householder's full form, make it <strong>108</strong> — thirty-six, thirty-six, thirty-six — with the extra ten given to Varuna himself at the end.</p>
+<p>Between the sections, do not rush. After the white count, sit in silence and let the head finish speaking. After the red count, the same. The middle noose takes the longest to loosen and most people discover at this point that they have been carrying a name they have never said out loud.</p>
+<p>Then the two verses. Stand, face the post, and <strong>compose them yourself</strong>. Spoken, not written. They do not need metre, Sanskrit, or elegance. They need to be true, and they need to be said in the hearing of something that is not you — the post, the river, the ground.</p>
+<p><em>The verse of the debt.</em> Name it. The act, the year if you know it, the person or line. If it is inherited and you genuinely do not know, name the line and the kind: <em>"Whatever was contracted in this house before I was born, by word or by signature or by silence — I name it now as mine to discharge."</em></p>
+<p><em>The verse of the release.</em> Say what it becomes. The tradition's own formula is a <strong>conversion, not an erasure</strong>: the bond does not vanish, it changes office. What was a creditor becomes a witness. What was a rope becomes a record.</p>
+<p>If you have darbha grass, hold one unbroken blade through the two verses. Darbha is the ritual instrument that is <em>held</em> rather than used — the thing in your hand that is not a weapon.</p>
+<h3>Stage 5 — The dawn turn: untying from the bottom up</h3>
+<p>This is the moment the rite is built for, and the only one that must not be moved.</p>
+<p>As the sky begins to lighten — not at sunrise, but at the first change of colour, when you can just distinguish the horizon from the ground — turn to the <strong>east</strong> and begin to untie. <strong>Black first.</strong> Then red. Then white. Bottom to top, always.</p>
+<p>Do not cut the threads. <strong>Untie</strong> them. If a knot has pulled tight, work it loose with your fingers and your patience; a cut cord is a severed bond and leaves the debt unpaid, which is a different and worse condition. This is the most common mistake in the whole practice and the most consequential.</p>
+<p>As each knot comes free, say only: <em>"Loosed."</em> Not a speech. The boy in the story did not negotiate at the end.</p>
+<p>The last hymn in the sequence turns to <strong>Ushas</strong>, the dawn, and the tradition is unambiguous about the result: <em>the bonds were loosened</em>. Not broken, not burned — loosened, by the light arriving. So when the white thread finally comes off the post, stand in the first direct sun with all three threads in your open hand and let them lie there until your palms are warm. That is the whole mechanism. Everything before it was preparation.</p>
+<h3>Stage 6 — Dissolution: giving the knots to moving water</h3>
+<p>Take the three threads, the turmeric roots, and the black sesame to <strong>flowing water</strong> — a river, a stream, an irrigation channel. Not a bucket, not a drain in the house, not standing water. The cords go in whole, with the knots still in them, and they go in <strong>downstream of where you stand</strong>, so that nothing you have untied is left in your hand.</p>
+<p>Say the two verses once more, and let them go. Turn and walk away without looking back at the water. The instinct to watch is the instinct that re-ties.</p>
+<p>The post stays. Leave it standing where it is for a full year; do not pull it up, do not reuse it, do not put anything else on it. If the ground must be cleared, cut it at ground level after the year and give the wood to fire. This is the one part of the rite that outlives the night, and its purpose is to give the released bond somewhere to be <em>absent from</em>.</p>
+<h3>Stage 7 — The second name: Devarata</h3>
+<p>The story does not end with the loosening. It ends with a <strong>renaming</strong>. Vishvamitra adopts the boy and calls him <strong>Devarata</strong> — god-given — and the new name is not a reward for surviving. It is the mechanism that keeps the old bond from re-forming. A person with the same name, in the same house, doing the same work, will be re-tied within a season.</p>
+<p>So the last act is small and easy to skip, and you should not skip it. Within the three days after the rite, <strong>change one thing that identifies you</strong> — a name you are called by in one context, a signature, the way you introduce yourself, the name on a household account. Not legally. Functionally. Say to one person, out loud: <em>"Call me this now."</em></p>
+<p>And make one <strong>vow that is deliberately small and completable</strong> — something you will do for a fixed count of days, thirty or forty, that costs you a few minutes and cannot fail. The upper noose is the noose of the broken vow, and the way it is kept shut after release is by giving the mouth a vow it can actually keep.</p>
+<h3>The reduced form</h3>
+<p>For those without a post, a river, or a night:</p>
+<p>One copper vessel as the post, three turmeric bands. One thread of each colour, cut to your height. Tie three knots at the three heights while sitting, at any hour after dark. Recite 1.24.14 thirty-three times. Speak the two verses. Wait, without doing anything, until the light changes. Untie black, red, white. Put the threads into a vessel of water, carry that water to any flowing source within three days, and pour it downstream. Leave the vessel unused for a year.</p>
+<p>Total time: one night. Requirements: three metres of thread, three turmeric roots, one copper pot, one tap.</p>
+<h2>Where the Bond Shows in a Chart</h2>
+<p>The rite is diagnosed, not prescribed. Three configurations in particular respond to it, and they are worth naming because they are routinely misread as curses.</p>
+<p><strong>Pāpa-kartarī on the lagna or the moon.</strong> Malefics hemming the first or fourth house with no benefic relief. This is the Shunahshepa signature exactly — held between two ends, claimed by neither. The noose here is a <strong>middle</strong> noose by default, whatever the houses involved, because the person's whole life is organised around standing in a gap.</p>
+<p><strong>Saturn–Rahu contacts on the second, seventh, or eleventh.</strong> The classical <em>śrapita</em> and <em>viṣa</em> combinations. These read as pāśa rather than śāpa: not a wound, a hold. The marker in real life is that nothing is dramatically wrong and nothing has changed in years.</p>
+<p><strong>Ketu in the fourth, eighth, or twelfth, with the moon unsupported.</strong> The lower noose. Body, land, dwelling, the sense of having ground under the feet. The tell is a person who is competent everywhere and cannot rest anywhere.</p>
+<p>To these add one non-chart marker that the tradition prizes more than any of them. <strong>A bond that was contracted has a date.</strong> If you can name the year the trouble began — a signature, an oath, a promise, a move, a marriage, a debt taken in your name — then you are not dealing with a curse and you should not be paying for a curse remedy. You are dealing with a noose, and the Shunahshepa rite is the specific instrument for it.</p>
+<h2>Cautions</h2>
+<p>This material is old and it is sharp. Six things the tradition itself insists on.</p>
+<p><strong>Do not perform the rite to bind.</strong> Stated once already and worth stating twice. The procedure is a moksha rite. Used to hold a person — a spouse, a child, an estranged partner — it becomes exactly the act the story was told to undo, and the tradition treats this as the worst available misuse.</p>
+<p><strong>Do not cut the threads.</strong> Untying is the mechanism. Cutting is severance without discharge, which leaves the debt live and the channel gone.</p>
+<p><strong>Never tie anything around a person.</strong> The post, the thread, the water, and the ground. Not a wrist, not a neck, not a photograph, not a lock of hair. This is not a protection charm.</p>
+<p><strong>Eclipses and amavasya are excluded.</strong> The rite ends at dawn, and it requires a dawn that arrives on schedule. Do not run it into a lunar or solar eclipse, and do not begin on the new moon — Varuna's instrument is the full, not the empty.</p>
+<p><strong>Menstruation.</strong> The classical rule excludes the performer during the days of bleeding, on the grounds that the rite involves entering water and standing on bare earth. The household form permits the recitation alone during those days, with the tying and untying deferred.</p>
+<p><strong>It does not replace the doctor, the lawyer, or the therapist.</strong> A noose is a real thing and so is a tumour, an unpayable loan, and a violent marriage. Varuna's rite is not a substitute for any of the three, and a practitioner who tells you it is should be walked away from.</p>
+<h2>What the Rite Actually Claims</h2>
+<p>Read the story without the devotion and it makes one claim, and it is a hard one.</p>
+<p>The boy was not saved because he was innocent. He was not saved because a god loved him. He was saved because he <strong>spoke the terms of his own contract out loud, in front of the thing that held him, and did not ask for the contract to be torn up — he asked for it to be honoured and closed.</strong> Ninety-eight verses that were handed down, and two that he had to find in himself.</p>
+<p>That is what the tradition is offering, and it is why the rite has survived in a form nobody sells. There is nothing to buy. There is a post, three threads cut to your own height, a count you have to keep through the night, and two sentences that no priest can write for you. And then the light changes, and you untie the black one first.</p>
+<p>The noose was legal. It still came off.</p>
+
+<div class="references">
+<h2>Sources</h2>
+<p>No source URLs were returned by NotebookLM for this run.</p>
+</div>
+        </article>
+    </div>
+
+</body>
+</html>
